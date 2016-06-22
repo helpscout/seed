@@ -1,0 +1,24 @@
+{
+  "name": "seed-grid",
+  "version": "0.0.1",
+  "description": "Grid system package for Seed",
+  "main": "scss/__all.scss",
+  "homepage": "https://github.com/helpscout/seed-grid",
+  "scripts": {
+    "start": "gulp",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-grid.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-grid/issues"
+  },
+  "engines": {
+    "node": ">=0.10.1"
+  }
+}
