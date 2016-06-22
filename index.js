@@ -1,7 +1,3 @@
 var path = require('path');
 
-module.exports = {
-  includePaths: [
-    path.join(__dirname, 'scss')
-  ]
-};
+module.exports = path.join(__dirname, 'package');
