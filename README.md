@@ -1,5 +1,5 @@
 # seed-grid [![Build status](https://travis-ci.com/helpscout/seed-grid.svg?token=mizbXyxLU95YeKzixKT2&branch=master)](https://travis-ci.com/helpscout/seed-grid) [![npm version](https://badge.fury.io/js/seed-grid.svg)](https://badge.fury.io/js/seed-grid)
-Grid system package for [Seed](https://github.com/helpscout/seed)
+Grid system pack for [Seed](https://github.com/helpscout/seed)!
 
 Seed's grid system was inspired by [Bootstrap V4](https://github.com/twbs/bootstrap/tree/v4-dev).
 However, it has been enhanced and modified quite heavily to fit Seed's needs and code organizational structure.
