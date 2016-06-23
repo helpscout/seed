@@ -14,6 +14,15 @@ npm install seed-grid --save-dev
 ```
 
 ## Basic Usage
+
+### CSS
+Add the [seed-grid.css](https://github.com/helpscout/seed-grid/blob/master/dist/seed-grid.css) or [seed-grid.min.css](https://github.com/helpscout/seed-grid/blob/master/dist/seed-grid.min.css) to your project, and import it like so:
+
+```
+<link rel="stylesheet" href="/css/seed-grid.css">
+```
+
+### SCSS
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
 ```javascript
