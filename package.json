@@ -9,7 +9,8 @@
     "build": "npm run build:main && npm run build:min && npm run banner",
     "build:main": "node-sass --include-path node_modules/bourbon/app/assets/stylesheets --include-path node_modules/seed-breakpoints/scss scss/pack/_seed-grid.scss dist/seed-grid.css",
     "build:min": "node-sass --include-path node_modules/bourbon/app/assets/stylesheets --include-path node_modules/seed-breakpoints/scss scss/pack/_seed-grid.scss dist/seed-grid.min.css --output-style compressed",
-    "test": "node ./scripts/test.js && npm run build"
+    "test": "node ./scripts/test.js && npm run build",
+    "prepublish": "npm run test"
   },
   "repository": {
     "type": "git",
