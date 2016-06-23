@@ -1,4 +1,4 @@
-# seed-grid ![Build status](https://travis-ci.com/helpscout/seed-grid.svg?token=mizbXyxLU95YeKzixKT2&branch=master)
+# seed-grid [![Build status](https://travis-ci.com/helpscout/seed-grid.svg?token=mizbXyxLU95YeKzixKT2&branch=master)](https://travis-ci.com/helpscout/seed-grid)
 Grid system package for [Seed](https://github.com/helpscout/seed)
 
 ## Install
