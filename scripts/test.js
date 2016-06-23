@@ -2,11 +2,9 @@
 'use strict';
 
 var sass = require('node-sass');
-var bourbon = require('bourbon').includePaths;
 
 sass.render({
-  file: './scss/pack/_seed-breakpoints.scss',
-  includePaths: [ bourbon ]
+  file: './scss/pack/_seed-breakpoints.scss'
 }, function(error, result) {
   if (error) {
     process.exit(1);
