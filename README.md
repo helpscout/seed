@@ -3,7 +3,7 @@ Grid system package for [Seed](https://github.com/helpscout/seed)
 
 ## Install
 ```
-npm install seed-grid
+npm install seed-grid --save-dev
 ```
 
 ## Basic Usage
