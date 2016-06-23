@@ -3,7 +3,7 @@ Grid system pack for [Seed](https://github.com/helpscout/seed)!
 
 ![Grid pack](https://raw.githubusercontent.com/helpscout/seed-grid/master/grid-pack.png)
 
-You can use this with *any* scss project you'd like! (Seed not required).
+You can use this with *any* project you'd like! (Seed not required).
 
 Seed's grid system was inspired by [Bootstrap V4](https://github.com/twbs/bootstrap/tree/v4-dev).
 However, it has been enhanced and modified quite heavily to fit Seed's needs and code organizational structure.
