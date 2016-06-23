@@ -83,16 +83,6 @@ $seed-grid-namespace-row: "o-row" !default;
 $seed-grid-namespace-row-flex: "o-row-flex" !default;
 
 
-// Breakpoints
-$seed-breakpoints: (
-  xs: 0,
-  sm: 544px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
-
-
 // Container
 $seed-container-widths: (
   sm: 576px,
@@ -106,7 +96,20 @@ $seed-container-widths: (
 $seed-grid-columns: 12 !default;
 $seed-grid-gutter: 30px !default;
 $seed-grid-gutter-offset: ceil($seed-grid-gutter / 2) !default; // 15px
+```
 
+### Breakpoint options
+Grid pack uses the [Breakpoints mixin pack](https://github.com/helpscout/seed-breakpoints). You can modify your grid breakpoints by adjusting the `$seed-breakpoints` variable:
+
+```sass
+// Breakpoints
+$seed-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
 ```
 
 ## Examples
