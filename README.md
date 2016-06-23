@@ -9,7 +9,7 @@ npm install seed-grid --save-dev
 ## Basic Usage
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-```
+```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var seedGrid = require('seed-grid')
@@ -27,7 +27,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *seed-grid* as needed in your `.scss` file:
 
-```
+```sass
 // Packs
 @import "pack/seed-grid";
 ```
@@ -35,7 +35,8 @@ Once that is setup, simply `@import` *seed-grid* as needed in your `.scss` file:
 ## Configurables
 
 The following variables can be found in `_config.scss`
-```
+
+```sass
 // Namespace
 $seed-grid-namespace-col: "o-col" !default;
 $seed-grid-namespace-container: "o-container" !default;
