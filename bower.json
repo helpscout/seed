@@ -12,5 +12,6 @@
     "node_modules",
     "bower_components",
     "test.js"
-  ]
+  ],
+  "version": "0.0.2"
 }
