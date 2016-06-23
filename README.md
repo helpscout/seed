@@ -1,5 +1,10 @@
-# seed-grid [![Build status](https://travis-ci.com/helpscout/seed-grid.svg?token=mizbXyxLU95YeKzixKT2&branch=master)](https://travis-ci.com/helpscout/seed-grid)
-Grid system package for [Seed](https://github.com/helpscout/seed)
+# seed-grid [![Build status](https://travis-ci.com/helpscout/seed-grid.svg?token=mizbXyxLU95YeKzixKT2&branch=master)](https://travis-ci.com/helpscout/seed-grid) [![npm version](https://badge.fury.io/js/seed-grid.svg)](https://badge.fury.io/js/seed-grid)
+Grid system pack for [Seed](https://github.com/helpscout/seed)!
+
+You can use this with *any* scss project you'd like! (Seed not required).
+
+Seed's grid system was inspired by [Bootstrap V4](https://github.com/twbs/bootstrap/tree/v4-dev).
+However, it has been enhanced and modified quite heavily to fit Seed's needs and code organizational structure.
 
 ## Install
 ```
@@ -12,12 +17,14 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var seedGrid = require('seed-grid')
+var seedGrid = require('seed-grid');
+var bourbon = require('bourbon').includePaths;
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass({
       includePaths: [
+        bourbon,
         seedGrid
       ]
     }))
@@ -34,7 +41,7 @@ Once that is setup, simply `@import` *seed-grid* as needed in your `.scss` file:
 
 ## Options
 
-The following variables can be found in `_config.scss`
+The following variables can be found in [`_config.scss`](https://github.com/helpscout/seed-grid/blob/master/scss/pack/_config.scss)
 
 ```sass
 // Namespace
