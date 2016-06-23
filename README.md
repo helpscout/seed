@@ -18,7 +18,7 @@ npm install seed-grid --save-dev
 ### CSS
 Add the [seed-grid.css](https://github.com/helpscout/seed-grid/blob/master/dist/seed-grid.css) or [seed-grid.min.css](https://github.com/helpscout/seed-grid/blob/master/dist/seed-grid.min.css) to your project, and import it like so:
 
-```
+```html
 <link rel="stylesheet" href="/css/seed-grid.css">
 ```
 
