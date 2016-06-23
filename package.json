@@ -1,0 +1,27 @@
+{
+  "name": "seed-breakpoints",
+  "version": "0.0.1",
+  "description": "Breakpoints mixin pack for Seed",
+  "main": "index.js",
+  "homepage": "https://github.com/helpscout/seed-breakpoints",
+  "scripts": {
+    "test": "node ./scripts/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-breakpoints.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-breakpoints/issues"
+  },
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "devDependencies": {
+    "node-sass": "^3.8.0"
+  }
+}
