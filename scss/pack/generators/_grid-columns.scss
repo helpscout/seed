@@ -1,0 +1,55 @@
+// Generators :: Grid
+
+@mixin generate-grid-columns($columns: $seed-grid-columns, $gutter: $seed-grid-gutter, $breakpoints: $seed-breakpoints) {
+  $breakpoint-counter: 0;
+  @each $breakpoint in map-keys($breakpoints) {
+    $breakpoint-counter: ($breakpoint-counter + 1);
+    $_class: $seed-grid-namespace-col;
+    $_col-class: $_class;
+    $_col-offset-class: $_class;
+
+    @for $i from 1 through $columns {
+      @if $breakpoint == xs {
+        $_col-class: #{$_class}-#{$i};
+      }
+      @else {
+        $_col-class: #{$_class}-#{$i}--at-#{$breakpoint};
+      }
+
+      .#{$_col-class} {
+        @extend .#{$_class};
+      }
+    }
+
+    @include breakpoint-up($breakpoint, $breakpoints) {
+      @for $i from 1 through $columns {
+
+        @if $breakpoint == xs {
+          $_col-class: #{$_class}-#{$i};
+        }
+        @else {
+          $_col-class: #{$_class}-#{$i}--at-#{$breakpoint};
+        }
+
+        .#{$_col-class} {
+          width: percentage($i / $columns);
+        }
+      }
+      // `$columns - 1` because offsetting by the width of an entire row isn't possible
+      @for $i from 0 through ($columns - 1) {
+        @if $breakpoint == xs {
+          $_col-offset-class: #{$_class}-offset-#{$i};
+        }
+        @else {
+          $_col-offset-class: #{$_class}-offset-#{$i}--at-#{$breakpoint};
+        }
+
+        @if $breakpoint-counter != 1 or $i != 0 {
+          .#{$_col-offset-class} {
+            @include col-calculate-offset(offset, $i, $columns)
+          }
+        }
+      }
+    }
+  }
+}

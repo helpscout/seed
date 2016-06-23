@@ -1,0 +1,8 @@
+// Objects :: Row Flex
+
+.#{$seed-grid-namespace-row-flex} {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  margin-left: -($seed-grid-gutter-offset);
+  margin-right: -($seed-grid-gutter-offset);
+}

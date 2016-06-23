@@ -1,0 +1,15 @@
+// Functions :: Container
+
+// Dependencies
+@import "../config";
+
+@function container($size: none) {
+  @if map-has-key($seed-container-widths, $size) {
+    $container: map-get($seed-container-widths, $size);
+    @return $container;
+  }
+
+  @else {
+    @warn "No container size of \"#{$size}\" found. ";
+  }
+};

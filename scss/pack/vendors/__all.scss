@@ -1,0 +1,9 @@
+// Vendors :: All
+
+@if mixin-exists(display) {
+  // Bourbon should be loaded
+}
+@else {
+  // Import Bourbon (node-bourbon)
+  @import "bourbon";
+}

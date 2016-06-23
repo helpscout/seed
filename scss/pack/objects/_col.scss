@@ -1,0 +1,11 @@
+// Objects :: Col
+
+.#{$seed-grid-namespace-col} {
+  min-height: 1px;
+  padding-left: $seed-grid-gutter-offset;
+  padding-right: $seed-grid-gutter-offset;
+  position: relative;
+  width: 100%;
+}
+
+@include generate-grid-columns;
