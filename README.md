@@ -82,3 +82,7 @@ $seed-grid-gutter-offset: ceil($seed-grid-gutter / 2) !default; // 15px
 ## Examples
 
 (Coming soon!)
+
+## Dependencies
+
+* [Bourbon](https://github.com/thoughtbot/bourbon)

@@ -26,7 +26,9 @@
     "node": ">=0.10.1"
   },
   "devDependencies": {
-    "bourbon": "^4.2.7",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.7"
   }
 }
