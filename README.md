@@ -25,19 +25,16 @@ Add the [seed-grid.css](https://github.com/helpscout/seed-grid/blob/master/dist/
 ### SCSS
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
+
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var seedGrid = require('seed-grid');
-var bourbon = require('bourbon').includePaths;
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass({
-      includePaths: [
-        bourbon,
-        seedGrid
-      ]
+      includePaths: seedGrid
     }))
     .pipe(gulp.dest('./css'));
 });
@@ -48,6 +45,30 @@ Once that is setup, simply `@import` *seed-grid* as needed in your `.scss` file:
 ```sass
 // Packs
 @import "pack/seed-grid";
+```
+
+**Note:** Because seed-grid has dependencies, it's includePaths output will be n `array`. If you're including other paths in addition to seed-grid, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
+
+Example with *sass-pathfinder*:
+
+```javascript
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var seedGrid = require('seed-grid');
+var bourbon = require('bourbon').includePaths;
+var pathfinder = require('sass-pathfinder');
+
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass({
+      includePaths: pathfinder(
+        './scss/vendor/example',
+        bourbon,
+        seedGrid
+      )
+    }))
+    .pipe(gulp.dest('./css'));
+});
 ```
 
 ## Options
@@ -95,3 +116,4 @@ $seed-grid-gutter-offset: ceil($seed-grid-gutter / 2) !default; // 15px
 ## Dependencies
 
 * [Bourbon](https://github.com/thoughtbot/bourbon)
+* [Seed Breakpoints](https://github.com/helpscout/seed-breakpoints)
