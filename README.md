@@ -41,7 +41,7 @@ Once that is setup, simply `@import` *seed-grid* as needed in your `.scss` file:
 
 ## Options
 
-The following variables can be found in `_config.scss`
+The following variables can be found in [`_config.scss`](https://github.com/helpscout/seed-grid/blob/master/scss/pack/_config.scss)
 
 ```sass
 // Namespace
