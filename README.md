@@ -8,6 +8,11 @@ You can use this with *any* scss project you'd like! (Seed not required).
 Seed's grid system was inspired by [Bootstrap V4](https://github.com/twbs/bootstrap/tree/v4-dev).
 However, it has been enhanced and modified quite heavily to fit Seed's needs and code organizational structure.
 
+## Dependencies
+
+* [Bourbon](https://github.com/thoughtbot/bourbon)
+* [Seed Breakpoints](https://github.com/helpscout/seed-breakpoints)
+
 ## Install
 ```
 npm install seed-grid --save-dev
@@ -115,8 +120,3 @@ $seed-breakpoints: (
 ## Examples
 
 (Coming soon!)
-
-## Dependencies
-
-* [Bourbon](https://github.com/thoughtbot/bourbon)
-* [Seed Breakpoints](https://github.com/helpscout/seed-breakpoints)
