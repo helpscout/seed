@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "bourbon": "^4.2.7",
-    "seed-breakpoints": "0.0.1"
+    "seed-breakpoints": "0.0.2"
   }
 }
