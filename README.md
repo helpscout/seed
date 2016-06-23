@@ -25,19 +25,16 @@ Add the [seed-grid.css](https://github.com/helpscout/seed-grid/blob/master/dist/
 ### SCSS
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
+
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var seedGrid = require('seed-grid');
-var bourbon = require('bourbon').includePaths;
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass({
-      includePaths: [
-        bourbon,
-        seedGrid
-      ]
+      includePaths: seedGrid
     }))
     .pipe(gulp.dest('./css'));
 });
@@ -50,6 +47,30 @@ Once that is setup, simply `@import` *seed-grid* as needed in your `.scss` file:
 @import "pack/seed-grid";
 ```
 
+**Note:** Because seed-grid has dependencies, it's includePaths output will be n `array`. If you're including other paths in addition to seed-grid, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
+
+Example with *sass-pathfinder*:
+
+```javascript
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var seedGrid = require('seed-grid');
+var bourbon = require('bourbon').includePaths;
+var pathfinder = require('sass-pathfinder');
+
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass({
+      includePaths: pathfinder(
+        './scss/vendor/example',
+        bourbon,
+        seedGrid
+      )
+    }))
+    .pipe(gulp.dest('./css'));
+});
+```
+
 ## Options
 
 The following variables can be found in [`_config.scss`](https://github.com/helpscout/seed-grid/blob/master/scss/pack/_config.scss)
@@ -60,16 +81,6 @@ $seed-grid-namespace-col: "o-col" !default;
 $seed-grid-namespace-container: "o-container" !default;
 $seed-grid-namespace-row: "o-row" !default;
 $seed-grid-namespace-row-flex: "o-row-flex" !default;
-
-
-// Breakpoints
-$seed-breakpoints: (
-  xs: 0,
-  sm: 544px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
 
 
 // Container
@@ -85,7 +96,20 @@ $seed-container-widths: (
 $seed-grid-columns: 12 !default;
 $seed-grid-gutter: 30px !default;
 $seed-grid-gutter-offset: ceil($seed-grid-gutter / 2) !default; // 15px
+```
 
+### Breakpoint options
+Grid pack uses the [Breakpoints mixin pack](https://github.com/helpscout/seed-breakpoints). You can modify your grid breakpoints by adjusting the `$seed-breakpoints` variable:
+
+```sass
+// Breakpoints
+$seed-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
 ```
 
 ## Examples
@@ -95,3 +119,4 @@ $seed-grid-gutter-offset: ceil($seed-grid-gutter / 2) !default; // 15px
 ## Dependencies
 
 * [Bourbon](https://github.com/thoughtbot/bourbon)
+* [Seed Breakpoints](https://github.com/helpscout/seed-breakpoints)
