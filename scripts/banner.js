@@ -1,7 +1,7 @@
 // Seed Grid :: Banner
 
 var fs = require('fs');
-var pkg = require('./package.json');
+var pkg = require('../package.json');
 var config = require('./config.js');
 
 var banner = ['/**',
