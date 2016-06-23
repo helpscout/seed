@@ -7,16 +7,11 @@ branches:
     - master
 
 cache:
-  bundler: true
   directories:
     - node_modules
 
 before_install:
   - npm set progress=false
-  - echo -e "machine github.com\n  login ${GH_TOKEN}" >> ~/.netrc
-  - git config --global user.name "ItsJonQ"
-  - git config --global user.email "itsjonq@gmail.com"
-  - git config --global url.https://github.com/.insteadOf git://github.com/
 
 install:
   - npm install
