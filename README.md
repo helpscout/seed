@@ -1,6 +1,9 @@
 # seed-grid [![Build status](https://travis-ci.com/helpscout/seed-grid.svg?token=mizbXyxLU95YeKzixKT2&branch=master)](https://travis-ci.com/helpscout/seed-grid) [![npm version](https://badge.fury.io/js/seed-grid.svg)](https://badge.fury.io/js/seed-grid)
 Grid system package for [Seed](https://github.com/helpscout/seed)
 
+Seed's grid system was inspired by [Bootstrap V4](https://github.com/twbs/bootstrap/tree/v4-dev).
+However, it has been enhanced and modified quite heavily to fit Seed's needs and code organizational structure.
+
 ## Install
 ```
 npm install seed-grid --save-dev
@@ -12,12 +15,14 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var seedGrid = require('seed-grid')
+var seedGrid = require('seed-grid');
+var bourbon = require('bourbon').includePaths;
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass({
       includePaths: [
+        bourbon,
         seedGrid
       ]
     }))
