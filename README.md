@@ -32,7 +32,7 @@ Once that is setup, simply `@import` *seed-grid* as needed in your `.scss` file:
 @import "pack/seed-grid";
 ```
 
-## Configurables
+## Options
 
 The following variables can be found in `_config.scss`
 
