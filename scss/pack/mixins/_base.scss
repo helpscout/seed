@@ -1,0 +1,11 @@
+// Mixins :: Breakpoint :: Base
+
+// Available breakpoint sizes
+// xs, sm, md, lg, xl
+@mixin breakpoint($name, $breakpoints: $seed-breakpoints) {
+  @if map-has-key($breakpoints, $name) {
+    @media (min-width: #{map-get($breakpoints, $name)}) {
+      @content;
+    }
+  }
+}

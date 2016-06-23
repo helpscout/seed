@@ -1,0 +1,7 @@
+// Functions :: Breakpoint Max
+
+// Maximum breakpoint width. Null for the largest (last) breakpoint.
+@function breakpoint-max($name, $breakpoints: $seed-breakpoints) {
+  $next: breakpoint-up($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+}
