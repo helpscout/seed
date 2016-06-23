@@ -1,0 +1,17 @@
+{
+  "name": "seed-grid",
+  "description": "Grid system package for Seed",
+  "main": "index.js",
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/helpscout/seed-grid",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
