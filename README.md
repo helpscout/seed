@@ -1,6 +1,8 @@
 # seed-breakpoints [![Build Status](https://travis-ci.org/helpscout/seed-breakpoints.svg?branch=master)](https://travis-ci.org/helpscout/seed-breakpoints) [![npm version](https://badge.fury.io/js/seed-breakpoints.svg)](https://badge.fury.io/js/seed-breakpoints)
 Breakpoints (media query) mixin pack for [Seed](https://github.com/helpscout/seed)!
 
+Breakpoints was inspired by the mixins in [Bootstrap V4](https://github.com/twbs/bootstrap/tree/v4-dev). However, it has been enhanced and modified to fit Seed's needs and code organizational structure.
+
 ## Install
 ```
 npm install seed-breakpoints --save-dev
