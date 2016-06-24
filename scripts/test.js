@@ -10,8 +10,8 @@ sass.render({
   includePaths: [ bourbon, seedBreakpoints ]
 }, function(error, result) {
   if (error) {
-    process.exit(1);
-    return console.error(error);
+    console.error(error);
+    return process.exit(1);
   }
   else {
     return console.log('Success!');
