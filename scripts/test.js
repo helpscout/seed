@@ -1,4 +1,4 @@
-// Seed Grid :: Test
+// Seed Breakpoints :: Test
 'use strict';
 
 var sass = require('node-sass');
