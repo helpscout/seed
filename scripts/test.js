@@ -2,12 +2,11 @@
 'use strict';
 
 var sass = require('node-sass');
-var bourbon = require('bourbon').includePaths;
 var seedBreakpoints = require('seed-breakpoints');
 
 sass.render({
   file: './scss/pack/_seed-grid.scss',
-  includePaths: [ bourbon, seedBreakpoints ]
+  includePaths: [ seedBreakpoints ]
 }, function(error, result) {
   if (error) {
     console.error(error);
