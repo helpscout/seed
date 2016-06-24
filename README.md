@@ -8,6 +8,11 @@ You can use this with *any* project you'd like! (Seed not required).
 Seed's grid system was inspired by [Bootstrap V4](https://github.com/twbs/bootstrap/tree/v4-dev).
 However, it has been enhanced and modified quite heavily to fit Seed's needs and code organizational structure.
 
+## Examples
+
+Coming soon! We have a bit of documentation / examples in our [grid system styleguide](http://style.helpscout.com/framework/objects/grid/).
+
+
 ## Dependencies
 
 * [Bourbon](https://github.com/thoughtbot/bourbon)
@@ -116,7 +121,3 @@ $seed-breakpoints: (
   xl: 1200px
 ) !default;
 ```
-
-## Examples
-
-(Coming soon!)
