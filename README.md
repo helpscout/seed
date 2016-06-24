@@ -15,7 +15,6 @@ Coming soon! We have a bit of documentation / examples in our [grid system style
 
 ## Dependencies
 
-* [Bourbon](https://github.com/thoughtbot/bourbon)
 * [Seed Breakpoints](https://github.com/helpscout/seed-breakpoints)
 
 ## Install
@@ -65,7 +64,6 @@ Example with *sass-pathfinder*:
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var seedGrid = require('seed-grid');
-var bourbon = require('bourbon').includePaths;
 var pathfinder = require('sass-pathfinder');
 
 gulp.task('sass', function () {
@@ -73,7 +71,7 @@ gulp.task('sass', function () {
     .pipe(sass({
       includePaths: pathfinder(
         './scss/vendor/example',
-        bourbon,
+        './scss/plugins/super-awesome-plugin',
         seedGrid
       )
     }))

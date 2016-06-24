@@ -1,9 +1,14 @@
 // Objects :: Row
 
 .#{$seed-grid-namespace-row} {
-  @include clearfix();
   margin-left: -($seed-grid-gutter-offset);
   margin-right: -($seed-grid-gutter-offset);
+
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
 
   > [class*="#{$seed-grid-namespace-col}"] {
     float: left;
