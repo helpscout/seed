@@ -1,7 +1,7 @@
 {
   "name": "seed-cli",
   "version": "0.0.1",
-  "description": "CLI to create Seed packs!",
+  "description": "Seed CLI: Create awesome packs for Seed CSS!",
   "main": "index.js",
   "bin": {
     "seed": "index.js"

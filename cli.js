@@ -1,6 +1,6 @@
 // Seed CLI :: CLI
 
-const meow = require('meow');
+var meow = require('meow');
 
 var cli = meow(`
   Usage:
