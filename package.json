@@ -1,0 +1,19 @@
+{
+  "name": "seed-cli",
+  "version": "0.0.1",
+  "description": "CLI to create Seed packs!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-cli/issues"
+  },
+  "homepage": "https://github.com/helpscout/seed-cli#readme"
+}
