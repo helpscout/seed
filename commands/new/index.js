@@ -8,6 +8,7 @@ var mkdirp = require('mkdirp');
 var cli = global.cli;
 var templateDir = global.templateDir;
 
+var git = require('./git');
 var prompt = require('./prompt');
 
 if (global.input === 'init' || global.input === 'new') {
@@ -37,6 +38,8 @@ if (global.input === 'init' || global.input === 'new') {
     fs.writeFileSync(dest + '/scss/pack/_' + data.name + '.scss', _.template(scss)(data));
     fs.writeFileSync(dest + '/README.md', _.template(readme)(data));
     fs.writeFileSync(dest + '/LICENSE', _.template(license)(data));
+
+    git(dest);
 
     console.log('Congrats! Your Seed pack has been created. You can find it at ' + data.name);
     process.exit(0)
