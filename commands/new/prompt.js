@@ -26,29 +26,29 @@ var questions = [
     default: 'component',
     choices: [
       {
-       key: 'c',
-       name: 'Component',
-       value: 'component'
+        key: 'c',
+        name: 'Component',
+        value: 'component'
       },
       {
-       key: 'm',
-       name: 'Mixin',
-       value: 'mixin'
+        key: 'm',
+        name: 'Mixin',
+        value: 'mixin'
       },
       {
-       key: 'o',
-       name: 'Object',
-       value: 'object'
+        key: 'o',
+        name: 'Object',
+        value: 'object'
       },
       {
-       key: 'u',
-       name: 'Utility',
-       value: 'utility'
+        key: 'u',
+        name: 'Utility',
+        value: 'utility'
       },
       {
-       key: 'z',
-       name: 'Other',
-       value: 'other'
+        key: 'z',
+        name: 'Other',
+        value: 'other'
       }
     ]
   },

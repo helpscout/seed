@@ -1,21 +1,24 @@
 // Seed CLI :: CLI
 
 var meow = require('meow');
+var pkg = require('./package');
 
 var cli = meow(`
   Usage:
-    seed -n <name of pack>
+    seed <command>
 
-  Options:
-    -n, --new Create a new Seed pack
+  Commands:
+    init      Creates a new Seed package
 
-  Example:
-    seed --new=color
+  Aliases:
+    new       alias of init
 
-    This will generate a new directory for you, in this case, seed-color.
+  ${pkg.name} v${pkg.version}
+  License: ${pkg.license}
+  Website: ${pkg.homepage}
 `, {
   alias: {
-    n: 'new'
+    i: 'init'
   }
 });
 
