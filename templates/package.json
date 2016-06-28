@@ -1,0 +1,7 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "scripts": {},
+  "license": "<%= license %>"
+}

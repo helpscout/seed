@@ -2,14 +2,15 @@
 'use strict';
 
 global.cli = require('./cli.js');
+global.templateDir = __dirname + '/templates/';
+global.input = global.cli.input[0];
+
 var requireDir = require('require-dir', { log: false });
-var isBlank = require('is-blank');
-var inputFile = global.cli.input[0];
 
 // Require all commands
 requireDir('./commands', { recurse: true });
 
-if (isBlank(inputFile)) {
-  console.log(global.cli.help);
-  process.exit(1);
-}
+// if (isBlank(global.input)) {
+  // console.log(global.cli.help);
+  // process.exit(1);
+// }

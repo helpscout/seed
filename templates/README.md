@@ -1,0 +1,5 @@
+# <%= name %>
+<%= description %>
+
+## License
+MIT
