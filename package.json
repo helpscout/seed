@@ -1,7 +1,7 @@
 {
   "name": "seed-cli",
   "version": "0.0.1",
-  "description": "Seed CLI: Create awesome packs for Seed CSS!",
+  "description": "Create awesome packs for Seed CSS!",
   "main": "index.js",
   "bin": {
     "seed": "index.js"
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/helpscout/seed-cli/issues"
   },
-  "homepage": "https://github.com/helpscout/seed-cli#readme",
+  "homepage": "https://github.com/helpscout/seed-cli",
   "dependencies": {
     "authors-to-markdown": "^0.1.0",
     "chalk": "^1.1.3",
