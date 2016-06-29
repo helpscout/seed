@@ -3,6 +3,7 @@
 
 var _ = require('lodash');
 var fs = require('fs');
+var isEmpty = require('is-empty');
 var mkdirp = require('mkdirp');
 
 var cli = global.cli;
@@ -10,8 +11,9 @@ var templateDir = global.templateDir;
 
 var git = require('./git');
 var prompt = require('./prompt');
+var input = global.cli.input[0];
 
-if (global.input === 'init' || global.input === 'new') {
+if (((input === 'init' || input === 'new') && isEmpty(global.cli.flags)) || global.cli.flags.new) {
   console.log('Creating a new Seed pack…')
 
   prompt()

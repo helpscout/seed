@@ -8,7 +8,11 @@ var cli = meow(`
     seed <command>
 
   Commands:
-    init      Creates a new Seed package
+    init            Creates a new Seed package
+
+  Options:
+    -t, --test      Initialize .scss lint (powered by scss-lint)
+    -c, --config    Custom scss-lint config (.yml)
 
   Aliases:
     new       alias of init
@@ -18,7 +22,9 @@ var cli = meow(`
   Website: ${pkg.homepage}
 `, {
   alias: {
-    i: 'init'
+    c: 'config',
+    n: 'new',
+    t: 'test'
   }
 });
 

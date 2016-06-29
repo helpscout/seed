@@ -33,6 +33,7 @@
     "meow": "^3.7.0",
     "mkdirp": "^0.5.1",
     "require-dir": "^0.3.0",
+    "sass-lint": "^1.8.2",
     "shelljs": "^0.7.0",
     "single-trailing-newline": "^1.0.0"
   },
