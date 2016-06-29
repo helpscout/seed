@@ -1,4 +1,4 @@
-# seed-cli
+# seed-cli [![npm version](https://badge.fury.io/js/seed-cli.svg)](https://badge.fury.io/js/seed-cli)
 CLI to create Seed packs!
 
 Many thanks to [tachyons](https://github.com/tachyons-css/tachyons-cli) for their inspiration!
