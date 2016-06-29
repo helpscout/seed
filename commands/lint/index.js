@@ -8,8 +8,6 @@ if (!global.cli.flags.lint) {
 var chalk = require('chalk');
 var sassLint = require('sass-lint');
 
-require('shelljs/global');
-
 // Defaults
 var directory = '**/*.scss';
 var config = global.path + '/.sass-lint.yml';
