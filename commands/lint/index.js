@@ -5,11 +5,15 @@ if (!global.cli.flags.lint) {
   return false;
 }
 
+var chalk = require('chalk');
+var sassLint = require('sass-lint');
+
 require('shelljs/global');
 
 // Defaults
-var directory = 'scss/';
-var config = global.path + '/.scss-lint.yml';
+var directory = '**/*.scss';
+var config = global.path + '/.sass-lint.yml';
+var options = { files: {} };
 
 if (global.cli.flags.lint && global.cli.flags.lint !== true) {
   directory = global.cli.flags.lint;
@@ -19,39 +23,21 @@ if (global.cli.flags.config && global.cli.flags.config !== true) {
   config = global.cli.flags.config;
 }
 
-var parse = function(data) {
-  return data.toString().replace(/\n\s*\n/g,'');
-};
+if (global.cli.flags.ignore && global.cli.flags.ignore !== true) {
+  var ignores = global.cli.flags.ignore;
+  ignores = ignores.replace(/ /g, '').split(',');
 
-var commandOptions = {
-  env: process.env,
-  cwd: process.cwd(),
-  maxBuffer: 300 * 1024
-};
+  options.files.ignore = ignores;
+}
 
-var lint = function() {
-  console.log('Testing your .scss files…');
-  return new Promise(function(resolve, reject) {
-    var _command = 'scss-lint ' + directory + ' -c ' + config;
-    exec(_command, commandOptions, function(error, report) {
-      if (report) {
-        return reject(report);
-      }
-      // Check for important error codes
-      if(error && error.code !== 1 && error.code !== 2 && error.code !== 65) {
-        return reject(report);
-      }
-      return resolve(report);
-    });
-  });
-};
+var results = sassLint.lintFiles(directory, options, config);
 
-lint()
-  .then(function(report) {
-    console.log('Passed! Your .scss looks spectacular');
-  })
-  .catch(function(report) {
-    console.log('Failed! There were errors in your .scss');
-    console.log(parse(report));
-    process.exit(1);
-  });
+if(sassLint.resultCount(results) > 0) {
+  console.log(chalk.red('Failed: We found some issues with your .scss files'));
+  sassLint.outputResults(results, options, config);
+  process.exit(1);
+}
+else {
+  console.log(chalk.green('Passed: Your .scss files look spectacular!'));
+  process.exit(0);
+}
