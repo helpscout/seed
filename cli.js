@@ -11,7 +11,7 @@ var cli = meow(`
     init            Creates a new Seed package
 
   Options:
-    -t, --test      Initialize .scss lint (powered by scss-lint)
+    -l, --lint      Initialize .scss lint (powered by sass-lint)
     -c, --config    Custom scss-lint config (.yml)
 
   Aliases:
@@ -24,7 +24,7 @@ var cli = meow(`
   alias: {
     c: 'config',
     n: 'new',
-    t: 'test'
+    l: 'lint'
   }
 });
 

@@ -1,7 +1,7 @@
-// Test :: Index
+// Commands :: Lint
 'use strict';
 
-if (!global.cli.flags.test) {
+if (!global.cli.flags.lint) {
   return false;
 }
 
@@ -11,8 +11,8 @@ require('shelljs/global');
 var directory = 'scss/';
 var config = global.path + '/.scss-lint.yml';
 
-if (global.cli.flags.test && global.cli.flags.test !== true) {
-  directory = global.cli.flags.test;
+if (global.cli.flags.lint && global.cli.flags.lint !== true) {
+  directory = global.cli.flags.lint;
 }
 
 if (global.cli.flags.config && global.cli.flags.config !== true) {
