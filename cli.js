@@ -8,7 +8,7 @@ var cli = meow(`
     seed <command>
 
   Commands:
-    new            Creates a new Seed package
+    new             Creates a new Seed package
 
   Options:
     -c, --config    Custom scss-lint config (.yml)
@@ -16,7 +16,7 @@ var cli = meow(`
     -l, --lint      Initialize .scss lint (powered by sass-lint)
 
   Aliases:
-    init       alias of new
+    init            alias of new
 
   ${pkg.name} v${pkg.version}
   License: ${pkg.license}
