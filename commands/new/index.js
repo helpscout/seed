@@ -2,6 +2,7 @@
 'use strict';
 
 var _ = require('lodash');
+var chalk = require('chalk');
 var fs = require('fs');
 var isEmpty = require('is-empty');
 var mkdirp = require('mkdirp');
@@ -13,49 +14,32 @@ var git = require('./git');
 var prompt = require('./prompt');
 var command = global.cli.input[0];
 
+var generate = require('./generate');
+
 if (((command === 'new' || command === 'n') && isEmpty(global.cli.flags)) || global.cli.flags.new) {
-  console.log('Creating a new Seed pack…')
 
   prompt()
-  .then(function(data) {
+  .then(function(options) {
+    console.log('Generating your new Seed pack…\n')
 
-    var dest = data.name;
+    options.packName = 'seed-' + options.name;
+
+    var dest = 'seed-' + options.name;
 
     mkdirp.sync(dest);
+    mkdirp.sync(dest + '/scripts');
     mkdirp.sync(dest + '/scss/pack');
 
-    var gitignore = fs.readFileSync(templateDir + 'gitignore', 'utf8');
-    var sassLint = fs.readFileSync(templateDir + 'sass-lint.yml', 'utf8');
-    var index = fs.readFileSync(templateDir + 'index.js', 'utf8');
-    var pkg = fs.readFileSync(templateDir + 'package.json', 'utf8');
-    var config = fs.readFileSync(templateDir + 'scss/pack/_config.scss', 'utf8');
-    var scss = fs.readFileSync(templateDir + 'scss/pack/_seed-starter.scss', 'utf8');
-    var readme = fs.readFileSync(templateDir + 'README.md', 'utf8');
-    var license = fs.readFileSync(templateDir + 'LICENSE', 'utf8');
+    generate(dest, options);
 
-    fs.writeFileSync(dest + '/.gitignore', _.template(gitignore)(data));
-    fs.writeFileSync(dest + '/.sass-lint.yml', _.template(sassLint)(data));
-    fs.writeFileSync(dest + '/index.js', _.template(index)(data));
-    fs.writeFileSync(dest + '/package.json', _.template(pkg)(data));
-    fs.writeFileSync(dest + '/scss/pack/_config.scss', _.template(config)(data));
-    fs.writeFileSync(dest + '/scss/pack/_' + data.name + '.scss', _.template(scss)(data));
-    fs.writeFileSync(dest + '/README.md', _.template(readme)(data));
-    fs.writeFileSync(dest + '/LICENSE', _.template(license)(data));
-
+    console.log('\nInitializing Git…');
     git(dest);
+    console.log('Git has been setup!');
 
-    console.log('Generating your new Seed pack…');
-    console.log(`
-      created  ${ dest }/.gitignore
-      created  ${ dest }/package.json
-      created  ${ dest }/.sass-lint.yml
-      created  ${ dest }/index.js
-      created  ${ dest }/README.md
-      created  ${ dest }/LICENSE
-      created  ${ dest }/scss/pack/_config.scss
-      created  ${ dest }/scss/pack/_${ data.name }.scss
-    `);
-    console.log('Congrats! Your Seed pack has been created. You can find it at ' + data.name);
+    console.log(`\nCongrats! Your new Seed pack has been created.\n`);
+    console.log(chalk.yellow('Don\'t forget to run npm install'));
+    console.log(chalk.green('Happy coding <3'));
+
     process.exit(0)
   });
 }
