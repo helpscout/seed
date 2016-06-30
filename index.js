@@ -4,7 +4,7 @@ var path = require('path');
 
 global.cli = require('./bin/cli.js');
 global.command = global.cli.input[0];
-global.path = path.resolve('./');
+global.path = __dirname;
 global.templateDir = global.path + '/templates/';
 
 var isBlank = require('is-blank');
