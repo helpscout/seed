@@ -1,0 +1,16 @@
+{
+  "name": "<%= name %>",
+  "description": "<%= description %>",
+  "main": "index.js",
+  "authors": [
+  ],
+  "license": "<%= license %>",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test.js"
+  ],
+  "version": "<%= version %>"
+}

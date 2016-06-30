@@ -2,6 +2,27 @@
   "name": "<%= name %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
-  "scripts": {},
-  "license": "<%= license %>"
+  "main": "index.js",
+  "homepage": "",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run build:min && npm run banner",
+    "build:main": "node-sass scss/pack/_seed-<%= name %>.scss dist/seed-<%= name %>.css",
+    "build:min": "node-sass scss/pack/_seed-<%= name %>.scss dist/seed-<%= name %>.min.css --output-style compressed",
+    "test": "node ./scripts/test.js && npm run build",
+    "prepublish": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "authors": [
+  ],
+  "license": "<%= license %>",
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "devDependencies": {
+    "node-sass": "^3.8.0"
+  }
 }
