@@ -13,6 +13,7 @@ files:
     - 'node_modules/**/*'
     - 'vendors/**/*'
     - '*/vendors/**/*'
+
 options:
   formatter: stylish
   merge-default-rules: false

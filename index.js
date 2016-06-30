@@ -1,4 +1,4 @@
-// Seed CLI
+#!/usr/bin/env node
 'use strict';
 
 global.cli = require('./cli.js');
