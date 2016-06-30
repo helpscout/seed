@@ -20,7 +20,6 @@ if (((input === 'init' || input === 'new') && isEmpty(global.cli.flags)) || glob
   .then(function(data) {
 
     var dest = data.name;
-    dest = '_test/' + dest;
 
     mkdirp.sync(dest);
     mkdirp.sync(dest + '/scss/pack');
