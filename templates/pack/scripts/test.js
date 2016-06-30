@@ -3,7 +3,7 @@
 var sass = require('node-sass');
 
 sass.render({
-  file: './scss/pack/_seed-<%= name %>.scss'
+  file: './scss/pack/_<%= packName %>.scss'
 }, function(error, result) {
   if (error) {
     console.error(error);

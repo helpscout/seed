@@ -2,6 +2,7 @@
 'use strict';
 
 var _ = require('lodash');
+var chalk = require('chalk');
 var fs = require('fs');
 var isEmpty = require('is-empty');
 var mkdirp = require('mkdirp');
@@ -86,7 +87,7 @@ var generate = function(options) {
 
   mkdirp.sync(dest);
 
-  console.log(`Generating your new ${ options.type }…`);
+  console.log(`Generating your new ${ options.type }…\n`);
 
   var templateFiles = fs.readdirSync(templateDir);
   _.forEach(templateFiles, function(file) {
@@ -95,9 +96,7 @@ var generate = function(options) {
     console.log(`    created  ${ dest + '/' + file }`);
   });
 
-  console.log('');
-
-  console.log(`Congrats! Your new .scss ${ options.type } has been created.`);
+  console.log(`\nCongrats! Your new .scss ${ options.type } has been created.`);
   process.exit(0)
 };
 

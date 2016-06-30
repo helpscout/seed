@@ -1,5 +1,5 @@
 {
-  "name": "<%= name %>",
+  "name": "<%= packName %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
   "main": "index.js",
@@ -7,10 +7,9 @@
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run build:min && npm run banner",
-    "build:main": "node-sass scss/pack/_seed-<%= name %>.scss dist/seed-<%= name %>.css",
-    "build:min": "node-sass scss/pack/_seed-<%= name %>.scss dist/seed-<%= name %>.min.css --output-style compressed",
-    "test": "node ./scripts/test.js && npm run build",
-    "prepublish": "npm run test"
+    "build:main": "node-sass scss/pack/_<%= packName %>.scss dist/<%= packName %>.css",
+    "build:min": "node-sass scss/pack/_<%= packName %>.scss dist/<%= packName %>.min.css --output-style compressed",
+    "test": "node ./scripts/test.js && npm run build"
   },
   "repository": {
     "type": "git",

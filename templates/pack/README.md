@@ -1,11 +1,11 @@
-# <%= name %>
+# <%= packName %>
 <%= description %>
 
 <%= type %> pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install <%= name %> --save-dev
+npm install <%= packName %> --save-dev
 ```
 
 
@@ -18,7 +18,7 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var pack = require('<%= name %>');
+var pack = require('<%= packName %>');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -28,11 +28,11 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'));
 });
 
-Once that is setup, simply `@import` *<%= name %>* as needed in your `.scss` file:
+Once that is setup, simply `@import` *<%= packName %>* as needed in your `.scss` file:
 
 ```sass
 // Packs
-@import "pack/<%= name %>";
+@import "pack/<%= packName %>";
 ```
 
 ## Options
@@ -40,7 +40,7 @@ Once that is setup, simply `@import` *<%= name %>* as needed in your `.scss` fil
 The following variables can be found in `_config.scss`
 
 ```sass
-<%= name %> config options
+<%= packName %> config options
 ```
 
 
