@@ -25,7 +25,8 @@ if (((input === 'init' || input === 'new') && isEmpty(global.cli.flags)) || glob
     mkdirp.sync(dest);
     mkdirp.sync(dest + '/scss/pack');
 
-    var gitignore = fs.readFileSync(templateDir + '.gitignore', 'utf8');
+    var gitignore = fs.readFileSync(templateDir + 'gitignore', 'utf8');
+    var sassLint = fs.readFileSync(templateDir + 'sass-lint.yml', 'utf8');
     var index = fs.readFileSync(templateDir + 'index.js', 'utf8');
     var pkg = fs.readFileSync(templateDir + 'package.json', 'utf8');
     var config = fs.readFileSync(templateDir + 'scss/pack/_config.scss', 'utf8');
@@ -34,6 +35,7 @@ if (((input === 'init' || input === 'new') && isEmpty(global.cli.flags)) || glob
     var license = fs.readFileSync(templateDir + 'LICENSE', 'utf8');
 
     fs.writeFileSync(dest + '/.gitignore', _.template(gitignore)(data));
+    fs.writeFileSync(dest + '/.sass-lint.yml', _.template(sassLint)(data));
     fs.writeFileSync(dest + '/index.js', _.template(index)(data));
     fs.writeFileSync(dest + '/package.json', _.template(pkg)(data));
     fs.writeFileSync(dest + '/scss/pack/_config.scss', _.template(config)(data));
