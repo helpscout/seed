@@ -13,7 +13,7 @@ var git = require('./git');
 var prompt = require('./prompt');
 var command = global.cli.input[0];
 
-if (((command === 'init' || command === 'new') && isEmpty(global.cli.flags)) || global.cli.flags.new) {
+if (((command === 'new' || command === 'n') && isEmpty(global.cli.flags)) || global.cli.flags.new) {
   console.log('Creating a new Seed pack…')
 
   prompt()
