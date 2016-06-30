@@ -23,7 +23,7 @@ Commands:
   g, generate     Creates a new .scss module (component/object/utility)
 
 Options:
-  -c, --config    Custom scss-lint config (.yml)
+  -c, --config    Custom sass-lint config (.yml)
   -i, --ignore    Ignore files for linting/testing
   -l, --lint      Initialize .scss lint (powered by sass-lint)
 ```
