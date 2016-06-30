@@ -38,6 +38,24 @@ var getPrefix = function(type) {
   return prefix;
 };
 
+var getType = function(type) {
+  if (!type || typeof type !== 'string') {
+    return false;
+  }
+
+  if (type === 'component' || type === 'c') {
+    type = 'component';
+  }
+  if (type === 'object' || type === 'o') {
+    type = 'object';
+  }
+  if (type === 'utility' || type === 'u') {
+    type = 'utility';
+  }
+
+  return type;
+};
+
 var parseOptions = function(options) {
   if (!options) {
     process.exit(1)
@@ -46,6 +64,7 @@ var parseOptions = function(options) {
 
   data = _.extend(data, options);
   data.prefix = getPrefix(data.type);
+  data.type = getType(data.type);
 
   // Normalize values
   for (var key in data) {
