@@ -1,0 +1,7 @@
+// <%= type %> :: <%= name %>
+
+// Scope
+.<%= prefix %>-<%= name %> {
+  @import "./variables";
+  @import "./base";
+}
