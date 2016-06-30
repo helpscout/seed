@@ -15,7 +15,7 @@ Usage:
   seed <command>
 
 Commands:
-  init            Creates a new Seed package
+  new             Creates a new Seed package
 
 Options:
   -c, --config    Custom scss-lint config (.yml)
@@ -23,5 +23,5 @@ Options:
   -l, --lint      Initialize .scss lint (powered by sass-lint)
 
 Aliases:
-  new       alias of init
+  init            alias of new
 ```
