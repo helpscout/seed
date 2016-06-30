@@ -13,10 +13,7 @@ var questions = [
     message: 'name:',
     default: 'starter',
     filter: function(val) {
-      var packName = val.replace('seed-', '');
-      packName = 'seed-' + packName;
-      packName = packName.toLowerCase();
-      return packName;
+      return val.replace('seed-', '').toLowerCase();
     }
   },
   {
