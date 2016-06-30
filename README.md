@@ -15,13 +15,11 @@ Usage:
   seed <command>
 
 Commands:
-  new             Creates a new Seed package
+  n, new          Creates a new Seed package
+  g, generate     Creates a new .scss module (component/object/utility)
 
 Options:
   -c, --config    Custom scss-lint config (.yml)
   -i, --ignore    Ignore files for linting/testing
   -l, --lint      Initialize .scss lint (powered by sass-lint)
-
-Aliases:
-  init            alias of new
 ```
