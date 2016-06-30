@@ -7,13 +7,13 @@ var isEmpty = require('is-empty');
 var mkdirp = require('mkdirp');
 
 var cli = global.cli;
-var templateDir = global.templateDir;
+var templateDir = global.templateDir + 'pack/';
 
 var git = require('./git');
 var prompt = require('./prompt');
-var input = global.cli.input[0];
+var command = global.cli.input[0];
 
-if (((input === 'init' || input === 'new') && isEmpty(global.cli.flags)) || global.cli.flags.new) {
+if (((command === 'new' || command === 'n') && isEmpty(global.cli.flags)) || global.cli.flags.new) {
   console.log('Creating a new Seed pack…')
 
   prompt()
@@ -44,6 +44,17 @@ if (((input === 'init' || input === 'new') && isEmpty(global.cli.flags)) || glob
 
     git(dest);
 
+    console.log('Generating your new Seed pack…');
+    console.log(`
+      created  ${ dest }/.gitignore
+      created  ${ dest }/package.json
+      created  ${ dest }/.sass-lint.yml
+      created  ${ dest }/index.js
+      created  ${ dest }/README.md
+      created  ${ dest }/LICENSE
+      created  ${ dest }/scss/pack/_config.scss
+      created  ${ dest }/scss/pack/_${ data.name }.scss
+    `);
     console.log('Congrats! Your Seed pack has been created. You can find it at ' + data.name);
     process.exit(0)
   });

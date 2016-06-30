@@ -2,9 +2,9 @@
   "name": "seed-cli",
   "version": "0.0.5",
   "description": "Create awesome packs for Seed CSS!",
-  "main": "index.js",
+  "main": "./bin/seed",
   "bin": {
-    "seed": "index.js"
+    "seed": "./bin/seed"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
