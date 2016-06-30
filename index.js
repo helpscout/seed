@@ -2,7 +2,7 @@
 'use strict';
 var path = require('path');
 
-global.cli = require('./cli.js');
+global.cli = require('./bin/cli.js');
 global.command = global.cli.input[0];
 global.path = path.resolve('./');
 global.templateDir = global.path + '/templates/';
@@ -16,5 +16,5 @@ if (isBlank(global.command) && isBlank(global.cli.flags)) {
 }
 else {
   // Require all commands
-  requireDir('../commands', { recurse: true });
+  requireDir('./commands', { recurse: true });
 }
