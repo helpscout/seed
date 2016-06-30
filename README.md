@@ -3,8 +3,6 @@ CLI for [Seed CSS](https://github.com/helpscout/seed)
 
 <img src="https://raw.githubusercontent.com/helpscout/seed-cli/master/seed-cli.png" width="200">
 
-Many thanks to [Ember CLI](https://github.com/ember-cli/ember-cli) and [tachyons](https://github.com/tachyons-css/tachyons-cli) for their inspiration!
-
 ## Install
 ```
 npm install seed-cli -g
@@ -29,3 +27,7 @@ Options:
   -i, --ignore    Ignore files for linting/testing
   -l, --lint      Initialize .scss lint (powered by sass-lint)
 ```
+
+## Thanks
+
+Many thanks to [Ember CLI](https://github.com/ember-cli/ember-cli) and [tachyons](https://github.com/tachyons-css/tachyons-cli) for their inspiration!
