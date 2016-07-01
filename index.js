@@ -2,6 +2,7 @@
 'use strict';
 var path = require('path');
 
+global.appRoot = path.resolve(__dirname);
 global.cli = require('./bin/cli.js');
 global.command = global.cli.input[0];
 global.path = __dirname;
