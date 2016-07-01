@@ -9,17 +9,27 @@ var name = cli.input[2];
 var generate = require('./generate');
 var help = require('./help');
 
+var prompt = require('./prompt');
+
 if (command === 'generate' || command === 'g') {
   if (type && name) {
     var options = {
       name: name,
-      type: type
+      type: type,
+      components: false,
+      objects: false,
+      modifers: false,
+      states: false,
+      variables: false
     };
 
     return generate(options);
   }
   else {
-    console.log(help);
+    prompt()
+    .then(function(options) {
+      return generate(options);
+    });
   }
 }
 else {

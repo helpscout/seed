@@ -29,7 +29,10 @@ config.prototype.initialize = function(options) {
 config.prototype.parseOptions = function() {
   // Normalize values
   for (var key in this.options) {
-    this.options[key] = this.options[key].replace(/ /g, '').toLowerCase();
+    var option = this.options[key];
+    if (option && typeof option === 'string') {
+      this.options[key] = option.replace(/ /g, '').toLowerCase();
+    }
   }
   return this.options;
 };

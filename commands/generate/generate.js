@@ -11,7 +11,7 @@ var cli = global.cli;
 var config = require('./config');
 var templateDir = global.templateDir + 'module/';
 
-// var prompt = require('./prompt');
+var prompt = require('./prompt');
 
 var generate = function(options) {
   if (!options) {
