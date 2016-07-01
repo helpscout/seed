@@ -27,6 +27,7 @@ gulp.task('sass', function () {
     }))
     .pipe(gulp.dest('./css'));
 });
+```
 
 Once that is setup, simply `@import` *<%= packName %>* as needed in your `.scss` file:
 
