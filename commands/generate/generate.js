@@ -8,72 +8,10 @@ var isEmpty = require('is-empty');
 var mkdirp = require('mkdirp');
 
 var cli = global.cli;
+var config = require('./config');
 var templateDir = global.templateDir + 'module/';
 
 // var prompt = require('./prompt');
-
-// Default options
-var data = {
-  name: null,
-  prefix: null,
-  type: null
-};
-
-var getPrefix = function(type) {
-  if (!type || typeof type !== 'string') {
-    return false;
-  }
-
-  var prefix = false;
-
-  if (type === 'component' || type === 'c') {
-    prefix = 'c';
-  }
-  if (type === 'object' || type === 'o') {
-    prefix = 'o';
-  }
-  if (type === 'utility' || type === 'u') {
-    prefix = 'u';
-  }
-
-  return prefix;
-};
-
-var getType = function(type) {
-  if (!type || typeof type !== 'string') {
-    return false;
-  }
-
-  if (type === 'component' || type === 'c') {
-    type = 'component';
-  }
-  if (type === 'object' || type === 'o') {
-    type = 'object';
-  }
-  if (type === 'utility' || type === 'u') {
-    type = 'utility';
-  }
-
-  return type;
-};
-
-var parseOptions = function(options) {
-  if (!options) {
-    process.exit(1)
-    return false;
-  }
-
-  data = _.extend(data, options);
-  data.prefix = getPrefix(data.type);
-  data.type = getType(data.type);
-
-  // Normalize values
-  for (var key in data) {
-    data[key] = data[key].replace(/ /g, '').toLowerCase();
-  }
-
-  return data;
-};
 
 var generate = function(options) {
   if (!options) {
@@ -81,7 +19,7 @@ var generate = function(options) {
     return false;
   }
 
-  options = parseOptions(options);
+  options = new config(options).options;
 
   var dest = options.name;
 

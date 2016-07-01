@@ -9,6 +9,7 @@ var help = `
   Type:
     c, component
     o, object
+    s, scope
     u, utility
 
   Name:
