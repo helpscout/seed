@@ -1,4 +1,9 @@
 var path = require('path');
-var includePath = path.join(__dirname, 'scss');
+var seedBreakpoints = require('seed-breakpoints');
+
+var includePath = [
+  seedBreakpoints,
+  path.join(__dirname, 'scss')
+];
 
 module.exports = includePath;

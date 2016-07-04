@@ -7,15 +7,17 @@
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run build:min && npm run banner",
-    "build:main": "node-sass scss/pack/_seed-floats.scss dist/seed-floats.css",
-    "build:min": "node-sass scss/pack/_seed-floats.scss dist/seed-floats.min.css --output-style compressed",
-    "test": "node ./scripts/test.js && npm run build"
+    "build:main": "node-sass --include-path node_modules/seed-breakpoints/scss scss/pack/_seed-floats.scss dist/seed-floats.css",
+    "build:min": "node-sass --include-path node_modules/seed-breakpoints/scss scss/pack/_seed-floats.scss dist/seed-floats.min.css --output-style compressed",
+    "test": "node ./scripts/test.js && npm run build",
+    "prepublish": "npm run test"
   },
   "repository": {
     "type": "git",
     "url": ""
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
   "engines": {
@@ -23,5 +25,8 @@
   },
   "devDependencies": {
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "seed-breakpoints": "0.0.2"
   }
 }

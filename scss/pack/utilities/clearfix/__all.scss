@@ -1,0 +1,10 @@
+// Utility :: Clearfix
+// Source: http://cssmojo.com/latest_new_clearfix_so_far/
+
+.#{$seed-floats-clearfix-namespace} {
+  &::after {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+}
