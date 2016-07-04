@@ -75,3 +75,5 @@ $seed-width-enable-fluid: true !default;
 $seed-width-enable-min: true !default;
 $seed-width-enable-max: true !default;
 ```
+
+**Note:** If you use `seed-width` with [`seed-grid`](https://github.com/helpscout/seed-grid), the grid configurations (above) will utilize `$seed-grid-columns` and `$seed-container-widths` instead. This ensures that the width system pairs nicely with the grid system.
