@@ -3,14 +3,14 @@
 // Generates the range of width utility classes
 // Example:
 // .u-width-5
-@mixin generate-width($modifier: false) {
-  $_columns: ceil($HS-grid-columns * 2);
+@mixin generate-width-size($modifier: false) {
+  $_columns: $seed-width-columns;
 
   // Generate responsive widths for default .u-width only
   @if $modifier == false {
 
-    @each $breakpoint in map-keys($HS-breakpoints) {
-      @include breakpoint-up($breakpoint, $HS-breakpoints) {
+    @each $breakpoint in map-keys($seed-breakpoints) {
+      @include breakpoint-up($breakpoint, $seed-breakpoints) {
 
         @for $i from 1 through $_columns {
           @include generate-width-class($i, $modifier, $breakpoint);

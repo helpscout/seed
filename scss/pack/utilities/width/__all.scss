@@ -1,7 +1,17 @@
 // Utility :: Width
 
-// Scope
-.u-width {
-  @import "./variables";
-  @import "./base";
+[class*="#{$seed-width-namespace}-"] {
+  max-width: 100%;
+}
+
+@include generate-width-size();
+
+@if($seed-width-enable-fluid) {
+  @include generate-width-size(fluid);
+}
+@if($seed-width-enable-min) {
+  @include generate-width-size(min);
+}
+@if($seed-width-enable-max) {
+  @include generate-width-size(max);
 }

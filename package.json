@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Width utility pack for Seed",
   "main": "index.js",
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-width",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run build:min && npm run banner",
@@ -14,10 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-width.git"
   },
-  "authors": [],
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-width/issues"
+  },
   "engines": {
     "node": ">=0.10.1"
   },

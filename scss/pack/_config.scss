@@ -1,1 +1,22 @@
 // Width :: Config
+
+// Namespace
+$seed-width-namespace: "u-width" !default;
+
+// Grid
+$seed-width-container-max: 1140px !default;
+$seed-width-columns: 24 !default;
+
+// Inheriting configs from Seed Grid
+// https://github.com/helpscout/seed-grid
+@if function-exists(container) {
+  $seed-width-container-max: container(xl) !default;
+}
+@if variable-exists(seed-grid-columns) {
+  $seed-width-columns: ceil($seed-grid-columns * 2) !default;
+}
+
+// Settings
+$seed-width-enable-fluid: true !default;
+$seed-width-enable-min: true !default;
+$seed-width-enable-max: true !default;

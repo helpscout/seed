@@ -2,17 +2,18 @@
 
 // Generates a single width utility class
 @mixin generate-width-class($index: 1, $modifier: false, $breakpoint: xs) {
-  $_util-classname: u-width-#{$index};
-  $_columns: ceil($HS-grid-columns * 2);
-  $_width: ceil(($index / $_columns) * container(xl)) !important;
-
-  @if $modifier {
-    $_util-classname: u-width-#{$index}-#{$modifier};
-  }
+  $_class: $seed-width-namespace;
+  $_util-classname: #{$_class}-#{$index};
+  $_columns: $seed-width-columns;
+  $_width: ceil(($index / $_columns) * $seed-width-container-max) !important;
 
   // Fluid widths
   @if $modifier == "fluid" {
     $_width: percentage($index / $_columns) !important;
+  }
+
+  @if $modifier {
+    $_util-classname: #{$_util-classname}-#{$modifier};
   }
 
   @if $breakpoint != "xs" {
@@ -20,7 +21,6 @@
   }
 
   .#{$_util-classname} {
-
     @if $modifier == "max" {
       max-width: $_width;
     }
