@@ -6,9 +6,11 @@ var chalk = require('chalk');
 var fs = require('fs');
 var isEmpty = require('is-empty');
 var mkdirp = require('mkdirp');
+var path = require('path');
 
 var cli = global.cli;
 var config = require('./config');
+var currentDir = path.basename(process.cwd()).toLowerCase();
 var templateDir = global.templateDir + 'module/';
 
 var prompt = require('./prompt');
@@ -22,6 +24,18 @@ var generate = function(options) {
   options = new config(options).options;
 
   var dest = options.name;
+  console.log(currentDir);
+
+  if (options.type !== 'scope' && currentDir.indexOf(options.type) < 0) {
+    var type = options.type;
+    if (type === 'utility') {
+      type = 'utilities';
+    }
+    else {
+      type = `${ type }s`;
+    }
+    dest = `${ type }/${ dest }`;
+  }
 
   mkdirp.sync(dest);
 
