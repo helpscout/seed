@@ -17,12 +17,12 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var seedGrid = require('seed-width');
+var seedWidth = require('seed-width');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass({
-      includePaths: seedGrid
+      includePaths: seedWidth
     }))
     .pipe(gulp.dest('./css'));
 });
@@ -42,7 +42,7 @@ Example with *sass-pathfinder*:
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var seedGrid = require('seed-width');
+var seedWidth = require('seed-width');
 var pathfinder = require('sass-pathfinder');
 
 gulp.task('sass', function () {
@@ -51,7 +51,7 @@ gulp.task('sass', function () {
       includePaths: pathfinder(
         './scss/vendor/example',
         './scss/plugins/super-awesome-plugin',
-        seedGrid
+        seedWidth
       )
     }))
     .pipe(gulp.dest('./css'));
