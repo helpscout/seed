@@ -1,0 +1,16 @@
+// Functions :: Space
+
+// Dependencies
+@import "../config";
+
+@function spacing($size: 0) {
+  @if map-has-key($seed-spacing-sizes, $size) {
+    $space: map-get($seed-spacing-sizes, $size);
+    @return $space;
+  }
+
+  @else {
+    @warn "No space size of \"#{$size}\" found. "
+    + "Are you sure it's in `$seed-spacing-sizes?`";
+  }
+};
