@@ -1,3 +1,10 @@
 // Spacing pack for Seed
 
+// Config
 @import "./config";
+
+// Generators
+@import "./generators/_all";
+
+// Utilities
+@import "./utilities/_all";

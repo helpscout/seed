@@ -3,9 +3,10 @@
   "description": "Spacing utility pack for Seed",
   "main": "index.js",
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-spacing",
   "ignore": [
     "**/.*",
     "node_modules",

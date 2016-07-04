@@ -1,0 +1,32 @@
+// Generators :: Spacing :: Margin Auto
+
+// Generates the spacing auto utility classes
+// Example:
+// .u-mrg-lg-auto
+@mixin generate-spacing-auto($property: margin) {
+  @each $dir-prop, $dir-class in $seed-spacing-directions {
+
+    $_util-classname: #{$seed-spacing-margin-namespace}-#{$dir-class}-auto;
+    $_size: auto;
+    $_property: #{$property}-#{$dir-prop};
+
+    @if ($dir-class == false) {
+      $_util-classname: #{$seed-spacing-margin-namespace}-auto;
+      $_property: #{$property};
+    }
+
+    .#{$_util-classname} {
+      @if ($dir-class == "h") {
+        #{$property}-left: #{$_size} !important;
+        #{$property}-right: #{$_size} !important;
+      }
+      @elseif ($dir-class == "v") {
+        #{$property}-bottom: #{$_size} !important;
+        #{$property}-top: #{$_size} !important;
+      }
+      @else {
+        #{$_property}: #{$_size} !important;
+      }
+    }
+  }
+}

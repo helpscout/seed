@@ -41,7 +41,33 @@ Once that is setup, simply `@import` *seed-spacing* as needed in your `.scss` fi
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-spacing config options
+// Namespace
+$seed-spacing-margin-namespace: "u-mrg" !default;
+$seed-spacing-padding-namespace: "u-pad" !default;
+
+// Sizes
+$seed-spacing-sizes: (
+  0: 0,
+  1: 4px,
+  2: 8px,
+  3: 16px,
+  4: 20px,
+  5: 24px,
+  6: 28px,
+  7: 32px,
+  8: 36px,
+  9: 40px,
+  10: 44px
+) !default;
+
+// Directions
+$seed-spacing-directions: (
+  none:   false,
+  top:    "t",
+  right:  "r",
+  bottom: "b",
+  left:   "l",
+  hor:    "h",
+  vert:   "v"
+) !default;
 ```
-
-
