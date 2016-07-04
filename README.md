@@ -73,7 +73,7 @@ $seed-spacing-directions: (
 ```
 
 
-## Function
+## Functions
 
 This pack also includes a utility function that can be used in your `.scss` code.
 
