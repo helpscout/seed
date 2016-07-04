@@ -1,7 +1,10 @@
 # seed-width [![Build Status](https://travis-ci.org/helpscout/seed-width.svg?branch=master)](https://travis-ci.org/helpscout/seed-width) [![npm version](https://badge.fury.io/js/seed-width.svg)](https://badge.fury.io/js/seed-width) [![Dependency Status](https://david-dm.org/helpscout/seed-width.svg)](https://david-dm.org/helpscout/seed-width)
-Width utility pack for Seed
+Width utility pack for [Seed](https://github.com/helpscout/seed)!
 
-Utility pack for [Seed](https://github.com/helpscout/seed)!
+
+## Dependencies
+* [Seed Breakpoints](https://github.com/helpscout/seed-breakpoints)
+
 
 ## Install
 ```
@@ -57,6 +60,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'));
 });
 ```
+
 
 ## Options
 
