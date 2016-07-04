@@ -1,4 +1,4 @@
-# seed-floats
+# seed-floats [![Build Status](https://travis-ci.org/helpscout/seed-floats.svg?branch=master)](https://travis-ci.org/helpscout/seed-floats) [![npm version](https://badge.fury.io/js/seed-floats.svg)](https://badge.fury.io/js/seed-floats) [![Dependency Status](https://david-dm.org/helpscout/seed-floats.svg)](https://david-dm.org/helpscout/seed-floats)
 Floats utility pack for [Seed](https://github.com/helpscout/seed)!
 
 
