@@ -1,3 +1,10 @@
-// width pack for Seed
+// Width :: Pack :: Seed
 
+// Packs
+@import "pack/seed-breakpoints";
+
+// Config
 @import "./config";
+
+// Generators
+@import "./generators/_all";

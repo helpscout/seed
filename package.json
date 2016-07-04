@@ -7,21 +7,24 @@
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run build:min && npm run banner",
-    "build:main": "node-sass scss/pack/_seed-width.scss dist/seed-width.css",
-    "build:min": "node-sass scss/pack/_seed-width.scss dist/seed-width.min.css --output-style compressed",
-    "test": "node ./scripts/test.js && npm run build"
+    "build:main": "node-sass --include-path node_modules/seed-breakpoints/scss scss/pack/_seed-width.scss dist/seed-width.css",
+    "build:min": "node-sass --include-path node_modules/seed-breakpoints/scss scss/pack/_seed-width.scss dist/seed-width.min.css --output-style compressed",
+    "test": "node ./scripts/test.js && npm run build",
+    "prepublish": "npm run test"
   },
   "repository": {
     "type": "git",
     "url": ""
   },
-  "authors": [
-  ],
+  "authors": [],
   "license": "MIT",
   "engines": {
     "node": ">=0.10.1"
   },
   "devDependencies": {
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "seed-breakpoints": "0.0.2"
   }
 }

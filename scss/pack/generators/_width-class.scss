@@ -1,0 +1,34 @@
+// Generators :: Width Class
+
+// Generates a single width utility class
+@mixin generate-width-class($index: 1, $modifier: false, $breakpoint: xs) {
+  $_util-classname: u-width-#{$index};
+  $_columns: ceil($HS-grid-columns * 2);
+  $_width: ceil(($index / $_columns) * container(xl)) !important;
+
+  @if $modifier {
+    $_util-classname: u-width-#{$index}-#{$modifier};
+  }
+
+  // Fluid widths
+  @if $modifier == "fluid" {
+    $_width: percentage($index / $_columns) !important;
+  }
+
+  @if $breakpoint != "xs" {
+    $_util-classname: #{$_util-classname}--at-#{$breakpoint};
+  }
+
+  .#{$_util-classname} {
+
+    @if $modifier == "max" {
+      max-width: $_width;
+    }
+    @else if $modifier == "min" {
+      min-width: $_width;
+    }
+    @else {
+      width: $_width;
+    }
+  }
+}
