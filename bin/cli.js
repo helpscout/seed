@@ -15,6 +15,7 @@ var cli = meow(`
     -c, --config    Custom sass-lint config (.yml)
     -i, --ignore    Ignore files for linting/testing
     -l, --lint      Initialize .scss lint (powered by sass-lint)
+    -t, --test      Initialize tests (powered by true + mocha)
 
   ${pkg.name} v${pkg.version}
   License: ${pkg.license}
@@ -24,7 +25,8 @@ var cli = meow(`
     c: 'config',
     i: 'ignore',
     n: 'new',
-    l: 'lint'
+    l: 'lint',
+    t: 'test'
   }
 });
 
