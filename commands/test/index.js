@@ -29,12 +29,16 @@ var options = {
   ]
 };
 
+var clean = function() {
+  return del(testCache, { force: true });
+};
+
 var getTestFileName = function(file) {
   return path.basename(file).replace(/_/g, '').replace('.scss', '') + '-' + uuid.v1() + '.js';
 };
 
 // Delete the test cache directory (just in case it was left over)
-del(testCache);
+clean();
 
 glob('**/*.scss', options, function(err, matches) {
   var files = matches;
@@ -49,6 +53,12 @@ glob('**/*.scss', options, function(err, matches) {
   // Create the test cache directory
   mkdirp.sync(testCache);
 
+  if (!files.length) {
+    console.log(`\nCouldn't find any tests in your project!`);
+    console.log(`You can create a new test by executinexecuting "seed g"\n`);
+    process.exit(0)
+  }
+
   _.forEach(files, function(file) {
     var dest = testCache + '/' + getTestFileName(file);
     var options = {
@@ -62,7 +72,7 @@ glob('**/*.scss', options, function(err, matches) {
 
   mocha.run(function(failures){
     // Delete test cache redirectory
-    del(testCache);
+    clean();
     process.on('exit', function() {
       process.exit(failures);
     });

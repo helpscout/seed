@@ -10,6 +10,7 @@ var help = `
     c, component
     o, object
     s, scope
+    t, test
     u, utility
 
   Name:

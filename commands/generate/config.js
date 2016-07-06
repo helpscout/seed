@@ -60,6 +60,10 @@ config.prototype.setPrefixType = function() {
     prefix = 's';
     type = 'scope';
   }
+  if (_type === 'test' || _type === 't') {
+    prefix = 't';
+    type = 'test';
+  }
   if (_type === 'utility' || _type === 'u') {
     prefix = 'u';
     type = 'utility';
