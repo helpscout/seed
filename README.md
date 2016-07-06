@@ -77,17 +77,45 @@ The following variables can be found in `_config.scss`
 
 ```sass
 // Namespaces
-$seed-typography-h1-namespace: "t-h1" !default;
-$seed-typography-h2-namespace: "t-h2" !default;
-$seed-typography-h3-namespace: "t-h3" !default;
-$seed-typography-h4-namespace: "t-h4" !default;
-$seed-typography-h5-namespace: "t-h5" !default;
-$seed-typography-h6-namespace: "t-h6" !default;
+$seed-typography-heading-namespace: "t-h" !default;
+$seed-typography-headline-namespace: "t-headline" !default;
+$seed-typography-lead-namespace: "t-lead" !default;
+$seed-typography-sm-namespace: "t-sm" !default;
+$seed-typography-xs-namespace: "t-xs" !default;
 
-$seed-typography-headline-1-namespace: "t-headline-1" !default;
-$seed-typography-headline-2-namespace: "t-headline-2" !default;
-$seed-typography-headline-3-namespace: "t-headline-3" !default;
-$seed-typography-headline-4-namespace: "t-headline-4" !default;
+$seed-typography-weight-namespace: "t-" !default;
+
+
+// Heading sizes
+$seed-typography-heading-sizes: (
+  1: 3rem,
+  2: 2.25rem,
+  3: 1.5rem,
+  4: 1.25rem,
+  5: 1rem,
+  6: 0.875rem
+) !default;
+
+// Headline sizes
+$seed-typography-headline-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+) !default;
+
+$seed-typography-lead-size: map-get($seed-typography-heading-sizes, 4) !default;
+$seed-typography-sm-size: 0.92rem !default;
+$seed-typography-xs-size: 0.78rem !default;
+
+
+// Weights
+$seed-typography-weight: (
+  lighter: lighter,
+  normal: normal,
+  bold: bold,
+  bolder: bolder
+) !default;
 ```
 
 ## Thanks
