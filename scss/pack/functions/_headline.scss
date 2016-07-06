@@ -1,0 +1,21 @@
+// Functions :: Headline
+
+// Dependencies
+@import "../config";
+
+@function t-headline($size: 1, $fallback: false) {
+  @if map-has-key($seed-typography-headline-sizes, $size) {
+    $headline: map-get($seed-typography-headline-sizes, $size);
+    @return $headline;
+  }
+
+  @else {
+    @if $fallback {
+      @return $fallback;
+    }
+    @else {
+      @warn "No space size of \"#{$size}\" found. "
+      + "Are you sure it's in `$seed-typography-headline-sizes?`";
+    }
+  }
+};

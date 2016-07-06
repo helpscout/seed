@@ -1,0 +1,21 @@
+// Functions :: Heading
+
+// Dependencies
+@import "../config";
+
+@function t-heading($size: 1, $fallback: false) {
+  @if map-has-key($seed-typography-heading-sizes, $size) {
+    $heading: map-get($seed-typography-heading-sizes, $size);
+    @return $heading;
+  }
+
+  @else {
+    @if $fallback {
+      @return $fallback;
+    }
+    @else {
+      @warn "No space size of \"#{$size}\" found. "
+      + "Are you sure it's in `$seed-typography-heading-sizes?`";
+    }
+  }
+};

@@ -1,37 +1,40 @@
 // Type :: Heading
 
+// Dependencies
+@import "../../functions/heading";
+
 .#{ $seed-typography-h1-namespace } {
   @include breakpoint-all {
-    font-size: 3rem;
+    font-size: t-heading(1);
   }
 }
 
 .#{ $seed-typography-h2-namespace } {
   @include breakpoint-all {
-    font-size: 2.25rem;
+    font-size: t-heading(2);
   }
 }
 
 .#{ $seed-typography-h3-namespace } {
   @include breakpoint-all {
-    font-size: 1.5rem;
+    font-size: t-heading(3);
   }
 }
 
 .#{ $seed-typography-h4-namespace } {
   @include breakpoint-all {
-    font-size: 1.25rem;
+    font-size: t-heading(4);
   }
 }
 
 .#{ $seed-typography-h5-namespace } {
   @include breakpoint-all {
-    font-size: 1rem;
+    font-size: t-heading(5);
   }
 }
 
-.#{ $seed-typography-h5-namespace } {
+.#{ $seed-typography-h6-namespace } {
   @include breakpoint-all {
-    font-size: 0.875rem;
+    font-size: t-heading(6);
   }
 }

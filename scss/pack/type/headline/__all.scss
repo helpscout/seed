@@ -1,25 +1,28 @@
 // Type :: Headline
 
+// Dependencies
+@import "../../functions/headline";
+
 .#{ $seed-typography-headline-1-namespace } {
   @include breakpoint-all {
-    font-size: 5rem;
+    font-size: t-headline(1);
   }
 }
 
 .#{ $seed-typography-headline-2-namespace } {
   @include breakpoint-all {
-    font-size: 4.5rem;
+    font-size: t-headline(2);
   }
 }
 
 .#{ $seed-typography-headline-3-namespace } {
   @include breakpoint-all {
-    font-size: 4rem;
+    font-size: t-headline(3);
   }
 }
 
 .#{ $seed-typography-headline-4-namespace } {
   @include breakpoint-all {
-    font-size: 3.5rem;
+    font-size: t-headline(4);
   }
 }

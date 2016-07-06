@@ -78,19 +78,19 @@
     .t-h5--at-xl {
       font-size: 1rem; } }
 
-.t-h5 {
+.t-h6 {
   font-size: 0.875rem; }
   @media (min-width: 544px) {
-    .t-h5--at-sm {
+    .t-h6--at-sm {
       font-size: 0.875rem; } }
   @media (min-width: 768px) {
-    .t-h5--at-md {
+    .t-h6--at-md {
       font-size: 0.875rem; } }
   @media (min-width: 992px) {
-    .t-h5--at-lg {
+    .t-h6--at-lg {
       font-size: 0.875rem; } }
   @media (min-width: 1200px) {
-    .t-h5--at-xl {
+    .t-h6--at-xl {
       font-size: 0.875rem; } }
 
 .t-headline-1 {
@@ -152,3 +152,12 @@
   @media (min-width: 1200px) {
     .t-headline-4--at-xl {
       font-size: 3.5rem; } }
+
+.t-lead {
+  font-size: 1.25rem; }
+
+.t-sm {
+  font-size: 0.92rem; }
+
+.t-xs {
+  font-size: 0.78rem; }
