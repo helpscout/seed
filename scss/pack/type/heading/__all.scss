@@ -1,40 +1,6 @@
 // Type :: Heading
 
 // Dependencies
-@import "../../functions/heading";
+@import "../../generators/heading";
 
-.#{ $seed-typography-h1-namespace } {
-  @include breakpoint-all {
-    font-size: t-heading(1);
-  }
-}
-
-.#{ $seed-typography-h2-namespace } {
-  @include breakpoint-all {
-    font-size: t-heading(2);
-  }
-}
-
-.#{ $seed-typography-h3-namespace } {
-  @include breakpoint-all {
-    font-size: t-heading(3);
-  }
-}
-
-.#{ $seed-typography-h4-namespace } {
-  @include breakpoint-all {
-    font-size: t-heading(4);
-  }
-}
-
-.#{ $seed-typography-h5-namespace } {
-  @include breakpoint-all {
-    font-size: t-heading(5);
-  }
-}
-
-.#{ $seed-typography-h6-namespace } {
-  @include breakpoint-all {
-    font-size: t-heading(6);
-  }
-}
+@include generate-typography-heading;

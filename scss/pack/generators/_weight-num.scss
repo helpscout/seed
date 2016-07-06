@@ -1,0 +1,11 @@
+// Generators :: Weight (Num)
+
+@mixin generate-typography-weight-num($namespace: $seed-typography-weight-namespace) {
+  @for $i from 1 through 9 {
+    $weight: #{$i}00;
+
+    .#{$namespace}#{$weight} {
+      font-weight: #{$weight};
+    }
+  }
+}

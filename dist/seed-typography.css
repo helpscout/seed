@@ -93,64 +93,64 @@
     .t-h6--at-xl {
       font-size: 0.875rem; } }
 
-.t-headline-1 {
+.t-headline1 {
   font-size: 5rem; }
   @media (min-width: 544px) {
-    .t-headline-1--at-sm {
+    .t-headline1--at-sm {
       font-size: 5rem; } }
   @media (min-width: 768px) {
-    .t-headline-1--at-md {
+    .t-headline1--at-md {
       font-size: 5rem; } }
   @media (min-width: 992px) {
-    .t-headline-1--at-lg {
+    .t-headline1--at-lg {
       font-size: 5rem; } }
   @media (min-width: 1200px) {
-    .t-headline-1--at-xl {
+    .t-headline1--at-xl {
       font-size: 5rem; } }
 
-.t-headline-2 {
+.t-headline2 {
   font-size: 4.5rem; }
   @media (min-width: 544px) {
-    .t-headline-2--at-sm {
+    .t-headline2--at-sm {
       font-size: 4.5rem; } }
   @media (min-width: 768px) {
-    .t-headline-2--at-md {
+    .t-headline2--at-md {
       font-size: 4.5rem; } }
   @media (min-width: 992px) {
-    .t-headline-2--at-lg {
+    .t-headline2--at-lg {
       font-size: 4.5rem; } }
   @media (min-width: 1200px) {
-    .t-headline-2--at-xl {
+    .t-headline2--at-xl {
       font-size: 4.5rem; } }
 
-.t-headline-3 {
+.t-headline3 {
   font-size: 4rem; }
   @media (min-width: 544px) {
-    .t-headline-3--at-sm {
+    .t-headline3--at-sm {
       font-size: 4rem; } }
   @media (min-width: 768px) {
-    .t-headline-3--at-md {
+    .t-headline3--at-md {
       font-size: 4rem; } }
   @media (min-width: 992px) {
-    .t-headline-3--at-lg {
+    .t-headline3--at-lg {
       font-size: 4rem; } }
   @media (min-width: 1200px) {
-    .t-headline-3--at-xl {
+    .t-headline3--at-xl {
       font-size: 4rem; } }
 
-.t-headline-4 {
+.t-headline4 {
   font-size: 3.5rem; }
   @media (min-width: 544px) {
-    .t-headline-4--at-sm {
+    .t-headline4--at-sm {
       font-size: 3.5rem; } }
   @media (min-width: 768px) {
-    .t-headline-4--at-md {
+    .t-headline4--at-md {
       font-size: 3.5rem; } }
   @media (min-width: 992px) {
-    .t-headline-4--at-lg {
+    .t-headline4--at-lg {
       font-size: 3.5rem; } }
   @media (min-width: 1200px) {
-    .t-headline-4--at-xl {
+    .t-headline4--at-xl {
       font-size: 3.5rem; } }
 
 .t-lead {
@@ -161,3 +161,42 @@
 
 .t-xs {
   font-size: 0.78rem; }
+
+.t-lighter {
+  font-weight: lighter; }
+
+.t-normal {
+  font-weight: normal; }
+
+.t-bold {
+  font-weight: bold; }
+
+.t-bolder {
+  font-weight: bolder; }
+
+.t-100 {
+  font-weight: 100; }
+
+.t-200 {
+  font-weight: 200; }
+
+.t-300 {
+  font-weight: 300; }
+
+.t-400 {
+  font-weight: 400; }
+
+.t-500 {
+  font-weight: 500; }
+
+.t-600 {
+  font-weight: 600; }
+
+.t-700 {
+  font-weight: 700; }
+
+.t-800 {
+  font-weight: 800; }
+
+.t-900 {
+  font-weight: 900; }

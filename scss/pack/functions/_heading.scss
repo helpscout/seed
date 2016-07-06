@@ -14,7 +14,7 @@
       @return $fallback;
     }
     @else {
-      @warn "No space size of \"#{$size}\" found. "
+      @warn "No heading size of \"#{$size}\" found. "
       + "Are you sure it's in `$seed-typography-heading-sizes?`";
     }
   }

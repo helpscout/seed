@@ -1,0 +1,21 @@
+// Functions :: Weight
+
+// Dependencies
+@import "../config";
+
+@function t-weight($size: normal, $fallback: false) {
+  @if map-has-key($seed-typography-weight, $size) {
+    $weight: map-get($seed-typography-weight, $size);
+    @return $weight;
+  }
+
+  @else {
+    @if $fallback {
+      @return $fallback;
+    }
+    @else {
+      @warn "No weight size of \"#{$weight}\" found. "
+      + "Are you sure it's in `$seed-typography-weight?`";
+    }
+  }
+};

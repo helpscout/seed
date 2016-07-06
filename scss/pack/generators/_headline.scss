@@ -1,0 +1,14 @@
+// Generators :: Headline
+
+// Dependencies
+@import "../functions/headline";
+
+@mixin generate-typography-headline($namespace: $seed-typography-headline-namespace) {
+  @for $i from 1 through 4 {
+    .#{$namespace}#{$i} {
+      @include breakpoint-all {
+        font-size: t-headline($i);
+      }
+    }
+  }
+}

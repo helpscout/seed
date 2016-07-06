@@ -1,0 +1,8 @@
+// Type :: Weight
+
+// Dependencies
+@import "../../generators/weight-name";
+@import "../../generators/weight-num";
+
+@include generate-typography-weight-name;
+@include generate-typography-weight-num;
