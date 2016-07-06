@@ -15,12 +15,7 @@ if (command === 'generate' || command === 'g') {
   if (type && name) {
     var options = {
       name: name,
-      type: type,
-      components: false,
-      objects: false,
-      modifers: false,
-      states: false,
-      variables: false
+      type: type
     };
 
     return generate(options);

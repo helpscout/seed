@@ -8,23 +8,24 @@ var cli = meow(`
     seed <command>
 
   Commands:
-    n, new          Creates a new Seed package
-    g, generate     Creates a new .scss module (component/object/utility)
+    n, new          Creates a new Seed pack
+    g, generate     Creates a new .scss module (component/object/scope/test/utility)
 
   Options:
     -c, --config    Custom sass-lint config (.yml)
     -i, --ignore    Ignore files for linting/testing
     -l, --lint      Initialize .scss lint (powered by sass-lint)
+    -t, --test      Initialize tests (powered by mocha + sass-true)
 
   ${pkg.name} v${pkg.version}
-  License: ${pkg.license}
   Website: ${pkg.homepage}
 `, {
   alias: {
     c: 'config',
     i: 'ignore',
     n: 'new',
-    l: 'lint'
+    l: 'lint',
+    t: 'test'
   }
 });
 

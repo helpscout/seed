@@ -25,14 +25,20 @@
     "authors-to-markdown": "^0.1.0",
     "chalk": "^1.1.3",
     "copy-files": "^0.1.0",
+    "del": "^2.2.1",
     "file-exists": "^1.0.0",
+    "find-root": "^1.0.0",
+    "glob": "^7.0.5",
     "inquirer": "^1.1.0",
     "is-blank": "^1.1.0",
     "lodash": "^4.13.1",
     "meow": "^3.7.0",
     "mkdirp": "^0.5.1",
+    "mocha": "^2.5.3",
+    "node-uuid": "^1.4.7",
     "require-dir": "^0.3.0",
     "sass-lint": "^1.8.2",
+    "sass-true": "^2.1.0",
     "shelljs": "^0.7.0"
   }
 }

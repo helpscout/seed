@@ -9,15 +9,6 @@ var templateDir = global.templateDir;
 
 var questions = [
   {
-    name: 'name',
-    type: 'input',
-    message: 'name:',
-    default: 'button',
-    filter: function(val) {
-      return val.replace('seed-', '').toLowerCase();
-    }
-  },
-  {
     name: 'type',
     type: 'list',
     message: 'What kind of module is it?',
@@ -39,12 +30,26 @@ var questions = [
         value: 'scope'
       },
       {
+        key: 't',
+        name: 'Test',
+        value: 'test'
+      },
+      {
         key: 'u',
         name: 'Utility',
         value: 'utility'
       }
     ]
-  }
+  },
+  {
+    name: 'name',
+    type: 'input',
+    message: 'name:',
+    default: 'button',
+    filter: function(val) {
+      return val.replace('seed-', '').toLowerCase();
+    }
+  },
 ];
 
 var prompt = function() {
