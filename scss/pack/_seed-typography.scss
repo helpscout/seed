@@ -1,3 +1,10 @@
-// typography pack for Seed
+// Tyography pack for Seed
 
+// Packs
+@import "pack/seed-breakpoints";
+
+// Config
 @import "./config";
+
+// Type
+@import "./type/_all";

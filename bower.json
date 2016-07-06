@@ -1,6 +1,6 @@
 {
   "name": "seed-typography",
-  "description": "Typography utility pack for Seed",
+  "description": "Main typography pack for Seed",
   "main": "index.js",
   "authors": [
   ],

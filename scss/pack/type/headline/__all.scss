@@ -1,0 +1,25 @@
+// Type :: Headline
+
+.#{ $seed-typography-headline-1-namespace } {
+  @include breakpoint-all {
+    font-size: 5rem;
+  }
+}
+
+.#{ $seed-typography-headline-2-namespace } {
+  @include breakpoint-all {
+    font-size: 4.5rem;
+  }
+}
+
+.#{ $seed-typography-headline-3-namespace } {
+  @include breakpoint-all {
+    font-size: 4rem;
+  }
+}
+
+.#{ $seed-typography-headline-4-namespace } {
+  @include breakpoint-all {
+    font-size: 3.5rem;
+  }
+}

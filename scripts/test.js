@@ -1,9 +1,12 @@
+// Seed Typography :: Test
 'use strict';
 
 var sass = require('node-sass');
+var seedBreakpoints = require('seed-breakpoints');
 
 sass.render({
-  file: './scss/pack/_seed-typography.scss'
+  file: './scss/pack/_seed-typography.scss',
+  includePaths: [ seedBreakpoints ]
 }, function(error, result) {
   if (error) {
     console.error(error);

@@ -1,0 +1,37 @@
+// Type :: Heading
+
+.#{ $seed-typography-h1-namespace } {
+  @include breakpoint-all {
+    font-size: 3rem;
+  }
+}
+
+.#{ $seed-typography-h2-namespace } {
+  @include breakpoint-all {
+    font-size: 2.25rem;
+  }
+}
+
+.#{ $seed-typography-h3-namespace } {
+  @include breakpoint-all {
+    font-size: 1.5rem;
+  }
+}
+
+.#{ $seed-typography-h4-namespace } {
+  @include breakpoint-all {
+    font-size: 1.25rem;
+  }
+}
+
+.#{ $seed-typography-h5-namespace } {
+  @include breakpoint-all {
+    font-size: 1rem;
+  }
+}
+
+.#{ $seed-typography-h5-namespace } {
+  @include breakpoint-all {
+    font-size: 0.875rem;
+  }
+}
