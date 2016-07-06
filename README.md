@@ -10,8 +10,9 @@ npm install seed-cli -g
 
 ## Features
 * Easy to create new Seed add-on packs
-* Generate component/object/utility `.scss` code
+* Generate component/object/scope/test/utility `.scss` code
 * Lint your `.scss`!
+* Test your `.scss`!!!
 
 ## Usage
 ```
