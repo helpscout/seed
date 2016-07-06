@@ -3,14 +3,19 @@
 // Dependencies
 @import "../config";
 
-@function spacing($size: 0) {
+@function spacing($size: 0, $fallback: false) {
   @if map-has-key($seed-spacing-sizes, $size) {
     $space: map-get($seed-spacing-sizes, $size);
     @return $space;
   }
 
   @else {
-    @warn "No space size of \"#{$size}\" found. "
-    + "Are you sure it's in `$seed-spacing-sizes?`";
+    @if $fallback {
+      @return $fallback;
+    }
+    @else {
+      @warn "No space size of \"#{$size}\" found. "
+      + "Are you sure it's in `$seed-spacing-sizes?`";
+    }
   }
 };
