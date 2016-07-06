@@ -92,4 +92,4 @@ $seed-typography-headline-4-namespace: "t-headline-4" !default;
 
 ## Thanks
 
-A *huge* thanks to [Alisdair](https://github.com/alisdair) for suggesting the prefix convention of `t` to typography classes!!!
+A *huge* thanks to [Alisdair](https://github.com/alisdair) for suggesting the use of `t` to prefix typography classes!!!
