@@ -9,12 +9,26 @@
     "build": "npm run build:main && npm run build:min && npm run banner",
     "build:main": "node-sass scss/pack/_seed-spacing.scss dist/seed-spacing.css",
     "build:min": "node-sass scss/pack/_seed-spacing.scss dist/seed-spacing.min.css --output-style compressed",
-    "test": "node ./scripts/test.js && npm run build"
+    "test": "node ./scripts/test.js && sh ./scripts/test.sh && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/helpscout/seed-spacing.git"
   },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss",
+    "utility"
+  ],
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
   ],
@@ -26,6 +40,7 @@
     "node": ">=0.10.1"
   },
   "devDependencies": {
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.8.0",
+    "seed-cli": "0.0.8"
   }
 }
