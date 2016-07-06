@@ -1,6 +1,6 @@
 // Type :: Heading
 
 // Dependencies
-@import "../../generators/heading";
+@import "../../generators/size";
 
-@include generate-typography-heading;
+@include generate-typography-size($seed-typography-heading-namespace, $seed-typography-heading-sizes);
