@@ -47,7 +47,7 @@ Once that is setup, simply `@import` *seed-typography* as needed in your `.scss`
 @import "pack/seed-typography";
 ```
 
-**Note:** Because seed-typography has dependencies, it's includePaths output will be an `array`. If you're including other paths in addition to seed-typography, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
+**Note:** Because seed-typography has dependencies, its includePaths output will be an `array`. If you're including other paths in addition to seed-typography, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
 
 Example with *sass-pathfinder*:
 
@@ -92,4 +92,4 @@ $seed-typography-headline-4-namespace: "t-headline-4" !default;
 
 ## Thanks
 
-A *huge* thanks to [Alisdair](https://github.com/alisdair) for suggesting the prefix convention of `t` to typography classes!!!
+A *huge* thanks to [Alisdair](https://github.com/alisdair) for suggesting the use of `t` to prefix typography classes!!!
