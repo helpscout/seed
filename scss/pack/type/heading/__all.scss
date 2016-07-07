@@ -1,3 +1,7 @@
 // Type :: Heading
 
-@include breakpoint-all-map($seed-typography-heading-namespace, $seed-typography-heading-sizes, font-size);
+.#{$seed-typography-heading-namespace} {
+  @include breakpoint-prop-map($seed-typography-heading-sizes, (font-size)) {
+    font-size: prop(font-size);
+  }
+}

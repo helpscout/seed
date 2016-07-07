@@ -138,18 +138,6 @@
 .t-xs {
   font-size: 0.78rem; }
 
-.t-lighter {
-  font-weight: lighter; }
-
-.t-normal {
-  font-weight: normal; }
-
-.t-bold {
-  font-weight: bold; }
-
-.t-bolder {
-  font-weight: bolder; }
-
 .t-100 {
   font-weight: 100; }
 
@@ -176,3 +164,15 @@
 
 .t-900 {
   font-weight: 900; }
+
+.t-lighter {
+  font-weight: lighter; }
+
+.t-normal {
+  font-weight: normal; }
+
+.t-bold {
+  font-weight: bold; }
+
+.t-bolder {
+  font-weight: bolder; }
