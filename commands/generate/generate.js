@@ -37,7 +37,7 @@ var parseModule = function(options) {
     if (type === 'utility') {
       type = 'utilities';
     }
-    if (type === 'test') {
+    else if (type === 'test') {
       type = 'test';
     }
     else {
