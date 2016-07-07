@@ -17,6 +17,19 @@
     "type": "git",
     "url": "git+https://github.com/helpscout/seed-cli.git"
   },
+  "keywords": [
+    "bem",
+    "cli",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "scss"
+  ],
   "bugs": {
     "url": "https://github.com/helpscout/seed-cli/issues"
   },
