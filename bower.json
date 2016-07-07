@@ -2,8 +2,7 @@
   "name": "seed-typography",
   "description": "Main typography pack for Seed",
   "main": "index.js",
-  "authors": [
-  ],
+  "authors": [],
   "license": "MIT",
   "homepage": "",
   "ignore": [
@@ -12,5 +11,5 @@
     "bower_components",
     "test.js"
   ],
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
