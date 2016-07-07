@@ -77,56 +77,56 @@
   .t-h6--at-xl {
     font-size: 0.875rem; } }
 
-.t-headline1 {
+.t-headline-1 {
   font-size: 5rem; }
 
-.t-headline2 {
+.t-headline-2 {
   font-size: 4.5rem; }
 
-.t-headline3 {
+.t-headline-3 {
   font-size: 4rem; }
 
-.t-headline4 {
+.t-headline-4 {
   font-size: 3.5rem; }
 
 @media (min-width: 544px) {
-  .t-headline1--at-sm {
+  .t-headline-1--at-sm {
     font-size: 5rem; }
-  .t-headline2--at-sm {
+  .t-headline-2--at-sm {
     font-size: 4.5rem; }
-  .t-headline3--at-sm {
+  .t-headline-3--at-sm {
     font-size: 4rem; }
-  .t-headline4--at-sm {
+  .t-headline-4--at-sm {
     font-size: 3.5rem; } }
 
 @media (min-width: 768px) {
-  .t-headline1--at-md {
+  .t-headline-1--at-md {
     font-size: 5rem; }
-  .t-headline2--at-md {
+  .t-headline-2--at-md {
     font-size: 4.5rem; }
-  .t-headline3--at-md {
+  .t-headline-3--at-md {
     font-size: 4rem; }
-  .t-headline4--at-md {
+  .t-headline-4--at-md {
     font-size: 3.5rem; } }
 
 @media (min-width: 992px) {
-  .t-headline1--at-lg {
+  .t-headline-1--at-lg {
     font-size: 5rem; }
-  .t-headline2--at-lg {
+  .t-headline-2--at-lg {
     font-size: 4.5rem; }
-  .t-headline3--at-lg {
+  .t-headline-3--at-lg {
     font-size: 4rem; }
-  .t-headline4--at-lg {
+  .t-headline-4--at-lg {
     font-size: 3.5rem; } }
 
 @media (min-width: 1200px) {
-  .t-headline1--at-xl {
+  .t-headline-1--at-xl {
     font-size: 5rem; }
-  .t-headline2--at-xl {
+  .t-headline-2--at-xl {
     font-size: 4.5rem; }
-  .t-headline3--at-xl {
+  .t-headline-3--at-xl {
     font-size: 4rem; }
-  .t-headline4--at-xl {
+  .t-headline-4--at-xl {
     font-size: 3.5rem; } }
 
 .t-lead {
