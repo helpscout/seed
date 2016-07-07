@@ -41,7 +41,7 @@ The `prop-map` mixin allows you to loop through a map and use arguments as varia
 You have to use the `prop` function for your `@content` to utilize the argument defined in your `prop-map`.
 
 #### Simple
-```
+```sass
 // Input (scss)
 $grid-columns: (
   1: 10%,
@@ -65,7 +65,7 @@ $grid-columns: (
 #### Slightly trickier (aka. Awesome)
 Yo dawg. I heard you like using maps within maps. `prop-map` will be able to handle that!
 
-```
+```sass
 // Input (scss)
 $grid-columns: (
   1: (
