@@ -1,0 +1,13 @@
+// Functions :: Prop
+
+@function prop($key: false, $map: $_seed-props-map) {
+  @if $key {
+    @if type-of($map) == "null" {
+      @warn "Map is currently empty";
+    }
+    @return map-get($map, $key);
+  }
+  @else {
+    @error "A key argument is required for @include prop($key)";
+  }
+}
