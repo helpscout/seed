@@ -93,5 +93,5 @@ $grid-columns: (
   width: 20%; }
 ```
 
-P.S. For maps within maps, the arguments are based on *name* (not the index/position of the key).
+P.S. For maps within maps, the arguments are based on *name* (not the argument order).
 
