@@ -1,4 +1,5 @@
-# seed-typography
+# seed-typography [![Build Status](https://travis-ci.org/helpscout/seed-typography.svg?branch=master)](https://travis-ci.org/helpscout/seed-typography) [![npm version](https://badge.fury.io/js/seed-typography.svg)](https://badge.fury.io/js/seed-typography) [![Dependencies](https://david-dm.org/helpscout/seed-typography.svg)](https://david-dm.org/helpscout/seed-typography)
+
 Main typography pack for [Seed](https://github.com/helpscout/seed)!
 
 
