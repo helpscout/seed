@@ -1,2 +1,9 @@
 var path = require('path');
-module.exports = path.join(__dirname, 'scss');
+var seedProps = require('seed-props');
+
+var includePath = [
+  seedProps,
+  path.join(__dirname, 'scss')
+];
+
+module.exports = includePath;
