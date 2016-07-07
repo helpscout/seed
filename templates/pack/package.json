@@ -6,9 +6,8 @@
   "homepage": "",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run build:min && npm run banner",
-    "build:main": "node-sass scss/pack/_<%= packName %>.scss dist/<%= packName %>.css",
-    "build:min": "node-sass scss/pack/_<%= packName %>.scss dist/<%= packName %>.min.css --output-style compressed",
+    "build": "npm run build:main && npm run banner",
+    "build:main": "node ./scripts/build.js",
     "test": "node ./scripts/test.js && npm run build"
   },
   "repository": {
@@ -35,6 +34,7 @@
     "node": ">=0.10.1"
   },
   "devDependencies": {
+    "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
   }
 }
