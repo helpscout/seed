@@ -1,7 +1,5 @@
 # seed-props
-Props mixin pack for Seed
-
-mixin pack for [Seed](https://github.com/helpscout/seed)!
+Props mixin pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
