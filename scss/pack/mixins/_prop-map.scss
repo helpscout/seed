@@ -1,6 +1,6 @@
 // Mixins :: Prop Map
 
-@mixin prop-map($map: false, $properties: false, $class: false) {
+@mixin prop-map($map: false, $properties: false, $suffix: false) {
   @if $map {
     // Set global maps
     $_seed-props-map: () !global;
@@ -8,6 +8,9 @@
     @each $key, $value in $map {
       // Set the class name
       $class: $key;
+      @if $suffix {
+        $class: $class + $suffix;
+      }
       // Add the properties
       @if $properties {
         @each $prop in $properties {
