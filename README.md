@@ -121,4 +121,4 @@ $seed-typography-weight: (
 
 ## Thanks
 
-A *huge* thanks to [Alisdair](https://github.com/alisdair) for suggesting the use of `t` to prefix typography classes!!!
+A *huge* thanks to [Alisdair](https://github.com/alisdair) for suggesting the use of `t` to prefix typography classes!
