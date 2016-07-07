@@ -55,7 +55,7 @@ glob('**/*.scss', options, function(err, matches) {
 
   if (!files.length) {
     console.log(`\nCouldn't find any tests in your project!`);
-    console.log(`You can create a new test by executinexecuting "seed g"\n`);
+    console.log(`You can create a new test by executing "seed g"\n`);
     process.exit(0)
   }
 
