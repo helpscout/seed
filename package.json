@@ -1,0 +1,40 @@
+{
+  "name": "seed-props",
+  "version": "0.0.1",
+  "description": "Props mixin pack for Seed",
+  "main": "index.js",
+  "homepage": "",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run build:min && npm run banner",
+    "build:main": "node-sass scss/pack/_seed-props.scss dist/seed-props.css",
+    "build:min": "node-sass scss/pack/_seed-props.scss dist/seed-props.min.css --output-style compressed",
+    "test": "node ./scripts/test.js && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "authors": [
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "devDependencies": {
+    "node-sass": "^3.8.0"
+  }
+}
