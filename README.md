@@ -33,13 +33,3 @@ Once that is setup, simply `@import` *seed-props* as needed in your `.scss` file
 // Packs
 @import "pack/seed-props";
 ```
-
-## Options
-
-The following variables can be found in `_config.scss`
-
-```sass
-seed-props config options
-```
-
-
