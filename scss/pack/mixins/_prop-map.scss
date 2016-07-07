@@ -4,17 +4,15 @@
   @if $map {
     // Set global maps
     $_seed-props-map: () !global;
-
     // Loop through the map
     @each $key, $value in $map {
-      // Loop + set key/values in $properties
-      @if $class == false {
-        $class: $key;
-      }
-      // Check if $value is a map
+      // Set the class name
+      $class: $key;
+      // Add the properties
       @if $properties {
         @each $prop in $properties {
           $new_prop: ($prop: $value);
+          // Check if $value is a map
           @if (type-of($value) == "map") {
             $new_prop: ();
             @each $nested_key, $nested_value in $value {
@@ -30,7 +28,6 @@
         @content;
       }
     }
-
     // Unset global maps
     $_seed-props-map: null !global;
   }
