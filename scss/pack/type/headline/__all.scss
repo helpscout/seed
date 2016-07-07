@@ -1,6 +1,3 @@
-// Type :: Heading
+// Type :: Headline
 
-// Dependencies
-@import "../../generators/size";
-
-@include generate-typography-size($seed-typography-headline-namespace, $seed-typography-headline-sizes);
+@include breakpoint-all-map($seed-typography-headline-namespace, $seed-typography-headline-sizes, font-size);
