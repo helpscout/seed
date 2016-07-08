@@ -7,7 +7,7 @@ var sass = require('node-sass');
 
 var file = pkg.name;
 var seedBreakpoints = require('seed-breakpoints');
-var includePaths = [ seedBreakpoints ];
+var includePaths = seedBreakpoints;
 
 // Default .css compile
 sass.render({
