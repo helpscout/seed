@@ -31,7 +31,7 @@
   ],
   "license": "<%= license %>",
   "engines": {
-    "node": ">=0.10.1"
+    "node": ">=4"
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
