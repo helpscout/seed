@@ -28,6 +28,6 @@
     "node-sass": "^3.8.0"
   },
   "dependencies": {
-    "seed-props": "0.0.2"
+    "seed-props": "0.0.3"
   }
 }
