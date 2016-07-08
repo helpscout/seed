@@ -30,6 +30,16 @@ Options:
   -t, --test      Initialize tests (powered by mocha + sass-true)
 ```
 
+## Testing
+You can test your `.scss` code by executing:
+
+```
+seed --test
+```
+
+However, if you're on Node v4, you will have to `npm install sass-true --save-dev` in your project.
+
+
 ## Thanks
 
 Many thanks to [Ember CLI](https://github.com/ember-cli/ember-cli) and [tachyons](https://github.com/tachyons-css/tachyons-cli) for their inspiration!
