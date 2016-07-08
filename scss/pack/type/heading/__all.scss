@@ -2,6 +2,11 @@
 
 .#{$seed-typography-heading-namespace} {
   @include breakpoint-prop-map($seed-typography-heading-sizes, (font-size)) {
-    font-size: prop(font-size);
+    @if $seed-typography-use-important {
+      font-size: prop(font-size) !important;
+    }
+    @else {
+      font-size: prop(font-size);
+    }
   }
 }

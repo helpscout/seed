@@ -5,7 +5,12 @@
     $weight: #{$i}00;
 
     .#{$namespace}#{$weight} {
-      font-weight: #{$weight};
+      @if $seed-typography-use-important {
+        font-weight: $weight !important;
+      }
+      @else {
+        font-weight: $weight;
+      }
     }
   }
 }

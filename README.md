@@ -80,11 +80,10 @@ The following variables can be found in `_config.scss`
 // Namespaces
 $seed-typography-heading-namespace: "t-h" !default;
 $seed-typography-headline-namespace: "t-headline" !default;
-$seed-typography-lead-namespace: "t-lead" !default;
-$seed-typography-sm-namespace: "t-sm" !default;
-$seed-typography-xs-namespace: "t-xs" !default;
-
+$seed-typography-size-namespace: "t-" !default;
 $seed-typography-weight-namespace: "t-" !default;
+
+$seed-typography-use-important: true !default;
 
 
 // Heading sizes
@@ -105,10 +104,15 @@ $seed-typography-headline-sizes: (
   4: 3.5rem,
 ) !default;
 
-$seed-typography-lead-size: map-get($seed-typography-heading-sizes, 4) !default;
-$seed-typography-sm-size: 0.92rem !default;
-$seed-typography-xs-size: 0.78rem !default;
-
+// Generic sizes
+$seed-typography-sizes: (
+  lead: map-get($seed-typography-heading-sizes, 5),
+  xl: 1.28rem,
+  lg: 1.14rem,
+  md: 1rem,
+  sm: 0.92rem,
+  xs: 0.78rem
+) !default;
 
 // Weights
 $seed-typography-weight: (
