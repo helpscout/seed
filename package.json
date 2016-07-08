@@ -6,10 +6,10 @@
   "homepage": "https://github.com/helpscout/seed-spacing",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run build:min && npm run banner",
-    "build:main": "node-sass scss/pack/_seed-spacing.scss dist/seed-spacing.css",
-    "build:min": "node-sass scss/pack/_seed-spacing.scss dist/seed-spacing.min.css --output-style compressed",
-    "test": "node ./scripts/test.js && sh ./scripts/test.sh && npm run build"
+    "build": "npm run build:main && npm run banner",
+    "build:main": "node ./scripts/build.js",
+    "test": "node ./scripts/test.js && sh ./scripts/test.sh && npm run build",
+    "prfepublish": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -37,10 +37,12 @@
     "url": "https://github.com/helpscout/seed-spacing/issues"
   },
   "engines": {
-    "node": ">=0.10.1"
+    "node": ">=4"
   },
   "devDependencies": {
+    "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0",
-    "seed-cli": "0.0.8"
+    "sass-true": "^2.1.2",
+    "seed-cli": "0.0.13-a"
   }
 }
