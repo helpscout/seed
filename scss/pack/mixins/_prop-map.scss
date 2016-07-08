@@ -4,6 +4,8 @@
   @if $map {
     // Set global maps
     $_seed-props-map: () !global;
+    $new_prop: ();
+
     // Loop through the map
     @each $key, $value in $map {
       // Set the class name
@@ -17,11 +19,21 @@
           $new_prop: ($prop: $value);
           // Check if $value is a map
           @if (type-of($value) == "map") {
-            $new_prop: ();
             @each $nested_key, $nested_value in $value {
               $nested_prop: ($nested_key: $nested_value);
               $new_prop: map-merge($new_prop, $nested_prop);
             }
+          }
+          $_seed-props-map: map-merge($_seed-props-map, $new_prop) !global;
+        }
+      }
+      @else {
+        @if (type-of($value) == "map") {
+          $new_prop: ();
+          // Check if $value is a map
+          @each $nested_key, $nested_value in $value {
+            $nested_prop: ($nested_key: $nested_value);
+            $new_prop: map-merge($new_prop, $nested_prop);
           }
           $_seed-props-map: map-merge($_seed-props-map, $new_prop) !global;
         }
@@ -32,6 +44,6 @@
       }
     }
     // Unset global maps
-    $_seed-props-map: null !global;
+    // $_seed-props-map: null !global;
   }
 }
