@@ -6,9 +6,8 @@
   "homepage": "https://github.com/helpscout/seed-grid",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run build:min && npm run banner",
-    "build:main": "node-sass --include-path node_modules/seed-breakpoints/scss scss/pack/_seed-grid.scss dist/seed-grid.css",
-    "build:min": "node-sass --include-path node_modules/seed-breakpoints/scss scss/pack/_seed-grid.scss dist/seed-grid.min.css --output-style compressed",
+    "build": "npm run build:main && npm run banner",
+    "build:main": "node ./scripts/build.js",
     "test": "node ./scripts/test.js && npm run build",
     "prepublish": "npm run test"
   },
@@ -30,6 +29,6 @@
     "node-sass": "^3.8.0"
   },
   "dependencies": {
-    "seed-breakpoints": "0.0.2"
+    "seed-breakpoints": "0.1.0"
   }
 }
