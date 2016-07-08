@@ -5,7 +5,7 @@ var seedBreakpoints = require('seed-breakpoints');
 
 sass.render({
   file: './scss/pack/_seed-floats.scss',
-  includePaths: [ seedBreakpoints ]
+  includePaths: seedBreakpoints
 }, function(error, result) {
   if (error) {
     console.error(error);
