@@ -1,18 +1,17 @@
-// Seed Typography :: Build
 'use strict';
 
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 var sass = require('node-sass');
-var seedBreakpoints = require('seed-breakpoints');
 
 var file = pkg.name;
+var seedBreakpoints = require('seed-breakpoints');
 var includePaths = seedBreakpoints;
 
 // Default .css compile
 sass.render({
-  file: `./scss/pack/_${ file }.scss`,
+  file: './scss/pack/_'+file+'.scss',
   includePaths: includePaths
 }, function(error, result) {
   if (error) {
@@ -21,9 +20,9 @@ sass.render({
   }
   else {
     mkdirp('./dist');
-    fs.writeFile(`./dist/${ file }.css`, result.css, function(err){
+    fs.writeFile('./dist/'+file+'.css', result.css, function(err){
       if(!err){
-        return console.log(`${ file }.css created.`);
+        return console.log(file+'.css created.');
       }
     })
   }
@@ -31,7 +30,7 @@ sass.render({
 
 // Minified .css compile
 sass.render({
-  file: `./scss/pack/_${ file }.scss`,
+  file: './scss/pack/_'+file+'.scss',
   includePaths: includePaths,
   outputStyle: 'compressed'
 }, function(error, result) {
@@ -41,9 +40,9 @@ sass.render({
   }
   else {
     mkdirp('./dist');
-    fs.writeFile(`./dist/${ file }.min.css`, result.css, function(err){
+    fs.writeFile('./dist/'+file+'.min.css', result.css, function(err){
       if(!err){
-        return console.log(`${ file }.min.css created.`);
+        return console.log(file+'.min.css created.');
       }
     })
   }
