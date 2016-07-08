@@ -3,6 +3,9 @@
   "version": "0.0.11",
   "description": "Create awesome packs for Seed CSS!",
   "main": "./index.js",
+  "engines": {
+    "node": ">=4"
+  },
   "bin": {
     "seed": "./index.js"
   },
