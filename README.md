@@ -67,31 +67,30 @@ Yo dawg. I heard you like using maps within maps. `prop-map` will be able to han
 
 ```sass
 // Input (scss)
-$grid-columns: (
-  1: (
-    float: left,
-    width: 10%)
-  2: (
-    float: right,
-    width: 20%)
+$btn-states: (
+  success: (
+    background: green,
+    border-color: green),
+  danger: (
+    background: red,
+    border-color: red)
 );
 
-.col- {
-  @include prop-map($grid-columns, (float, width)) {
-    float: prop(float);
-    width: prop(width);
+.btn- {
+  @include prop-map($btn-states, (background, border-color)) {
+    background: prop(background);
+    border-color: prop(border-color);
   }
 }
 
 // Output (css)
-.col-1 {
-  float: left;
-  width: 10%; }
+.btn-success {
+  background: green;
+  border-color: green; }
 
-.col-2 {
-  float: right;
-  width: 20%; }
+.btn-danger {
+  background: red;
+  border-color: red; }
 ```
 
 P.S. For maps within maps, the arguments are based on *name* (not the argument order).
-
