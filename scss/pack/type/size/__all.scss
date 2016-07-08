@@ -1,13 +1,12 @@
 // Type :: Size
 
-.#{$seed-typography-lead-namespace} {
-  font-size: $seed-typography-lead-size;
-}
-
-.#{$seed-typography-sm-namespace} {
-  font-size: $seed-typography-sm-size;
-}
-
-.#{$seed-typography-xs-namespace} {
-  font-size: $seed-typography-xs-size;
+.#{$seed-typography-size-namespace} {
+  @include prop-map($seed-typography-sizes, (font-size)) {
+    @if $seed-typography-use-important {
+      font-size: prop(font-size) !important;
+    }
+    @else {
+      font-size: prop(font-size);
+    }
+  }
 }

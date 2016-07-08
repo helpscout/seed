@@ -7,6 +7,11 @@
 
 .#{$seed-typography-weight-namespace} {
   @include prop-map($seed-typography-weight, (weight)) {
-    font-weight: prop(weight);
+    @if $seed-typography-use-important {
+      font-weight: prop(weight) !important;
+    }
+    @else {
+      font-weight: prop(weight);
+    }
   }
 }
