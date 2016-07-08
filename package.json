@@ -23,7 +23,7 @@
     "url": "https://github.com/helpscout/seed-floats/issues"
   },
   "engines": {
-    "node": ">=0.10.1"
+    "node": ">=0.10.0"
   },
   "devDependencies": {
     "node-sass": "^3.8.0"
