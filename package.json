@@ -9,7 +9,7 @@
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
     "test": "node ./scripts/test.js && npm run build",
-    "preversion": "npm run build && git add -A dist && git commit -m'Rebuilt for release'"
+    "preversion": "npm run build && git add -A dist && git commit -m'Rebuilt for release' && git push"
   },
   "repository": {
     "type": "git",
