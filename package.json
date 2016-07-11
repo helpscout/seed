@@ -8,7 +8,8 @@
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build"
+    "test": "node ./scripts/test.js && npm run build",
+    "preversion": "npm run test"
   },
   "repository": {
     "type": "git",
