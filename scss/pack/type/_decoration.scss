@@ -1,0 +1,13 @@
+// Type :: Decoration
+
+.#{$seed-typography-decoration-namespace}- {
+  @include prop-map($seed-typography-decoration, (prop)) {
+    @if $seed-typography-use-important {
+      text-decoration: prop(prop) !important;
+    }
+    @else {
+      text-decoration: prop(prop);
+    }
+  }
+}
+

@@ -1,8 +1,41 @@
 /**
- * seed-typography v0.0.3 (https://github.com/helpscout/seed-typography)
+ * seed-typography v0.0.4 (https://github.com/helpscout/seed-typography)
  * Main typography pack for Seed
  * Licensed under MIT
  */
+.t-left {
+  text-align: left !important; }
+
+.t-center {
+  text-align: center !important; }
+
+.t-right {
+  text-align: right !important; }
+
+.t-break-all {
+  word-break: break-all !important; }
+
+.t-break-normal {
+  word-break: normal !important; }
+
+.t-break-keep-all {
+  word-break: keep-all !important; }
+
+.t-no-decoration {
+  text-decoration: none !important; }
+
+.t-no-underline {
+  text-decoration: none !important; }
+
+.t-overline {
+  text-decoration: overline !important; }
+
+.t-strikethrough {
+  text-decoration: line-through !important; }
+
+.t-underline {
+  text-decoration: underline !important; }
+
 .t-h1 {
   font-size: 3rem !important; }
 
@@ -147,6 +180,34 @@
 .t-xs {
   font-size: 0.78rem !important; }
 
+.t-smooth {
+  -moz-osx-font-smoothing: grayscale ! important;
+  -webkit-font-smoothing: antialiased ! important; }
+
+.t-no-smooth {
+  -moz-osx-font-smoothing: none ! important;
+  -webkit-font-smoothing: none ! important; }
+
+.t-capitalize {
+  text-transform: capitalize !important; }
+
+.t-lowercase {
+  text-transform: lowercase !important; }
+
+.t-uppercase {
+  text-transform: uppercase !important; }
+
+.t-truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important; }
+
+.t-truncate-block {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  display: block; }
+
 .t-100 {
   font-weight: 100 !important; }
 
@@ -185,3 +246,9 @@
 
 .t-bolder {
   font-weight: bolder !important; }
+
+.t-wrap-break {
+  word-wrap: break-word !important; }
+
+.t-wrap-normal {
+  word-wrap: normal !important; }

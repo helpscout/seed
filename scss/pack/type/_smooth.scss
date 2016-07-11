@@ -1,0 +1,11 @@
+// Text :: Smooth
+
+@import "../mixins/smooth";
+
+.#{$seed-typography-namespace}-smooth {
+  @include text-smooth(true);
+}
+
+.#{$seed-typography-namespace}-no-smooth {
+  @include text-smooth(false);
+}

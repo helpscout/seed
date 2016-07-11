@@ -1,0 +1,12 @@
+// Type :: Break
+
+.#{$seed-typography-break-namespace}- {
+  @include prop-map($seed-typography-break, (prop)) {
+    @if $seed-typography-use-important {
+      word-break: prop(prop) !important;
+    }
+    @else {
+      word-break: prop(prop);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// Mixins :: Truncate
+
+@mixin text-truncate() {
+  @if $seed-typography-use-important {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+  @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
