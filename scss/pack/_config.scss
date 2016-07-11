@@ -1,13 +1,44 @@
 // Typography :: Config
 
 // Namespaces
-$seed-typography-heading-namespace: "t-h" !default;
-$seed-typography-headline-namespace: "t-headline" !default;
-$seed-typography-size-namespace: "t-" !default;
-$seed-typography-weight-namespace: "t-" !default;
+$seed-typography-namespace: "t" !default;
+$seed-typography-alignment-namespace: $seed-typography-namespace !default;
+$seed-typography-break-namespace: #{$seed-typography-namespace}-break !default;
+$seed-typography-decoration-namespace: $seed-typography-namespace !default;
+$seed-typography-heading-namespace: #{$seed-typography-namespace}-h !default;
+$seed-typography-headline-namespace: #{$seed-typography-namespace}-headline !default;
+$seed-typography-size-namespace: $seed-typography-namespace !default;
+$seed-typography-transform-namespace: $seed-typography-namespace !default;
+$seed-typography-truncate-namespace: #{$seed-typography-namespace}-truncate !default;
+$seed-typography-weight-namespace: $seed-typography-namespace !default;
+$seed-typography-wrap-namespace: #{$seed-typography-namespace}-wrap !default;
 
+// Important (Typical convention for utility purposes)
 $seed-typography-use-important: true !default;
 
+
+// Alignment
+$seed-typography-alignment: (
+  left: left,
+  center: center,
+  right: right
+) !default;
+
+// Break
+$seed-typography-break: (
+  all: break-all,
+  normal: normal,
+  keep-all: keep-all
+) !default;
+
+// Decoration
+$seed-typography-decoration: (
+  no-decoration: none,
+  no-underline: none,
+  overline: overline,
+  strikethrough: line-through,
+  underline: underline
+) !default;
 
 // Heading sizes
 $seed-typography-heading-sizes: (
@@ -37,10 +68,23 @@ $seed-typography-sizes: (
   xs: 0.78rem
 ) !default;
 
+// Transform
+$seed-typography-transform: (
+  capitalize: capitalize,
+  lowercase: lowercase,
+  uppercase: uppercase
+) !default;
+
 // Weights
 $seed-typography-weight: (
   lighter: lighter,
   normal: normal,
   bold: bold,
   bolder: bolder
+) !default;
+
+// Wrap
+$seed-typography-wrap: (
+  break: break-word,
+  normal: normal
 ) !default;

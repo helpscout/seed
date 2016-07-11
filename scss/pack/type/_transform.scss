@@ -1,0 +1,12 @@
+// Type :: Transform
+
+.#{$seed-typography-transform-namespace}- {
+  @include prop-map($seed-typography-transform, (prop)) {
+    @if $seed-typography-use-important {
+      text-transform: prop(prop) !important;
+    }
+    @else {
+      text-transform: prop(prop);
+    }
+  }
+}

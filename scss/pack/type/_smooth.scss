@@ -1,0 +1,11 @@
+// Text :: Smooth
+
+.#{$seed-typography-namespace}-smooth {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.#{$seed-typography-namespace}-no-smooth {
+  -moz-osx-font-smoothing: none;
+  -webkit-font-smoothing: none;
+}
