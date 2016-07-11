@@ -2,9 +2,25 @@
   "name": "seed-typography",
   "description": "Main typography pack for Seed",
   "main": "index.js",
-  "authors": [],
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
   "license": "MIT",
-  "homepage": "",
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss",
+    "type"
+  ],
+  "homepage": "https://github.com/helpscout/seed-typography",
   "ignore": [
     "**/.*",
     "node_modules",
