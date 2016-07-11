@@ -88,6 +88,7 @@ $seed-typography-size-namespace: $seed-typography-namespace !default;
 $seed-typography-transform-namespace: $seed-typography-namespace !default;
 $seed-typography-truncate-namespace: #{$seed-typography-namespace}-truncate !default;
 $seed-typography-weight-namespace: $seed-typography-namespace !default;
+$seed-typography-white-space-namespace: $seed-typography-namespace !default;
 $seed-typography-wrap-namespace: #{$seed-typography-namespace}-wrap !default;
 
 // Important (Typical convention for utility purposes)
@@ -96,6 +97,7 @@ $seed-typography-use-important: true !default;
 
 // Alignment
 $seed-typography-alignment: (
+  justify: justify,
   left: left,
   center: center,
   right: right
@@ -137,7 +139,7 @@ $seed-typography-headline-sizes: (
 
 // Generic sizes
 $seed-typography-sizes: (
-  lead: map-get($seed-typography-heading-sizes, 5),
+  lead: map-get($seed-typography-heading-sizes, 4),
   xl: 1.28rem,
   lg: 1.14rem,
   md: 1rem,
@@ -159,6 +161,14 @@ $seed-typography-weight: (
   bold: bold,
   bolder: bolder
 ) !default;
+
+// White space
+$seed-typography-white-space: (
+  nowrap: nowrap,
+  pre: pre,
+  pre-line: pre-line,
+  wrap-normal: normal
+);
 
 // Wrap
 $seed-typography-wrap: (
