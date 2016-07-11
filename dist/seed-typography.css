@@ -247,6 +247,18 @@
 .t-bolder {
   font-weight: bolder !important; }
 
+.t-nowrap {
+  white-space: nowrap !important; }
+
+.t-pre {
+  white-space: pre !important; }
+
+.t-pre-line {
+  white-space: pre-line !important; }
+
+.t-wrap-normal {
+  white-space: normal !important; }
+
 .t-wrap-break {
   word-wrap: break-word !important; }
 
