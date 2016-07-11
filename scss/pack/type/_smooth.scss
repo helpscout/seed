@@ -1,11 +1,11 @@
 // Text :: Smooth
 
+@import "../mixins/smooth";
+
 .#{$seed-typography-namespace}-smooth {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  @include text-smooth(true);
 }
 
 .#{$seed-typography-namespace}-no-smooth {
-  -moz-osx-font-smoothing: none;
-  -webkit-font-smoothing: none;
+  @include text-smooth(false);
 }

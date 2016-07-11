@@ -181,12 +181,12 @@
   font-size: 0.78rem !important; }
 
 .t-smooth {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
+  -moz-osx-font-smoothing: grayscale ! important;
+  -webkit-font-smoothing: antialiased ! important; }
 
 .t-no-smooth {
-  -moz-osx-font-smoothing: none;
-  -webkit-font-smoothing: none; }
+  -moz-osx-font-smoothing: none ! important;
+  -webkit-font-smoothing: none ! important; }
 
 .t-capitalize {
   text-transform: capitalize !important; }
@@ -198,14 +198,14 @@
   text-transform: uppercase !important; }
 
 .t-truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important; }
 
 .t-truncate-block {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
   display: block; }
 
 .t-100 {
