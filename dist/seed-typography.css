@@ -3,6 +3,9 @@
  * Main typography pack for Seed
  * Licensed under MIT
  */
+.t-justify {
+  text-align: justify !important; }
+
 .t-left {
   text-align: left !important; }
 
