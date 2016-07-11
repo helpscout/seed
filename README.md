@@ -70,7 +70,8 @@ gulp.task('sass', function () {
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-visibility config options
+$seed-visibility-invisible-namespace: u-invisible !default;
+$seed-visibility-hidden-namespace: u-hidden !default;
+$seed-visibility-screen-reader-namespace: u-sr-only !default;
+$seed-visibility-visible-namespace: u-visible !default;
 ```
-
-
