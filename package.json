@@ -1,6 +1,6 @@
 {
   "name": "seed-visibility",
-  "version": "0.0.3",
+  "version": "0.0.3-beta",
   "description": "Visibility utility pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed-visibility",
@@ -9,7 +9,7 @@
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
     "test": "node ./scripts/test.js && npm run build",
-    "preversion": "npm run build && git -A dist && git commit -m'Rebuilt for release'"
+    "preversion": "npm run build && git add -A dist && git commit -m'Rebuilt for release'"
   },
   "repository": {
     "type": "git",
