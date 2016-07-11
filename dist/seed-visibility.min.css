@@ -1,5 +1,6 @@
 /**
- * seed-visibility v0.0.1 ()
+ * seed-visibility v0.0.1 (https://github.com/helpscout/seed-visibility)
  * Visibility utility pack for Seed
  * Licensed under MIT
  */
+.u-invisible{visibility:hidden !important}@media (min-width: 544px){.u-invisible--at-sm{visibility:hidden !important}}@media (min-width: 768px){.u-invisible--at-md{visibility:hidden !important}}@media (min-width: 992px){.u-invisible--at-lg{visibility:hidden !important}}@media (min-width: 1200px){.u-invisible--at-xl{visibility:hidden !important}}.u-hidden{display:none !important}@media (min-width: 544px){.u-hidden--at-sm{display:none !important}}@media (min-width: 768px){.u-hidden--at-md{display:none !important}}@media (min-width: 992px){.u-hidden--at-lg{display:none !important}}@media (min-width: 1200px){.u-hidden--at-xl{display:none !important}}.u-sr-only{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.u-sr-only+*{margin-top:0}.u-visible{visibility:visible !important}@media (min-width: 544px){.u-visible--at-sm{visibility:visible !important}}@media (min-width: 768px){.u-visible--at-md{visibility:visible !important}}@media (min-width: 992px){.u-visible--at-lg{visibility:visible !important}}@media (min-width: 1200px){.u-visible--at-xl{visibility:visible !important}}

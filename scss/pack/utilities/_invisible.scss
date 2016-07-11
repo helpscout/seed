@@ -1,0 +1,7 @@
+// Utilities :: Invisible
+
+.#{$seed-visibility-invisible-namespace} {
+  @include breakpoint-all {
+    visibility: hidden !important;
+  }
+}
