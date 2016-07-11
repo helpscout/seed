@@ -1,4 +1,4 @@
-# seed-visibility
+# seed-visibility [![Build Status](https://travis-ci.org/helpscout/seed-visibility.svg?branch=master)](https://travis-ci.org/helpscout/seed-visibility) [![npm version](https://badge.fury.io/js/seed-visibility.svg)](https://badge.fury.io/js/seed-visibility) [![Dependency Status](https://david-dm.org/helpscout/seed-visibility.svg)](https://david-dm.org/helpscout/seed-visibility)
 Visibility utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
