@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Visibility utility pack for Seed",
   "main": "index.js",
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-visibility",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
@@ -12,8 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-visibility.git"
   },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
   "keywords": [
     "bem",
     "css",
@@ -25,9 +28,8 @@
     "performance",
     "seed",
     "seed-pack",
-    "scss"
-  ],
-  "authors": [
+    "scss",
+    "visibility"
   ],
   "license": "MIT",
   "engines": {
@@ -36,5 +38,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "seed-breakpoints": "^0.1.4"
   }
 }

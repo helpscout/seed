@@ -3,9 +3,24 @@
   "description": "Visibility utility pack for Seed",
   "main": "index.js",
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss",
+    "visibility"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-visibility",
   "ignore": [
     "**/.*",
     "node_modules",

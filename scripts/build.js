@@ -6,7 +6,8 @@ var mkdirp = require('mkdirp');
 var sass = require('node-sass');
 
 var file = pkg.name;
-var includePaths = [];
+var seedBreakpoints = require('seed-breakpoints');
+var includePaths = seedBreakpoints;
 
 // Default .css compile
 sass.render({

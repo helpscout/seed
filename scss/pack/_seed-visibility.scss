@@ -1,3 +1,10 @@
-// visibility pack for Seed
+// Visibility pack for Seed
 
+// Packs
+@import "pack/seed-breakpoints";
+
+// Config
 @import "./config";
+
+// Utilities
+@import "./utilities/_index";
