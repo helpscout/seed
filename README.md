@@ -1,4 +1,4 @@
-# seed-reset
+# seed-reset [![Build Status](https://travis-ci.org/helpscout/seed-reset.svg?branch=master)](https://travis-ci.org/helpscout/seed-reset)
 Reset pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
