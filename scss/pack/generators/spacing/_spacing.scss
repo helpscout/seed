@@ -29,7 +29,7 @@
             #{$property}-top: prop(size) !important;
           }
           @else {
-            #{$property}: prop(size) !important;
+            #{$_property}: prop(size) !important;
           }
         }
       }
