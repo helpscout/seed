@@ -1,7 +1,5 @@
 # seed-reset
-Reset pack for Seed
-
-utility pack for [Seed](https://github.com/helpscout/seed)!
+Reset pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -41,7 +39,7 @@ Once that is setup, simply `@import` *seed-reset* as needed in your `.scss` file
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-reset config options
+$seed-reset-enable-normalize: true !default;
+$seed-reset-enable-print: true !default;
+$seed-reset-enable-reboot: true !default;
 ```
-
-

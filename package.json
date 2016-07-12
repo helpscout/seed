@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Reset pack for Seed",
   "main": "index.js",
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-reset",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
@@ -12,8 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-reset.git"
   },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
   "keywords": [
     "bem",
     "css",
@@ -21,13 +24,14 @@
     "functional",
     "itcss",
     "modular",
+    "normalize",
     "oocss",
     "performance",
+    "reboot",
+    "reset",
     "seed",
     "seed-pack",
     "scss"
-  ],
-  "authors": [
   ],
   "license": "MIT",
   "engines": {
