@@ -1,4 +1,9 @@
 var path = require('path');
-var includePath = path.join(__dirname, 'scss');
+var pathfinder = require('./scripts/pathfinder');
 
-module.exports = includePath;
+var files = [
+  require('seed-breakpoints'),
+  path.join(__dirname, 'scss')
+];
+
+module.exports = pathfinder(files);

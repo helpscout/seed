@@ -12,35 +12,73 @@
   @if ($property == padding) {
     $class: $seed-spacing-padding-namespace;
   }
-
+  
   @each $dir-prop, $dir-class in $seed-spacing-directions {
-    @each $size-class, $size in $seed-spacing-sizes {
+    $_util-classname: #{$class}-#{$dir-class};
+    $_property: #{$property}-#{$dir-prop};
 
-      $_util-classname: #{$class}-#{$dir-class}-#{$size-class};
-      $_size: #{$size};
-      $_property: #{$property}-#{$dir-prop};
-
-      @if ($dir-class == false) {
-        $_util-classname: #{$class}-#{$size-class};
-        $_property: #{$property};
-      }
-      @if ($auto != false) {
-        $_util-classname: #{$_util-classname}--auto;
-      }
-
-      .#{$_util-classname} {
-        @if ($dir-class == "h") {
-          #{$property}-left: #{$_size} !important;
-          #{$property}-right: #{$_size} !important;
-        }
-        @elseif ($dir-class == "v") {
-          #{$property}-bottom: #{$_size} !important;
-          #{$property}-top: #{$_size} !important;
-        }
-        @else {
-          #{$_property}: #{$_size} !important;
+    @if $dir-prop != "none" {
+      .#{$_util-classname}- {
+        @include breakpoint-prop-map($seed-spacing-sizes, (size)) {
+          @if ($dir-class == "h") {
+            #{$property}-left: prop(size) !important;
+            #{$property}-right: prop(size) !important;
+          }
+          @elseif ($dir-class == "v") {
+            #{$property}-bottom: prop(size) !important;
+            #{$property}-top: prop(size) !important;
+          }
+          @else {
+            #{$property}: prop(size) !important;
+          }
         }
       }
     }
+    @else {
+      .#{$_util-classname} {
+        @include breakpoint-all {
+          @if ($dir-class == "h") {
+            #{$property}-left: 0 !important;
+            #{$property}-right: 0 !important;
+          }
+          @elseif ($dir-class == "v") {
+            #{$property}-bottom: 0 !important;
+            #{$property}-top: 0 !important;
+          }
+          @else {
+            #{$property}: 0 !important;
+          }
+        }
+      }
+    }
+
+    // @each $size-class, $size in $seed-spacing-sizes {
+
+    //   $_util-classname: #{$class}-#{$dir-class}-#{$size-class};
+    //   $_size: #{$size};
+    //   $_property: #{$property}-#{$dir-prop};
+
+    //   @if ($dir-class == false) {
+    //     $_util-classname: #{$class}-#{$size-class};
+    //     $_property: #{$property};
+    //   }
+    //   @if ($auto != false) {
+    //     $_util-classname: #{$_util-classname}--auto;
+    //   }
+
+    //   .#{$_util-classname} {
+    //     @if ($dir-class == "h") {
+    //       #{$property}-left: #{$_size} !important;
+    //       #{$property}-right: #{$_size} !important;
+    //     }
+    //     @elseif ($dir-class == "v") {
+    //       #{$property}-bottom: #{$_size} !important;
+    //       #{$property}-top: #{$_size} !important;
+    //     }
+    //     @else {
+    //       #{$_property}: #{$_size} !important;
+    //     }
+    //   }
+    // }
   }
 }
