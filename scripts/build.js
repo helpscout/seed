@@ -1,13 +1,15 @@
-
 'use strict';
 
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
+var pathfinder = require('./pathfinder');
 var sass = require('node-sass');
 
 var file = pkg.name;
-var includePaths = [];
+var includePaths = pathfinder(
+  require('seed-breakpoints')
+);
 
 // Default .css compile
 sass.render({

@@ -44,5 +44,8 @@
     "node-sass": "^3.8.0",
     "sass-true": "^2.1.2",
     "seed-cli": "0.1.2"
+  },
+  "dependencies": {
+    "seed-breakpoints": "^0.1.4"
   }
 }
