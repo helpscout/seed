@@ -3,14 +3,17 @@
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
+var pathfinder = require('./pathfinder');
 var sass = require('node-sass');
 
 var file = pkg.name;
-var includePaths = [];
+var includePaths = pathfinder(
+  // Add files/paths to include
+);
 
 // Default .css compile
 sass.render({
-  file: './scss/pack/_'+file+'.scss',
+  file: './scss/pack/'+file+'/__index.scss',
   includePaths: includePaths
 }, function(error, result) {
   if (error) {
@@ -29,7 +32,7 @@ sass.render({
 
 // Minified .css compile
 sass.render({
-  file: './scss/pack/_'+file+'.scss',
+  file: './scss/pack/'+file+'/__index.scss',
   includePaths: includePaths,
   outputStyle: 'compressed'
 }, function(error, result) {

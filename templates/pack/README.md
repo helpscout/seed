@@ -33,7 +33,7 @@ Once that is setup, simply `@import` *<%= packName %>* as needed in your `.scss`
 
 ```sass
 // Packs
-@import "pack/<%= packName %>";
+@import "pack/<%= packName %>/_index";
 ```
 
 ## Options
@@ -43,5 +43,3 @@ The following variables can be found in `_config.scss`
 ```sass
 <%= packName %> config options
 ```
-
-

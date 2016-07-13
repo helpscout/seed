@@ -28,7 +28,7 @@ if (((command === 'new' || command === 'n') && isEmpty(global.cli.flags)) || glo
 
     mkdirp.sync(dest);
     mkdirp.sync(dest + '/scripts');
-    mkdirp.sync(dest + '/scss/pack');
+    mkdirp.sync(dest + `/scss/pack/${options.packName}`);
 
     generate(dest, options);
 

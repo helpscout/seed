@@ -30,20 +30,23 @@ var copyFile = function(dest, options, file, output) {
 
 var copyDirectoryFiles = function(dest, options) {
   var config = fs.readFileSync(templateDir + 'scss/pack/_config.scss', 'utf8');
-  var scss = fs.readFileSync(templateDir + 'scss/pack/_seed-starter.scss', 'utf8');
+  var scss = fs.readFileSync(templateDir + 'scss/pack/__index.scss', 'utf8');
   var banner = fs.readFileSync(templateDir + 'scripts/banner.js', 'utf8');
   var build = fs.readFileSync(templateDir + 'scripts/build.js', 'utf8');
+  var pathfinder = fs.readFileSync(templateDir + 'scripts/pathfinder.js', 'utf8');
   var test = fs.readFileSync(templateDir + 'scripts/test.js', 'utf8');
 
-  fs.writeFileSync(dest + `/scss/pack/_config.scss`, _.template(config)(options));
-  fs.writeFileSync(dest + `/scss/pack/_${ options.packName }.scss`, _.template(scss)(options));
+  fs.writeFileSync(dest + `/scss/pack/${options.packName}/_config.scss`, _.template(config)(options));
+  fs.writeFileSync(dest + `/scss/pack/${options.packName}/__index.scss`, _.template(scss)(options));
   fs.writeFileSync(dest + `/scripts/banner.js`, _.template(banner)(options));
   fs.writeFileSync(dest + `/scripts/build.js`, _.template(build)(options));
+  fs.writeFileSync(dest + `/scripts/pathfinder.js`, _.template(pathfinder)(options));
   fs.writeFileSync(dest + `/scripts/test.js`, _.template(test)(options));
 
-  console.log(`    created  ${ dest }/scss/pack/_config.scss`);
-  console.log(`    created  ${ dest }/scss/pack/_${ options.name }.scss`);
+  console.log(`    created  ${ dest }/scss/pack/${options.packName}/_config.scss`);
+  console.log(`    created  ${ dest }/scss/pack/${options.packName}/__index.scss`);
   console.log(`    created  ${ dest }/scripts/banner.js`);
+  console.log(`    created  ${ dest }/scripts/pathfinder.js`);
   console.log(`    created  ${ dest }/scripts/build.js`);
   console.log(`    created  ${ dest }/scripts/test.js`);
 };
