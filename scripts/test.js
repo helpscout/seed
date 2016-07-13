@@ -1,12 +1,17 @@
 'use strict';
 
+var pkg = require('../package.json');
 var sass = require('node-sass');
+var pathfinder = require('./pathfinder');
 
-var seedBreakpoints = require('seed-breakpoints');
+var file = pkg.name;
+var includePaths = pathfinder(
+  require('seed-breakpoints')
+);
 
 sass.render({
-  file: './scss/pack/_seed-visibility.scss',
-  includePaths: seedBreakpoints
+  file: './scss/pack/'+file+'/__index.scss',
+  includePaths: includePaths
 }, function(error, result) {
   if (error) {
     console.error(error);
