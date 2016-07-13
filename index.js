@@ -1,12 +1,8 @@
 var path = require('path');
+var pathfinder = require('./scripts/pathfinder');
 
-var includePath = function() {
-  var paths = Array.prototype.slice.call(arguments);
-  return [].concat.apply([], paths);
-};
-
-var files = [
+var files = pathfinder(
   path.join(__dirname, 'scss')
-];
+);
 
-module.exports = includePath(files);
+module.exports = files;
