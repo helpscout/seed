@@ -39,7 +39,7 @@ Once that is setup, simply `@import` *seed-breakpoints* as needed in your `.scss
 
 ```sass
 // Packs
-@import "pack/seed-breakpoints";
+@import "pack/seed-breakpoints/_index";
 ```
 
 ## Options
