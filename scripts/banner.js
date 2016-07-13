@@ -1,13 +1,19 @@
-// Seed Grid :: Banner
-
 var fs = require('fs');
 var pkg = require('../package.json');
-var config = require('./config.js');
+
+var homepage = function() {
+  if (pkg.homepage) {
+    return ' ('+ pkg.homepage +')';
+  }
+  else {
+    return '';
+  }
+};
 
 var banner = ['/**',
-  ' * '+ config.name +' v'+ pkg.version +' ('+ pkg.homepage +')',
+  ' * '+ pkg.name +' v'+ pkg.version + homepage(),
   ' * '+ pkg.description,
-  ' * Licensed under '+ pkg.license +' ('+ config.repo +'/blob/master/LICENSE)',
+  ' * Licensed under '+ pkg.license,
   ' */',
   ''].join('\n');
 

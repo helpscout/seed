@@ -9,7 +9,7 @@
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
     "test": "node ./scripts/test.js && npm run build",
-    "prepublish": "npm run test"
+    "prepuwblish": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,6 @@
     "node-sass": "^3.8.0"
   },
   "dependencies": {
-    "seed-breakpoints": "0.1.2"
+    "seed-breakpoints": "0.2.0"
   }
 }

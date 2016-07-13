@@ -53,7 +53,7 @@ Once that is setup, simply `@import` *seed-grid* as needed in your `.scss` file:
 
 ```sass
 // Packs
-@import "pack/seed-grid";
+@import "pack/seed-grid/_index";
 ```
 
 **Note:** Because seed-grid has dependencies, its includePaths output will be an `array`. If you're including other paths in addition to seed-grid, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
