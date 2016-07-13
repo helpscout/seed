@@ -31,7 +31,7 @@ Once that is setup, simply `@import` *seed-reset* as needed in your `.scss` file
 
 ```sass
 // Packs
-@import "pack/seed-reset";
+@import "pack/seed-reset/_index";
 ```
 
 ## Options
