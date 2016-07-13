@@ -7,6 +7,7 @@ $seed-typography-break-namespace: #{$seed-typography-namespace}-break !default;
 $seed-typography-decoration-namespace: $seed-typography-namespace !default;
 $seed-typography-heading-namespace: #{$seed-typography-namespace}-h !default;
 $seed-typography-headline-namespace: #{$seed-typography-namespace}-headline !default;
+$seed-typography-line-height-namespace: #{$seed-typography-namespace}-lh !default;
 $seed-typography-size-namespace: $seed-typography-namespace !default;
 $seed-typography-transform-namespace: $seed-typography-namespace !default;
 $seed-typography-truncate-namespace: #{$seed-typography-namespace}-truncate !default;
@@ -68,6 +69,15 @@ $seed-typography-sizes: (
   md: 1rem,
   sm: 0.92rem,
   xs: 0.78rem
+) !default;
+
+// Line-height
+$seed-typography-line-height: (
+  none: 0,
+  reset: 1,
+  heading: 1.2,
+  body: 1.5,
+  copy: 1.6
 ) !default;
 
 // Transform
