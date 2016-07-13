@@ -33,7 +33,7 @@ Once that is setup, simply `@import` *seed-spacing* as needed in your `.scss` fi
 
 ```sass
 // Packs
-@import "pack/seed-spacing";
+@import "pack/seed-spacing/_index";
 ```
 
 ## Options

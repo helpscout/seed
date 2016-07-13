@@ -7,10 +7,10 @@
 @import "./config";
 
 // Generators
-@import "./generators/_all";
+@import "./generators/_index";
 
 // Functions
-@import "./functions/_all";
+@import "./functions/_index";
 
 // Utilities
-@import "./utilities/_all";
+@import "./utilities/_index";

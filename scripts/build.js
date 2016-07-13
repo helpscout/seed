@@ -13,7 +13,7 @@ var includePaths = pathfinder(
 
 // Default .css compile
 sass.render({
-  file: './scss/pack/_'+file+'.scss',
+  file: './scss/pack/'+file+'/__index.scss',
   includePaths: includePaths
 }, function(error, result) {
   if (error) {
@@ -32,7 +32,7 @@ sass.render({
 
 // Minified .css compile
 sass.render({
-  file: './scss/pack/_'+file+'.scss',
+  file: './scss/pack/'+file+'/__index.scss',
   includePaths: includePaths,
   outputStyle: 'compressed'
 }, function(error, result) {
