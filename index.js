@@ -1,14 +1,9 @@
 var path = require('path');
-var seedProps = require('seed-props');
+var pathfinder = require('./scripts/pathfinder');
 
-var includePath = function() {
-  var paths = Array.prototype.slice.call(arguments);
-  return [].concat.apply([], paths);
-};
-
-var files = [
-  seedProps,
+var files = pathfinder(
+  require('seed-props'),
   path.join(__dirname, 'scss')
-];
+);
 
-module.exports = includePath(files);
+module.exports = files;
