@@ -31,7 +31,7 @@ Once that is setup, simply `@import` *seed-props* as needed in your `.scss` file
 
 ```sass
 // Packs
-@import "pack/seed-props";
+@import "pack/seed-props/_index";
 ```
 
 ## Usage
