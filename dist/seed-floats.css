@@ -1,5 +1,5 @@
 /**
- * seed-floats v0.0.3 (https://github.com/helpscout/seed-floats)
+ * seed-floats v0.0.4 (https://github.com/helpscout/seed-floats)
  * Floats utility pack for Seed
  * Licensed under MIT
  */
@@ -40,3 +40,15 @@
 
 .u-pull-none {
   float: none; }
+  @media (min-width: 544px) {
+    .u-pull-none--at-sm {
+      float: none; } }
+  @media (min-width: 768px) {
+    .u-pull-none--at-md {
+      float: none; } }
+  @media (min-width: 992px) {
+    .u-pull-none--at-lg {
+      float: none; } }
+  @media (min-width: 1200px) {
+    .u-pull-none--at-xl {
+      float: none; } }
