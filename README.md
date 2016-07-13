@@ -45,7 +45,7 @@ Once that is setup, simply `@import` *seed-typography* as needed in your `.scss`
 
 ```sass
 // Packs
-@import "pack/seed-typography";
+@import "pack/seed-typography/_index";
 ```
 
 **Note:** Because seed-typography has dependencies, its includePaths output will be an `array`. If you're including other paths in addition to seed-typography, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
