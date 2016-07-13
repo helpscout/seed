@@ -35,7 +35,7 @@ Once that is setup, simply `@import` *seed-width* as needed in your `.scss` file
 
 ```sass
 // Packs
-@import "pack/seed-width";
+@import "pack/seed-width/_index";
 ```
 
 **Note:** Because seed-width has dependencies, it's includePaths output will be an `array`. If you're including other paths in addition to seed-width, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
