@@ -3,7 +3,7 @@ var pkg = require('../package.json');
 
 var homepage = function() {
   if (pkg.homepage) {
-    return ' ('+ pkg.hoempage +')';
+    return ' ('+ pkg.homepage +')';
   }
   else {
     return '';
