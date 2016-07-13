@@ -1,14 +1,9 @@
 var path = require('path');
-var seedBreakpoints = require('seed-breakpoints');
+var pathfinder = require('./scripts/pathfinder');
 
-var includePath = function() {
-  var paths = Array.prototype.slice.call(arguments);
-  return [].concat.apply([], paths);
-};
-
-var files = [
-  seedBreakpoints,
+var files = pathfinder(
+  require('seed-breakpoints'),
   path.join(__dirname, 'scss')
-];
+);
 
-module.exports = includePath(files);
+module.exports = files;

@@ -3,19 +3,19 @@
 // Source: https://github.com/twbs/bootstrap/tree/v4-dev
 
 // Packs
-@import "pack/seed-breakpoints";
+@import "pack/seed-breakpoints/_index";
 
 // Config
 @import "./config";
 
 // Functions
-@import "./functions/_all";
+@import "./functions/_index";
 
 // Mixins
-@import "./mixins/_all";
+@import "./mixins/_index";
 
 // Generators
-@import "./generators/_all";
+@import "./generators/_index";
 
 // Objects
-@import "./objects/_all";
+@import "./objects/_index";
