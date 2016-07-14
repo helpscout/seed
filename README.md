@@ -1,4 +1,5 @@
-# seed-flexy
+# seed-flexy [![Build Status](https://travis-ci.org/helpscout/seed-flexy.svg?branch=master)](https://travis-ci.org/helpscout/seed-flexy) [![npm version](https://badge.fury.io/js/seed-flexy.svg)](https://badge.fury.io/js/seed-flexy) [![Dependencies](https://david-dm.org/helpscout/seed-flexy.svg)](https://david-dm.org/helpscout/seed-flexy)
+
 Flex object pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
