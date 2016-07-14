@@ -1,7 +1,6 @@
-# seed-opacity
-Opacity utility pack for Seed
+# seed-opacity [![Build Status](https://travis-ci.org/helpscout/seed-opacity.svg?branch=master)](https://travis-ci.org/helpscout/seed-opacity) [![npm version](https://badge.fury.io/js/seed-opacity.svg)](https://badge.fury.io/js/seed-opacity) [![Dependencies](https://david-dm.org/helpscout/seed-opacity.svg)](https://david-dm.org/helpscout/seed-opacity)
 
-utility pack for [Seed](https://github.com/helpscout/seed)!
+Opacity utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```

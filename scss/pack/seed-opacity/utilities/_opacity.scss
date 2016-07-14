@@ -1,0 +1,10 @@
+// Utilities :: Opacity
+
+.#{$seed-opacity-namespace} {
+  // Dependencies
+  @import "pack/seed-props/_index";
+
+  @include prop-map($seed-opacity, (prop)) {
+    opacity: prop(prop) !important;
+  }
+}
