@@ -1,0 +1,16 @@
+{
+  "name": "seed-opacity",
+  "description": "Opacity utility pack for Seed",
+  "main": "index.js",
+  "authors": [
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test.js"
+  ],
+  "version": "0.0.1"
+}
