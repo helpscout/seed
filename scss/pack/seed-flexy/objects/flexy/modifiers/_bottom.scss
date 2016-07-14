@@ -1,0 +1,10 @@
+// Modifiers :: Bottom
+
+&--bottom {
+  @include breakpoint-all {
+    -webkit-box-align: bottom;
+    -webkit-align-items: bottom;
+    -ms-flex-align: bottom;
+    align-items: bottom
+  }
+}

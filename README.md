@@ -1,7 +1,5 @@
 # seed-flexy
-Flex object pack for Seed
-
-object pack for [Seed](https://github.com/helpscout/seed)!
+Flex object pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -41,5 +39,5 @@ Once that is setup, simply `@import` *seed-flexy* as needed in your `.scss` file
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-flexy config options
+$seed-flexy-namespace: "o-flex" !default;
 ```

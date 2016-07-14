@@ -1,0 +1,10 @@
+// Modifiers :: Top
+
+&--top {
+  @include breakpoint-all {
+    -webkit-box-align: top;
+    -webkit-align-items: top;
+    -ms-flex-align: top;
+    align-items: top
+  }
+}
