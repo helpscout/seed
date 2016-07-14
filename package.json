@@ -40,6 +40,6 @@
     "node-sass": "^3.8.0"
   },
   "dependencies": {
-    "seed-breakpoints": "^0.2.0"
+    "seed-breakpoints": "^0.2.1"
   }
 }
