@@ -1,5 +1,5 @@
 /**
- * seed-flexy v0.0.1 (https://github.com/helpscout/seed-flexy)
+ * seed-flexy v0.0.2 (https://github.com/helpscout/seed-flexy)
  * Flex object pack for Seed
  * Licensed under MIT
  */
@@ -51,34 +51,34 @@
   min-width: 0; }
 
 .o-flexy--top {
-  -webkit-box-align: top;
-  -webkit-align-items: top;
-  -ms-flex-align: top;
-  align-items: top; }
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start; }
   @media (min-width: 544px) {
     .o-flexy--top--at-sm {
-      -webkit-box-align: top;
-      -webkit-align-items: top;
-      -ms-flex-align: top;
-      align-items: top; } }
+      -webkit-box-align: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start; } }
   @media (min-width: 768px) {
     .o-flexy--top--at-md {
-      -webkit-box-align: top;
-      -webkit-align-items: top;
-      -ms-flex-align: top;
-      align-items: top; } }
+      -webkit-box-align: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start; } }
   @media (min-width: 992px) {
     .o-flexy--top--at-lg {
-      -webkit-box-align: top;
-      -webkit-align-items: top;
-      -ms-flex-align: top;
-      align-items: top; } }
+      -webkit-box-align: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start; } }
   @media (min-width: 1200px) {
     .o-flexy--top--at-xl {
-      -webkit-box-align: top;
-      -webkit-align-items: top;
-      -ms-flex-align: top;
-      align-items: top; } }
+      -webkit-box-align: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start; } }
 
 .o-flexy--middle {
   -webkit-box-align: center;
@@ -111,31 +111,31 @@
       align-items: center; } }
 
 .o-flexy--bottom {
-  -webkit-box-align: bottom;
-  -webkit-align-items: bottom;
-  -ms-flex-align: bottom;
-  align-items: bottom; }
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end; }
   @media (min-width: 544px) {
     .o-flexy--bottom--at-sm {
-      -webkit-box-align: bottom;
-      -webkit-align-items: bottom;
-      -ms-flex-align: bottom;
-      align-items: bottom; } }
+      -webkit-box-align: flex-end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+      align-items: flex-end; } }
   @media (min-width: 768px) {
     .o-flexy--bottom--at-md {
-      -webkit-box-align: bottom;
-      -webkit-align-items: bottom;
-      -ms-flex-align: bottom;
-      align-items: bottom; } }
+      -webkit-box-align: flex-end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+      align-items: flex-end; } }
   @media (min-width: 992px) {
     .o-flexy--bottom--at-lg {
-      -webkit-box-align: bottom;
-      -webkit-align-items: bottom;
-      -ms-flex-align: bottom;
-      align-items: bottom; } }
+      -webkit-box-align: flex-end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+      align-items: flex-end; } }
   @media (min-width: 1200px) {
     .o-flexy--bottom--at-xl {
-      -webkit-box-align: bottom;
-      -webkit-align-items: bottom;
-      -ms-flex-align: bottom;
-      align-items: bottom; } }
+      -webkit-box-align: flex-end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+      align-items: flex-end; } }

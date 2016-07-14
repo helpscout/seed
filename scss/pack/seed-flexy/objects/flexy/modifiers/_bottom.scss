@@ -2,9 +2,9 @@
 
 &--bottom {
   @include breakpoint-all {
-    -webkit-box-align: bottom;
-    -webkit-align-items: bottom;
-    -ms-flex-align: bottom;
-    align-items: bottom
+    -webkit-box-align: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end
   }
 }
