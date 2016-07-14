@@ -39,7 +39,7 @@
         }
       }
       // Return @content
-      &#{$class} {
+      &-#{$class} {
         @content;
       }
     }
