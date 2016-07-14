@@ -3,7 +3,7 @@
 // Dependencies
 @import "../config";
 
-@function t-heading($size: 1, $fallback: false) {
+@function t-heading($size: h1, $fallback: false) {
   @if map-has-key($seed-typography-heading-sizes, $size) {
     $heading: map-get($seed-typography-heading-sizes, $size);
     @return $heading;

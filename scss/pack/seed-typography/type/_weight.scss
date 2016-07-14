@@ -5,7 +5,7 @@
 
 @include generate-typography-weight-num;
 
-.#{$seed-typography-weight-namespace}- {
+.#{$seed-typography-weight-namespace} {
   @include prop-map($seed-typography-weight, (weight)) {
     @if $seed-typography-use-important {
       font-weight: prop(weight) !important;

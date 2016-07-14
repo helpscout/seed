@@ -1,6 +1,6 @@
 // Type :: Headline
 
-.#{$seed-typography-headline-namespace}- {
+.#{$seed-typography-headline-namespace} {
   @include breakpoint-prop-map($seed-typography-headline-sizes, (font-size)) {
     @if $seed-typography-use-important {
       font-size: prop(font-size) !important;
