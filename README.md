@@ -82,7 +82,7 @@ $seed-typography-namespace: "t" !default;
 $seed-typography-alignment-namespace: $seed-typography-namespace !default;
 $seed-typography-break-namespace: #{$seed-typography-namespace}-break !default;
 $seed-typography-decoration-namespace: $seed-typography-namespace !default;
-$seed-typography-heading-namespace: #{$seed-typography-namespace}-h !default;
+$seed-typography-heading-namespace: #{$seed-typography-namespace} !default;
 $seed-typography-headline-namespace: #{$seed-typography-namespace}-headline !default;
 $seed-typography-size-namespace: $seed-typography-namespace !default;
 $seed-typography-transform-namespace: $seed-typography-namespace !default;
@@ -121,12 +121,12 @@ $seed-typography-decoration: (
 
 // Heading sizes
 $seed-typography-heading-sizes: (
-  1: 3rem,
-  2: 2.25rem,
-  3: 1.5rem,
-  4: 1.25rem,
-  5: 1rem,
-  6: 0.875rem
+  h1: 3rem,
+  h2: 2.25rem,
+  h3: 1.5rem,
+  h4: 1.25rem,
+  h5: 1rem,
+  h6: 0.875rem
 ) !default;
 
 // Headline sizes
