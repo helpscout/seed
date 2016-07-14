@@ -76,7 +76,7 @@ $btn-states: (
     border-color: red)
 );
 
-.btn- {
+.btn {
   @include prop-map($btn-states, (background, border-color)) {
     background: prop(background);
     border-color: prop(border-color);
