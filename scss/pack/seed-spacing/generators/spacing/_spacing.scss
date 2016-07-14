@@ -12,13 +12,13 @@
   @if ($property == padding) {
     $class: $seed-spacing-padding-namespace;
   }
-  
+
   @each $dir-prop, $dir-class in $seed-spacing-directions {
     $_util-classname: #{$class}-#{$dir-class};
     $_property: #{$property}-#{$dir-prop};
 
     @if $dir-prop != "none" {
-      .#{$_util-classname}- {
+      .#{$_util-classname} {
         @include breakpoint-prop-map($seed-spacing-sizes, (size)) {
           @if ($dir-class == "h") {
             #{$property}-left: prop(size) !important;
