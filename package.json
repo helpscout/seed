@@ -8,16 +8,26 @@
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build"
+    "test": "node ./scripts/test.js && npm run build",
+    "prepublish": "npm run test"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-color.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-color/issues"
   },
   "keywords": [
     "bem",
+    "color",
     "css",
     "design",
+    "function",
     "functional",
     "itcss",
     "modular",
@@ -27,9 +37,6 @@
     "seed-pack",
     "scss"
   ],
-  "authors": [
-  ],
-  "license": "MIT",
   "engines": {
     "node": ">=4"
   },

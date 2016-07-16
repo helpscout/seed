@@ -1,7 +1,5 @@
 # seed-color
-Color function pack for Seed
-
-other pack for [Seed](https://github.com/helpscout/seed)!
+Color function pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
