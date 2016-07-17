@@ -179,4 +179,7 @@ $seed-typography-wrap: (
 
 ## Thanks
 
-A *huge* thanks to [Alisdair](https://github.com/alisdair) for suggesting the use of `t` to prefix typography classes!
+##### July 17, 2016
+We've updated the default namespace of text classes from `t-` to `tx-`. Following the ITCSS convention, `t-` is [reserved for "theme" classes](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/).
+
+A *huge* thanks to [Alisdair](https://github.com/alisdair) for his collaboration in defining the `tx` prefix for text classes!
