@@ -10,7 +10,7 @@
     }
     @else {
       @include breakpoint($name) {
-        $class_suffix: --at-#{$name};
+        $class_suffix: #{$seed-breakpoints-at-namespace}#{$name};
         @include prop-map($map, $properties, $class_suffix) {
           @content;
         }

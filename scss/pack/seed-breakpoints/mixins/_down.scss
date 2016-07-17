@@ -7,7 +7,7 @@
     }
     @else {
       @include breakpoint-max($name) {
-        &--at-#{$name} {
+        &#{$seed-breakpoints-at-namespace}#{$name} {
           @content;
         }
       }

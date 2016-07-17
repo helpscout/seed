@@ -6,7 +6,7 @@
   @each $name, $breakpoint in $seed-breakpoints {
     @if($breakpoint != 0) {
       @include breakpoint($name) {
-        &--at-#{$name} {
+        &#{$seed-breakpoints-at-namespace}#{$name} {
           @content;
         }
       }

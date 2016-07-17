@@ -9,7 +9,7 @@
     }
     @else {
       @include breakpoint($name) {
-        &--at-#{$name} {
+        &#{$seed-breakpoints-at-namespace}#{$name} {
           @content;
         }
       }
