@@ -47,6 +47,9 @@ Once that is setup, simply `@import` *seed-breakpoints* as needed in your `.scss
 The following variables can be found in [`_config.scss`](https://github.com/helpscout/seed-breakpoints/blob/master/scss/pack/_config.scss)
 
 ```sass
+// Namespaces
+$seed-breakpoints-at-namespace: \@ !default;
+
 // Breakpoints
 $seed-breakpoints: (
   xs: 0,
@@ -61,3 +64,21 @@ $seed-breakpoints: (
 ## Examples
 
 (Coming soon!)
+
+
+## Important updates
+
+#### July 17, 2016
+
+**[Updates breakpoint namespace to @ symbol](https://github.com/helpscout/seed-breakpoints/pull/9)**
+
+This change was made to better follow the ITCSS naming conventions for [responsive classes](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/).
+
+The compiled stylesheet (`.css`) will show the classes like:
+`.class\@sm { ... }`
+
+However, your markup can just be:
+`<div class="class@sm">...</div>`
+
+From this version forward, scss code utilizing the breakpoint mixins will now have altered (default) compiled responsive classes.
+If you prefer using the older `--at-size` convention (or establish your own personal conventions), you can modify the new `$seed-breakpoints-at-namespace` variable.
