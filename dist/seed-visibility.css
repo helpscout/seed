@@ -1,36 +1,36 @@
 /**
- * seed-visibility v0.1.0 (https://github.com/helpscout/seed-visibility)
+ * seed-visibility v0.1.1 (https://github.com/helpscout/seed-visibility)
  * Visibility utility pack for Seed
  * Licensed under MIT
  */
 .u-invisible {
   visibility: hidden !important; }
   @media (min-width: 544px) {
-    .u-invisible--at-sm {
+    .u-invisible\@sm {
       visibility: hidden !important; } }
   @media (min-width: 768px) {
-    .u-invisible--at-md {
+    .u-invisible\@md {
       visibility: hidden !important; } }
   @media (min-width: 992px) {
-    .u-invisible--at-lg {
+    .u-invisible\@lg {
       visibility: hidden !important; } }
   @media (min-width: 1200px) {
-    .u-invisible--at-xl {
+    .u-invisible\@xl {
       visibility: hidden !important; } }
 
 .u-hidden {
   display: none !important; }
   @media (min-width: 544px) {
-    .u-hidden--at-sm {
+    .u-hidden\@sm {
       display: none !important; } }
   @media (min-width: 768px) {
-    .u-hidden--at-md {
+    .u-hidden\@md {
       display: none !important; } }
   @media (min-width: 992px) {
-    .u-hidden--at-lg {
+    .u-hidden\@lg {
       display: none !important; } }
   @media (min-width: 1200px) {
-    .u-hidden--at-xl {
+    .u-hidden\@xl {
       display: none !important; } }
 
 .u-sr-only {
@@ -48,14 +48,14 @@
 .u-visible {
   visibility: visible !important; }
   @media (min-width: 544px) {
-    .u-visible--at-sm {
+    .u-visible\@sm {
       visibility: visible !important; } }
   @media (min-width: 768px) {
-    .u-visible--at-md {
+    .u-visible\@md {
       visibility: visible !important; } }
   @media (min-width: 992px) {
-    .u-visible--at-lg {
+    .u-visible\@lg {
       visibility: visible !important; } }
   @media (min-width: 1200px) {
-    .u-visible--at-xl {
+    .u-visible\@xl {
       visibility: visible !important; } }
