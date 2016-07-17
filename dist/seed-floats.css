@@ -1,5 +1,5 @@
 /**
- * seed-floats v0.1.0 (https://github.com/helpscout/seed-floats)
+ * seed-floats v0.1.1 (https://github.com/helpscout/seed-floats)
  * Floats utility pack for Seed
  * Licensed under MIT
  */
@@ -11,44 +11,44 @@
 .u-pull-left {
   float: left; }
   @media (min-width: 544px) {
-    .u-pull-left--at-sm {
+    .u-pull-left\@sm {
       float: left; } }
   @media (min-width: 768px) {
-    .u-pull-left--at-md {
+    .u-pull-left\@md {
       float: left; } }
   @media (min-width: 992px) {
-    .u-pull-left--at-lg {
+    .u-pull-left\@lg {
       float: left; } }
   @media (min-width: 1200px) {
-    .u-pull-left--at-xl {
+    .u-pull-left\@xl {
       float: left; } }
 
 .u-pull-right {
   float: right; }
   @media (min-width: 544px) {
-    .u-pull-right--at-sm {
+    .u-pull-right\@sm {
       float: right; } }
   @media (min-width: 768px) {
-    .u-pull-right--at-md {
+    .u-pull-right\@md {
       float: right; } }
   @media (min-width: 992px) {
-    .u-pull-right--at-lg {
+    .u-pull-right\@lg {
       float: right; } }
   @media (min-width: 1200px) {
-    .u-pull-right--at-xl {
+    .u-pull-right\@xl {
       float: right; } }
 
 .u-pull-none {
   float: none; }
   @media (min-width: 544px) {
-    .u-pull-none--at-sm {
+    .u-pull-none\@sm {
       float: none; } }
   @media (min-width: 768px) {
-    .u-pull-none--at-md {
+    .u-pull-none\@md {
       float: none; } }
   @media (min-width: 992px) {
-    .u-pull-none--at-lg {
+    .u-pull-none\@lg {
       float: none; } }
   @media (min-width: 1200px) {
-    .u-pull-none--at-xl {
+    .u-pull-none\@xl {
       float: none; } }
