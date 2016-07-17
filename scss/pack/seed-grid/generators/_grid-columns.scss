@@ -13,7 +13,7 @@
         $_col-class: #{$_class}-#{$i};
       }
       @else {
-        $_col-class: #{$_class}-#{$i}--at-#{$breakpoint};
+        $_col-class: #{$_class}-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
       }
 
       .#{$_col-class} {
@@ -28,7 +28,7 @@
           $_col-class: #{$_class}-#{$i};
         }
         @else {
-          $_col-class: #{$_class}-#{$i}--at-#{$breakpoint};
+          $_col-class: #{$_class}-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
         }
 
         .#{$_col-class} {
@@ -41,7 +41,7 @@
           $_col-offset-class: #{$_class}-offset-#{$i};
         }
         @else {
-          $_col-offset-class: #{$_class}-offset-#{$i}--at-#{$breakpoint};
+          $_col-offset-class: #{$_class}-offset-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
         }
 
         @if $breakpoint-counter != 1 or $i != 0 {
