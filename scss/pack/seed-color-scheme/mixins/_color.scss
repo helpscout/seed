@@ -5,7 +5,7 @@
 
 @mixin _color($maps...) {
   // Default map
-  $scheme: $seed-color-scheme;
+  $scheme: $_seed-color-scheme;
   // Reset if invalid
   @if (type-of($scheme) != "map") {
     $scheme: (
@@ -13,5 +13,5 @@
     );
   }
   // Quietly set the color-scheme
-  $seed-color-scheme: _extend($scheme, $maps...) !global;
+  $_seed-color-scheme: _extend($scheme, $maps...) !global;
 }
