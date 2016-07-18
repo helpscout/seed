@@ -55,7 +55,7 @@ After doing an `@import` of the Help Scout color scheme, use the `_color()` func
 // Output (main.css)
 
 .my-class {
-  color: #3197d6,
+  color: #3197d6;
 }
 ```
 
