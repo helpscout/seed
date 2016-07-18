@@ -4,6 +4,14 @@
 @import "../functions/_extend";
 
 @mixin _color($maps...) {
+  // Default map
+  $scheme: $seed-color-scheme;
+  // Reset if invalid
+  @if (type-of($scheme) != "map") {
+    $scheme: (
+      black: "#000"
+    );
+  }
   // Quietly set the color-scheme
-  $seed-color-scheme: _extend($seed-color-scheme, $maps...) !global;
+  $seed-color-scheme: _extend($scheme, $maps...) !global;
 }
