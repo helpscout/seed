@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-color.git"
+    "url": "git+https://github.com/helpscout/seed-color-fn.git"
   },
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-color/issues"
+    "url": "https://github.com/helpscout/seed-color-fn/issues"
   },
   "keywords": [
     "bem",
