@@ -3,5 +3,6 @@
 node_modules/
 bower_components/
 
+.seed-test-cache/
 npm-debug.log
 dist/

@@ -1,0 +1,29 @@
+// Functions :: clr
+
+// Dependencies
+// @import "../config";
+
+@function clr($keys...) {
+  $first: nth($keys, 1);
+  @if not $first {
+    @error "clr: At least 1 argument must be passed.";
+  }
+
+  // Default color scheme map
+  $map: $seed-color-scheme;
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+
+  // Fallback to default if defined
+  @if $map and type-of($map) == "map" {
+    @if map-has-key($map, default) {
+      $map: map-get($map, default);
+    }
+    @else {
+      $map_keys: map-keys($map);
+      $map: map-get($map, nth($map_keys, 1));
+    }
+  }
+  @return $map;
+};

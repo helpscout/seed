@@ -1,0 +1,90 @@
+// Clr :: Test
+
+@import "true";
+
+@include test-module("clr") {
+
+  @include test("should get the correct color from a simple map") {
+
+    @import "./scss/pack/seed-color/functions/clr";
+    $seed-color-scheme: (
+      primary: blue,
+      secondary: red
+    );
+
+    $test: clr(secondary);
+    $expect: red;
+
+    @include assert-equal($test, $expect, "red");
+  }
+
+
+  @include test("should get the correct color from a nested map") {
+
+    @import "./scss/pack/seed-color/functions/clr";
+    $seed-color-scheme: (
+      primary: (
+        blue: (
+          100: blue
+        )
+      )
+    );
+
+    $test: clr(primary, blue, 100);
+    $expect: blue;
+
+    @include assert-equal($test, $expect, "blue");
+  }
+
+  @include test("should fallback to default color if key is not defined") {
+
+    @import "./scss/pack/seed-color/functions/clr";
+    $seed-color-scheme: (
+      primary: (
+        blue: (
+          default: purple,
+          100: blue
+        )
+      )
+    );
+
+    $test: clr(primary, blue);
+    $expect: purple;
+
+    @include assert-equal($test, $expect, "purple");
+  }
+
+  @include test("should fallback to first key if key and default is not defined") {
+
+    @import "./scss/pack/seed-color/functions/clr";
+    $seed-color-scheme: (
+      primary: (
+        blue: (
+          100: light-blue,
+          200: blue
+        )
+      )
+    );
+
+    $test: clr(primary, blue);
+    $expect: light-blue;
+
+    @include assert-equal($test, $expect, "light-blue");
+  }
+
+  @include test("should get correct color of a newly updated map") {
+
+    $seed-color-scheme: (
+      primary: red
+    );
+    @import "./scss/pack/seed-color/functions/clr";
+    $seed-color-scheme: (
+      primary: blue
+    );
+
+    $test: clr(primary);
+    $expect: blue;
+
+    @include assert-equal($test, $expect, "blue");
+  }
+}
