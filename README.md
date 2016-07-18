@@ -1,4 +1,5 @@
-# seed-color
+# seed-color [![Build Status](https://travis-ci.org/helpscout/seed-color.svg?branch=master)](https://travis-ci.org/helpscout/seed-color) [![npm version](https://badge.fury.io/js/seed-color.svg)](https://badge.fury.io/js/seed-color) [![Dependencies](https://david-dm.org/helpscout/seed-color.svg)](https://david-dm.org/helpscout/seed-color)
+
 Color function pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
