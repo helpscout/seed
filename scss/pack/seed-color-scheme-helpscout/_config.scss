@@ -1,7 +1,6 @@
 // Help Scout color scheme config
 
 $seed-color-scheme-helpscout: (
-
   // Base
   white: #fff,
   black: #000,
@@ -109,4 +108,4 @@ $seed-color-scheme-helpscout: (
     hover: #e6e6e6,
     active: #b6b6b6
   )
-);
+) !default;
