@@ -1,3 +1,8 @@
-// color-scheme-helpscout pack for Seed
+// Help Scout color scheme pack for Seed
 
+// Packs
+@import "pack/seed-color-fn/_index";
+// Config
 @import "./config";
+
+@include _color($seed-color-scheme-helpscout);
