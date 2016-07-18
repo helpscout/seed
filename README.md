@@ -36,6 +36,31 @@ Once that is setup, simply `@import` *seed-color-scheme-helpscout* as needed in 
 @import "pack/seed-color-scheme-helpscout/_index";
 ```
 
+
+## Usage
+
+After doing an `@import` of the Help Scout color scheme, use the `_color()` function (part of the [Seed Color function pack](https://github.com/helpscout/seed-color-fn/)) to reference a color:
+
+```scss
+// Input (main.scss)
+
+// Import the color scheme
+@import "pack/seed-color-scheme-helpscout/_index";
+// Use the color scheme
+.my-class {
+  color: _color(blue, 500);
+}
+```
+
+```scss
+// Output (main.css)
+
+.my-class {
+  color: #3197d6,
+}
+```
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
@@ -150,27 +175,4 @@ $seed-color-scheme-helpscout: (
     active: #b6b6b6
   )
 ) !default;
-```
-
-## Usage
-
-After doing an `@import` of the Help Scout color scheme, use the `_color()` function (part of the [Seed Color function pack](https://github.com/helpscout/seed-color-fn/)) to reference a color:
-
-```scss
-// Input (main.scss)
-
-// Import the color scheme
-@import "pack/seed-color-scheme-helpscout/_index";
-// Use the color scheme
-.my-class {
-  color: _color(blue, 500);
-}
-```
-
-```scss
-// Output (main.css)
-
-.my-class {
-  color: #3197d6,
-}
 ```
