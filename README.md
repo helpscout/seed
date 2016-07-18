@@ -31,6 +31,29 @@ gulp.task('sass', function () {
 });
 ```
 
+**Note:** Because seed-color-scheme-helpscout has dependencies, its includePaths output will be an `array`. If you're including other paths in addition to seed-color-scheme-helpscout, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
+
+Example with *sass-pathfinder*:
+
+```javascript
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass({
+      includePaths: pathfinder(
+        './scss/vendor/example',
+        './scss/plugins/super-awesome-plugin',
+        require('seed-color-scheme'),
+        require('seed-color-scheme-helpscout')
+      )
+    }))
+    .pipe(gulp.dest('./css'));
+});
+```
+
+
 Once that is setup, simply `@import` *seed-color-scheme-helpscout* as needed in your `.scss` file:
 
 ```sass
