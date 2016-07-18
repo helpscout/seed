@@ -1,6 +1,6 @@
 {
   "name": "seed-color-fn",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Color function pack for Seed",
   "main": "index.js",
   "homepage": "",
