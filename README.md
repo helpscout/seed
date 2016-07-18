@@ -35,10 +35,29 @@ Once that is setup, simply `@import` *seed-color-fn* as needed in your `.scss` f
 @import "pack/seed-color-fn/_index";
 ```
 
-## Options
+## Usage
 
-The following variables can be found in `_config.scss`
+### Adding colors
+
+Add colors to the global color scheme by using the `_color` mixin:
 
 ```sass
-$seed-color-scheme: () !default;
+// My awesome custom color scheme
+$my-colors: (
+  red: red,
+  blue: blue
+);
+
+// Add my colors to the global color scheme
+@include _color($my-colors);
+```
+
+### Using colors
+
+After you've successfully added/defined colors in your color scheme, use the `_color` function to use the color:
+
+```sass
+.my-class {
+  color: _color(red);
+}
 ```

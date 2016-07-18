@@ -1,0 +1,9 @@
+// Mixins :: _color
+
+// Dependencies
+@import "../functions/_extend";
+
+@mixin _color($maps...) {
+  // Quietly set the color-scheme
+  $seed-color-scheme: _extend($seed-color-scheme, $maps...) !global;
+}
