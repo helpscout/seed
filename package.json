@@ -1,5 +1,5 @@
 {
-  "name": "seed-color",
+  "name": "seed-color-fn",
   "version": "0.0.1",
   "description": "Color function pack for Seed",
   "main": "index.js",
