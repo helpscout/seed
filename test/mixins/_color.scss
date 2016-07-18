@@ -12,6 +12,21 @@ $seed-color-scheme: (
 
 @include test-module("Mixin: _color") {
 
+  @include test("should correctly handle initial blank color scheme") {
+
+    $seed-color-scheme: () !global;
+    $map: (
+      blue: blue
+    );
+
+    @include _color($map);
+
+    $test: _color(blue);
+    $expect: blue;
+
+    @include assert-equal($test, $expect, "blue");
+  }
+
   @include test("should correctly add a simple map") {
 
     $map: (
