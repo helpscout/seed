@@ -7,7 +7,7 @@
   @include test("should get the correct color from a simple map") {
 
     @import "./scss/pack/seed-color-scheme/functions/_color";
-    $seed-color-scheme: (
+    $_seed-color-scheme: (
       primary: blue,
       secondary: red
     );
@@ -22,7 +22,7 @@
   @include test("should get the correct color from a nested map") {
 
     @import "./scss/pack/seed-color-scheme/functions/_color";
-    $seed-color-scheme: (
+    $_seed-color-scheme: (
       primary: (
         blue: (
           100: blue
@@ -39,7 +39,7 @@
   @include test("should fallback to default color if key is not defined") {
 
     @import "./scss/pack/seed-color-scheme/functions/_color";
-    $seed-color-scheme: (
+    $_seed-color-scheme: (
       primary: (
         blue: (
           default: purple,
@@ -57,7 +57,7 @@
   @include test("should fallback to first key if key and default is not defined") {
 
     @import "./scss/pack/seed-color-scheme/functions/_color";
-    $seed-color-scheme: (
+    $_seed-color-scheme: (
       primary: (
         blue: (
           100: light-blue,
@@ -74,11 +74,11 @@
 
   @include test("should get correct color of a newly updated map") {
 
-    $seed-color-scheme: (
+    $_seed-color-scheme: (
       primary: red
     );
     @import "./scss/pack/seed-color-scheme/functions/_color";
-    $seed-color-scheme: (
+    $_seed-color-scheme: (
       primary: blue
     );
 

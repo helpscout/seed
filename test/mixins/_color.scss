@@ -5,7 +5,7 @@
 @import "./scss/pack/seed-color-scheme/mixins/color";
 
 // Set the default color scheme
-$seed-color-scheme: (
+$_seed-color-scheme: (
   primary: blue,
   secondary: red
 );
@@ -14,7 +14,7 @@ $seed-color-scheme: (
 
   @include test("should correctly handle initial blank color scheme") {
 
-    $seed-color-scheme: () !global;
+    $_seed-color-scheme: () !global;
     $map: (
       blue: blue
     );
