@@ -1,7 +1,7 @@
 {
-  "name": "seed-color-fn",
-  "version": "0.1.1",
-  "description": "Color function pack for Seed",
+  "name": "seed-color-scheme",
+  "version": "0.0.1",
+  "description": "Color scheme system pack for Seed",
   "main": "index.js",
   "homepage": "",
   "scripts": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-color-fn.git"
+    "url": "git+https://github.com/helpscout/seed-color-scheme.git"
   },
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-color-fn/issues"
+    "url": "https://github.com/helpscout/seed-color-scheme/issues"
   },
   "keywords": [
     "bem",

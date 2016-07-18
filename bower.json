@@ -1,6 +1,6 @@
 {
-  "name": "seed-color-fn",
-  "description": "Color function pack for Seed",
+  "name": "seed-color-scheme",
+  "description": "Color scheme system pack for Seed",
   "main": "index.js",
   "authors": [
   ],

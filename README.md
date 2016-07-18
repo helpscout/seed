@@ -1,10 +1,10 @@
-# seed-color-fn [![Build Status](https://travis-ci.org/helpscout/seed-color-fn.svg?branch=master)](https://travis-ci.org/helpscout/seed-color-fn) [![npm version](https://badge.fury.io/js/seed-color-fn.svg)](https://badge.fury.io/js/seed-color-fn) [![Dependencies](https://david-dm.org/helpscout/seed-color-fn.svg)](https://david-dm.org/helpscout/seed-color-fn)
+# seed-color-scheme [![Build Status](https://travis-ci.org/helpscout/seed-color-scheme.svg?branch=master)](https://travis-ci.org/helpscout/seed-color-scheme) [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme) [![Dependencies](https://david-dm.org/helpscout/seed-color-scheme.svg)](https://david-dm.org/helpscout/seed-color-scheme)
 
 Color function pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-color-fn --save-dev
+npm install seed-color-scheme --save-dev
 ```
 
 
@@ -17,7 +17,7 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var pack = require('seed-color-fn');
+var pack = require('seed-color-scheme');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -28,11 +28,11 @@ gulp.task('sass', function () {
 });
 ```
 
-Once that is setup, simply `@import` *seed-color-fn* as needed in your `.scss` file:
+Once that is setup, simply `@import` *seed-color-scheme* as needed in your `.scss` file:
 
 ```sass
 // Packs
-@import "pack/seed-color-fn/_index";
+@import "pack/seed-color-scheme/_index";
 ```
 
 ## Usage
