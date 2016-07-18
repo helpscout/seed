@@ -2,7 +2,7 @@
 
 @import "true";
 
-@include test-module("clr") {
+@include test-module("Function: clr") {
 
   @include test("should get the correct color from a simple map") {
 

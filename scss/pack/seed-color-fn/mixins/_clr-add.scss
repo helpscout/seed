@@ -1,0 +1,10 @@
+// Mixins :: clr-add
+// Makes it easier to use the clr-add
+
+// Dependencies
+@import "../functions/_extend";
+
+@mixin clr-add($maps...) {
+  // Quietly set the color-scheme
+  $seed-color-scheme: _extend($seed-color-scheme, $maps...) !global;
+}

@@ -1,8 +1,5 @@
 // Functions :: clr
 
-// Dependencies
-// @import "../config";
-
 @function clr($keys...) {
   $first: nth($keys, 1);
   @if not $first {

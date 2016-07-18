@@ -1,0 +1,115 @@
+// clr-add :: Test
+
+@import "true";
+@import "./scss/pack/seed-color-fn/functions/clr";
+@import "./scss/pack/seed-color-fn/mixins/clr-add";
+
+// Set the default color scheme
+$seed-color-scheme: (
+  primary: blue,
+  secondary: red
+);
+
+@include test-module("Mixin: clr-add") {
+
+  @include test("should correctly add a simple map") {
+
+    $map: (
+      blue: blue
+    );
+
+    @include clr-add($map);
+
+    $test: clr(blue);
+    $expect: blue;
+
+    @include assert-equal($test, $expect, "blue");
+  }
+
+  @include test("should correctly add a deep map") {
+
+    $map: (
+      blue: (
+        100: a,
+        200: b,
+        300: c
+      )
+    );
+
+    @include clr-add($map);
+
+    $test: clr(blue, 200);
+    $expect: b;
+
+    @include assert-equal($test, $expect, "b");
+  }
+
+  @include test("should correctly add multilple simple maps") {
+
+    $map: (
+      blue: blue
+    );
+
+    $map2: (
+      red: red
+    );
+
+    @include clr-add($map, $map2);
+
+    $test: clr(red);
+    $expect: red;
+
+    @include assert-equal($test, $expect, "red");
+  }
+
+  @include test("should correctly handle same value overrides for simple maps") {
+
+    $map: (
+      blue: blue,
+      red: purple
+    );
+
+    $map2: (
+      blue: green,
+      red: red
+    );
+
+    @include clr-add($map, $map2);
+
+    $test: clr(red);
+    $expect: red;
+
+    @include assert-equal($test, $expect, "red");
+  }
+
+  @include test("should correctly handle same value overrides for deep maps") {
+
+    $map: (
+      blue: (
+        100: a,
+        200: b,
+        300: c
+      )
+    );
+
+    $map2: (
+      blue: (
+        100: d,
+        200: e
+      ),
+      red: (
+        100: x,
+        200: y,
+        300: z
+      )
+    );
+
+    @include clr-add($map, $map2);
+
+    @debug($seed-color-scheme);
+    $test: clr(blue);
+    $expect: d;
+
+    @include assert-equal($test, $expect, "d");
+  }
+}
