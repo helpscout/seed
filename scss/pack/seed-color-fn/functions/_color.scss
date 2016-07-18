@@ -1,9 +1,9 @@
-// Functions :: clr
+// Functions :: _color
 
-@function clr($keys...) {
+@function _color($keys...) {
   $first: nth($keys, 1);
   @if not $first {
-    @error "clr: At least 1 argument must be passed.";
+    @error "_color: At least 1 argument must be passed.";
   }
 
   // Default color scheme map

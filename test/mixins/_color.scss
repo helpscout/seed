@@ -1,8 +1,8 @@
-// clr-add :: Test
+// Test :: Mixins :: _color
 
 @import "true";
-@import "./scss/pack/seed-color-fn/functions/clr";
-@import "./scss/pack/seed-color-fn/mixins/clr-add";
+@import "./scss/pack/seed-color-fn/functions/color";
+@import "./scss/pack/seed-color-fn/mixins/color";
 
 // Set the default color scheme
 $seed-color-scheme: (
@@ -10,7 +10,7 @@ $seed-color-scheme: (
   secondary: red
 );
 
-@include test-module("Mixin: clr-add") {
+@include test-module("Mixin: _color") {
 
   @include test("should correctly add a simple map") {
 
@@ -18,9 +18,9 @@ $seed-color-scheme: (
       blue: blue
     );
 
-    @include clr-add($map);
+    @include _color($map);
 
-    $test: clr(blue);
+    $test: _color(blue);
     $expect: blue;
 
     @include assert-equal($test, $expect, "blue");
@@ -36,9 +36,9 @@ $seed-color-scheme: (
       )
     );
 
-    @include clr-add($map);
+    @include _color($map);
 
-    $test: clr(blue, 200);
+    $test: _color(blue, 200);
     $expect: b;
 
     @include assert-equal($test, $expect, "b");
@@ -54,9 +54,9 @@ $seed-color-scheme: (
       red: red
     );
 
-    @include clr-add($map, $map2);
+    @include _color($map, $map2);
 
-    $test: clr(red);
+    $test: _color(red);
     $expect: red;
 
     @include assert-equal($test, $expect, "red");
@@ -74,9 +74,9 @@ $seed-color-scheme: (
       red: red
     );
 
-    @include clr-add($map, $map2);
+    @include _color($map, $map2);
 
-    $test: clr(red);
+    $test: _color(red);
     $expect: red;
 
     @include assert-equal($test, $expect, "red");
@@ -104,10 +104,9 @@ $seed-color-scheme: (
       )
     );
 
-    @include clr-add($map, $map2);
+    @include _color($map, $map2);
 
-    @debug($seed-color-scheme);
-    $test: clr(blue);
+    $test: _color(blue);
     $expect: d;
 
     @include assert-equal($test, $expect, "d");

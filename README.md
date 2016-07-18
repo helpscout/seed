@@ -39,7 +39,7 @@ Once that is setup, simply `@import` *seed-color-fn* as needed in your `.scss` f
 
 ### Adding colors
 
-Add colors to the global color scheme by using the `clr-add` mixin:
+Add colors to the global color scheme by using the `_color` mixin:
 
 ```sass
 // My awesome custom color scheme
@@ -49,15 +49,15 @@ $my-colors: (
 );
 
 // Add my colors to the global color scheme
-@include clr-add($my-colors);
+@include _color($my-colors);
 ```
 
 ### Using colors
 
-After you've successfully added/defined colors in your color scheme, use the `clr` function to use the color:
+After you've successfully added/defined colors in your color scheme, use the `_color` function to use the color:
 
 ```sass
 .my-class {
-  color: clr(red);
+  color: _color(red);
 }
 ```

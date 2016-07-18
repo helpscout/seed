@@ -1,0 +1,13 @@
+// _get
+// Source:
+// https://github.com/itsjonq/sass-maphacks
+
+@function _get($map, $keys...) {
+  @if type-of($map) != "map" {
+    @error "_get: The argument must be a map.";
+  }
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
