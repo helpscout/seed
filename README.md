@@ -1,7 +1,6 @@
-# seed-color-scheme-helpscout
-Help Scout color scheme for Seed
+# seed-color-scheme-helpscout [![Build Status](https://travis-ci.org/helpscout/seed-color-scheme-helpscout.svg?branch=master)](https://travis-ci.org/helpscout/seed-color-scheme-helpscout) [![npm version](https://badge.fury.io/js/seed-color-scheme-helpscout.svg)](https://badge.fury.io/js/seed-color-scheme-helpscout) [![Dependencies](https://david-dm.org/helpscout/seed-color-scheme-helpscout.svg)](https://david-dm.org/helpscout/seed-color-scheme-helpscout)
 
-other pack for [Seed](https://github.com/helpscout/seed)!
+Help Scout color scheme for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
