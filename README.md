@@ -39,5 +39,5 @@ Once that is setup, simply `@import` *seed-color* as needed in your `.scss` file
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-color config options
+$seed-color-scheme: () !default;
 ```
