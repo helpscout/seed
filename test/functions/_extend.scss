@@ -1,8 +1,8 @@
 // Test :: Functions :: _extend
 
 @import "true";
-@import "./scss/pack/seed-color-fn/functions/get";
-@import "./scss/pack/seed-color-fn/functions/extend";
+@import "./scss/pack/seed-color-scheme/functions/get";
+@import "./scss/pack/seed-color-scheme/functions/extend";
 
 @include test-module("Function: _extend") {
 

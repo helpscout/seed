@@ -1,8 +1,8 @@
 // Test :: Mixins :: _color
 
 @import "true";
-@import "./scss/pack/seed-color-fn/functions/color";
-@import "./scss/pack/seed-color-fn/mixins/color";
+@import "./scss/pack/seed-color-scheme/functions/color";
+@import "./scss/pack/seed-color-scheme/mixins/color";
 
 // Set the default color scheme
 $seed-color-scheme: (
