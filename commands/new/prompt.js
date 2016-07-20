@@ -8,15 +8,6 @@ var templateDir = global.templateDir;
 
 var questions = [
   {
-    name: 'name',
-    type: 'input',
-    message: 'name:',
-    default: 'starter',
-    filter: function(val) {
-      return val.replace('seed-', '').toLowerCase();
-    }
-  },
-  {
     name: 'type',
     type: 'list',
     message: 'What kind of pack is it?',
@@ -58,6 +49,15 @@ var questions = [
         value: 'other'
       }
     ]
+  },
+  {
+    name: 'name',
+    type: 'input',
+    message: 'name:',
+    default: 'starter',
+    filter: function(val) {
+      return val.replace('seed-', '').toLowerCase();
+    }
   },
   {
     name: 'description',
