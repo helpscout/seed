@@ -40,5 +40,24 @@ Once that is setup, simply `@import` *seed-border* as needed in your `.scss` fil
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-border config options
+// Namespaces
+$seed-border-namespace: "t-bdr" !default;
+
+// Defaults
+$seed-border-color: #eee !default;
+$seed-border-size: 1px !default;
+$seed-border-style: solid !default;
+
+// Directions
+$seed-border-directions: (
+  none: false,
+  all: false,
+  top: "t",
+  right: "r",
+  bottom: "b",
+  left: "l"
+) !default;
+
+// Base variable
+$seed-border: $seed-border-size $seed-border-style $seed-border-color !default;
 ```
