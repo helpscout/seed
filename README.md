@@ -1,4 +1,4 @@
-# seed-border [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
+# seed-border [![Build Status](https://travis-ci.org/helpscout/seed-border.svg?branch=master)](https://travis-ci.org/helpscout/seed-border) [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
 
 Border theme pack for [Seed](https://github.com/helpscout/seed)!
 
