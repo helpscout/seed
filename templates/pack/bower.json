@@ -1,16 +1,29 @@
 {
   "name": "<%= packName %>",
-  "description": "<%= description %>",
+  "version": "<%= version %>",
+  "description": "<% if (description) { %><%= description %><% } else { %><%= name %> <%= type %> pack for Seed<% } %>",
   "main": "index.js",
+  "homepage": "",
   "authors": [
   ],
   "license": "<%= license %>",
-  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test.js"
   ],
-  "version": "<%= version %>"
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ]
 }

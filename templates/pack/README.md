@@ -1,8 +1,9 @@
-# <%= packName %>
+# <%= packName %> [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
+<% if (description) { %>
 <%= description %>
-
-<%= type %> pack for [Seed](https://github.com/helpscout/seed)!
-
+<% } else { %>
+<%= name %> <%= type %> pack for [Seed](https://github.com/helpscout/seed)!
+<% } %>
 ## Install
 ```
 npm install <%= packName %> --save-dev

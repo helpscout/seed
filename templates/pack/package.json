@@ -1,19 +1,23 @@
 {
   "name": "<%= packName %>",
   "version": "<%= version %>",
-  "description": "<%= description %>",
+  "description": "<% if (description) { %><%= description %><% } else { %><%= name %> <%= type %> pack for Seed<% } %>",
   "main": "index.js",
-  "homepage": "",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build"
+    "test": "node ./scripts/test.js && npm run build",
+    "prepublish": "npm run test"
   },
+  "homepage": "",
   "repository": {
     "type": "git",
     "url": ""
   },
+  "authors": [
+  ],
+  "license": "<%= license %>",
   "keywords": [
     "bem",
     "css",
@@ -27,9 +31,6 @@
     "seed-pack",
     "scss"
   ],
-  "authors": [
-  ],
-  "license": "<%= license %>",
   "engines": {
     "node": ">=4"
   },

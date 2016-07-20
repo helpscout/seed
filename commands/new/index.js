@@ -22,9 +22,14 @@ if (((command === 'new' || command === 'n') && isEmpty(global.cli.flags)) || glo
   .then(function(options) {
     console.log('Generating your new Seed pack…\n')
 
-    options.packName = 'seed-' + options.name;
+    if (options.type === 'color scheme') {
+      options.packName = 'seed-color-scheme-' + options.name;
+    }
+    else {
+      options.packName = 'seed-' + options.name;
+    }
 
-    var dest = 'seed-' + options.name;
+    var dest = options.packName;
 
     mkdirp.sync(dest);
     mkdirp.sync(dest + '/scripts');

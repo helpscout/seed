@@ -28,6 +28,11 @@ var questions = [
         value: 'component'
       },
       {
+        key: 'cs',
+        name: 'Color Scheme',
+        value: 'color scheme'
+      },
+      {
         key: 'm',
         name: 'Mixin',
         value: 'mixin'
@@ -36,6 +41,11 @@ var questions = [
         key: 'o',
         name: 'Object',
         value: 'object'
+      },
+      {
+        key: 't',
+        name: 'Theme',
+        value: 'theme'
       },
       {
         key: 'u',
@@ -59,7 +69,7 @@ var questions = [
     name: 'version',
     type: 'input',
     message: 'version:',
-    default: '1.0.0',
+    default: '0.0.1',
   },
   {
     name: 'license',
