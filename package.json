@@ -1,7 +1,7 @@
 {
   "name": "seed-border",
   "version": "0.0.1",
-  "description": "border theme pack for Seed",
+  "description": "Border theme pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
@@ -10,12 +10,13 @@
     "test": "node ./scripts/test.js && npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-border",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-border.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [

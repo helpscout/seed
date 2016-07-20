@@ -1,6 +1,6 @@
 # seed-border [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
 
-border theme pack for [Seed](https://github.com/helpscout/seed)!
+Border theme pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```

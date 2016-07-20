@@ -1,0 +1,32 @@
+// Themes :: Border
+
+.#{$seed-border-namespace} {
+  @each $key, $value in $seed-border-directions {
+    // Defaults
+    $modifier: -#{$key};
+    $style-prop: border-style;
+    $width-value: $seed-border-size;
+
+    // Customize values
+    @if $value {
+      $style-prop: border-#{$key}-style;
+    }
+    @if $key == "all" {
+      @debug $key;
+      // Remove the modifier for "all"
+      $modifier: "";
+    }
+    @if $key == "none" {
+      $width-value: 0;
+    }
+
+    // Creating the modifier
+    &#{$modifier} {
+      #{$style-prop}: $seed-border-style;
+      border-width: $width-value;
+      @if ($key != "none") and (type-of($seed-border-color) == "color") {
+        border-color: $seed-border-color;
+      }
+    }
+  }
+}
