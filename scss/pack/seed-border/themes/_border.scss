@@ -12,7 +12,6 @@
       $style-prop: border-#{$key}-style;
     }
     @if $key == "all" {
-      @debug $key;
       // Remove the modifier for "all"
       $modifier: "";
     }
