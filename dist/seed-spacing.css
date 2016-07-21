@@ -797,85 +797,55 @@
   .u-mrg-v-6m\@xl { margin-bottom: 6em !important; margin-top: 6em !important; }
   .u-mrg-v-7m\@xl { margin-bottom: 7em !important; margin-top: 7em !important; } }
 
-.u-mrg-auto { margin: auto !important; }
+.u-mrg-auto { margin: auto; }
 
-@media (min-width: 544px) { .u-mrg-auto\@sm { margin: auto !important; } }
+@media (min-width: 544px) { .u-mrg-auto\@sm { margin: auto; } }
 
-@media (min-width: 768px) { .u-mrg-auto\@md { margin: auto !important; } }
+@media (min-width: 768px) { .u-mrg-auto\@md { margin: auto; } }
 
-@media (min-width: 992px) { .u-mrg-auto\@lg { margin: auto !important; } }
+@media (min-width: 992px) { .u-mrg-auto\@lg { margin: auto; } }
 
-@media (min-width: 1200px) { .u-mrg-auto\@xl { margin: auto !important; } }
+@media (min-width: 1200px) { .u-mrg-auto\@xl { margin: auto; } }
 
-.u-mrg-a-auto { margin-all: auto !important; }
+.u-mrg-t-auto { margin-top: auto; }
 
-@media (min-width: 544px) { .u-mrg-a-auto\@sm { margin-all: auto !important; } }
+.u-mrg-r-auto { margin-right: auto; }
 
-@media (min-width: 768px) { .u-mrg-a-auto\@md { margin-all: auto !important; } }
+.u-mrg-b-auto { margin-bottom: auto; }
 
-@media (min-width: 992px) { .u-mrg-a-auto\@lg { margin-all: auto !important; } }
+.u-mrg-l-auto { margin-left: auto; }
 
-@media (min-width: 1200px) { .u-mrg-a-auto\@xl { margin-all: auto !important; } }
+.u-mrg-h-auto { margin-left: auto; margin-right: auto; }
 
-.u-mrg-t-auto { margin-top: auto !important; }
+.u-mrg-v-auto { margin-bottom: auto; margin-top: auto; }
 
-@media (min-width: 544px) { .u-mrg-t-auto\@sm { margin-top: auto !important; } }
+@media (min-width: 544px) { .u-mrg-t-auto\@sm { margin-top: auto; }
+  .u-mrg-r-auto\@sm { margin-right: auto; }
+  .u-mrg-b-auto\@sm { margin-bottom: auto; }
+  .u-mrg-l-auto\@sm { margin-left: auto; }
+  .u-mrg-h-auto\@sm { margin-left: auto; margin-right: auto; }
+  .u-mrg-v-auto\@sm { margin-bottom: auto; margin-top: auto; } }
 
-@media (min-width: 768px) { .u-mrg-t-auto\@md { margin-top: auto !important; } }
+@media (min-width: 768px) { .u-mrg-t-auto\@md { margin-top: auto; }
+  .u-mrg-r-auto\@md { margin-right: auto; }
+  .u-mrg-b-auto\@md { margin-bottom: auto; }
+  .u-mrg-l-auto\@md { margin-left: auto; }
+  .u-mrg-h-auto\@md { margin-left: auto; margin-right: auto; }
+  .u-mrg-v-auto\@md { margin-bottom: auto; margin-top: auto; } }
 
-@media (min-width: 992px) { .u-mrg-t-auto\@lg { margin-top: auto !important; } }
+@media (min-width: 992px) { .u-mrg-t-auto\@lg { margin-top: auto; }
+  .u-mrg-r-auto\@lg { margin-right: auto; }
+  .u-mrg-b-auto\@lg { margin-bottom: auto; }
+  .u-mrg-l-auto\@lg { margin-left: auto; }
+  .u-mrg-h-auto\@lg { margin-left: auto; margin-right: auto; }
+  .u-mrg-v-auto\@lg { margin-bottom: auto; margin-top: auto; } }
 
-@media (min-width: 1200px) { .u-mrg-t-auto\@xl { margin-top: auto !important; } }
-
-.u-mrg-r-auto { margin-right: auto !important; }
-
-@media (min-width: 544px) { .u-mrg-r-auto\@sm { margin-right: auto !important; } }
-
-@media (min-width: 768px) { .u-mrg-r-auto\@md { margin-right: auto !important; } }
-
-@media (min-width: 992px) { .u-mrg-r-auto\@lg { margin-right: auto !important; } }
-
-@media (min-width: 1200px) { .u-mrg-r-auto\@xl { margin-right: auto !important; } }
-
-.u-mrg-b-auto { margin-bottom: auto !important; }
-
-@media (min-width: 544px) { .u-mrg-b-auto\@sm { margin-bottom: auto !important; } }
-
-@media (min-width: 768px) { .u-mrg-b-auto\@md { margin-bottom: auto !important; } }
-
-@media (min-width: 992px) { .u-mrg-b-auto\@lg { margin-bottom: auto !important; } }
-
-@media (min-width: 1200px) { .u-mrg-b-auto\@xl { margin-bottom: auto !important; } }
-
-.u-mrg-l-auto { margin-left: auto !important; }
-
-@media (min-width: 544px) { .u-mrg-l-auto\@sm { margin-left: auto !important; } }
-
-@media (min-width: 768px) { .u-mrg-l-auto\@md { margin-left: auto !important; } }
-
-@media (min-width: 992px) { .u-mrg-l-auto\@lg { margin-left: auto !important; } }
-
-@media (min-width: 1200px) { .u-mrg-l-auto\@xl { margin-left: auto !important; } }
-
-.u-mrg-h-auto { margin-left: auto !important; margin-right: auto !important; }
-
-@media (min-width: 544px) { .u-mrg-h-auto\@sm { margin-left: auto !important; margin-right: auto !important; } }
-
-@media (min-width: 768px) { .u-mrg-h-auto\@md { margin-left: auto !important; margin-right: auto !important; } }
-
-@media (min-width: 992px) { .u-mrg-h-auto\@lg { margin-left: auto !important; margin-right: auto !important; } }
-
-@media (min-width: 1200px) { .u-mrg-h-auto\@xl { margin-left: auto !important; margin-right: auto !important; } }
-
-.u-mrg-v-auto { margin-bottom: auto !important; margin-top: auto !important; }
-
-@media (min-width: 544px) { .u-mrg-v-auto\@sm { margin-bottom: auto !important; margin-top: auto !important; } }
-
-@media (min-width: 768px) { .u-mrg-v-auto\@md { margin-bottom: auto !important; margin-top: auto !important; } }
-
-@media (min-width: 992px) { .u-mrg-v-auto\@lg { margin-bottom: auto !important; margin-top: auto !important; } }
-
-@media (min-width: 1200px) { .u-mrg-v-auto\@xl { margin-bottom: auto !important; margin-top: auto !important; } }
+@media (min-width: 1200px) { .u-mrg-t-auto\@xl { margin-top: auto; }
+  .u-mrg-r-auto\@xl { margin-right: auto; }
+  .u-mrg-b-auto\@xl { margin-bottom: auto; }
+  .u-mrg-l-auto\@xl { margin-left: auto; }
+  .u-mrg-h-auto\@xl { margin-left: auto; margin-right: auto; }
+  .u-mrg-v-auto\@xl { margin-bottom: auto; margin-top: auto; } }
 
 .u-pad-0 { padding: 0 !important; }
 

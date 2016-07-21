@@ -28,7 +28,6 @@
 
       .#{$_util-classname} {
         @include breakpoint-prop-map($seed-spacing-sizes, (size)) {
-
           @if ($dir-class == "h" and not $all) {
             #{$property}-left: prop(size) !important;
             #{$property}-right: prop(size) !important;

@@ -2,35 +2,45 @@
 
 // Generates the spacing auto utility classes
 // Example:
-// .u-mrg-lg-auto
+// .u-mrg-auto@lg
 @mixin generate-spacing-auto($property: margin) {
-  @each $dir-prop, $dir-class in $seed-spacing-directions {
+  // Create new map from directions for auto
+  $directions: ();
+  @each $key, $prop in $seed-spacing-directions {
+    $dir: ( #{$prop}-auto: $key );
+    $directions: map_merge($directions, $dir);
+  }
 
-    $_util-classname: #{$seed-spacing-margin-namespace}-#{$dir-class}-auto;
-    $_size: auto;
-    $_property: #{$property}-#{$dir-prop};
+  // Output "all" auto clases
+  .#{$seed-spacing-margin-namespace}-auto {
+    @include breakpoint-all {
+      margin: auto;
+    }
+  }
 
-    @if ($dir-class != "all") {
-      @if ($dir-class == 0) {
-        $_util-classname: #{$seed-spacing-margin-namespace}-auto;
-        $_property: #{$property};
-      }
+  // Output directional auto classes
+  .#{$seed-spacing-margin-namespace} {
+    @include breakpoint-prop-map($directions, (prop)) {
+      $prop: prop(prop);
+      $all: $prop == "all";
+      $none: $prop == "none";
 
-      .#{$_util-classname} {
-        @include breakpoint-all {
-          @if ($dir-class == "h") {
-            #{$property}-left: #{$_size} !important;
-            #{$property}-right: #{$_size} !important;
+      @if (not $all) {
+        @if (not $none) {
+          @if ($prop == "hor") {
+            margin-left: auto;
+            margin-right: auto;
           }
-          @elseif ($dir-class == "v") {
-            #{$property}-bottom: #{$_size} !important;
-            #{$property}-top: #{$_size} !important;
+          @elseif ($prop == "vert") {
+            margin-bottom: auto;
+            margin-top: auto;
           }
           @else {
-            #{$_property}: #{$_size} !important;
+            margin-#{$prop}: auto;
           }
         }
       }
     }
   }
+
 }
