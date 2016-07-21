@@ -1,4 +1,4 @@
-# seed-width-max [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
+#seed-width-max [![Build Status](https://travis-ci.org/helpscout/seed-width-max.svg?branch=master)](https://travis-ci.org/helpscout/seed-width-max) [![npm version](https://badge.fury.io/js/seed-width-max.svg)](https://badge.fury.io/js/seed-width-max) [![Dependencies](https://david-dm.org/helpscout/seed-width-max.svg)](https://david-dm.org/helpscout/seed-width-max)
 
 Max width extension pack for [seed-widtseed-width](https://github.com/helpscout/seed-width)!
 
@@ -40,5 +40,5 @@ Once that is setup, simply `@import` *seed-width-max* as needed in your `.scss` 
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-width-max config options
+$seed-width-max-namespace: #{$seed-width-namespace}-max !default;
 ```
