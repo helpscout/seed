@@ -1,0 +1,9 @@
+// Utilities :: Pull
+
+.#{$seed-floats-pull-namespace} {
+  @import "pack/seed-breakpoints/_index";
+
+  @include breakpoint-prop-map($seed-floats-pull, (prop)) {
+    float: prop(prop) !important;
+  }
+}

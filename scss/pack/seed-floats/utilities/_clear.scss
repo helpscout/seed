@@ -1,0 +1,9 @@
+// Utilities :: Clear
+
+.#{$seed-floats-clear-namespace} {
+  @import "pack/seed-breakpoints/_index";
+
+  @include breakpoint-prop-map($seed-floats-clear, (prop)) {
+    clear: prop(prop) !important;
+  }
+}
