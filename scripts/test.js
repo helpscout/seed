@@ -6,7 +6,8 @@ var pathfinder = require('./pathfinder');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  // Add files/paths to include
+  require('seed-breakpoints'),
+  require('seed-width')
 );
 
 sass.render({

@@ -8,13 +8,15 @@ var sass = require('node-sass');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  // Add files/paths to include
+  require('seed-breakpoints'),
+  require('seed-width')
 );
 
 // Default .css compile
 sass.render({
   file: './scss/pack/'+file+'/__index.scss',
-  includePaths: includePaths
+  includePaths: includePaths,
+  outputStyle: 'compact'
 }, function(error, result) {
   if (error) {
     console.error(error);
@@ -30,7 +32,7 @@ sass.render({
   }
 });
 
-// Minified .css compile
+// Mmininified .css compile
 sass.render({
   file: './scss/pack/'+file+'/__index.scss',
   includePaths: includePaths,

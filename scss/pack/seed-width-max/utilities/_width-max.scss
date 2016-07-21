@@ -1,0 +1,7 @@
+// Utilities :: Width max
+
+.#{$seed-width-max-namespace} {
+  @include breakpoint-prop-map($seed-widths, (prop)) {
+    max-width: prop(prop) !important;
+  }
+}

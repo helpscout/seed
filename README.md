@@ -1,6 +1,6 @@
 # seed-width-max [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
 
-width-max utility pack for [Seed](https://github.com/helpscout/seed)!
+Max width extension pack for [seed-widtseed-width](https://github.com/helpscout/seed-width)!
 
 ## Install
 ```
