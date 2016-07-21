@@ -63,9 +63,7 @@ $seed-spacing-sizes: (
   2m: 2#{$seed-spacing-m-unit},
   3m: 3#{$seed-spacing-m-unit},
   4m: 4#{$seed-spacing-m-unit},
-  5m: 5#{$seed-spacing-m-unit},
-  6m: 6#{$seed-spacing-m-unit},
-  7m: 7#{$seed-spacing-m-unit}
+  5m: 5#{$seed-spacing-m-unit}
 ) !default;
 
 // Directions
