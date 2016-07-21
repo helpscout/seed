@@ -1,8 +1,13 @@
 /**
- * seed-floats v0.1.1 (https://github.com/helpscout/seed-floats)
+ * seed-floats v0.2.0 (https://github.com/helpscout/seed-floats)
  * Floats utility pack for Seed
  * Licensed under MIT
  */
+.u-clearfix::after {
+  content: " ";
+  clear: both;
+  display: table; }
+
 .u-clear-none {
   clear: none !important; }
 
@@ -54,11 +59,6 @@
     clear: right !important; }
   .u-clear-both\@xl {
     clear: both !important; } }
-
-.u-clearfix::after {
-  content: " ";
-  clear: both;
-  display: table; }
 
 .u-pull-left {
   float: left !important; }
