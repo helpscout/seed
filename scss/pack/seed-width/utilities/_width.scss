@@ -6,6 +6,6 @@
 
 .#{$seed-width-namespace} {
   @include breakpoint-prop-map($seed-widths, (prop)) {
-    width: prop(prop);
+    width: prop(prop) !important;
   }
 }
