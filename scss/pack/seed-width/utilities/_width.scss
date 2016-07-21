@@ -1,0 +1,11 @@
+// Utility :: Width
+
+[class*="#{$seed-width-namespace}-"] {
+  max-width: 100%;
+}
+
+.#{$seed-width-namespace} {
+  @include breakpoint-prop-map($seed-widths, (prop)) {
+    width: prop(prop);
+  }
+}

@@ -69,15 +69,27 @@ The following variables can be found in `_config.scss`
 ```sass
 // Namespace
 $seed-width-namespace: "u-width" !default;
+$seed-width-m-unit: "em" !default;
 
-// Grid
-$seed-width-container-max: 1140px !default;
-$seed-width-columns: 24 !default;
-
-// Settings
-$seed-width-enable-fluid: true !default;
-$seed-width-enable-min: true !default;
-$seed-width-enable-max: true !default;
+// Widths
+$seed-widths: (
+  0: 0%,
+  1: 8.33333%,
+  2: 16.66667%,
+  3: 25%,
+  4: 33.33333%,
+  5: 41.66667%,
+  6: 50%,
+  7: 58.33333%,
+  8: 66.66667%,
+  9: 75%,
+  10: 83.33333%,
+  11: 91.66667%,
+  12: 100%,
+  1m: 1#{$seed-width-m-unit},
+  2m: 2#{$seed-width-m-unit},
+  3m: 3#{$seed-width-m-unit},
+  4m: 4#{$seed-width-m-unit},
+  5m: 5#{$seed-width-m-unit}
+) !default;
 ```
-
-**Note:** If you use `seed-width` with [`seed-grid`](https://github.com/helpscout/seed-grid), the grid configurations (above) will utilize `$seed-grid-columns` and `$seed-container-widths` instead. This ensures that the width system pairs nicely with the grid system.
