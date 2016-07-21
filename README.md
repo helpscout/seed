@@ -41,5 +41,4 @@ The following variables can be found in `_config.scss`
 
 ```sass
 $seed-width-min-namespace: #{$seed-width-namespace}-min !default;
-seed-width-min config options
 ```
