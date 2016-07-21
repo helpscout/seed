@@ -1,1 +1,8 @@
 // width-min :: Config
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-width/config";
+
+// Namespace
+$seed-width-min-namespace: #{$seed-width-namespace}-min !default;

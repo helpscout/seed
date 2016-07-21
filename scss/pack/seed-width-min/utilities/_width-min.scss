@@ -1,0 +1,7 @@
+// Utilities :: Width min
+
+.#{$seed-width-min-namespace} {
+  @include breakpoint-prop-map($seed-widths, (prop)) {
+    min-width: prop(prop) !important;
+  }
+}

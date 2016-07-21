@@ -1,6 +1,6 @@
 # seed-width-min [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
 
-width-min utility pack for [Seed](https://github.com/helpscout/seed)!
+Min width extension pack for [seed-width](https://github.com/helpscout/seed-width)!
 
 ## Install
 ```
@@ -40,5 +40,6 @@ Once that is setup, simply `@import` *seed-width-min* as needed in your `.scss` 
 The following variables can be found in `_config.scss`
 
 ```sass
+$seed-width-min-namespace: #{$seed-width-namespace}-min !default;
 seed-width-min config options
 ```
