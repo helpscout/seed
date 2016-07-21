@@ -17,14 +17,23 @@
     $_util-classname: #{$class}-#{$dir-class};
     $_property: #{$property}-#{$dir-prop};
 
-    @if $dir-prop != "none" {
+    $all: $dir-prop == "all";
+    $none: $dir-prop == "none";
+
+    @if (not $none) {
+      @if ($all) {
+        $_util-classname: $class;
+        $_property: $property;
+      }
+
       .#{$_util-classname} {
         @include breakpoint-prop-map($seed-spacing-sizes, (size)) {
-          @if ($dir-class == "h") {
+
+          @if ($dir-class == "h" and not $all) {
             #{$property}-left: prop(size) !important;
             #{$property}-right: prop(size) !important;
           }
-          @elseif ($dir-class == "v") {
+          @elseif ($dir-class == "v" and not $all) {
             #{$property}-bottom: prop(size) !important;
             #{$property}-top: prop(size) !important;
           }

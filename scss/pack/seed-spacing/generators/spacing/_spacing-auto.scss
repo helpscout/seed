@@ -10,23 +10,25 @@
     $_size: auto;
     $_property: #{$property}-#{$dir-prop};
 
-    @if ($dir-class == 0) {
-      $_util-classname: #{$seed-spacing-margin-namespace}-auto;
-      $_property: #{$property};
-    }
+    @if ($dir-class != "all") {
+      @if ($dir-class == 0) {
+        $_util-classname: #{$seed-spacing-margin-namespace}-auto;
+        $_property: #{$property};
+      }
 
-    .#{$_util-classname} {
-      @include breakpoint-all {
-        @if ($dir-class == "h") {
-          #{$property}-left: #{$_size} !important;
-          #{$property}-right: #{$_size} !important;
-        }
-        @elseif ($dir-class == "v") {
-          #{$property}-bottom: #{$_size} !important;
-          #{$property}-top: #{$_size} !important;
-        }
-        @else {
-          #{$_property}: #{$_size} !important;
+      .#{$_util-classname} {
+        @include breakpoint-all {
+          @if ($dir-class == "h") {
+            #{$property}-left: #{$_size} !important;
+            #{$property}-right: #{$_size} !important;
+          }
+          @elseif ($dir-class == "v") {
+            #{$property}-bottom: #{$_size} !important;
+            #{$property}-top: #{$_size} !important;
+          }
+          @else {
+            #{$_property}: #{$_size} !important;
+          }
         }
       }
     }
