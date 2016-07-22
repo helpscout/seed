@@ -1,7 +1,7 @@
 {
   "name": "seed-control-group",
-  "version": "0.0.1",
-  "description": "control-group object pack for Seed",
+  "version": "0.0.0",
+  "description": "Control group object pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
@@ -10,16 +10,21 @@
     "test": "node ./scripts/test.js && npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-control-group.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-control-group/issues"
+  },
   "license": "MIT",
   "keywords": [
     "bem",
+    "control",
     "css",
     "design",
     "functional",
@@ -37,5 +42,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "seed-border": "0.0.3"
   }
 }

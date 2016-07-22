@@ -1,0 +1,63 @@
+// Objects :: Control Group
+
+// Dependencies
+@import "pack/seed-border/config";
+
+.#{$seed-control-group-namespace} {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+
+  // Item
+  > * {
+    margin-top: 0;
+    position: relative;
+    width: auto;
+
+    &:hover {
+      z-index: 1;
+    }
+
+    + * {
+      margin-left: -($seed-border-size);
+    }
+
+    // Automagical stuff happens below!
+    &:first-child {
+      border-bottom-left-radius: $seed-border-radius;
+      border-top-left-radius: $seed-border-radius;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: $seed-border-radius;
+      border-top-right-radius: $seed-border-radius;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    &:only-child {
+      border-radius: $seed-border-radius;
+    }
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  // Item modifier
+  &__#{$seed-control-group-item-block-namespace} {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
