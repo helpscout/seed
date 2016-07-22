@@ -1,4 +1,4 @@
-# seed-control-group [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
+# seed-control-group [![Build Status](https://travis-ci.org/helpscout/seed-control-group.svg?branch=master)](https://travis-ci.org/helpscout/seed-control-group) [![npm version](https://badge.fury.io/js/seed-control-group.svg)](https://badge.fury.io/js/seed-control-group) [![Dependency Status](https://david-dm.org/helpscout/seed-control-group.svg)](https://david-dm.org/helpscout/seed-control-group)
 
 Control group object pack for [Seed](https://github.com/helpscout/seed)!
 
