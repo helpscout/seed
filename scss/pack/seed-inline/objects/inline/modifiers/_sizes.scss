@@ -1,0 +1,17 @@
+// Modifers :: Sizes
+
+@each $class, $size in $seed-inline-sizes {
+  $component: #{&};
+
+  &--#{$class} {
+    margin-bottom: -($size);
+
+    &:last-child {
+      margin-bottom: -($size);
+    }
+
+    #{$component}__#{$seed-inline-item-namespace} {
+      margin-bottom: $size;
+    }
+  }
+}
