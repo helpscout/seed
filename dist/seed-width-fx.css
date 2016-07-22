@@ -1,0 +1,86 @@
+/**
+ * seed-width-fx v0.0.0 (https://github.com/helpscout/seed-width-fx)
+ * Width fixed utility pack for Seed
+ * Licensed under MIT
+ */
+.u-width-fx-0 { width: 0px !important; }
+
+.u-width-fx-1 { width: 50px !important; }
+
+.u-width-fx-2 { width: 100px !important; }
+
+.u-width-fx-3 { width: 150px !important; }
+
+.u-width-fx-4 { width: 200px !important; }
+
+.u-width-fx-5 { width: 250px !important; }
+
+.u-width-fx-6 { width: 300px !important; }
+
+.u-width-fx-7 { width: 350px !important; }
+
+.u-width-fx-8 { width: 400px !important; }
+
+.u-width-fx-9 { width: 450px !important; }
+
+.u-width-fx-10 { width: 500px !important; }
+
+.u-width-fx-11 { width: 550px !important; }
+
+.u-width-fx-12 { width: 600px !important; }
+
+@media (min-width: 544px) { .u-width-fx-0\@sm { width: 0px !important; }
+  .u-width-fx-1\@sm { width: 50px !important; }
+  .u-width-fx-2\@sm { width: 100px !important; }
+  .u-width-fx-3\@sm { width: 150px !important; }
+  .u-width-fx-4\@sm { width: 200px !important; }
+  .u-width-fx-5\@sm { width: 250px !important; }
+  .u-width-fx-6\@sm { width: 300px !important; }
+  .u-width-fx-7\@sm { width: 350px !important; }
+  .u-width-fx-8\@sm { width: 400px !important; }
+  .u-width-fx-9\@sm { width: 450px !important; }
+  .u-width-fx-10\@sm { width: 500px !important; }
+  .u-width-fx-11\@sm { width: 550px !important; }
+  .u-width-fx-12\@sm { width: 600px !important; } }
+
+@media (min-width: 768px) { .u-width-fx-0\@md { width: 0px !important; }
+  .u-width-fx-1\@md { width: 50px !important; }
+  .u-width-fx-2\@md { width: 100px !important; }
+  .u-width-fx-3\@md { width: 150px !important; }
+  .u-width-fx-4\@md { width: 200px !important; }
+  .u-width-fx-5\@md { width: 250px !important; }
+  .u-width-fx-6\@md { width: 300px !important; }
+  .u-width-fx-7\@md { width: 350px !important; }
+  .u-width-fx-8\@md { width: 400px !important; }
+  .u-width-fx-9\@md { width: 450px !important; }
+  .u-width-fx-10\@md { width: 500px !important; }
+  .u-width-fx-11\@md { width: 550px !important; }
+  .u-width-fx-12\@md { width: 600px !important; } }
+
+@media (min-width: 992px) { .u-width-fx-0\@lg { width: 0px !important; }
+  .u-width-fx-1\@lg { width: 50px !important; }
+  .u-width-fx-2\@lg { width: 100px !important; }
+  .u-width-fx-3\@lg { width: 150px !important; }
+  .u-width-fx-4\@lg { width: 200px !important; }
+  .u-width-fx-5\@lg { width: 250px !important; }
+  .u-width-fx-6\@lg { width: 300px !important; }
+  .u-width-fx-7\@lg { width: 350px !important; }
+  .u-width-fx-8\@lg { width: 400px !important; }
+  .u-width-fx-9\@lg { width: 450px !important; }
+  .u-width-fx-10\@lg { width: 500px !important; }
+  .u-width-fx-11\@lg { width: 550px !important; }
+  .u-width-fx-12\@lg { width: 600px !important; } }
+
+@media (min-width: 1200px) { .u-width-fx-0\@xl { width: 0px !important; }
+  .u-width-fx-1\@xl { width: 50px !important; }
+  .u-width-fx-2\@xl { width: 100px !important; }
+  .u-width-fx-3\@xl { width: 150px !important; }
+  .u-width-fx-4\@xl { width: 200px !important; }
+  .u-width-fx-5\@xl { width: 250px !important; }
+  .u-width-fx-6\@xl { width: 300px !important; }
+  .u-width-fx-7\@xl { width: 350px !important; }
+  .u-width-fx-8\@xl { width: 400px !important; }
+  .u-width-fx-9\@xl { width: 450px !important; }
+  .u-width-fx-10\@xl { width: 500px !important; }
+  .u-width-fx-11\@xl { width: 550px !important; }
+  .u-width-fx-12\@xl { width: 600px !important; } }

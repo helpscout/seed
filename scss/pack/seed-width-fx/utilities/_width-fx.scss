@@ -1,0 +1,7 @@
+// Utilities :: Width fx
+
+.#{$seed-width-fx-namespace} {
+  @include breakpoint-prop-map($seed-width-fx-sizes, (prop)) {
+    width: prop(prop) !important;
+  }
+}
