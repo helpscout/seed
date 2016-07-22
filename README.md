@@ -1,4 +1,4 @@
-# seed-width-fx [![Build Status](https://travis-ci.org/helpscout/seed-width-fx.svg?branch=master)](https://travis-ci.org/helpscout/seed-width-fx) [![npm version](https://badge.fury.io/js/seed-width-fx.svg)](https://badge.fury.io/js/seed-width-fx)
+# seed-width-fx [![Build Status](https://travis-ci.org/helpscout/seed-width-fx.svg?branch=master)](https://travis-ci.org/helpscout/seed-width-fx) [![npm version](https://badge.fury.io/js/seed-width-fx.svg)](https://badge.fury.io/js/seed-width-fx) [![Dependency Status](https://david-dm.org/helpscout/seed-width-fx.svg)](https://david-dm.org/helpscout/seed-width-fx)
 
 width-fx utility pack for [Seed](https://github.com/helpscout/seed)!
 
