@@ -8,13 +8,15 @@ var sass = require('node-sass');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  // Add files/paths to include
+  require('seed-dash'),
+  require('seed-props')
 );
 
 // Default .css compile
 sass.render({
   file: './scss/pack/'+file+'/__index.scss',
-  includePaths: includePaths
+  includePaths: includePaths,
+  outputStyle: 'compact'
 }, function(error, result) {
   if (error) {
     console.error(error);

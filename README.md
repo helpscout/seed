@@ -40,5 +40,19 @@ Once that is setup, simply `@import` *seed-shadow* as needed in your `.scss` fil
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-shadow config options
+// Namespaces
+$seed-shadow-namespace: "t-shadow" !default;
+
+// Shadow color
+$seed-shadow-color: #000 !default;
+
+// Shadow sizes
+$seed-shadow-sizes: (
+  0: 0 1px 1px rgba($seed-shadow-color, 0),
+  1: 0 1px 1px rgba($seed-shadow-color, 0.10),
+  2: 0 2px 4px rgba($seed-shadow-color, 0.10),
+  3: 0 4px 6px rgba($seed-shadow-color, 0.12),
+  4: 0 8px 10px rgba($seed-shadow-color, 0.12),
+  5: 0 12px 16px rgba($seed-shadow-color, 0.12)
+) !default;
 ```

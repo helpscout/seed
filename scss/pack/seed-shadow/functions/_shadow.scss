@@ -1,0 +1,9 @@
+// Functions :: Shadow
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "../config";
+
+@function shadow($value: 1) {
+  @return _get($seed-shadow-sizes, $value);
+}
