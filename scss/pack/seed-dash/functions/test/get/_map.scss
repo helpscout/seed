@@ -1,0 +1,35 @@
+// Test :: _get (Maps)
+
+@import "true";
+@import "../../get";
+
+@include test-module("_get: Maps") {
+
+  @include test("should get value of a flat map") {
+    $map: (
+      a: 1,
+      b: 2
+    );
+
+    $test: _get($map, b);
+    $expect: 2;
+
+    @include assert-equal($test, $expect, "2");
+  }
+
+  @include test("should get value of a deep map") {
+    $map: (
+      a: 1,
+      b: (
+        c: 2,
+        d: 3
+      )
+    );
+
+    $test: _get($map, b, c);
+    $expect: 2;
+
+    @include assert-equal($test, $expect, "2");
+  }
+}
+

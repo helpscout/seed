@@ -1,26 +1,30 @@
 {
   "name": "seed-dash",
-  "version": "0.0.1",
-  "description": "dash other pack for Seed",
+  "version": "0.0.0",
+  "description": "Config utility pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
+    "test": "node ./scripts/test.js && sh ./scripts/test.sh && npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-dash.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-dash/issues"
+  },
   "keywords": [
     "bem",
     "css",
+    "dash",
     "design",
     "functional",
     "itcss",
@@ -36,6 +40,8 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.8.0",
+    "sass-true": "^2.1.2",
+    "seed-cli": "^0.2.3"
   }
 }

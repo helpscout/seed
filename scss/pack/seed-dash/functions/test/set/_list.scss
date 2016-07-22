@@ -1,0 +1,19 @@
+// Test :: _set (List)
+
+@import "true";
+@import "../../get";
+@import "../../set";
+
+@include test-module("_set: List") {
+
+  @include test("should add a new value to a list") {
+    $map: (a, b, c);
+
+    $map: _set($map, d);
+
+    $test: _get($map, d);
+    $expect: d;
+
+    @include assert-equal($test, $expect, "d");
+  }
+}

@@ -1,0 +1,37 @@
+// _set
+// Source:
+// https://www.sitepoint.com/extra-map-functions-sass/
+@function _set($map, $keys.../*, $value */) {
+  $is_map: type-of($map) == "map";
+  $is_list: type-of($map) == "list";
+
+  @if not $is_map and not $is_list {
+    @error "_get: The argument must be a list or a map.";
+  }
+
+  $first-key: nth($keys, 1);
+  @if not $first-key {
+    @error "_set: The second argument (key) must be defined.";
+  }
+
+  @if $is_list {
+    @return append($map, $first-key);
+  }
+
+  $map-list: ($map,);
+  $result: null;
+
+  @if length($keys) == 2 {
+    @return map-merge($map, (nth($keys, 1): nth($keys, -1)));
+  }
+
+  @for $i from 1 through length($keys) - 2 {
+    $map-list: append($map-list, map-get(nth($map-list, -1), nth($keys, $i)));
+  }
+
+  @for $i from length($map-list) through 1 {
+    $result: map-merge(nth($map-list, $i), (nth($keys, $i): if($i == length($map-list), nth($keys, -1), $result)));
+  }
+
+  @return $result;
+}

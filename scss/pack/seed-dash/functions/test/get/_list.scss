@@ -1,0 +1,26 @@
+// Test :: _get (List)
+
+@import "true";
+@import "../../get";
+
+@include test-module("_get: Lists") {
+
+  @include test("should get value of list") {
+    $items: (a, b, c);
+    @debug type-of($items);
+
+    $test: _get($items, b);
+    $expect: b;
+
+    @include assert-equal($test, $expect, "b");
+  }
+
+  @include test("should return false if list item doesn't exist") {
+    $items: (a, b, c);
+
+    $test: _get($items, d);
+    $expect: false;
+
+    @include assert-equal($test, $expect, "false");
+  }
+}
