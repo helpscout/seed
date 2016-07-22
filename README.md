@@ -1,6 +1,6 @@
 # seed-control-group [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
 
-control-group object pack for [Seed](https://github.com/helpscout/seed)!
+Control group object pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,7 @@ Once that is setup, simply `@import` *seed-control-group* as needed in your `.sc
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-control-group config options
+// Namespaces
+$seed-control-group-namespace: "o-control-group" !default;
+$seed-control-group-item-block-namespace: "block" !default;
 ```
