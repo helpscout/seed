@@ -40,5 +40,23 @@ Once that is setup, simply `@import` *seed-width-fx* as needed in your `.scss` f
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-width-fx config options
+// Namespace
+$seed-width-fx-namespace: "u-width-fx" !default;
+
+// Widths
+$seed-width-fx-sizes: (
+  0: 0px,
+  1: 50px,
+  2: 100px,
+  3: 150px,
+  4: 200px,
+  5: 250px,
+  6: 300px,
+  7: 350px,
+  8: 400px,
+  9: 450px,
+  10: 500px,
+  11: 550px,
+  12: 600px
+) !default;
 ```
