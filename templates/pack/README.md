@@ -1,4 +1,4 @@
-# <%= packName %> [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
+# <%= packName %> [![npm version](https://badge.fury.io/js/<%= packName %>.svg)](https://badge.fury.io/js/<%= packName %>)
 <% if (description) { %>
 <%= description %>
 <% } else { %>
