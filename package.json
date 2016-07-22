@@ -1,6 +1,6 @@
 {
   "name": "seed-inline",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Inline object pack for Seed",
   "main": "index.js",
   "scripts": {
