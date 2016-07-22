@@ -1,6 +1,6 @@
 {
   "name": "seed-shadow",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "shadow theme pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/helpscout/seed-shadow/issues"
   },
-  "license": "MIT",
   "keywords": [
     "bem",
     "css",
