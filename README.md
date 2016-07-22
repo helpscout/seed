@@ -40,5 +40,16 @@ Once that is setup, simply `@import` *seed-inline* as needed in your `.scss` fil
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-inline config options
+// Namespaces
+$seed-inline-namespace: "o-inline" !default;
+$seed-inline-item-namespace: "item" !default;
+
+// Sizes
+$seed-inline-sizes: (
+  xs: spacing(1),
+  sm: spacing(2),
+  md: spacing(4),
+  lg: spacing(6),
+  xl: spacing(8)
+) !default;
 ```
