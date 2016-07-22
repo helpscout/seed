@@ -1,4 +1,4 @@
-# seed-dash [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
+# seed-dash [![Build Status](https://travis-ci.org/helpscout/seed-dash.svg?branch=master)](https://travis-ci.org/helpscout/seed-dash) [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme) [![Dependency Status](https://david-dm.org/helpscout/seed-dash.svg)](https://david-dm.org/helpscout/seed-dash)
 
 Config utility pack for [Seed](https://github.com/helpscout/seed)!
 
