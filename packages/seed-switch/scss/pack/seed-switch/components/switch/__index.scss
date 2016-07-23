@@ -1,0 +1,13 @@
+// Component :: Switch
+
+// Scope
+.#{$seed-switch-namespace} {
+  // Base
+  @import "./base";
+  // Modifiers
+  @import "./modifiers/sm";
+  @import "./modifiers/xs";
+  // States
+  @import "./states/active";
+  @import "./states/focus";
+}

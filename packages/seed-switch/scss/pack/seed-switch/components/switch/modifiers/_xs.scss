@@ -1,0 +1,12 @@
+// Modifiers :: XS
+
+&--xs {
+  height: $seed-switch-height-xs;
+  line-height: $seed-switch-height-xs;
+  width: $seed-switch-width-xs;
+
+  .#{$seed-switch-handle-namespace} {
+    height: $seed-switch-trigger-size-xs;
+    width: $seed-switch-trigger-size-xs;
+  }
+}

@@ -1,0 +1,26 @@
+// Component :: Switch Handle :: Base
+
+& {
+  -webkit-transition: $seed-switch-handle-transition;
+  transition: $seed-switch-handle-transition;
+  background-color: $seed-switch-handle-background-color;
+  border-radius: $seed-switch-border-radius;
+  box-shadow: $seed-z-shadow-2;
+  content: "";
+  height: $seed-switch-trigger-size;
+  left: $seed-switch-offset-inner;
+  position: absolute;
+  top: $seed-switch-offset-inner;
+  width: $seed-switch-trigger-size;
+
+  // :hover state
+  @at-root .#{$seed-switch-toggle-namespace}:hover & {
+    box-shadow: $seed-z-shadow-3;
+  }
+
+  // :active state
+  @at-root .#{$seed-switch-toggle-namespace}:active & {
+    box-shadow: $seed-z-shadow-3;
+    width: 60%;
+  }
+}

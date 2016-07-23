@@ -1,0 +1,12 @@
+// Modifiers :: SM
+
+&--sm {
+  height: $seed-switch-height-sm;
+  line-height: $seed-switch-height-sm;
+  width: $seed-switch-width-sm;
+
+  .#{$seed-switch-handle-namespace} {
+    height: $seed-switch-trigger-size-sm;
+    width: $seed-switch-trigger-size-sm;
+  }
+}
