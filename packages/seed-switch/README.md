@@ -40,5 +40,60 @@ Once that is setup, simply `@import` *seed-switch* as needed in your `.scss` fil
 The following variables can be found in `_config.scss`
 
 ```sass
-seed-switch config options
+// Namespace
+$seed-switch-namespace: "c-switch" !default;
+$seed-switch-toggle-namespace: "#{$seed-switch-namespace}-toggle" !default;
+$seed-switch-handle-namespace: "#{$seed-switch-toggle-namespace}::before" !default;
+
+
+// Toggle configs
+
+// Animations
+$seed-switch-toggle-transition: all 0.3s ease !default;
+
+// Colors and typography
+$seed-switch-toggle-background: #d7d7d7 !default
+$seed-switch-toggle-background-active: #3197d6 !default;
+$seed-switch-toggle-border-radius: 100px !default;
+$seed-switch-toggle-shadow: 0 0 0 0 rgba(black, 0.1) inset !default;
+$seed-switch-toggle-shadow-focus: 0 0 0 1px rgba(white, 0.5) inset !default;
+$seed-switch-toggle-text-color: #2b2b2b !default;
+$seed-switch-toggle-text-color-active: #fff !default;
+$seed-switch-toggle-font-size: 12px !default;
+
+// Sizing and offsets
+$seed-switch-toggle-height: 28px !default;
+$seed-switch-toggle-padding: 0 10px !default;
+$seed-switch-toggle-offset: 2px !default;
+$seed-switch-toggle-offset-inner: $seed-switch-toggle-offset - 1px !default;
+
+// Modifier sizes
+$seed-switch-toggle-height-sm: 20px !default;
+$seed-switch-toggle-width: ceil($seed-switch-toggle-height * 2) !default;
+$seed-switch-toggle-width-sm: ceil($seed-switch-toggle-height-sm * 2) !default;
+$seed-switch-toggle-size-sm: ($seed-switch-toggle-height-sm - $seed-switch-toggle-offset) !default;
+
+$seed-switch-toggle-height-xs: 16px !default;
+$seed-switch-toggle-width-xs: ceil($seed-switch-toggle-height-xs * 2) !default;
+$seed-switch-toggle-size-xs: ($seed-switch-toggle-height-xs - $seed-switch-toggle-offset) !default;
+
+
+// Handle configs
+
+// Transitions
+$seed-switch-handle-transition: all 0.1s ease !default;
+
+// Background and shadow
+$seed-switch-handle-background-color: #fff !default;
+$seed-switch-handle-shadow: shadow(2) !default;
+$seed-switch-handle-shadow-active: shadow(3) !default;
+
+// Offsets and sizing
+$seed-switch-handle-offset: ceil($seed-switch-toggle-offset * 2) !default;
+$seed-switch-handle-size: ($seed-switch-toggle-height - $seed-switch-handle-offset) !default;
+$seed-switch-handle-width-active: 60% !default;
+
+// Modifier sizes
+$seed-switch-handle-size-sm: ($seed-switch-toggle-height-sm - $seed-switch-handle-offset) !default;
+$seed-switch-handle-size-xs: ($seed-switch-toggle-height-xs - $seed-switch-handle-offset) !default;
 ```
