@@ -46,6 +46,12 @@ $seed-switch-toggle-namespace: "#{$seed-switch-namespace}-toggle" !default;
 $seed-switch-handle-namespace: "#{$seed-switch-toggle-namespace}::before" !default;
 
 
+// Switch configs
+
+$seed-switch-active-namespace: "is-active" !default;
+$seed-switch-focused-namespace: "is-focused" !default;
+
+
 // Toggle configs
 
 // Animations

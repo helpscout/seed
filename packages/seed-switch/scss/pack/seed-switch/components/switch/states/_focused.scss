@@ -1,10 +1,11 @@
-// States : : Focus
+// States :: Focused
 
 // Configs
+@import "../config";
 @import "../../switch-toggle/config";
 
 & > input:focus +,
-&.is-focused {
+&.#{$seed-switch-focused-namespace} {
   .#{$seed-switch-toggle-namespace} {
     box-shadow: $seed-switch-toggle-shadow-focus;
   }

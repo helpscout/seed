@@ -6,5 +6,6 @@ $seed-switch-toggle-namespace: "#{$seed-switch-namespace}-toggle" !default;
 $seed-switch-handle-namespace: "#{$seed-switch-toggle-namespace}::before" !default;
 
 // Configs
+@import "./components/switch/config";
 @import "./components/switch-toggle/config";
 @import "./components/switch-handle/config";

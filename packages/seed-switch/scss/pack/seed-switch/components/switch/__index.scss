@@ -2,6 +2,8 @@
 
 // Scope
 .#{$seed-switch-namespace} {
+  // Config
+  @import "./config";
   // Base
   @import "./base";
   // Modifiers
@@ -9,5 +11,5 @@
   @import "./modifiers/xs";
   // States
   @import "./states/active";
-  @import "./states/focus";
+  @import "./states/focused";
 }
