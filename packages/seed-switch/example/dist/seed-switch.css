@@ -76,7 +76,7 @@
   transition: all 0.1s ease;
   background-color: #fff;
   border-radius: 100px;
-  box-shadow: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   content: "";
   height: 24px;
@@ -85,7 +85,7 @@
   top: 1px;
   width: 24px; }
   .c-switch:hover .c-switch-toggle::before {
-    box-shadow: black; }
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12); }
   .c-switch:active .c-switch-toggle::before {
-    box-shadow: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
     width: 60%; }

@@ -16,8 +16,7 @@
     "type": "git",
     "url": ""
   },
-  "authors": [
-  ],
+  "authors": [],
   "license": "MIT",
   "keywords": [
     "bem",
@@ -38,5 +37,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "seed-shadow": "0.0.1"
   }
 }

@@ -9,7 +9,7 @@
   transition: $seed-switch-handle-transition;
   background-color: $seed-switch-handle-background-color;
   border-radius: $seed-switch-toggle-border-radius;
-  box-shadow: $seed-z-shadow-2;
+  box-shadow: $seed-switch-handle-shadow;
   box-sizing: border-box;
   content: "";
   height: $seed-switch-handle-size;
@@ -18,14 +18,14 @@
   top: $seed-switch-toggle-offset-inner;
   width: $seed-switch-handle-size;
 
-  // :hover state
+  // :hover state of .c-switch
   @at-root .#{$seed-switch-namespace}:hover & {
-    box-shadow: $seed-z-shadow-3;
+    box-shadow: $seed-switch-handle-shadow-active;
   }
 
-  // :active state
+  // :active state of .c-switch
   @at-root .#{$seed-switch-namespace}:active & {
-    box-shadow: $seed-z-shadow-3;
-    width: 60%;
+    box-shadow: $seed-switch-handle-shadow-active;
+    width: $seed-switch-handle-width-active;
   }
 }
