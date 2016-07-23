@@ -6,31 +6,5 @@ $seed-switch-toggle-namespace: "#{$seed-switch-namespace}-toggle" !default;
 $seed-switch-handle-namespace: "#{$seed-switch-toggle-namespace}::before" !default;
 
 // Configs
+@import "./components/switch-toggle/config";
 @import "./components/switch-handle/config";
-
-// Properties
-$seed-switch-background: #d7d7d7 !default
-$seed-switch-border-radius: 100px !default;
-$seed-switch-label-color-active: #fff !default;
-$seed-switch-offset: 2px !default;
-$seed-switch-offset-inner: $seed-switch-offset - 1px !default;
-$seed-switch-padding: 0 10px !default;
-$seed-switch-height: 28px !default;
-$seed-switch-width: ceil($seed-switch-height * 2) !default;
-$seed-switch-toggle-text-color: #2b2b2b !default;
-$seed-switch-toggle-font-size: 12px !default;
-$seed-switch-trigger-offset: ceil($seed-switch-offset * 2) !default;
-$seed-switch-trigger-size: ($seed-switch-height - $seed-switch-trigger-offset) !default;
-$seed-switch-toggle-transition: all 0.3s ease !default;
-
-// Alternate sizes
-$seed-switch-height-sm: 20px !default;
-$seed-switch-width-sm: ceil($seed-switch-height-sm * 2) !default;
-$seed-switch-trigger-size-sm: ($seed-switch-height-sm - $seed-switch-trigger-offset) !default;
-
-$seed-switch-height-xs: 16px !default;
-$seed-switch-width-xs: ceil($seed-switch-height-xs * 2) !default;
-$seed-switch-trigger-size-xs: ($seed-switch-height-xs - $seed-switch-trigger-offset) !default;
-
-// States
-$seed-switch-background-active: #3197d6 !default;

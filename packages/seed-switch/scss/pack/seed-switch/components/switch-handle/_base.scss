@@ -1,25 +1,30 @@
 // Component :: Switch Handle :: Base
 
+// Configs
+@import "../switch-toggle/config";
+@import "../switch-handle/config";
+
 & {
   -webkit-transition: $seed-switch-handle-transition;
   transition: $seed-switch-handle-transition;
   background-color: $seed-switch-handle-background-color;
-  border-radius: $seed-switch-border-radius;
+  border-radius: $seed-switch-toggle-border-radius;
   box-shadow: $seed-z-shadow-2;
+  box-sizing: border-box;
   content: "";
-  height: $seed-switch-trigger-size;
-  left: $seed-switch-offset-inner;
+  height: $seed-switch-handle-size;
+  left: $seed-switch-toggle-offset-inner;
   position: absolute;
-  top: $seed-switch-offset-inner;
-  width: $seed-switch-trigger-size;
+  top: $seed-switch-toggle-offset-inner;
+  width: $seed-switch-handle-size;
 
   // :hover state
-  @at-root .#{$seed-switch-toggle-namespace}:hover & {
+  @at-root .#{$seed-switch-namespace}:hover & {
     box-shadow: $seed-z-shadow-3;
   }
 
   // :active state
-  @at-root .#{$seed-switch-toggle-namespace}:active & {
+  @at-root .#{$seed-switch-namespace}:active & {
     box-shadow: $seed-z-shadow-3;
     width: 60%;
   }

@@ -1,17 +1,21 @@
 // States :: Active
 
+// Configs
+@import "../../switch-toggle/config";
+
 & {
-  input:checked + .#{$seed-switch-toggle-namespace},
-  &.is-active,
-  &.active {
-    background-color: $seed-switch-background-active;
-    border-color: $seed-switch-background-active;
-    color: $seed-switch-label-color-active;
-    text-align: left;
+  input:checked +,
+  &.is-active {
+    .#{$seed-switch-toggle-namespace} {
+      background-color: $seed-switch-toggle-background-active;
+      border-color: $seed-switch-toggle-background-active;
+      color: $seed-switch-toggle-text-color-active;
+      text-align: left;
+    }
 
     .#{$seed-switch-handle-namespace} {
       left: inherit;
-      right: $seed-switch-offset-inner;
+      right: $seed-switch-toggle-offset-inner;
     }
   }
 }

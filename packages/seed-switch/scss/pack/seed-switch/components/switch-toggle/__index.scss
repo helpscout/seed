@@ -2,6 +2,8 @@
 
 // Scope
 .#{$seed-switch-toggle-namespace} {
+  // Config
+  @import "./config";
   // Base
   @import "./base";
 }

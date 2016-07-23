@@ -1,8 +1,7 @@
 // States : : Focus
 
-& > input:focus,
+& > input:focus +,
 &.is-focused {
-  + .#{$seed-switch-toggle-namespace},
   .#{$seed-switch-toggle-namespace} {
     // Todo: fix color
     box-shadow: 0 0 0 1px rgba(white, 0.5) inset;

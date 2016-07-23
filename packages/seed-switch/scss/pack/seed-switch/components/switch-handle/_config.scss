@@ -1,7 +1,16 @@
 // Component :: Switch Handle :: Variables
 
+// Configs
+@import "../switch-toggle/config";
+
 $seed-switch-handle-transition: all 0.1s ease !default;
 $seed-switch-handle-background-color: #fff !default;
+
+$seed-switch-handle-offset: ceil($seed-switch-toggle-offset * 2) !default;
+$seed-switch-handle-size: ($seed-switch-toggle-height - $seed-switch-handle-offset) !default;
+
+$seed-switch-handle-size-sm: ($seed-switch-toggle-height-sm - $seed-switch-handle-offset) !default;
+$seed-switch-handle-size-xs: ($seed-switch-toggle-height-xs - $seed-switch-handle-offset) !default;
 
 // Temp
 $seed-z-shadow-2: black;

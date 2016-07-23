@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
+    "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
     "test": "node ./scripts/test.js && npm run build",
     "prepublish": "npm run test"
   },
