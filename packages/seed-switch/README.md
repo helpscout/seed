@@ -1,4 +1,4 @@
-# seed-switch [![npm version](https://badge.fury.io/js/seed-switch.svg)](https://badge.fury.io/js/seed-switch)
+# seed-switch [![Build Status](https://travis-ci.org/helpscout/seed-switch.svg?branch=master)](https://travis-ci.org/helpscout/seed-switch) [![npm version](https://badge.fury.io/js/seed-switch.svg)](https://badge.fury.io/js/seed-switch) [![Dependency Status](https://david-dm.org/helpscout/seed-switch.svg)](https://david-dm.org/helpscout/seed-switch)
 
 switch component pack for [Seed](https://github.com/helpscout/seed)!
 
