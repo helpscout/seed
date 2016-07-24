@@ -1,6 +1,6 @@
 /**
  * seed-avatar v0.0.0
- * avatar component pack for Seed
+ * Avatar component pack for Seed
  * Licensed under MIT
  */
 .c-avatar { background-color: #f1f3f5; border-radius: 4px; box-sizing: border-box; box-shadow: 0 1px 0 0 #e3e8eb; display: block; overflow: hidden; position: relative; height: 50px; width: 50px; }
