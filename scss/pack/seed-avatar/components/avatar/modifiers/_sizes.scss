@@ -1,0 +1,12 @@
+// Modifiers :: Sizes
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "../config";
+
+&- {
+  @include breakpoint-prop-map($seed-avatar-modifier-sizes, (size)) {
+    height: prop(size);
+    width: prop(size);
+  }
+}

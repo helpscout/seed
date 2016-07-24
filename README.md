@@ -1,6 +1,6 @@
 # seed-avatar [![npm version](https://badge.fury.io/js/seed-avatar.svg)](https://badge.fury.io/js/seed-avatar)
 
-avatar component pack for [Seed](https://github.com/helpscout/seed)!
+Avatar component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -35,10 +35,40 @@ Once that is setup, simply `@import` *seed-avatar* as needed in your `.scss` fil
 @import "pack/seed-avatar/_index";
 ```
 
+
+## Usage
+
+```html
+<div class="c-avatar">
+  <img src="awesome.jpg" class="c-avatar__image">
+</div>
+```
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-avatar config options
+// Namespaces
+$seed-avatar-namespace: "c-avatar" !default;
+$seed-avatar-image-namespace: #{$seed-avatar-namespace}__image !default;
+
+// Borders
+$seed-avatar-border-radius: 4px !default;
+
+// Colors
+$seed-avatar-background: #f1f3f5 !default;
+$seed-avatar-shadow: 0 1px 0 0 #e3e8eb !default;
+
+// Sizes
+// Default size
+$seed-avatar-size: 50px !default;
+// Modifier sizes
+$seed-avatar-modifier-sizes: (
+  lg: $seed-avatar-size,
+  md: 40px,
+  sm: 32px,
+  xs: 28px
+) !default;
 ```
