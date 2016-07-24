@@ -32,7 +32,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *<%= packName %>* as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/<%= packName %>/_index";
 ```
@@ -41,6 +41,6 @@ Once that is setup, simply `@import` *<%= packName %>* as needed in your `.scss`
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
 <%= packName %> config options
 ```
