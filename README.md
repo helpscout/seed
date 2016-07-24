@@ -1,4 +1,4 @@
-# seed-avatar [![npm version](https://badge.fury.io/js/seed-avatar.svg)](https://badge.fury.io/js/seed-avatar)
+# seed-avatar [![Build Status](https://travis-ci.org/helpscout/seed-avatar.svg?branch=master)](https://travis-ci.org/helpscout/seed-avatar) [![npm version](https://badge.fury.io/js/seed-avatar.svg)](https://badge.fury.io/js/seed-avatar) [![Dependency Status](https://david-dm.org/helpscout/seed-avatar.svg)](https://david-dm.org/helpscout/seed-avatar)
 
 Avatar component pack for [Seed](https://github.com/helpscout/seed)!
 
