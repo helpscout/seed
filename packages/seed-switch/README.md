@@ -40,19 +40,20 @@ Once that is setup, simply `@import` *seed-switch* as needed in your `.scss` fil
 The following variables can be found in `_config.scss`
 
 ```sass
-// Namespace
+// Switch
+// Namespaces
 $seed-switch-namespace: "c-switch" !default;
-$seed-switch-toggle-namespace: "#{$seed-switch-namespace}-toggle" !default;
-$seed-switch-handle-namespace: "#{$seed-switch-toggle-namespace}::before" !default;
-
-
-// Switch configs
-
 $seed-switch-active-namespace: "is-active" !default;
 $seed-switch-focused-namespace: "is-focused" !default;
 
+// Configs
+// "switch" or "switch-toggle"
+$seed-switch-active-component: "switch" !default;
 
-// Toggle configs
+
+// Switch Toggle
+// Namespaces
+$seed-switch-toggle-namespace: "#{$seed-switch-namespace}-toggle" !default;
 
 // Animations
 $seed-switch-toggle-transition: all 0.3s ease !default;
@@ -82,7 +83,12 @@ $seed-switch-toggle-height-xs: 16px !default;
 $seed-switch-toggle-width-xs: ceil($seed-switch-toggle-height-xs * 2) !default;
 
 
-// Handle configs
+// Switch Handle
+
+// Namespaces
+$seed-switch-handle-namespace: "#{$seed-switch-toggle-namespace}::before" !default;
+$seed-switch-toggle-active-handle-namespace: "#{$seed-switch-toggle-namespace}.#{$seed-switch-active-namespace}::before" !default;
+$seed-switch-toggle-focused-handle-namespace: "#{$seed-switch-toggle-namespace}.#{$seed-switch-focused-namespace}::before" !default;
 
 // Transitions
 $seed-switch-handle-transition: all 0.1s ease !default;

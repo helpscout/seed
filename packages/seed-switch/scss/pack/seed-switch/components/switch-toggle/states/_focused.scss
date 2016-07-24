@@ -1,0 +1,15 @@
+// States :: Focused
+
+// Configs
+@import "../config";
+@import "../../switch/config";
+@import "../../switch-handle/config";
+
+@if $seed-switch-active-component == "switch-toggle" {
+  @at-root {
+    .#{$seed-switch-namespace} input:focus + &,
+    &.#{$seed-switch-focused-namespace} {
+      box-shadow: $seed-switch-toggle-shadow-focus;
+    }
+  }
+}

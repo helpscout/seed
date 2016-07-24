@@ -1,5 +1,8 @@
 // Switch Toggle :: Config
 
+// Namespaces
+$seed-switch-toggle-namespace: "#{$seed-switch-namespace}-toggle" !default;
+
 // Animations
 $seed-switch-toggle-transition: all 0.3s ease !default;
 

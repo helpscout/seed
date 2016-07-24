@@ -4,9 +4,11 @@
 @import "../config";
 @import "../../switch-toggle/config";
 
-& > input:focus +,
-&.#{$seed-switch-focused-namespace} {
-  .#{$seed-switch-toggle-namespace} {
-    box-shadow: $seed-switch-toggle-shadow-focus;
+@if $seed-switch-active-component == "switch" {
+  & > input:focus +,
+  &.#{$seed-switch-focused-namespace} {
+    .#{$seed-switch-toggle-namespace} {
+      box-shadow: $seed-switch-toggle-shadow-focus;
+    }
   }
 }

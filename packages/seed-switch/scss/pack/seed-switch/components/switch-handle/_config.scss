@@ -3,7 +3,13 @@
 // Dependencies
 @import "pack/seed-shadow/functions/shadow";
 // Configs
+@import "../switch/config";
 @import "../switch-toggle/config";
+
+// Namespaces
+$seed-switch-handle-namespace: "#{$seed-switch-toggle-namespace}::before" !default;
+$seed-switch-toggle-active-handle-namespace: "#{$seed-switch-toggle-namespace}.#{$seed-switch-active-namespace}::before" !default;
+$seed-switch-toggle-focused-handle-namespace: "#{$seed-switch-toggle-namespace}.#{$seed-switch-focused-namespace}::before" !default;
 
 // Transitions
 $seed-switch-handle-transition: all 0.1s ease !default;
