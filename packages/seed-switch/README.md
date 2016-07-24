@@ -39,8 +39,8 @@ Once that is setup, simply `@import` *seed-switch* as needed in your `.scss` fil
 
 The following variables can be found in `_config.scss`
 
-```sass
-// Switch
+**Switch configs**
+```scss
 // Namespaces
 $seed-switch-namespace: "c-switch" !default;
 $seed-switch-active-namespace: "is-active" !default;
@@ -49,9 +49,10 @@ $seed-switch-focused-namespace: "is-focused" !default;
 // Configs
 // "switch" or "switch-toggle"
 $seed-switch-active-component: "switch" !default;
+```
 
-
-// Switch Toggle
+**Switch toggle configs**
+```scss
 // Namespaces
 $seed-switch-toggle-namespace: "#{$seed-switch-namespace}-toggle" !default;
 
@@ -81,10 +82,10 @@ $seed-switch-toggle-width-sm: ceil($seed-switch-toggle-height-sm * 2) !default;
 
 $seed-switch-toggle-height-xs: 16px !default;
 $seed-switch-toggle-width-xs: ceil($seed-switch-toggle-height-xs * 2) !default;
+```
 
-
-// Switch Handle
-
+**Switch handle configs**
+```scss
 // Namespaces
 $seed-switch-handle-namespace: "#{$seed-switch-toggle-namespace}::before" !default;
 $seed-switch-toggle-active-handle-namespace: "#{$seed-switch-toggle-namespace}.#{$seed-switch-active-namespace}::before" !default;
