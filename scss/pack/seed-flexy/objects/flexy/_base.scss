@@ -1,6 +1,7 @@
 // Object :: Flexy :: Base
 
 & {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13,18 +14,4 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-
-  // &__item {
-  //   This class doesn't have any styles. However, it should be
-  //   used to provide clarity in your markup.
-  // }
-
-  &__block {
-    @include breakpoint-all {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1
-    }
-  }
 }

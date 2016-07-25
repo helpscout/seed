@@ -7,8 +7,6 @@
   // Base
   @import "./base";
   // Modifiers
+  @import "./modifiers/alignment";
   @import "./modifiers/reset";
-  @import "./modifiers/top";
-  @import "./modifiers/middle";
-  @import "./modifiers/bottom";
 }

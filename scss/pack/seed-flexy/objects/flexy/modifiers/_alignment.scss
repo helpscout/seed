@@ -1,0 +1,14 @@
+// Modifiers :: Bottom
+
+// Dependencies
+@import "../../../config";
+@import "pack/seed-breakpoints/_index";
+
+&- {
+  @include breakpoint-prop-map($seed-flexy-alignment, (prop)) {
+    -webkit-box-align: prop(prop);
+    -webkit-align-items: prop(prop);
+    -ms-flex-align: prop(prop);
+    align-items: prop(prop);
+  }
+}

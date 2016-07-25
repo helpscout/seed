@@ -1,0 +1,9 @@
+// Flexy Block :: Index
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+
+.#{$seed-flexy-block-namespace} {
+  // Base
+  @import "./base";
+}

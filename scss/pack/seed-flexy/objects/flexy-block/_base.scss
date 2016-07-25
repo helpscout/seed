@@ -1,0 +1,15 @@
+// Flexy Block :: Base
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+
+& {
+  box-sizing: border-box;
+
+  @include breakpoint-all {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+  }
+}
