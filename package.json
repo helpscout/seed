@@ -22,6 +22,22 @@
   "bugs": {
     "url": "https://github.com/helpscout/seed-breakpoints/issues"
   },
+  "keywords": [
+    "bem",
+    "breakpoints",
+    "css",
+    "dash",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "responsive",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
   "engines": {
     "node": ">=4"
   },
