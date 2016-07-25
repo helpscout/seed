@@ -30,7 +30,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *seed-shadow* as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-shadow/_index";
 ```
@@ -39,12 +39,16 @@ Once that is setup, simply `@import` *seed-shadow* as needed in your `.scss` fil
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
 // Namespaces
 $seed-shadow-namespace: "t-shadow" !default;
+$seed-shadow-hover-namespace: #{$seed-shadow-namespace}-hover !default;
 
 // Shadow color
 $seed-shadow-color: #000 !default;
+
+// Shadow hover animation
+$seed-shadow-hover-transition: box-shadow 0.2s ease !default;
 
 // Shadow sizes
 $seed-shadow-sizes: (
