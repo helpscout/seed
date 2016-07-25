@@ -6,6 +6,10 @@ Visibility utility pack for [Seed](https://github.com/helpscout/seed)!
 npm install seed-visibility --save-dev
 ```
 
+## Visibility handling with `display`
+
+For the `display: none` / `display: block` based visibility techniques, check out [`seed-display`](https://github.com/helpscout/seed-display).
+
 
 ## Basic Usage
 
@@ -36,7 +40,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *seed-visibility* as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-visibility";
 ```
@@ -69,9 +73,8 @@ gulp.task('sass', function () {
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
 $seed-visibility-invisible-namespace: u-invisible !default;
-$seed-visibility-hidden-namespace: u-hidden !default;
 $seed-visibility-screen-reader-namespace: u-sr-only !default;
 $seed-visibility-visible-namespace: u-visible !default;
 ```
