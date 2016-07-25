@@ -38,7 +38,7 @@ Once that is setup, simply `@import` *seed-switch* as needed in your `.scss` fil
 ## Usage
 
 ```html
-<label class="c-switch>
+<label class="c-switch">
   <input type="checkbox">
   <span class="c-switch-toggle"></span>
 </label>
