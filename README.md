@@ -30,7 +30,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *seed-flexy* as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-flexy/_index";
 ```
@@ -39,6 +39,17 @@ Once that is setup, simply `@import` *seed-flexy* as needed in your `.scss` file
 
 The following variables can be found in `_config.scss`
 
-```sass
-$seed-flexy-namespace: "o-flex" !default;
+```scss
+// Namespaces
+$seed-flexy-namespace: "o-flexy" !default;
+$seed-flexy-item-namespace: #{$seed-flexy-namespace}__item !default;
+$seed-flexy-block-namespace: #{$seed-flexy-namespace}__block !default;
+
+// Alignment
+$seed-flexy-alignment: (
+  top: flex-start,
+  middle: center,
+  bottom: flex-end
+) !default;
+
 ```
