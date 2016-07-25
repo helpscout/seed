@@ -1,6 +1,6 @@
 #seed-width-max [![Build Status](https://travis-ci.org/helpscout/seed-width-max.svg?branch=master)](https://travis-ci.org/helpscout/seed-width-max) [![npm version](https://badge.fury.io/js/seed-width-max.svg)](https://badge.fury.io/js/seed-width-max) [![Dependencies](https://david-dm.org/helpscout/seed-width-max.svg)](https://david-dm.org/helpscout/seed-width-max)
 
-Max width extension pack for [seed-widtseed-width](https://github.com/helpscout/seed-width)!
+Max width extension pack for [seed-width](https://github.com/helpscout/seed-width)!
 
 ## Install
 ```
