@@ -30,7 +30,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *seed-width-fx* as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-width-fx/_index";
 ```
@@ -39,7 +39,7 @@ Once that is setup, simply `@import` *seed-width-fx* as needed in your `.scss` f
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
 // Namespace
 $seed-width-fx-namespace: "u-width-fx" !default;
 
