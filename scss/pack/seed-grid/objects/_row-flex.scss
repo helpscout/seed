@@ -1,6 +1,7 @@
 // Objects :: Row Flex
 
 .#{$seed-grid-namespace-row-flex} {
+  box-sizing: border-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;

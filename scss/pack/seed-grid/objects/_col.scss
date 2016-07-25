@@ -1,6 +1,7 @@
 // Objects :: Col
 
-.#{$seed-grid-namespace-col} {
+[class*="#{$seed-grid-namespace-col}"] {
+  box-sizing: border-box;
   min-height: 1px;
   padding-left: $seed-grid-gutter-offset;
   padding-right: $seed-grid-gutter-offset;

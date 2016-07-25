@@ -8,19 +8,6 @@
     $_col-class: $_class;
     $_col-offset-class: $_class;
 
-    @for $i from 1 through $columns {
-      @if $breakpoint == xs {
-        $_col-class: #{$_class}-#{$i};
-      }
-      @else {
-        $_col-class: #{$_class}-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
-      }
-
-      .#{$_col-class} {
-        @extend .#{$_class};
-      }
-    }
-
     @include breakpoint-up($breakpoint, $breakpoints) {
       @for $i from 1 through $columns {
 

@@ -1,6 +1,7 @@
 // Objects :: Row
 
 .#{$seed-grid-namespace-row} {
+  box-sizing: border-box;
   margin-left: -($seed-grid-gutter-offset);
   margin-right: -($seed-grid-gutter-offset);
 
