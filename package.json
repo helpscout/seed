@@ -43,9 +43,9 @@
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0",
     "sass-true": "^2.1.2",
-    "seed-cli": "0.2.3"
+    "seed-cli": "0.2.5"
   },
   "dependencies": {
-    "seed-breakpoints": "^0.3.0"
+    "seed-breakpoints": "^0.3.1"
   }
 }
