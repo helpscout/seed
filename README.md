@@ -1,4 +1,4 @@
-# seed-position [![npm version](https://badge.fury.io/js/seed-position.svg)](https://badge.fury.io/js/seed-position)
+# seed-position [![Build Status](https://travis-ci.org/helpscout/seed-position.svg?branch=master)](https://travis-ci.org/helpscout/seed-position) [![npm version](https://badge.fury.io/js/seed-position.svg)](https://badge.fury.io/js/seed-position) [![Dependency Status](https://david-dm.org/helpscout/seed-position.svg)](https://david-dm.org/helpscout/seed-position)
 
 Position utility pack for [Seed](https://github.com/helpscout/seed)!
 
