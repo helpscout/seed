@@ -22,6 +22,20 @@
   "bugs": {
     "url": "https://github.com/helpscout/seed-width/issues"
   },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss",
+    "width"
+  ],
   "engines": {
     "node": ">=4"
   },
@@ -30,6 +44,6 @@
     "node-sass": "^3.8.0"
   },
   "dependencies": {
-    "seed-breakpoints": "0.3.0"
+    "seed-breakpoints": "0.3.1"
   }
 }

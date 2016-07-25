@@ -1,5 +1,8 @@
 // Utility :: Width
 
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+
 [class*="#{$seed-width-namespace}-"] {
   max-width: 100%;
 }
