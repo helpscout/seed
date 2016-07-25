@@ -1,6 +1,6 @@
 # seed-position [![npm version](https://badge.fury.io/js/seed-position.svg)](https://badge.fury.io/js/seed-position)
 
-position utility pack for [Seed](https://github.com/helpscout/seed)!
+Position utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,16 @@ Once that is setup, simply `@import` *seed-position* as needed in your `.scss` f
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-position config options
+// Namespace
+$seed-position-namespace: u-pos !default;
+
+// Positions
+$seed-positions: (
+  absolute: absolute,
+  fixed: fixed,
+  inherit: inherit,
+  initial: initial,
+  relative: relative,
+  static: static
+) !default
 ```

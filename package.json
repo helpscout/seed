@@ -1,6 +1,6 @@
 {
   "name": "seed-position",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "position utility pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,17 @@
     "test": "node ./scripts/test.js && npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-position.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-position/issues"
+  },
   "keywords": [
     "bem",
     "css",
@@ -27,6 +30,7 @@
     "modular",
     "oocss",
     "performance",
+    "position",
     "seed",
     "seed-pack",
     "scss"
@@ -37,5 +41,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "seed-breakpoints": "^0.3.1"
   }
 }

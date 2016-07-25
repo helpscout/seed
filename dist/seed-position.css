@@ -1,0 +1,44 @@
+/**
+ * seed-position v0.0.0
+ * position utility pack for Seed
+ * Licensed under MIT
+ */
+.u-pos-absolute { position: absolute !important; }
+
+.u-pos-fixed { position: fixed !important; }
+
+.u-pos-inherit { position: inherit !important; }
+
+.u-pos-initial { position: initial !important; }
+
+.u-pos-relative { position: relative !important; }
+
+.u-pos-static { position: static !important; }
+
+@media (min-width: 544px) { .u-pos-absolute\@sm { position: absolute !important; }
+  .u-pos-fixed\@sm { position: fixed !important; }
+  .u-pos-inherit\@sm { position: inherit !important; }
+  .u-pos-initial\@sm { position: initial !important; }
+  .u-pos-relative\@sm { position: relative !important; }
+  .u-pos-static\@sm { position: static !important; } }
+
+@media (min-width: 768px) { .u-pos-absolute\@md { position: absolute !important; }
+  .u-pos-fixed\@md { position: fixed !important; }
+  .u-pos-inherit\@md { position: inherit !important; }
+  .u-pos-initial\@md { position: initial !important; }
+  .u-pos-relative\@md { position: relative !important; }
+  .u-pos-static\@md { position: static !important; } }
+
+@media (min-width: 992px) { .u-pos-absolute\@lg { position: absolute !important; }
+  .u-pos-fixed\@lg { position: fixed !important; }
+  .u-pos-inherit\@lg { position: inherit !important; }
+  .u-pos-initial\@lg { position: initial !important; }
+  .u-pos-relative\@lg { position: relative !important; }
+  .u-pos-static\@lg { position: static !important; } }
+
+@media (min-width: 1200px) { .u-pos-absolute\@xl { position: absolute !important; }
+  .u-pos-fixed\@xl { position: fixed !important; }
+  .u-pos-inherit\@xl { position: inherit !important; }
+  .u-pos-initial\@xl { position: initial !important; }
+  .u-pos-relative\@xl { position: relative !important; }
+  .u-pos-static\@xl { position: static !important; } }
