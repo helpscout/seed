@@ -30,7 +30,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *seed-width-max* as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-width-max/_index";
 ```
@@ -39,6 +39,6 @@ Once that is setup, simply `@import` *seed-width-max* as needed in your `.scss` 
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
 $seed-width-max-namespace: #{$seed-width-namespace}-max !default;
 ```
