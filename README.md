@@ -34,7 +34,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *seed-floats* as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-floats";
 ```
@@ -67,7 +67,7 @@ gulp.task('sass', function () {
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
 $seed-floats-clearfix-namespace: "u-clearfix" !default;
 $seed-floats-pull-namespace: "u-pull" !default;
 ```

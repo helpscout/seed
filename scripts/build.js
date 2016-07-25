@@ -14,7 +14,8 @@ var includePaths = pathfinder(
 // Default .css compile
 sass.render({
   file: './scss/pack/'+file+'/__index.scss',
-  includePaths: includePaths
+  includePaths: includePaths,
+  outputStyle: 'compact'
 }, function(error, result) {
   if (error) {
     console.error(error);
