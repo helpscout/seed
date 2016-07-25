@@ -1,6 +1,6 @@
 {
   "name": "seed-floats",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Floats utility pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed-floats",
