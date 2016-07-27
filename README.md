@@ -58,5 +58,5 @@ $seed-card-namespace: "c-card" !default;
 // Styles
 $seed-card-background-color: #fff !default;
 $seed-card-border: $seed-border !default;
-$seed-card-border-radius: $seed-border-radius !default;
+$seed-card-border-radius: 4px !default;
 ```
