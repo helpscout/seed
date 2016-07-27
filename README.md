@@ -1,44 +1,47 @@
 # seed-harvester [![npm version](https://badge.fury.io/js/seed-harvester.svg)](https://badge.fury.io/js/seed-harvester)
 
-Automatically include seed pack dependencies for node-sass
+Automatically include seed pack dependencies for node-sass!
+
+**This pack is highly experimentatal. And highly awesome!**
 
 ## Install
 ```
 npm install seed-harvester --save-dev
 ```
 
-
 ## Basic Usage
 
-### SCSS
+### 1. Set up harvester with Sass
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
-
 
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var pack = require('seed-harvester');
+var harvester = require('seed-harvester');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass({
-      includePaths: pack
+      includePaths: harvester()
     }))
     .pipe(gulp.dest('./css'));
 });
 ```
 
-Once that is setup, simply `@import` *seed-harvester* as needed in your `.scss` file:
+### 2. Add seed packs!
 
-```scss
-// Packs
-@import "pack/seed-harvester/_index";
+Add seed packs by using `npm install`, example:
+
+```
+npm install seed-grid --save
 ```
 
-## Options
+Because `seed-harvester` was setup (step 1), it will automatically add `seed-grid` into your includePaths for you.
 
-The following variables can be found in `_config.scss`
+Note: The seed pack **must** contain the keyword `seed-pack`.
+Note 2: The seed pack **must also** be either a dependency or devDependency defined in your `package.json` (installed with the `--save` or `--save-dev` flag).
 
-```scss
-seed-harvester config options
-```
+
+## Thanks!
+
+Many thanks to [Alisdair](https://github.com/alisdair) for coming up with the name `seed-harvester` :heart:.

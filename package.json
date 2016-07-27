@@ -4,19 +4,13 @@
   "description": "Automatically include seed pack dependencies for node-sass",
   "main": "index.js",
   "scripts": {
-    "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
-    "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
-    "prepublish": "npm run test"
   },
   "homepage": "",
   "repository": {
     "type": "git",
     "url": ""
   },
-  "authors": [
-  ],
+  "authors": [],
   "license": "MIT",
   "keywords": [
     "bem",
@@ -24,17 +18,19 @@
     "design",
     "functional",
     "itcss",
+    "harvester",
     "modular",
     "oocss",
     "performance",
     "seed",
-    "seed-pack",
     "scss"
   ],
   "engines": {
     "node": ">=4"
   },
   "devDependencies": {
+    "find-root": "^1.0.0",
+    "lodash": "^4.14.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
   }
