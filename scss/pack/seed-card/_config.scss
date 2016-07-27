@@ -1,1 +1,12 @@
-// card :: Config
+// Card :: Config
+
+// Dependencies
+@import "pack/seed-border/config";
+
+// Namespaces
+$seed-card-namespace: "c-card" !default;
+
+// Styles
+$seed-card-background-color: #fff !default;
+$seed-card-border: $seed-border !default;
+$seed-card-border-radius: 4px !default;

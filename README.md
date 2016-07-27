@@ -1,6 +1,6 @@
 # seed-card [![npm version](https://badge.fury.io/js/seed-card.svg)](https://badge.fury.io/js/seed-card)
 
-card component pack for [Seed](https://github.com/helpscout/seed)!
+Card component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -35,10 +35,28 @@ Once that is setup, simply `@import` *seed-card* as needed in your `.scss` file:
 @import "pack/seed-card/_index";
 ```
 
+## Usage
+
+```html
+<div class="c-card">
+  ...
+</div>
+```
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-card config options
+// Dependencies
+@import "pack/seed-border/config";
+
+// Namespaces
+$seed-card-namespace: "c-card" !default;
+
+// Styles
+$seed-card-background-color: #fff !default;
+$seed-card-border: $seed-border !default;
+$seed-card-border-radius: $seed-border-radius !default;
 ```
