@@ -1,7 +1,7 @@
 {
   "name": "seed-alert",
   "version": "0.0.0",
-  "description": "alert component pack for Seed",
+  "description": "Alert component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
