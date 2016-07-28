@@ -12,8 +12,36 @@ var root = findRoot(process.cwd());
 
 
 // Methods
-var getPackFile = function(path) {
-  path = path ? path : '**/*.scss';
+
+var getPathFile = function(file) {
+  if (!file) {
+    return false;
+  }
+
+  if (!file.includes('_seed-packs.scss')) {
+    console.log('A non-glob path must include _seed-pack.scss');
+    process.exit(1);
+    return false;
+  }
+
+  file = path.join(root, file);
+  var stat = fs.statSync(file).isFile();
+
+  if (!stat) {
+    console.log('seed-packer could not find ' + file + '.');
+    console.log('Please double check to make sure the path to _seed-packs.scss is correct.');
+    console.log('If you\'re not sure, you can try using seed-packer with an argument.');
+    return process.exit(1);
+  }
+  else {
+    return file;
+  }
+};
+
+
+var getPackFile = function(filePath) {
+  // Default glob path
+  filePath = filePath ? filePath : '**/*.scss';
 
   var file = false;
   var options = {
@@ -23,18 +51,23 @@ var getPackFile = function(path) {
     ]
   };
 
-  var scssFiles = glob.sync(path, options);
+  if (filePath.includes('*.scss')) {
+    var scssFiles = glob.sync(filePath, options);
 
-  if (!scssFiles.length) {
-    return false;
-  }
-
-  for(var i = 0, len = scssFiles.length; i < len; i++) {
-    var f = scssFiles[i];
-    if (f.includes('_seed-packs.scss')) {
-      file = f;
-      break;
+    if (!scssFiles.length) {
+      return false;
     }
+
+    for(var i = 0, len = scssFiles.length; i < len; i++) {
+      var f = scssFiles[i];
+      if (f.includes('_seed-packs.scss')) {
+        file = f;
+        break;
+      }
+    }
+  }
+  else {
+    file = getPathFile(filePath);
   }
 
   return file;
@@ -60,13 +93,13 @@ var addPacks = function(packs, file) {
 };
 
 
-var seedPacker = function(path) {
+var seedPacker = function(filePath) {
   var packs = packfinder.find();
   if (!packs) {
     return false;
   }
 
-  var file = getPackFile(path);
+  var file = getPackFile(filePath);
 
   if (!file) {
     return;
