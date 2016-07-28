@@ -1,10 +1,10 @@
-# seed-alerts [![npm version](https://badge.fury.io/js/seed-alerts.svg)](https://badge.fury.io/js/seed-alerts)
+# seed-alert [![npm version](https://badge.fury.io/js/seed-alert.svg)](https://badge.fury.io/js/seed-alert)
 
-alerts component pack for [Seed](https://github.com/helpscout/seed)!
+alert component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-alerts --save-dev
+npm install seed-alert --save-dev
 ```
 
 
@@ -17,7 +17,7 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var pack = require('seed-alerts');
+var pack = require('seed-alert');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -28,11 +28,11 @@ gulp.task('sass', function () {
 });
 ```
 
-Once that is setup, simply `@import` *seed-alerts* as needed in your `.scss` file:
+Once that is setup, simply `@import` *seed-alert* as needed in your `.scss` file:
 
 ```scss
 // Packs
-@import "pack/seed-alerts/_index";
+@import "pack/seed-alert/_index";
 ```
 
 ## Options
@@ -40,5 +40,5 @@ Once that is setup, simply `@import` *seed-alerts* as needed in your `.scss` fil
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-alerts config options
+seed-alert config options
 ```

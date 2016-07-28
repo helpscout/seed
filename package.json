@@ -1,24 +1,29 @@
 {
-  "name": "seed-alerts",
-  "version": "0.0.1",
-  "description": "alerts component pack for Seed",
+  "name": "seed-alert",
+  "version": "0.0.0",
+  "description": "alert component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
+    "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
     "test": "node ./scripts/test.js && npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-alert.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-alert/issues"
+  },
   "keywords": [
+    "alert",
     "bem",
     "css",
     "design",
@@ -37,5 +42,11 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.3",
+    "seed-color-scheme-helpscout": "0.0.3",
+    "seed-dash": "0.0.1",
+    "seed-spacing": "^0.2.6"
   }
 }
