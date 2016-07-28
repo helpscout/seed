@@ -1,4 +1,4 @@
-# seed-alert [![npm version](https://badge.fury.io/js/seed-alert.svg)](https://badge.fury.io/js/seed-alert)
+# seed-alert [![Build Status](https://travis-ci.org/helpscout/seed-alert.svg?branch=master)](https://travis-ci.org/helpscout/seed-alert) [![npm version](https://badge.fury.io/js/seed-alert.svg)](https://badge.fury.io/js/seed-alert) [![Dependency Status](https://david-dm.org/helpscout/seed-alert.svg)](https://david-dm.org/helpscout/seed-alert)
 
 Alert component pack for [Seed](https://github.com/helpscout/seed)!
 
