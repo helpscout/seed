@@ -1,4 +1,4 @@
-# seed-packfinder [![npm version](https://badge.fury.io/js/seed-packfinder.svg)](https://badge.fury.io/js/seed-packfinder)
+# seed-packfinder [![Build Status](https://travis-ci.org/helpscout/seed-packfinder.svg?branch=master)](https://travis-ci.org/helpscout/seed-packfinder) [![npm version](https://badge.fury.io/js/seed-packfinder.svg)](https://badge.fury.io/js/seed-packfinder)
 
 Node utility to find seed packs!
 
