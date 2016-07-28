@@ -42,6 +42,41 @@ Note: The seed pack **must** contain the keyword `seed-pack`.
 Note 2: The seed pack **must also** be either a dependency or devDependency defined in your `package.json` (installed with the `--save` or `--save-dev` flag).
 
 
+### Bonus: Including custom paths
+
+You can also include additional paths by passing them as arguments to harvester. If we take the above `gulp` example, it would look like this:
+
+```javascript
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var harvester = require('seed-harvester');
+
+var includePaths = harvester(
+  'scss/',
+  ['node_modules/my-custom-sass-package', 'node_modules/another-sass-thing'],
+  'vendor/scss/project'
+);
+
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass({
+      includePaths: includePaths
+    }))
+    .pipe(gulp.dest('./css'));
+});
+```
+
+In the above example, harvester will include all applicable seed packs and resolve all the paths passed (this assumes they're valid paths to begin with).
+
+
+## Options
+### harvester(arguments)
+Type: `String`, `Array` | Default: `[]`
+Returns: Array
+
+Pass along strings or arrays as arguments to harvester. This package works just like [sass-pathfinder](https://github.com/ItsJonQ/sass-pathfinder), except it magically finds and includes seed packs.
+
+
 ## Thanks!
 
 Many thanks to [Alisdair](https://github.com/alisdair) for coming up with the name `seed-harvester` :heart:.
