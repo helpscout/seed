@@ -108,6 +108,4 @@ var seedPacker = function(filePath) {
   return addPacks(packs, file);
 };
 
-seedPacker();
-
 module.exports = seedPacker;
