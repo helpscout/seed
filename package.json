@@ -4,10 +4,7 @@
   "description": "Node utility to find seed packs",
   "main": "index.js",
   "scripts": {
-    "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
-    "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
+    "test": "node_modules/.bin/mocha --reporter spec --recursive --growl",
     "prepublish": "npm run test"
   },
   "homepage": "",
@@ -15,8 +12,7 @@
     "type": "git",
     "url": ""
   },
-  "authors": [
-  ],
+  "authors": [],
   "license": "MIT",
   "keywords": [
     "bem",
@@ -34,8 +30,13 @@
   "engines": {
     "node": ">=4"
   },
+  "dependencies": {
+    "find-root": "^1.0.0",
+    "lodash": "^4.14.0"
+  },
   "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0"
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "seed-breakpoints": "^0.3.1"
   }
 }
