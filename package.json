@@ -36,7 +36,8 @@
   },
   "dependencies": {
     "find-root": "^1.0.0",
-    "lodash": "^4.14.0"
+    "lodash": "^4.14.0",
+    "seed-packfinder": "0.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
