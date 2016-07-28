@@ -18,22 +18,26 @@ beforeEach(function(done) {
 describe('packer: writes', function() {
   var output = packer();
 
-  it('should automatically add seed packs (from package.json)', function() {
+  it('should automatically add seed packs (from package.json)', function(done) {
     assert.equal(true, output.includes('seed-breakpoints'));
+    done();
   });
 
-  it('should automatically prefix seed packs with @import', function() {
+  it('should automatically prefix seed packs with @import', function(done) {
     assert.equal(true, output.includes('@import'));
+    done();
   });
 });
 
 
 describe('packer: custom path', function() {
-  it('should locate _seed-pack.scss from custom glob path', function() {
+  it('should locate _seed-pack.scss from custom glob path', function(done) {
     assert.equal(true, packer('./test/scss/**/*.scss').includes('seed-breakpoints'));
+    done();
   });
 
-  it('should locate _seed-pack.scss from absolute path', function() {
+  it('should locate _seed-pack.scss from absolute path', function(done) {
     assert.equal(true, packer('/test/scss/_seed-packs.scss').includes('seed-breakpoints'));
+    done();
   });
 });
