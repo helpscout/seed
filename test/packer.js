@@ -7,11 +7,12 @@ var packer = require('../index');
 var path = require('path');
 var root = findRoot(process.cwd());
 
-beforeEach(function() {
+beforeEach(function(done) {
   // Wipes _seed-pack.scss to blank
   var file = '/test/scss/_seed-packs.scss';
   file = path.join(root, file);
   fs.writeFileSync(file, '');
+  done();
 });
 
 describe('packer: writes', function() {
