@@ -1,6 +1,6 @@
 {
   "name": "seed-packer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Automatically adds seed packs in your .scss build!",
   "main": "index.js",
   "scripts": {
