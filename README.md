@@ -7,6 +7,10 @@ Automatically adds seed packs in your .scss build!
 npm install seed-packer --save-dev
 ```
 
+## Recommendations
+
+It is **highly** recommended that you use `seed-packer` alongside [`seed-harvester`](https://github.com/helpscout/seed-harvester) for an amazingly streamline seed experience!
+
 
 ## Usage
 
