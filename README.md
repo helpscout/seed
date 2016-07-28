@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [seed-harvester * * *](#seed-harvester---)
+  - [Install](#install)
+  - [Basic Usage](#basic-usage)
+    - [1. Set up harvester with Sass](#1-set-up-harvester-with-sass)
+    - [2. Add seed packs!](#2-add-seed-packs)
+  - [Including custom paths](#including-custom-paths)
+  - [Options](#options)
+    - [harvester(arguments)](#harvesterarguments)
+  - [Thanks!](#thanks)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # seed-harvester [![Build Status](https://travis-ci.org/helpscout/seed-harvester.svg?branch=master)](https://travis-ci.org/helpscout/seed-harvester) [![npm version](https://badge.fury.io/js/seed-harvester.svg)](https://badge.fury.io/js/seed-harvester) [![Dependency Status](https://david-dm.org/helpscout/seed-harvester.svg)](https://david-dm.org/helpscout/seed-harvester)
 
 Automatically include seed pack dependencies for node-sass!
