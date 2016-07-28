@@ -1,8 +1,8 @@
-var path = require('path');
-var pathfinder = require('./scripts/pathfinder');
+// Seed Packer
+'use strict';
 
-var files = pathfinder(
-  path.join(__dirname, 'scss')
-);
+var seedPacker = function() {
 
-module.exports = files;
+});
+
+module.exports = seedPacker;

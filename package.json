@@ -1,23 +1,23 @@
 {
   "name": "seed-packer",
-  "version": "0.0.1",
-  "description": "packer other pack for Seed",
+  "version": "0.0.0",
+  "description": "Automatically adds seed packs in your .scss build!",
   "main": "index.js",
   "scripts": {
-    "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
-    "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
+    "test": "node_modules/.bin/mocha --reporter spec --recursive --growl",
     "prepublish": "npm run test"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-packer.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-packer/issues"
+  },
   "keywords": [
     "bem",
     "css",
@@ -27,15 +27,19 @@
     "modular",
     "oocss",
     "performance",
+    "packer",
     "seed",
-    "seed-pack",
     "scss"
   ],
   "engines": {
     "node": ">=4"
   },
   "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0"
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "seed-breakpoints": "^0.3.1"
+  },
+  "dependencies": {
+    "seed-packfinder": "0.0.1"
   }
 }
