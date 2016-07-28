@@ -64,7 +64,7 @@ var harvester = function() {
   if (deps) {
     addToIncludePaths(deps);
   }
-  return includePaths;
+  return _.uniq(_.flattenDeep(includePaths));
 };
 
 module.exports = harvester;
