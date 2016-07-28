@@ -39,6 +39,7 @@ npm install seed-grid --save
 Because `seed-harvester` was setup (step 1), it will automatically add `seed-grid` into your includePaths for you.
 
 Note: The seed pack **must** contain the keyword `seed-pack`.
+
 Note 2: The seed pack **must also** be either a dependency or devDependency defined in your `package.json` (installed with the `--save` or `--save-dev` flag).
 
 
