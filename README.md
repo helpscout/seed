@@ -29,3 +29,11 @@ if (seedpacks) {
 
 ### packfinder.find()
 Returns: `Array` (`false` if no packs are found)
+
+This returns an `array` of seed pack names (`string`).
+
+
+### packfinder.findPaths()
+Returns: `Array` (`false` if no packs are found)
+
+This returns an `array` of seed pack **paths** (`string`).
