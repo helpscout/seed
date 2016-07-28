@@ -12,12 +12,15 @@ npm install seed-packer --save-dev
 
 ### 1. Add _seed-packs.scss in your project
 
-`seed-packer` looks exclusively for a `_seed-packs.scss` file. This is where it will automagically add all your seed packs. The `_seed-packs.scss` file can be completely empty (in fact, this is encouraged).
+`seed-packer` looks exclusively for a **`_seed-packs.scss`** file. 
+
+This is where it will automagically add all your seed packs. The `_seed-packs.scss` file can be completely empty (in fact, this is encouraged).
 
 
 ### 2. Add packer to your sass pipeline
 
-`seed-packer` needs to be imported into your sass pipeline. Below is an example using Gulp with `seed-packer` and [`seed-harvester`](https://github.com/helpscout/seed-harvester/):
+`seed-packer` needs to be imported into your sass pipeline.
+Below is an example using Gulp with `seed-packer` and [`seed-harvester`](https://github.com/helpscout/seed-harvester/):
 
 ```javascript
 var gulp = require('gulp');
@@ -25,10 +28,11 @@ var sass = require('gulp-sass');
 var packer = require('seed-packer');
 var harvester = require('seed-harvester');
 
-// Initialize seed-packer
-packer();
 
 gulp.task('sass', function () {
+  // Initialize seed-packer
+  packer();
+  
   return gulp.src('./sass/**/*.scss')
     .pipe(sass({
       // includePaths with seed-harvester
