@@ -66,3 +66,13 @@ var packer = require('seed-packer');
 // Assuming your _seed-packs.scss file is located in the directory below:
 packer('/assets/stylesheets/plugins/**/*.scss');
 ```
+
+For the most **optimal** setup, you can provide the absolute path to your `_seed-packs.scss` file. This is the most **recommended** option.
+
+**Example**:
+
+```javascript
+var packer = require('seed-packer');
+
+packer('/assets/stylesheets/plugins/seed/_seed-packs.scss');
+```
