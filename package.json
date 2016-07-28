@@ -1,19 +1,23 @@
 {
   "name": "seed-packfinder",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Node utility to find seed packs",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha --reporter spec --recursive --growl",
     "prepublish": "npm run test"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-packfinder.git"
   },
-  "authors": [],
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-packfinder/issues"
+  },
   "keywords": [
     "bem",
     "css",
@@ -22,9 +26,9 @@
     "itcss",
     "modular",
     "oocss",
+    "packfinder",
     "performance",
     "seed",
-    "seed-pack",
     "scss"
   ],
   "engines": {
