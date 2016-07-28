@@ -2,12 +2,12 @@
 
 Automatically include seed pack dependencies for node-sass!
 
-**This pack is highly experimentatal. And highly awesome!**
 
 ## Install
 ```
 npm install seed-harvester --save-dev
 ```
+
 
 ## Basic Usage
 
@@ -42,7 +42,7 @@ Note: The seed pack **must** contain the keyword `seed-pack`.
 Note 2: The seed pack **must also** be either a dependency or devDependency defined in your `package.json` (installed with the `--save` or `--save-dev` flag).
 
 
-### Bonus: Including custom paths
+## Including custom paths
 
 You can also include additional paths by passing them as arguments to harvester. If we take the above `gulp` example, it would look like this:
 
@@ -70,6 +70,7 @@ In the above example, harvester will include all applicable seed packs and resol
 
 
 ## Options
+
 ### harvester(arguments)
 Type: `String`, `Array` | Default: `[]`
 Returns: Array
