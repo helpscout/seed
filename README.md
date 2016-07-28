@@ -58,6 +58,8 @@ By default, `seed-packer` uses [`glob`](https://github.com/isaacs/node-glob) to 
 
 Packer returns the output content (`string`) that it writes into your `_seed-packs.scss` file.
 
+##### Better
+
 **Example**:
 
 ```javascript
@@ -66,6 +68,8 @@ var packer = require('seed-packer');
 // Assuming your _seed-packs.scss file is located in the directory below:
 packer('/assets/stylesheets/plugins/**/*.scss');
 ```
+
+##### Bester!
 
 For the most **optimal** setup, you can provide the absolute path to your `_seed-packs.scss` file. This is the most **recommended** option.
 
