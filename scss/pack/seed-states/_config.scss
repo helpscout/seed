@@ -13,23 +13,23 @@ $seed-states-warning-namespace: "warning" !default;
 // Configs
 $seed-states-colors: (
   #{$seed-states-error-namespace}: (
-    accent-color: _color(red, 500),
     background-color: _color(red, 200),
+    border-color: _color(red, 500),
     color: _color(red, 800)
   ),
   #{$seed-states-info-namespace}: (
-    accent-color: _color(blue, 500),
     background-color: _color(blue, 200),
+    border-color: _color(blue, 500),
     color: _color(blue, 800)
   ),
   #{$seed-states-success-namespace}: (
-    accent-color: _color(green, 500),
     background-color: _color(green, 200),
+    border-color: _color(blue, 500),
     color: _color(green, 800)
   ),
   #{$seed-states-warning-namespace}: (
-    accent-color: _color(yellow, 500),
     background-color: _color(yellow, 200),
+    border-color: _color(blue, 500),
     color: _color(yellow, 800)
   ),
 ) !default;
