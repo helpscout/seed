@@ -1,0 +1,11 @@
+// Modifiers :: Sizes
+
+// Dependencies
+@import "pack/seed-control/config";
+
+@each $key, $value in $seed-control-sizes {
+  &--#{$key} {
+    height: $value;
+    line-height: $value - ceil($seed-input-border-size * 2);
+  }
+}

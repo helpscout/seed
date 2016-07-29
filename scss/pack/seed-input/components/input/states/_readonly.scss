@@ -1,0 +1,14 @@
+// States :: Readonly
+
+// Dependencies
+@import "../../../config";
+
+&[readonly],
+&.is-readonly {
+  background-color: $seed-input-background-color-disabled;
+  border-color: $seed-input-border-color;
+
+  &:focus {
+    border-color: $seed-input-border-color-focus;
+  }
+}

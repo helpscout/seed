@@ -1,0 +1,14 @@
+// Inputs :: Textarea
+
+// Dependencies
+@import "pack/seed-control/config";
+
+$__class: #{&};
+
+@at-root textarea#{$__class} {
+  height: auto;
+  line-height: inherit;
+  overflow: auto;
+  padding: $seed-input-padding-textarea;
+  vertical-align: top;
+}

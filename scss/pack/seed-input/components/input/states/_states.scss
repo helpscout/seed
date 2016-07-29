@@ -1,0 +1,19 @@
+// States
+
+// Dependencies
+@import "pack/seed-control/mixins/control-disabled-styles";
+@import "pack/seed-states/_index";
+
+@each $key, $value in $seed-states-colors {
+  $class: ".is-#{$key}";
+
+  @if $key != "info" {
+    &#{$class} {
+      border-color: _state($key, border-color);
+
+      @include control-disabled-styles {
+        border-color: _state($key, border-color);
+      }
+    }
+  }
+}

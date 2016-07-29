@@ -1,0 +1,31 @@
+// Component :: Input :: Base
+
+// Dependencies
+@import "pack/seed-control/config";
+
+& {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-color: $seed-input-border-color;
+  border-radius: $seed-input-border-radius;
+  border-style: $seed-input-border-style;
+  border-width: $seed-input-border-size;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 100%;
+  height: $seed-control-size-default;
+  line-height: $seed-control-size-default - ceil($seed-input-border-size * 2);
+  margin: 0;
+  outline: none;
+  padding: $seed-input-padding;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+
+  &:focus {
+    border-color: $seed-input-border-color-focus;
+    outline: none;
+  }
+}
