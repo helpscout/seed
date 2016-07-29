@@ -1,4 +1,4 @@
-# seed-control [![npm version](https://badge.fury.io/js/seed-control.svg)](https://badge.fury.io/js/seed-control)
+# seed-control [![Build Status](https://travis-ci.org/helpscout/seed-control.svg?branch=master)](https://travis-ci.org/helpscout/seed-control) [![npm version](https://badge.fury.io/js/seed-control.svg)](https://badge.fury.io/js/seed-control)
 
 Control config pack for [Seed](https://github.com/helpscout/seed)!
 
