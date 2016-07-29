@@ -80,11 +80,11 @@ var addPacks = function(packs, file) {
   }
 
   var template = '// Seed packs\n';
-  template += '// Automagically added by seed-packer <3 \n\n';
+  template += '// Automagically added by seed-packer <3\n\n';
 
   for(var i = 0, len = packs.length; i < len; i++) {
     var p = packs[i];
-    template += `@import "pack/${p}/_index";\n`;
+    template += '@import "pack/' + p + '/_index";\n';
   }
   // Write to file
   fs.writeFileSync(file, template);
