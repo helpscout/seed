@@ -1,6 +1,6 @@
 {
   "name": "seed-control",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Control config pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -15,8 +15,7 @@
     "type": "git",
     "url": ""
   },
-  "authors": [
-  ],
+  "authors": [],
   "license": "MIT",
   "keywords": [
     "bem",
