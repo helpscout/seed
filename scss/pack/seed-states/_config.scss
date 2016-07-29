@@ -24,12 +24,12 @@ $seed-states-colors: (
   ),
   #{$seed-states-success-namespace}: (
     background-color: _color(green, 200),
-    border-color: _color(blue, 500),
+    border-color: _color(green, 500),
     color: _color(green, 800)
   ),
   #{$seed-states-warning-namespace}: (
     background-color: _color(yellow, 200),
-    border-color: _color(blue, 500),
+    border-color: _color(yellow, 500),
     color: _color(yellow, 800)
   ),
 ) !default;
