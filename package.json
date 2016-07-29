@@ -42,5 +42,9 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.3",
+    "seed-dash": "0.0.1"
   }
 }

@@ -1,0 +1,14 @@
+// Mixins :: control-disabled-styles
+
+@mixin control-disabled-styles() {
+  &.is-disabled,
+  &[disabled] {
+    @content;
+
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}

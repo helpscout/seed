@@ -1,0 +1,11 @@
+// Functions :: _control-size
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "../config";
+
+// A function wrapper of _get() to make it easier to retrieve
+// config variables from $seed-control-sizes
+@function _control-size($arguments...) {
+  @return _get($seed-control-sizes, $arguments...);
+}
