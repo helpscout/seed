@@ -1,4 +1,4 @@
-# seed-input [![npm version](https://badge.fury.io/js/seed-input.svg)](https://badge.fury.io/js/seed-input)
+# seed-input [![Build Status](https://travis-ci.org/helpscout/seed-input.svg?branch=master)](https://travis-ci.org/helpscout/seed-input) [![npm version](https://badge.fury.io/js/seed-input.svg)](https://badge.fury.io/js/seed-input) [![dependencies Status](https://david-dm.org/helpscout/seed-input/status.svg)](https://david-dm.org/helpscout/seed-input)
 
 input component pack for [Seed](https://github.com/helpscout/seed)!
 
