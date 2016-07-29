@@ -1,5 +1,5 @@
 var path = require('path');
-var pathfinder = require('sass-pathfinder./scripts/pathfinder');
+var pathfinder = require('sass-pathfinder');
 
 var files = pathfinder(
   require('seed-color-scheme'),
