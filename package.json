@@ -10,13 +10,17 @@
     "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-control.git"
   },
-  "authors": [],
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-control/issues"
+  },
   "keywords": [
     "bem",
     "control",
