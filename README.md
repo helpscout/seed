@@ -1,6 +1,6 @@
 # seed-states [![npm version](https://badge.fury.io/js/seed-states.svg)](https://badge.fury.io/js/seed-states)
 
-states other pack for [Seed](https://github.com/helpscout/seed)!
+States config pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,37 @@ Once that is setup, simply `@import` *seed-states* as needed in your `.scss` fil
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-states config options
+// Dependencies
+@import "pack/seed-color-scheme/_index";
+@import "pack/seed-color-scheme-helpscout/_index";
+
+// Namespaces
+$seed-states-error-namespace: "error" !default;
+$seed-states-info-namespace: "info" !default;
+$seed-states-success-namespace: "success" !default;
+$seed-states-warning-namespace: "warning" !default;
+
+// Configs
+$seed-states-colors: (
+  #{$seed-states-error-namespace}: (
+    accent-color: _color(red, 500),
+    background-color: _color(red, 200),
+    color: _color(red, 800)
+  ),
+  #{$seed-states-info-namespace}: (
+    accent-color: _color(blue, 500),
+    background-color: _color(blue, 200),
+    color: _color(blue, 800)
+  ),
+  #{$seed-states-success-namespace}: (
+    accent-color: _color(green, 500),
+    background-color: _color(green, 200),
+    color: _color(green, 800)
+  ),
+  #{$seed-states-warning-namespace}: (
+    accent-color: _color(yellow, 500),
+    background-color: _color(yellow, 200),
+    color: _color(yellow, 800)
+  ),
+) !default;
 ```
