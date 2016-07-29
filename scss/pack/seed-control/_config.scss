@@ -1,1 +1,9 @@
-// control :: Config
+// Control :: Config
+
+$seed-control-size-default: 36px !default;
+
+$seed-control-sizes: (
+  sm: 28px,
+  md: $seed-control-size-default,
+  lg: 52px
+) !default;

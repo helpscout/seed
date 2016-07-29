@@ -1,6 +1,6 @@
 # seed-control [![npm version](https://badge.fury.io/js/seed-control.svg)](https://badge.fury.io/js/seed-control)
 
-control other pack for [Seed](https://github.com/helpscout/seed)!
+Control config pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,11 @@ Once that is setup, simply `@import` *seed-control* as needed in your `.scss` fi
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-control config options
+$seed-control-size-default: 36px !default;
+
+$seed-control-sizes: (
+  sm: 28px,
+  md: $seed-control-size-default,
+  lg: 52px
+) !default;
 ```
