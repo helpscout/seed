@@ -6,9 +6,10 @@
 
 .#{$seed-shadow-hover-namespace} {
   @include prop-map($seed-shadow-sizes, (prop)) {
+    -webkit-transition: $seed-shadow-hover-transition;
+    transition: $seed-shadow-hover-transition;
+
     &:hover {
-      -webkit-transition: $seed-shadow-hover-transition;
-      transition: $seed-shadow-hover-transition;
       box-shadow: prop(prop);
     }
   }
