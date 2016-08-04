@@ -1,5 +1,5 @@
 /**
- * seed-typography v0.4.4 (https://github.com/helpscout/seed-typography)
+ * seed-typography v0.4.5 (https://github.com/helpscout/seed-typography)
  * Main typography pack for Seed
  * Licensed under MIT
  */
@@ -417,16 +417,16 @@
 .tx-bolder {
   font-weight: bolder !important; }
 
-.tx-nowrap {
+.tx-ws-nowrap {
   white-space: nowrap !important; }
 
-.tx-pre {
+.tx-ws-pre {
   white-space: pre !important; }
 
-.tx-pre-line {
+.tx-ws-pre-line {
   white-space: pre-line !important; }
 
-.tx-wrap-normal {
+.tx-ws-normal {
   white-space: normal !important; }
 
 .tx-wrap-break {

@@ -78,17 +78,18 @@ The following variables can be found in `_config.scss`
 
 ```sass
 // Namespaces
-$seed-typography-namespace: "t" !default;
+$seed-typography-namespace: "tx" !default;
 $seed-typography-alignment-namespace: $seed-typography-namespace !default;
 $seed-typography-break-namespace: #{$seed-typography-namespace}-break !default;
 $seed-typography-decoration-namespace: $seed-typography-namespace !default;
 $seed-typography-heading-namespace: #{$seed-typography-namespace} !default;
 $seed-typography-headline-namespace: #{$seed-typography-namespace}-headline !default;
+$seed-typography-line-height-namespace: #{$seed-typography-namespace}-lh !default;
 $seed-typography-size-namespace: $seed-typography-namespace !default;
 $seed-typography-transform-namespace: $seed-typography-namespace !default;
 $seed-typography-truncate-namespace: #{$seed-typography-namespace}-truncate !default;
 $seed-typography-weight-namespace: $seed-typography-namespace !default;
-$seed-typography-white-space-namespace: $seed-typography-namespace !default;
+$seed-typography-white-space-namespace: #{$seed-typography-namespace}-ws !default;
 $seed-typography-wrap-namespace: #{$seed-typography-namespace}-wrap !default;
 
 // Important (Typical convention for utility purposes)
@@ -106,17 +107,17 @@ $seed-typography-alignment: (
 // Break
 $seed-typography-break: (
   all: break-all,
-  normal: normal,
-  keep-all: keep-all
+  keep-all: keep-all,
+  normal: normal
 ) !default;
 
 // Decoration
 $seed-typography-decoration: (
-  no-decoration: none,
-  no-underline: none,
   overline: overline,
   strikethrough: line-through,
-  underline: underline
+  underline: underline,
+  no-decoration: none,
+  no-underline: none
 ) !default;
 
 // Heading sizes
@@ -139,12 +140,21 @@ $seed-typography-headline-sizes: (
 
 // Generic sizes
 $seed-typography-sizes: (
-  lead: map-get($seed-typography-heading-sizes, 4),
+  lead: map-get($seed-typography-heading-sizes, h4),
   xl: 1.28rem,
   lg: 1.14rem,
   md: 1rem,
   sm: 0.92rem,
   xs: 0.78rem
+) !default;
+
+// Line-height
+$seed-typography-line-height: (
+  heading: 1.2,
+  body: 1.5,
+  copy: 1.6,
+  reset: 1,
+  none: 0
 ) !default;
 
 // Transform
@@ -167,7 +177,7 @@ $seed-typography-white-space: (
   nowrap: nowrap,
   pre: pre,
   pre-line: pre-line,
-  wrap-normal: normal
+  normal: normal
 );
 
 // Wrap

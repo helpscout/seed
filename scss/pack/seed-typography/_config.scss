@@ -12,7 +12,7 @@ $seed-typography-size-namespace: $seed-typography-namespace !default;
 $seed-typography-transform-namespace: $seed-typography-namespace !default;
 $seed-typography-truncate-namespace: #{$seed-typography-namespace}-truncate !default;
 $seed-typography-weight-namespace: $seed-typography-namespace !default;
-$seed-typography-white-space-namespace: $seed-typography-namespace !default;
+$seed-typography-white-space-namespace: #{$seed-typography-namespace}-ws !default;
 $seed-typography-wrap-namespace: #{$seed-typography-namespace}-wrap !default;
 
 // Important (Typical convention for utility purposes)
@@ -100,7 +100,7 @@ $seed-typography-white-space: (
   nowrap: nowrap,
   pre: pre,
   pre-line: pre-line,
-  wrap-normal: normal
+  normal: normal
 );
 
 // Wrap
