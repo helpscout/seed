@@ -1,5 +1,5 @@
 /**
- * seed-typography v0.4.2 (https://github.com/helpscout/seed-typography)
+ * seed-typography v0.4.3 (https://github.com/helpscout/seed-typography)
  * Main typography pack for Seed
  * Licensed under MIT
  */
@@ -205,9 +205,6 @@
   .tx-headline-4\@xl {
     font-size: 3.5rem !important; } }
 
-.tx-lh-reset {
-  line-height: 1 !important; }
-
 .tx-lh-heading {
   line-height: 1.2 !important; }
 
@@ -217,54 +214,57 @@
 .tx-lh-copy {
   line-height: 1.6 !important; }
 
+.tx-lh-reset {
+  line-height: 1 !important; }
+
 .tx-lh-none {
   line-height: 0 !important; }
 
 @media (min-width: 544px) {
-  .tx-lh-reset\@sm {
-    line-height: 1 !important; }
   .tx-lh-heading\@sm {
     line-height: 1.2 !important; }
   .tx-lh-body\@sm {
     line-height: 1.5 !important; }
   .tx-lh-copy\@sm {
     line-height: 1.6 !important; }
+  .tx-lh-reset\@sm {
+    line-height: 1 !important; }
   .tx-lh-none\@sm {
     line-height: 0 !important; } }
 
 @media (min-width: 768px) {
-  .tx-lh-reset\@md {
-    line-height: 1 !important; }
   .tx-lh-heading\@md {
     line-height: 1.2 !important; }
   .tx-lh-body\@md {
     line-height: 1.5 !important; }
   .tx-lh-copy\@md {
     line-height: 1.6 !important; }
+  .tx-lh-reset\@md {
+    line-height: 1 !important; }
   .tx-lh-none\@md {
     line-height: 0 !important; } }
 
 @media (min-width: 992px) {
-  .tx-lh-reset\@lg {
-    line-height: 1 !important; }
   .tx-lh-heading\@lg {
     line-height: 1.2 !important; }
   .tx-lh-body\@lg {
     line-height: 1.5 !important; }
   .tx-lh-copy\@lg {
     line-height: 1.6 !important; }
+  .tx-lh-reset\@lg {
+    line-height: 1 !important; }
   .tx-lh-none\@lg {
     line-height: 0 !important; } }
 
 @media (min-width: 1200px) {
-  .tx-lh-reset\@xl {
-    line-height: 1 !important; }
   .tx-lh-heading\@xl {
     line-height: 1.2 !important; }
   .tx-lh-body\@xl {
     line-height: 1.5 !important; }
   .tx-lh-copy\@xl {
     line-height: 1.6 !important; }
+  .tx-lh-reset\@xl {
+    line-height: 1 !important; }
   .tx-lh-none\@xl {
     line-height: 0 !important; } }
 

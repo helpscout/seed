@@ -73,10 +73,10 @@ $seed-typography-sizes: (
 
 // Line-height
 $seed-typography-line-height: (
-  reset: 1,
   heading: 1.2,
   body: 1.5,
   copy: 1.6,
+  reset: 1,
   none: 0
 ) !default;
 
