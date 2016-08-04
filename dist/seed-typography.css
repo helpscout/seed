@@ -58,17 +58,11 @@
 .tx-break-all {
   word-break: break-all !important; }
 
-.tx-break-normal {
-  word-break: normal !important; }
-
 .tx-break-keep-all {
   word-break: keep-all !important; }
 
-.tx-no-decoration {
-  text-decoration: none !important; }
-
-.tx-no-underline {
-  text-decoration: none !important; }
+.tx-break-normal {
+  word-break: normal !important; }
 
 .tx-overline {
   text-decoration: overline !important; }
@@ -78,6 +72,12 @@
 
 .tx-underline {
   text-decoration: underline !important; }
+
+.tx-no-decoration {
+  text-decoration: none !important; }
+
+.tx-no-underline {
+  text-decoration: none !important; }
 
 .tx-h1 {
   font-size: 3rem !important; }
@@ -205,9 +205,6 @@
   .tx-headline-4\@xl {
     font-size: 3.5rem !important; } }
 
-.tx-lh-none {
-  line-height: 0 !important; }
-
 .tx-lh-reset {
   line-height: 1 !important; }
 
@@ -220,9 +217,10 @@
 .tx-lh-copy {
   line-height: 1.6 !important; }
 
+.tx-lh-none {
+  line-height: 0 !important; }
+
 @media (min-width: 544px) {
-  .tx-lh-none\@sm {
-    line-height: 0 !important; }
   .tx-lh-reset\@sm {
     line-height: 1 !important; }
   .tx-lh-heading\@sm {
@@ -230,11 +228,11 @@
   .tx-lh-body\@sm {
     line-height: 1.5 !important; }
   .tx-lh-copy\@sm {
-    line-height: 1.6 !important; } }
+    line-height: 1.6 !important; }
+  .tx-lh-none\@sm {
+    line-height: 0 !important; } }
 
 @media (min-width: 768px) {
-  .tx-lh-none\@md {
-    line-height: 0 !important; }
   .tx-lh-reset\@md {
     line-height: 1 !important; }
   .tx-lh-heading\@md {
@@ -242,11 +240,11 @@
   .tx-lh-body\@md {
     line-height: 1.5 !important; }
   .tx-lh-copy\@md {
-    line-height: 1.6 !important; } }
+    line-height: 1.6 !important; }
+  .tx-lh-none\@md {
+    line-height: 0 !important; } }
 
 @media (min-width: 992px) {
-  .tx-lh-none\@lg {
-    line-height: 0 !important; }
   .tx-lh-reset\@lg {
     line-height: 1 !important; }
   .tx-lh-heading\@lg {
@@ -254,11 +252,11 @@
   .tx-lh-body\@lg {
     line-height: 1.5 !important; }
   .tx-lh-copy\@lg {
-    line-height: 1.6 !important; } }
+    line-height: 1.6 !important; }
+  .tx-lh-none\@lg {
+    line-height: 0 !important; } }
 
 @media (min-width: 1200px) {
-  .tx-lh-none\@xl {
-    line-height: 0 !important; }
   .tx-lh-reset\@xl {
     line-height: 1 !important; }
   .tx-lh-heading\@xl {
@@ -266,7 +264,9 @@
   .tx-lh-body\@xl {
     line-height: 1.5 !important; }
   .tx-lh-copy\@xl {
-    line-height: 1.6 !important; } }
+    line-height: 1.6 !important; }
+  .tx-lh-none\@xl {
+    line-height: 0 !important; } }
 
 .tx-lead {
   font-size: 1.25rem !important; }

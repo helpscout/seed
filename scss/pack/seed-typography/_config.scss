@@ -30,17 +30,17 @@ $seed-typography-alignment: (
 // Break
 $seed-typography-break: (
   all: break-all,
-  normal: normal,
-  keep-all: keep-all
+  keep-all: keep-all,
+  normal: normal
 ) !default;
 
 // Decoration
 $seed-typography-decoration: (
-  no-decoration: none,
-  no-underline: none,
   overline: overline,
   strikethrough: line-through,
-  underline: underline
+  underline: underline,
+  no-decoration: none,
+  no-underline: none
 ) !default;
 
 // Heading sizes
@@ -73,11 +73,11 @@ $seed-typography-sizes: (
 
 // Line-height
 $seed-typography-line-height: (
-  none: 0,
   reset: 1,
   heading: 1.2,
   body: 1.5,
-  copy: 1.6
+  copy: 1.6,
+  none: 0
 ) !default;
 
 // Transform
