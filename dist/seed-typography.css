@@ -1,5 +1,5 @@
 /**
- * seed-typography v0.4.3 (https://github.com/helpscout/seed-typography)
+ * seed-typography v0.4.4 (https://github.com/helpscout/seed-typography)
  * Main typography pack for Seed
  * Licensed under MIT
  */
@@ -343,12 +343,20 @@
     font-size: 0.78rem !important; } }
 
 .tx-smooth {
-  -moz-osx-font-smoothing: grayscale ! important;
-  -webkit-font-smoothing: antialiased ! important; }
+  -moz-osx-font-smoothing: antialiased !important;
+  -webkit-font-smoothing: antialiased !important; }
 
-.tx-no-smooth {
-  -moz-osx-font-smoothing: none ! important;
-  -webkit-font-smoothing: none ! important; }
+.tx-smooth-auto {
+  -moz-osx-font-smoothing: auto !important;
+  -webkit-font-smoothing: auto !important; }
+
+.tx-smooth-none {
+  -moz-osx-font-smoothing: none !important;
+  -webkit-font-smoothing: none !important; }
+
+.tx-initial {
+  -moz-osx-font-smoothing: initial !important;
+  -webkit-font-smoothing: initial !important; }
 
 .tx-capitalize {
   text-transform: capitalize !important; }

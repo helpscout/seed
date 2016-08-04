@@ -3,9 +3,17 @@
 @import "../mixins/smooth";
 
 .#{$seed-typography-namespace}-smooth {
-  @include text-smooth(true);
+  @include text-smooth(antialiased);
 }
 
-.#{$seed-typography-namespace}-no-smooth {
-  @include text-smooth(false);
+.#{$seed-typography-namespace}-smooth-auto {
+  @include text-smooth(auto);
+}
+
+.#{$seed-typography-namespace}-smooth-none {
+  @include text-smooth(none);
+}
+
+.#{$seed-typography-namespace}-initial {
+  @include text-smooth(initial);
 }
