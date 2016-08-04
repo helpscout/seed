@@ -5,6 +5,7 @@
 
   &--#{$class} {
     margin-bottom: -($size);
+    margin-right: -($size);
 
     &:last-child {
       margin-bottom: -($size);
@@ -12,6 +13,7 @@
 
     #{$component}__#{$seed-inline-item-namespace} {
       margin-bottom: $size;
+      margin-right: $size;
     }
   }
 }
