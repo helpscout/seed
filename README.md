@@ -63,34 +63,4 @@ $seed-alert-margin-bottom: spacing(4) !default;
 // }
 $seed-alert-enable-state-prefix: true !default;
 $seed-alert-state-prefix: "is" !default;
-
-
-// States
-$seed-alert-states: (
-  default: (
-    accent-color: _color(yellow, 500),
-    background-color: _color(yellow, 200),
-    color: _color(yellow, 800)
-  ),
-  #{$seed-alert-error-namespace}: (
-    accent-color: _color(red, 500),
-    background-color: _color(red, 200),
-    color: _color(red, 800)
-  ),
-  #{$seed-alert-info-namespace}: (
-    accent-color: _color(blue, 500),
-    background-color: _color(blue, 200),
-    color: _color(blue, 800)
-  ),
-  #{$seed-alert-success-namespace}: (
-    accent-color: _color(green, 500),
-    background-color: _color(green, 200),
-    color: _color(green, 800)
-  ),
-  #{$seed-alert-warning-namespace}: (
-    accent-color: _color(yellow, 500),
-    background-color: _color(yellow, 200),
-    color: _color(yellow, 800)
-  ),
-) !default;
 ```
