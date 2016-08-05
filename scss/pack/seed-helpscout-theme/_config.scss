@@ -10,6 +10,9 @@ $seed-helpscout-theme-text-color-namespace: "t-tx" !default;
 // Theme colors
 // Constructing the color palette from seed-color-scheme-helpscout
 $seed-helpscout-theme-colors: (
+  // Base colors
+  black: _get($seed-color-scheme-helpscout, black),
+  white: _get($seed-color-scheme-helpscout, white),
   // Primary colors
   blue: _get($seed-color-scheme-helpscout, blue),
   charcoal: _get($seed-color-scheme-helpscout, charcoal),

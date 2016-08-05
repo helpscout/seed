@@ -3,6 +3,10 @@
  * Help Scout theme pack for Seed
  * Licensed under MIT
  */
+.t-bg-black { background-color: #000; }
+
+.t-bg-white { background-color: #fff; }
+
 .t-bg-blue-100 { background-color: #f7fcfe; }
 
 .t-bg-blue-200 { background-color: #daf1ff; }
@@ -138,6 +142,10 @@
 .t-bg-orange-800 { background-color: #a45300; }
 
 .t-bg-orange-900 { background-color: #813c00; }
+
+.t-tx-black { color: #000; }
+
+.t-tx-white { color: #fff; }
 
 .t-tx-blue-100 { color: #f7fcfe; }
 

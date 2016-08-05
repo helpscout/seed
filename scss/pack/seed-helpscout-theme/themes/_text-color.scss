@@ -6,10 +6,15 @@
 .#{$seed-helpscout-theme-text-color-namespace} {
   @each $color, $map in $seed-helpscout-theme-colors {
     &-#{$color} {
-      @each $shade, $value in $map {
-        &-#{$shade} {
-          color: $value;
+      @if type-of($map) == "map" {
+        @each $shade, $value in $map {
+          &-#{$shade} {
+            color: $value;
+          }
         }
+      }
+      @else {
+        color: $map;
       }
     }
   }
