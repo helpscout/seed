@@ -3,13 +3,14 @@
 // Dependencies
 @import "../../config";
 @import "pack/seed-dash/_index";
+@import "pack/seed-states/config";
 
 & {
   // Get the default color scheme
-  $__default-scheme: _get($seed-alert-states, default);
+  $__default-scheme: _get($seed-states-colors, warning);
 
   background-color: _get($__default-scheme, background-color);
-  box-shadow: inset $seed-alert-accent-width 0 0 0 _get($__default-scheme, accent-color);
+  box-shadow: inset $seed-alert-accent-width 0 0 0 _get($__default-scheme, border-color);
   box-sizing: border-box;
   color: _get($__default-scheme, color);
   margin-bottom: $seed-alert-margin-bottom;

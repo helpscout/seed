@@ -6,9 +6,9 @@ var pathfinder = require('sass-pathfinder');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  require('seed-color-scheme-helpscout'),
   require('seed-dash'),
-  require('seed-spacing')
+  require('seed-spacing'),
+  require('seed-states')
 );
 
 sass.render({

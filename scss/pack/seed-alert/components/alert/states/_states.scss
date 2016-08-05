@@ -3,20 +3,19 @@
 // Dependencies
 @import "../../../config";
 @import "pack/seed-dash/_index";
+@import "pack/seed-states/config";
 
 
-@each $key, $values in $seed-alert-states {
+@each $key, $values in $seed-states-colors {
   $__alert-state-class: ".#{$key}";
 
-  @if $key != "default" {
-    @if $seed-alert-enable-state-prefix == true {
-      $__alert-state-class: ".#{$seed-alert-state-prefix}-#{$key}";
-    }
+  @if $seed-alert-enable-state-prefix == true {
+    $__alert-state-class: ".#{$seed-alert-state-prefix}-#{$key}";
+  }
 
-    &#{$__alert-state-class} {
-      background-color: _get($values, background-color);
-      box-shadow: inset $seed-alert-accent-width 0 0 0 _get($values, accent-color);
-      color: _get($values, color);
-    }
+  &#{$__alert-state-class} {
+    background-color: _get($values, background-color);
+    box-shadow: inset $seed-alert-accent-width 0 0 0 _get($values, border-color);
+    color: _get($values, color);
   }
 }

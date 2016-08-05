@@ -45,8 +45,8 @@
   },
   "dependencies": {
     "sass-pathfinder": "0.0.3",
-    "seed-color-scheme-helpscout": "0.0.3",
     "seed-dash": "0.0.1",
-    "seed-spacing": "^0.2.6"
+    "seed-spacing": "^0.2.6",
+    "seed-states": "0.0.4"
   }
 }
