@@ -3,8 +3,6 @@
  * Border theme pack for Seed
  * Licensed under MIT
  */
-.t-bdr-none { border-style: solid; border-width: 0; }
-
 .t-bdr { border-style: solid; border-width: 1px; border-color: #eee; }
 
 .t-bdr-top { border-top-style: solid; border-width: 1px; border-color: #eee; }
@@ -14,3 +12,5 @@
 .t-bdr-bottom { border-bottom-style: solid; border-width: 1px; border-color: #eee; }
 
 .t-bdr-left { border-left-style: solid; border-width: 1px; border-color: #eee; }
+
+.t-bdr-none { border-style: solid; border-width: 0; }

@@ -11,12 +11,12 @@ $seed-border-style: solid !default;
 
 // Directions
 $seed-border-directions: (
-  none: false,
   all: false,
   top: "t",
   right: "r",
   bottom: "b",
-  left: "l"
+  left: "l",
+  none: false
 ) !default;
 
 // Base variable
