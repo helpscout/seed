@@ -1,6 +1,8 @@
 # seed-helpscout-theme [![npm version](https://badge.fury.io/js/seed-helpscout-theme.svg)](https://badge.fury.io/js/seed-helpscout-theme)
 
-helpscout-theme theme pack for [Seed](https://github.com/helpscout/seed)!
+Help Scout theme pack for [Seed](https://github.com/helpscout/seed)!
+
+This theme pack is based off the [Help Scout color scheme](https://github.com/helpscout/seed-color-scheme-helpscout).
 
 ## Install
 ```
@@ -40,5 +42,21 @@ Once that is setup, simply `@import` *seed-helpscout-theme* as needed in your `.
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-helpscout-theme config options
+$seed-helpscout-theme-background-color-namespace: "t-bg" !default;
+$seed-helpscout-theme-text-color-namespace: "t-tx" !default;
+
+// Theme colors
+// Constructing the color palette from seed-color-scheme-helpscout
+$seed-helpscout-theme-colors: (
+  // Primary colors
+  blue: _get($seed-color-scheme-helpscout, blue),
+  charcoal: _get($seed-color-scheme-helpscout, charcoal),
+  grey: _get($seed-color-scheme-helpscout, grey),
+  // Secondary colors
+  yellow: _get($seed-color-scheme-helpscout, yellow),
+  green: _get($seed-color-scheme-helpscout, green),
+  red: _get($seed-color-scheme-helpscout, red),
+  purple: _get($seed-color-scheme-helpscout, purple),
+  orange: _get($seed-color-scheme-helpscout, orange),
+) !default;
 ```

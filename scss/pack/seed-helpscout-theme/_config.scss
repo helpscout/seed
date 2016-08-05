@@ -1,1 +1,23 @@
-// helpscout-theme :: Config
+// Help Scout Theme :: Config
+
+// Dependencies
+@import "pack/seed-color-scheme-helpscout/_index";
+@import "pack/seed-dash/_index";
+
+$seed-helpscout-theme-background-color-namespace: "t-bg" !default;
+$seed-helpscout-theme-text-color-namespace: "t-tx" !default;
+
+// Theme colors
+// Constructing the color palette from seed-color-scheme-helpscout
+$seed-helpscout-theme-colors: (
+  // Primary colors
+  blue: _get($seed-color-scheme-helpscout, blue),
+  charcoal: _get($seed-color-scheme-helpscout, charcoal),
+  grey: _get($seed-color-scheme-helpscout, grey),
+  // Secondary colors
+  yellow: _get($seed-color-scheme-helpscout, yellow),
+  green: _get($seed-color-scheme-helpscout, green),
+  red: _get($seed-color-scheme-helpscout, red),
+  purple: _get($seed-color-scheme-helpscout, purple),
+  orange: _get($seed-color-scheme-helpscout, orange),
+) !default;

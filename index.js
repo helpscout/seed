@@ -1,7 +1,9 @@
 var path = require('path');
-var pathfinder = require('./scripts/pathfinder');
+var pathfinder = require('sass-pathfinder');
 
 var files = pathfinder(
+  require('seed-color-scheme-helpscout'),
+  require('seed-dash'),
   path.join(__dirname, 'scss')
 );
 

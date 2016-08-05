@@ -3,18 +3,20 @@
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
-var pathfinder = require('./pathfinder');
+var pathfinder = require('sass-pathfinder');
 var sass = require('node-sass');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  // Add files/paths to include
+  require('seed-color-scheme-helpscout'),
+  require('seed-dash')
 );
 
 // Default .css compile
 sass.render({
   file: './scss/pack/'+file+'/__index.scss',
-  includePaths: includePaths
+  includePaths: includePaths,
+  outputStyle: 'compact',
 }, function(error, result) {
   if (error) {
     console.error(error);
