@@ -8,10 +8,6 @@ var harvester = function() {
   var paths = pathfinder(arguments);
   var packs = packfinder.find();
 
-  if (!packs) {
-    return false;
-  }
-
   _.forEach(packs, function(pack) {
     includePaths.push(require(pack));
   });
