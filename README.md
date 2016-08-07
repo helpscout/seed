@@ -37,7 +37,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *seed-control-group* as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-control-group/_index";
 ```
@@ -46,8 +46,8 @@ Once that is setup, simply `@import` *seed-control-group* as needed in your `.sc
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
 // Namespaces
 $seed-control-group-namespace: "o-control-group" !default;
-$seed-control-group-item-block-namespace: "block" !default;
+$seed-control-group-block-namespace: "#{$seed-control-group-namespace}__block" !default;
 ```
