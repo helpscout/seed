@@ -2,6 +2,12 @@
 
 Flex object pack for [Seed](https://github.com/helpscout/seed)!
 
+**File size**
+
+Minified | Gzipped
+---|---
+1.8 KB | 457 B
+
 ## Install
 ```
 npm install seed-flexy --save-dev
