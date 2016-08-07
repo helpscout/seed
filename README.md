@@ -2,7 +2,7 @@
 
 Button component pack for [Seed](https://github.com/helpscout/seed)!
 
-*File size*
+**File size**
 
 Minified | Gzipped
 ---|---
