@@ -1,4 +1,3 @@
-var _ = require('lodash');
 var pathfinder = require('sass-pathfinder');
 var packfinder = require('seed-packfinder');
 
