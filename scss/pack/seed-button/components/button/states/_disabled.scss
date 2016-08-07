@@ -7,9 +7,6 @@
 
 & {
   @include control-disabled-styles {
-    background-color: _get($seed-button-color, background, default);
-    border-color: _get($seed-button-color, border, default);
-    box-shadow: _get($seed-button-color, box-shadow, default);
     cursor: not-allowed;
     opacity: 0.65;
   }

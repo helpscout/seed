@@ -6,7 +6,7 @@ Button component pack for [Seed](https://github.com/helpscout/seed)!
 
 Minified | Gzipped
 ---|---
-12 KB | 1.32 KB
+5.1 KB | 930 B
 
 ## Install
 ```

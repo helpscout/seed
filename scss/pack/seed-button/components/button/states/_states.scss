@@ -3,6 +3,7 @@
 // Dependencies
 @import "pack/seed-control/mixins/control-disabled-styles";
 @import "pack/seed-dash/_index";
+@import "../../../mixins/not-disabled-styles";
 @import "../config";
 
 @each $state, $map in $seed-button-color-states {
@@ -11,24 +12,20 @@
     border-color: _get($map, border, default);
     color: _get($map, text);
 
-    &:hover {
-      background-color: _get($map, background, hover);
-      border-color: _get($map, border, hover);
-    }
+    @include not-disabled-styles {
+      &:hover {
+        background-color: _get($map, background, hover);
+        border-color: _get($map, border, hover);
+      }
 
-    &:active {
-      background-color: _get($map, background, active);
-      border-color: _get($map, border, active);
-    }
+      &:active {
+        background-color: _get($map, background, active);
+        border-color: _get($map, border, active);
+      }
 
-    &:focus {
-      box-shadow: _get($map, box-shadow, focus);
-    }
-
-    @include control-disabled-styles {
-      background-color: _get($map, background, default);
-      border-color: _get($map, border, default);
-      box-shadow: _get($seed-button-color, box-shadow, default);
+      &:focus {
+        box-shadow: _get($map, box-shadow, focus);
+      }
     }
   }
 }
