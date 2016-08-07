@@ -48,6 +48,7 @@
     "sass-pathfinder": "0.0.3",
     "seed-border": "0.0.4",
     "seed-control": "0.0.3",
+    "seed-dash": "0.0.1",
     "seed-states": "0.0.4"
   }
 }

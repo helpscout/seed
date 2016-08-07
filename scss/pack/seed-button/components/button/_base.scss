@@ -1,18 +1,20 @@
 // Button : Base
 
 // Dependencies
+@import "pack/seed-dash/_index";
 @import "./config";
 
 & {
   -webkit-appearance: none;
   appearance: none;
-  background-color: $seed-button-background-color;
-  border-color: $seed-button-border-color;
+  background-color: _get($seed-button-color, background, default);
+  border-color: _get($seed-button-color, border, default);
   border-radius: $seed-border-radius;
   border-width: $seed-button-border-size;
   border-style: $seed-button-border-style;
+  box-shadow: _get($seed-button-color, box-shadow, default);
   box-sizing: border-box;
-  color: $seed-button-color;
+  color: _get($seed-button-color, text);
   cursor: pointer;
   display: inline-block;
   font-size: $seed-button-font-size;
@@ -27,4 +29,24 @@
   vertical-align: middle;
   -webkit-user-select: none;
   user-select: none;
+
+  &:hover {
+    background-color: _get($seed-button-color, background, hover);
+    border-color: _get($seed-button-color, border, hover);
+  }
+
+  &:active {
+    background-color: _get($seed-button-color, background, active);
+    border-color: _get($seed-button-color, border, active);
+    box-shadow: _get($seed-button-color, box-shadow, active);
+  }
+
+  &:focus {
+    border-color: _get($seed-button-color, border, focus);
+    box-shadow: _get($seed-button-color, box-shadow, focus);
+
+    &:active {
+      box-shadow: _get($seed-button-color, box-shadow, active);
+    }
+  }
 }

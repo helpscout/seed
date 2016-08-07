@@ -1,0 +1,38 @@
+// Primary :: Base
+
+// Dependencies
+@import "pack/seed-control/mixins/control-disabled-styles";
+@import "pack/seed-dash/_index";
+@import "../../config";
+
+&--#{$seed-button-primary-namespace} {
+  background-color: _get($seed-button-color-primary, background, default);
+  border-color: _get($seed-button-color-primary, border, default);
+  color: _get($seed-button-color-primary, text);
+
+  &:hover {
+    background-color: _get($seed-button-color-primary, background, hover);
+    border-color: _get($seed-button-color-primary, border, hover);
+  }
+
+  &:active {
+    background-color: _get($seed-button-color-primary, background, active);
+    border-color: _get($seed-button-color-primary, border, active);
+  }
+
+  &:focus {
+    border-color: _get($seed-button-color-primary, border, focus);
+    box-shadow: _get($seed-button-color-primary, box-shadow, focus);
+
+    &:active {
+      box-shadow: _get($seed-button-color-primary, box-shadow, focus), _get($seed-button-color, box-shadow, active);
+    }
+  }
+
+  // States
+  @include control-disabled-styles() {
+    background-color: _get($seed-button-color-primary, background, default);
+    border-color: _get($seed-button-color-primary, border, default);
+    color: _get($seed-button-color-primary, text);
+  }
+}
