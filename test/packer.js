@@ -1,5 +1,4 @@
 // Test :: Packer
-var _ = require('lodash');
 var assert = require('chai').assert;
 var findRoot = require('find-root');
 var fs = require('fs');

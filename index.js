@@ -2,7 +2,6 @@
 'use strict';
 
 // Dependencies
-var _ = require('lodash');
 var findRoot = require('find-root');
 var fs = require('fs');
 var glob = require('glob');

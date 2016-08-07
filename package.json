@@ -45,7 +45,6 @@
   "dependencies": {
     "find-root": "^1.0.0",
     "glob": "^7.0.5",
-    "lodash": "^4.14.1",
     "seed-packfinder": "0.0.2"
   }
 }
