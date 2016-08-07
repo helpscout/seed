@@ -18,6 +18,18 @@ $seed-button-border-radius: $seed-border-radius !default;
 $seed-button-border-size: $seed-border-size !default;
 $seed-button-border-style: $seed-border-style !default;
 
+// Font
+$seed-button-font-size: 1rem !default;
+$seed-button-font-weight: normal !default;
+
+// Height
+$seed-button-height: $seed-control-size-default !default;
+$seed-button-line-height: $seed-button-height - ceil($seed-button-border-size * 2) !default;
+
+// Padding
+$seed-button-padding: 0 1em !default;
+
+
 // Colors
 $seed-button-color: (
   background: (
@@ -76,13 +88,3 @@ $seed-button-color-states: (
   )
 ) !default;
 
-// Font
-$seed-button-font-size: 1rem !default;
-$seed-button-font-weight: normal !default;
-
-// Height
-$seed-button-height: $seed-control-size-default !default;
-$seed-button-line-height: $seed-button-height - ceil($seed-button-border-size * 2) !default;
-
-// Padding
-$seed-button-padding: 0 1em !default;
