@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3",
+    "mocha": "^3.0.1",
     "seed-breakpoints": "^0.3.1",
     "seed-dash": "0.0.1",
     "seed-grid": "^0.3.2",
@@ -45,7 +45,7 @@
   "dependencies": {
     "find-root": "^1.0.0",
     "glob": "^7.0.5",
-    "lodash": "^4.14.0",
-    "seed-packfinder": "0.0.1"
+    "lodash": "^4.14.1",
+    "seed-packfinder": "0.0.2"
   }
 }
