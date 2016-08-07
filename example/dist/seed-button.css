@@ -1,0 +1,29 @@
+/**
+ * seed-button v0.0.1
+ * Button component pack for Seed
+ * Licensed under MIT
+ */
+.c-button {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-color: #ddd;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  color: #2b2b2b;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  height: 36px;
+  line-height: 34px;
+  outline: none;
+  padding: 0 1em;
+  transition: background-color 0.1s ease;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none; }

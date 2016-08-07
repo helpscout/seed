@@ -1,25 +1,31 @@
 {
   "name": "seed-button",
   "version": "0.0.1",
-  "description": "button component pack for Seed",
+  "description": "Button component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
+    "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
+    "copy": "cp ./dist/*.css ./example/dist/",
+    "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-button.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-button/issues"
+  },
   "keywords": [
     "bem",
+    "button",
+    "component",
     "css",
     "design",
     "functional",
@@ -37,5 +43,11 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.3",
+    "seed-border": "0.0.4",
+    "seed-control": "0.0.3",
+    "seed-states": "0.0.4"
   }
 }

@@ -1,0 +1,9 @@
+// Components :: Button
+
+// Dependencies
+@import "./config";
+
+.#{$seed-button-namespace} {
+  // Base
+  @import "./base";
+}

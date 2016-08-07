@@ -1,0 +1,30 @@
+// Button : Base
+
+// Dependencies
+@import "./config";
+
+& {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $seed-button-background-color;
+  border-color: $seed-button-border-color;
+  border-radius: $seed-border-radius;
+  border-width: $seed-button-border-size;
+  border-style: $seed-button-border-style;
+  box-sizing: border-box;
+  color: $seed-button-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $seed-button-font-size;
+  font-weight: $seed-button-font-weight;
+  height: $seed-button-height;
+  line-height: $seed-button-line-height;
+  outline: none;
+  padding: $seed-button-padding;
+  transition: $seed-button-transition;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+}
