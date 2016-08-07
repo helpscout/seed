@@ -8,6 +8,7 @@
 // Namespace
 $seed-button-namespace: "c-button" !default;
 $seed-button-primary-namespace: "primary" !default;
+$seed-button-link-namespace: "link" !default;
 $seed-button-error-namespace: "is-#{$seed-states-error-namespace}" !default;
 $seed-button-success-namespace: "is-#{$seed-states-success-namespace}" !default;
 $seed-button-warning-namespace: "is-#{$seed-states-warning-namespace}" !default;
@@ -31,6 +32,27 @@ $seed-button-line-height: $seed-button-height - ceil($seed-button-border-size * 
 // Padding
 $seed-button-padding: 0 1em !default;
 
+// Sizes
+$seed-button-sizes: (
+  sm: (
+    font-size: 0.875rem,
+    height: _get($seed-control-sizes, sm),
+    line-height: _get($seed-control-sizes, sm) - ceil($seed-button-border-size * 2),
+    padding: 0 0.5em
+  ),
+  md: (
+    font-size: 1rem,
+    height: _get($seed-control-sizes, md),
+    line-height: _get($seed-control-sizes, md) - ceil($seed-button-border-size * 2),
+    padding: 0 1em
+  ),
+  lg: (
+    font-size: 1.25rem,
+    height: _get($seed-control-sizes, lg),
+    line-height: _get($seed-control-sizes, lg) - ceil($seed-button-border-size * 2),
+    padding: 0 1.5em
+  )
+) !default;
 
 // Colors
 $seed-button-color: (
@@ -66,10 +88,29 @@ $seed-button-color-primary: (
     focus: #237AB3
   ),
   box-shadow: (
-    focus: 0 0 0 1px rgba(white, 0.3) inset
+    focus: 0 0 0 1px rgba(white, 0.4) inset
   ),
   text: #fff
 ) !default;
+
+$seed-button-color-link: (
+  background: (
+    default: transparent,
+    hover: transparent,
+    active: transparent
+  ),
+  border: (
+    default: transparent,
+    hover: transparent,
+    active: transparent,
+    focus: _get($seed-button-color-primary, border, focus)
+  ),
+  box-shadow: (
+    focus: none
+  ),
+  text: _get($seed-button-color-primary, background, default)
+) !default;
+
 
 $seed-button-color-states: (
   #{$seed-button-error-namespace}: (
@@ -84,7 +125,7 @@ $seed-button-color-states: (
       active: darken(_state(error, border-color), 8)
     ),
     box-shadow: (
-      focus: 0 0 0 1px rgba(white, 0.3) inset
+      focus: 0 0 0 1px rgba(white, 0.4) inset
     ),
     text: #fff
   ),
@@ -100,7 +141,7 @@ $seed-button-color-states: (
       active: darken(_state(success, border-color), 8)
     ),
     box-shadow: (
-      focus: 0 0 0 1px rgba(white, 0.3) inset
+      focus: 0 0 0 1px rgba(white, 0.4) inset
     ),
     text: #fff
   ),
@@ -116,9 +157,8 @@ $seed-button-color-states: (
       active: darken(_state(warning, border-color), 8)
     ),
     box-shadow: (
-      focus: 0 0 0 1px rgba(white, 0.3) inset
+      focus: 0 0 0 1px rgba(white, 0.4) inset
     ),
     text: #fff
   )
 ) !default;
-

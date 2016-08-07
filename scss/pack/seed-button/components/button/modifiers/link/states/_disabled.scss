@@ -7,8 +7,8 @@
 
 & {
   @include control-disabled-styles {
-    background-color: _get($seed-button-color-primary, background, default);
-    border-color: _get($seed-button-color-primary, border, default);
-    color: _get($seed-button-color-primary, text);
+    background-color: _get($seed-button-color-link, background, default);
+    border-color: _get($seed-button-color-link, border, default);
+    color: _get($seed-button-color-link, text);
   }
 }

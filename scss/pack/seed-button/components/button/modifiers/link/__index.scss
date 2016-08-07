@@ -1,0 +1,12 @@
+// Button Link :: Index
+
+// Dependencies
+@import "../../config";
+
+&--#{$seed-button-link-namespace} {
+  // Base
+  @import "./base";
+  // States
+  @import "./states/disabled";
+  @import "./states/states";
+}

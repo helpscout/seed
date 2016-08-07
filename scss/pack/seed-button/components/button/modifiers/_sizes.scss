@@ -1,0 +1,14 @@
+// Modifiers :: Sizes
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "../config";
+
+@each $key, $values in $seed-button-sizes {
+  &--#{$key} {
+    font-size: _get($values, font-size);
+    height: _get($values, height);
+    line-height: _get($values, line-height);
+    padding: _get($values, padding);
+  }
+}

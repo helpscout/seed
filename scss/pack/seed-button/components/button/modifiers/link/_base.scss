@@ -1,0 +1,32 @@
+// Link :: Base
+
+// Dependencies
+@import "pack/seed-control/mixins/control-disabled-styles";
+@import "pack/seed-dash/_index";
+@import "../../config";
+
+& {
+  background-color: _get($seed-button-color-link, background, default);
+  border-color: _get($seed-button-color-link, border, default);
+  color: _get($seed-button-color-link, text);
+
+  &:hover {
+    background-color: _get($seed-button-color-link, background, hover);
+    border-color: _get($seed-button-color-link, border, hover);
+    text-decoration: underline;
+  }
+
+  &:active {
+    background-color: _get($seed-button-color-link, background, active);
+    border-color: _get($seed-button-color-link, border, active);
+  }
+
+  &:focus {
+    border-color: _get($seed-button-color-link, border, focus);
+    box-shadow: _get($seed-button-color-link, box-shadow, focus);
+
+    &:active {
+      box-shadow: _get($seed-button-color-link, box-shadow, focus);
+    }
+  }
+}

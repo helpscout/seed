@@ -1,0 +1,12 @@
+// Primary :: Index
+
+// Dependencies
+@import "../../config";
+
+&--#{$seed-button-primary-namespace} {
+  // Base
+  @import "./base";
+  // States
+  @import "./states/disabled";
+  @import "./states/states";
+}
