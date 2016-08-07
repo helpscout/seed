@@ -36,12 +36,12 @@
   },
   "dependencies": {
     "find-root": "^1.0.0",
-    "lodash": "^4.14.0",
-    "seed-packfinder": "0.0.1"
+    "sass-pathfinder": "0.0.5",
+    "seed-packfinder": "0.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3",
+    "mocha": "^3.0.1",
     "seed-grid": "^0.3.2"
   }
 }

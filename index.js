@@ -1,5 +1,5 @@
 var _ = require('lodash');
-var pathfinder = require('./scripts/pathfinder');
+var pathfinder = require('sass-pathfinder');
 var packfinder = require('seed-packfinder');
 
 var harvester = function() {
@@ -8,16 +8,18 @@ var harvester = function() {
   var paths = pathfinder(arguments);
   var packs = packfinder.find();
 
-  _.forEach(packs, function(pack) {
-    includePaths.push(require(pack));
-  });
+  if (packs.length) {
+    packs.forEach(function(pack) {
+      includePaths.push(require(pack));
+    });
+  }
 
   if (paths.length) {
     includePaths.push(paths);
   }
 
   // Return flattened array of paths from packs + arguments
-  return _.uniq(_.flattenDeep(includePaths));
+  return pathfinder(includePaths);
 };
 
 module.exports = harvester;

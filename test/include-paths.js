@@ -1,6 +1,5 @@
 // Test :: Include paths
 
-var _ = require('lodash');
 var assert = require('chai').assert;
 var harvester = require('../index');
 
@@ -8,7 +7,7 @@ describe('harvester: include paths', function() {
   var paths = harvester('path');
 
   it('should include a path passed in arguments (string)', function() {
-    assert.equal('path', _.last(paths));
+    assert.equal('path', paths[paths.length - 1]);
   });
 
   it('should include multiple paths passed in arguments (string)', function() {
