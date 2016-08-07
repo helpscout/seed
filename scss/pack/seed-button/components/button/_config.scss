@@ -8,7 +8,9 @@
 // Namespace
 $seed-button-namespace: "c-button" !default;
 $seed-button-primary-namespace: "primary" !default;
+$seed-button-error-namespace: "is-#{$seed-states-error-namespace}" !default;
 $seed-button-success-namespace: "is-#{$seed-states-success-namespace}" !default;
+$seed-button-warning-namespace: "is-#{$seed-states-warning-namespace}" !default;
 
 // Animation
 $seed-button-transition: all 0.1s ease !default;
@@ -70,6 +72,22 @@ $seed-button-color-primary: (
 ) !default;
 
 $seed-button-color-states: (
+  #{$seed-button-error-namespace}: (
+    background: (
+      default: _state(error, border-color),
+      hover: darken(_state(error, border-color), 4),
+      active: darken(_state(error, border-color), 8)
+    ),
+    border: (
+      default: darken(_state(error, border-color), 8),
+      hover: darken(_state(error, border-color), 8),
+      active: darken(_state(error, border-color), 8)
+    ),
+    box-shadow: (
+      focus: 0 0 0 1px rgba(white, 0.3) inset
+    ),
+    text: #fff
+  ),
   #{$seed-button-success-namespace}: (
     background: (
       default: _state(success, border-color),
@@ -77,9 +95,25 @@ $seed-button-color-states: (
       active: darken(_state(success, border-color), 8)
     ),
     border: (
-      default: _state(success, border-color),
-      hover: _state(success, border-color),
-      active: _state(success, border-color)
+      default: darken(_state(success, border-color), 8),
+      hover: darken(_state(success, border-color), 8),
+      active: darken(_state(success, border-color), 8)
+    ),
+    box-shadow: (
+      focus: 0 0 0 1px rgba(white, 0.3) inset
+    ),
+    text: #fff
+  ),
+  #{$seed-button-warning-namespace}: (
+    background: (
+      default: _state(warning, border-color),
+      hover: darken(_state(warning, border-color), 4),
+      active: darken(_state(warning, border-color), 8)
+    ),
+    border: (
+      default: darken(_state(warning, border-color), 8),
+      hover: darken(_state(warning, border-color), 8),
+      active: darken(_state(warning, border-color), 8)
     ),
     box-shadow: (
       focus: 0 0 0 1px rgba(white, 0.3) inset
