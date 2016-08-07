@@ -4,13 +4,12 @@
  * Licensed under MIT
  */
 .o-control-group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
   position: relative;
   vertical-align: middle; }
   .o-control-group > * {
+    box-sizing: border-box;
     margin-top: 0;
     position: relative;
     width: auto; }
@@ -34,8 +33,7 @@
       border-radius: 3px; }
     .o-control-group > *:focus {
       z-index: 2; }
-  .o-control-group__block {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1; }
+
+.o-control-group__block {
+  box-sizing: border-box;
+  flex: 1; }

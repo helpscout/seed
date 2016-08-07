@@ -3,7 +3,7 @@
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
-var pathfinder = require('./pathfinder');
+var pathfinder = require('sass-pathfinder');
 var sass = require('node-sass');
 
 var file = pkg.name;
