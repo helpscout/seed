@@ -1,13 +1,13 @@
 {
   "name": "seed-link",
-  "version": "0.0.1",
-  "description": "link component pack for Seed",
+  "version": "0.0.0",
+  "description": "Link component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
+    "test": "npm run build",
     "prepublish": "npm run test"
   },
   "homepage": "",

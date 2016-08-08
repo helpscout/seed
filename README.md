@@ -1,6 +1,6 @@
-# seed-link [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme)
+# seed-link [![npm version](https://badge.fury.io/js/seed-link.svg)](https://badge.fury.io/js/seed-link)
 
-link component pack for [Seed](https://github.com/helpscout/seed)!
+Link component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -30,7 +30,7 @@ gulp.task('sass', function () {
 
 Once that is setup, simply `@import` *seed-link* as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-link/_index";
 ```
@@ -39,6 +39,6 @@ Once that is setup, simply `@import` *seed-link* as needed in your `.scss` file:
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
 seed-link config options
 ```
