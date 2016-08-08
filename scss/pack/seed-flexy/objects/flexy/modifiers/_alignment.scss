@@ -4,9 +4,7 @@
 @import "../../../config";
 @import "pack/seed-breakpoints/_index";
 
-$__modifier-alignment-class: "#{&}-";
-
-#{$__modifier-alignment-class} {
+&- {
   @include breakpoint-prop-map($seed-flexy-alignment, (prop)) {
     align-items: prop(prop);
   }
