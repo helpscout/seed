@@ -1,0 +1,56 @@
+// Components :: Link
+
+// Dependencies
+@import "../config";
+
+$__seed-link-classname: ".#{$seed-link-namespace}";
+
+// Apply styles to the "a" selector, by default
+@if $seed-link-include-a-selector == true {
+  $__seed-link-classname: "#{$__seed-link-classname}, a";
+}
+
+#{$__seed-link-classname} {
+  background-color: transparent;
+  box-sizing: border-box;
+  color: $seed-link-color;
+  cursor: pointer;
+  font-size: $seed-link-font-size;
+  text-decoration: none;
+  transition: $seed-link-transition;
+
+  &:hover {
+    color: $seed-link-color-hover;
+    outline-width: 0;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $seed-link-color-active;
+    outline-width: 0;
+  }
+
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+  // Button reset
+  @at-root button.#{$seed-link-namespace} {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    font-family: $seed-link-font-family;
+    padding: 0;
+    text-transform: none;
+
+    &::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    &:-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+  }
+}

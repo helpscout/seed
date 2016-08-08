@@ -40,5 +40,21 @@ Once that is setup, simply `@import` *seed-link* as needed in your `.scss` file:
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-link config options
+// Namespaces
+$seed-link-namespace: "c-link" !default;
+
+// Config
+$seed-link-include-a-selector: true !default;
+
+// Colors
+$seed-link-color: #3197d6 !default;
+$seed-link-color-hover: #71BFF1 !default;
+$seed-link-color-active: #71BFF1 !default;
+
+// Font
+$seed-link-font-family: inherit !default;
+$seed-link-font-size: 1rem !default;
+
+// Transition
+$seed-link-transition: none !default;
 ```
