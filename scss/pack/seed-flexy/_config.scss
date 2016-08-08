@@ -9,5 +9,6 @@ $seed-flexy-block-namespace: #{$seed-flexy-namespace}__block !default;
 $seed-flexy-alignment: (
   top: flex-start,
   middle: center,
-  bottom: flex-end
+  bottom: flex-end,
+  stretch: stretch
 ) !default;
