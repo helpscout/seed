@@ -1,6 +1,6 @@
 {
   "name": "seed-link",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Link component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,7 @@
     "type": "git",
     "url": ""
   },
-  "authors": [
-  ],
+  "authors": [],
   "license": "MIT",
   "keywords": [
     "bem",
