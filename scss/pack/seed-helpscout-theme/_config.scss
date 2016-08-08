@@ -7,6 +7,10 @@
 $seed-helpscout-theme-background-color-namespace: "t-bg" !default;
 $seed-helpscout-theme-text-color-namespace: "t-tx" !default;
 
+// Config
+// Adds !important to classes by default
+$seed-helpscout-theme-enable-important: true !default;
+
 // Theme colors
 // Constructing the color palette from seed-color-scheme-helpscout
 $seed-helpscout-theme-colors: (

@@ -9,12 +9,22 @@
       @if type-of($map) == "map" {
         @each $shade, $value in $map {
           &-#{$shade} {
-            color: $value;
+            @if $seed-helpscout-theme-enable-important == true {
+              color: $value !important;
+            }
+            @else {
+              color: $value;
+            }
           }
         }
       }
       @else {
-        color: $map;
+        @if $seed-helpscout-theme-enable-important == true {
+          color: $map !important;
+        }
+        @else {
+          color: $map;
+        }
       }
     }
   }

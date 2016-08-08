@@ -8,7 +8,7 @@ This theme pack is based off the [Help Scout color scheme](https://github.com/he
 
 Minified | Gzipped
 ---|---
-5.01 kB | 1.12 kB
+6.5 KB | 1.2 KB
 
 ## Install
 ```
