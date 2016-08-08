@@ -31,6 +31,22 @@
   -webkit-user-select: none;
   user-select: none;
 
+  // button selector reset
+  // Source: https://necolas.github.io/normalize.css/4.1.1/normalize.css
+  @at-root button#{&} {
+    font-family: inherit;
+    overflow: visible;
+
+    &::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    &:-moz-focus-ring {
+      outline: 1px dotted Buttontext;
+    }
+  }
+
   @include not-disabled-styles {
     &:hover {
       background-color: _get($seed-button-color, background, hover);

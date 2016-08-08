@@ -1,5 +1,5 @@
 /**
- * seed-button v0.0.1
+ * seed-button v0.0.2
  * Button component pack for Seed
  * Licensed under MIT
  */
@@ -28,6 +28,14 @@
   vertical-align: middle;
   -webkit-user-select: none;
   user-select: none; }
+  button.c-button {
+    font-family: inherit;
+    overflow: visible; }
+    button.c-button::-moz-focus-inner {
+      border-style: none;
+      padding: 0; }
+    button.c-button:-moz-focus-ring {
+      outline: 1px dotted Buttontext; }
   .c-button:not([disabled]):not(.is-disabled):hover {
     background-color: #f9f9f9;
     border-color: #ddd; }
@@ -77,6 +85,7 @@
     background-color: #cc1f19;
     border-color: #cc1f19; }
   .c-button.is-error:not([disabled]):not(.is-disabled):focus {
+    border-color: #cc1f19;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset; }
 
 .c-button.is-success {
@@ -90,6 +99,7 @@
     background-color: #3aaa69;
     border-color: #3aaa69; }
   .c-button.is-success:not([disabled]):not(.is-disabled):focus {
+    border-color: #3aaa69;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset; }
 
 .c-button.is-warning {
@@ -103,6 +113,7 @@
     background-color: #ffb91d;
     border-color: #ffb91d; }
   .c-button.is-warning:not([disabled]):not(.is-disabled):focus {
+    border-color: #ffb91d;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset; }
 
 .c-button--primary {
@@ -124,14 +135,17 @@
 .c-button--link {
   background-color: transparent;
   border-color: transparent;
+  box-shadow: none;
   color: #3197D6; }
   .c-button--link:not([disabled]):not(.is-disabled):hover {
     background-color: transparent;
     border-color: transparent;
+    box-shadow: none;
     text-decoration: underline; }
   .c-button--link:not([disabled]):not(.is-disabled):active {
     background-color: transparent;
-    border-color: transparent; }
+    border-color: transparent;
+    box-shadow: none; }
   .c-button--link:not([disabled]):not(.is-disabled):focus {
     border-color: #237AB3;
     box-shadow: none; }
@@ -141,50 +155,68 @@
 .c-button--link.is-error {
   background-color: transparent;
   border-color: transparent;
+  box-shadow: none;
   color: #cc1f19; }
   .c-button--link.is-error:not([disabled]):not(.is-disabled):hover {
     background-color: transparent;
     border-color: transparent;
+    box-shadow: none;
     color: #cc1f19; }
   .c-button--link.is-error:not([disabled]):not(.is-disabled):active {
     background-color: transparent;
     border-color: transparent;
+    box-shadow: none;
     color: #cc1f19; }
   .c-button--link.is-error:not([disabled]):not(.is-disabled):focus {
     background-color: transparent;
     border-color: #cc1f19;
+    box-shadow: none;
     color: #cc1f19; }
+    .c-button--link.is-error:not([disabled]):not(.is-disabled):focus:active {
+      box-shadow: none; }
 
 .c-button--link.is-success {
   background-color: transparent;
   border-color: transparent;
+  box-shadow: none;
   color: #3aaa69; }
   .c-button--link.is-success:not([disabled]):not(.is-disabled):hover {
     background-color: transparent;
     border-color: transparent;
+    box-shadow: none;
     color: #3aaa69; }
   .c-button--link.is-success:not([disabled]):not(.is-disabled):active {
     background-color: transparent;
     border-color: transparent;
+    box-shadow: none;
     color: #3aaa69; }
   .c-button--link.is-success:not([disabled]):not(.is-disabled):focus {
     background-color: transparent;
     border-color: #3aaa69;
+    box-shadow: none;
     color: #3aaa69; }
+    .c-button--link.is-success:not([disabled]):not(.is-disabled):focus:active {
+      box-shadow: none; }
 
 .c-button--link.is-warning {
   background-color: transparent;
   border-color: transparent;
+  box-shadow: none;
   color: #ffb91d; }
   .c-button--link.is-warning:not([disabled]):not(.is-disabled):hover {
     background-color: transparent;
     border-color: transparent;
+    box-shadow: none;
     color: #ffb91d; }
   .c-button--link.is-warning:not([disabled]):not(.is-disabled):active {
     background-color: transparent;
     border-color: transparent;
+    box-shadow: none;
     color: #ffb91d; }
   .c-button--link.is-warning:not([disabled]):not(.is-disabled):focus {
     background-color: transparent;
     border-color: #ffb91d;
+    box-shadow: none;
     color: #ffb91d; }
+    .c-button--link.is-warning:not([disabled]):not(.is-disabled):focus:active {
+      box-shadow: none; }

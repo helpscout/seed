@@ -24,6 +24,7 @@
       }
 
       &:focus {
+        border-color: _get($map, border, default);
         box-shadow: _get($map, box-shadow, focus);
       }
     }

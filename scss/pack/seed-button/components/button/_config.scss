@@ -106,6 +106,9 @@ $seed-button-color-link: (
     focus: _get($seed-button-color-primary, border, focus)
   ),
   box-shadow: (
+    default: none,
+    hover: none,
+    active: none,
     focus: none
   ),
   text: _get($seed-button-color-primary, background, default)
