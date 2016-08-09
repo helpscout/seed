@@ -51,9 +51,9 @@ $seed-link-color: #3197d6 !default;
 $seed-link-color-hover: #71BFF1 !default;
 $seed-link-color-active: #71BFF1 !default;
 
-// Font
-$seed-link-font-family: inherit !default;
-$seed-link-font-size: 1rem !default;
+// Outline
+$seed-link-focus-outline: 5px auto -webkit-focus-ring-color !default;
+$seed-link-focus-outline-offset: -2px !default;
 
 // Transition
 $seed-link-transition: none !default;

@@ -15,7 +15,6 @@ $__seed-link-classname: ".#{$seed-link-namespace}";
   box-sizing: border-box;
   color: $seed-link-color;
   cursor: pointer;
-  font-size: $seed-link-font-size;
   text-decoration: none;
   transition: $seed-link-transition;
 
@@ -31,8 +30,8 @@ $__seed-link-classname: ".#{$seed-link-namespace}";
   }
 
   &:focus {
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
+    outline: $seed-link-focus-outline;
+    outline-offset: $seed-link-focus-outline-offset;
   }
 
   // Button reset
@@ -40,7 +39,8 @@ $__seed-link-classname: ".#{$seed-link-namespace}";
     -webkit-appearance: none;
     appearance: none;
     border: none;
-    font-family: $seed-link-font-family;
+    font-family: inherit;
+    font-size: inherit;
     padding: 0;
     text-transform: none;
 

@@ -1,6 +1,6 @@
 /**
- * seed-link v0.0.0
+ * seed-link v0.0.1
  * Link component pack for Seed
  * Licensed under MIT
  */
-.c-link,a{background-color:transparent;box-sizing:border-box;color:#3197d6;cursor:pointer;font-size:1rem;text-decoration:none;transition:none}.c-link:hover,a:hover{color:#71BFF1;outline-width:0;text-decoration:underline}.c-link:active,a:active{color:#71BFF1;outline-width:0}.c-link:focus,a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}button.c-link{-webkit-appearance:none;appearance:none;border:none;font-family:inherit;padding:0;text-transform:none}button.c-link::-moz-focus-inner{border-style:none;padding:0}button.c-link:-moz-focusring{outline:1px dotted ButtonText}
+.c-link,a{background-color:transparent;box-sizing:border-box;color:#3197d6;cursor:pointer;text-decoration:none;transition:none}.c-link:hover,a:hover{color:#71BFF1;outline-width:0;text-decoration:underline}.c-link:active,a:active{color:#71BFF1;outline-width:0}.c-link:focus,a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}button.c-link{-webkit-appearance:none;appearance:none;border:none;font-family:inherit;font-size:inherit;padding:0;text-transform:none}button.c-link::-moz-focus-inner{border-style:none;padding:0}button.c-link:-moz-focusring{outline:1px dotted ButtonText}
