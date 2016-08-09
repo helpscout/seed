@@ -6,8 +6,8 @@
 @import "../../functions/thumbnail-ratio";
 
 & {
-  $w: _get($seed-thumbnail-sizes, hd, width);
-  $h: _get($seed-thumbnail-sizes, hd, height);
+  $w: _get($seed-thumbnail-sizes, wide, width);
+  $h: _get($seed-thumbnail-sizes, wide, height);
 
   background-color: $seed-thumbnail-background-color;
   border-radius: $seed-thumbnail-border-radius;
