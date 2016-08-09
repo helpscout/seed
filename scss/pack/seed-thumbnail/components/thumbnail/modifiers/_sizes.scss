@@ -1,0 +1,26 @@
+// Modifiers :: Sizes
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "../../../functions/thumbnail-ratio";
+@import "../../../config";
+
+&- {
+  @include breakpoint-prop-map($seed-thumbnail-sizes, (width, height)) {
+    $ratio: thumbnail-ratio(prop(width), prop(height));
+    padding-bottom: $ratio;
+
+    #{$__seed-thumbnail-image-class} {
+      // Landscape
+      @if $ratio < 60 {
+        height: auto;
+        width: 102%;
+      }
+      // Portrait
+      @else {
+        height: 102%;
+        width: auto;
+      }
+    }
+  }
+}

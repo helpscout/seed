@@ -1,0 +1,21 @@
+// Components :: Thumbnail :: Base
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "../../config";
+@import "../../functions/thumbnail-ratio";
+
+& {
+  $w: _get($seed-thumbnail-sizes, hd, width);
+  $h: _get($seed-thumbnail-sizes, hd, height);
+
+  background-color: $seed-thumbnail-background-color;
+  border-radius: $seed-thumbnail-border-radius;
+  box-sizing: border-box;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: thumbnail-ratio($w, $h);
+  position: relative;
+  width: 100%;
+}

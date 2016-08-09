@@ -1,0 +1,9 @@
+// Components :: Thumbnail :: Index
+
+.#{$seed-thumbnail-namespace} {
+  // Base
+  @import "./base";
+  // Modifers
+  @import "./modifiers/alignment";
+  @import "./modifiers/sizes";
+}

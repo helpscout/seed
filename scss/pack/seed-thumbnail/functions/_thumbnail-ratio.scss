@@ -1,0 +1,7 @@
+// Functions :: Thumbnail Ratio
+
+@function thumbnail-ratio($w: 16, $h: 9) {
+  @if (type-of $w == "number") and (type-of $h == "number") {
+    @return percentage($h / $w);
+  }
+}
