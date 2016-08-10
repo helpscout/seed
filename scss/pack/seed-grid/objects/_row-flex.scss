@@ -2,13 +2,7 @@
 
 .#{$seed-grid-namespace-row-flex} {
   box-sizing: border-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: -($seed-grid-gutter-offset);
   margin-right: -($seed-grid-gutter-offset);

@@ -7,6 +7,8 @@
     $_class: $seed-grid-namespace-col;
     $_col-class: $_class;
     $_col-offset-class: $_class;
+    $_col-pull-class: $_class;
+    $_col-push-class: $_class;
 
     @include breakpoint-up($breakpoint, $breakpoints) {
       @for $i from 1 through $columns {
@@ -26,14 +28,24 @@
       @for $i from 0 through ($columns - 1) {
         @if $breakpoint == xs {
           $_col-offset-class: #{$_class}-offset-#{$i};
+          $_col-pull-class: #{$_class}-pull-#{$i};
+          $_col-push-class: #{$_class}-push-#{$i};
         }
         @else {
           $_col-offset-class: #{$_class}-offset-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
+          $_col-pull-class: #{$_class}-pull-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
+          $_col-push-class: #{$_class}-push-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
         }
 
         @if $breakpoint-counter != 1 or $i != 0 {
           .#{$_col-offset-class} {
             @include col-calculate-offset(offset, $i, $columns)
+          }
+          .#{$_col-pull-class} {
+            @include col-calculate-offset(pull, $i, $columns)
+          }
+          .#{$_col-push-class} {
+            @include col-calculate-offset(push, $i, $columns)
           }
         }
       }

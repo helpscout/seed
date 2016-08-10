@@ -3,6 +3,12 @@ Grid system pack for [Seed](https://github.com/helpscout/seed)!
 
 ![Grid pack](https://raw.githubusercontent.com/helpscout/seed-grid/master/grid-pack.png)
 
+**File size**
+
+Minified | Gzipped
+---|---
+8.3 KB | 1.48 KB
+
 You can use this with *any* project you'd like! (Seed not required).
 
 Seed's grid system was inspired by [Bootstrap V4](https://github.com/twbs/bootstrap/tree/v4-dev).
