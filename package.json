@@ -10,6 +10,7 @@
     "test": "node ./scripts/test.js && sh ./scripts/test.sh && npm run build",
     "prepublish": "npm run test"
   },
+  "homepage": "https://github.com/helpscout/seed-dash",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/helpscout/seed-dash.git"
