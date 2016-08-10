@@ -1,6 +1,6 @@
 # seed-hr [![npm version](https://badge.fury.io/js/seed-hr.svg)](https://badge.fury.io/js/seed-hr)
 
-hr component pack for [Seed](https://github.com/helpscout/seed)!
+HR component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,22 @@ Once that is setup, simply `@import` *seed-hr* as needed in your `.scss` file:
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-hr config options
+// Namespaces
+$seed-hr-namespace: "c-hr" !default;
+
+// Config
+$seed-hr-include-hr-selector: true !default;
+
+// The above configuration determines this private variable
+$__seed-hr-class: ".#{$seed-hr-image-namespace}";
+// Include the image selector (Default)
+@if $seed-hr-include-hr-selector == true {
+  $__seed-hr-class: ".#{$seed-hr-namespace}, hr";
+}
+
+// Styles
+$seed-hr-border-color: #eee !default;
+$seed-hr-border-size: 1px !default;
+$seed-hr-border-style: solid !default;
+$seed-hr-margin: 20px 0 !default;
 ```
