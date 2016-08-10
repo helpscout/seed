@@ -1,20 +1,13 @@
 // Objects :: Container :: Base
 
 // Dependencies
-@import "pack/seed-breakpoints/_index";
 @import "../../config";
 
 & {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: container(xl);
   padding-left: $seed-grid-gutter-offset;
   padding-right: $seed-grid-gutter-offset;
-
-  @each $size, $width in $seed-container-widths {
-    @include breakpoint($size) {
-      max-width: $width;
-    }
-  }
 }

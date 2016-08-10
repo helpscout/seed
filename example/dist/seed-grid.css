@@ -1,19 +1,21 @@
 /**
- * seed-grid v0.3.2 (https://github.com/helpscout/seed-grid)
+ * seed-grid v0.3.3 (https://github.com/helpscout/seed-grid)
  * Grid system pack for Seed
  * Licensed under MIT
  */
-.o-container { box-sizing: border-box; margin-left: auto; margin-right: auto; max-width: 100%; padding-left: 15px; padding-right: 15px; }
-
-@media (min-width: 544px) { .o-container { max-width: 576px; } }
-
-@media (min-width: 768px) { .o-container { max-width: 720px; } }
-
-@media (min-width: 992px) { .o-container { max-width: 940px; } }
-
-@media (min-width: 1200px) { .o-container { max-width: 1140px; } }
+.o-container { box-sizing: border-box; margin-left: auto; margin-right: auto; max-width: 1140px; padding-left: 15px; padding-right: 15px; }
 
 .o-container--fluid { max-width: 100%; }
+
+.o-container--responsive { max-width: 100%; }
+
+@media (min-width: 544px) { .o-container--responsive { max-width: 576px; } }
+
+@media (min-width: 768px) { .o-container--responsive { max-width: 720px; } }
+
+@media (min-width: 992px) { .o-container--responsive { max-width: 940px; } }
+
+@media (min-width: 1200px) { .o-container--responsive { max-width: 1140px; } }
 
 [class*="o-col"] { box-sizing: border-box; min-height: 1px; padding-left: 15px; padding-right: 15px; position: relative; width: 100%; }
 
