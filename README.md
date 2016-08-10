@@ -1,4 +1,4 @@
-# seed-hr [![npm version](https://badge.fury.io/js/seed-hr.svg)](https://badge.fury.io/js/seed-hr)
+# seed-hr [![Build Status](https://travis-ci.org/helpscout/seed-hr.svg?branch=master)](https://travis-ci.org/helpscout/seed-hr) [![npm version](https://badge.fury.io/js/seed-hr.svg)](https://badge.fury.io/js/seed-hr)
 
 HR component pack for [Seed](https://github.com/helpscout/seed)!
 
