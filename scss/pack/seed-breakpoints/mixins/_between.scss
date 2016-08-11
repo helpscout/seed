@@ -4,7 +4,7 @@
   @if $min == false or $max == false {
     @error "breakpoint-between: The first argument (min) and second argument (max) must be defined.";
   }
-  
+
   $map-min: false;
   $map-max: false;
 
@@ -13,6 +13,10 @@
   }
   @if map-has-key($breakpoints, $max) {
     $map-max: map-get($breakpoints, $max);
+
+    @if $map-max {
+      $map-max: $map-max - 1px;
+    }
   }
   @if not $map-min {
     @if type-of($min) == "number" {
