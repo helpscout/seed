@@ -1,1 +1,30 @@
-// badge :: Config
+// Badge :: Config
+
+// Namespace
+$seed-badge-namespace: "c-badge" !default;
+
+// Border
+$seed-badge-border-radius: 2px !default;
+
+// Colors
+$seed-badge-background-color: #A5B2BD !default;
+$seed-badge-text-color: #fff !default;
+
+// Font
+$seed-badge-font-size: 11px !default;
+$seed-badge-font-weight: 600 !default;
+$seed-badge-text-transform: uppercase !default;
+
+// Padding
+$seed-badge-padding: 4px 5px !default;
+
+// Config for state prefix
+// options: true || false
+// if true, then badge states will compile with the defined state prefix
+// Default is ".is-"
+// Example:
+// .is-success {
+//   ...
+// }
+$seed-badge-enable-state-prefix: true !default;
+$seed-badge-state-prefix: "is" !default;

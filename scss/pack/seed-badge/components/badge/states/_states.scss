@@ -1,0 +1,19 @@
+// States :: States
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "pack/seed-states/_index";
+@import "../../../config";
+
+
+@each $key, $values in $seed-states-colors {
+  $__state-class: ".#{$key}";
+
+  @if $seed-badge-enable-state-prefix == true {
+    $__state-class: ".#{$seed-badge-state-prefix}-#{$key}";
+  }
+
+  &#{$__state-class} {
+    background-color: _get($values, border-color);
+  }
+}

@@ -1,6 +1,6 @@
 # seed-badge [![npm version](https://badge.fury.io/js/seed-badge.svg)](https://badge.fury.io/js/seed-badge)
 
-badge component pack for [Seed](https://github.com/helpscout/seed)!
+Badge component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,32 @@ Once that is setup, simply `@import` *seed-badge* as needed in your `.scss` file
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-badge config options
+// Namespace
+$seed-badge-namespace: "c-badge" !default;
+
+// Border
+$seed-badge-border-radius: 2px !default;
+
+// Colors
+$seed-badge-background-color: #A5B2BD !default;
+$seed-badge-text-color: #fff !default;
+
+// Font
+$seed-badge-font-size: 11px !default;
+$seed-badge-font-weight: 600 !default;
+$seed-badge-text-transform: uppercase !default;
+
+// Padding
+$seed-badge-padding: 4px 5px !default;
+
+// Config for state prefix
+// options: true || false
+// if true, then badge states will compile with the defined state prefix
+// Default is ".is-"
+// Example:
+// .is-success {
+//   ...
+// }
+$seed-badge-enable-state-prefix: true !default;
+$seed-badge-state-prefix: "is" !default;
 ```

@@ -1,0 +1,30 @@
+/**
+ * seed-badge v0.0.0
+ * Badge component pack for Seed
+ * Licensed under MIT
+ */
+.c-badge {
+  box-sizing: border-box;
+  background-color: #A5B2BD;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  padding: 4px 5px;
+  text-transform: uppercase;
+  vertical-align: middle; }
+
+.c-badge.is-error {
+  background-color: #e52f28; }
+
+.c-badge.is-info {
+  background-color: #3197d6; }
+
+.c-badge.is-success {
+  background-color: #4bc27d; }
+
+.c-badge.is-warning {
+  background-color: #ffc646; }
