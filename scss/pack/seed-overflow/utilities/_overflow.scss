@@ -1,0 +1,11 @@
+// Utilities :: Overflow
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "../config";
+
+.#{$seed-overflow-namespace} {
+  @include breakpoint-prop-map($seed-overflow, (prop)) {
+    overflow: prop(prop) !important;
+  }
+}

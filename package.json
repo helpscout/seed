@@ -1,23 +1,27 @@
 {
   "name": "seed-overflow",
-  "version": "0.0.1",
-  "description": "overflow utility pack for Seed",
+  "version": "0.0.0",
+  "description": "Overflow utility pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
+    "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-overflow/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-overflow.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-overflow/issues"
+  },
   "keywords": [
     "bem",
     "css",
@@ -26,6 +30,7 @@
     "itcss",
     "modular",
     "oocss",
+    "overflow",
     "performance",
     "seed",
     "seed-pack",
@@ -37,5 +42,9 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.5",
+    "seed-breakpoints": "^0.3.2"
   }
 }

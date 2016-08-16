@@ -1,1 +1,20 @@
-// overflow :: Config
+// Overflow :: Config
+
+// Namespaces
+$seed-overflow-namespace: "u-overflow" !default;
+
+// Overflow
+$seed-overflow: (
+  visible: visible,
+  hidden: hidden,
+  scroll: scroll,
+  auto: auto,
+  x-visible: visible,
+  x-hidden: hidden,
+  x-scroll: scroll,
+  x-auto: auto,
+  y-visible: visible,
+  y-hidden: hidden,
+  y-scroll: scroll,
+  y-auto: auto
+) !default;
