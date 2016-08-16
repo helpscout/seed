@@ -1,6 +1,6 @@
 {
   "name": "seed-overflow",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Overflow utility pack for Seed",
   "main": "index.js",
   "scripts": {
