@@ -1,23 +1,27 @@
 {
-  "name": "seed-parent",
-  "version": "0.0.1",
-  "description": "Parent selector functions pack for Seed",
+  "name": "seed-reparent",
+  "version": "0.0.0",
+  "description": "Reparenting mixin pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
+    "test": "sh ./scripts/test.sh && npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-dash",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-dash.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-dash/issues"
+  },
   "keywords": [
     "bem",
     "css",
@@ -26,7 +30,9 @@
     "itcss",
     "modular",
     "oocss",
+    "parent",
     "performance",
+    "reparent",
     "seed",
     "seed-pack",
     "scss"
@@ -36,6 +42,7 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.8.0",
+    "sass-true": "^2.1.3"
   }
 }

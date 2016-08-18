@@ -1,0 +1,66 @@
+// Mixins :: Reparent
+
+// Dependencies
+@import "../functions/list-remove";
+@import "../functions/str-explode";
+
+@mixin reparent($class: false) {
+  // Reparenting requires class to be passed in.
+  // Use default Sass & if $class is not defined
+  @if not $class or type-of($class) != "string" {
+    & {
+      @content;
+    }
+  }
+  @else {
+    // Convert the & selectors list into a usable string
+    $selectors: inspect(&);
+    // Split the string into a list of individual selectors
+    $selector-list: _str-explode($selectors, " ");
+    $len: length($selector-list);
+
+    // Get the parent selector
+    $parent: nth($selector-list, $len - 1);
+    // Get the current selector
+    $selector: nth($selector-list, $len);
+
+    // Reparent if the total list of $selectors is more than 3
+    // This assumes:
+    // grandparent(s) > parent > current
+    @if $len >= 3 {
+      // Retrieve the grandparents as a single selector
+      $grandparents: _list-remove($selector-list, $parent);
+      $grandparents: _list-remove($grandparents, $selector);
+      // slice/inspect is required because the list looks like this
+      // when compiled:
+      //
+      // (.grandparent
+      //
+      // This isn't valid, so Sass doesn't output anything.
+      // Slicing removes the ( in front of the selector
+      $grandparents: str-slice(inspect($grandparents), 2);
+
+      @if $grandparents {
+        // Output:
+        // grandparent(s) | reparent-selector | current
+        @at-root #{$grandparents} #{$class} #{$selector} {
+          @content;
+        }
+      }
+      @else {
+        // Output:
+        // reparent-selector | current
+        @at-root #{$class} #{$selector} {
+          @content;
+        }
+      }
+    }
+    @else {
+      // Output:
+      // reparent-selector | current
+      @at-root #{$class} #{$selector} {
+        @content;
+      }
+    }
+  }
+}

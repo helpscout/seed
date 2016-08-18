@@ -1,10 +1,12 @@
-# seed-parent [![npm version](https://badge.fury.io/js/seed-parent.svg)](https://badge.fury.io/js/seed-parent)
+# seed-reparent [![npm version](https://badge.fury.io/js/seed-reparent.svg)](https://badge.fury.io/js/seed-reparent)
 
-Parent selector functions pack for Seed
+Reparenting mixin pack for Seed
+
+This mixin allows you to target/modify the **direct** parent of the current selector.
 
 ## Install
 ```
-npm install seed-parent --save-dev
+npm install seed-reparent --save-dev
 ```
 
 
@@ -17,7 +19,7 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var pack = require('seed-parent');
+var pack = require('seed-reparent');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -28,17 +30,9 @@ gulp.task('sass', function () {
 });
 ```
 
-Once that is setup, simply `@import` *seed-parent* as needed in your `.scss` file:
+Once that is setup, simply `@import` *seed-reparent* as needed in your `.scss` file:
 
 ```scss
 // Packs
-@import "pack/seed-parent/_index";
-```
-
-## Options
-
-The following variables can be found in `_config.scss`
-
-```scss
-seed-parent config options
+@import "pack/seed-reparent/_index";
 ```
