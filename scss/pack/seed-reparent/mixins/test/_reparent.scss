@@ -1,0 +1,141 @@
+// Test :: reparent
+
+@import "true";
+@import "../reparent";
+
+
+@include test-module("reparent") {
+
+  @include test("should add the reparented selector when flat") {
+    @include assert("") {
+      @include output {
+        @at-root .class {
+          @include reparent(".blue") {
+            background: blue;
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .blue .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+
+  @include test("should reparent a single nested selector") {
+    @include assert("") {
+      @include output {
+        @at-root .super {
+          .class {
+            @include reparent(".blue") {
+              background: blue;
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .blue .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+
+  @include test("should reparent a multi nested selector") {
+    @include assert("") {
+      @include output {
+        @at-root .dinosaur {
+          .omega {
+            .super {
+              .class {
+                @include reparent(".blue") {
+                  background: blue;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .dinosaur .omega .blue .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  @include test("should reparent a multi nested selector with complex nesting") {
+    @include assert("") {
+      @include output {
+        @at-root #dinosaur {
+          .omega.is-active > div > p:first-child {
+            .super {
+              .class {
+                @include reparent(".blue") {
+                  background: blue;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root #dinosaur .omega.is-active > div > p:first-child .blue .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  @include test("should reparent with a grandparent using :pseudo()") {
+    @include assert("") {
+      @include output {
+        @at-root .dinosaur:not(.dead) {
+          .super {
+            .class {
+              @include reparent(".blue") {
+                background: blue;
+              }
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .dinosaur:not(.dead) .blue .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+
+  @include test("should allow for the reparent to use :pseudo()") {
+    @include assert("") {
+      @include output {
+        @at-root .dino {
+          .super {
+            .class {
+              @include reparent(".super:not(.active)") {
+                background: blue;
+              }
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .dino .super:not(.active) .class {
+          background: blue;
+        }
+      }
+    }
+  }
+}

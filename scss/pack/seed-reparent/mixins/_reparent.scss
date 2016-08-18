@@ -1,6 +1,7 @@
 // Mixins :: Reparent
 
 // Dependencies
+@import "../functions/get-selector";
 @import "../functions/list-remove";
 @import "../functions/str-explode";
 
@@ -15,12 +16,15 @@
   @else {
     // Convert the & selectors list into a usable string
     $selectors: inspect(&);
-    // Split the string into a list of individual selectors
-    $selector-list: _str-explode($selectors, " ");
+    $selector-list: ($selectors);
+
+    @if str-index($selectors, " ") {
+      // Split the string into a list of individual selectors
+      $selector-list: _str-explode($selectors, " ");
+    }
+
     $len: length($selector-list);
 
-    // Get the parent selector
-    $parent: nth($selector-list, $len - 1);
     // Get the current selector
     $selector: nth($selector-list, $len);
 
@@ -28,17 +32,13 @@
     // This assumes:
     // grandparent(s) > parent > current
     @if $len >= 3 {
+      // Get the parent selector
+      $parent: nth($selector-list, $len - 1);
       // Retrieve the grandparents as a single selector
       $grandparents: _list-remove($selector-list, $parent);
       $grandparents: _list-remove($grandparents, $selector);
-      // slice/inspect is required because the list looks like this
-      // when compiled:
-      //
-      // (.grandparent
-      //
-      // This isn't valid, so Sass doesn't output anything.
-      // Slicing removes the ( in front of the selector
-      $grandparents: str-slice(inspect($grandparents), 2);
+      // Transforms the list/string into a valid selector string
+      $grandparents: _get-selector($grandparents);
 
       @if $grandparents {
         // Output:
@@ -48,6 +48,8 @@
         }
       }
       @else {
+        // Transforms the list/string into a valid selector string
+        $selector: _get-selector($selector);
         // Output:
         // reparent-selector | current
         @at-root #{$class} #{$selector} {
@@ -55,9 +57,10 @@
         }
       }
     }
+    // Has less than 3 total selector
     @else {
-      // Output:
-      // reparent-selector | current
+      // Transforms the list/string into a valid selector string
+      $selector: _get-selector($selector);
       @at-root #{$class} #{$selector} {
         @content;
       }
