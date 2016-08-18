@@ -36,3 +36,10 @@ Once that is setup, simply `@import` *seed-reparent* as needed in your `.scss` f
 // Packs
 @import "pack/seed-reparent/_index";
 ```
+
+## Thanks
+
+* Big thanks to [Hugo Giraudel](http://hugogiraudel.com/) for his amazing Sass functions!
+* Shout outs to [Alisdair](http://alisdair.mcdiarmid.org/) for collaboration and for coming up with the name "reparent".
+
+:heart:
