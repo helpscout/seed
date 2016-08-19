@@ -18,9 +18,12 @@
 
   // Normalize direct child elements
   > * {
-    // Quietly removes the bottom margin of the last child element
+    // Quietly removes the top/bottom margin of the first/last child element
     // This is to ensure the alert has desirable padding/spacing for the
     // majority of use cases.
+    &:first-child {
+      margin-top: 0;
+    }
     &:last-child {
       margin-bottom: 0;
     }
