@@ -15,4 +15,20 @@
   color: _get($__default-scheme, color);
   margin-bottom: $seed-alert-margin-bottom;
   padding: $seed-alert-padding;
+
+  // Normalize direct child elements
+  > * {
+    // Quietly removes the bottom margin of the last child element
+    // This is to ensure the alert has desirable padding/spacing for the
+    // majority of use cases.
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Normalize the color of headings
+  // By default, this heading selectors match the color of text.
+  h1, h2, h3, h4, h5, h6 {
+    color: _get($__default-scheme, color);
+  }
 }

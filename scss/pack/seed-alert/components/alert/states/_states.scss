@@ -5,7 +5,6 @@
 @import "pack/seed-dash/_index";
 @import "pack/seed-states/config";
 
-
 @each $key, $values in $seed-states-colors {
   $__alert-state-class: ".#{$key}";
 
@@ -17,5 +16,11 @@
     background-color: _get($values, background-color);
     box-shadow: inset $seed-alert-accent-width 0 0 0 _get($values, border-color);
     color: _get($values, color);
+
+    // Normalize the color of headings
+    // By default, this heading selectors match the color of text.
+    h1, h2, h3, h4, h5, h6 {
+      color: _get($values, color);
+    }
   }
 }
