@@ -1,0 +1,12 @@
+// Mixins :: Reparent
+
+// Dependencies
+@import "./_tree";
+
+@mixin reparent($class: false) {
+  $offset: 1;
+
+  @include __tree($class, $offset) {
+    @content;
+  }
+}

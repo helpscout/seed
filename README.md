@@ -1,12 +1,12 @@
-# seed-reparent [![npm version](https://badge.fury.io/js/seed-reparent.svg)](https://badge.fury.io/js/seed-reparent)
+# seed-family [![npm version](https://badge.fury.io/js/seed-family.svg)](https://badge.fury.io/js/seed-family)
 
-Reparenting mixin pack for Seed
+Family mixin pack for Seed
 
 This mixin allows you to target/modify the **direct** parent of the current selector.
 
 ## Install
 ```
-npm install seed-reparent --save-dev
+npm install seed-family --save-dev
 ```
 
 
@@ -19,7 +19,7 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var pack = require('seed-reparent');
+var pack = require('seed-family');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -30,16 +30,16 @@ gulp.task('sass', function () {
 });
 ```
 
-Once that is setup, simply `@import` *seed-reparent* as needed in your `.scss` file:
+Once that is setup, simply `@import` *seed-family* as needed in your `.scss` file:
 
 ```scss
 // Packs
-@import "pack/seed-reparent/_index";
+@import "pack/seed-family/_index";
 ```
 
 ## Thanks
 
 * Big thanks to [Hugo Giraudel](http://hugogiraudel.com/) for his amazing Sass functions!
-* Shout outs to [Alisdair](http://alisdair.mcdiarmid.org/) for collaboration and for coming up with the name "reparent".
+* Shout outs to [Alisdair](http://alisdair.mcdiarmid.org/) for collaboration on the mixins as well as the naming of this pack!
 
 :heart:

@@ -1,0 +1,10 @@
+// Mixins :: Parent
+
+// Dependencies
+@import "./_tree";
+
+@mixin parent($class: false) {
+  @include __tree($class) {
+    @content;
+  }
+}

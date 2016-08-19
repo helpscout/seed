@@ -1,0 +1,108 @@
+// Test :: parent
+
+@import "true";
+@import "../parent";
+
+
+@include test-module("parent") {
+
+  @include test("should add the parent selector when flat") {
+    @include assert("") {
+      @include output {
+        @at-root .class {
+          @include parent(".blue") {
+            background: blue;
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .blue .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  @include test("should add a parent within a nested selector") {
+    @include assert("") {
+      @include output {
+        @at-root .super {
+          .class {
+            @include parent(".blue") {
+              background: blue;
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .super .blue .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  @include test("should add a parent within a complex nested selector") {
+    @include assert("") {
+      @include output {
+        @at-root .super {
+          .a .b .c.d > .e {
+            .class {
+              @include parent(".blue") {
+                background: blue;
+              }
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .super .a .b .c.d > .e .blue .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+
+  @include test("should add the parent within a selector tree containing :pseudo()") {
+    @include assert("") {
+      @include output {
+        @at-root .sorry:not(.sorry) {
+          .class {
+            @include parent(".blue") {
+              background: blue;
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .sorry:not(.sorry) .blue .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  @include test("should be able to add a parent with :pseudo()") {
+    @include assert("") {
+      @include output {
+        @at-root .sorry:not(.sorry) {
+          @include parent(".blue:not(.blue)") {
+            background: blue;
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .blue:not(.blue) .sorry:not(.sorry) {
+          background: blue;
+        }
+      }
+    }
+  }
+
+}

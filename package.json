@@ -1,7 +1,7 @@
 {
-  "name": "seed-reparent",
-  "version": "0.0.1",
-  "description": "Reparenting mixin pack for Seed",
+  "name": "seed-family",
+  "version": "0.0.0",
+  "description": "Family related mixin pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
@@ -10,29 +10,29 @@
     "test": "sh ./scripts/test.sh && npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "https://github.com/helpscout/seed-dash",
+  "homepage": "https://github.com/helpscout/seed-family",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-dash.git"
+    "url": "git+https://github.com/helpscout/seed-family.git"
   },
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-dash/issues"
+    "url": "https://github.com/helpscout/seed-family/issues"
   },
   "keywords": [
     "bem",
     "css",
     "design",
+    "family",
     "functional",
     "itcss",
     "modular",
     "oocss",
     "parent",
     "performance",
-    "reparent",
     "seed",
     "seed-pack",
     "scss"
