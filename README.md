@@ -1,4 +1,4 @@
-# seed-family [![npm version](https://badge.fury.io/js/seed-family.svg)](https://badge.fury.io/js/seed-family)
+# seed-family [![Build Status](https://travis-ci.org/helpscout/seed-family.svg?branch=master)](https://travis-ci.org/helpscout/seed-family) [![npm version](https://badge.fury.io/js/seed-family.svg)](https://badge.fury.io/js/seed-family)
 
 Family mixin pack for Seed
 
