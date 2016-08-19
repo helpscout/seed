@@ -39,7 +39,6 @@ Once that is setup, simply `@import` *seed-family* as needed in your `.scss` fil
 
 ## Thanks
 
-* Big thanks to [Hugo Giraudel](http://hugogiraudel.com/) for his amazing Sass functions!
 * Shout outs to [Alisdair](http://alisdair.mcdiarmid.org/) for collaboration on the mixins as well as the naming of this pack!
 
 :heart:
