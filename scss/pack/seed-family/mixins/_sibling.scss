@@ -1,0 +1,23 @@
+// Mixins :: Sibling
+
+// Dependencies
+@import "./_tree";
+
+@mixin sibling($class: false) {
+  @if $class and type-of($class) == "string" {
+    $class: "#{$class} + ";
+  }
+  @else {
+    @each $selector in & {
+      $len: length($selector);
+      // Current selector
+      $current: nth($selector, $len);
+      // Assign the current selector as the $class
+      $class: "#{$current} + ";
+    }
+  }
+  // Build the tree!
+  @include __tree($class) {
+    @content;
+  }
+}
