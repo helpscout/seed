@@ -2,6 +2,8 @@
 
 Selector-based function pack for Seed
 
+**This pack is an experimentation. Keep that in mind before use!**
+
 ## Install
 ```
 npm install seed-this --save-dev
@@ -38,7 +40,3 @@ Once that is setup, simply `@import` *seed-this* as needed in your `.scss` file:
 ## Options
 
 The following variables can be found in `_config.scss`
-
-```scss
-seed-this config options
-```

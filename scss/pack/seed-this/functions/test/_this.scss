@@ -1,0 +1,62 @@
+// Test :: This
+
+@import "true";
+@import "../this";
+
+@include test-module("this()") {
+
+  @include test("should reference the current selector") {
+    @include assert("") {
+      @include output {
+        @at-root .item {
+          $this: this();
+          background: blue;
+
+          #{$this}-x {
+            background: red;
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .item {
+          background: blue;
+
+          .item-x {
+            background: red;
+          }
+        }
+      }
+    }
+  }
+
+
+  @include test("should reference the current selector in a nested sequence") {
+    @include assert("") {
+      @include output {
+        @at-root .item {
+          $this: this();
+          background: blue;
+
+          .super {
+            #{$this} {
+              background: red;
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .item {
+          background: blue;
+
+          .super {
+            .item {
+              background: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// Function :: parent
+
+@function parent($selector: false) {
+  // $selector is required for parent to work
+  // If it is invalid, silently fail by returning the & list
+  @if not $selector or type-of($selector) != "string" {
+    @return #{&};
+  }
+
+  // Get all the selectors
+  $selectors: nth(&, 1);
+  $parent: "";
+  $len: index($selectors, $selector) - 1;
+
+  // If the length is 0, that means that the selector is already at the
+  // root level. In which case, we'll silently fail by returning
+  // the standard & list.
+  @if $len <= 0 {
+    @return #{&};
+  }
+
+  // Qualify the parent selectors
+  @for $i from 1 through $len {
+    $parent: append($parent, nth($selectors, $i));
+  }
+
+  // Trim the parent
+  // Get the last selector in the parent list
+  $parent: nth($parent, length($parent));
+  @return $parent;
+}

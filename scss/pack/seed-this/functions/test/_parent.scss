@@ -1,0 +1,123 @@
+// Test :: Parent
+
+@import "true";
+@import "../parent";
+@import "../this";
+
+@include test-module("parent()") {
+
+  @include test("should return self if the selector is at the root level") {
+    @include assert("") {
+      @include output {
+        @at-root .super {
+          $this: this();
+          $parent: parent($this);
+
+          #{$parent} {
+            background: red;
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .super {
+          .super {
+            background: red;
+          }
+        }
+      }
+    }
+  }
+
+  @include test("should reference the immediate parent selector") {
+    @include assert("") {
+      @include output {
+        @at-root .super {
+          background: blue;
+
+          .item {
+            $this: this();
+            $parent: parent($this);
+
+            #{$parent} {
+              background: red;
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .super {
+          background: blue;
+
+          .item {
+            .super {
+              background: red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  @include test("should reference the current selector in a nested sequence") {
+    @include assert("") {
+      @include output {
+        @at-root .item {
+          $this: this();
+          background: blue;
+
+          .super {
+            #{$this} {
+              background: red;
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .item {
+          background: blue;
+
+          .super {
+            .item {
+              background: red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  @include test("should be able to be used recursively to get the grand parent") {
+    @include assert("") {
+      @include output {
+        @at-root .super-grand .grand .parent {
+          background: blue;
+
+          .child {
+            $this: this();
+            $grand: parent(parent($this));
+            #{$grand} {
+              background: red;
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .super-grand .grand .parent {
+          background: blue;
+
+          .child {
+            .grand {
+              background: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
