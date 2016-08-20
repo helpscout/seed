@@ -1,4 +1,4 @@
-# seed-this [![npm version](https://badge.fury.io/js/seed-this.svg)](https://badge.fury.io/js/seed-this)
+# seed-this [![Build Status](https://travis-ci.org/helpscout/seed-this.svg?branch=master)](https://travis-ci.org/helpscout/seed-this) [![npm version](https://badge.fury.io/js/seed-this.svg)](https://badge.fury.io/js/seed-this)
 
 Selector-based function pack for Seed
 
@@ -36,7 +36,3 @@ Once that is setup, simply `@import` *seed-this* as needed in your `.scss` file:
 // Packs
 @import "pack/seed-this/_index";
 ```
-
-## Options
-
-The following variables can be found in `_config.scss`
