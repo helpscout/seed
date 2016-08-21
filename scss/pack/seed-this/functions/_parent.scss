@@ -1,5 +1,8 @@
 // Function :: parent
 
+// Dependencies
+@import "./get-block";
+
 @function parent($selector: false) {
   // $selector is required for parent to work
   // If it is invalid, silently fail by returning the & list
@@ -9,23 +12,39 @@
 
   // Get all the selectors
   $selectors: nth(&, 1);
+  $this: nth($selectors, length($selectors));
   $parent: "";
   $len: index($selectors, $selector) - 1;
+
+  // Check to see if the current selector is a BEM block__element
+  @if str-index($this, "__") {
+    // BEM parse the current selector
+    $parent: get-block($this);
+    // Return the parent selector from the current selector
+    @return $parent;
+  }
 
   // If the length is 0, that means that the selector is already at the
   // root level. In which case, we'll silently fail by returning
   // the standard & list.
   @if $len <= 0 {
-    @return #{&};
+    $parent: #{&};
+  }
+  @else {
+    // Qualify the parent selectors
+    @for $i from 1 through $len {
+      $parent: append($parent, nth($selectors, $i));
+    }
+
+    // Trim the parent
+    // Get the last selector in the parent list
+    $parent: nth($parent, length($parent));
   }
 
-  // Qualify the parent selectors
-  @for $i from 1 through $len {
-    $parent: append($parent, nth($selectors, $i));
-  }
+  // BEM parsing
+  // Transforms: .block__element -> .block
+  // Transforms: .block__element--mod -> .block
+  $parent: get-block($parent);
 
-  // Trim the parent
-  // Get the last selector in the parent list
-  $parent: nth($parent, length($parent));
   @return $parent;
 }

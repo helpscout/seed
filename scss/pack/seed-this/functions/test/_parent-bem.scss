@@ -1,0 +1,93 @@
+// Test :: Parent (BEM)
+
+@import "true";
+@import "../parent";
+@import "../this";
+
+@include test-module("parent() with BEM") {
+
+  @include test("should return the block of a BEM block__element parent") {
+    @include assert("") {
+      @include output {
+        @at-root {
+          .super__item {
+            $this: this();
+            $parent: parent($this);
+
+            #{$parent} {
+              background: red;
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root {
+          .super__item {
+            .super {
+              background: red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include test("should return the block of a BEM block__element--modifier parent") {
+    @include assert("") {
+      @include output {
+        @at-root {
+          .super__item--awesome {
+            $this: this();
+            $parent: parent($this);
+
+            #{$parent} {
+              background: red;
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root {
+          .super__item--awesome {
+            .super {
+              background: red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include test("should return the parent block of a nested BEM block__element parent") {
+    @include assert("") {
+      @include output {
+        @at-root {
+          .nested .nest {
+            .super__item {
+              $this: this();
+              $parent: parent($this);
+
+              #{$parent} {
+                background: red;
+              }
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root {
+          .nested .nest {
+            .super__item {
+              .super {
+                background: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
