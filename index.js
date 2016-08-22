@@ -17,7 +17,7 @@ var getPathFile = function(file) {
     return false;
   }
 
-  if (!file.includes('_seed-packs.scss')) {
+  if (file.indexOf('_seed-packs.scss') < 0) {
     console.log('A non-glob path must include _seed-pack.scss');
     process.exit(1);
     return false;
@@ -50,7 +50,7 @@ var getPackFile = function(filePath) {
     ]
   };
 
-  if (filePath.includes('*.scss')) {
+  if (filePath.indexOf('*.scss') >= 0) {
     var scssFiles = glob.sync(filePath, options);
 
     if (!scssFiles.length) {
@@ -59,7 +59,7 @@ var getPackFile = function(filePath) {
 
     for(var i = 0, len = scssFiles.length; i < len; i++) {
       var f = scssFiles[i];
-      if (f.includes('_seed-packs.scss')) {
+      if (f.indexOf('_seed-packs.scss') >= 0) {
         file = f;
         break;
       }
