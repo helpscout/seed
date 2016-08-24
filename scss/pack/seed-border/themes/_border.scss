@@ -21,10 +21,22 @@
 
     // Creating the modifier
     &#{$modifier} {
-      #{$style-prop}: $seed-border-style;
-      border-width: $width-value;
+      @if $seed-border-use-important {
+        #{$style-prop}: $seed-border-style !important;
+        border-width: $width-value !important;
+      }
+      @else {
+        #{$style-prop}: $seed-border-style;
+        border-width: $width-value;
+      }
+
       @if ($key != "none") and (type-of($seed-border-color) == "color") {
-        border-color: $seed-border-color;
+        @if $seed-border-use-important {
+          border-color: $seed-border-color !important;
+        }
+        @else {
+          border-color: $seed-border-color;
+        }
       }
     }
   }

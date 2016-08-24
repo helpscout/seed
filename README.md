@@ -57,6 +57,9 @@ $seed-border-radius: 3px !default;
 $seed-border-size: 1px !default;
 $seed-border-style: solid !default;
 
+// Important (Typical convention for utility purposes)
+$seed-border-use-important: true !default;
+
 // Directions
 $seed-border-directions: (
   none: false,
