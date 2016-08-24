@@ -9,6 +9,7 @@ $seed-alert-error-namespace: "error" !default;
 $seed-alert-info-namespace: "info" !default;
 $seed-alert-success-namespace: "success" !default;
 $seed-alert-warning-namespace: "warning" !default;
+$seed-alert-text-namespace: "#{$seed-alert-namespace}__text" !default;
 
 // Configs
 $seed-alert-accent-width: 4px !default;

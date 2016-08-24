@@ -29,9 +29,8 @@
     }
   }
 
-  // Normalize the color of headings
-  // By default, this heading selectors match the color of text.
-  h1, h2, h3, h4, h5, h6 {
+  // Normalize the color of text
+  .#{$seed-alert-text-namespace} {
     color: _get($__default-scheme, color);
   }
 }
