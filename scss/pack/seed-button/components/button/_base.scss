@@ -36,6 +36,7 @@
   @at-root button#{&} {
     font-family: inherit;
     overflow: visible;
+    outline: none;
 
     &::-moz-focus-inner {
       border-style: none;
@@ -44,6 +45,10 @@
 
     &:-moz-focus-ring {
       outline: 1px dotted Buttontext;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 

@@ -1,5 +1,5 @@
 /**
- * seed-button v0.0.2
+ * seed-button v0.0.3
  * Button component pack for Seed
  * Licensed under MIT
  */
@@ -30,12 +30,15 @@
   user-select: none; }
   button.c-button {
     font-family: inherit;
-    overflow: visible; }
+    overflow: visible;
+    outline: none; }
     button.c-button::-moz-focus-inner {
       border-style: none;
       padding: 0; }
     button.c-button:-moz-focus-ring {
       outline: 1px dotted Buttontext; }
+    button.c-button:focus {
+      outline: none; }
   .c-button:not([disabled]):not(.is-disabled):hover {
     background-color: #f9f9f9;
     border-color: #ddd; }
