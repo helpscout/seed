@@ -1,6 +1,6 @@
 # seed-centralize [![npm version](https://badge.fury.io/js/seed-centralize.svg)](https://badge.fury.io/js/seed-centralize)
 
-centralize utility pack for [Seed](https://github.com/helpscout/seed)!
+Centralize utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,5 @@ Once that is setup, simply `@import` *seed-centralize* as needed in your `.scss`
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-centralize config options
+$seed-centralize-namespace: "u-centralize" !default;
 ```

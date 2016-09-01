@@ -1,0 +1,6 @@
+/**
+ * seed-centralize v0.0.0 (https://github.com/helpscout/seed-centralize)
+ * Centralize utility pack for Seed
+ * Licensed under MIT
+ */
+.u-centralize{align-items:center !important;display:flex !important;justify-content:center !important}@media (min-width: 544px){.u-centralize\@sm{align-items:center !important;display:flex !important;justify-content:center !important}}@media (min-width: 768px){.u-centralize\@md{align-items:center !important;display:flex !important;justify-content:center !important}}@media (min-width: 992px){.u-centralize\@lg{align-items:center !important;display:flex !important;justify-content:center !important}}@media (min-width: 1200px){.u-centralize\@xl{align-items:center !important;display:flex !important;justify-content:center !important}}
