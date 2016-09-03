@@ -28,36 +28,42 @@
 
       .#{$_util-classname} {
         @include breakpoint-prop-map($seed-spacing-sizes, (size)) {
-          @if ($dir-class == "h" and not $all) {
-            #{$property}-left: prop(size) !important;
-            #{$property}-right: prop(size) !important;
-          }
-          @elseif ($dir-class == "v" and not $all) {
-            #{$property}-bottom: prop(size) !important;
-            #{$property}-top: prop(size) !important;
+          @if (prop(size) == "auto" and $property == "padding") {
           }
           @else {
-            #{$_property}: prop(size) !important;
+            @if ($dir-class == "h" and not $all) {
+              #{$property}-left: prop(size) !important;
+              #{$property}-right: prop(size) !important;
+            }
+            @elseif ($dir-class == "v" and not $all) {
+              #{$property}-bottom: prop(size) !important;
+              #{$property}-top: prop(size) !important;
+            }
+            @else {
+              #{$_property}: prop(size) !important;
+            }
           }
         }
       }
     }
     @else {
       .#{$_util-classname} {
-        @include breakpoint-all {
-          @if ($dir-class == "h") {
-            #{$property}-left: 0 !important;
-            #{$property}-right: 0 !important;
-          }
-          @elseif ($dir-class == "v") {
-            #{$property}-bottom: 0 !important;
-            #{$property}-top: 0 !important;
-          }
-          @else {
-            #{$property}: 0 !important;
+        // @if (prop(size) == "auto" and not $property == "padding") {
+          @include breakpoint-all {
+            @if ($dir-class == "h") {
+              #{$property}-left: 0 !important;
+              #{$property}-right: 0 !important;
+            }
+            @elseif ($dir-class == "v") {
+              #{$property}-bottom: 0 !important;
+              #{$property}-top: 0 !important;
+            }
+            @else {
+              #{$property}: 0 !important;
+            }
           }
         }
-      }
+      // }
     }
   }
 }
