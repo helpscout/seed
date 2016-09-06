@@ -1,4 +1,4 @@
-# seed-zi [![npm version](https://badge.fury.io/js/seed-zi.svg)](https://badge.fury.io/js/seed-zi)
+# seed-zi [![Build Status](https://travis-ci.org/helpscout/seed-zi.svg?branch=master)](https://travis-ci.org/helpscout/seed-zi) [![npm version](https://badge.fury.io/js/seed-zi.svg)](https://badge.fury.io/js/seed-zi)
 
 Z-index utility pack for [Seed](https://github.com/helpscout/seed)!
 
