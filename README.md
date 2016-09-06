@@ -1,6 +1,6 @@
 # seed-zi [![npm version](https://badge.fury.io/js/seed-zi.svg)](https://badge.fury.io/js/seed-zi)
 
-zi utility pack for [Seed](https://github.com/helpscout/seed)!
+Z-index utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,23 @@ Once that is setup, simply `@import` *seed-zi* as needed in your `.scss` file:
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-zi config options
+$seed-zi-namespace: "u-zi" !default;
+
+// Default zi z-index
+$seed-zi-index: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  hidden: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  5: 5,
+  10: 10,
+  100: 100,
+  200: 200,
+  1000: 1000,
+  max: 9999999
+) !default;
 ```

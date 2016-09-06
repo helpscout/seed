@@ -1,0 +1,13 @@
+// Utilities :: Z-Index
+
+// Dependencies
+@import "../config";
+
+.#{$seed-zi-namespace} {
+  $this: &;
+  @each $z, $index in $seed-zi-index {
+    @at-root #{$this}-#{$z} {
+      z-index: #{$index} !important;
+    }
+  }
+}
