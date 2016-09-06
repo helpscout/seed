@@ -40,9 +40,9 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.9.0"
   },
   "dependencies": {
-    "seed-spacing": "^0.2.6"
+    "seed-spacing": "^0.3.1"
   }
 }
