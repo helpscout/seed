@@ -1,0 +1,11 @@
+// Modifiers :: Styles
+
+// Dependencies
+@import "../../../mixins/generate-button-styles";
+@import "../config";
+
+@each $key, $config in $seed-button-styles {
+  &--#{$key} {
+    @include generate-button-styles($config);
+  }
+}

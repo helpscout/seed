@@ -1,0 +1,50 @@
+// Mixins :: States
+
+// Dependencies
+@import "pack/seed-control/mixins/control-disabled-styles";
+@import "pack/seed-dash/_index";
+@import "./not-disabled-styles";
+@import "../components/button/config";
+
+@mixin generate-button-states($config: false) {
+  @each $state, $map in $seed-button-color-states {
+    // Default to $map if $config is not defined
+    @if not $config {
+      $config: $map;
+    }
+    &.#{$state} {
+      background-color: _get($config, background, default);
+      border-color: _get($config, border, default);
+      box-shadow: _get($config, box-shadow, default);
+      color: _get($map, border, default);
+
+      @include not-disabled-styles {
+        &:hover {
+          background-color: _get($config, background, default);
+          border-color: _get($config, border, default);
+          box-shadow: _get($config, box-shadow, active);
+          color: _get($map, border, default);
+        }
+
+        &:active {
+          background-color: _get($config, background, default);
+          border-color: _get($config, border, default);
+          box-shadow: _get($config, box-shadow, active);
+          color: _get($map, border, default);
+        }
+
+        &:focus {
+          background-color: _get($config, background, default);
+          border-color: _get($map, border, default);
+          box-shadow: _get($config, box-shadow, focus);
+          color: _get($map, border, default);
+
+          &:active {
+            box-shadow: _get($config, box-shadow, active);
+          }
+        }
+      }
+    }
+  }
+}
+
