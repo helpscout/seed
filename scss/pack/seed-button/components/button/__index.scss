@@ -6,12 +6,10 @@
 .#{$seed-button-namespace} {
   // Base
   @import "./base";
-  // Basic modifiers
-  @import "./modifiers/sizes";
   // States
   @import "./states/disabled";
   @import "./states/states";
-  // Advanced modifiers
-  @import "./modifiers/primary/_index";
-  @import "./modifiers/link/_index";
+  // Modifers
+  @import "./modifiers/sizes";
+  @import "./modifiers/styles";
 }

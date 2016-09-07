@@ -113,43 +113,50 @@ $seed-button-color: (
     active: 0 1px 2px rgba(black, 0.2) inset,
     focus: none
   ),
-  text: #2b2b2b
+  text: #2b2b2b,
 ) !default;
 
-$seed-button-color-primary: (
-  background: (
-    default: #3197D6,
-    hover: darken(#3197D6, 4),
-    active: darken(#3197D6, 8)
+$seed-button-styles: (
+  primary: (
+    _generate-states: false,
+    background: (
+      default: #3197D6,
+      hover: darken(#3197D6, 4),
+      active: darken(#3197D6, 8)
+    ),
+    border: (
+      default: #237AB3,
+      hover: #237AB3,
+      active: #237AB3,
+      focus: #237AB3
+    ),
+    box-shadow: (
+      focus: 0 0 0 1px rgba(white, 0.4) inset
+    ),
+    text: #fff,
   ),
-  border: (
-    default: #237AB3,
-    hover: #237AB3,
-    active: #237AB3,
-    focus: #237AB3
-  ),
-  box-shadow: (
-    focus: 0 0 0 1px rgba(white, 0.4) inset
-  ),
-  text: #fff
-) !default;
 
-$seed-button-color-link: (
-  background: (
-    default: transparent,
-    hover: transparent,
-    active: transparent
+  link: (
+    _generate-states: true,
+    background: (
+      default: transparent,
+      hover: transparent,
+      active: transparent
+    ),
+    border: (
+      default: transparent,
+      hover: transparent,
+      active: transparent,
+      focus: #237AB3
+    ),
+    box-shadow: (
+      default: none,
+      hover: none,
+      active: none,
+      focus: none
+    ),
+    text: #3197D6
   ),
-  border: (
-    default: transparent,
-    hover: transparent,
-    active: transparent,
-    focus: _get($seed-button-color-primary, border, focus)
-  ),
-  box-shadow: (
-    focus: none
-  ),
-  text: _get($seed-button-color-primary, background, default)
 ) !default;
 
 
