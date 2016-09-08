@@ -10,7 +10,7 @@ Minified | Gzipped
 
 ## Install
 ```
-npm install seed-button --save-dev
+npm install seed-button --save
 ```
 
 
