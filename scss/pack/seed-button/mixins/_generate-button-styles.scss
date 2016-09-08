@@ -2,6 +2,7 @@
 
 // Dependencies
 @import "pack/seed-dash/_index";
+@import "./_set-button-text-color";
 @import "./generate-button-states";
 @import "./not-disabled-styles";
 
@@ -32,25 +33,29 @@
 
   background-color: _get($config, background, default);
   border-color: _get($config, border, default);
-  color: _get($config, text);
+  @include __set-button-text-color($config, default, true);
 
   @include not-disabled-styles {
     &:hover {
       background-color: _get($config, background, hover);
       border-color: _get($config, border, hover);
+      @include __set-button-text-color($config, hover);
     }
 
     &:active {
       background-color: _get($config, background, active);
       border-color: _get($config, border, active);
+      @include __set-button-text-color($config, active);
     }
 
     &:focus {
       border-color: _get($config, border, focus);
       box-shadow: _get($config, box-shadow, focus);
+      @include __set-button-text-color($config, focus);
 
       &:active {
         box-shadow: _get($config, box-shadow, focus), _get($seed-button-color, box-shadow, active);
+        @include __set-button-text-color($config, focus);
       }
     }
   }

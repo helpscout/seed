@@ -1,0 +1,18 @@
+// Mixin :: __set-button-text-color
+
+// Private mixin for generate-button-styles
+@mixin __set-button-text-color($config, $state, $override: false) {
+  $color: _get($config, text);
+  // Config (map)
+  @if type-of($color) == "map" {
+    @if $state and _get($color, $state) {
+      color: _get($color, $state);
+    }
+  }
+  // Text (key: value)
+  @else {
+    @if $override {
+      color: $color;
+    }
+  }
+}
