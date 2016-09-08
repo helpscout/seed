@@ -34,32 +34,36 @@
 
   background-color: _get($config, background, default);
   border-color: _get($config, border, default);
-  @include __set-button-text-color($config, default, true);
   @include __set-button-prop(box-shadow, $config, default);
+  @include __set-button-text-color($config, default, true);
 
   @include not-disabled-styles {
     &:hover {
       background-color: _get($config, background, hover);
       border-color: _get($config, border, hover);
-      @include __set-button-text-color($config, hover);
       @include __set-button-prop(box-shadow, $config, hover);
+      @include __set-button-text-color($config, hover);
     }
 
     &:active {
       background-color: _get($config, background, active);
       border-color: _get($config, border, active);
-      @include __set-button-text-color($config, active);
       @include __set-button-prop(box-shadow, $config, active);
+      @include __set-button-text-color($config, active);
     }
 
     &:focus {
       border-color: _get($config, border, focus);
-      box-shadow: _get($config, box-shadow, focus);
-      @include __set-button-text-color($config, focus);
       @include __set-button-prop(box-shadow, $config, focus);
+      @include __set-button-text-color($config, focus);
 
       &:active {
-        box-shadow: _get($config, box-shadow, focus), _get($seed-button-color, box-shadow, active);
+        @if _get($config, box-shadow, focus) and _get($config, box-shadow, active) {
+          box-shadow: _get($config, box-shadow, focus), _get($config, box-shadow, active);
+        }
+        @else {
+          @include __set-button-prop(box-shadow, $config, active);
+        }
         @include __set-button-text-color($config, focus);
       }
     }
