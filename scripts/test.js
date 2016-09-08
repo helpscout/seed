@@ -2,11 +2,11 @@
 
 var pkg = require('../package.json');
 var sass = require('node-sass');
-var pathfinder = require('./pathfinder');
+var pathfinder = require('sass-pathfinder');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  // Add files/paths to include
+  require('seed-breakpoints')
 );
 
 sass.render({

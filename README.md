@@ -7,7 +7,7 @@ Border theme pack for [Seed](https://github.com/helpscout/seed)!
 
 Minified | Gzipped
 ---|---
-521 B | 229 B
+3.78 KB | 467 B
 
 
 ## Install
