@@ -10,7 +10,7 @@
   appearance: none;
   background-color: _get($seed-button-color, background, default);
   border-color: _get($seed-button-color, border, default);
-  border-radius: $seed-border-radius;
+  border-radius: $seed-button-border-radius;
   border-width: $seed-button-border-size;
   border-style: $seed-button-border-style;
   box-shadow: _get($seed-button-color, box-shadow, default);
