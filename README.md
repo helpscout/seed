@@ -133,7 +133,12 @@ $seed-button-styles: (
     box-shadow: (
       focus: 0 0 0 1px rgba(white, 0.4) inset
     ),
-    text: #fff,
+    text: (
+      default: #fff,
+      hover: #fff,
+      active: #fff,
+      focus: #fff,
+    ),
   ),
 
   link: (
