@@ -7,6 +7,7 @@
   box-sizing: border-box;
 
   @include breakpoint-all {
-    flex: 1 0 0;
+    -ms-flex: 1 0 0;
+    flex: 1;
   }
 }
