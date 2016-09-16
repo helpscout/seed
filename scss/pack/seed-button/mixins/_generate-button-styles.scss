@@ -42,6 +42,7 @@
       background-color: _get($config, background, hover);
       border-color: _get($config, border, hover);
       @include __set-button-prop(box-shadow, $config, hover);
+      @include __set-button-prop(text-decoration, $config, hover);
       @include __set-button-text-color($config, hover);
     }
 
@@ -49,12 +50,14 @@
       background-color: _get($config, background, active);
       border-color: _get($config, border, active);
       @include __set-button-prop(box-shadow, $config, active);
+      @include __set-button-prop(text-decoration, $config, active);
       @include __set-button-text-color($config, active);
     }
 
     &:focus {
       border-color: _get($config, border, focus);
       @include __set-button-prop(box-shadow, $config, focus);
+      @include __set-button-prop(text-decoration, $config, focus);
       @include __set-button-text-color($config, focus);
 
       &:active {

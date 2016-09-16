@@ -1,5 +1,5 @@
 /**
- * seed-button v0.1.3
+ * seed-button v0.1.4
  * Button component pack for Seed
  * Licensed under MIT
  */
@@ -41,7 +41,8 @@
       outline: none; }
   .c-button:not([disabled]):not(.is-disabled):hover {
     background-color: #f9f9f9;
-    border-color: #ddd; }
+    border-color: #ddd;
+    text-decoration: none; }
   .c-button:not([disabled]):not(.is-disabled):active {
     background-color: #f4f4f4;
     border-color: #ddd;
@@ -146,7 +147,8 @@
   .c-button--link:not([disabled]):not(.is-disabled):hover {
     background-color: transparent;
     border-color: transparent;
-    box-shadow: none; }
+    box-shadow: none;
+    text-decoration: underline; }
   .c-button--link:not([disabled]):not(.is-disabled):active {
     background-color: transparent;
     border-color: transparent;
