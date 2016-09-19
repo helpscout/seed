@@ -2,19 +2,27 @@
 
 // Namespaces
 $seed-overflow-namespace: "u-overflow" !default;
+$seed-overflow-x-namespace: "u-overflow-x" !default;
+$seed-overflow-y-namespace: "u-overflow-y" !default;
 
 // Overflow
 $seed-overflow: (
   visible: visible,
   hidden: hidden,
   scroll: scroll,
-  auto: auto,
-  x-visible: visible,
-  x-hidden: hidden,
-  x-scroll: scroll,
-  x-auto: auto,
-  y-visible: visible,
-  y-hidden: hidden,
-  y-scroll: scroll,
-  y-auto: auto
+  auto: auto
+) !default;
+
+$seed-overflow-x: (
+  visible: visible,
+  hidden: hidden,
+  scroll: scroll,
+  auto: auto
+) !default;
+
+$seed-overflow-y: (
+  visible: visible,
+  hidden: hidden,
+  scroll: scroll,
+  auto: auto
 ) !default;

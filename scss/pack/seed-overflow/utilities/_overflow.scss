@@ -9,3 +9,15 @@
     overflow: prop(prop) !important;
   }
 }
+
+.#{$seed-overflow-x-namespace} {
+  @include breakpoint-prop-map($seed-overflow-x, (prop)) {
+    overflow: prop(prop) !important;
+  }
+}
+
+.#{$seed-overflow-y-namespace} {
+  @include breakpoint-prop-map($seed-overflow-y, (prop)) {
+    overflow: prop(prop) !important;
+  }
+}
