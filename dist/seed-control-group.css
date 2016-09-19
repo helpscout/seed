@@ -15,7 +15,7 @@
     width: auto; }
     .o-control-group > *:hover {
       z-index: 1; }
-    .o-control-group > * + * {
+    .o-control-group > * + *:not(:first-child) {
       margin-left: -1px; }
     .o-control-group > *:first-child {
       border-bottom-left-radius: 3px;
