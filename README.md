@@ -1,10 +1,10 @@
 # seed-input-addons [![npm version](https://badge.fury.io/js/seed-input-addons.svg)](https://badge.fury.io/js/seed-input-addons)
 
-input-addons component pack for [Seed](https://github.com/helpscout/seed)!
+Input addons component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-input-addons --save-dev
+npm install seed-input-addons --save
 ```
 
 
@@ -40,5 +40,10 @@ Once that is setup, simply `@import` *seed-input-addons* as needed in your `.scs
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-input-addons config options
+// Namespaces
+$seed-input-addons-input-addon-namespace: c-input-addon !default;
+$seed-input-addons-input-static-namespace: c-input-static !default;
+
+// Configs
+$seed-input-addons-input-addon-background-color: #F1F3F5 !default;
 ```

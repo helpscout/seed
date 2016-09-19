@@ -1,0 +1,22 @@
+// Components :: Input Static
+
+// Dependencies
+@import "pack/seed-control/_index";
+@import "../config";
+
+.#{$seed-input-addons-input-static-namespace} {
+  // Base
+  box-sizing: border-box;
+  display: inline-block;
+  height: $seed-control-size-default;
+  line-height: $seed-control-size-default;
+  vertical-align: middle;
+
+  // Modifiers: Sizes
+  @each $key, $value in $seed-control-sizes {
+    &--#{$key} {
+      height: $value;
+      line-height: $value;
+    }
+  }
+}

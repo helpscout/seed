@@ -1,7 +1,7 @@
 {
   "name": "seed-input-addons",
-  "version": "0.0.1",
-  "description": "input-addons component pack for Seed",
+  "version": "0.0.0",
+  "description": "Input addon component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
@@ -10,19 +10,25 @@
     "test": "node ./scripts/test.js && npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-input-addons",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-input.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-input/issues"
+  },
   "keywords": [
+    "addons",
     "bem",
     "css",
     "design",
     "functional",
+    "input",
     "itcss",
     "modular",
     "oocss",
@@ -37,5 +43,10 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.5",
+    "seed-control": "0.0.3",
+    "seed-input": "0.0.1"
   }
 }

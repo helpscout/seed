@@ -1,0 +1,28 @@
+// Components :: Input Static
+
+// Dependencies
+@import "pack/seed-control/_index";
+@import "pack/seed-input/config";
+@import "../config";
+
+.#{$seed-input-addons-input-addon-namespace} {
+  // Base
+  background-color: $seed-input-addons-input-addon-background-color;
+  border-color: $seed-input-border-color;
+  border-radius: $seed-input-border-radius;
+  border-style: $seed-input-border-style;
+  border-width: $seed-input-border-size;
+  box-sizing: border-box;
+  display: inline-block;
+  height: $seed-control-size-default;
+  line-height: $seed-control-size-default - ceil($seed-input-border-size * 2);
+  vertical-align: middle;
+
+  // Modifiers: Sizes
+  @each $key, $value in $seed-control-sizes {
+    &--#{$key} {
+      height: $value;
+      line-height: $value - ceil($seed-input-border-size * 2);
+    }
+  }
+}
