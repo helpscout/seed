@@ -12,6 +12,10 @@ If you're looking for a much more complete Underscore/lodash-like experience for
 npm install seed-dash --save-dev
 ```
 
+## Documentation
+
+Check out the `seed-dash` pack documentation in our [styleguide](http://style.helpscout.com/seed/packs/seed-dash/).
+
 
 ## Basic Usage
 
