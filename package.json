@@ -1,13 +1,13 @@
 {
   "name": "seed-control-group",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Control group object pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
+    "test": "npm run build",
     "prepublish": "npm run test"
   },
   "repository": {
@@ -43,6 +43,7 @@
     "node-sass": "^3.8.0"
   },
   "dependencies": {
+    "sass-pathfinder": "0.0.5",
     "seed-border": "0.0.3"
   }
 }
