@@ -16,6 +16,7 @@
   display: inline-block;
   height: $seed-control-size-default;
   line-height: $seed-control-size-default - ceil($seed-input-border-size * 2);
+  padding: $seed-input-addons-input-addon-padding;
   vertical-align: middle;
 
   // Modifiers: Sizes
