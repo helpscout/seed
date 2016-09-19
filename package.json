@@ -1,6 +1,6 @@
 {
   "name": "seed-control-group",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Control group object pack for Seed",
   "main": "index.js",
   "scripts": {
