@@ -11,7 +11,7 @@ You can use this with *any* project you'd like! (Seed not required).
 
 ## Install
 ```
-npm install seed-grid --save-dev
+npm install seed-grid --save
 ```
 
 
