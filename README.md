@@ -6,7 +6,7 @@ This mixin allows you to target/modify the **direct** parent of the current sele
 
 ## Install
 ```
-npm install seed-family --save-dev
+npm install seed-family --save
 ```
 
 ## Documentation
