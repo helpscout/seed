@@ -42,11 +42,11 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.10.0"
   },
   "dependencies": {
-    "sass-pathfinder": "0.0.3",
-    "seed-border": "0.0.4",
+    "sass-pathfinder": "0.0.5",
+    "seed-border": "0.0.6",
     "seed-control": "0.0.3",
     "seed-dash": "0.0.1",
     "seed-states": "0.0.4"
