@@ -4,8 +4,13 @@ Link component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-link --save-dev
+npm install seed-link --save
 ```
+
+
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-link/)**.
 
 
 ## Basic Usage
