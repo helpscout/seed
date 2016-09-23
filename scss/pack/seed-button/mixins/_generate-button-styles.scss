@@ -5,7 +5,7 @@
 @import "./_set-button-prop";
 @import "./_set-button-text-color";
 @import "./generate-button-states";
-@import "./not-disabled-styles";
+@import "./disabled-styles";
 
 // Example $map
 // $seed-button-color-primary: (
@@ -37,37 +37,46 @@
   @include __set-button-prop(box-shadow, $config, default);
   @include __set-button-text-color($config, default, true);
 
-  @include not-disabled-styles {
-    &:hover {
-      background-color: _get($config, background, hover);
-      border-color: _get($config, border, hover);
-      @include __set-button-prop(box-shadow, $config, hover);
-      @include __set-button-prop(text-decoration, $config, hover);
-      @include __set-button-text-color($config, hover);
-    }
+  &:hover {
+    background-color: _get($config, background, hover);
+    border-color: _get($config, border, hover);
+    @include __set-button-prop(box-shadow, $config, hover);
+    @include __set-button-prop(text-decoration, $config, hover);
+    @include __set-button-text-color($config, hover);
+  }
+
+  &:active {
+    background-color: _get($config, background, active);
+    border-color: _get($config, border, active);
+    @include __set-button-prop(box-shadow, $config, active);
+    @include __set-button-prop(text-decoration, $config, active);
+    @include __set-button-text-color($config, active);
+  }
+
+  &:focus {
+    border-color: _get($config, border, focus);
+    @include __set-button-prop(box-shadow, $config, focus);
+    @include __set-button-prop(text-decoration, $config, focus);
+    @include __set-button-text-color($config, focus);
 
     &:active {
-      background-color: _get($config, background, active);
-      border-color: _get($config, border, active);
-      @include __set-button-prop(box-shadow, $config, active);
-      @include __set-button-prop(text-decoration, $config, active);
-      @include __set-button-text-color($config, active);
-    }
-
-    &:focus {
-      border-color: _get($config, border, focus);
-      @include __set-button-prop(box-shadow, $config, focus);
-      @include __set-button-prop(text-decoration, $config, focus);
+      @if _get($config, box-shadow, focus) and _get($config, box-shadow, active) {
+        box-shadow: _get($config, box-shadow, focus), _get($config, box-shadow, active);
+      }
+      @else {
+        @include __set-button-prop(box-shadow, $config, active);
+      }
       @include __set-button-text-color($config, focus);
+    }
+  }
 
-      &:active {
-        @if _get($config, box-shadow, focus) and _get($config, box-shadow, active) {
-          box-shadow: _get($config, box-shadow, focus), _get($config, box-shadow, active);
-        }
-        @else {
-          @include __set-button-prop(box-shadow, $config, active);
-        }
-        @include __set-button-text-color($config, focus);
+  @include disabled-styles {
+    background-color: _get($config, background, default);
+    border-color: _get($config, border, default);
+
+    @if _get($config, text-decoration) {
+      @if _get($config, text-decoration, default) {
+        @include __set-button-prop(text-decoration, $config, default);
       }
     }
   }
