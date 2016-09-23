@@ -16,10 +16,5 @@
     background-color: _get($values, background-color);
     box-shadow: inset $seed-alert-accent-width 0 0 0 _get($values, border-color);
     color: _get($values, color);
-
-    // Normalize the color of text
-    .#{$seed-alert-text-namespace} {
-      color: _get($values, color);
-    }
   }
 }

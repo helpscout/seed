@@ -31,6 +31,6 @@
 
   // Normalize the color of text
   .#{$seed-alert-text-namespace} {
-    color: _get($__default-scheme, color);
+    color: inherit;
   }
 }
