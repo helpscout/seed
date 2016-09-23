@@ -11,7 +11,7 @@ Minified | Gzipped
 
 ## Install
 ```
-npm install seed-control-group --save-dev
+npm install seed-control-group --save
 ```
 
 
