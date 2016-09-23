@@ -7,6 +7,11 @@ npm install seed-props --save-dev
 ```
 
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-props/)**.
+
+
 ## Basic Usage
 
 ### SCSS
