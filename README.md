@@ -4,7 +4,7 @@ Alert component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-alert --save-dev
+npm install seed-alert --save
 ```
 
 
