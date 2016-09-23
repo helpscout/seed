@@ -8,6 +8,11 @@ npm install seed-input-addons --save
 ```
 
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-input-addons/)**.
+
+
 ## Basic Usage
 
 ### SCSS
