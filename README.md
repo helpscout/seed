@@ -4,8 +4,13 @@ width-fx utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-width-fx --save-dev
+npm install seed-width-fx --save
 ```
+
+
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-width-fx/)**.
 
 
 ## Basic Usage
