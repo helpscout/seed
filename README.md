@@ -14,7 +14,7 @@ npm install seed-dash --save-dev
 
 ## Documentation
 
-Check out the `seed-dash` pack documentation in our [styleguide](http://style.helpscout.com/seed/packs/seed-dash/).
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-dash/)**.
 
 
 ## Basic Usage
