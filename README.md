@@ -4,8 +4,13 @@ Max width extension pack for [seed-width](https://github.com/helpscout/seed-widt
 
 ## Install
 ```
-npm install seed-width-max --save-dev
+npm install seed-width-max --save
 ```
+
+
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-width-max/)**.
 
 
 ## Basic Usage
