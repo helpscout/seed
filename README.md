@@ -7,7 +7,7 @@ Breakpoints was inspired by the mixins in [Bootstrap V4](https://github.com/twbs
 
 ## Install
 ```
-npm install seed-breakpoints --save-dev
+npm install seed-breakpoints --save
 ```
 
 
