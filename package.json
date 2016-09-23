@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.10.0"
   },
   "dependencies": {
     "seed-props": "0.3.0"
