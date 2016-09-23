@@ -9,6 +9,10 @@ This mixin allows you to target/modify the **direct** parent of the current sele
 npm install seed-family --save-dev
 ```
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-family/)**.
+
 
 ## Basic Usage
 
