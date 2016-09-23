@@ -4,7 +4,7 @@ HR component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-hr --save-dev
+npm install seed-hr --save
 ```
 
 
