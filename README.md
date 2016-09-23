@@ -14,6 +14,11 @@ npm install seed-button --save
 ```
 
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-button/)**.
+
+
 ## Basic Usage
 
 ### SCSS
