@@ -13,7 +13,7 @@ npm install seed-breakpoints --save-dev
 
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-states/)**.
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-breakpoints/)**.
 
 
 ## Basic Usage
