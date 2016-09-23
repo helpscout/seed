@@ -4,7 +4,7 @@ Badge component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-badge --save-dev
+npm install seed-badge --save
 ```
 
 
