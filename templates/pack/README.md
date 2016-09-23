@@ -6,7 +6,7 @@
 <% } %>
 ## Install
 ```
-npm install <%= packName %> --save-dev
+npm install <%= packName %> --save
 ```
 
 
