@@ -1,8 +1,6 @@
 # seed-grid [![Build Status](https://travis-ci.org/helpscout/seed-grid.svg?branch=master)](https://travis-ci.org/helpscout/seed-grid) [![npm version](https://badge.fury.io/js/seed-grid.svg)](https://badge.fury.io/js/seed-grid) [![Dependencies](https://david-dm.org/helpscout/seed-grid.svg)](https://david-dm.org/helpscout/seed-grid)
 Grid system pack for [Seed](https://github.com/helpscout/seed)!
 
-![Grid pack](https://raw.githubusercontent.com/helpscout/seed-grid/master/grid-pack.png)
-
 **File size**
 
 Minified | Gzipped
@@ -11,22 +9,16 @@ Minified | Gzipped
 
 You can use this with *any* project you'd like! (Seed not required).
 
-Seed's grid system was inspired by [Bootstrap V4](https://github.com/twbs/bootstrap/tree/v4-dev).
-However, it has been enhanced and modified quite heavily to fit Seed's needs and code organizational structure.
-
-## Examples
-
-Coming soon! We have a bit of documentation / examples in our [grid system styleguide](http://style.helpscout.com/framework/objects/grid/).
-
-
-## Dependencies
-
-* [Seed Breakpoints](https://github.com/helpscout/seed-breakpoints)
-
 ## Install
 ```
 npm install seed-grid --save-dev
 ```
+
+
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-grid/)**.
+
 
 ## Basic Usage
 
