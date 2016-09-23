@@ -4,7 +4,7 @@ Color scheme system pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-color-scheme --save-dev
+npm install seed-color-scheme --save
 ```
 
 ## Documentation
