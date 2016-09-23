@@ -2,7 +2,6 @@
 
 Selector-based function pack for Seed
 
-**This pack is an experimentation. Keep that in mind before use!**
 
 ## Install
 ```
