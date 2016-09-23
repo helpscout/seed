@@ -50,8 +50,8 @@ $seed-alert-text-namespace: "#{$seed-alert-namespace}__text" !default;
 
 // Configs
 $seed-alert-accent-width: 4px !default;
-$seed-alert-padding: spacing(4) spacing(5) !default;
-$seed-alert-margin-bottom: spacing(4) !default;
+$seed-alert-padding: 16px 20px !default;
+$seed-alert-margin-bottom: 16px !default;
 
 
 // Config for state prefix

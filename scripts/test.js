@@ -7,7 +7,6 @@ var pathfinder = require('sass-pathfinder');
 var file = pkg.name;
 var includePaths = pathfinder(
   require('seed-dash'),
-  require('seed-spacing'),
   require('seed-states')
 );
 
