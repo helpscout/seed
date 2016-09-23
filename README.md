@@ -3,7 +3,7 @@ Props mixin pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-props --save-dev
+npm install seed-props --save
 ```
 
 
