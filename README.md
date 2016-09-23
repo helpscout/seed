@@ -4,7 +4,7 @@ Help Scout color scheme for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-color-scheme-helpscout --save-dev
+npm install seed-color-scheme-helpscout --save
 ```
 
 ## Documentation
