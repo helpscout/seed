@@ -2,7 +2,7 @@
 
 // Dependencies
 @import "pack/seed-dash/_index";
-@import "../../mixins/not-disabled-styles";
+@import "../../mixins/disabled-styles";
 @import "./config";
 
 & {
@@ -52,26 +52,30 @@
     }
   }
 
-  @include not-disabled-styles {
-    &:hover {
-      background-color: _get($seed-button-color, background, hover);
-      border-color: _get($seed-button-color, border, hover);
-      text-decoration: none;
-    }
+  &:hover {
+    background-color: _get($seed-button-color, background, hover);
+    border-color: _get($seed-button-color, border, hover);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: _get($seed-button-color, background, active);
+    border-color: _get($seed-button-color, border, active);
+    box-shadow: _get($seed-button-color, box-shadow, active);
+  }
+
+  &:focus {
+    border-color: _get($seed-button-color, border, focus);
+    box-shadow: _get($seed-button-color, box-shadow, focus);
 
     &:active {
-      background-color: _get($seed-button-color, background, active);
-      border-color: _get($seed-button-color, border, active);
       box-shadow: _get($seed-button-color, box-shadow, active);
     }
+  }
 
-    &:focus {
-      border-color: _get($seed-button-color, border, focus);
-      box-shadow: _get($seed-button-color, box-shadow, focus);
-
-      &:active {
-        box-shadow: _get($seed-button-color, box-shadow, active);
-      }
-    }
+  @include disabled-styles {
+    background-color: _get($seed-button-color, background, default);
+    border-color: _get($seed-button-color, border, default);
+    text-decoration: none;
   }
 }

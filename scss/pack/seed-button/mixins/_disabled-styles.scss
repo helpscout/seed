@@ -1,0 +1,8 @@
+// Mixins :: Disabled styles
+
+@mixin disabled-styles {
+  &:disabled,
+  &.is-disabled {
+    @content;
+  }
+}
