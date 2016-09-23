@@ -1,6 +1,6 @@
 /**
- * seed-alert v0.1.1
+ * seed-alert v0.1.2
  * Alert component pack for Seed
  * Licensed under MIT
  */
-.c-alert{background-color:#fff6e2;box-shadow:inset 4px 0 0 0 #ffc646;box-sizing:border-box;color:#b37100;margin-bottom:16px;padding:16px 20px}.c-alert>*:first-child{margin-top:0}.c-alert>*:last-child{margin-bottom:0}.c-alert .c-alert__text{color:#b37100}.c-alert.is-error{background-color:#ffe3e2;box-shadow:inset 4px 0 0 0 #e52f28;color:#9d1f1a}.c-alert.is-error .c-alert__text{color:#9d1f1a}.c-alert.is-info{background-color:#daf1ff;box-shadow:inset 4px 0 0 0 #3197d6;color:#194c6e}.c-alert.is-info .c-alert__text{color:#194c6e}.c-alert.is-success{background-color:#e4fbe6;box-shadow:inset 4px 0 0 0 #4bc27d;color:#228350}.c-alert.is-success .c-alert__text{color:#228350}.c-alert.is-warning{background-color:#fff6e2;box-shadow:inset 4px 0 0 0 #ffc646;color:#b37100}.c-alert.is-warning .c-alert__text{color:#b37100}
+.c-alert{background-color:#fff6e2;box-shadow:inset 4px 0 0 0 #ffc646;box-sizing:border-box;color:#b37100;margin-bottom:16px;padding:16px 20px}.c-alert>*:first-child{margin-top:0}.c-alert>*:last-child{margin-bottom:0}.c-alert .c-alert__text{color:inherit}.c-alert.is-error{background-color:#ffe3e2;box-shadow:inset 4px 0 0 0 #e52f28;color:#9d1f1a}.c-alert.is-info{background-color:#daf1ff;box-shadow:inset 4px 0 0 0 #3197d6;color:#194c6e}.c-alert.is-success{background-color:#e4fbe6;box-shadow:inset 4px 0 0 0 #4bc27d;color:#228350}.c-alert.is-warning{background-color:#fff6e2;box-shadow:inset 4px 0 0 0 #ffc646;color:#b37100}
