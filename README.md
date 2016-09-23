@@ -10,7 +10,7 @@ Minified | Gzipped
 
 ## Install
 ```
-npm install seed-flexy --save-dev
+npm install seed-flexy --save
 ```
 
 
