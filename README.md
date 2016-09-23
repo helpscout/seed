@@ -9,7 +9,7 @@ If you're looking for a much more complete Underscore/lodash-like experience for
 
 ## Install
 ```
-npm install seed-dash --save-dev
+npm install seed-dash --save
 ```
 
 ## Documentation
