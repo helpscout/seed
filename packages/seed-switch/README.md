@@ -4,8 +4,13 @@ Switch component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-switch --save-dev
+npm install seed-switch --save
 ```
+
+
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-switch/)**.
 
 
 ## Basic Usage
