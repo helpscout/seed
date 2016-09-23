@@ -4,7 +4,7 @@ Control config pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-control --save-dev
+npm install seed-control --save
 ```
 
 ## Documentation
