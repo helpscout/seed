@@ -6,8 +6,13 @@ This pack utilizes [flexbox](https://philipwalton.github.io/solved-by-flexbox/de
 
 ## Install
 ```
-npm install seed-centralize --save-dev
+npm install seed-centralize --save
 ```
+
+
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-centralize/)**.
 
 
 ## Basic Usage
