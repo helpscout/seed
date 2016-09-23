@@ -7,6 +7,10 @@ States config pack for [Seed](https://github.com/helpscout/seed)!
 npm install seed-states --save-dev
 ```
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-states/)**.
+
 
 ## Basic Usage
 
