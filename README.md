@@ -4,7 +4,7 @@ States config pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-states --save-dev
+npm install seed-states --save
 ```
 
 ## Documentation
