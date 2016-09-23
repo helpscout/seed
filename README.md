@@ -5,7 +5,7 @@ Main typography pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-typography --save-dev
+npm install seed-typography --save
 ```
 
 
