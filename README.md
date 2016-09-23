@@ -8,6 +8,11 @@ npm install seed-inline --save
 ```
 
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-inline/)**.
+
+
 ## Basic Usage
 
 ### SCSS
