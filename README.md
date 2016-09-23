@@ -7,8 +7,8 @@ Help Scout color scheme for [Seed](https://github.com/helpscout/seed)!
 npm install seed-color-scheme-helpscout --save-dev
 ```
 
-## Dependencies
-* [Seed Color scheme](https://github.com/helpscout/seed-color-scheme)
+## Documentation
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-color-scheme-helpscout/)**.
 
 
 ## Basic Usage
