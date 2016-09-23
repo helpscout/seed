@@ -4,7 +4,7 @@ Avatar component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-avatar --save-dev
+npm install seed-avatar --save
 ```
 
 
