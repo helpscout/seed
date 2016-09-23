@@ -6,6 +6,10 @@ Reset pack for [Seed](https://github.com/helpscout/seed)!
 npm install seed-reset --save-dev
 ```
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-reset/)**.
+
 
 ## Basic Usage
 
