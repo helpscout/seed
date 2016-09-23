@@ -14,6 +14,11 @@ npm install seed-flexy --save-dev
 ```
 
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-flexy/)**.
+
+
 ## Basic Usage
 
 ### SCSS
