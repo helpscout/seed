@@ -4,8 +4,13 @@ Thumbnail component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-thumbnail --save-dev
+npm install seed-thumbnail --save
 ```
+
+
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-thumbnail/)**.
 
 
 ## Basic Usage
