@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.0.1",
-    "seed-grid": "^0.3.2"
+    "mocha": "^3.0.2",
+    "seed-grid": "^0.3.5"
   }
 }
