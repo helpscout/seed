@@ -1,5 +1,5 @@
 /**
- * seed-width v0.3.2 (https://github.com/helpscout/seed-width)
+ * seed-width v0.3.3 (https://github.com/helpscout/seed-width)
  * Width utility pack for Seed
  * Licensed under MIT
  */
@@ -97,22 +97,3 @@
   .u-width-3m\@lg { width: 3em !important; }
   .u-width-4m\@lg { width: 4em !important; }
   .u-width-5m\@lg { width: 5em !important; } }
-
-@media (min-width: 1200px) { .u-width-0\@xl { width: 0% !important; }
-  .u-width-1\@xl { width: 8.33333% !important; }
-  .u-width-2\@xl { width: 16.66667% !important; }
-  .u-width-3\@xl { width: 25% !important; }
-  .u-width-4\@xl { width: 33.33333% !important; }
-  .u-width-5\@xl { width: 41.66667% !important; }
-  .u-width-6\@xl { width: 50% !important; }
-  .u-width-7\@xl { width: 58.33333% !important; }
-  .u-width-8\@xl { width: 66.66667% !important; }
-  .u-width-9\@xl { width: 75% !important; }
-  .u-width-10\@xl { width: 83.33333% !important; }
-  .u-width-11\@xl { width: 91.66667% !important; }
-  .u-width-12\@xl { width: 100% !important; }
-  .u-width-1m\@xl { width: 1em !important; }
-  .u-width-2m\@xl { width: 2em !important; }
-  .u-width-3m\@xl { width: 3em !important; }
-  .u-width-4m\@xl { width: 4em !important; }
-  .u-width-5m\@xl { width: 5em !important; } }
