@@ -26,11 +26,6 @@
   .u-overflow-scroll\@lg { overflow: scroll !important; }
   .u-overflow-auto\@lg { overflow: auto !important; } }
 
-@media (min-width: 1200px) { .u-overflow-visible\@xl { overflow: visible !important; }
-  .u-overflow-hidden\@xl { overflow: hidden !important; }
-  .u-overflow-scroll\@xl { overflow: scroll !important; }
-  .u-overflow-auto\@xl { overflow: auto !important; } }
-
 .u-overflow-x-visible { overflow: visible !important; }
 
 .u-overflow-x-hidden { overflow: hidden !important; }
@@ -54,11 +49,6 @@
   .u-overflow-x-scroll\@lg { overflow: scroll !important; }
   .u-overflow-x-auto\@lg { overflow: auto !important; } }
 
-@media (min-width: 1200px) { .u-overflow-x-visible\@xl { overflow: visible !important; }
-  .u-overflow-x-hidden\@xl { overflow: hidden !important; }
-  .u-overflow-x-scroll\@xl { overflow: scroll !important; }
-  .u-overflow-x-auto\@xl { overflow: auto !important; } }
-
 .u-overflow-y-visible { overflow: visible !important; }
 
 .u-overflow-y-hidden { overflow: hidden !important; }
@@ -81,8 +71,3 @@
   .u-overflow-y-hidden\@lg { overflow: hidden !important; }
   .u-overflow-y-scroll\@lg { overflow: scroll !important; }
   .u-overflow-y-auto\@lg { overflow: auto !important; } }
-
-@media (min-width: 1200px) { .u-overflow-y-visible\@xl { overflow: visible !important; }
-  .u-overflow-y-hidden\@xl { overflow: hidden !important; }
-  .u-overflow-y-scroll\@xl { overflow: scroll !important; }
-  .u-overflow-y-auto\@xl { overflow: auto !important; } }
