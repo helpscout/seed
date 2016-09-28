@@ -1,5 +1,5 @@
 /**
- * seed-width-fx v0.0.2 (https://github.com/helpscout/seed-width-fx)
+ * seed-width-fx v0.0.3 (https://github.com/helpscout/seed-width-fx)
  * Width fixed utility pack for Seed
  * Licensed under MIT
  */
@@ -70,17 +70,3 @@
   .u-width-fx-10\@lg { width: 500px !important; }
   .u-width-fx-11\@lg { width: 550px !important; }
   .u-width-fx-12\@lg { width: 600px !important; } }
-
-@media (min-width: 1200px) { .u-width-fx-0\@xl { width: 0px !important; }
-  .u-width-fx-1\@xl { width: 50px !important; }
-  .u-width-fx-2\@xl { width: 100px !important; }
-  .u-width-fx-3\@xl { width: 150px !important; }
-  .u-width-fx-4\@xl { width: 200px !important; }
-  .u-width-fx-5\@xl { width: 250px !important; }
-  .u-width-fx-6\@xl { width: 300px !important; }
-  .u-width-fx-7\@xl { width: 350px !important; }
-  .u-width-fx-8\@xl { width: 400px !important; }
-  .u-width-fx-9\@xl { width: 450px !important; }
-  .u-width-fx-10\@xl { width: 500px !important; }
-  .u-width-fx-11\@xl { width: 550px !important; }
-  .u-width-fx-12\@xl { width: 600px !important; } }
