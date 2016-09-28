@@ -3,13 +3,6 @@
 Border theme pack for [Seed](https://github.com/helpscout/seed)!
 
 
-**File size**
-
-Minified | Gzipped
----|---
-3.78 KB | 467 B
-
-
 ## Install
 ```
 npm install seed-border --save

@@ -42,6 +42,6 @@
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
-    "seed-breakpoints": "^0.3.2"
+    "seed-breakpoints": "^0.4.0"
   }
 }

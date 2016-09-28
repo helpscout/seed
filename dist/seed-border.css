@@ -22,11 +22,6 @@
       border-style: solid !important;
       border-width: 1px !important;
       border-color: #eee !important; } }
-  @media (min-width: 1200px) {
-    .t-bdr\@xl {
-      border-style: solid !important;
-      border-width: 1px !important;
-      border-color: #eee !important; } }
 
 .t-bdr-top {
   border-top-style: solid !important;
@@ -44,11 +39,6 @@
       border-color: #eee !important; } }
   @media (min-width: 992px) {
     .t-bdr-top\@lg {
-      border-top-style: solid !important;
-      border-width: 1px !important;
-      border-color: #eee !important; } }
-  @media (min-width: 1200px) {
-    .t-bdr-top\@xl {
       border-top-style: solid !important;
       border-width: 1px !important;
       border-color: #eee !important; } }
@@ -72,11 +62,6 @@
       border-right-style: solid !important;
       border-width: 1px !important;
       border-color: #eee !important; } }
-  @media (min-width: 1200px) {
-    .t-bdr-right\@xl {
-      border-right-style: solid !important;
-      border-width: 1px !important;
-      border-color: #eee !important; } }
 
 .t-bdr-bottom {
   border-bottom-style: solid !important;
@@ -94,11 +79,6 @@
       border-color: #eee !important; } }
   @media (min-width: 992px) {
     .t-bdr-bottom\@lg {
-      border-bottom-style: solid !important;
-      border-width: 1px !important;
-      border-color: #eee !important; } }
-  @media (min-width: 1200px) {
-    .t-bdr-bottom\@xl {
       border-bottom-style: solid !important;
       border-width: 1px !important;
       border-color: #eee !important; } }
@@ -122,11 +102,6 @@
       border-left-style: solid !important;
       border-width: 1px !important;
       border-color: #eee !important; } }
-  @media (min-width: 1200px) {
-    .t-bdr-left\@xl {
-      border-left-style: solid !important;
-      border-width: 1px !important;
-      border-color: #eee !important; } }
 
 .t-bdr-none {
   border-style: solid !important;
@@ -141,9 +116,5 @@
       border-width: 0 !important; } }
   @media (min-width: 992px) {
     .t-bdr-none\@lg {
-      border-style: solid !important;
-      border-width: 0 !important; } }
-  @media (min-width: 1200px) {
-    .t-bdr-none\@xl {
       border-style: solid !important;
       border-width: 0 !important; } }
