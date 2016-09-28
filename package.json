@@ -1,6 +1,6 @@
 {
   "name": "seed-width-min",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "width-min utility pack for Seed",
   "main": "index.js",
   "scripts": {
