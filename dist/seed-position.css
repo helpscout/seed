@@ -1,5 +1,5 @@
 /**
- * seed-position v0.0.1
+ * seed-position v0.0.2
  * position utility pack for Seed
  * Licensed under MIT
  */
@@ -35,10 +35,3 @@
   .u-pos-initial\@lg { position: initial !important; }
   .u-pos-relative\@lg { position: relative !important; }
   .u-pos-static\@lg { position: static !important; } }
-
-@media (min-width: 1200px) { .u-pos-absolute\@xl { position: absolute !important; }
-  .u-pos-fixed\@xl { position: fixed !important; }
-  .u-pos-inherit\@xl { position: inherit !important; }
-  .u-pos-initial\@xl { position: initial !important; }
-  .u-pos-relative\@xl { position: relative !important; }
-  .u-pos-static\@xl { position: static !important; } }
