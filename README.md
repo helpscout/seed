@@ -77,27 +77,3 @@ $seed-spacing-directions: (
   vert:   "v"
 ) !default;
 ```
-
-
-## Functions
-
-This pack also includes a utility function that can be used in your `.scss` code.
-
-### spacing($size)
-Type: `string` or `number` | Default: `0`
-
-Accepts keys defined in the `$seed-spacing-sizes` sass map.
-
-##### Usage:
-```sass
-// Input
-body {
-  margin: spacing(3);
-}
-
-// Output
-body {
-  margin: 12px;
-}
-```
-The benefit of using this function throughout your codebase is to help ensure consistent usage of spacing.
