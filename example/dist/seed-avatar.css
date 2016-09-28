@@ -1,5 +1,5 @@
 /**
- * seed-avatar v0.0.2
+ * seed-avatar v0.0.3
  * Avatar component pack for Seed
  * Licensed under MIT
  */
@@ -31,8 +31,3 @@
   .c-avatar--md\@lg { height: 40px; width: 40px; }
   .c-avatar--sm\@lg { height: 32px; width: 32px; }
   .c-avatar--xs\@lg { height: 28px; width: 28px; } }
-
-@media (min-width: 1200px) { .c-avatar--lg\@xl { height: 50px; width: 50px; }
-  .c-avatar--md\@xl { height: 40px; width: 40px; }
-  .c-avatar--sm\@xl { height: 32px; width: 32px; }
-  .c-avatar--xs\@xl { height: 28px; width: 28px; } }
