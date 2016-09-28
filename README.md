@@ -48,7 +48,6 @@ The following variables can be found in `_config.scss`
 // Namespace
 $seed-spacing-margin-namespace: "u-mrg" !default;
 $seed-spacing-padding-namespace: "u-pad" !default;
-$seed-spacing-m-unit: "em" !default;
 
 // Sizes
 $seed-spacing-sizes: (
@@ -63,11 +62,6 @@ $seed-spacing-sizes: (
   8: 32px,
   9: 36px,
   10: 40px,
-  "1m": (1#{$seed-spacing-m-unit}),
-  "2m": (2#{$seed-spacing-m-unit}),
-  "3m": (3#{$seed-spacing-m-unit}),
-  "4m": (4#{$seed-spacing-m-unit}),
-  "5m": (5#{$seed-spacing-m-unit}),
   auto: (auto),
 ) !default;
 
