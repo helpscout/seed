@@ -1,5 +1,5 @@
 /**
- * seed-width-min v0.0.5 (https://github.com/helpscout/seed-width-min)
+ * seed-width-min v0.0.6 (https://github.com/helpscout/seed-width-min)
  * width-min utility pack for Seed
  * Licensed under MIT
  */
@@ -29,16 +29,6 @@
 
 .u-width-min-12 { min-width: 100% !important; }
 
-.u-width-min-1m { min-width: 1em !important; }
-
-.u-width-min-2m { min-width: 2em !important; }
-
-.u-width-min-3m { min-width: 3em !important; }
-
-.u-width-min-4m { min-width: 4em !important; }
-
-.u-width-min-5m { min-width: 5em !important; }
-
 @media (min-width: 544px) { .u-width-min-0\@sm { min-width: 0% !important; }
   .u-width-min-1\@sm { min-width: 8.33333% !important; }
   .u-width-min-2\@sm { min-width: 16.66667% !important; }
@@ -51,12 +41,7 @@
   .u-width-min-9\@sm { min-width: 75% !important; }
   .u-width-min-10\@sm { min-width: 83.33333% !important; }
   .u-width-min-11\@sm { min-width: 91.66667% !important; }
-  .u-width-min-12\@sm { min-width: 100% !important; }
-  .u-width-min-1m\@sm { min-width: 1em !important; }
-  .u-width-min-2m\@sm { min-width: 2em !important; }
-  .u-width-min-3m\@sm { min-width: 3em !important; }
-  .u-width-min-4m\@sm { min-width: 4em !important; }
-  .u-width-min-5m\@sm { min-width: 5em !important; } }
+  .u-width-min-12\@sm { min-width: 100% !important; } }
 
 @media (min-width: 768px) { .u-width-min-0\@md { min-width: 0% !important; }
   .u-width-min-1\@md { min-width: 8.33333% !important; }
@@ -70,12 +55,7 @@
   .u-width-min-9\@md { min-width: 75% !important; }
   .u-width-min-10\@md { min-width: 83.33333% !important; }
   .u-width-min-11\@md { min-width: 91.66667% !important; }
-  .u-width-min-12\@md { min-width: 100% !important; }
-  .u-width-min-1m\@md { min-width: 1em !important; }
-  .u-width-min-2m\@md { min-width: 2em !important; }
-  .u-width-min-3m\@md { min-width: 3em !important; }
-  .u-width-min-4m\@md { min-width: 4em !important; }
-  .u-width-min-5m\@md { min-width: 5em !important; } }
+  .u-width-min-12\@md { min-width: 100% !important; } }
 
 @media (min-width: 992px) { .u-width-min-0\@lg { min-width: 0% !important; }
   .u-width-min-1\@lg { min-width: 8.33333% !important; }
@@ -89,9 +69,4 @@
   .u-width-min-9\@lg { min-width: 75% !important; }
   .u-width-min-10\@lg { min-width: 83.33333% !important; }
   .u-width-min-11\@lg { min-width: 91.66667% !important; }
-  .u-width-min-12\@lg { min-width: 100% !important; }
-  .u-width-min-1m\@lg { min-width: 1em !important; }
-  .u-width-min-2m\@lg { min-width: 2em !important; }
-  .u-width-min-3m\@lg { min-width: 3em !important; }
-  .u-width-min-4m\@lg { min-width: 4em !important; }
-  .u-width-min-5m\@lg { min-width: 5em !important; } }
+  .u-width-min-12\@lg { min-width: 100% !important; } }
