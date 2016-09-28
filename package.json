@@ -41,7 +41,7 @@
     "node-sass": "^3.10.0"
   },
   "dependencies": {
-    "seed-breakpoints": "^0.3.2",
+    "seed-breakpoints": "^0.4.0",
     "seed-width": "^0.3.3"
   }
 }
