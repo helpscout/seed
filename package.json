@@ -36,12 +36,16 @@
   },
   "dependencies": {
     "find-root": "^1.0.0",
+    "lodash.flattendeep": "^4.4.0",
+    "lodash.uniqby": "^4.7.0",
     "sass-pathfinder": "0.0.5",
     "seed-packfinder": "0.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "lodash.countby": "^4.6.0",
     "mocha": "^3.0.2",
-    "seed-grid": "^0.3.5"
+    "seed-grid": "^0.3.5",
+    "seed-grid-lite": "0.0.2"
   }
 }
