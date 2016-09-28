@@ -6,7 +6,7 @@ Overflow utility pack for [Seed](https://github.com/helpscout/seed)!
 
 Minified | Gzipped
 ---|---
-3.2 KB | 435 B
+2.7 KB | 435 B
 
 ## Install
 ```
