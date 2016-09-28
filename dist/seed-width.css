@@ -1,5 +1,5 @@
 /**
- * seed-width v0.3.3 (https://github.com/helpscout/seed-width)
+ * seed-width v0.3.4 (https://github.com/helpscout/seed-width)
  * Width utility pack for Seed
  * Licensed under MIT
  */
@@ -31,16 +31,6 @@
 
 .u-width-12 { width: 100% !important; }
 
-.u-width-1m { width: 1em !important; }
-
-.u-width-2m { width: 2em !important; }
-
-.u-width-3m { width: 3em !important; }
-
-.u-width-4m { width: 4em !important; }
-
-.u-width-5m { width: 5em !important; }
-
 @media (min-width: 544px) { .u-width-0\@sm { width: 0% !important; }
   .u-width-1\@sm { width: 8.33333% !important; }
   .u-width-2\@sm { width: 16.66667% !important; }
@@ -53,12 +43,7 @@
   .u-width-9\@sm { width: 75% !important; }
   .u-width-10\@sm { width: 83.33333% !important; }
   .u-width-11\@sm { width: 91.66667% !important; }
-  .u-width-12\@sm { width: 100% !important; }
-  .u-width-1m\@sm { width: 1em !important; }
-  .u-width-2m\@sm { width: 2em !important; }
-  .u-width-3m\@sm { width: 3em !important; }
-  .u-width-4m\@sm { width: 4em !important; }
-  .u-width-5m\@sm { width: 5em !important; } }
+  .u-width-12\@sm { width: 100% !important; } }
 
 @media (min-width: 768px) { .u-width-0\@md { width: 0% !important; }
   .u-width-1\@md { width: 8.33333% !important; }
@@ -72,12 +57,7 @@
   .u-width-9\@md { width: 75% !important; }
   .u-width-10\@md { width: 83.33333% !important; }
   .u-width-11\@md { width: 91.66667% !important; }
-  .u-width-12\@md { width: 100% !important; }
-  .u-width-1m\@md { width: 1em !important; }
-  .u-width-2m\@md { width: 2em !important; }
-  .u-width-3m\@md { width: 3em !important; }
-  .u-width-4m\@md { width: 4em !important; }
-  .u-width-5m\@md { width: 5em !important; } }
+  .u-width-12\@md { width: 100% !important; } }
 
 @media (min-width: 992px) { .u-width-0\@lg { width: 0% !important; }
   .u-width-1\@lg { width: 8.33333% !important; }
@@ -91,9 +71,4 @@
   .u-width-9\@lg { width: 75% !important; }
   .u-width-10\@lg { width: 83.33333% !important; }
   .u-width-11\@lg { width: 91.66667% !important; }
-  .u-width-12\@lg { width: 100% !important; }
-  .u-width-1m\@lg { width: 1em !important; }
-  .u-width-2m\@lg { width: 2em !important; }
-  .u-width-3m\@lg { width: 3em !important; }
-  .u-width-4m\@lg { width: 4em !important; }
-  .u-width-5m\@lg { width: 5em !important; } }
+  .u-width-12\@lg { width: 100% !important; } }
