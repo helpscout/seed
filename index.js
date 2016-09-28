@@ -3,7 +3,7 @@
 var flattenDeep = require('lodash.flattendeep');
 var pathfinder = require('sass-pathfinder');
 var packfinder = require('seed-packfinder');
-var uniqBy = require('lodash.uniqBy');
+var uniqBy = require('lodash.uniqby');
 
 var resolvePacks = function(packs) {
   var packList;
