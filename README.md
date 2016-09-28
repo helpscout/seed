@@ -6,7 +6,7 @@ Flex object pack for [Seed](https://github.com/helpscout/seed)!
 
 Minified | Gzipped
 ---|---
-1.8 KB | 457 B
+1.6 KB | 457 B
 
 ## Install
 ```
