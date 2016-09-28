@@ -1,5 +1,5 @@
 /**
- * seed-width-max v0.0.3 (https://github.com/helpscout/seed-width-max)
+ * seed-width-max v0.0.4 (https://github.com/helpscout/seed-width-max)
  * width-max utility pack for Seed
  * Licensed under MIT
  */
@@ -29,16 +29,6 @@
 
 .u-width-max-12 { max-width: 100% !important; }
 
-.u-width-max-1m { max-width: 1em !important; }
-
-.u-width-max-2m { max-width: 2em !important; }
-
-.u-width-max-3m { max-width: 3em !important; }
-
-.u-width-max-4m { max-width: 4em !important; }
-
-.u-width-max-5m { max-width: 5em !important; }
-
 @media (min-width: 544px) { .u-width-max-0\@sm { max-width: 0% !important; }
   .u-width-max-1\@sm { max-width: 8.33333% !important; }
   .u-width-max-2\@sm { max-width: 16.66667% !important; }
@@ -51,12 +41,7 @@
   .u-width-max-9\@sm { max-width: 75% !important; }
   .u-width-max-10\@sm { max-width: 83.33333% !important; }
   .u-width-max-11\@sm { max-width: 91.66667% !important; }
-  .u-width-max-12\@sm { max-width: 100% !important; }
-  .u-width-max-1m\@sm { max-width: 1em !important; }
-  .u-width-max-2m\@sm { max-width: 2em !important; }
-  .u-width-max-3m\@sm { max-width: 3em !important; }
-  .u-width-max-4m\@sm { max-width: 4em !important; }
-  .u-width-max-5m\@sm { max-width: 5em !important; } }
+  .u-width-max-12\@sm { max-width: 100% !important; } }
 
 @media (min-width: 768px) { .u-width-max-0\@md { max-width: 0% !important; }
   .u-width-max-1\@md { max-width: 8.33333% !important; }
@@ -70,12 +55,7 @@
   .u-width-max-9\@md { max-width: 75% !important; }
   .u-width-max-10\@md { max-width: 83.33333% !important; }
   .u-width-max-11\@md { max-width: 91.66667% !important; }
-  .u-width-max-12\@md { max-width: 100% !important; }
-  .u-width-max-1m\@md { max-width: 1em !important; }
-  .u-width-max-2m\@md { max-width: 2em !important; }
-  .u-width-max-3m\@md { max-width: 3em !important; }
-  .u-width-max-4m\@md { max-width: 4em !important; }
-  .u-width-max-5m\@md { max-width: 5em !important; } }
+  .u-width-max-12\@md { max-width: 100% !important; } }
 
 @media (min-width: 992px) { .u-width-max-0\@lg { max-width: 0% !important; }
   .u-width-max-1\@lg { max-width: 8.33333% !important; }
@@ -89,9 +69,4 @@
   .u-width-max-9\@lg { max-width: 75% !important; }
   .u-width-max-10\@lg { max-width: 83.33333% !important; }
   .u-width-max-11\@lg { max-width: 91.66667% !important; }
-  .u-width-max-12\@lg { max-width: 100% !important; }
-  .u-width-max-1m\@lg { max-width: 1em !important; }
-  .u-width-max-2m\@lg { max-width: 2em !important; }
-  .u-width-max-3m\@lg { max-width: 3em !important; }
-  .u-width-max-4m\@lg { max-width: 4em !important; }
-  .u-width-max-5m\@lg { max-width: 5em !important; } }
+  .u-width-max-12\@lg { max-width: 100% !important; } }

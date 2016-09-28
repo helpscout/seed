@@ -42,6 +42,6 @@
   },
   "dependencies": {
     "seed-breakpoints": "^0.4.0",
-    "seed-width": "^0.3.3"
+    "seed-width": "^0.4.0"
   }
 }
