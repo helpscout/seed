@@ -95,23 +95,6 @@
       height: 102%;
       width: auto; } }
 
-@media (min-width: 1200px) {
-  .c-thumbnail--wide\@xl {
-    padding-bottom: 56.25%; }
-    .c-thumbnail--wide\@xl .c-thumbnail__image, .c-thumbnail--wide\@xl .c-thumbnail > img {
-      height: auto;
-      width: 102%; }
-  .c-thumbnail--sd\@xl {
-    padding-bottom: 75%; }
-    .c-thumbnail--sd\@xl .c-thumbnail__image, .c-thumbnail--sd\@xl .c-thumbnail > img {
-      height: 102%;
-      width: auto; }
-  .c-thumbnail--square\@xl {
-    padding-bottom: 100%; }
-    .c-thumbnail--square\@xl .c-thumbnail__image, .c-thumbnail--square\@xl .c-thumbnail > img {
-      height: 102%;
-      width: auto; } }
-
 .c-thumbnail__image, .c-thumbnail > img {
   bottom: -100%;
   height: auto;
