@@ -70,7 +70,6 @@ The following variables can be found in `_config.scss`
 ```sass
 // Namespace
 $seed-width-namespace: "u-width" !default;
-$seed-width-m-unit: "em" !default;
 
 // Widths
 $seed-widths: (
@@ -87,10 +86,5 @@ $seed-widths: (
   10: 83.33333%,
   11: 91.66667%,
   12: 100%,
-  1m: 1#{$seed-width-m-unit},
-  2m: 2#{$seed-width-m-unit},
-  3m: 3#{$seed-width-m-unit},
-  4m: 4#{$seed-width-m-unit},
-  5m: 5#{$seed-width-m-unit}
 ) !default;
 ```
