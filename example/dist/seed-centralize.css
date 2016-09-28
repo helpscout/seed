@@ -22,8 +22,3 @@
       align-items: center !important;
       display: flex !important;
       justify-content: center !important; } }
-  @media (min-width: 1200px) {
-    .u-centralize\@xl {
-      align-items: center !important;
-      display: flex !important;
-      justify-content: center !important; } }
