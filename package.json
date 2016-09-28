@@ -1,6 +1,6 @@
 {
   "name": "seed-width-max",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "width-max utility pack for Seed",
   "main": "index.js",
   "scripts": {
