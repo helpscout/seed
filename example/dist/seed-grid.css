@@ -1,5 +1,5 @@
 /**
- * seed-grid v0.3.4 (https://github.com/helpscout/seed-grid)
+ * seed-grid v0.3.5 (https://github.com/helpscout/seed-grid)
  * Grid system pack for Seed
  * Licensed under MIT
  */
@@ -14,8 +14,6 @@
 @media (min-width: 768px) { .o-container--responsive { max-width: 720px; } }
 
 @media (min-width: 992px) { .o-container--responsive { max-width: 940px; } }
-
-@media (min-width: 1200px) { .o-container--responsive { max-width: 1140px; } }
 
 [class*="o-col"] { box-sizing: border-box; min-height: 1px; padding-left: 15px; padding-right: 15px; position: relative; width: 100%; }
 
@@ -255,55 +253,6 @@
   .o-col-offset-11\@lg { margin-left: 91.66667%; }
   .o-col-pull-11\@lg { right: 91.66667%; }
   .o-col-push-11\@lg { left: 91.66667%; } }
-
-@media (min-width: 1200px) { .o-col-1\@xl { width: 8.33333%; }
-  .o-col-2\@xl { width: 16.66667%; }
-  .o-col-3\@xl { width: 25%; }
-  .o-col-4\@xl { width: 33.33333%; }
-  .o-col-5\@xl { width: 41.66667%; }
-  .o-col-6\@xl { width: 50%; }
-  .o-col-7\@xl { width: 58.33333%; }
-  .o-col-8\@xl { width: 66.66667%; }
-  .o-col-9\@xl { width: 75%; }
-  .o-col-10\@xl { width: 83.33333%; }
-  .o-col-11\@xl { width: 91.66667%; }
-  .o-col-12\@xl { width: 100%; }
-  .o-col-offset-0\@xl { margin-left: 0%; }
-  .o-col-pull-0\@xl { right: auto; }
-  .o-col-push-0\@xl { left: auto; }
-  .o-col-offset-1\@xl { margin-left: 8.33333%; }
-  .o-col-pull-1\@xl { right: 8.33333%; }
-  .o-col-push-1\@xl { left: 8.33333%; }
-  .o-col-offset-2\@xl { margin-left: 16.66667%; }
-  .o-col-pull-2\@xl { right: 16.66667%; }
-  .o-col-push-2\@xl { left: 16.66667%; }
-  .o-col-offset-3\@xl { margin-left: 25%; }
-  .o-col-pull-3\@xl { right: 25%; }
-  .o-col-push-3\@xl { left: 25%; }
-  .o-col-offset-4\@xl { margin-left: 33.33333%; }
-  .o-col-pull-4\@xl { right: 33.33333%; }
-  .o-col-push-4\@xl { left: 33.33333%; }
-  .o-col-offset-5\@xl { margin-left: 41.66667%; }
-  .o-col-pull-5\@xl { right: 41.66667%; }
-  .o-col-push-5\@xl { left: 41.66667%; }
-  .o-col-offset-6\@xl { margin-left: 50%; }
-  .o-col-pull-6\@xl { right: 50%; }
-  .o-col-push-6\@xl { left: 50%; }
-  .o-col-offset-7\@xl { margin-left: 58.33333%; }
-  .o-col-pull-7\@xl { right: 58.33333%; }
-  .o-col-push-7\@xl { left: 58.33333%; }
-  .o-col-offset-8\@xl { margin-left: 66.66667%; }
-  .o-col-pull-8\@xl { right: 66.66667%; }
-  .o-col-push-8\@xl { left: 66.66667%; }
-  .o-col-offset-9\@xl { margin-left: 75%; }
-  .o-col-pull-9\@xl { right: 75%; }
-  .o-col-push-9\@xl { left: 75%; }
-  .o-col-offset-10\@xl { margin-left: 83.33333%; }
-  .o-col-pull-10\@xl { right: 83.33333%; }
-  .o-col-push-10\@xl { left: 83.33333%; }
-  .o-col-offset-11\@xl { margin-left: 91.66667%; }
-  .o-col-pull-11\@xl { right: 91.66667%; }
-  .o-col-push-11\@xl { left: 91.66667%; } }
 
 .o-row { box-sizing: border-box; margin-left: -15px; margin-right: -15px; }
 

@@ -5,7 +5,7 @@ Grid system pack for [Seed](https://github.com/helpscout/seed)!
 
 Minified | Gzipped
 ---|---
-8.3 KB | 1.48 KB
+6.9 KB | 1.31 KB
 
 You can use this with *any* project you'd like! (Seed not required).
 
