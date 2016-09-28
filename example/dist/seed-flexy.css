@@ -1,5 +1,5 @@
 /**
- * seed-flexy v0.1.7 (https://github.com/helpscout/seed-flexy)
+ * seed-flexy v0.1.8 (https://github.com/helpscout/seed-flexy)
  * Flex object pack for Seed
  * Licensed under MIT
  */
@@ -10,8 +10,6 @@
 @media (min-width: 768px) { .o-flexy\@md { align-items: center; display: flex; justify-content: space-between; } }
 
 @media (min-width: 992px) { .o-flexy\@lg { align-items: center; display: flex; justify-content: space-between; } }
-
-@media (min-width: 1200px) { .o-flexy\@xl { align-items: center; display: flex; justify-content: space-between; } }
 
 .o-flexy--top { align-items: flex-start; }
 
@@ -36,11 +34,6 @@
   .o-flexy--bottom\@lg { align-items: flex-end; }
   .o-flexy--stretch\@lg { align-items: stretch; } }
 
-@media (min-width: 1200px) { .o-flexy--top\@xl { align-items: flex-start; }
-  .o-flexy--middle\@xl { align-items: center; }
-  .o-flexy--bottom\@xl { align-items: flex-end; }
-  .o-flexy--stretch\@xl { align-items: stretch; } }
-
 .o-flexy--reset { max-width: 100%; min-width: 0; }
 
 .o-flexy__block { box-sizing: border-box; flex: 1; flex-basis: auto; }
@@ -50,7 +43,5 @@
 @media (min-width: 768px) { .o-flexy__block\@md { flex: 1; flex-basis: auto; } }
 
 @media (min-width: 992px) { .o-flexy__block\@lg { flex: 1; flex-basis: auto; } }
-
-@media (min-width: 1200px) { .o-flexy__block\@xl { flex: 1; flex-basis: auto; } }
 
 .o-flexy__item { box-sizing: border-box; }
