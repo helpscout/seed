@@ -9,7 +9,7 @@ Minified | Gzipped
 
 ## Install
 ```
-npm install seed-card --save-dev
+npm install seed-card --save
 ```
 
 
