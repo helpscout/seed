@@ -46,24 +46,5 @@
         }
       }
     }
-    @else {
-      .#{$_util-classname} {
-        // @if (prop(size) == "auto" and not $property == "padding") {
-          @include breakpoint-all {
-            @if ($dir-class == "h") {
-              #{$property}-left: 0 !important;
-              #{$property}-right: 0 !important;
-            }
-            @elseif ($dir-class == "v") {
-              #{$property}-bottom: 0 !important;
-              #{$property}-top: 0 !important;
-            }
-            @else {
-              #{$property}: 0 !important;
-            }
-          }
-        }
-      // }
-    }
   }
 }

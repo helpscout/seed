@@ -1,16 +1,8 @@
 /**
- * seed-spacing v0.4.0 (https://github.com/helpscout/seed-spacing)
+ * seed-spacing v0.4.1 (https://github.com/helpscout/seed-spacing)
  * Spacing utility pack for Seed
  * Licensed under MIT
  */
-.u-mrg-0 { margin: 0 !important; }
-
-@media (min-width: 544px) { .u-mrg-0\@sm { margin: 0 !important; } }
-
-@media (min-width: 768px) { .u-mrg-0\@md { margin: 0 !important; } }
-
-@media (min-width: 992px) { .u-mrg-0\@lg { margin: 0 !important; } }
-
 .u-mrg-0 { margin: 0 !important; }
 
 .u-mrg-1 { margin: 4px !important; }
@@ -451,14 +443,6 @@
   .u-mrg-v-9\@lg { margin-bottom: 36px !important; margin-top: 36px !important; }
   .u-mrg-v-10\@lg { margin-bottom: 40px !important; margin-top: 40px !important; }
   .u-mrg-v-auto\@lg { margin-bottom: auto !important; margin-top: auto !important; } }
-
-.u-pad-0 { padding: 0 !important; }
-
-@media (min-width: 544px) { .u-pad-0\@sm { padding: 0 !important; } }
-
-@media (min-width: 768px) { .u-pad-0\@md { padding: 0 !important; } }
-
-@media (min-width: 992px) { .u-pad-0\@lg { padding: 0 !important; } }
 
 .u-pad-0 { padding: 0 !important; }
 
