@@ -15,7 +15,7 @@
 
 @media (min-width: 992px) { .o-container--responsive { max-width: 940px; } }
 
-[class*="o-col"] { box-sizing: border-box; min-height: 1px; padding-left: 15px; padding-right: 15px; position: relative; width: 100%; }
+[class*="o-col"] { box-sizing: border-box; min-height: 1px; padding-left: 15px; padding-right: 15px; position: relative; }
 
 .o-col-1 { width: 8.33333%; }
 
