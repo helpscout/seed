@@ -41,6 +41,6 @@
     "node-sass": "^3.10.0"
   },
   "dependencies": {
-    "seed-border": "0.0.6"
+    "seed-border": "0.0.7"
   }
 }
