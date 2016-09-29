@@ -43,6 +43,6 @@
     "node-sass": "^3.10.0"
   },
   "dependencies": {
-    "seed-spacing": "^0.4.1"
+    "seed-spacing": "^0.4.2"
   }
 }
