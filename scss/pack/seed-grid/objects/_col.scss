@@ -6,7 +6,6 @@
   padding-left: $seed-grid-gutter-offset;
   padding-right: $seed-grid-gutter-offset;
   position: relative;
-  width: 100%;
 }
 
 @include generate-grid-columns;
