@@ -1,5 +1,5 @@
 /**
- * seed-grid v0.3.5 (https://github.com/helpscout/seed-grid)
+ * seed-grid v0.3.6 (https://github.com/helpscout/seed-grid)
  * Grid system pack for Seed
  * Licensed under MIT
  */
@@ -15,7 +15,7 @@
 
 @media (min-width: 992px) { .o-container--responsive { max-width: 940px; } }
 
-[class*="o-col"] { box-sizing: border-box; min-height: 1px; padding-left: 15px; padding-right: 15px; position: relative; }
+[class*="o-col-"], .o-col { box-sizing: border-box; min-height: 1px; padding-left: 15px; padding-right: 15px; position: relative; }
 
 .o-col-1 { width: 8.33333%; }
 
