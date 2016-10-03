@@ -1,0 +1,9 @@
+// Inputs :: Select
+
+$__class: #{&};
+
+@at-root select#{$__class} {
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menu;
+}
