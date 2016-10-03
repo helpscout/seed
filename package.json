@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
-    "seed-border": "0.0.6",
+    "seed-border": "0.0.7",
     "seed-control": "0.0.3",
     "seed-states": "0.0.4"
   }
