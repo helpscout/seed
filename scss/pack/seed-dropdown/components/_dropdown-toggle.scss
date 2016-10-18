@@ -7,6 +7,7 @@
 
 // Component
 .#{$seed-dropdown-toggle-namespace} {
+  $this: this();
   box-sizing: border-box;
   position: relative;
   z-index: $seed-dropdown-toggle-z-index;
@@ -28,6 +29,7 @@
       // Modifiers: Dropup
       @at-root .#{$seed-dropdown-namespace}- {
         @include breakpoint-prop-map($seed-dropdown-caret-directions, (transform)) {
+          #{$this} > .c-caret,
           #{$caret} {
             transform: prop(transform);
           }
