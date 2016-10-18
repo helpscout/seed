@@ -48,13 +48,8 @@
   "dependencies": {
     "sass-pathfinder": "0.0.5",
     "seed-breakpoints": "^0.4.0",
-    "seed-button": "^0.1.7",
-    "seed-card": "0.0.3",
-    "seed-control": "0.0.3",
     "seed-dash": "0.0.1",
     "seed-family": "0.0.3",
-    "seed-list": "0.0.12",
-    "seed-states": "0.0.4",
     "seed-this": "0.0.4"
   }
 }
