@@ -1,6 +1,6 @@
 # seed-dropdown [![npm version](https://badge.fury.io/js/seed-dropdown.svg)](https://badge.fury.io/js/seed-dropdown)
 
-dropdown component pack for [Seed](https://github.com/helpscout/seed)!
+Dropdown component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
