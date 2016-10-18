@@ -1,27 +1,34 @@
 {
   "name": "seed-dropdown",
   "version": "0.0.1",
-  "description": "dropdown component pack for Seed",
+  "description": "Dropdown component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
+    "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
     "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-dropdown/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-dropdown.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-dropdown/issues"
+  },
   "keywords": [
     "bem",
+    "bootstrap",
     "css",
     "design",
+    "dropdown",
     "functional",
     "itcss",
     "modular",
@@ -37,5 +44,17 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.5",
+    "seed-breakpoints": "^0.4.0",
+    "seed-button": "^0.1.7",
+    "seed-card": "0.0.3",
+    "seed-control": "0.0.3",
+    "seed-dash": "0.0.1",
+    "seed-family": "0.0.3",
+    "seed-list": "0.0.12",
+    "seed-states": "0.0.4",
+    "seed-this": "0.0.4"
   }
 }

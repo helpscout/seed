@@ -1,0 +1,28 @@
+// Components :: Dropdown
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-dash/_index";
+@import "../config";
+
+// Component
+.#{$seed-dropdown-namespace} {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+
+  &- {
+    @include breakpoint-prop-map($seed-dropdown-drop-directions,
+      (maps)) {
+      > .#{$seed-dropdown-menu-namespace} {
+        $maps: prop(maps);
+        @each $list in $maps {
+          $prop: nth($list, 1);
+          $value: nth($list, 2);
+
+          #{$prop}: $value;
+        }
+      }
+    }
+  }
+}

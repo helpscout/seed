@@ -1,0 +1,66 @@
+// Components :: Dropdown Menu
+
+// Dependencies
+@import "pack/seed-family/_index";
+@import "pack/seed-this/_index";
+@import "../config";
+
+// Component
+.#{$seed-dropdown-menu-namespace} {
+  box-sizing: border-box;
+  display: none;
+  margin: $seed-dropdown-menu-margin;
+  max-width: $seed-dropdown-menu-max-width;
+  min-width: $seed-dropdown-menu-min-width;
+  padding: $seed-dropdown-menu-padding;
+  position: absolute;
+  top: 100%;
+  z-index: $seed-dropdown-menu-z-index;
+  // Modifiers
+  &--truncate {
+    > .c-list > .c-list__item {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  // States
+  @include parent(".#{$seed-dropdown-namespace}.#{$seed-dropdown-open-namespace}") {
+    display: block;
+  }
+
+  // Components
+  .c-list {
+    $this: this();
+    &__item {
+      color: $seed-dropdown-menu-item-color;
+      display: block;
+      padding-left: $seed-dropdown-menu-item-padding;
+      padding-right: $seed-dropdown-menu-item-padding;
+      text-decoration: none;
+      width: 100%;
+      white-space: $seed-dropdown-menu-item-white-space;
+
+      &:hover,
+      &:focus {
+        background-color: $seed-dropdown-menu-item-background-color-hover;
+        color: $seed-dropdown-menu-item-color;
+        text-decoration: none;
+      }
+      // States
+      &.#{$seed-dropdown-disabled-namespace},
+      &:disabled {
+        background-color: transparent;
+        cursor: not-allowed;
+        opacity: $seed-dropdown-menu-item-opacity-disabled;
+        text-decoration: none;
+      }
+    }
+
+    + #{$this} {
+      border-top: $seed-dropdown-menu-divider-border;
+      margin-top: $seed-dropdown-menu-divider-offset;
+      padding-top: $seed-dropdown-menu-divider-offset;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+// Components :: Dropdown Header
+
+// Dependencies
+@import "../config";
+
+// Component
+.#{$seed-dropdown-header-namespace} {
+  box-sizing: border-box;
+  color: $seed-dropdown-header-color;
+  font-size: $seed-dropdown-header-font-size;
+  line-height: $seed-dropdown-header-line-height;
+  margin: $seed-dropdown-header-margin;
+  padding: $seed-dropdown-header-padding;
+  display: block;
+  white-space: $seed-dropdown-header-white-space;
+}

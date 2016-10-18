@@ -8,7 +8,14 @@ var sass = require('node-sass');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  // Add files/paths to include
+  require('seed-breakpoints'),
+  require('seed-button'),
+  require('seed-card'),
+  require('seed-dash'),
+  require('seed-family'),
+  require('seed-list'),
+  require('seed-states'),
+  require('seed-this')
 );
 
 // Default .css compile

@@ -1,4 +1,10 @@
-// dropdown pack for Seed
+// Dropdown pack for Seed
 
 // Config
 @import "./config";
+
+// Components
+@import "./components/dropdown";
+@import "./components/dropdown-header";
+@import "./components/dropdown-menu";
+@import "./components/dropdown-toggle";
