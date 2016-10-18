@@ -37,6 +37,16 @@ $seed-dropdown-header-margin: 0 !default;
 $seed-dropdown-header-padding: 5px $seed-dropdown-menu-item-padding !default;
 $seed-dropdown-header-white-space: nowrap !default;
 
+// Config: Caret directions
+$seed-dropdown-caret-directions: (
+  up: (
+    transform: rotate(180deg)
+  ),
+  down: (
+    transform: rotate(0deg)
+  ),
+) !default;
+
 // Config: Drop directions
 $seed-dropdown-drop-directions: (
   up: (
@@ -58,3 +68,4 @@ $seed-dropdown-drop-directions: (
     right: 0
   ),
 ) !default;
+

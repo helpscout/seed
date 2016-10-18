@@ -26,10 +26,10 @@
       width: 0;
 
       // Modifiers: Dropup
-      @at-root.#{$seed-dropdown-namespace}--up {
-        @include breakpoint-all {
+      @at-root .#{$seed-dropdown-namespace}- {
+        @include breakpoint-prop-map($seed-dropdown-caret-directions, (transform)) {
           #{$caret} {
-            transform: rotate(180deg);
+            transform: prop(transform);
           }
         }
       }
