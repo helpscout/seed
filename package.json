@@ -1,6 +1,6 @@
 {
   "name": "seed-grid",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Grid system pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed-grid",
