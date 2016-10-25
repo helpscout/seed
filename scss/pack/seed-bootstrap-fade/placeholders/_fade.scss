@@ -1,0 +1,13 @@
+// Placeholders :: Fade
+
+// Dependencies
+@import "../config";
+
+%seed-bootstrap-fade {
+  opacity: 0;
+  transition: $seed-bootstrap-fade-transition;
+}
+
+%seed-bootstrap-fade-in {
+  opacity: 1;
+}

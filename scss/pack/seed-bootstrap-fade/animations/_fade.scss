@@ -1,0 +1,14 @@
+// Animations :: Fade
+
+// Dependencies
+@import "../config";
+@import "../placeholders/fade";
+
+.#{$seed-bootstrap-fade-namespace} {
+  @extend %seed-bootstrap-fade;
+}
+
+// State: In
+.#{$seed-bootstrap-fade-in-namespace} {
+  @extend %seed-bootstrap-fade-in;
+}
