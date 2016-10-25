@@ -1,6 +1,6 @@
 {
   "name": "seed-dropdown",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Dropdown component pack for Seed",
   "main": "index.js",
   "scripts": {
