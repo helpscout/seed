@@ -1,4 +1,4 @@
-# seed-dropdown [![npm version](https://badge.fury.io/js/seed-dropdown.svg)](https://badge.fury.io/js/seed-dropdown)
+# seed-dropdown [![npm version](https://badge.fury.io/js/seed-dropdown.svg)](https://badge.fury.io/js/seed-dropdown) [![Build Status](https://travis-ci.org/helpscout/seed-dropdown.svg?branch=master)](https://travis-ci.org/helpscout/seed-dropdown) [![dependencies Status](https://david-dm.org/helpscout/seed-dropdown/status.svg)](https://david-dm.org/helpscout/seed-dropdown)
 
 Dropdown component pack for [Seed](https://github.com/helpscout/seed)!
 
