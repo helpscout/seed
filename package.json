@@ -1,6 +1,6 @@
 {
   "name": "seed-bootstrap-fade",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Bootstrap fade animation pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/helpscout/seed-bootstrap-fade/issues"
   },
-  "license": "MIT",
   "keywords": [
     "animation",
     "bem",
