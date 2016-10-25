@@ -7,6 +7,14 @@ Dropdown component pack for [Seed](https://github.com/helpscout/seed)!
 npm install seed-dropdown --save
 ```
 
+## Component Dependencies
+
+This pack depends on the existence of the following component packs in your CSS:
+
+* [seed-button](https://github.com/helpscout/seed-button)
+* [seed-card](https://github.com/helpscout/seed-card)
+* [seed-list](https://github.com/helpscout/seed-list)
+
 
 ## Basic Usage
 
@@ -40,6 +48,9 @@ Once that is setup, simply `@import` *seed-dropdown* as needed in your `.scss` f
 The following variables can be found in `_config.scss`
 
 ```scss
+
+// Dropdown :: Config
+
 // Namespaces
 $seed-dropdown-namespace: c-dropdown !default;
 $seed-dropdown-header-namespace: #{$seed-dropdown-namespace}__header !default;
@@ -49,9 +60,15 @@ $seed-dropdown-toggle-namespace: #{$seed-dropdown-namespace}__toggle !default;
 $seed-dropdown-open-namespace: open !default;
 $seed-dropdown-disabled-namespace: disabled !default;
 
+// Namespaces of other seed packs
+$seed-caret-namespace: "c-caret" !default;
+$seed-list-namespace: "c-list" !default;
+$seed-list-item-namespace: #{$seed-list-namespace}__item !default;
+
 // Config: Toggle
 $seed-dropdown-toggle-background-color-open: rgba(black, 0.1) !default;
 $seed-dropdown-toggle-caret-enable: true !default;
+$seed-dropdown-toggle-caret-margin-left: 6px !default;
 $seed-dropdown-toggle-caret-size: 4px !default;
 $seed-dropdown-toggle-z-index: 1 !default;
 // Config: Menu
@@ -76,6 +93,16 @@ $seed-dropdown-header-line-height: 1.1 !default;
 $seed-dropdown-header-margin: 0 !default;
 $seed-dropdown-header-padding: 5px $seed-dropdown-menu-item-padding !default;
 $seed-dropdown-header-white-space: nowrap !default;
+
+// Config: Caret directions
+$seed-dropdown-caret-directions: (
+  up: (
+    transform: rotate(180deg)
+  ),
+  down: (
+    transform: rotate(0deg)
+  ),
+) !default;
 
 // Config: Drop directions
 $seed-dropdown-drop-directions: (

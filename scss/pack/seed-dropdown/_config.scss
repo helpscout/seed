@@ -9,9 +9,15 @@ $seed-dropdown-toggle-namespace: #{$seed-dropdown-namespace}__toggle !default;
 $seed-dropdown-open-namespace: open !default;
 $seed-dropdown-disabled-namespace: disabled !default;
 
+// Namespaces of other seed packs
+$seed-caret-namespace: "c-caret" !default;
+$seed-list-namespace: "c-list" !default;
+$seed-list-item-namespace: #{$seed-list-namespace}__item !default;
+
 // Config: Toggle
 $seed-dropdown-toggle-background-color-open: rgba(black, 0.1) !default;
 $seed-dropdown-toggle-caret-enable: true !default;
+$seed-dropdown-toggle-caret-margin-left: 6px !default;
 $seed-dropdown-toggle-caret-size: 4px !default;
 $seed-dropdown-toggle-z-index: 1 !default;
 // Config: Menu
@@ -68,4 +74,3 @@ $seed-dropdown-drop-directions: (
     right: 0
   ),
 ) !default;
-

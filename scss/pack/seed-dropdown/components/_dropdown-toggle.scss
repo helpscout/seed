@@ -12,7 +12,9 @@
   position: relative;
   z-index: $seed-dropdown-toggle-z-index;
 
+  // Components
   @if $seed-dropdown-toggle-caret-enable {
+    // Caret
     &::after {
       $caret: this();
       box-sizing: border-box;
@@ -22,14 +24,15 @@
       content: "";
       display: inline-block;
       height: 0;
-      margin-left: $seed-dropdown-toggle-caret-size;
+      margin-left: $seed-dropdown-toggle-caret-margin-left;
+      margin-top: -($seed-dropdown-toggle-caret-size);
       vertical-align: middle;
       width: 0;
 
       // Modifiers: Dropup
       @at-root .#{$seed-dropdown-namespace}- {
         @include breakpoint-prop-map($seed-dropdown-caret-directions, (transform)) {
-          #{$this} > .c-caret,
+          #{$this} > #{$seed-caret-namespace},
           #{$caret} {
             transform: prop(transform);
           }
@@ -40,6 +43,8 @@
 
   // States
   @include parent(".#{$seed-dropdown-namespace}.#{$seed-dropdown-open-namespace}") {
+    // Overlay
+    // This darkens the toggle without modifying the color property
     &::before {
       background-color: $seed-dropdown-toggle-background-color-open;
       bottom: 0;

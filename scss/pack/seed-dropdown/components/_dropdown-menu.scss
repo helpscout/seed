@@ -16,12 +16,15 @@
   position: absolute;
   top: 100%;
   z-index: $seed-dropdown-menu-z-index;
+
   // Modifiers
   &--truncate {
-    > .c-list > .c-list__item {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+    > .#{$seed-list-namespace} {
+      > #{$seed-list-item-namespace} {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
     }
   }
   // States
@@ -30,37 +33,39 @@
   }
 
   // Components
-  .c-list {
+  .#{$seed-list-namespace} {
     $this: this();
-    &__item {
-      color: $seed-dropdown-menu-item-color;
-      display: block;
-      padding-left: $seed-dropdown-menu-item-padding;
-      padding-right: $seed-dropdown-menu-item-padding;
-      text-decoration: none;
-      width: 100%;
-      white-space: $seed-dropdown-menu-item-white-space;
-
-      &:hover,
-      &:focus {
-        background-color: $seed-dropdown-menu-item-background-color-hover;
-        color: $seed-dropdown-menu-item-color;
-        text-decoration: none;
-      }
-      // States
-      &.#{$seed-dropdown-disabled-namespace},
-      &:disabled {
-        background-color: transparent;
-        cursor: not-allowed;
-        opacity: $seed-dropdown-menu-item-opacity-disabled;
-        text-decoration: none;
-      }
-    }
-
     + #{$this} {
       border-top: $seed-dropdown-menu-divider-border;
       margin-top: $seed-dropdown-menu-divider-offset;
       padding-top: $seed-dropdown-menu-divider-offset;
+    }
+  }
+
+  .#{$seed-list-item-namespace} {
+    $this: this();
+
+    color: $seed-dropdown-menu-item-color;
+    display: block;
+    padding-left: $seed-dropdown-menu-item-padding;
+    padding-right: $seed-dropdown-menu-item-padding;
+    text-decoration: none;
+    width: 100%;
+    white-space: $seed-dropdown-menu-item-white-space;
+
+    &:hover,
+    &:focus {
+      background-color: $seed-dropdown-menu-item-background-color-hover;
+      color: $seed-dropdown-menu-item-color;
+      text-decoration: none;
+    }
+    // States
+    &.#{$seed-dropdown-disabled-namespace},
+    &:disabled {
+      background-color: transparent;
+      cursor: not-allowed;
+      opacity: $seed-dropdown-menu-item-opacity-disabled;
+      text-decoration: none;
     }
   }
 }
