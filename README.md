@@ -1,4 +1,4 @@
-# seed-popover [![npm version](https://badge.fury.io/js/seed-popover.svg)](https://badge.fury.io/js/seed-popover)
+# seed-popover [![Build Status](https://travis-ci.org/helpscout/seed-popover.svg?branch=master)](https://travis-ci.org/helpscout/seed-popover) [![npm version](https://badge.fury.io/js/seed-popover.svg)](https://badge.fury.io/js/seed-popover)
 
 Popover component pack for [Seed](https://github.com/helpscout/seed)!
 
