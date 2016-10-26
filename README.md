@@ -1,4 +1,4 @@
-# seed-input-addons [![npm version](https://badge.fury.io/js/seed-input-addons.svg)](https://badge.fury.io/js/seed-input-addons)
+# seed-input-addons [![Build Status](https://travis-ci.org/helpscout/seed-input-addons.svg?branch=master)](https://travis-ci.org/helpscout/seed-input-addons) [![npm version](https://badge.fury.io/js/seed-input-addons.svg)](https://badge.fury.io/js/seed-input-addons)
 
 Input addons component pack for [Seed](https://github.com/helpscout/seed)!
 
