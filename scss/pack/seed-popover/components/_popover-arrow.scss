@@ -1,0 +1,21 @@
+// Components :: Popover (Arrow)
+
+.#{$seed-popover-arrow-namespace} {
+  &::before,
+  &::after {
+    border-color: transparent;
+    border-style: solid;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+  }
+  &::before {
+    border-width: ($seed-popover-arrow-size + 1px);
+  }
+  &::after {
+    border-width: $seed-popover-arrow-size;
+  }
+}

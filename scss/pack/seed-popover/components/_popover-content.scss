@@ -1,0 +1,8 @@
+// Components :: Popover Content
+
+// Dependencies
+@import "../config";
+
+.#{$seed-popover-content-namespace} {
+  padding: $seed-popover-content-padding;
+}
