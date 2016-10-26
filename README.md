@@ -42,5 +42,22 @@ Once that is setup, simply `@import` *seed-popover* as needed in your `.scss` fi
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-popover config options
+// Namespaces
+$seed-popover-namespace: "popover" !default;
+$seed-popover-arrow-namespace: "arrow" !default;
+$seed-popover-content-namespace: "popover-content" !default;
+$seed-popover-title-namespace: "popover-title" !default;
+
+// Config: Popover
+$seed-popover-background-color: white !default;
+$seed-popover-border-color: rgba(black, 0.2) !default;
+$seed-popover-border-radius: 4px !default;
+$seed-popover-box-shadow: none !default;
+$seed-popover-max-width: 280px !default;
+$seed-popover-z-index: 1060 !default;
+// Config: Arrow
+$seed-popover-arrow-size: 10px !default;
+$seed-popover-arrow-outer-size: $seed-popover-arrow-size + 1px !default;
+// Config: Content
+$seed-popover-content-padding: 8px 12px !default;
 ```

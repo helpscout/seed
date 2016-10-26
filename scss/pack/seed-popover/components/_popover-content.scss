@@ -4,5 +4,6 @@
 @import "../config";
 
 .#{$seed-popover-content-namespace} {
+  box-sizing: border-box;
   padding: $seed-popover-content-padding;
 }

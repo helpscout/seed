@@ -8,7 +8,8 @@ var sass = require('node-sass');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  require('seed-bootstrap-fade')
+  require('seed-bootstrap-fade'),
+  require('seed-this')
 );
 
 // Default .css compile

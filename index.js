@@ -3,6 +3,7 @@ var pathfinder = require('./scripts/pathfinder');
 
 var files = pathfinder(
   require('seed-bootstrap-fade'),
+  require('seed-this'),
   path.join(__dirname, 'scss')
 );
 
