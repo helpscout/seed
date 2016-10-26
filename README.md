@@ -1,4 +1,4 @@
-# seed-responsive-wrapper [![npm version](https://badge.fury.io/js/seed-responsive-wrapper.svg)](https://badge.fury.io/js/seed-responsive-wrapper)
+# seed-responsive-wrapper [![Build Status](https://travis-ci.org/helpscout/seed-responsive-wrapper.svg?branch=master)](https://travis-ci.org/helpscout/seed-responsive-wrapper) [![npm version](https://badge.fury.io/js/seed-responsive-wrapper.svg)](https://badge.fury.io/js/seed-responsive-wrapper)
 
 Responsive wrapper object pack for [Seed](https://github.com/helpscout/seed)!
 
