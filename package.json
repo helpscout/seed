@@ -1,7 +1,7 @@
 {
   "name": "seed-responsive-wrapper",
-  "version": "0.0.1",
-  "description": "responsive-wrapper object pack for Seed",
+  "version": "0.0.0",
+  "description": "Responsive wrapper object pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
@@ -10,14 +10,18 @@
     "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-responsive-wrapper/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-responsive-wrapper.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-responsive-wrapper/issues"
+  },
   "keywords": [
     "bem",
     "css",
@@ -27,9 +31,11 @@
     "modular",
     "oocss",
     "performance",
+    "responsive",
     "seed",
     "seed-pack",
-    "scss"
+    "scss",
+    "wrapper"
   ],
   "engines": {
     "node": ">=4"

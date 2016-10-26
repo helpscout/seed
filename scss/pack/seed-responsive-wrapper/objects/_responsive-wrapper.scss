@@ -1,0 +1,7 @@
+// Objects :: Responsive Wrapper
+
+.#{$seed-responsive-wrapper-namespace} {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: auto;
+}

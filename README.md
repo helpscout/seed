@@ -1,6 +1,6 @@
 # seed-responsive-wrapper [![npm version](https://badge.fury.io/js/seed-responsive-wrapper.svg)](https://badge.fury.io/js/seed-responsive-wrapper)
 
-responsive-wrapper object pack for [Seed](https://github.com/helpscout/seed)!
+Responsive wrapper object pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,6 @@ Once that is setup, simply `@import` *seed-responsive-wrapper* as needed in your
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-responsive-wrapper config options
+// Namespace
+$seed-responsive-wrapper-namespace: o-responsive-wrapper !default;
 ```
