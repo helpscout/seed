@@ -1,6 +1,8 @@
 # seed-popover [![npm version](https://badge.fury.io/js/seed-popover.svg)](https://badge.fury.io/js/seed-popover)
 
-popover component pack for [Seed](https://github.com/helpscout/seed)!
+Popover component pack for [Seed](https://github.com/helpscout/seed)!
+
+JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
 
 ## Install
 ```
