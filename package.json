@@ -1,6 +1,6 @@
 {
   "name": "seed-button",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Button component pack for Seed",
   "main": "index.js",
   "scripts": {
