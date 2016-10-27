@@ -1,6 +1,12 @@
 // Card pack for Seed
 
+// Dependencies
+@import "pack/seed-composer/_index";
+
 // Config
 @import "./config";
 // Components
 @import "./components/_index";
+
+// Exports
+@include _composer-exports(seed-card);

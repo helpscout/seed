@@ -8,7 +8,7 @@
     "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
     "copy": "cp ./dist/*.css ./example/dist/",
-    "test": "node ./scripts/test.js && npm run build",
+    "test": "npm run build",
     "prepublish": "npm run test"
   },
   "homepage": "https://github.com/helpscout/seed-card",
@@ -41,6 +41,7 @@
     "node-sass": "^3.10.0"
   },
   "dependencies": {
-    "seed-border": "0.0.7"
+    "seed-border": "0.0.7",
+    "seed-composer": "0.0.3"
   }
 }

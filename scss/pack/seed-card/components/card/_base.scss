@@ -1,20 +1,22 @@
 // Component :: Card :: Base
 
-& {
-  box-sizing: border-box;
-  background-color: $seed-card-background-color;
-  border: $seed-card-border;
-  border-radius: $seed-card-border-radius;
+@include _composer(seed-card) {
+  & {
+    box-sizing: border-box;
+    background-color: $seed-card-background-color;
+    border: $seed-card-border;
+    border-radius: $seed-card-border-radius;
 
-  > * {
-    &:first-child {
-      border-top-left-radius: $seed-card-border-radius;
-      border-top-right-radius: $seed-card-border-radius;
-    }
+    > * {
+      &:first-child {
+        border-top-left-radius: $seed-card-border-radius;
+        border-top-right-radius: $seed-card-border-radius;
+      }
 
-    &:last-child {
-      border-bottom-left-radius: $seed-card-border-radius;
-      border-bottom-right-radius: $seed-card-border-radius;
+      &:last-child {
+        border-bottom-left-radius: $seed-card-border-radius;
+        border-bottom-right-radius: $seed-card-border-radius;
+      }
     }
   }
 }

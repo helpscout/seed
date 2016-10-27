@@ -8,7 +8,8 @@ var sass = require('node-sass');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  require('seed-border')
+  require('seed-border'),
+  require('seed-composer')
 );
 
 // Default .css compile
