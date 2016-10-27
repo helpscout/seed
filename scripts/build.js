@@ -9,7 +9,7 @@ var sass = require('node-sass');
 var file = pkg.name;
 var includePaths = pathfinder(
   require('seed-border'),
-  require('seed-composer')
+  require('seed-publish')
 );
 
 // Default .css compile

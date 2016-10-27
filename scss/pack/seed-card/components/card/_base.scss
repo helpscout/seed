@@ -1,6 +1,9 @@
 // Component :: Card :: Base
 
-@include _composer(seed-card) {
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-card) {
   & {
     box-sizing: border-box;
     background-color: $seed-card-background-color;

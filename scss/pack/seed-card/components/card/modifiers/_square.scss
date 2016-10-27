@@ -1,6 +1,9 @@
 // Modifiers :: Square
 
-@include _composer(seed-card) {
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-card) {
   &--square {
     border-radius: 0;
 

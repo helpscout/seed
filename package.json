@@ -42,6 +42,6 @@
   },
   "dependencies": {
     "seed-border": "0.0.7",
-    "seed-composer": "0.0.3"
+    "seed-publish": "0.0.2"
   }
 }
