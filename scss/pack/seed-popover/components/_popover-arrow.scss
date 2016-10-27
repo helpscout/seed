@@ -1,92 +1,95 @@
 // Components :: Popover (Arrow)
 
 // Dependencies
+@import "pack/seed-publish/_index";
 @import "pack/seed-this/_index";
 @import "../config";
 
-.#{$seed-popover-namespace} {
-  > .#{$seed-popover-arrow-namespace} {
-    $this: this();
+@include export(seed-popover) {
+  .#{$seed-popover-namespace} {
+    > .#{$seed-popover-arrow-namespace} {
+      $this: this();
 
-    &,
-    &::after {
-      border-color: transparent;
-      border-style: solid;
-      box-sizing: border-box;
-      display: block;
-      height: 0;
-      position: absolute;
-      width: 0;
-    }
+      &,
+      &::after {
+        border-color: transparent;
+        border-style: solid;
+        box-sizing: border-box;
+        display: block;
+        height: 0;
+        position: absolute;
+        width: 0;
+      }
 
-    & {
-      border-width: $seed-popover-arrow-outer-size;
-    }
+      & {
+        border-width: $seed-popover-arrow-outer-size;
+      }
 
-    &::after {
-      border-width: $seed-popover-arrow-size;
-      content: "";
-    }
+      &::after {
+        border-width: $seed-popover-arrow-size;
+        content: "";
+      }
 
-    // Modifiers
-    @at-root .#{$seed-popover-namespace} {
-      &.top > #{$this} {
-        border-bottom-width: 0;
-        border-top-color: $seed-popover-border-color;
-        bottom: -($seed-popover-arrow-outer-size);
-        margin-left: -($seed-popover-arrow-outer-size);
-        left: 50%;
-
-        &::after {
+      // Modifiers
+      @at-root .#{$seed-popover-namespace} {
+        &.top > #{$this} {
           border-bottom-width: 0;
-          border-top-color: $seed-popover-background-color;
-          bottom: 1px;
-          margin-left: -($seed-popover-arrow-size);
+          border-top-color: $seed-popover-border-color;
+          bottom: -($seed-popover-arrow-outer-size);
+          margin-left: -($seed-popover-arrow-outer-size);
+          left: 50%;
+
+          &::after {
+            border-bottom-width: 0;
+            border-top-color: $seed-popover-background-color;
+            bottom: 1px;
+            margin-left: -($seed-popover-arrow-size);
+          }
         }
-      }
 
-      &.right > #{$this} {
-        border-left-width: 0;
-        border-right-color: $seed-popover-border-color;
-        left: -($seed-popover-arrow-outer-size);
-        margin-top: -($seed-popover-arrow-outer-size);
-        top: 50%;
-
-        &::after {
+        &.right > #{$this} {
           border-left-width: 0;
-          border-right-color: $seed-popover-background-color;
-          bottom: -($seed-popover-arrow-size);
-          left: 1px;
+          border-right-color: $seed-popover-border-color;
+          left: -($seed-popover-arrow-outer-size);
+          margin-top: -($seed-popover-arrow-outer-size);
+          top: 50%;
+
+          &::after {
+            border-left-width: 0;
+            border-right-color: $seed-popover-background-color;
+            bottom: -($seed-popover-arrow-size);
+            left: 1px;
+          }
         }
-      }
 
-      &.bottom > #{$this} {
-        border-bottom-color: $seed-popover-border-color;
-        border-top-width: 0;
-        margin-left: -($seed-popover-arrow-outer-size);
-        left: 50%;
-        top: -($seed-popover-arrow-outer-size);
-
-        &::after {
-          border-bottom-color: $seed-popover-background-color;
+        &.bottom > #{$this} {
+          border-bottom-color: $seed-popover-border-color;
           border-top-width: 0;
-          margin-left: -($seed-popover-arrow-size);
-          top: 1px;
+          margin-left: -($seed-popover-arrow-outer-size);
+          left: 50%;
+          top: -($seed-popover-arrow-outer-size);
+
+          &::after {
+            border-bottom-color: $seed-popover-background-color;
+            border-top-width: 0;
+            margin-left: -($seed-popover-arrow-size);
+            top: 1px;
+          }
         }
-      }
 
-      &.left > #{$this} {
-        border-left-color: $seed-popover-border-color;
-        border-right-width: 0;
-        margin-top: -($seed-popover-arrow-outer-size);
-        right: -($seed-popover-arrow-outer-size);
-        top: 50%;
-
-        &::after {
-          border-left-color: $seed-popover-background-color;
+        &.left > #{$this} {
+          border-left-color: $seed-popover-border-color;
           border-right-width: 0;
-          bottom: -($seed-popover-arrow-size);
-          right: 1px;
+          margin-top: -($seed-popover-arrow-outer-size);
+          right: -($seed-popover-arrow-outer-size);
+          top: 50%;
+
+          &::after {
+            border-left-color: $seed-popover-background-color;
+            border-right-width: 0;
+            bottom: -($seed-popover-arrow-size);
+            right: 1px;
+          }
         }
       }
     }

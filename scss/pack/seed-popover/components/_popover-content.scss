@@ -1,9 +1,12 @@
 // Components :: Popover Content
 
 // Dependencies
+@import "pack/seed-publish/_index";
 @import "../config";
 
-.#{$seed-popover-content-namespace} {
-  box-sizing: border-box;
-  padding: $seed-popover-content-padding;
+@include export(seed-popover) {
+  .#{$seed-popover-content-namespace} {
+    box-sizing: border-box;
+    padding: $seed-popover-content-padding;
+  }
 }
