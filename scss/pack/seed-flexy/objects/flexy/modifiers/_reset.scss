@@ -1,8 +1,0 @@
-// Modifiers :: Reset
-
-// This particular "reset" is useful if .o-flexy contains items that are
-// being CSS truncated using the white-space: nowrap; trick.
-&--reset {
-  max-width: 100%;
-  min-width: 0;
-}

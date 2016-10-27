@@ -2,12 +2,15 @@
 
 // Dependencies
 @import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
 
-& {
-  box-sizing: border-box;
-  @include breakpoint-all {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+@include export(seed-flexy) {
+  & {
+    box-sizing: border-box;
+    @include breakpoint-all {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

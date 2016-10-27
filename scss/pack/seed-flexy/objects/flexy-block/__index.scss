@@ -2,8 +2,17 @@
 
 // Dependencies
 @import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
 
-.#{$seed-flexy-block-namespace} {
-  // Base
-  @import "./base";
+@include export(seed-flexy) {
+  .#{$seed-flexy-block-namespace} {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    @include breakpoint-all {
+      flex: 1;
+      flex-basis: auto;
+      -webkit-flex: 1;
+    }
+  }
 }

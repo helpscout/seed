@@ -1,5 +1,11 @@
 // Flexy Item :: Index
 
-.#{$seed-flexy-item-namespace} {
-  box-sizing: border-box;
+@import "pack/seed-publish/_index";
+
+@include export(seed-flexy) {
+  .#{$seed-flexy-item-namespace} {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+  }
 }
