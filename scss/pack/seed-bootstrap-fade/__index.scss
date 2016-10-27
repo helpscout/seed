@@ -1,6 +1,12 @@
 // Bootstrap fade pack for Seed
 
+// Dependencies
+@import "pack/seed-composer/_index";
+
 // Config
 @import "./config";
 // Animations
 @import "./animations/_index";
+
+// Exports pack
+@include _composer-exports(seed-bootstrap-fade);

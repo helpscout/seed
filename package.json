@@ -44,5 +44,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-composer": "0.0.3"
   }
 }
