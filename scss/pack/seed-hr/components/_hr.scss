@@ -1,15 +1,18 @@
 // Components :: HR
 
 // Dependencies
+@import "pack/seed-publish/_index";
 @import "../config";
 
-#{$__seed-hr-class} {
-  border: 0;
-  border-top-color: $seed-hr-border-color;
-  border-top-style: $seed-hr-border-style;
-  border-top-width: $seed-hr-border-size;
-  box-sizing: content-box;
-  display: block;
-  height: 0;
-  margin: $seed-hr-margin;
+@include export(seed-hr) {
+  #{$__seed-hr-class} {
+    border: 0;
+    border-top-color: $seed-hr-border-color;
+    border-top-style: $seed-hr-border-style;
+    border-top-width: $seed-hr-border-size;
+    box-sizing: content-box;
+    display: block;
+    height: 0;
+    margin: $seed-hr-margin;
+  }
 }
