@@ -1,4 +1,4 @@
-# seed-bootstrap-fade [![npm version](https://badge.fury.io/js/seed-bootstrap-fade.svg)](https://badge.fury.io/js/seed-bootstrap-fade)
+# seed-bootstrap-fade [![Build Status](https://travis-ci.org/helpscout/seed-bootstrap-fade.svg?branch=master)](https://travis-ci.org/helpscout/seed-bootstrap-fade) [![npm version](https://badge.fury.io/js/seed-bootstrap-fade.svg)](https://badge.fury.io/js/seed-bootstrap-fade)
 
 Bootstrap fade animation pack for [Seed](https://github.com/helpscout/seed)!
 
