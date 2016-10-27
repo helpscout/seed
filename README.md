@@ -9,15 +9,6 @@ JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
 npm install seed-dropdown --save
 ```
 
-## Component Dependencies
-
-This pack depends on the existence of the following component packs in your CSS:
-
-* [seed-button](https://github.com/helpscout/seed-button)
-* [seed-card](https://github.com/helpscout/seed-card)
-* [seed-list](https://github.com/helpscout/seed-list)
-
-
 ## Basic Usage
 
 ### SCSS
@@ -44,6 +35,20 @@ Once that is setup, simply `@import` *seed-dropdown* as needed in your `.scss` f
 // Packs
 @import "pack/seed-dropdown/_index";
 ```
+
+### CSS
+
+The fully compiled CSS files can be found in the [dist](/tree/master/dist) directory of this repo.
+
+There are 2 different types of compiled `.css` files:
+
+**seed-dropdown.css**
+
+This includes **all** the CSS required to get the dropdown and all of it's parts working, which includes styles for other components (such as buttons).
+
+**seed-dropdown.only.css**
+
+This includes **only** the CSS required to style the dropdown.
 
 ## Options
 
