@@ -38,7 +38,7 @@ Once that is setup, simply `@import` *seed-dropdown* as needed in your `.scss` f
 
 ### CSS
 
-The fully compiled CSS files can be found in the [dist](/tree/master/dist) directory of this repo.
+The fully compiled CSS files can be found in the [dist](https://github.com/helpscout/seed-dropdown/tree/master/dist) directory of this repo.
 
 There are 2 different types of compiled `.css` files:
 
