@@ -1,8 +1,14 @@
 // Button pack for Seed
 
+// Dependencies
+@import "pack/seed-publish/_index";
+
 // Config
 @import "./config";
 // Mixins
 @import "./mixins/_index";
 // Components
 @import "./components/_index";
+
+// Publish
+@include publish(seed-button);

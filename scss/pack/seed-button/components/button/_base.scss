@@ -2,80 +2,83 @@
 
 // Dependencies
 @import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
 @import "../../mixins/disabled-styles";
 @import "./config";
 
-& {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: _get($seed-button-color, background, default);
-  border-color: _get($seed-button-color, border, default);
-  border-radius: $seed-button-border-radius;
-  border-width: $seed-button-border-size;
-  border-style: $seed-button-border-style;
-  box-shadow: _get($seed-button-color, box-shadow, default);
-  box-sizing: border-box;
-  color: _get($seed-button-color, text);
-  cursor: pointer;
-  display: inline-block;
-  font-size: $seed-button-font-size;
-  font-weight: $seed-button-font-weight;
-  height: $seed-button-height;
-  line-height: $seed-button-line-height;
-  outline: none;
-  padding: $seed-button-padding;
-  transition: $seed-button-transition;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  user-select: none;
-
-  // button selector reset
-  // Source: https://necolas.github.io/normalize.css/4.1.1/normalize.css
-  @at-root button#{&} {
-    font-family: inherit;
-    overflow: visible;
+@include export(seed-button) {
+  & {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: _get($seed-button-color, background, default);
+    border-color: _get($seed-button-color, border, default);
+    border-radius: $seed-button-border-radius;
+    border-width: $seed-button-border-size;
+    border-style: $seed-button-border-style;
+    box-shadow: _get($seed-button-color, box-shadow, default);
+    box-sizing: border-box;
+    color: _get($seed-button-color, text);
+    cursor: pointer;
+    display: inline-block;
+    font-size: $seed-button-font-size;
+    font-weight: $seed-button-font-weight;
+    height: $seed-button-height;
+    line-height: $seed-button-line-height;
     outline: none;
+    padding: $seed-button-padding;
+    transition: $seed-button-transition;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
 
-    &::-moz-focus-inner {
-      border-style: none;
-      padding: 0;
+    // button selector reset
+    // Source: https://necolas.github.io/normalize.css/4.1.1/normalize.css
+    @at-root button#{&} {
+      font-family: inherit;
+      overflow: visible;
+      outline: none;
+
+      &::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      &:-moz-focus-ring {
+        outline: 1px dotted Buttontext;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
 
-    &:-moz-focus-ring {
-      outline: 1px dotted Buttontext;
+    &:hover {
+      background-color: _get($seed-button-color, background, hover);
+      border-color: _get($seed-button-color, border, hover);
+      text-decoration: none;
+    }
+
+    &:active {
+      background-color: _get($seed-button-color, background, active);
+      border-color: _get($seed-button-color, border, active);
+      box-shadow: _get($seed-button-color, box-shadow, active);
     }
 
     &:focus {
-      outline: none;
+      border-color: _get($seed-button-color, border, focus);
+      box-shadow: _get($seed-button-color, box-shadow, focus);
+
+      &:active {
+        box-shadow: _get($seed-button-color, box-shadow, active);
+      }
     }
-  }
 
-  &:hover {
-    background-color: _get($seed-button-color, background, hover);
-    border-color: _get($seed-button-color, border, hover);
-    text-decoration: none;
-  }
-
-  &:active {
-    background-color: _get($seed-button-color, background, active);
-    border-color: _get($seed-button-color, border, active);
-    box-shadow: _get($seed-button-color, box-shadow, active);
-  }
-
-  &:focus {
-    border-color: _get($seed-button-color, border, focus);
-    box-shadow: _get($seed-button-color, box-shadow, focus);
-
-    &:active {
-      box-shadow: _get($seed-button-color, box-shadow, active);
+    @include disabled-styles {
+      background-color: _get($seed-button-color, background, default);
+      border-color: _get($seed-button-color, border, default);
+      text-decoration: none;
     }
-  }
-
-  @include disabled-styles {
-    background-color: _get($seed-button-color, background, default);
-    border-color: _get($seed-button-color, border, default);
-    text-decoration: none;
   }
 }

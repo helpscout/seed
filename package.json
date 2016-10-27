@@ -49,6 +49,7 @@
     "seed-border": "0.0.6",
     "seed-control": "0.0.3",
     "seed-dash": "0.0.1",
+    "seed-publish": "0.0.2",
     "seed-states": "0.0.4"
   }
 }

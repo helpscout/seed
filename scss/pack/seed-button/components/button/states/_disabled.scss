@@ -3,11 +3,14 @@
 // Dependencies
 @import "pack/seed-control/mixins/control-disabled-styles";
 @import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
 @import "../config";
 
-& {
-  @include control-disabled-styles {
-    cursor: not-allowed;
-    opacity: 0.65;
+@include export(seed-button) {
+  & {
+    @include control-disabled-styles {
+      cursor: not-allowed;
+      opacity: 0.65;
+    }
   }
 }
