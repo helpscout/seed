@@ -1,14 +1,17 @@
 // States :: Readonly
 
 // Dependencies
+@import "pack/seed-publish/_index";
 @import "../../../config";
 
-&[readonly],
-&.is-readonly {
-  background-color: $seed-input-background-color-disabled;
-  border-color: $seed-input-border-color;
+@include export(seed-input) {
+  &[readonly],
+  &.is-readonly {
+    background-color: $seed-input-background-color-disabled;
+    border-color: $seed-input-border-color;
 
-  &:focus {
-    border-color: $seed-input-border-color-focus;
+    &:focus {
+      border-color: $seed-input-border-color-focus;
+    }
   }
 }

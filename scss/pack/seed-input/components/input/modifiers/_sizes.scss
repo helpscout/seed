@@ -2,11 +2,14 @@
 
 // Dependencies
 @import "pack/seed-control/config";
+@import "pack/seed-publish/_index";
 @import "../../../config";
 
-@each $key, $value in $seed-control-sizes {
-  &--#{$key} {
-    height: $value;
-    line-height: $value - ceil($seed-input-border-size * 2);
+@include export(seed-input) {
+  @each $key, $value in $seed-control-sizes {
+    &--#{$key} {
+      height: $value;
+      line-height: $value - ceil($seed-input-border-size * 2);
+    }
   }
 }

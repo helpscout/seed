@@ -2,13 +2,16 @@
 
 // Dependencies
 @import "pack/seed-control/config";
+@import "pack/seed-publish/_index";
 
-$__class: #{&};
+@include export(seed-input) {
+  $__class: #{&};
 
-@at-root textarea#{$__class} {
-  height: auto;
-  line-height: inherit;
-  overflow: auto;
-  padding: $seed-input-padding-textarea;
-  vertical-align: top;
+  @at-root textarea#{$__class} {
+    height: auto;
+    line-height: inherit;
+    overflow: auto;
+    padding: $seed-input-padding-textarea;
+    vertical-align: top;
+  }
 }

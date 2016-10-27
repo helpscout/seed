@@ -10,6 +10,7 @@ var file = pkg.name;
 var includePaths = pathfinder(
   require('seed-border'),
   require('seed-control'),
+  require('seed-publish'),
   require('seed-states')
 );
 

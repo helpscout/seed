@@ -1,9 +1,13 @@
 // Inputs :: Select
 
-$__class: #{&};
+@import "pack/seed-publish/_index";
 
-@at-root select#{$__class} {
-  -webkit-appearance: menulist;
-  -moz-appearance: menulist;
-  appearance: menu;
+@include export(seed-input) {
+  $__class: #{&};
+
+  @at-root select#{$__class} {
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance: menu;
+  }
 }
