@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.0"
+    "node-sass": "^3.10.1"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
@@ -52,7 +52,7 @@
     "seed-card": "0.0.5",
     "seed-dash": "0.0.1",
     "seed-family": "0.0.3",
-    "seed-list": "0.0.13",
+    "seed-list": "0.0.14",
     "seed-publish": "0.0.2",
     "seed-this": "0.0.4"
   }
