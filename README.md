@@ -2,12 +2,6 @@
 
 Flex object pack for [Seed](https://github.com/helpscout/seed)!
 
-**File size**
-
-Minified | Gzipped
----|---
-1.6 KB | 457 B
-
 ## Install
 ```
 npm install seed-flexy --save
@@ -63,5 +57,4 @@ $seed-flexy-alignment: (
   bottom: flex-end,
   stretch: stretch
 ) !default;
-
 ```

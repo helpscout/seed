@@ -3,9 +3,12 @@
 // Dependencies
 @import "../../../config";
 @import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
 
-&- {
-  @include breakpoint-prop-map($seed-flexy-alignment, (prop)) {
-    align-items: prop(prop);
+@include export(seed-flexy) {
+  &- {
+    @include breakpoint-prop-map($seed-flexy-alignment, (prop)) {
+      align-items: prop(prop);
+    }
   }
 }
