@@ -2,58 +2,60 @@
 
 // Dependencies
 @import "pack/seed-family/_index";
+@import "pack/seed-publish/_index";
 @import "pack/seed-this/_index";
 @import "../config";
 
-// Component
-.#{$seed-dropdown-toggle-namespace} {
-  $this: this();
-  box-sizing: border-box;
-  position: relative;
-  z-index: $seed-dropdown-toggle-z-index;
+@include export(seed-dropdown) {
+  .#{$seed-dropdown-toggle-namespace} {
+    $this: this();
+    box-sizing: border-box;
+    position: relative;
+    z-index: $seed-dropdown-toggle-z-index;
 
-  // Components
-  @if $seed-dropdown-toggle-caret-enable {
-    // Caret
-    &::after {
-      $caret: this();
-      box-sizing: border-box;
-      border-left: $seed-dropdown-toggle-caret-size solid transparent;
-      border-right: $seed-dropdown-toggle-caret-size solid transparent;
-      border-top: $seed-dropdown-toggle-caret-size solid;
-      content: "";
-      display: inline-block;
-      height: 0;
-      margin-left: $seed-dropdown-toggle-caret-margin-left;
-      margin-top: -($seed-dropdown-toggle-caret-size);
-      vertical-align: middle;
-      width: 0;
+    // Components
+    @if $seed-dropdown-toggle-caret-enable {
+      // Caret
+      &::after {
+        $caret: this();
+        box-sizing: border-box;
+        border-left: $seed-dropdown-toggle-caret-size solid transparent;
+        border-right: $seed-dropdown-toggle-caret-size solid transparent;
+        border-top: $seed-dropdown-toggle-caret-size solid;
+        content: "";
+        display: inline-block;
+        height: 0;
+        margin-left: $seed-dropdown-toggle-caret-margin-left;
+        margin-top: -($seed-dropdown-toggle-caret-size);
+        vertical-align: middle;
+        width: 0;
 
-      // Modifiers: Dropup
-      @at-root .#{$seed-dropdown-namespace}- {
-        @include breakpoint-prop-map($seed-dropdown-caret-directions, (transform)) {
-          #{$this} > #{$seed-caret-namespace},
-          #{$caret} {
-            transform: prop(transform);
+        // Modifiers: Dropup
+        @at-root .#{$seed-dropdown-namespace}- {
+          @include breakpoint-prop-map($seed-dropdown-caret-directions, (transform)) {
+            #{$this} > #{$seed-caret-namespace},
+            #{$caret} {
+              transform: prop(transform);
+            }
           }
         }
       }
     }
-  }
 
-  // States
-  @include parent(".#{$seed-dropdown-namespace}.#{$seed-dropdown-open-namespace}") {
-    // Overlay
-    // This darkens the toggle without modifying the color property
-    &::before {
-      background-color: $seed-dropdown-toggle-background-color-open;
-      bottom: 0;
-      content: "";
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: -1;
+    // States
+    @include parent(".#{$seed-dropdown-namespace}.#{$seed-dropdown-open-namespace}") {
+      // Overlay
+      // This darkens the toggle without modifying the color property
+      &::before {
+        background-color: $seed-dropdown-toggle-background-color-open;
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
     }
   }
 }
