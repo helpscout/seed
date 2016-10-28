@@ -1,0 +1,17 @@
+// Components :: Option Card Selector
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-option-card) {
+  .#{$seed-option-card-selector-namespace} {
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

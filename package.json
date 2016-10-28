@@ -1,31 +1,40 @@
 {
   "name": "seed-option-card",
-  "version": "0.0.1",
-  "description": "option-card component pack for Seed",
+  "version": "0.0.0",
+  "description": "Option card component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
+    "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
     "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-option-card/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-option-card.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-option-card/issues"
+  },
   "keywords": [
     "bem",
+    "checkbox",
     "css",
     "design",
     "functional",
+    "input",
     "itcss",
     "modular",
     "oocss",
+    "option",
+    "radio",
     "performance",
     "seed",
     "seed-pack",
@@ -37,5 +46,11 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-card": "0.0.5",
+    "seed-control-group": "0.0.3",
+    "seed-publish": "0.0.2",
+    "seed-this": "0.0.4"
   }
 }

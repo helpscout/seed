@@ -8,7 +8,10 @@ var sass = require('node-sass');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  // Add files/paths to include
+  require('seed-card'),
+  require('seed-control-group'),
+  require('seed-publish'),
+  require('seed-this')
 );
 
 // Default .css compile
@@ -29,6 +32,23 @@ sass.render({
     })
   }
 });
+sass.render({
+  file: './scss/pack/'+file+'/__only.scss',
+  includePaths: includePaths
+}, function(error, result) {
+  if (error) {
+    console.error(error);
+    return process.exit(1);
+  }
+  else {
+    mkdirp('./dist');
+    fs.writeFile('./dist/'+file+'.only.css', result.css, function(err){
+      if(!err){
+        return console.log(file+'.only.css created.');
+      }
+    })
+  }
+});
 
 // Minified .css compile
 sass.render({
@@ -45,6 +65,24 @@ sass.render({
     fs.writeFile('./dist/'+file+'.min.css', result.css, function(err){
       if(!err){
         return console.log(file+'.min.css created.');
+      }
+    })
+  }
+});
+sass.render({
+  file: './scss/pack/'+file+'/__only.scss',
+  includePaths: includePaths,
+  outputStyle: 'compressed'
+}, function(error, result) {
+  if (error) {
+    console.error(error);
+    return process.exit(1);
+  }
+  else {
+    mkdirp('./dist');
+    fs.writeFile('./dist/'+file+'.only.min.css', result.css, function(err){
+      if(!err){
+        return console.log(file+'.only.min.css created.');
       }
     })
   }
