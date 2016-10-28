@@ -34,6 +34,9 @@
     .o-control-group > *:focus {
       z-index: 2; }
 
+--block > * {
+  flex: 1; }
+
 .o-control-group__block {
   box-sizing: border-box;
   flex: 1; }

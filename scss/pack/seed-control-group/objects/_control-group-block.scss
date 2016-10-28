@@ -1,9 +1,12 @@
 // Objects :: Control group block
 
 // Dependencies
+@import "pack/seed-publish/_index";
 @import "../config";
 
-.#{$seed-control-group-block-namespace} {
-  box-sizing: border-box;
-  flex: 1;
+@include export(seed-control-group) {
+  .#{$seed-control-group-block-namespace} {
+    box-sizing: border-box;
+    flex: 1;
+  }
 }

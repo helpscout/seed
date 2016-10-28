@@ -40,10 +40,11 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.10.0"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
-    "seed-border": "0.0.3"
+    "seed-border": "0.0.7",
+    "seed-publish": "0.0.2"
   }
 }
