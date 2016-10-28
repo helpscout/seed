@@ -1,6 +1,6 @@
 {
   "name": "seed-border",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Border theme pack for Seed",
   "main": "index.js",
   "scripts": {
