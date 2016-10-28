@@ -45,11 +45,11 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.0"
+    "node-sass": "^3.10.1"
   },
   "dependencies": {
     "seed-card": "0.0.5",
-    "seed-control-group": "0.0.3",
+    "seed-control-group": "0.0.4",
     "seed-publish": "0.0.2",
     "seed-this": "0.0.4"
   }
