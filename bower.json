@@ -1,0 +1,29 @@
+{
+  "name": "seed-option-card",
+  "version": "0.0.1",
+  "description": "option-card component pack for Seed",
+  "main": "index.js",
+  "homepage": "",
+  "authors": [
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test.js"
+  ],
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ]
+}
