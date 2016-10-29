@@ -1,6 +1,6 @@
 {
   "name": "seed-thumbnail",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Thumbnail component pack for Seed",
   "main": "index.js",
   "scripts": {
