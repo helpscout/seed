@@ -43,5 +43,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-publish": "0.0.2"
   }
 }

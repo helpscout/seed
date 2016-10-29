@@ -1,6 +1,11 @@
 // responsive-wrapper pack for Seed
 
+// Dependencies
+@import "pack/seed-publish/_index";
 // Config
 @import "./config";
 // Objects
 @import "./objects/_index";
+
+// Publish
+@include publish(seed-responsive-wrapper);
