@@ -1,6 +1,6 @@
 {
   "name": "seed-switch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "switch component pack for Seed",
   "main": "index.js",
   "scripts": {
