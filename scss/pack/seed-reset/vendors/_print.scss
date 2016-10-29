@@ -1,12 +1,15 @@
 // Print
 // Source: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_print.scss
 
+// Dependencies
+@import "pack/seed-publish/_index";
 // ==========================================================================
 // Print styles.
 // Inlined to avoid the additional HTTP request:
 // http://www.phpied.com/delay-loading-your-print-css/
 // ==========================================================================
 
+@include export(seed-reset) {
 @if $seed-reset-enable-print {
   @media print {
     *,
@@ -112,4 +115,5 @@
 
     // Bootstrap specific changes end
   }
+}
 }

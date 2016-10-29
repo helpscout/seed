@@ -1,9 +1,13 @@
 // Reset pack for Seed
 
+// Dependencies
+@import "pack/seed-publish/_index";
 // Config
 @import "./config";
-
 // Vendors
 @import "./vendors/normalize";
 @import "./vendors/print";
 @import "./vendors/reboot";
+
+// Publish
+@include publish(seed-reset);

@@ -1,4 +1,8 @@
 // Normalize
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-reset) {
 @if $seed-reset-enable-normalize {
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -423,5 +427,6 @@ textarea {
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+}
 }
 }
