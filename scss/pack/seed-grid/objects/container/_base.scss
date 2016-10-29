@@ -1,13 +1,16 @@
 // Objects :: Container :: Base
 
 // Dependencies
+@import "pack/seed-publish/_index";
 @import "../../config";
 
-& {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: container(xl);
-  padding-left: $seed-grid-gutter-offset;
-  padding-right: $seed-grid-gutter-offset;
+@include export(seed-grid) {
+  & {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: container(xl);
+    padding-left: $seed-grid-gutter-offset;
+    padding-right: $seed-grid-gutter-offset;
+  }
 }

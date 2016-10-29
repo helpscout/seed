@@ -1,17 +1,22 @@
 // Objects :: Row
 
-.#{$seed-grid-namespace-row} {
-  box-sizing: border-box;
-  margin-left: -($seed-grid-gutter-offset);
-  margin-right: -($seed-grid-gutter-offset);
+// Dependencies
+@import "pack/seed-publish/_index";
 
-  &::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
+@include export(seed-grid) {
+  .#{$seed-grid-namespace-row} {
+    box-sizing: border-box;
+    margin-left: -($seed-grid-gutter-offset);
+    margin-right: -($seed-grid-gutter-offset);
 
-  > [class*="#{$seed-grid-namespace-col}"] {
-    float: left;
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    > [class*="#{$seed-grid-namespace-col}"] {
+      float: left;
+    }
   }
 }

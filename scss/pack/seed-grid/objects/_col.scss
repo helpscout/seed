@@ -1,13 +1,18 @@
 // Objects :: Col
 
-[class*="#{$seed-grid-namespace-col}-"],
-.#{$seed-grid-namespace-col} {
-  box-sizing: border-box;
-  min-height: 1px;
-  padding-left: $seed-grid-gutter-offset;
-  padding-right: $seed-grid-gutter-offset;
-  position: relative;
-  width: 100%;
-}
+// Dependencies
+@import "pack/seed-publish/_index";
 
-@include generate-grid-columns;
+@include export(seed-grid) {
+  [class*="#{$seed-grid-namespace-col}-"],
+  .#{$seed-grid-namespace-col} {
+    box-sizing: border-box;
+    min-height: 1px;
+    padding-left: $seed-grid-gutter-offset;
+    padding-right: $seed-grid-gutter-offset;
+    position: relative;
+    width: 100%;
+  }
+
+  @include generate-grid-columns;
+}

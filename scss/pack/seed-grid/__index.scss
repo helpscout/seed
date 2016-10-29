@@ -4,6 +4,7 @@
 
 // Packs
 @import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
 
 // Config
 @import "./config";
@@ -19,3 +20,6 @@
 
 // Objects
 @import "./objects/_index";
+
+// Publish
+@include publish(seed-grid);
