@@ -2,24 +2,27 @@
 
 // Dependencies
 @import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
 @import "../../../functions/thumbnail-ratio";
 @import "../../../config";
 
-&- {
-  @include breakpoint-prop-map($seed-thumbnail-sizes, (width, height)) {
-    $ratio: thumbnail-ratio(prop(width), prop(height));
-    padding-bottom: $ratio;
+@include export(seed-thumbnail) {
+  &- {
+    @include breakpoint-prop-map($seed-thumbnail-sizes, (width, height)) {
+      $ratio: thumbnail-ratio(prop(width), prop(height));
+      padding-bottom: $ratio;
 
-    #{$__seed-thumbnail-image-class} {
-      // Landscape
-      @if $ratio < 60 {
-        height: auto;
-        width: 102%;
-      }
-      // Portrait
-      @else {
-        height: 102%;
-        width: auto;
+      #{$__seed-thumbnail-image-class} {
+        // Landscape
+        @if $ratio < 60 {
+          height: auto;
+          width: 102%;
+        }
+        // Portrait
+        @else {
+          height: 102%;
+          width: auto;
+        }
       }
     }
   }

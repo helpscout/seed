@@ -1,13 +1,18 @@
 // Thumbnail Image :: Base
 
-& {
-  bottom: -100%;
-  height: auto;
-  left: -100%;
-  margin: auto;
-  max-width: none;
-  position: absolute;
-  right: -100%;
-  top: -100%;
-  width: 102%;
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-thumbnail) {
+  & {
+    bottom: -100%;
+    height: auto;
+    left: -100%;
+    margin: auto;
+    max-width: none;
+    position: absolute;
+    right: -100%;
+    top: -100%;
+    width: 102%;
+  }
 }

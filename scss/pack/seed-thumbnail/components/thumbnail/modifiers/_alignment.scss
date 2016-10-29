@@ -2,13 +2,16 @@
 
 // Dependencies
 @import "pack/seed-props/_index";
+@import "pack/seed-publish/_index";
 @import "../../../config";
 
-&- {
-  @include prop-map($seed-thumbnail-alignments, (top, bottom)) {
-    #{$__seed-thumbnail-image-class} {
-      bottom: prop(bottom);
-      top: prop(top);
+@include export(seed-thumbnail) {
+  &- {
+    @include prop-map($seed-thumbnail-alignments, (top, bottom)) {
+      #{$__seed-thumbnail-image-class} {
+        bottom: prop(bottom);
+        top: prop(top);
+      }
     }
   }
 }

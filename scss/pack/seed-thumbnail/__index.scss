@@ -1,8 +1,14 @@
 // Thumbnail pack for Seed
 
+// Dependencies
+@import "pack/seed-publish/_index";
+
 // Config
 @import "./config";
 // Functions
 @import "./functions/_index";
 // Components
 @import "./components/_index";
+
+// Publish
+@include publish(seed-thumbnail);

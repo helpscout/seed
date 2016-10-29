@@ -5,6 +5,7 @@ var files = pathfinder(
   require('seed-breakpoints'),
   require('seed-dash'),
   require('seed-props'),
+  require('seed-publish'),
   path.join(__dirname, 'scss')
 );
 
