@@ -1,10 +1,12 @@
 // Width :: Pack :: Seed
 
-// Packs
+// Dependencies
 @import "pack/seed-breakpoints/_index";
-
+@import "pack/seed-publish/_index";
 // Config
 @import "./config";
-
 // Utilities
 @import "./utilities/_index";
+
+// Publish
+@include publish(seed-width);
