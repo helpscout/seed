@@ -1,19 +1,24 @@
 // Modifers :: Sizes
 
-@each $class, $size in $seed-inline-sizes {
-  $component: #{&};
+// Dependencies
+@import "pack/seed-publish/_index";
 
-  &--#{$class} {
-    margin-bottom: -($size);
-    margin-right: -($size);
+@include export(seed-inline) {
+  @each $class, $size in $seed-inline-sizes {
+    $component: #{&};
 
-    &:last-child {
+    &--#{$class} {
       margin-bottom: -($size);
-    }
+      margin-right: -($size);
 
-    #{$component}__#{$seed-inline-item-namespace} {
-      margin-bottom: $size;
-      margin-right: $size;
+      &:last-child {
+        margin-bottom: -($size);
+      }
+
+      #{$component}__#{$seed-inline-item-namespace} {
+        margin-bottom: $size;
+        margin-right: $size;
+      }
     }
   }
 }
