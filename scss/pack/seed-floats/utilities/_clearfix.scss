@@ -1,10 +1,15 @@
 // Utility :: Clearfix
 // Source: http://cssmojo.com/latest_new_clearfix_so_far/
 
-.#{$seed-floats-clearfix-namespace} {
-  &::after {
-    content: " ";
-    clear: both;
-    display: table;
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-floats) {
+  .#{$seed-floats-clearfix-namespace} {
+    &::after {
+      content: " ";
+      clear: both;
+      display: table;
+    }
   }
 }

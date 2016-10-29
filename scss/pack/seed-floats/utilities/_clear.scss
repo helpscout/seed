@@ -1,9 +1,13 @@
 // Utilities :: Clear
 
-.#{$seed-floats-clear-namespace} {
-  @import "pack/seed-breakpoints/_index";
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
 
-  @include breakpoint-prop-map($seed-floats-clear, (prop)) {
-    clear: prop(prop) !important;
+@include export(seed-floats) {
+  .#{$seed-floats-clear-namespace} {
+    @include breakpoint-prop-map($seed-floats-clear, (prop)) {
+      clear: prop(prop) !important;
+    }
   }
 }
