@@ -1,29 +1,32 @@
 // Themes :: Background Color
 
 // Dependencies
+@import "pack/seed-publish/_index";
 @import "../config";
 
-.#{$seed-helpscout-theme-background-color-namespace} {
-  @each $color, $map in $seed-helpscout-theme-colors {
-    &-#{$color} {
-      @if type-of($map) == "map" {
-        @each $shade, $value in $map {
-          &-#{$shade} {
-            @if $seed-helpscout-theme-enable-important == true {
-              background-color: $value !important;
-            }
-            @else {
-              background-color: $value;
+@include export(seed-helpscout-theme) {
+  .#{$seed-helpscout-theme-background-color-namespace} {
+    @each $color, $map in $seed-helpscout-theme-colors {
+      &-#{$color} {
+        @if type-of($map) == "map" {
+          @each $shade, $value in $map {
+            &-#{$shade} {
+              @if $seed-helpscout-theme-enable-important == true {
+                background-color: $value !important;
+              }
+              @else {
+                background-color: $value;
+              }
             }
           }
         }
-      }
-      @else {
-        @if $seed-helpscout-theme-enable-important == true {
-          background-color: $map !important;
-        }
         @else {
-          background-color: $map;
+          @if $seed-helpscout-theme-enable-important == true {
+            background-color: $map !important;
+          }
+          @else {
+            background-color: $map;
+          }
         }
       }
     }
