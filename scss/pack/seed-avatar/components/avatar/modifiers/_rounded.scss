@@ -1,5 +1,10 @@
 // Modifiers :: Rounded
 
-&--rounded {
-  border-radius: 50%;
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-avatar) {
+  &--rounded {
+    border-radius: 50%;
+  }
 }

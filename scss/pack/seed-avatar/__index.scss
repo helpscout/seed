@@ -1,6 +1,12 @@
 // Avatar pack for Seed
 
+// Dependencies
+@import "pack/seed-publish/_index";
+
 // Configs
 @import "./config";
 // Components
 @import "./components/_index";
+
+// Publish
+@include publish(seed-avatar);

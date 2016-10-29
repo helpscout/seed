@@ -2,11 +2,14 @@
 
 // Dependencies
 @import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
 @import "../config";
 
-&- {
-  @include breakpoint-prop-map($seed-avatar-modifier-sizes, (size)) {
-    height: prop(size);
-    width: prop(size);
+@include export(seed-avatar) {
+  &- {
+    @include breakpoint-prop-map($seed-avatar-modifier-sizes, (size)) {
+      height: prop(size);
+      width: prop(size);
+    }
   }
 }
