@@ -3,34 +3,37 @@
 // Dependencies
 @import "../../config";
 @import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
 @import "pack/seed-states/config";
 
-& {
-  // Get the default color scheme
-  $__default-scheme: _get($seed-states-colors, warning);
+@include export(seed-alert) {
+  & {
+    // Get the default color scheme
+    $__default-scheme: _get($seed-states-colors, warning);
 
-  background-color: _get($__default-scheme, background-color);
-  box-shadow: inset $seed-alert-accent-width 0 0 0 _get($__default-scheme, border-color);
-  box-sizing: border-box;
-  color: _get($__default-scheme, color);
-  margin-bottom: $seed-alert-margin-bottom;
-  padding: $seed-alert-padding;
+    background-color: _get($__default-scheme, background-color);
+    box-shadow: inset $seed-alert-accent-width 0 0 0 _get($__default-scheme, border-color);
+    box-sizing: border-box;
+    color: _get($__default-scheme, color);
+    margin-bottom: $seed-alert-margin-bottom;
+    padding: $seed-alert-padding;
 
-  // Normalize direct child elements
-  > * {
-    // Quietly removes the top/bottom margin of the first/last child element
-    // This is to ensure the alert has desirable padding/spacing for the
-    // majority of use cases.
-    &:first-child {
-      margin-top: 0;
+    // Normalize direct child elements
+    > * {
+      // Quietly removes the top/bottom margin of the first/last child element
+      // This is to ensure the alert has desirable padding/spacing for the
+      // majority of use cases.
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 
-  // Normalize the color of text
-  .#{$seed-alert-text-namespace} {
-    color: inherit;
+    // Normalize the color of text
+    .#{$seed-alert-text-namespace} {
+      color: inherit;
+    }
   }
 }
