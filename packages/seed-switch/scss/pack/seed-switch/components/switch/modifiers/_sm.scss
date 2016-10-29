@@ -1,18 +1,22 @@
 // Modifiers :: sm
 
+// Dependencies
+@import "pack/seed-publish/_index";
 // Configs
 @import "../../switch-toggle/config";
 @import "../../switch-handle/config";
 
-&--sm {
-  .#{$seed-switch-toggle-namespace} {
-    height: $seed-switch-toggle-height-sm;
-    line-height: $seed-switch-toggle-height-sm;
-    width: $seed-switch-toggle-width-sm;
-  }
+@include export(seed-switch) {
+  &--sm {
+    .#{$seed-switch-toggle-namespace} {
+      height: $seed-switch-toggle-height-sm;
+      line-height: $seed-switch-toggle-height-sm;
+      width: $seed-switch-toggle-width-sm;
+    }
 
-  .#{$seed-switch-handle-namespace} {
-    height: $seed-switch-handle-size-sm;
-    width: $seed-switch-handle-size-sm;
+    .#{$seed-switch-handle-namespace} {
+      height: $seed-switch-handle-size-sm;
+      width: $seed-switch-handle-size-sm;
+    }
   }
 }

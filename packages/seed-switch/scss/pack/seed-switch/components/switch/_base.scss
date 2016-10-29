@@ -1,18 +1,23 @@
 // Component :: Switch :: Base
 
-& {
-  box-sizing: border-box;
-  display: inline-block;
-  margin: 0;
-  position: relative;
+// Dependencies
+@import "pack/seed-publish/_index";
 
-  > input {
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
+@include export(seed-switch) {
+  & {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+
+    > input {
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
   }
 }

@@ -1,31 +1,34 @@
 // Component :: Switch Handle :: Base
 
+// Dependencies
+@import "pack/seed-publish/_index";
 // Configs
 @import "../switch-toggle/config";
 @import "../switch-handle/config";
 
-& {
-  -webkit-transition: $seed-switch-handle-transition;
-  transition: $seed-switch-handle-transition;
-  background-color: $seed-switch-handle-background-color;
-  border-radius: $seed-switch-toggle-border-radius;
-  box-shadow: $seed-switch-handle-shadow;
-  box-sizing: border-box;
-  content: "";
-  height: $seed-switch-handle-size;
-  left: $seed-switch-toggle-offset-inner;
-  position: absolute;
-  top: $seed-switch-toggle-offset-inner;
-  width: $seed-switch-handle-size;
+@include export(seed-switch) {
+  & {
+    transition: $seed-switch-handle-transition;
+    background-color: $seed-switch-handle-background-color;
+    border-radius: $seed-switch-toggle-border-radius;
+    box-shadow: $seed-switch-handle-shadow;
+    box-sizing: border-box;
+    content: "";
+    height: $seed-switch-handle-size;
+    left: $seed-switch-toggle-offset-inner;
+    position: absolute;
+    top: $seed-switch-toggle-offset-inner;
+    width: $seed-switch-handle-size;
 
-  // :hover state of .c-switch
-  @at-root .#{$seed-switch-namespace}:hover & {
-    box-shadow: $seed-switch-handle-shadow-active;
-  }
+    // :hover state of .c-switch
+    @at-root .#{$seed-switch-namespace}:hover & {
+      box-shadow: $seed-switch-handle-shadow-active;
+    }
 
-  // :active state of .c-switch
-  @at-root .#{$seed-switch-namespace}:active & {
-    box-shadow: $seed-switch-handle-shadow-active;
-    width: $seed-switch-handle-width-active;
+    // :active state of .c-switch
+    @at-root .#{$seed-switch-namespace}:active & {
+      box-shadow: $seed-switch-handle-shadow-active;
+      width: $seed-switch-handle-width-active;
+    }
   }
 }

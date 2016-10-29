@@ -1,18 +1,22 @@
 // Modifiers :: xs
 
+// Dependencies
+@import "pack/seed-publish/_index";
 // Configs
 @import "../../switch-toggle/config";
 @import "../../switch-handle/config";
 
-&--xs {
-  .#{$seed-switch-toggle-namespace} {
-    height: $seed-switch-toggle-height-xs;
-    line-height: $seed-switch-toggle-height-xs;
-    width: $seed-switch-toggle-width-xs;
-  }
+@include export(seed-switch) {
+  &--xs {
+    .#{$seed-switch-toggle-namespace} {
+      height: $seed-switch-toggle-height-xs;
+      line-height: $seed-switch-toggle-height-xs;
+      width: $seed-switch-toggle-width-xs;
+    }
 
-  .#{$seed-switch-handle-namespace} {
-    height: $seed-switch-handle-size-xs;
-    width: $seed-switch-handle-size-xs;
+    .#{$seed-switch-handle-namespace} {
+      height: $seed-switch-handle-size-xs;
+      width: $seed-switch-handle-size-xs;
+    }
   }
 }

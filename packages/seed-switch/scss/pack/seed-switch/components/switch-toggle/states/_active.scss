@@ -1,24 +1,28 @@
 // States :: Active
 
+// Dependencies
+@import "pack/seed-publish/_index";
 // Configs
 @import "../config";
 @import "../../switch/config";
 @import "../../switch-handle/config";
 
-@if $seed-switch-active-component == "switch-toggle" {
-  @at-root {
-    .#{$seed-switch-namespace} input:checked + &,
-    &.#{$seed-switch-active-namespace} {
-      background-color: $seed-switch-toggle-background-active;
-      border-color: $seed-switch-toggle-background-active;
-      color: $seed-switch-toggle-text-color-active;
-      text-align: left;
-    }
+@include export(seed-switch) {
+  @if $seed-switch-active-component == "switch-toggle" {
+    @at-root {
+      .#{$seed-switch-namespace} input:checked + &,
+      &.#{$seed-switch-active-namespace} {
+        background-color: $seed-switch-toggle-background-active;
+        border-color: $seed-switch-toggle-background-active;
+        color: $seed-switch-toggle-text-color-active;
+        text-align: left;
+      }
 
-    .#{$seed-switch-namespace} input:checked + .#{$seed-switch-handle-namespace},
-    .#{$seed-switch-toggle-active-handle-namespace} {
-      left: inherit;
-      right: $seed-switch-toggle-offset-inner;
+      .#{$seed-switch-namespace} input:checked + .#{$seed-switch-handle-namespace},
+      .#{$seed-switch-toggle-active-handle-namespace} {
+        left: inherit;
+        right: $seed-switch-toggle-offset-inner;
+      }
     }
   }
 }

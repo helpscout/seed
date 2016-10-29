@@ -1,14 +1,18 @@
 // States :: Focused
 
+// Dependencies
+@import "pack/seed-publish/_index";
 // Configs
 @import "../config";
 @import "../../switch-toggle/config";
 
-@if $seed-switch-active-component == "switch" {
-  & > input:focus +,
-  &.#{$seed-switch-focused-namespace} {
-    .#{$seed-switch-toggle-namespace} {
-      box-shadow: $seed-switch-toggle-shadow-focus;
+@include export(seed-switch) {
+  @if $seed-switch-active-component == "switch" {
+    & > input:focus +,
+    &.#{$seed-switch-focused-namespace} {
+      .#{$seed-switch-toggle-namespace} {
+        box-shadow: $seed-switch-toggle-shadow-focus;
+      }
     }
   }
 }

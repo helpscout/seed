@@ -1,25 +1,29 @@
 // Component :: Switch Toggle :: Base
 
-& {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-transition: $seed-switch-toggle-transition;
-  transition: $seed-switch-toggle-transition;
-  background-color: $seed-switch-toggle-background;
-  border: 1px solid;
-  border-color: $seed-switch-toggle-background;
-  border-radius: $seed-switch-toggle-border-radius;
-  box-shadow: $seed-switch-toggle-shadow;
-  box-sizing: border-box;
-  color: $seed-switch-toggle-text-color;
-  cursor: pointer;
-  display: inline-block;
-  font-size: $seed-switch-toggle-font-size;
-  height: $seed-switch-toggle-height;
-  line-height: $seed-switch-toggle-height;
-  padding: $seed-switch-toggle-padding;
-  position: relative;
-  text-align: right;
-  width: $seed-switch-toggle-width;
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-switch) {
+  & {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: $seed-switch-toggle-transition;
+    background-color: $seed-switch-toggle-background;
+    border: 1px solid;
+    border-color: $seed-switch-toggle-background;
+    border-radius: $seed-switch-toggle-border-radius;
+    box-shadow: $seed-switch-toggle-shadow;
+    box-sizing: border-box;
+    color: $seed-switch-toggle-text-color;
+    cursor: pointer;
+    display: inline-block;
+    font-size: $seed-switch-toggle-font-size;
+    height: $seed-switch-toggle-height;
+    line-height: $seed-switch-toggle-height;
+    padding: $seed-switch-toggle-padding;
+    position: relative;
+    text-align: right;
+    width: $seed-switch-toggle-width;
+  }
 }
