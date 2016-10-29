@@ -1,19 +1,22 @@
 // Badge :: Base
 
 // Dependencies
+@import "pack/seed-publish/_index";
 @import "../../config";
 
-& {
-  box-sizing: border-box;
-  background-color: $seed-badge-background-color;
-  border-radius: $seed-badge-border-radius;
-  color: $seed-badge-text-color;
-  display: inline-block;
-  font-size: $seed-badge-font-size;
-  font-style: normal;
-  font-weight: $seed-badge-font-weight;
-  line-height: 1;
-  padding: $seed-badge-padding;
-  text-transform: $seed-badge-text-transform;
-  vertical-align: middle;
+@include export(seed-badge) {
+  & {
+    box-sizing: border-box;
+    background-color: $seed-badge-background-color;
+    border-radius: $seed-badge-border-radius;
+    color: $seed-badge-text-color;
+    display: inline-block;
+    font-size: $seed-badge-font-size;
+    font-style: normal;
+    font-weight: $seed-badge-font-weight;
+    line-height: 1;
+    padding: $seed-badge-padding;
+    text-transform: $seed-badge-text-transform;
+    vertical-align: middle;
+  }
 }
