@@ -12,7 +12,7 @@ Minified | Gzipped
 
 ## Install
 ```
-npm install seed-helpscout-theme --save-dev
+npm install seed-helpscout-theme --save
 ```
 
 
