@@ -1,6 +1,6 @@
 # seed-exclude [![npm version](https://badge.fury.io/js/seed-exclude.svg)](https://badge.fury.io/js/seed-exclude)
 
-Exclude mixin that ignores modules published with seed-publish
+Mixin that excludes modules published with seed-publish
 
 ## Install
 ```
@@ -33,12 +33,4 @@ Once that is setup, simply `@import` *seed-exclude* as needed in your `.scss` fi
 ```scss
 // Packs
 @import "pack/seed-exclude/_index";
-```
-
-## Options
-
-The following variables can be found in `_config.scss`
-
-```scss
-seed-exclude config options
 ```

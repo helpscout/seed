@@ -1,0 +1,166 @@
+// Test :: exclude
+
+@import "true";
+@import "../../../../../node_modules/seed-publish/scss/pack/seed-publish/mixins/export";
+@import "../../../../../node_modules/seed-publish/scss/pack/seed-publish/mixins/publish";
+@import "../exclude";
+
+@include test-module("Mixin: exclude") {
+
+  @include test("should prevent exports of pre-published content") {
+    @include assert("outputs") {
+      @include output {
+        background: pink;
+
+        $key: test-001;
+        @include exclude($key);
+
+        // Mock export + publish
+        @include export($key) {
+          margin: 0;
+        }
+        @include publish($key);
+      }
+      @include expect {
+        background: pink;
+      }
+    }
+  }
+
+  @include test("should accept a list as an argument") {
+    @include assert("outputs") {
+      @include output {
+        background: pink;
+
+        $key: test-002;
+        $key2: _test-a;
+        @include exclude(($key, $key2));
+
+        // Mock export + publish
+        @include export($key) {
+          margin: 0;
+        }
+        @include publish($key);
+
+        // Mock export + publish
+        @include export($key2) {
+          margin: 0;
+        }
+        @include publish($key2);
+      }
+      @include expect {
+        background: pink;
+      }
+    }
+  }
+
+  @include test("should accept a nested list as an argument") {
+    @include assert("outputs") {
+      @include output {
+        background: pink;
+
+        $key: test-002a;
+        $key2: test-002b;
+        $key3: test-002b;
+        @include exclude(($key, ($key2, $key3)));
+
+        // Mock export + publish
+        @include export($key) {
+          margin: 0;
+        }
+        @include publish($key);
+        // Mock export + publish
+        @include export($key2) {
+          margin: 0;
+        }
+        @include publish($key2);
+        // Mock export + publish
+        @include export($key3) {
+          margin: 0;
+        }
+        @include publish($key3);
+      }
+      @include expect {
+        background: pink;
+      }
+    }
+  }
+
+  @include test("should accept a mixture of strings and lists as an argument") {
+    @include assert("outputs") {
+      @include output {
+        background: pink;
+
+        $key: test-002ab;
+        $key2: test-002bb;
+        $key3: test-002cb;
+        @include exclude($key, ($key2, $key3));
+
+        // Mock export + publish
+        @include export($key) {
+          margin: 0;
+        }
+        @include publish($key);
+        // Mock export + publish
+        @include export($key2) {
+          margin: 0;
+        }
+        @include publish($key2);
+        // Mock export + publish
+        @include export($key3) {
+          margin: 0;
+        }
+        @include publish($key3);
+      }
+      @include expect {
+        background: pink;
+      }
+    }
+  }
+
+  @include test("should allow for mulitple excludes") {
+    @include assert("outputs") {
+      @include output {
+
+        $key: test-003;
+        @include exclude($key);
+        background: pink;
+        @include exclude($key);
+
+        // Mock export + publish
+        @include export($key) {
+          margin: 0;
+        }
+        @include publish($key);
+      }
+      @include expect {
+        background: pink;
+      }
+    }
+  }
+
+  @include test("should not affect published keys") {
+    @include assert("outputs") {
+      @include output {
+
+        $key: test-004;
+        @include exclude($key);
+        background: pink;
+
+        // Mock export + publish
+        @include export($key) {
+          margin: 0;
+        }
+        @include publish($key);
+        @include exclude($key);
+        // Re-export
+        @include export($key) {
+          margin: 0;
+        }
+      }
+      @include expect {
+        background: pink;
+      }
+    }
+  }
+}
