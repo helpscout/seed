@@ -1,13 +1,16 @@
 // Utilities :: Z-Index
 
 // Dependencies
+@import "pack/seed-publish/_index";
 @import "../config";
 
-.#{$seed-zi-namespace} {
-  $this: &;
-  @each $z, $index in $seed-zi-index {
-    @at-root #{$this}-#{$z} {
-      z-index: #{$index} !important;
+@include export(seed-zi) {
+  .#{$seed-zi-namespace} {
+    $this: &;
+    @each $z, $index in $seed-zi-index {
+      @at-root #{$this}-#{$z} {
+        z-index: #{$index} !important;
+      }
     }
   }
 }
