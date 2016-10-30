@@ -1,5 +1,5 @@
 /**
- * seed-typography v0.4.6 (https://github.com/helpscout/seed-typography)
+ * seed-typography v0.4.7 (https://github.com/helpscout/seed-typography)
  * Main typography pack for Seed
  * Licensed under MIT
  */
@@ -43,16 +43,6 @@
   .tx-center\@lg {
     text-align: center !important; }
   .tx-right\@lg {
-    text-align: right !important; } }
-
-@media (min-width: 1200px) {
-  .tx-justify\@xl {
-    text-align: justify !important; }
-  .tx-left\@xl {
-    text-align: left !important; }
-  .tx-center\@xl {
-    text-align: center !important; }
-  .tx-right\@xl {
     text-align: right !important; } }
 
 .tx-break-all {
@@ -139,20 +129,6 @@
   .tx-h6\@lg {
     font-size: 0.875rem !important; } }
 
-@media (min-width: 1200px) {
-  .tx-h1\@xl {
-    font-size: 3rem !important; }
-  .tx-h2\@xl {
-    font-size: 2.25rem !important; }
-  .tx-h3\@xl {
-    font-size: 1.5rem !important; }
-  .tx-h4\@xl {
-    font-size: 1.25rem !important; }
-  .tx-h5\@xl {
-    font-size: 1rem !important; }
-  .tx-h6\@xl {
-    font-size: 0.875rem !important; } }
-
 .tx-headline-1 {
   font-size: 5rem !important; }
 
@@ -193,16 +169,6 @@
   .tx-headline-3\@lg {
     font-size: 4rem !important; }
   .tx-headline-4\@lg {
-    font-size: 3.5rem !important; } }
-
-@media (min-width: 1200px) {
-  .tx-headline-1\@xl {
-    font-size: 5rem !important; }
-  .tx-headline-2\@xl {
-    font-size: 4.5rem !important; }
-  .tx-headline-3\@xl {
-    font-size: 4rem !important; }
-  .tx-headline-4\@xl {
     font-size: 3.5rem !important; } }
 
 .tx-lh-heading {
@@ -254,18 +220,6 @@
   .tx-lh-reset\@lg {
     line-height: 1 !important; }
   .tx-lh-none\@lg {
-    line-height: 0 !important; } }
-
-@media (min-width: 1200px) {
-  .tx-lh-heading\@xl {
-    line-height: 1.2 !important; }
-  .tx-lh-body\@xl {
-    line-height: 1.5 !important; }
-  .tx-lh-copy\@xl {
-    line-height: 1.6 !important; }
-  .tx-lh-reset\@xl {
-    line-height: 1 !important; }
-  .tx-lh-none\@xl {
     line-height: 0 !important; } }
 
 .tx-lead {
@@ -326,20 +280,6 @@
   .tx-sm\@lg {
     font-size: 0.92rem !important; }
   .tx-xs\@lg {
-    font-size: 0.78rem !important; } }
-
-@media (min-width: 1200px) {
-  .tx-lead\@xl {
-    font-size: 1.25rem !important; }
-  .tx-xl\@xl {
-    font-size: 1.28rem !important; }
-  .tx-lg\@xl {
-    font-size: 1.14rem !important; }
-  .tx-md\@xl {
-    font-size: 1rem !important; }
-  .tx-sm\@xl {
-    font-size: 0.92rem !important; }
-  .tx-xs\@xl {
     font-size: 0.78rem !important; } }
 
 .tx-smooth {
