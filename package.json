@@ -22,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/helpscout/seed-link/issues"
   },
-  "license": "MIT",
   "keywords": [
     "bem",
     "css",
@@ -42,5 +41,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "seed-publish": "0.0.4"
   }
 }
