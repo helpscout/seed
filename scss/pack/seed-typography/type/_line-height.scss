@@ -1,12 +1,17 @@
 // Type :: Line Height
 
-.#{$seed-typography-line-height-namespace} {
-  @include breakpoint-prop-map($seed-typography-line-height, (size)) {
-    @if $seed-typography-use-important {
-      line-height: prop(size) !important;
-    }
-    @else {
-      line-height: prop(size);
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-typography) {
+  .#{$seed-typography-line-height-namespace} {
+    @include breakpoint-prop-map($seed-typography-line-height, (size)) {
+      @if $seed-typography-use-important {
+        line-height: prop(size) !important;
+      }
+      @else {
+        line-height: prop(size);
+      }
     }
   }
 }

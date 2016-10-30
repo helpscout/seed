@@ -1,12 +1,17 @@
 // Type :: Size
 
-.#{$seed-typography-size-namespace} {
-  @include breakpoint-prop-map($seed-typography-sizes, (font-size)) {
-    @if $seed-typography-use-important {
-      font-size: prop(font-size) !important;
-    }
-    @else {
-      font-size: prop(font-size);
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-typography) {
+  .#{$seed-typography-size-namespace} {
+    @include breakpoint-prop-map($seed-typography-sizes, (font-size)) {
+      @if $seed-typography-use-important {
+        font-size: prop(font-size) !important;
+      }
+      @else {
+        font-size: prop(font-size);
+      }
     }
   }
 }

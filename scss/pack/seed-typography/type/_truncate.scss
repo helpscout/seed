@@ -1,10 +1,15 @@
 // Text :: Truncate
 
-.#{$seed-typography-truncate-namespace} {
-  @include text-truncate;
-}
+// Dependencies
+@import "pack/seed-publish/_index";
 
-.#{$seed-typography-truncate-namespace}-block {
-  @include text-truncate;
-  display: block;
+@include export(seed-typography) {
+  .#{$seed-typography-truncate-namespace} {
+    @include text-truncate;
+  }
+
+  .#{$seed-typography-truncate-namespace}-block {
+    @include text-truncate;
+    display: block;
+  }
 }

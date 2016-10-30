@@ -1,12 +1,17 @@
 // Type :: Headline
 
-.#{$seed-typography-headline-namespace} {
-  @include breakpoint-prop-map($seed-typography-headline-sizes, (font-size)) {
-    @if $seed-typography-use-important {
-      font-size: prop(font-size) !important;
-    }
-    @else {
-      font-size: prop(font-size);
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-typography) {
+  .#{$seed-typography-headline-namespace} {
+    @include breakpoint-prop-map($seed-typography-headline-sizes, (font-size)) {
+      @if $seed-typography-use-important {
+        font-size: prop(font-size) !important;
+      }
+      @else {
+        font-size: prop(font-size);
+      }
     }
   }
 }

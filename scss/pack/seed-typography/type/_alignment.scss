@@ -1,12 +1,17 @@
 // Type :: Alignment
 
-.#{$seed-typography-alignment-namespace} {
-  @include breakpoint-prop-map($seed-typography-alignment, (prop)) {
-    @if $seed-typography-use-important {
-      text-align: prop(prop) !important;
-    }
-    @else {
-      text-align: prop(prop);
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-typography) {
+  .#{$seed-typography-alignment-namespace} {
+    @include breakpoint-prop-map($seed-typography-alignment, (prop)) {
+      @if $seed-typography-use-important {
+        text-align: prop(prop) !important;
+      }
+      @else {
+        text-align: prop(prop);
+      }
     }
   }
 }

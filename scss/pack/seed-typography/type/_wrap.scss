@@ -1,12 +1,17 @@
 // Type :: Wrap
 
-.#{$seed-typography-wrap-namespace} {
-  @include prop-map($seed-typography-wrap, (prop)) {
-    @if $seed-typography-use-important {
-      word-wrap: prop(prop) !important;
-    }
-    @else {
-      word-wrap: prop(prop);
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-typography) {
+  .#{$seed-typography-wrap-namespace} {
+    @include prop-map($seed-typography-wrap, (prop)) {
+      @if $seed-typography-use-important {
+        word-wrap: prop(prop) !important;
+      }
+      @else {
+        word-wrap: prop(prop);
+      }
     }
   }
 }

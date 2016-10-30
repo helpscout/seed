@@ -1,13 +1,15 @@
 // Tyography pack for Seed
 
-// Packs
+// Dependencies
 @import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
 
 // Config
 @import "./config";
-
 // Mixins
 @import "./mixins/_index";
-
 // Type
 @import "./type/_index";
+
+// Publish
+@include publish(seed-typography);
