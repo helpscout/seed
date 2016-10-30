@@ -1,10 +1,12 @@
 // Visibility pack for Seed
 
-// Packs
-@import "pack/seed-breakpoints/_index";
+// Dependencies
+@import "pack/seed-publish/_index";
 
 // Config
 @import "./config";
-
 // Utilities
 @import "./utilities/_index";
+
+// Publish
+@include publish(seed-visibility);

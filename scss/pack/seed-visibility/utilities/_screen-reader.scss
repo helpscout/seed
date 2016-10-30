@@ -1,16 +1,23 @@
 // Utilities :: Screen Reader
 
-.#{$seed-visibility-screen-reader-namespace} {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
 
-  + * {
-    margin-top: 0;
+@include export(seed-visibility) {
+  .#{$seed-visibility-screen-reader-namespace} {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    + * {
+      margin-top: 0;
+    }
   }
 }

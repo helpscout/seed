@@ -1,7 +1,14 @@
 // Utilities :: Visible
 
-.#{$seed-visibility-visible-namespace} {
-  @include breakpoint-all {
-    visibility: visible !important;
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-visibility) {
+  .#{$seed-visibility-visible-namespace} {
+    @include breakpoint-all {
+      visibility: visible !important;
+    }
   }
 }
