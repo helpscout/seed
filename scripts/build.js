@@ -8,7 +8,8 @@ var sass = require('node-sass');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  require('seed-props')
+  require('seed-props'),
+  require('seed-publish')
 );
 
 // Default .css compile
