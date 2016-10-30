@@ -1,6 +1,6 @@
 {
   "name": "seed-zi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Z-index utility pack for Seed",
   "main": "index.js",
   "scripts": {
