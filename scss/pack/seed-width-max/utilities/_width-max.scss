@@ -1,7 +1,12 @@
 // Utilities :: Width max
 
-.#{$seed-width-max-namespace} {
-  @include breakpoint-prop-map($seed-widths, (prop)) {
-    max-width: prop(prop) !important;
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-width-max) {
+  .#{$seed-width-max-namespace} {
+    @include breakpoint-prop-map($seed-widths, (prop)) {
+      max-width: prop(prop) !important;
+    }
   }
 }
