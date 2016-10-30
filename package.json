@@ -48,6 +48,6 @@
     "seed-cli": "^0.2.6"
   },
   "dependencies": {
-    "seed-publish": "0.0.3"
+    "seed-publish": "0.0.4"
   }
 }
