@@ -7,6 +7,10 @@ Mixin that excludes modules published with seed-publish
 npm install seed-exclude --save
 ```
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-exclude/)**.
+
 
 ## Basic Usage
 
