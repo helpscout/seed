@@ -1,9 +1,12 @@
 'use strict';
 
+var findRoot = require('find-root');
 var flattenDeep = require('lodash.flattendeep');
 var pathfinder = require('sass-pathfinder');
 var packfinder = require('seed-packfinder');
 var uniqBy = require('lodash.uniqby');
+
+var root = findRoot(__dirname);
 
 var getPackName = function(path) {
   if (!path || typeof(path) != 'string') {
@@ -14,16 +17,14 @@ var getPackName = function(path) {
 };
 
 var getPackPath = function(pack) {
+  var pkgRoot = root.split('/node_modules')[0];
   if (!pack || typeof(pack) != 'string') {
     return false;
   }
-  return __dirname + '/node_modules/' + pack + '/scss' ;
+  return pkgRoot + '/node_modules/' + pack + '/scss' ;
 };
 
 var resolveImportDeps = function(packs) {
-  var packDirLength = 3;
-  var relativePackDirLength = __dirname.split('/') + packDirLength;
-
   var packs = packs.map(function(pack) {
     var packName = getPackName(pack);
     var packPath = getPackPath(packName);
