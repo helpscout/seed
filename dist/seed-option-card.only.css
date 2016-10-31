@@ -26,12 +26,12 @@
     z-index: 2; }
   .c-option-card__selector:focus:checked + .c-card {
     z-index: 3; }
-  .o-control-group > :first-child .c-card {
+  .o-control-group > .c-option-card:first-child .c-card {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
-  .o-control-group > :not(:first-child):not(:last-child) .c-card {
+  .o-control-group > .c-option-card:not(:first-child):not(:last-child) .c-card {
     border-radius: 0; }
-  .o-control-group > :last-child .c-card {
+  .o-control-group > .c-option-card:last-child .c-card {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
 

@@ -44,15 +44,15 @@
       }
 
       // Control group
-      @at-root .#{$seed-control-group-namespace} {
-        > :first-child #{$this} {
+      @at-root .#{$seed-control-group-namespace} > .#{$seed-option-card-namespace} {
+        &:first-child #{$this} {
           border-bottom-right-radius: 0;
           border-top-right-radius: 0;
         }
-        > :not(:first-child):not(:last-child) #{$this} {
+        &:not(:first-child):not(:last-child) #{$this} {
           border-radius: 0;
         }
-        > :last-child #{$this} {
+        &:last-child #{$this} {
           border-bottom-left-radius: 0;
           border-top-left-radius: 0;
         }
