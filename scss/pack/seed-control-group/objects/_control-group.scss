@@ -54,12 +54,11 @@
         z-index: 2;
       }
     }
-  }
-
-  // Modifiers
-  &--block {
-    > * {
-      flex: 1;
+    // Modifiers
+    &--block {
+      > * {
+        flex: 1;
+      }
     }
   }
 }
