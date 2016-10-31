@@ -43,9 +43,12 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "find-root": "^1.0.0",
     "lodash.countby": "^4.6.0",
     "mocha": "^3.0.2",
+    "seed-breakpoints": "^0.4.0",
     "seed-grid": "^0.3.5",
-    "seed-grid-lite": "0.0.2"
+    "seed-grid-lite": "0.0.2",
+    "seed-props": "^0.3.0"
   }
 }

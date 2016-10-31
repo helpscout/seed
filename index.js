@@ -5,6 +5,38 @@ var pathfinder = require('sass-pathfinder');
 var packfinder = require('seed-packfinder');
 var uniqBy = require('lodash.uniqby');
 
+var getPackName = function(path) {
+  if (!path || typeof(path) != 'string') {
+    return false;
+  }
+  var split = path.split('/');
+  return split[split.length - 2];
+};
+
+var getPackPath = function(pack) {
+  if (!pack || typeof(pack) != 'string') {
+    return false;
+  }
+  return __dirname + '/node_modules/' + pack + '/scss' ;
+};
+
+var resolveImportDeps = function(packs) {
+  var packDirLength = 3;
+  var relativePackDirLength = __dirname.split('/') + packDirLength;
+
+  var packs = packs.map(function(pack) {
+    var packName = getPackName(pack);
+    var packPath = getPackPath(packName);
+    if (packs.indexOf(packPath) >= 0) {
+      return packPath;
+    }
+    else {
+      return pack;
+    }
+  });
+  return packs;
+};
+
 var resolvePacks = function(packs) {
   var packList;
   packs ? packs : [];
@@ -12,6 +44,8 @@ var resolvePacks = function(packs) {
   if (packs.length) {
     // Flatten the array to make it mapable
     packs = flattenDeep(packs);
+    // Adjust pack list to respect project's deps
+    packs = resolveImportDeps(packs);
 
     packList = packs.map(function(pack) {
       // Get the second last string within the path
