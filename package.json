@@ -41,7 +41,8 @@
     "seed-dash": "0.0.1",
     "seed-grid": "^0.3.9",
     "seed-props": "^0.3.0",
-    "seed-reset": "^0.1.1"
+    "seed-reset": "^0.1.1",
+    "seed-visibility": "^0.2.4"
   },
   "dependencies": {
     "find-root": "^1.0.0",
