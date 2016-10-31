@@ -84,7 +84,8 @@ var prioritizeResetPacks = function(packs) {
   var resetPacks = getResetPacks(packs);
   if (resetPacks.length) {
     resetPacks.forEach(function(pack) {
-      packs.unshift(packs.pop(pack));
+      packs.pop(pack);
+      packs.unshift(pack);
     });
   }
   return packs;
