@@ -73,10 +73,31 @@ var getPackFile = function(filePath) {
 };
 
 
+var getResetPacks = function(packs) {
+  return packs.filter(function(pack) {
+    return pack.indexOf('reset') >= 0;
+  });
+};
+
+
+var prioritizeResetPacks = function(packs) {
+  var resetPacks = getResetPacks(packs);
+  if (resetPacks.length) {
+    resetPacks.forEach(function(pack) {
+      packs.unshift(packs.pop(pack));
+    });
+  }
+  return packs;
+};
+
+
 var addPacks = function(packs, file) {
   if (!packs || !file) {
     return false;
   }
+
+  // Prioritize reset packs
+  packs = prioritizeResetPacks(packs);
 
   var template = '// Seed packs\n';
   template += '// Automagically added by seed-packer <3\n\n';
