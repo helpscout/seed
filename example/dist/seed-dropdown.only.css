@@ -1,5 +1,5 @@
 /**
- * seed-dropdown v0.0.2 (https://github.com/helpscout/seed-dropdown/)
+ * seed-dropdown v0.0.3 (https://github.com/helpscout/seed-dropdown/)
  * Dropdown component pack for Seed
  * Licensed under MIT
  */
@@ -128,7 +128,7 @@
     display: inline-block;
     height: 0;
     margin-left: 6px;
-    margin-top: -4px;
+    margin-top: -2px;
     vertical-align: middle;
     width: 0; }
     .c-dropdown--up .c-dropdown__toggle > c-caret,

@@ -26,7 +26,7 @@
         display: inline-block;
         height: 0;
         margin-left: $seed-dropdown-toggle-caret-margin-left;
-        margin-top: -($seed-dropdown-toggle-caret-size);
+        margin-top: -(ceil($seed-dropdown-toggle-caret-size / 2));
         vertical-align: middle;
         width: 0;
 
