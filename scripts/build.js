@@ -9,8 +9,10 @@ var sass = require('node-sass');
 var file = pkg.name;
 var includePaths = pathfinder(
   require('seed-breakpoints'),
+  require('seed-border'),
   require('seed-button'),
   require('seed-card'),
+  require('seed-control-group'),
   require('seed-dash'),
   require('seed-family'),
   require('seed-list'),

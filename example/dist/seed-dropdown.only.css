@@ -1,5 +1,5 @@
 /**
- * seed-dropdown v0.0.3 (https://github.com/helpscout/seed-dropdown/)
+ * seed-dropdown v0.0.4 (https://github.com/helpscout/seed-dropdown/)
  * Dropdown component pack for Seed
  * Licensed under MIT
  */
@@ -158,6 +158,20 @@
       .c-dropdown--down\@lg .c-dropdown__toggle > c-caret,
       .c-dropdown--down\@lg .c-dropdown__toggle::after {
         transform: rotate(0deg); } }
+  .o-control-group > .c-dropdown:first-child .c-dropdown__toggle {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+  .o-control-group > .c-dropdown:last-child .c-dropdown__toggle {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px; }
+  .o-control-group > .c-dropdown:not(:first-child):not(:last-child) .c-dropdown__toggle {
+    border-radius: 0; }
+  .o-control-group > .c-dropdown .c-dropdown__toggle:active, .o-control-group > .c-dropdown .c-dropdown__toggle:focus {
+    z-index: 2; }
   .c-dropdown.open .c-dropdown__toggle::before {
     background-color: rgba(0, 0, 0, 0.1);
     bottom: 0;

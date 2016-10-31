@@ -1,6 +1,8 @@
 // Components :: Dropdown Toggle
 
 // Dependencies
+@import "pack/seed-border/config";
+@import "pack/seed-control-group/config";
 @import "pack/seed-family/_index";
 @import "pack/seed-publish/_index";
 @import "pack/seed-this/_index";
@@ -38,6 +40,36 @@
               transform: prop(transform);
             }
           }
+        }
+      }
+    }
+
+    // Modifiers
+    // Control group
+    @at-root .#{$seed-control-group-namespace} > .#{$seed-dropdown-namespace} {
+      // Automagical stuff happens below!
+      &:first-child #{$this} {
+        border-bottom-left-radius: $seed-border-radius;
+        border-top-left-radius: $seed-border-radius;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      &:last-child #{$this} {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: $seed-border-radius;
+        border-top-right-radius: $seed-border-radius;
+      }
+
+      &:not(:first-child):not(:last-child) #{$this} {
+        border-radius: 0;
+      }
+
+      #{$this} {
+        &:active,
+        &:focus {
+          z-index: 2;
         }
       }
     }
