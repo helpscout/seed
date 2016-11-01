@@ -14,7 +14,7 @@ $seed-button-success-namespace: "is-#{$seed-states-success-namespace}" !default;
 $seed-button-warning-namespace: "is-#{$seed-states-warning-namespace}" !default;
 
 // Animation
-$seed-button-transition: all 0.1s ease !default;
+$seed-button-transition: none !default;
 
 // Border
 $seed-button-border-radius: $seed-border-radius !default;
