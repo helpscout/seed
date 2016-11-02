@@ -95,6 +95,9 @@
       height: 102%;
       width: auto; } }
 
+.c-thumbnail--rounded {
+  border-radius: 4px; }
+
 .c-thumbnail__image, .c-thumbnail > img {
   bottom: -100%;
   height: auto;

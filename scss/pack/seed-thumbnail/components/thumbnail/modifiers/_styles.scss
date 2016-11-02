@@ -1,0 +1,11 @@
+// Modifiers :: Styles
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../../../config";
+
+@include export(seed-thumbnail) {
+  &--rounded {
+    border-radius: $seed-thumbnail-border-radius-rounded;
+  }
+}

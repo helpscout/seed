@@ -61,6 +61,7 @@ $__seed-thumbnail-image-class: ".#{$seed-thumbnail-image-namespace}";
 
 // Borders
 $seed-thumbnail-border-radius: 0 !default;
+$seed-thumbnail-border-radius-rounded: 4px !default;
 
 // Colors
 $seed-thumbnail-background-color: #eee !default;
