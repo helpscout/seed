@@ -10,6 +10,11 @@ npm install seed-popover --save
 ```
 
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-popover/)**.
+
+
 ## Basic Usage
 
 ### SCSS
