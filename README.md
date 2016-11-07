@@ -9,6 +9,12 @@ JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
 npm install seed-dropdown --save
 ```
 
+
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-dropdown/)**.
+
+
 ## Basic Usage
 
 ### SCSS
