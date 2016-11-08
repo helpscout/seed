@@ -257,3 +257,7 @@
     .c-button--link.is-warning:disabled, .c-button--link.is-warning.is-disabled {
       background-color: transparent;
       border-color: transparent; }
+
+.c-button--block {
+  display: block;
+  width: 100%; }

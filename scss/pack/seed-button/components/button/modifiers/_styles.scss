@@ -11,4 +11,9 @@
       @include generate-button-styles($config);
     }
   }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
 }
