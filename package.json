@@ -1,6 +1,6 @@
 {
   "name": "seed-alert",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Alert component pack for Seed",
   "main": "index.js",
   "scripts": {
