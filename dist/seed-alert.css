@@ -10,10 +10,10 @@
   color: #b37100;
   margin-bottom: 16px;
   padding: 12px 16px 12px 20px; }
-  .c-alert a {
+  .c-alert a:not(.c-button) {
     color: inherit;
     text-decoration: underline; }
-    .c-alert a:hover {
+    .c-alert a:not(.c-button):hover {
       color: inherit; }
   .c-alert > *:first-child {
     margin-top: 0; }
