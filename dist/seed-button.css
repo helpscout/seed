@@ -168,7 +168,8 @@
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #3197D6; }
   .c-button--link:active {
     background-color: transparent;
     border-color: transparent;

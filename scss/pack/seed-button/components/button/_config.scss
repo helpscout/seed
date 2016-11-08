@@ -119,7 +119,10 @@ $seed-button-styles: (
       active: none,
       focus: none
     ),
-    text: #3197D6,
+    text: (
+      default: #3197D6,
+      hover: #3197D6
+    ),
     text-decoration: (
       default: none,
       hover: underline,
