@@ -57,6 +57,7 @@
     &:hover {
       background-color: _get($seed-button-color, background, hover);
       border-color: _get($seed-button-color, border, hover);
+      color: _get($seed-button-color, text);
       text-decoration: none;
     }
 

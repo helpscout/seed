@@ -17,6 +17,7 @@
       &:hover {
         background-color: _get($map, background, hover);
         border-color: _get($map, border, hover);
+        color: _get($map, text);
       }
 
       &:active {

@@ -42,6 +42,7 @@
   .c-button:hover {
     background-color: #f9f9f9;
     border-color: #ddd;
+    color: #2b2b2b;
     text-decoration: none; }
   .c-button:active {
     background-color: #f4f4f4;
@@ -70,7 +71,8 @@
   color: #fff; }
   .c-button.is-error:hover {
     background-color: #de221b;
-    border-color: #cc1f19; }
+    border-color: #cc1f19;
+    color: #fff; }
   .c-button.is-error:active {
     background-color: #cc1f19;
     border-color: #cc1f19; }
@@ -87,7 +89,8 @@
   color: #fff; }
   .c-button.is-success:hover {
     background-color: #3fba73;
-    border-color: #3aaa69; }
+    border-color: #3aaa69;
+    color: #fff; }
   .c-button.is-success:active {
     background-color: #3aaa69;
     border-color: #3aaa69; }
@@ -104,7 +107,8 @@
   color: #fff; }
   .c-button.is-warning:hover {
     background-color: #ffc032;
-    border-color: #ffb91d; }
+    border-color: #ffb91d;
+    color: #fff; }
   .c-button.is-warning:active {
     background-color: #ffb91d;
     border-color: #ffb91d; }
