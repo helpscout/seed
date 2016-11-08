@@ -13,6 +13,8 @@
   .c-alert a {
     color: inherit;
     text-decoration: underline; }
+    .c-alert a:hover {
+      color: inherit; }
   .c-alert > *:first-child {
     margin-top: 0; }
   .c-alert > *:last-child {

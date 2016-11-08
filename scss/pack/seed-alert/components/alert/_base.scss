@@ -22,6 +22,9 @@
     a {
       color: inherit;
       text-decoration: underline;
+      &:hover {
+        color: inherit;
+      }
     }
 
     // Normalize direct child elements
