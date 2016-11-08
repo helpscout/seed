@@ -2,6 +2,7 @@
 
 // Dependencies
 @import "../../../config";
+@import "pack/seed-badge/_index";
 @import "pack/seed-dash/_index";
 @import "pack/seed-publish/_index";
 @import "pack/seed-states/config";
@@ -18,6 +19,11 @@
       background-color: _get($values, background-color);
       box-shadow: inset $seed-alert-accent-width 0 0 0 _get($values, border-color);
       color: _get($values, color);
+
+      // Modify badge styles based on alert state
+      .#{$seed-badge-namespace} {
+        background-color: _get($values, border-color);
+      }
     }
   }
 }

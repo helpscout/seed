@@ -18,6 +18,12 @@
     margin-bottom: $seed-alert-margin-bottom;
     padding: $seed-alert-padding;
 
+    // Normalize link colors
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
     // Normalize direct child elements
     > * {
       // Quietly removes the top/bottom margin of the first/last child element

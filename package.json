@@ -45,8 +45,9 @@
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
+    "seed-badge": "0.0.2",
     "seed-dash": "0.0.1",
-    "seed-publish": "0.0.2",
+    "seed-publish": "0.0.4",
     "seed-states": "0.0.4"
   }
 }
