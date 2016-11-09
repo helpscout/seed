@@ -1,4 +1,11 @@
-// base pack for Seed
+// Base pack for Seed
 
+// Dependencies
+@import "pack/seed-publish/_index";
 // Config
 @import "./config";
+// Base
+@import "./base/_index";
+
+// Publish
+@include publish(seed-base);

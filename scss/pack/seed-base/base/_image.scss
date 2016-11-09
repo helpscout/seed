@@ -1,0 +1,11 @@
+// Base :: Image
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-base) {
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}

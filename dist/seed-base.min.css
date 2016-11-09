@@ -1,0 +1,6 @@
+/**
+ * seed-base v0.0.0
+ * Base styles pack for Seed
+ * Licensed under MIT
+ */
+h1,h2,h3,h4,h5,h6{color:inherit;font-family:inherit;font-weight:500;line-height:1.1;margin-bottom:8px}h1{font-size:3rem}h2{font-size:2.25rem}h3{font-size:1.5rem}h4{font-size:1.25rem}h5{font-size:1rem}h6{font-size:.875rem}small{font-size:80%;font-weight:normal}mark{background-color:#fcf8e3;padding:.2em}img{height:auto;max-width:100%}code,kbd,pre,samp{font-family:Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}code{background-color:rgba(0,0,0,0.08);border-radius:3px;color:#000;font-size:85%;padding:0.16em 0.4em}kbd{background-color:rgba(0,0,0,0.08);border-radius:3px;color:#000;font-size:85%;padding:0.16em 0.4em}kbd kbd{padding:0;font-size:100%;font-weight:bold}pre{color:#373a3c;display:block;font-size:85%;margin-bottom:16px;margin-top:0}pre code{background-color:transparent;border-radius:0;color:inherit;font-size:inherit;padding:0}

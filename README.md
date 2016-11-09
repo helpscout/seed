@@ -1,6 +1,6 @@
 # seed-base [![npm version](https://badge.fury.io/js/seed-base.svg)](https://badge.fury.io/js/seed-base)
 
-base other pack for [Seed](https://github.com/helpscout/seed)!
+Base styles pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,35 @@ Once that is setup, simply `@import` *seed-base* as needed in your `.scss` file:
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-base config options
+// Config: Typo
+$seed-base-margin-bottom: 16px !default;
+
+// Config: Headings
+$seed-base-heading-sizes: (
+  h1: 3rem,
+  h2: 2.25rem,
+  h3: 1.5rem,
+  h4: 1.25rem,
+  h5: 1rem,
+  h6: 0.875rem
+) !default;
+
+$seed-base-heading-font-weight: 500 !default;
+$seed-base-heading-line-height: 1.1 !default;
+$seed-base-heading-margin-bottom: 8px !default;
+
+// Config: Mark
+$seed-base-mark-background-color: #fcf8e3 !default;
+$seed-base-mark-padding: 0.2em !default;
+
+// Config: Code
+$seed-base-code-background-color: rgba(black, 0.08) !default;
+$seed-base-code-border-radius: 3px !default;
+$seed-base-code-color: #000 !default;
+$seed-base-code-font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$seed-base-code-font-size: 85% !default;
+$seed-base-code-padding: 0.16em 0.4em !default;
+
+// Config: Pre
+$seed-base-pre-color: #373a3c !default;
 ```

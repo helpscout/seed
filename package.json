@@ -1,7 +1,7 @@
 {
   "name": "seed-base",
-  "version": "0.0.1",
-  "description": "base other pack for Seed",
+  "version": "0.0.0",
+  "description": "Base styles pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
@@ -10,15 +10,19 @@
     "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-base.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-base/issues"
+  },
   "keywords": [
+    "base",
     "bem",
     "css",
     "design",
@@ -37,5 +41,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-publish": "0.0.4"
   }
 }
