@@ -13,12 +13,6 @@
     margin-bottom: $seed-base-heading-margin-bottom;
   }
 
-  @each $heading, $size in $seed-base-heading-sizes {
-    #{$heading} {
-      font-size: $size;
-    }
-  }
-
   small {
     font-size: 80%;
     font-weight: normal;
