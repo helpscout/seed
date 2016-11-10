@@ -1,5 +1,5 @@
 /**
- * seed-grid v0.3.10 (https://github.com/helpscout/seed-grid)
+ * seed-grid v0.3.11 (https://github.com/helpscout/seed-grid)
  * Grid system pack for Seed
  * Licensed under MIT
  */
@@ -260,20 +260,28 @@
 
 .o-row > [class*="o-col"] { float: left; }
 
-.o-row--sm { margin-left: -8px; margin-right: -8px; }
+.o-row--md { margin-left: -8px; margin-right: -8px; }
 
-.o-row--sm > [class*="o-col"] { padding-left: 8px; padding-right: 8px; }
+.o-row--md > [class*="o-col"] { padding-left: 8px; padding-right: 8px; }
 
-.o-row--xs { margin-left: -4px; margin-right: -4px; }
+.o-row--sm { margin-left: -4px; margin-right: -4px; }
 
-.o-row--xs > [class*="o-col"] { padding-left: 4px; padding-right: 4px; }
+.o-row--sm > [class*="o-col"] { padding-left: 4px; padding-right: 4px; }
+
+.o-row--xs { margin-left: -2px; margin-right: -2px; }
+
+.o-row--xs > [class*="o-col"] { padding-left: 2px; padding-right: 2px; }
 
 .o-row-flex { box-sizing: border-box; display: flex; flex-wrap: wrap; margin-left: -15px; margin-right: -15px; }
 
-.o-row-flex--sm { margin-left: -8px; margin-right: -8px; }
+.o-row-flex--md { margin-left: -8px; margin-right: -8px; }
 
-.o-row-flex--sm > [class*="o-col"] { padding-left: 8px; padding-right: 8px; }
+.o-row-flex--md > [class*="o-col"] { padding-left: 8px; padding-right: 8px; }
 
-.o-row-flex--xs { margin-left: -4px; margin-right: -4px; }
+.o-row-flex--sm { margin-left: -4px; margin-right: -4px; }
 
-.o-row-flex--xs > [class*="o-col"] { padding-left: 4px; padding-right: 4px; }
+.o-row-flex--sm > [class*="o-col"] { padding-left: 4px; padding-right: 4px; }
+
+.o-row-flex--xs { margin-left: -2px; margin-right: -2px; }
+
+.o-row-flex--xs > [class*="o-col"] { padding-left: 2px; padding-right: 2px; }

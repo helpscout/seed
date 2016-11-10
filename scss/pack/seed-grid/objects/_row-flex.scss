@@ -11,21 +11,15 @@
     margin-left: -($seed-grid-gutter-offset);
     margin-right: -($seed-grid-gutter-offset);
 
-    // Modifiers
-    &--sm {
-      margin-left: -($seed-grid-gutter-offset-sm);
-      margin-right: -($seed-grid-gutter-offset-sm);
-      > [class*="#{$seed-grid-namespace-col}"] {
-        padding-left: $seed-grid-gutter-offset-sm;
-        padding-right: $seed-grid-gutter-offset-sm;
-      }
-    }
-    &--xs {
-      margin-left: -($seed-grid-gutter-offset-xs);
-      margin-right: -($seed-grid-gutter-offset-xs);
-      > [class*="#{$seed-grid-namespace-col}"] {
-        padding-left: $seed-grid-gutter-offset-xs;
-        padding-right: $seed-grid-gutter-offset-xs;
+    // Modifiers: Sizes
+    @each $offset, $size in $seed-grid-gutter-offset-sizes {
+      &--#{$offset} {
+        margin-left: -($size);
+        margin-right: -($size);
+        > [class*="#{$seed-grid-namespace-col}"] {
+          padding-left: $size;
+          padding-right: $size;
+        }
       }
     }
   }

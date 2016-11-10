@@ -96,8 +96,11 @@ $seed-container-widths: (
 $seed-grid-columns: 12 !default;
 $seed-grid-gutter: 30px !default;
 $seed-grid-gutter-offset: ceil($seed-grid-gutter / 2) !default; // 15px
-$seed-grid-gutter-offset-sm: 8px !default;
-$seed-grid-gutter-offset-xs: 4px !default;
+$seed-grid-gutter-offset-sizes: (
+  md: 8px,
+  sm: 4px,
+  xs: 2px
+) !default;
 ```
 
 ### Breakpoint options
