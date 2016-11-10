@@ -1,12 +1,6 @@
 # seed-grid [![Build Status](https://travis-ci.org/helpscout/seed-grid.svg?branch=master)](https://travis-ci.org/helpscout/seed-grid) [![npm version](https://badge.fury.io/js/seed-grid.svg)](https://badge.fury.io/js/seed-grid) [![Dependencies](https://david-dm.org/helpscout/seed-grid.svg)](https://david-dm.org/helpscout/seed-grid)
 Grid system pack for [Seed](https://github.com/helpscout/seed)!
 
-**File size**
-
-Minified | Gzipped
----|---
-6.9 KB | 1.31 KB
-
 You can use this with *any* project you'd like! (Seed not required).
 
 ## Install
@@ -102,6 +96,8 @@ $seed-container-widths: (
 $seed-grid-columns: 12 !default;
 $seed-grid-gutter: 30px !default;
 $seed-grid-gutter-offset: ceil($seed-grid-gutter / 2) !default; // 15px
+$seed-grid-gutter-offset-sm: 8px !default;
+$seed-grid-gutter-offset-xs: 4px !default;
 ```
 
 ### Breakpoint options
