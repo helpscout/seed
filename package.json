@@ -49,6 +49,7 @@
     "seed-breakpoints": "^0.4.0",
     "seed-grid": "^0.3.5",
     "seed-grid-lite": "0.0.2",
+    "seed-packer": "0.0.9",
     "seed-props": "^0.3.0"
   }
 }

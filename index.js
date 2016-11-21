@@ -71,6 +71,19 @@ var resolvePacks = function(packs) {
   return packs;
 };
 
+var requirePack = function(pack) {
+  if (!pack || typeof pack !== 'string') {
+    return;
+  }
+  pack = require(pack);
+  if (typeof pack === 'string' || (pack instanceof Array === true)) {
+    return pack;
+  }
+  else {
+    return '';
+  }
+};
+
 var harvester = function() {
   // Define the export array
   var includePaths = [];
@@ -79,7 +92,7 @@ var harvester = function() {
 
   if (packs.length) {
     packs.forEach(function(pack) {
-      includePaths.push(require(pack));
+      includePaths.push(requirePack(pack));
     });
   }
 
