@@ -4,9 +4,16 @@
 @import "pack/seed-border/config";
 
 // Namespaces
-$seed-card-namespace: "c-card" !default;
+$seed-card-namespace: c-card !default;
+$seed-card-block-namespace: #{$seed-card-namespace}__block !default;
 
-// Styles
+// Config: Card
 $seed-card-background-color: #fff !default;
 $seed-card-border: $seed-border !default;
 $seed-card-border-radius: 4px !default;
+// Config: Card block
+$seed-card-block-sizes: (
+  md: 20px 20px,
+  sm: 12px 20px,
+  xs: 8px 20px,
+) !default;
