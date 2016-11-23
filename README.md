@@ -7,6 +7,10 @@ Base styles pack for [Seed](https://github.com/helpscout/seed)!
 npm install seed-base --save
 ```
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-base/)**.
+
 
 ## Basic Usage
 
