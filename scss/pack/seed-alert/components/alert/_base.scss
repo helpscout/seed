@@ -19,11 +19,13 @@
     padding: $seed-alert-padding;
 
     // Normalize link colors
-    #{$seed-alert-link-normalize-selector} {
-      color: inherit;
-      text-decoration: underline;
-      &:hover {
+    @if ($seed-alert-allow-link-normalize) {
+      #{$seed-alert-link-normalize-selector} {
         color: inherit;
+        text-decoration: underline;
+        &:hover {
+          color: inherit;
+        }
       }
     }
 
