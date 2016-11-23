@@ -45,6 +45,9 @@ Once that is setup, simply `@import` *seed-alert* as needed in your `.scss` file
 The following variables can be found in `_config.scss`
 
 ```scss
+// Dependencies
+@import "pack/seed-button/_config";
+
 // Namespace
 $seed-alert-namespace: "c-alert" !default;
 $seed-alert-error-namespace: "error" !default;
@@ -55,7 +58,7 @@ $seed-alert-text-namespace: "#{$seed-alert-namespace}__text" !default;
 
 // Configs
 $seed-alert-accent-width: 4px !default;
-$seed-alert-padding: 16px 20px !default;
+$seed-alert-padding: 12px 16px 12px 20px !default;
 $seed-alert-margin-bottom: 16px !default;
 
 
@@ -69,4 +72,6 @@ $seed-alert-margin-bottom: 16px !default;
 // }
 $seed-alert-enable-state-prefix: true !default;
 $seed-alert-state-prefix: "is" !default;
+
+$seed-alert-link-normalize-selectors: .#{$seed-button-namespace} !default;
 ```

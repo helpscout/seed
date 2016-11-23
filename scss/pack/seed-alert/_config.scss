@@ -1,5 +1,8 @@
 // Alert :: Config
 
+// Dependencies
+@import "pack/seed-button/_config";
+
 // Namespace
 $seed-alert-namespace: "c-alert" !default;
 $seed-alert-error-namespace: "error" !default;
@@ -24,3 +27,5 @@ $seed-alert-margin-bottom: 16px !default;
 // }
 $seed-alert-enable-state-prefix: true !default;
 $seed-alert-state-prefix: "is" !default;
+
+$seed-alert-link-normalize-selectors: ".#{$seed-button-namespace}" !default;

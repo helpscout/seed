@@ -2,7 +2,6 @@
 
 // Dependencies
 @import "../../config";
-@import "pack/seed-button/_config";
 @import "pack/seed-dash/_index";
 @import "pack/seed-publish/_index";
 @import "pack/seed-states/config";
@@ -20,7 +19,7 @@
     padding: $seed-alert-padding;
 
     // Normalize link colors
-    a:not(.#{$seed-button-namespace}) {
+    a:not(#{$seed-alert-link-normalize-selectors}) {
       color: inherit;
       text-decoration: underline;
       &:hover {
