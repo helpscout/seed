@@ -7,6 +7,10 @@ Responsive wrapper object pack for [Seed](https://github.com/helpscout/seed)!
 npm install seed-responsive-wrapper --save
 ```
 
+## Documentation
+
+Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-responsive-wrapper/)**.
+
 
 ## Basic Usage
 
