@@ -19,7 +19,7 @@
     padding: $seed-alert-padding;
 
     // Normalize link colors
-    a:not(#{$seed-alert-link-normalize-selectors}) {
+    #{$seed-alert-link-normalize-selector} {
       color: inherit;
       text-decoration: underline;
       &:hover {

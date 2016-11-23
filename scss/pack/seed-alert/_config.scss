@@ -28,4 +28,4 @@ $seed-alert-margin-bottom: 16px !default;
 $seed-alert-enable-state-prefix: true !default;
 $seed-alert-state-prefix: "is" !default;
 
-$seed-alert-link-normalize-selectors: ".#{$seed-button-namespace}" !default;
+$seed-alert-link-normalize-selector: "a:not(.#{$seed-button-namespace})" !default;
