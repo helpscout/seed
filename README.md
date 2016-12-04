@@ -1,6 +1,6 @@
 # seed-video [![npm version](https://badge.fury.io/js/seed-video.svg)](https://badge.fury.io/js/seed-video)
 
-video component pack for [Seed](https://github.com/helpscout/seed)!
+Responsive video component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,31 @@ Once that is setup, simply `@import` *seed-video* as needed in your `.scss` file
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-video config options
+// Namespaces
+$seed-video-namespace: "c-video" !default;
+$seed-video-embed-namespace: "#{$seed-video-namespace}__embed" !default;
+$seed-video-embed-selectors: "> iframe, > video" !default;
+
+// Config
+$seed-video-background-color: #eee !default;
+// Pass in ratios for w:h
+$seed-video-sizes: (
+  u-wide: (
+    width: 21,
+    height: 9
+  ),
+  // Golden ratio (16:10)
+  gr: (
+    width: 16,
+    height: 10
+  ),
+  wide: (
+    width: 16,
+    height: 9
+  ),
+  sd: (
+    width: 4,
+    height: 3
+  )
+) !default;
 ```
