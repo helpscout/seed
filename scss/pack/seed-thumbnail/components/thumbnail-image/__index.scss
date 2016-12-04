@@ -3,7 +3,8 @@
 // Dependencies
 @import "../../config";
 
-#{$__seed-thumbnail-image-class} {
+.#{$seed-thumbnail-image-namespace},
+.#{$seed-thumbnail-namespace} > img {
   // Base
   @import "./base";
 }

@@ -50,15 +50,6 @@ $seed-thumbnail-namespace: "c-thumbnail" !default;
 $seed-thumbnail-image-namespace: "#{$seed-thumbnail-namespace}__image" !default;
 
 // Config
-$seed-thumbnail-include-img-selector: true !default;
-
-// The above configuration determines this private variable
-$__seed-thumbnail-image-class: ".#{$seed-thumbnail-image-namespace}";
-// Include the image selector (Default)
-@if $seed-thumbnail-include-img-selector == true {
-  $__seed-thumbnail-image-class: ".#{$seed-thumbnail-image-namespace}, .#{$seed-thumbnail-namespace} > img";
-}
-
 // Borders
 $seed-thumbnail-border-radius: 0 !default;
 $seed-thumbnail-border-radius-rounded: 4px !default;
@@ -85,7 +76,7 @@ $seed-thumbnail-alignments: (
 // Sizes
 // Pass in ratios for w:h
 $seed-thumbnail-sizes: (
-  hd: (
+  wide: (
     width: 16,
     height: 9
   ),

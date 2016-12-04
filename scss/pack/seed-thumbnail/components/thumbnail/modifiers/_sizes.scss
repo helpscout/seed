@@ -12,7 +12,8 @@
       $ratio: thumbnail-ratio(prop(width), prop(height));
       padding-bottom: $ratio;
 
-      #{$__seed-thumbnail-image-class} {
+      .#{$seed-thumbnail-image-namespace},
+      > img {
         // Landscape
         @if $ratio < 60 {
           height: auto;
