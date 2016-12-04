@@ -43,7 +43,6 @@ The following variables can be found in `_config.scss`
 // Namespaces
 $seed-video-namespace: "c-video" !default;
 $seed-video-embed-namespace: "#{$seed-video-namespace}__embed" !default;
-$seed-video-embed-selectors: "> iframe, > video" !default;
 
 // Config
 $seed-video-background-color: #eee !default;
