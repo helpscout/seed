@@ -6,6 +6,7 @@
 @include export(seed-thumbnail) {
   & {
     bottom: -100%;
+    box-sizing: border-box;
     height: auto;
     left: -100%;
     margin: auto;

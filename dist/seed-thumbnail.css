@@ -116,6 +116,7 @@
 .c-thumbnail__image,
 .c-thumbnail > img {
   bottom: -100%;
+  box-sizing: border-box;
   height: auto;
   left: -100%;
   margin: auto;
