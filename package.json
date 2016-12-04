@@ -1,6 +1,6 @@
 {
   "name": "seed-video",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Reponsive video component pack for Seed",
   "main": "index.js",
   "scripts": {
