@@ -1,0 +1,47 @@
+// Components :: Video
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
+@import "pack/seed-thumbnail/functions/thumbnail-ratio";
+@import "../config";
+
+@include export(seed-video) {
+  .#{$seed-video-namespace} {
+    $w: _get($seed-video-sizes, wide, width);
+    $h: _get($seed-video-sizes, wide, height);
+
+    background-color: $seed-video-background-color;
+    box-sizing: border-box;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: thumbnail-ratio($w, $h);
+    position: relative;
+    width: 100%;
+
+    // Modifers
+    &- {
+      @include breakpoint-prop-map($seed-video-sizes, (width, height)) {
+        $ratio: thumbnail-ratio(prop(width), prop(height));
+        padding-bottom: $ratio;
+
+        .#{$seed-video-embed-namespace},
+        > iframe,
+        > video {
+          // Landscape
+          @if $ratio < 60 {
+            height: auto;
+            width: 100%;
+          }
+          // Portrait
+          @else {
+            height: 100%;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

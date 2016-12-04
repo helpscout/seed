@@ -1,0 +1,22 @@
+// Components :: Video embed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-video) {
+  .#{$seed-video-embed-namespace},
+  .#{$seed-video-namespace} > video,
+  .#{$seed-video-namespace} > iframe {
+    bottom: 0;
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    max-width: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}

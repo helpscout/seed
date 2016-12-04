@@ -1,1 +1,29 @@
-// video :: Config
+// Video :: Config
+
+// Namespaces
+$seed-video-namespace: "c-video" !default;
+$seed-video-embed-namespace: "#{$seed-video-namespace}__embed" !default;
+$seed-video-embed-selectors: "> iframe, > video" !default;
+
+// Config
+$seed-video-background-color: #eee !default;
+// Pass in ratios for w:h
+$seed-video-sizes: (
+  u-wide: (
+    width: 21,
+    height: 9
+  ),
+  // Golden ratio (16:10)
+  gr: (
+    width: 16,
+    height: 10
+  ),
+  wide: (
+    width: 16,
+    height: 9
+  ),
+  sd: (
+    width: 4,
+    height: 3
+  )
+) !default;
