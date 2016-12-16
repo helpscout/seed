@@ -9,7 +9,7 @@ describe('harvester: seed-packs', function() {
   var pack = packs[0];
 
   it('should automatically include seed packs (from package.json)', function() {
-    assert.equal(true, packs[2].includes('seed-grid'));
+    assert.equal(true, packs[1].includes('seed-breakpoints'));
   });
 
   it('should include seed packs dependencies', function() {

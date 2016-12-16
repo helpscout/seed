@@ -39,15 +39,15 @@
     "lodash.flattendeep": "^4.4.0",
     "lodash.uniqby": "^4.7.0",
     "sass-pathfinder": "0.0.5",
-    "seed-packfinder": "0.0.2"
+    "seed-packfinder": "0.0.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "find-root": "^1.0.0",
     "lodash.countby": "^4.6.0",
-    "mocha": "^3.0.2",
+    "mocha": "^3.2.0",
     "seed-breakpoints": "^0.4.0",
-    "seed-grid": "^0.3.5",
+    "seed-grid": "^0.3.12",
     "seed-grid-lite": "0.0.2",
     "seed-packer": "0.0.9",
     "seed-props": "^0.3.0"
