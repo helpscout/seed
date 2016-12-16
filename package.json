@@ -36,10 +36,10 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.1.2",
+    "mocha": "^3.2.0",
     "seed-breakpoints": "^0.4.0",
     "seed-dash": "0.0.1",
-    "seed-grid": "^0.3.9",
+    "seed-grid": "^0.3.12",
     "seed-props": "^0.3.0",
     "seed-reset": "^0.1.1",
     "seed-visibility": "^0.2.4"
@@ -47,6 +47,6 @@
   "dependencies": {
     "find-root": "^1.0.0",
     "glob": "^7.1.1",
-    "seed-packfinder": "0.0.2"
+    "seed-packfinder": "0.0.3"
   }
 }
