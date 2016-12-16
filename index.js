@@ -18,6 +18,9 @@ var findPaths = function() {
 
 
 var isSeedPack = function(pkg) {
+  if (!dirExists(pkg)) {
+    return false;
+  }
   return getKeywords(pkg).indexOf('seed-pack') !== -1;
 };
 
@@ -30,14 +33,30 @@ var getDependencies = function() {
   return Object.keys(devDeps).concat(Object.keys(deps));
 };
 
+var dirExists = function(pkg) {
+  var dir = path.join(root, 'node_modules', pkg);
+  if (!fs.existsSync(dir)) {
+    console.log(pkg + ' could not be found in node_modules.');
+    console.log('Running npm install might help!');
+    // Kill seed-packfinder :'(
+    return process.exit(1);
+  }
+  else {
+    return true;
+  }
+};
 
 var getKeywords = function(pkg) {
   var packageJSON = path.join(root, 'node_modules', pkg, 'package.json');
+  if (!fs.existsSync(packageJSON)) {
+    return [];
+  }
   var stat = fs.statSync(packageJSON).isFile();
 
   if (!stat) {
     console.log(pkg + ' could not be found in node_modules.');
     console.log('Running npm install might help!');
+    // Kill seed-packkfinder :'(
     return process.exit(1);
   }
 
