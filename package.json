@@ -1,6 +1,6 @@
 {
   "name": "seed-harvester",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Automatically include seed pack dependencies for node-sass",
   "main": "index.js",
   "scripts": {
