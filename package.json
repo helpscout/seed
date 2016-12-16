@@ -1,6 +1,6 @@
 {
   "name": "seed-packfinder",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node utility to find seed packs",
   "main": "index.js",
   "scripts": {
