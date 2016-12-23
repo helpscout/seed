@@ -10,7 +10,7 @@ npm install seed-switch --save
 
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-switch/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-switch/)**.
 
 
 ## Basic Usage
