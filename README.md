@@ -2,10 +2,6 @@
 
 Card component pack for [Seed](https://github.com/helpscout/seed)!
 
-Minified | Gzipped
----|---
-574 B | 279 B
-
 
 ## Install
 ```
@@ -15,7 +11,7 @@ npm install seed-card --save
 
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-card/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-card/)**.
 
 
 ## Basic Usage
