@@ -8,7 +8,7 @@ npm install seed-color-scheme-helpscout --save
 ```
 
 ## Documentation
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-color-scheme-helpscout/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-color-scheme-helpscout/)**.
 
 
 ## Basic Usage
