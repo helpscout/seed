@@ -5,6 +5,7 @@
 @import "../generators/weight-num";
 
 @include export(seed-typography) {
+  // Generates weights 100 -> 900
   @include generate-typography-weight-num;
 
   .#{$seed-typography-weight-namespace} {
