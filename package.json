@@ -46,6 +46,6 @@
     "node-sass": "^3.10.0"
   },
   "dependencies": {
-    "seed-publish": "0.0.2"
+    "seed-publish": "0.0.4"
   }
 }
