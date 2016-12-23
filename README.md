@@ -10,7 +10,7 @@ npm install seed-this --save-dev
 
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-this/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-this/)**.
 
 
 ## Basic Usage
