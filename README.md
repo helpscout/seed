@@ -1,6 +1,6 @@
 # seed-input [![Build Status](https://travis-ci.org/helpscout/seed-input.svg?branch=master)](https://travis-ci.org/helpscout/seed-input) [![npm version](https://badge.fury.io/js/seed-input.svg)](https://badge.fury.io/js/seed-input) [![dependencies Status](https://david-dm.org/helpscout/seed-input/status.svg)](https://david-dm.org/helpscout/seed-input)
 
-input component pack for [Seed](https://github.com/helpscout/seed)!
+Input component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -10,7 +10,7 @@ npm install seed-input --save
 
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-input/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-input/)**.
 
 
 ## Basic Usage
