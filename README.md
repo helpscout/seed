@@ -11,7 +11,7 @@ npm install seed-border --save
 
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-border/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-border/)**.
 
 
 ## Basic Usage
