@@ -47,7 +47,7 @@
   "dependencies": {
     "sass-pathfinder": "0.0.5",
     "seed-control": "0.0.3",
-    "seed-input": "0.0.3",
-    "seed-publish": "0.0.2"
+    "seed-input": "0.0.4",
+    "seed-publish": "0.0.4"
   }
 }
