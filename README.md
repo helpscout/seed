@@ -4,16 +4,16 @@ Help Scout theme pack for [Seed](https://github.com/helpscout/seed)!
 
 This theme pack is based off the [Help Scout color scheme](https://github.com/helpscout/seed-color-scheme-helpscout).
 
-**File size**
-
-Minified | Gzipped
----|---
-6.5 KB | 1.2 KB
 
 ## Install
 ```
 npm install seed-helpscout-theme --save
 ```
+
+
+## Documentation
+
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-helpscout-theme/)**.
 
 
 ## Basic Usage
