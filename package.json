@@ -43,6 +43,6 @@
   "dependencies": {
     "seed-breakpoints": "^0.4.0",
     "seed-publish": "0.0.4",
-    "seed-width": "^0.4.1"
+    "seed-width": "^0.4.3"
   }
 }
