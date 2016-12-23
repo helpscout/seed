@@ -9,7 +9,7 @@ npm install seed-control --save
 
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-control/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-control/)**.
 
 
 ## Basic Usage
