@@ -10,7 +10,7 @@ npm install seed-zi --save
 
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-zi/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-zi/)**.
 
 
 ## Basic Usage
