@@ -2,10 +2,6 @@
 Floats utility pack for [Seed](https://github.com/helpscout/seed)!
 
 
-## Dependencies
-* [Seed Breakpoints](https://github.com/helpscout/seed-breakpoints)
-
-
 ## Install
 ```
 npm install seed-floats --save
@@ -14,7 +10,7 @@ npm install seed-floats --save
 
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-floats/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-floats/)**.
 
 
 ## Basic Usage
