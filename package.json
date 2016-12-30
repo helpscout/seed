@@ -1,6 +1,6 @@
 {
   "name": "seed-fieldset",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Fieldset component pack for Seed",
   "main": "index.js",
   "scripts": {
