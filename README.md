@@ -1,4 +1,4 @@
-# seed-fieldset [![npm version](https://badge.fury.io/js/seed-fieldset.svg)](https://badge.fury.io/js/seed-fieldset)
+# seed-fieldset [![Build Status](https://travis-ci.org/helpscout/seed-fieldset.svg?branch=master)](https://travis-ci.org/helpscout/seed-fieldset) [![npm version](https://badge.fury.io/js/seed-fieldset.svg)](https://badge.fury.io/js/seed-fieldset)
 
 Fieldset component pack for [Seed](https://github.com/helpscout/seed)!
 
