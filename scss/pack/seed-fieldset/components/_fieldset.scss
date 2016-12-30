@@ -1,0 +1,44 @@
+// Components :: Fieldset
+
+// Dependencies
+@import "pack/seed-input/config";
+@import "pack/seed-states/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-fieldset) {
+  .#{$seed-fieldset-namespace} {
+    // Base styles
+    border: none;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: $seed-fieldset-margin-bottom;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    // States
+    @each $key, $value in $seed-states-colors {
+      $class: ".is-#{$key}";
+
+      // Create classes for all states except for info
+      @if $key != "info" {
+        &#{$class} {
+          // Adjust label color
+          label {
+            color: _state($key, color);
+          }
+          // Adjust c-input color
+          .#{$seed-input-namespace} {
+            border-color: _state($key, border-color);
+          }
+        }
+      }
+    }
+
+  }
+}

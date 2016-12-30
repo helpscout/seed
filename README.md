@@ -1,6 +1,6 @@
 # seed-fieldset [![npm version](https://badge.fury.io/js/seed-fieldset.svg)](https://badge.fury.io/js/seed-fieldset)
 
-fieldset component pack for [Seed](https://github.com/helpscout/seed)!
+Fieldset component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,9 @@ Once that is setup, simply `@import` *seed-fieldset* as needed in your `.scss` f
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-fieldset config options
+// Namespace
+$seed-fieldset-namespace: c-fieldset !default;
+
+// Configs
+$seed-fieldset-margin-bottom: 20px !default;
 ```

@@ -1,29 +1,37 @@
 {
   "name": "seed-fieldset",
-  "version": "0.0.1",
-  "description": "fieldset component pack for Seed",
+  "version": "0.0.0",
+  "description": "Fieldset component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
+    "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
     "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-fieldset/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-fieldset.git"
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-fieldset/issues"
+  },
   "keywords": [
     "bem",
     "css",
     "design",
+    "form",
+    "fieldset",
     "functional",
     "itcss",
+    "group",
     "modular",
     "oocss",
     "performance",
@@ -37,5 +45,10 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-input": "0.0.4",
+    "seed-publish": "0.0.4",
+    "seed-states": "0.0.4"
   }
 }
