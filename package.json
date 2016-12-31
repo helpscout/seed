@@ -1,7 +1,7 @@
 {
-  "name": "seed-fieldset",
+  "name": "seed-form-group",
   "version": "0.0.1",
-  "description": "Fieldset component pack for Seed",
+  "description": "Form group component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
@@ -11,24 +11,24 @@
     "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "https://github.com/helpscout/seed-fieldset/",
+  "homepage": "https://github.com/helpscout/seed-form-group/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-fieldset.git"
+    "url": "git+https://github.com/helpscout/seed-form-group.git"
   },
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-fieldset/issues"
+    "url": "https://github.com/helpscout/seed-form-groupissues"
   },
   "keywords": [
     "bem",
     "css",
     "design",
     "form",
-    "fieldset",
+    "form-group",
     "functional",
     "itcss",
     "group",

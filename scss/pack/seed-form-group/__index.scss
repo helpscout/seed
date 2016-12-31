@@ -1,4 +1,4 @@
-// Fieldset pack for Seed
+// Form group pack for Seed
 
 // Dependencies
 @import "pack/seed-input/_index";
@@ -10,4 +10,4 @@
 @import "./components/_index";
 
 // Publish
-@include publish(seed-fieldset);
+@include publish(seed-form-group);

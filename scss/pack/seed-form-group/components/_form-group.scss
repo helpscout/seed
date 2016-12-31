@@ -1,4 +1,4 @@
-// Components :: Fieldset
+// Components :: Form group
 
 // Dependencies
 @import "pack/seed-input/config";
@@ -6,13 +6,13 @@
 @import "pack/seed-publish/_index";
 @import "../config";
 
-@include export(seed-fieldset) {
-  .#{$seed-fieldset-namespace} {
+@include export(seed-form-group) {
+  .#{$seed-form-group-namespace} {
     // Base styles
     border: none;
     box-sizing: border-box;
     display: block;
-    margin-bottom: $seed-fieldset-margin-bottom;
+    margin-bottom: $seed-form-group-margin-bottom;
     margin-left: 0;
     margin-right: 0;
     padding: 0;

@@ -1,6 +1,0 @@
-/**
- * seed-fieldset v0.0.1 (https://github.com/helpscout/seed-fieldset/)
- * Fieldset component pack for Seed
- * Licensed under MIT
- */
-.c-fieldset{border:none;box-sizing:border-box;display:block;margin-bottom:20px;margin-left:0;margin-right:0;padding:0}.c-fieldset:last-child{margin-bottom:0}.c-fieldset.is-error label{color:#9d1f1a}.c-fieldset.is-error .c-input{border-color:#e52f28}.c-fieldset.is-success label{color:#228350}.c-fieldset.is-success .c-input{border-color:#4bc27d}.c-fieldset.is-warning label{color:#b37100}.c-fieldset.is-warning .c-input{border-color:#ffc646}

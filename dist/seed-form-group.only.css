@@ -1,0 +1,27 @@
+/**
+ * seed-form-group v0.0.1 (https://github.com/helpscout/seed-form-group/)
+ * Form group component pack for Seed
+ * Licensed under MIT
+ */
+.c-form-group {
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0; }
+  .c-form-group:last-child {
+    margin-bottom: 0; }
+  .c-form-group.is-error label {
+    color: #9d1f1a; }
+  .c-form-group.is-error .c-input {
+    border-color: #e52f28; }
+  .c-form-group.is-success label {
+    color: #228350; }
+  .c-form-group.is-success .c-input {
+    border-color: #4bc27d; }
+  .c-form-group.is-warning label {
+    color: #b37100; }
+  .c-form-group.is-warning .c-input {
+    border-color: #ffc646; }
