@@ -8,6 +8,11 @@ npm install seed-form-group --save
 ```
 
 
+## Documentation
+
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-form-group/)**.
+
+
 ## Basic Usage
 
 ### SCSS
