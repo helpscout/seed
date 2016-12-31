@@ -1,10 +1,10 @@
-# seed-fieldset [![Build Status](https://travis-ci.org/helpscout/seed-fieldset.svg?branch=master)](https://travis-ci.org/helpscout/seed-fieldset) [![npm version](https://badge.fury.io/js/seed-fieldset.svg)](https://badge.fury.io/js/seed-fieldset)
+# seed-form-group [![Build Status](https://travis-ci.org/helpscout/seed-form-group.svg?branch=master)](https://travis-ci.org/helpscout/seed-form-group) [![npm version](https://badge.fury.io/js/seed-form-group.svg)](https://badge.fury.io/js/seed-form-group)
 
-Fieldset component pack for [Seed](https://github.com/helpscout/seed)!
+Form group component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-fieldset --save
+npm install seed-form-group --save
 ```
 
 
@@ -17,7 +17,7 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var pack = require('seed-fieldset');
+var pack = require('seed-form-group');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -28,11 +28,11 @@ gulp.task('sass', function () {
 });
 ```
 
-Once that is setup, simply `@import` *seed-fieldset* as needed in your `.scss` file:
+Once that is setup, simply `@import` *seed-form-group* as needed in your `.scss` file:
 
 ```scss
 // Packs
-@import "pack/seed-fieldset/_index";
+@import "pack/seed-form-group/_index";
 ```
 
 ## Options
@@ -41,8 +41,8 @@ The following variables can be found in `_config.scss`
 
 ```scss
 // Namespace
-$seed-fieldset-namespace: c-fieldset !default;
+$seed-form-group-namespace: c-form-group !default;
 
 // Configs
-$seed-fieldset-margin-bottom: 20px !default;
+$seed-form-group-margin-bottom: 20px !default;
 ```

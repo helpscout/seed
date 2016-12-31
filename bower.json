@@ -1,7 +1,7 @@
 {
-  "name": "seed-fieldset",
+  "name": "seed-form-group",
   "version": "0.0.1",
-  "description": "fieldset component pack for Seed",
+  "description": "Form group component pack for Seed",
   "main": "index.js",
   "homepage": "",
   "authors": [
