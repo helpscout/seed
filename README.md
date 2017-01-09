@@ -1,6 +1,6 @@
 # seed-progress-bar [![npm version](https://badge.fury.io/js/seed-progress-bar.svg)](https://badge.fury.io/js/seed-progress-bar)
 
-progress-bar component pack for [Seed](https://github.com/helpscout/seed)!
+Progress bar component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```

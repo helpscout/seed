@@ -1,0 +1,17 @@
+// Components :: Progress Bar Bar
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-progress-bar) {
+  .#{$seed-progress-bar-bar-namespace} {
+    background-color: $seed-progress-bar-color;
+    bottom: 0;
+    box-sizing: border-box;
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
