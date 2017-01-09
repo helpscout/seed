@@ -50,6 +50,7 @@ $seed-progress-bar-background-color: #E3E8EB !default;
 $seed-progress-bar-border-radius: 3px !default;
 $seed-progress-bar-color: #3197D6 !default;
 $seed-progress-bar-height: 16px !default;
+$seed-progress-bar-transition: width 0.5s ease;
 
 $seed-progress-bar-sizes: (
   lg: 24px,

@@ -12,6 +12,8 @@
     display: block;
     left: 0;
     position: absolute;
+    transition: $seed-progress-bar-transition;
     top: 0;
+    width: 0;
   }
 }
