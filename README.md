@@ -1,4 +1,4 @@
-# seed-progress-bar [![npm version](https://badge.fury.io/js/seed-progress-bar.svg)](https://badge.fury.io/js/seed-progress-bar)
+# seed-progress-bar [![Build Status](https://travis-ci.org/helpscout/seed-progress-bar.svg?branch=master)](https://travis-ci.org/helpscout/seed-progress-bar) [![npm version](https://badge.fury.io/js/seed-progress-bar.svg)](https://badge.fury.io/js/seed-progress-bar)
 
 Progress bar component pack for [Seed](https://github.com/helpscout/seed)!
 
