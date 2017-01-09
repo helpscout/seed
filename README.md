@@ -40,5 +40,21 @@ Once that is setup, simply `@import` *seed-progress-bar* as needed in your `.scs
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-progress-bar config options
+// Namespaces
+$seed-progress-bar-namespace: c-progress-bar !default;
+$seed-progress-bar-bar-namespace: #{$seed-progress-bar-namespace}__bar !default;
+
+
+// Configs
+$seed-progress-bar-background-color: #E3E8EB !default;
+$seed-progress-bar-border-radius: 3px !default;
+$seed-progress-bar-color: #3197D6 !default;
+$seed-progress-bar-height: 16px !default;
+
+$seed-progress-bar-sizes: (
+  lg: 24px,
+  md: 16px,
+  sm: 8px,
+  xs: 4px
+) !default;
 ```
