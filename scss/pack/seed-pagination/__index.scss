@@ -1,4 +1,12 @@
-// pagination pack for Seed
+// Pagination pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
 
 // Config
 @import "./config";
+// Components
+@import "./components/_index";
+
+// Publish
+@include publish("seed-pagination");

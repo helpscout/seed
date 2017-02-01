@@ -1,0 +1,68 @@
+// Components :: Pagination Link
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export("seed-pagination") {
+  .#{$seed-pagination-link-namespace} {
+    background-color: _get($seed-pagination-link-color, background, default);
+    border: 1px solid;
+    border-color: _get($seed-pagination-link-color, border, default);
+    box-sizing: border-box;
+    color: _get($seed-pagination-link-color, text, default);
+    cursor: pointer;
+    display: block;
+    line-height: _get($seed-pagination-sizes, md, line-height);
+    margin-left: -1px;
+    outline: none;
+    padding: $seed-pagination-padding;
+    position: relative;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      background-color: _get($seed-pagination-link-color, background, hover);
+      border-color: _get($seed-pagination-link-color, border, default);
+      color: _get($seed-pagination-link-color, text, hover);
+      text-decoration: none;
+    }
+    &:focus {
+      border-color: _get($seed-pagination-link-color, border, focus);
+      outline: none;
+      z-index: 1;
+    }
+
+    // State
+    // Active
+    @at-root .#{$seed-pagination-item-namespace}.is-active & {
+      background-color: _get($seed-pagination-link-color, background, active);
+      border-color: _get($seed-pagination-link-color, border, active);
+      color: _get($seed-pagination-link-color, text, active);
+      z-index: 2;
+      &:hover,
+      &:focus {
+        background-color: _get($seed-pagination-link-color, background, active-hover);
+        border-color: _get($seed-pagination-link-color, border, active-hover);
+      }
+      &:focus {
+        box-shadow: _get($seed-pagination-link-color, box-shadow, focus);
+      }
+    }
+    // Active
+    @at-root .#{$seed-pagination-item-namespace}.is-disabled & {
+      background-color: _get($seed-pagination-link-color, background, default);
+      border-color: _get($seed-pagination-link-color, border, default);
+      color: _get($seed-pagination-link-color, text, disabled);
+      cursor: not-allowed;
+      &:hover,
+      &:focus {
+        background-color: _get($seed-pagination-link-color, background, default);
+        border-color: _get($seed-pagination-link-color, border, default);
+      }
+      &:focus {
+        box-shadow: _get($seed-pagination-link-color, box-shadow, focus);
+      }
+    }
+  }
+}

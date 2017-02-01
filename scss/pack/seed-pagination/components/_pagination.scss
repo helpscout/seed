@@ -1,0 +1,35 @@
+// Components :: Pagination
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export("seed-pagination") {
+  .#{$seed-pagination-namespace} {
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+
+    // Modifiers
+    // Alignment
+    &- {
+      @include breakpoint-prop-map($seed-pagination-alignment, (alignment)) {
+        justify-content: prop(alignment);
+      }
+    }
+
+    // Sizes
+    @each $key, $values in $seed-pagination-sizes {
+      &--#{$key} {
+        .#{$seed-pagination-link-namespace} {
+          font-size: _get($values, font-size);
+          height: _get($values, height);
+          line-height: _get($values, line-height);
+          padding: _get($values, padding);
+        }
+      }
+    }
+  }
+}
