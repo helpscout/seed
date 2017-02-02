@@ -17,7 +17,23 @@ $seed-container-widths: (
 
 
 // Grid
-$seed-grid-columns: 12 !default;
+$seed-grid-columns: (
+  0: 0%,
+  1: 8.33333%,
+  2: 16.66667%,
+  3: 25%,
+  4: 33.33333%,
+  5: 41.66667%,
+  6: 50%,
+  7: 58.33333%,
+  8: 66.66667%,
+  9: 75%,
+  10: 83.33333%,
+  11: 91.66667%,
+  12: 100%,
+  20: 20%,
+) !default;
+
 $seed-grid-gutter: 30px !default;
 $seed-grid-gutter-offset: ceil($seed-grid-gutter / 2) !default; // 15px
 $seed-grid-gutter-offset-sizes: (
@@ -25,3 +41,4 @@ $seed-grid-gutter-offset-sizes: (
   sm: 4px,
   xs: 2px
 ) !default;
+

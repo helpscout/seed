@@ -1,12 +1,12 @@
 // Mixins :: Col
 
-@mixin col-calculate-offset($type, $size, $columns) {
+@mixin col-calculate-offset($type, $size, $width) {
   // Work around the lack of dynamic mixin @include support (https://github.com/sass/sass/issues/626)
   @if $type == push {
-    left: if($size > 0, percentage($size / $columns), auto);
+    left: if($size > 0, $width, auto);
   } @else if $type == pull {
-    right: if($size > 0, percentage($size / $columns), auto);
+    right: if($size > 0, $width, auto);
   } @else if $type == offset {
-    margin-left: percentage($size / $columns);
+    margin-left: $width;
   }
 }
