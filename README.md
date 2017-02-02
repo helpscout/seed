@@ -48,6 +48,7 @@ The following variables can be found in `_config.scss`
 ```sass
 // Namespaces
 $seed-border-namespace: "t-bdr" !default;
+$seed-border-radius-namespace: "#{$seed-border-namespace}-r" !default;
 
 // Defaults
 $seed-border-color: #eee !default;
@@ -60,12 +61,22 @@ $seed-border-use-important: true !default;
 
 // Directions
 $seed-border-directions: (
-  none: false,
   all: false,
   top: "t",
   right: "r",
   bottom: "b",
-  left: "l"
+  left: "l",
+  none: false,
+) !default;
+
+$seed-border-radius-sizes: (
+  0: 0px,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  circle: 50%,
+  pill: 9999px,
 ) !default;
 
 // Base variable

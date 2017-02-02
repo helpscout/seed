@@ -118,3 +118,24 @@
     .t-bdr-none\@lg {
       border-style: solid !important;
       border-width: 0 !important; } }
+
+.t-bdr-r-0 {
+  border-radius: 0px; }
+
+.t-bdr-r-1 {
+  border-radius: 1px; }
+
+.t-bdr-r-2 {
+  border-radius: 2px; }
+
+.t-bdr-r-3 {
+  border-radius: 3px; }
+
+.t-bdr-r-4 {
+  border-radius: 4px; }
+
+.t-bdr-r-circle {
+  border-radius: 50%; }
+
+.t-bdr-r-pill {
+  border-radius: 9999px; }
