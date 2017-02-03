@@ -1,4 +1,4 @@
-# seed-pagination [![npm version](https://badge.fury.io/js/seed-pagination.svg)](https://badge.fury.io/js/seed-pagination)
+# seed-pagination [![Build Status](https://travis-ci.org/helpscout/seed-pagination.svg?branch=master)](https://travis-ci.org/helpscout/seed-pagination) [![npm version](https://badge.fury.io/js/seed-pagination.svg)](https://badge.fury.io/js/seed-pagination) [![dependencies Status](https://david-dm.org/helpscout/seed-pagination/status.svg)](https://david-dm.org/helpscout/seed-pagination)
 
 Pagination component pack for [Seed](https://github.com/helpscout/seed)!
 
