@@ -7,6 +7,10 @@ Responsive video component pack for [Seed](https://github.com/helpscout/seed)!
 npm install seed-video --save
 ```
 
+## Documentation
+
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-video/)**.
+
 
 ## Basic Usage
 
