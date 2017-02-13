@@ -1,5 +1,5 @@
 /**
- * seed-button v0.1.11
+ * seed-button v0.1.12
  * Button component pack for Seed
  * Licensed under MIT
  */
@@ -64,6 +64,13 @@
   .c-button.is-disabled:hover, .c-button.is-disabled:active, .c-button.is-disabled:focus, .c-button[disabled]:hover, .c-button[disabled]:active, .c-button[disabled]:focus {
     cursor: not-allowed;
     opacity: 0.65; }
+
+.c-button.is-selected {
+  background-color: #f1f1f1; }
+  .c-button.is-selected:hover {
+    background-color: #ececec; }
+  .c-button.is-selected:active {
+    background-color: #e7e7e7; }
 
 .c-button.is-error {
   background-color: #e52f28;

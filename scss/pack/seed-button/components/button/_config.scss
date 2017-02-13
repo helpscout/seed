@@ -12,6 +12,7 @@ $seed-button-link-namespace: "link" !default;
 $seed-button-error-namespace: "is-#{$seed-states-error-namespace}" !default;
 $seed-button-success-namespace: "is-#{$seed-states-success-namespace}" !default;
 $seed-button-warning-namespace: "is-#{$seed-states-warning-namespace}" !default;
+$seed-button-selected-namespace: is-selected !default;
 
 // Animation
 $seed-button-transition: none !default;
@@ -59,7 +60,8 @@ $seed-button-color: (
   background: (
     default: #fff,
     hover: #f9f9f9,
-    active: #f4f4f4
+    active: #f4f4f4,
+    selected: #f1f1f1,
   ),
   border: (
     default: #ddd,
