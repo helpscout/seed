@@ -44,11 +44,25 @@ Once that is setup, simply `@import` *seed-control* as needed in your `.scss` fi
 The following variables can be found in `_config.scss`
 
 ```scss
+
+// Control :: Config
 $seed-control-size-default: 36px !default;
 
 $seed-control-sizes: (
-  sm: 28px,
-  md: $seed-control-size-default,
-  lg: 52px
+  sm: (
+    font-size: 0.875rem,
+    height: 28px,
+    padding: 0 0.5em,
+  ),
+  md: (
+    font-size: 1rem,
+    height: $seed-control-size-default,
+    padding: 0 1em,
+  ),
+  lg: (
+    font-size: 1.25rem,
+    height: 52px,
+    padding: 0 1.5em,
+  ),
 ) !default;
 ```
