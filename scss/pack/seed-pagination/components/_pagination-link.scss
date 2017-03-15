@@ -1,6 +1,8 @@
 // Components :: Pagination Link
 
 // Dependencies
+@import "pack/seed-button/config";
+@import "pack/seed-control/_index";
 @import "pack/seed-dash/_index";
 @import "pack/seed-publish/_index";
 @import "../config";
@@ -14,7 +16,7 @@
     color: _get($seed-pagination-link-color, text, default);
     cursor: pointer;
     display: block;
-    line-height: _get($seed-pagination-sizes, md, line-height);
+    line-height: $seed-control-size-default - ceil($seed-button-border-size * 2);
     margin-left: -1px;
     outline: none;
     padding: $seed-pagination-padding;

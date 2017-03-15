@@ -45,25 +45,3 @@ $seed-pagination-alignment: (
   center: center,
   right: flex-end,
 ) !default;
-
-// Sizes
-$seed-pagination-sizes: (
-  sm: (
-    font-size: 0.875rem,
-    height: _get($seed-button-sizes, sm, height),
-    line-height: _get($seed-button-sizes, sm, line-height),
-    padding: 0 0.5em,
-  ),
-  md: (
-    font-size: 1rem,
-    height: _get($seed-button-sizes, md, height),
-    line-height: _get($seed-button-sizes, md, line-height),
-    padding: 0 0.75em,
-  ),
-  lg: (
-    font-size: 1.25rem,
-    height: _get($seed-button-sizes, lg, height),
-    line-height: _get($seed-button-sizes, lg, line-height),
-    padding: 0 1em,
-  )
-) !default;

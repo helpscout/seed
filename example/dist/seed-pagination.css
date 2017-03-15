@@ -44,12 +44,12 @@
     font-size: 1rem;
     height: 36px;
     line-height: 34px;
-    padding: 0 0.75em; }
+    padding: 0 1em; }
   .c-pagination--lg .c-pagination__link {
     font-size: 1.25rem;
     height: 52px;
     line-height: 50px;
-    padding: 0 1em; }
+    padding: 0 1.5em; }
 
 .c-pagination__item {
   box-sizing: border-box; }
