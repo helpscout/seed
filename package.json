@@ -9,7 +9,7 @@
     "build:main": "node ./scripts/build.js",
     "copy": "cp ./dist/*.css ./example/dist/",
     "test": "npm run build",
-    "prepuwblish": "npm run test"
+    "prepublish": "npm run test"
   },
   "repository": {
     "type": "git",
