@@ -1,6 +1,6 @@
 {
   "name": "seed-input-addons",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Input addon component pack for Seed",
   "main": "index.js",
   "scripts": {
