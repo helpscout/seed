@@ -73,28 +73,6 @@ $seed-button-line-height: $seed-button-height - ceil($seed-button-border-size * 
 // Padding
 $seed-button-padding: 0 1em !default;
 
-// Sizes
-$seed-button-sizes: (
-  sm: (
-    font-size: 0.875rem,
-    height: _get($seed-control-sizes, sm),
-    line-height: _get($seed-control-sizes, sm) - ceil($seed-button-border-size * 2),
-    padding: 0 0.5em
-  ),
-  md: (
-    font-size: 1rem,
-    height: _get($seed-control-sizes, md),
-    line-height: _get($seed-control-sizes, md) - ceil($seed-button-border-size * 2),
-    padding: 0 1em
-  ),
-  lg: (
-    font-size: 1.25rem,
-    height: _get($seed-control-sizes, lg),
-    line-height: _get($seed-control-sizes, lg) - ceil($seed-button-border-size * 2),
-    padding: 0 1.5em
-  )
-) !default;
-
 // Colors
 $seed-button-color: (
   background: (
