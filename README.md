@@ -2,12 +2,6 @@
 
 Control group object pack for [Seed](https://github.com/helpscout/seed)!
 
-**File size**
-
-Minified | Gzipped
----|---
-837 B | 354 B
-
 
 ## Install
 ```
