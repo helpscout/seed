@@ -1,5 +1,5 @@
 /**
- * seed-input v0.0.4
+ * seed-input v0.0.5
  * Input component pack for Seed
  * Licensed under MIT
  */
@@ -27,18 +27,6 @@
   .c-input:focus {
     border-color: #3197D6;
     outline: none; }
-
-select.c-input {
-  -webkit-appearance: menulist;
-  -moz-appearance: menulist;
-  appearance: menu; }
-
-textarea.c-input {
-  height: auto;
-  line-height: inherit;
-  overflow: auto;
-  padding: 8px;
-  vertical-align: top; }
 
 .c-input--sm {
   height: 28px;
@@ -87,3 +75,15 @@ textarea.c-input {
     border-color: #ffc646; }
     .c-input.is-warning.is-disabled:hover, .c-input.is-warning.is-disabled:active, .c-input.is-warning.is-disabled:focus, .c-input.is-warning[disabled]:hover, .c-input.is-warning[disabled]:active, .c-input.is-warning[disabled]:focus {
       border-color: #ffc646; }
+
+select.c-input {
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menu; }
+
+textarea.c-input {
+  height: auto;
+  line-height: inherit;
+  overflow: auto;
+  padding: 8px;
+  vertical-align: top; }
