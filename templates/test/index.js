@@ -1,4 +1,10 @@
 var path = require('path');
 var sassTrue = require('sass-true');
+var harvester = require('seed-harvester');
 
-sassTrue.runSass({file: '<%= file %>'}, describe, it);
+var options = {
+  file: '<%= file %>',
+  includePaths: harvester(),
+};
+
+sassTrue.runSass(options, describe, it);
