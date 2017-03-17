@@ -3,11 +3,10 @@
 // Dependencies
 @import "pack/seed-control/config";
 @import "pack/seed-publish/_index";
+@import "../../config";
 
 @include export(seed-input) {
-  $__class: #{&};
-
-  @at-root textarea#{$__class} {
+  textarea.#{$seed-input-namespace} {
     height: auto;
     line-height: inherit;
     overflow: auto;
