@@ -1,8 +1,10 @@
-// Test :: Selector
+// Test :: Scoping
+/* globals describe: true, it: true */
+'use strict';
 var assert = require('chai').assert;
 var barista = require('seed-barista');
 
-describe('seed-input: selectors', function() {
+describe('seed-input: scoping', function() {
   describe('.c-input', function() {
     var styles = `
       html {
