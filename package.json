@@ -43,11 +43,13 @@
     "node": ">=4"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "find-root": "^1.0.0",
     "mkdirp": "^0.5.1",
     "mocha": "^3.2.0",
     "node-sass": "^3.10.0",
-    "sass-pathfinder": "0.0.5"
+    "sass-pathfinder": "0.0.5",
+    "seed-barista": "0.0.3"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
