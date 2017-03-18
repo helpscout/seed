@@ -46,6 +46,13 @@ describe('seed-input: config', function() {
       // Expects 28px
       assert.equal(prop.value, `${inputHeight - (size * 2)}px`);
     });
+
+    it('should not affect height of component when modified', function() {
+      var props = output.data.stylesheet.rules[0].declarations;
+      var prop = find(props, { 'property': 'height' });
+      // Expects 28px
+      assert.equal(prop.value, `${inputHeight}px`);
+    });
   });
 
   describe('sizes', function() {
