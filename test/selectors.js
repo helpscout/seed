@@ -4,8 +4,13 @@ var barista = require('seed-barista');
 
 describe('seed-input: selectors', function() {
   describe('.c-input', function() {
+    var styles = `
+      html {
+        @import "components/input/_index";
+      }
+    `;
     var output = barista({
-      file: '_input-scoping.scss',
+      content: styles
     });
 
     it('should be properly scoped when @import within a selector', function() {
@@ -16,8 +21,13 @@ describe('seed-input: selectors', function() {
   });
 
   describe('select.c-input', function() {
+    var styles = `
+      html {
+        @import "components/input/select";
+      }
+    `;
     var output = barista({
-      file: '_select-scoping.scss',
+      content: styles
     });
 
     it('should be properly scoped when @import within a selector', function() {
@@ -29,8 +39,13 @@ describe('seed-input: selectors', function() {
   });
 
   describe('textarea.c-input', function() {
+    var styles = `
+      html {
+        @import "components/input/textarea";
+      }
+    `;
     var output = barista({
-      file: '_textarea-scoping.scss',
+      content: styles
     });
 
     it('should be properly scoped when @import within a selector', function() {

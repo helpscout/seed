@@ -4,8 +4,25 @@ var barista = require('seed-barista');
 
 describe('seed-input: modifiers', function() {
   describe('sizes', function() {
+    var styles = `
+      $seed-control-sizes: (
+        size-sm: (
+          font-size: 0.875rem,
+          height: 28px,
+          padding: 0 0.5em,
+        ),
+        size-md: (
+          font-size: 1rem,
+          height: 32px,
+          padding: 0 1em,
+        ),
+      ) !default;
+
+      @import "components/_index";
+    `;
+
     var output = barista({
-      file: '_input-sizes.scss',
+      content: styles,
     });
 
     it('should generate custom sizes when $seed-control-sizes is modified', function() {
