@@ -3,7 +3,19 @@ var assert = require('chai').assert;
 var barista = require('seed-barista');
 
 describe('seed-input: selectors', function() {
-  describe('_select.scss', function() {
+  describe('.c-input', function() {
+    var output = barista({
+      file: '_input-scoping.scss',
+    });
+
+    it('should be properly scoped when @import within a selector', function() {
+      // html .c-input { ... }
+      var expects = output.css.indexOf('html .c-input') >= 0;
+      assert.equal(expects, true);
+    });
+  });
+
+  describe('select.c-input', function() {
     var output = barista({
       file: '_select-scoping.scss',
     });
@@ -16,7 +28,7 @@ describe('seed-input: selectors', function() {
     });
   });
 
-  describe('_textarea.scss', function() {
+  describe('textarea.c-input', function() {
     var output = barista({
       file: '_textarea-scoping.scss',
     });
