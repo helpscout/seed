@@ -1,0 +1,16 @@
+// Test :: Input Sizes
+
+$seed-control-sizes: (
+  size-sm: (
+    font-size: 0.875rem,
+    height: 28px,
+    padding: 0 0.5em,
+  ),
+  size-md: (
+    font-size: 1rem,
+    height: 32px,
+    padding: 0 1em,
+  ),
+) !default;
+
+@import "components/_index";
