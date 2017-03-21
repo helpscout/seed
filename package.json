@@ -8,8 +8,9 @@
     "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
     "copy": "cp ./dist/*.css ./example/dist/",
+    "test:mocha": "mocha",
     "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html",
-    "test": "npm run build",
+    "test": "npm run test:mocha && npm run test:qunit",
     "prepublish": "npm run test"
   },
   "repository": {
@@ -42,11 +43,14 @@
     "node": ">=4"
   },
   "devDependencies": {
+    "chai": "3.5.0",
     "jquery": "3.2.0",
     "mkdirp": "^0.5.1",
+    "mocha": "3.2.0",
     "node-qunit-phantomjs": "1.5.0",
     "node-sass": "^3.10.0",
-    "qunitjs": "2.2.1"
+    "qunitjs": "2.2.1",
+    "seed-barista": "0.2.1"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",

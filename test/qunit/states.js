@@ -1,4 +1,5 @@
 // QUnit :: Test :: States
+/* globals QUnit: true */
 'use strict';
 
 var q = QUnit;
@@ -109,4 +110,3 @@ md('states', {
     }
   );
 });
-
