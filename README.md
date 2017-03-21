@@ -1,4 +1,4 @@
-# seed-bistro
+# seed-bistro ☕️
 
 A test kit bundle for Seed! Makes CSS testing easier 🎉
 
