@@ -1,0 +1,49 @@
+{
+  "name": "seed-bistro",
+  "version": "0.0.0",
+  "description": "Test kit for Seed CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-bistro.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-bistro/issues"
+  },
+  "keywords": [
+    "barista",
+    "bistro",
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "helper",
+    "itcss",
+    "modular",
+    "mocha",
+    "oocss",
+    "performance",
+    "seed",
+    "scss",
+    "test",
+    "testing"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "dependencies": {
+    "chai": "3.5.0",
+    "jquery": "3.2.0",
+    "jshint": "2.9.4",
+    "mocha": "3.2.0",
+    "node-qunit-phantomjs": "1.5.0",
+    "qunitjs": "2.2.1"
+  }
+}
