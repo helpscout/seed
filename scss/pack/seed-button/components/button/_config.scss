@@ -56,7 +56,7 @@ $seed-button-color: (
 ) !default;
 
 $seed-button-styles: (
-  primary: (
+  #{$seed-button-primary-namespace}: (
     _generate-states: false,
     background: (
       default: #3197D6,
@@ -80,7 +80,7 @@ $seed-button-styles: (
     ),
   ),
 
-  link: (
+  #{$seed-button-link-namespace}: (
     _generate-states: true,
     background: (
       default: transparent,

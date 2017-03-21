@@ -53,9 +53,10 @@ $seed-button-link-namespace: "link" !default;
 $seed-button-error-namespace: "is-#{$seed-states-error-namespace}" !default;
 $seed-button-success-namespace: "is-#{$seed-states-success-namespace}" !default;
 $seed-button-warning-namespace: "is-#{$seed-states-warning-namespace}" !default;
+$seed-button-selected-namespace: is-selected !default;
 
 // Animation
-$seed-button-transition: all 0.1s ease !default;
+$seed-button-transition: none !default;
 
 // Border
 $seed-button-border-radius: $seed-border-radius !default;
@@ -78,7 +79,8 @@ $seed-button-color: (
   background: (
     default: #fff,
     hover: #f9f9f9,
-    active: #f4f4f4
+    active: #f4f4f4,
+    selected: #f1f1f1,
   ),
   border: (
     default: #ddd,
@@ -95,7 +97,7 @@ $seed-button-color: (
 ) !default;
 
 $seed-button-styles: (
-  primary: (
+  #{$seed-button-primary-namespace}: (
     _generate-states: false,
     background: (
       default: #3197D6,
@@ -119,7 +121,7 @@ $seed-button-styles: (
     ),
   ),
 
-  link: (
+  #{$seed-button-link-namespace}: (
     _generate-states: true,
     background: (
       default: transparent,
@@ -138,7 +140,14 @@ $seed-button-styles: (
       active: none,
       focus: none
     ),
-    text: #3197D6
+    text: (
+      default: #3197D6,
+      hover: #3197D6
+    ),
+    text-decoration: (
+      default: none,
+      hover: underline,
+    ),
   ),
 ) !default;
 
@@ -193,4 +202,15 @@ $seed-button-color-states: (
     text: #fff
   )
 ) !default;
+```
+
+
+## Tests
+
+`seed-button` has tests written with [seed-barista](https://github.com/helpscout/seed-barista) (powered by Mocha) and QUnit. QUnit tests the component in the browser (PhantomJS).
+
+Run tests locally:
+
+```
+npm test
 ```

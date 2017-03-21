@@ -1,0 +1,24 @@
+// Components :: Button :: Native
+
+// button selector reset
+// Source: https://necolas.github.io/normalize.css/4.1.1/normalize.css
+@include export(seed-button) {
+  button.#{$seed-button-namespace} {
+    font-family: inherit;
+    overflow: visible;
+    outline: none;
+
+    &::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    &:-moz-focus-ring {
+      outline: 1px dotted Buttontext;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
