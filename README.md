@@ -9,3 +9,9 @@ This pack comes with:
 * [Chai](http://chaijs.com/)
 * [QUnit](https://qunitjs.com/)
 * [jQuery](https://jquery.com/)
+
+
+## Install
+```
+npm install seed-bistro --save-dev
+```
