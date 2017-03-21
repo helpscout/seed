@@ -1,7 +1,7 @@
 {
   "name": "seed-bistro",
   "version": "0.0.0",
-  "description": "Test kit for Seed CSS",
+  "description": "CSS testing bundle - Making (S)CSS testing easy!",
   "main": "index.js",
   "scripts": {
     "test": "true"
