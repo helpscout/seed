@@ -20,4 +20,20 @@ describe('seed-button: styles', function() {
     });
   });
 
+  describe('publish', function() {
+    var style = `
+      @import "./_index";
+      @import "./_index";
+      @import "./_index";
+      @import "./_index";
+      @import "./_index";
+    `;
+    var output = barista({ content: style });
+
+    it('should only be compiled once', function() {
+      var $o = output.$('.c-button--primary');
+
+      assert.equal($o.selectors.length, 1);
+    });
+  });
 });
