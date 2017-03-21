@@ -43,14 +43,9 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "chai": "3.5.0",
-    "jquery": "3.2.0",
     "mkdirp": "^0.5.1",
-    "mocha": "3.2.0",
-    "node-qunit-phantomjs": "1.5.0",
     "node-sass": "^3.10.0",
-    "qunitjs": "2.2.1",
-    "seed-barista": "0.2.1"
+    "seed-bistro": "0.0.2"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
