@@ -7,7 +7,7 @@
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test:mocha": "./node_modules/.bin/mocha",
+    "test:mocha": "mocha",
     "test": "npm run test:mocha",
     "prepublish": "npm run test"
   },
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
+    "mocha": "3.2.0",
     "node-sass": "^3.10.1",
     "seed-bistro": "0.0.2"
   },
