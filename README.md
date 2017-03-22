@@ -15,3 +15,8 @@ This pack comes with:
 ```
 npm install seed-bistro --save-dev
 ```
+
+## Node Version
+
+It is recommended that `seed-bistro` is used with a project (or CI build) that is on **Node V6** or higher.<br>
+That is because `seed-bistro`'s dependencies are resolved with the flatter `node_modules` structure introduced in [npm v3](https://docs.npmjs.com/how-npm-works/npm3).
