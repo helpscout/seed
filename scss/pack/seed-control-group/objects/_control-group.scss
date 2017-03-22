@@ -1,6 +1,7 @@
 // Objects :: Control Group
 
 // Dependencies
+@import "pack/seed-breakpoints/_index";
 @import "pack/seed-border/config";
 @import "pack/seed-publish/_index";
 @import "../config";
@@ -58,6 +59,14 @@
     &--block {
       > * {
         flex: 1;
+      }
+    }
+
+    // Modifiers: Alignment
+    $mod: "-";
+    &#{$mod} {
+      @include breakpoint-prop-map($seed-control-group-alignment, (prop)) {
+        justify-content: prop(prop);
       }
     }
   }

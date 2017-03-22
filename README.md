@@ -49,4 +49,11 @@ The following variables can be found in `_config.scss`
 // Namespaces
 $seed-control-group-namespace: "o-control-group" !default;
 $seed-control-group-block-namespace: "#{$seed-control-group-namespace}__block" !default;
+
+// Alignment
+$seed-control-group-alignment: (
+  left: flex-start,
+  center: center,
+  right: flex-end,
+) !default;
 ```
