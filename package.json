@@ -7,7 +7,7 @@
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test:mocha": "mocha",
+    "test:mocha": "./node_modules/.bin/mocha",
     "test": "npm run test:mocha",
     "prepublish": "npm run test"
   },
