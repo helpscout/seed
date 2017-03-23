@@ -1,6 +1,6 @@
-# seed-bistro ☕️
+# seed-bistro ☕️ [![npm version](https://badge.fury.io/js/seed-bistro.svg)](https://badge.fury.io/js/seed-bistro) [![dependencies Status](https://david-dm.org/helpscout/seed-bistro/status.svg)](https://david-dm.org/helpscout/seed-bistro)
 
-A test kit bundle for Seed! Makes CSS testing easier 🎉
+A test bundle for Seed! Makes CSS testing easier 🎉
 
 This pack comes with:
 * [seed-barista](https://github.com/helpscout/seed-barista)
