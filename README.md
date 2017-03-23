@@ -23,4 +23,4 @@ That is because `seed-bistro`'s dependencies are resolved with the flatter `node
 
 ## Thanks
 
-Special thanks to [Natalia](https://twitter.com/RealNataliaT) for coming up with the name Bistro ❤️
+Special thanks to [Natalia](https://twitter.com/RealNataliaT) for coming up with the name "Bistro" ❤️
