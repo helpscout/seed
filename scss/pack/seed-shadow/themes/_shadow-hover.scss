@@ -12,7 +12,7 @@
       transition: $seed-shadow-hover-transition;
 
       &:hover {
-        box-shadow: prop(prop);
+        box-shadow: prop(prop) !important;
       }
     }
   }
