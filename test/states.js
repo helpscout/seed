@@ -16,7 +16,7 @@ describe('seed-input: states', function() {
     var $o = output.$('.c-input:focus');
 
     it('should have a focus state', function() {
-      assert.isOk($o.selectors.length);
+      assert.isOk($o.exists());
     });
 
     it('should modify the border-color', function() {

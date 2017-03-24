@@ -18,7 +18,7 @@ describe('seed-input: scoping', function() {
     it('should be properly scoped when @import within a selector', function() {
       var $o = output.$('html .c-input');
 
-      assert.isOk($o.selectors.length);
+      assert.isOk($o.exosts());
     });
   });
 
@@ -35,7 +35,7 @@ describe('seed-input: scoping', function() {
     it('should be properly scoped when @import within a selector', function() {
       var $o = output.$('html select.c-input');
 
-      assert.isOk($o.selectors.length);
+      assert.isOk($o.exists());
     });
   });
 
@@ -52,7 +52,7 @@ describe('seed-input: scoping', function() {
     it('should be properly scoped when @import within a selector', function() {
       var $o = output.$('html textarea.c-input');
 
-      assert.isOk($o.selectors.length);
+      assert.isOk($o.exists());
     });
   });
 });

@@ -19,7 +19,7 @@ describe('seed-input: config', function() {
     it('should update className of component when modified', function() {
       var $o = output.$('.my-input');
 
-      assert.isOk($o.selectors.length);
+      assert.isOk($o.exists());
     });
   });
 
@@ -73,13 +73,13 @@ describe('seed-input: config', function() {
     it('should generate custom sizes when modified', function() {
       var $o = output.$('.c-input--size-sm');
 
-      assert.isOk($o.selectors.length);
+      assert.isOk($o.exists());
     });
 
     it('should omit default "lg" sizes when modified', function() {
       var $o = output.$('c-input--lg');
 
-      assert.isNotOk($o.selectors.length);
+      assert.isNotOk($o.exists());
     });
   });
 

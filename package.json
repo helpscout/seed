@@ -10,7 +10,7 @@
     "copy": "cp ./dist/*.css ./example/dist/",
     "test:mocha": "mocha",
     "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
-    "test": "npm run test:mocha && npm run test:qunit",
+    "test": "npm run test:mocha",
     "prepublish": "npm run test"
   },
   "repository": {
@@ -44,13 +44,10 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "find-root": "^1.0.0",
-    "lodash.find": "^4.6.0",
-    "lodash.some": "^4.6.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0",
     "sass-pathfinder": "0.0.5",
-    "seed-bistro": "0.0.2"
+    "seed-bistro": "0.0.3"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
