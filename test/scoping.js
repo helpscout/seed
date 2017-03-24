@@ -16,9 +16,9 @@ describe('seed-input: scoping', function() {
     });
 
     it('should be properly scoped when @import within a selector', function() {
-      // html .c-input { ... }
-      var expects = output.css.indexOf('html .c-input') >= 0;
-      assert.equal(expects, true);
+      var $o = output.$('html .c-input');
+
+      assert.isOk($o.exists());
     });
   });
 
@@ -33,10 +33,9 @@ describe('seed-input: scoping', function() {
     });
 
     it('should be properly scoped when @import within a selector', function() {
-      // Class structure should be
-      // html select.c-input { ... }
-      var expects = output.css.indexOf('html select.c-input') >= 0;
-      assert.equal(expects, true);
+      var $o = output.$('html select.c-input');
+
+      assert.isOk($o.exists());
     });
   });
 
@@ -51,10 +50,9 @@ describe('seed-input: scoping', function() {
     });
 
     it('should be properly scoped when @import within a selector', function() {
-      // Class structure should be
-      // html textarea.c-input { ... }
-      var expects = output.css.indexOf('html textarea.c-input') >= 0;
-      assert.equal(expects, true);
+      var $o = output.$('html textarea.c-input');
+
+      assert.isOk($o.exists());
     });
   });
 });

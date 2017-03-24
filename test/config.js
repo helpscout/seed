@@ -17,9 +17,9 @@ describe('seed-input: config', function() {
     });
 
     it('should update className of component when modified', function() {
-      var selector = output.data.stylesheet.rules[0].selectors;
-      var expects = selector[0] === '.my-input';
-      assert.equal(expects, true);
+      var $o = output.$('.my-input');
+
+      assert.isOk($o.exists());
     });
   });
 
@@ -33,25 +33,18 @@ describe('seed-input: config', function() {
     var output = barista({
       content: styles
     });
+    var $o = output.$('.c-input');
 
     it('should update border-width of component when modified', function() {
-      var props = output.data.stylesheet.rules[0].declarations;
-      var prop = find(props, { 'property': 'border-width' });
-      assert.equal(prop.value, `${size}px`);
+      assert.equal($o.getProp('border-width'), `${size}px`);
     });
 
     it('should update line-height of component when modified', function() {
-      var props = output.data.stylesheet.rules[0].declarations;
-      var prop = find(props, { 'property': 'line-height' });
-      // Expects 28px
-      assert.equal(prop.value, `${inputHeight - (size * 2)}px`);
+      assert.equal($o.getProp('line-height'), `${inputHeight - (size * 2)}px`);
     });
 
     it('should not affect height of component when modified', function() {
-      var props = output.data.stylesheet.rules[0].declarations;
-      var prop = find(props, { 'property': 'height' });
-      // Expects 28px
-      assert.equal(prop.value, `${inputHeight}px`);
+      assert.equal($o.getProp('height'), `${inputHeight}px`);
     });
   });
 
@@ -78,17 +71,15 @@ describe('seed-input: config', function() {
     });
 
     it('should generate custom sizes when modified', function() {
-      // Class structure should be
-      // html select.c-input { ... }
-      var expects = output.css.indexOf('.c-input--size-sm') >= 0;
-      assert.equal(expects, true);
+      var $o = output.$('.c-input--size-sm');
+
+      assert.isOk($o.exists());
     });
 
     it('should omit default "lg" sizes when modified', function() {
-      // Class structure should be
-      // html select.c-input { ... }
-      var expects = output.css.indexOf('.c-input--lg') < 0;
-      assert.equal(expects, true);
+      var $o = output.$('c-input--lg');
+
+      assert.isNotOk($o.exists());
     });
   });
 

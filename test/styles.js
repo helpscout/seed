@@ -3,7 +3,6 @@
 'use strict';
 var assert = require('chai').assert;
 var barista = require('seed-barista');
-var some = require('lodash.some');
 
 describe('seed-input: styles', function() {
   describe('box-sizing', function() {
@@ -15,13 +14,10 @@ describe('seed-input: styles', function() {
     var output = barista({
       content: styles
     });
-    var selector = output.data.stylesheet.rules[0];
+    var $o = output.$('html .c-input');
 
     it('should have box-sizing: border-box reset', function() {
-      assert(some(selector.declarations, {
-        property: 'box-sizing',
-        value: 'border-box',
-      }));
+      assert.equal($o.getProp('box-sizing'), 'border-box');
     });
   });
 });

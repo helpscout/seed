@@ -8,8 +8,9 @@
     "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
     "copy": "cp ./dist/*.css ./example/dist/",
-    "test:component": "mocha",
-    "test": "npm run test:component && npm run build",
+    "test:mocha": "mocha",
+    "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
+    "test": "npm run test:mocha",
     "prepublish": "npm run test"
   },
   "repository": {
@@ -43,15 +44,10 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "find-root": "^1.0.0",
-    "lodash.find": "^4.6.0",
-    "lodash.some": "^4.6.0",
     "mkdirp": "^0.5.1",
-    "mocha": "^3.2.0",
     "node-sass": "^3.10.0",
     "sass-pathfinder": "0.0.5",
-    "seed-barista": "0.0.3"
+    "seed-bistro": "0.0.3"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
