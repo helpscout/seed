@@ -8,7 +8,7 @@
 @include export(seed-shadow) {
   .#{$seed-shadow-namespace} {
     @include prop-map($seed-shadow-sizes, (prop)) {
-      box-shadow: prop(prop);
+      box-shadow: prop(prop) !important;
     }
   }
 }
