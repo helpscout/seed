@@ -76,6 +76,28 @@
     .c-input.is-warning.is-disabled:hover, .c-input.is-warning.is-disabled:active, .c-input.is-warning.is-disabled:focus, .c-input.is-warning[disabled]:hover, .c-input.is-warning[disabled]:active, .c-input.is-warning[disabled]:focus {
       border-color: #ffc646; }
 
+input[type="file"].c-input {
+  border-color: transparent;
+  cursor: pointer;
+  line-height: 0;
+  padding-bottom: 6px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 6px;
+  width: auto; }
+  input[type="file"].c-input--sm {
+    line-height: 0;
+    padding-bottom: 2px;
+    padding-top: 2px; }
+  input[type="file"].c-input--md {
+    line-height: 0;
+    padding-bottom: 6px;
+    padding-top: 6px; }
+  input[type="file"].c-input--lg {
+    line-height: 0;
+    padding-bottom: 14px;
+    padding-top: 14px; }
+
 select.c-input {
   -webkit-appearance: menulist;
   -moz-appearance: menulist;
