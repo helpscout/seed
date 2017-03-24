@@ -18,7 +18,7 @@ describe('seed-input: scoping', function() {
     it('should be properly scoped when @import within a selector', function() {
       var $o = output.$('html .c-input');
 
-      assert.isOk($o.exosts());
+      assert.isOk($o.exists());
     });
   });
 
