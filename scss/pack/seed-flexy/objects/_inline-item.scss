@@ -1,11 +1,11 @@
-// Flexy Item :: Index
+// Objects :: Flexy Inline Item
 
 @import "pack/seed-publish/_index";
+@import "../config";
 
 @include export(seed-flexy) {
-  .#{$seed-flexy-item-namespace} {
+  .#{$seed-flexy-inline-item-namespace} {
     box-sizing: border-box;
     max-width: 100%;
-    min-width: 0;
   }
 }

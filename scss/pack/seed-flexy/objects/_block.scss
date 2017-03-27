@@ -1,8 +1,9 @@
-// Flexy Block :: Index
+// Object :: Flexy Block
 
 // Dependencies
 @import "pack/seed-breakpoints/_index";
 @import "pack/seed-publish/_index";
+@import "../config";
 
 @include export(seed-flexy) {
   .#{$seed-flexy-block-namespace} {
@@ -11,8 +12,6 @@
     min-width: 0;
     @include breakpoint-all {
       flex: 1;
-      flex-basis: auto;
-      -webkit-flex: 1;
     }
   }
 }
