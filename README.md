@@ -47,6 +47,7 @@ The following variables can be found in `_config.scss`
 ```scss
 // Namespaces
 $seed-flexy-namespace: "o-flexy" !default;
+$seed-flexy-inline-item-namespace: #{$seed-flexy-namespace}__inline-item !default;
 $seed-flexy-item-namespace: #{$seed-flexy-namespace}__item !default;
 $seed-flexy-block-namespace: #{$seed-flexy-namespace}__block !default;
 
