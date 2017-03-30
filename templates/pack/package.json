@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.0"
+    "node-sass": "^3.10.0",
+    "seed-bistro": "0.0.3"
   }
 }
