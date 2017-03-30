@@ -1,6 +1,6 @@
 {
   "name": "seed-cli",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Create awesome packs for Seed CSS!",
   "main": "./index.js",
   "engines": {
