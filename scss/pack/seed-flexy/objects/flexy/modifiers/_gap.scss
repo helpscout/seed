@@ -1,0 +1,20 @@
+// Modifiers :: Gap
+
+// Dependencies
+@import "../../../config";
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+
+@include export(seed-flexy) {
+  .#{$seed-flexy-gap-namespace} {
+    @include breakpoint-prop-map($seed-flexy-gap-sizes, (size)) {
+      > * {
+        margin-left: prop(size);
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

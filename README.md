@@ -50,6 +50,7 @@ $seed-flexy-namespace: "o-flexy" !default;
 $seed-flexy-inline-item-namespace: #{$seed-flexy-namespace}__inline-item !default;
 $seed-flexy-item-namespace: #{$seed-flexy-namespace}__item !default;
 $seed-flexy-block-namespace: #{$seed-flexy-namespace}__block !default;
+$seed-flexy-gap-namespace: #{$seed-flexy-namespace}--gap !default;
 
 // Alignment
 $seed-flexy-alignment: (
