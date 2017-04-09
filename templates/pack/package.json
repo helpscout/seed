@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "npm run build",
-    "prepublish": "npm run test"
+    "build": "npm run build:main && npm run banner",
+    "prepublish": "npm run test",
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha",
+    "version": "npm run build && git add dist"
   },
   "homepage": "",
   "repository": {
@@ -35,7 +37,7 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "mkdirp": "^0.5.1",
+    "mkdirp": "0.5.1",
     "node-sass": "^3.10.0",
     "seed-bistro": "0.0.3"
   }
