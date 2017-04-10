@@ -8,8 +8,11 @@
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "npm run build",
-    "prepublish": "npm run test"
+    "test:mocha": "mocha",
+    "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
+    "test": "npm run test:mocha",
+    "prepublish": "npm run test",
+    "version": "npm run build && git add dist"
   },
   "repository": {
     "type": "git",
@@ -41,7 +44,8 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.8.0",
+    "seed-bistro": "0.0.3"
   },
   "dependencies": {
     "seed-breakpoints": "0.4.0",
