@@ -1,0 +1,14 @@
+// Utilities :: Vertical align
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-vertical-align) {
+  .#{$seed-vertical-align-namespace} {
+    @include breakpoint-prop-map($seed-vertical-align-alignments, (alignment)) {
+      vertical-align: prop(alignment) !important;
+    }
+  }
+}

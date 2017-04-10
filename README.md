@@ -1,6 +1,6 @@
 # seed-vertical-align [![npm version](https://badge.fury.io/js/seed-vertical-align.svg)](https://badge.fury.io/js/seed-vertical-align)
 
-vertical-align utility pack for [Seed](https://github.com/helpscout/seed)!
+Vertical-align utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,17 @@ Once that is setup, simply `@import` *seed-vertical-align* as needed in your `.s
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-vertical-align config options
+// Namespace
+$seed-vertical-align-namespace: u-va !default;
+
+// Alignment
+$seed-vertical-align-alignments: (
+  bottom: bottom,
+  inherit: inherit,
+  initial: initial,
+  middle: middle,
+  text-bottom: text-bottom,
+  text-top: text-top,
+  top: top,
+) !default;
 ```
