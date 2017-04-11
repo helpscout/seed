@@ -1,5 +1,5 @@
 /**
- * seed-form-group v0.0.2 (https://github.com/helpscout/seed-form-group/)
+ * seed-form-group v0.0.3 (https://github.com/helpscout/seed-form-group/)
  * Form group component pack for Seed
  * Licensed under MIT
  */
@@ -27,18 +27,6 @@
   .c-input:focus {
     border-color: #3197D6;
     outline: none; }
-
-select.c-input {
-  -webkit-appearance: menulist;
-  -moz-appearance: menulist;
-  appearance: menu; }
-
-textarea.c-input {
-  height: auto;
-  line-height: inherit;
-  overflow: auto;
-  padding: 8px;
-  vertical-align: top; }
 
 .c-input--sm {
   height: 28px;
@@ -87,6 +75,40 @@ textarea.c-input {
     border-color: #ffc646; }
     .c-input.is-warning.is-disabled:hover, .c-input.is-warning.is-disabled:active, .c-input.is-warning.is-disabled:focus, .c-input.is-warning[disabled]:hover, .c-input.is-warning[disabled]:active, .c-input.is-warning[disabled]:focus {
       border-color: #ffc646; }
+
+input[type="file"].c-input {
+  border-color: transparent;
+  cursor: pointer;
+  line-height: 0;
+  padding-bottom: 6px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 6px;
+  width: auto; }
+  input[type="file"].c-input--sm {
+    line-height: 0;
+    padding-bottom: 2px;
+    padding-top: 2px; }
+  input[type="file"].c-input--md {
+    line-height: 0;
+    padding-bottom: 6px;
+    padding-top: 6px; }
+  input[type="file"].c-input--lg {
+    line-height: 0;
+    padding-bottom: 14px;
+    padding-top: 14px; }
+
+select.c-input {
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menu; }
+
+textarea.c-input {
+  height: auto;
+  line-height: inherit;
+  overflow: auto;
+  padding: 8px;
+  vertical-align: top; }
 
 .c-form-group {
   border: none;
