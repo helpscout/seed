@@ -20,3 +20,7 @@ npm install seed-bistro --save-dev
 
 It is recommended that `seed-bistro` is used with a project (or CI build) that is on **Node V6** or higher.<br>
 That is because `seed-bistro`'s dependencies are resolved with the flatter `node_modules` structure introduced in [npm v3](https://docs.npmjs.com/how-npm-works/npm3).
+
+## Thanks
+
+Special thanks to [Natalia](https://twitter.com/RealNataliaT) for coming up with the name "Bistro" ❤️
