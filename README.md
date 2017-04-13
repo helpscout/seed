@@ -3,12 +3,10 @@
 A test bundle for Seed! Makes CSS testing easier 🎉
 
 This pack comes with:
-* [seed-barista](https://github.com/helpscout/seed-barista)
-* [node-qunit-phantomjs](https://github.com/jonkemp/node-qunit-phantomjs)
+* [Barista](https://github.com/helpscout/seed-barista)
+* [Genki](https://github.com/itsjonq/genki)
 * [Mocha](https://mochajs.org/)
 * [Chai](http://chaijs.com/)
-* [QUnit](https://qunitjs.com/)
-* [jQuery](https://jquery.com/)
 
 
 ## Install

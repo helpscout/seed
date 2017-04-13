@@ -40,11 +40,9 @@
   },
   "dependencies": {
     "chai": "3.5.0",
-    "jquery": "3.2.1",
+    "genki": "0.0.2",
     "jshint": "2.9.4",
     "mocha": "3.2.0",
-    "node-qunit-phantomjs": "1.5.0",
-    "qunitjs": "2.2.1",
     "seed-barista": "0.3.1"
   }
 }
