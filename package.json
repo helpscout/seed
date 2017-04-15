@@ -40,9 +40,9 @@
   },
   "dependencies": {
     "chai": "3.5.0",
-    "genki": "0.0.2",
+    "genki": "0.0.5",
     "jshint": "2.9.4",
     "mocha": "3.2.0",
-    "seed-barista": "0.3.1"
+    "seed-barista": "0.3.2"
   }
 }

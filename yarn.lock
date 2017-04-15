@@ -438,14 +438,14 @@ gaze@^1.0.0:
   dependencies:
     globule "^1.0.0"
 
-genki@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/genki/-/genki-0.0.2.tgz#713da864f8ae5adf7ca7ddb239aecac9096b6009"
+genki@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/genki/-/genki-0.0.5.tgz#d75e154d785d7c9880420b80d724aff6264f52c8"
   dependencies:
     jquery "3.2.1"
     jsdom "9.12.0"
-    lodash.assign "^4.2.0"
-    seed-barista "^0.3.1"
+    lodash.assign "4.2.0"
+    seed-barista "0.3.2"
 
 get-caller-file@^1.0.1:
   version "1.0.2"
@@ -1220,9 +1220,9 @@ sax@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.2.tgz#fd8631a23bc7826bef5d871bdb87378c95647828"
 
-seed-barista@0.3.1, seed-barista@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/seed-barista/-/seed-barista-0.3.1.tgz#4a319b68a4cc26348fd18ab6a91e2dd8efe49cdd"
+seed-barista@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/seed-barista/-/seed-barista-0.3.2.tgz#4315971154f0a879b6536909abfea6f38aaaa30a"
   dependencies:
     find-root "1.0.0"
     lodash.assign "4.2.0"
