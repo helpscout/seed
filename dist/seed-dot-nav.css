@@ -1,5 +1,5 @@
 /**
- * seed-dot-nav v0.0.3 (https://github.com/helpscout/seed-dot-nav)
+ * seed-dot-nav v0.0.4 (https://github.com/helpscout/seed-dot-nav)
  * Dot navigation component pack for Seed
  * Licensed under MIT
  */
@@ -40,7 +40,7 @@
   .c-dot-nav--dot-lg.c-dot-nav > li {
     width: 48px; }
   .c-dot-nav--dot-lg .c-dot-nav__link {
-    height: 16px; }
+    height: 18px; }
     .c-dot-nav--dot-lg .c-dot-nav__link:before {
       height: 16px;
       width: 16px; }
@@ -48,7 +48,7 @@
   .c-dot-nav--dot-md.c-dot-nav > li {
     width: 30px; }
   .c-dot-nav--dot-md .c-dot-nav__link {
-    height: 10px; }
+    height: 12px; }
     .c-dot-nav--dot-md .c-dot-nav__link:before {
       height: 10px;
       width: 10px; }
@@ -56,7 +56,7 @@
   .c-dot-nav--dot-sm.c-dot-nav > li {
     width: 24px; }
   .c-dot-nav--dot-sm .c-dot-nav__link {
-    height: 8px; }
+    height: 10px; }
     .c-dot-nav--dot-sm .c-dot-nav__link:before {
       height: 8px;
       width: 8px; }
@@ -90,7 +90,7 @@
   box-sizing: border-box;
   cursor: pointer;
   display: block;
-  height: 10px;
+  height: 12px;
   overflow: hidden;
   position: relative;
   text-indent: 100%;
