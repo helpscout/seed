@@ -18,6 +18,7 @@
     "url": ""
   },
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "<%= license %>",
   "keywords": [
@@ -39,6 +40,6 @@
   "devDependencies": {
     "mkdirp": "0.5.1",
     "node-sass": "^3.10.0",
-    "seed-bistro": "0.0.3"
+    "seed-bistro": "0.1.1"
   }
 }

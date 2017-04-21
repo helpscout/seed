@@ -7,9 +7,9 @@ var pathfinder = require('./pathfinder');
 var sass = require('node-sass');
 
 var file = pkg.name;
-var includePaths = pathfinder(
+var includePaths = pathfinder([
   // Add files/paths to include
-);
+]);
 
 // Default .css compile
 sass.render({
