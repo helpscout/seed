@@ -1,7 +1,7 @@
 {
   "name": "seed-dot-nav",
   "version": "0.0.0",
-  "description": "dot-nav component pack for Seed",
+  "description": "Dot navigation component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
@@ -12,22 +12,28 @@
     "test": "npm run test:mocha",
     "version": "npm run build && git add dist"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-dot-nav",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-dot-nav.git"
   },
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-dot-nav/issues"
+  },
   "keywords": [
     "bem",
     "css",
     "design",
+    "dot",
     "functional",
     "itcss",
     "modular",
+    "nav",
+    "navigation",
     "oocss",
     "performance",
     "seed",
