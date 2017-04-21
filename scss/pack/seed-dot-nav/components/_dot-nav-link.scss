@@ -9,7 +9,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    height: $seed-dot-nav-dot-size;
+    height: $seed-dot-nav-dot-size + ceil($seed-dot-nav-dot-active-size-increase * 2);
     overflow: hidden;
     position: relative;
     text-indent: 100%;

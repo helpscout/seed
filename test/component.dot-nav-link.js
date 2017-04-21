@@ -21,10 +21,12 @@ describe('seed-dot-nav: component: dot-nav-link', function() {
   });
 
   it('should have a height defined', function() {
+    var $b = output.$('.c-dot-nav__link:before');
     var height = $o.getProp('height');
 
     expect(height).to.exist;
     expect(parseInt(height, 10)).to.be.above(0);
+    expect(parseInt($b.getProp('height'), 10)).to.be.below(parseInt(height, 10));
   });
 
   it('should not have text underline', function() {
