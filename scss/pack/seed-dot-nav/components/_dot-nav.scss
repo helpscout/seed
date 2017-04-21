@@ -29,6 +29,7 @@
           width: ceil(prop(size) * $seed-dot-nav-item-spacing-multiplier);
         }
         .#{$seed-dot-nav-link-namespace} {
+          height: prop(size);
           &:before {
             height: prop(size);
             width: prop(size);

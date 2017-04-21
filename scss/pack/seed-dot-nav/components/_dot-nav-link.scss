@@ -6,15 +6,14 @@
 
 @include export(seed-dot-nav) {
   .#{$seed-dot-nav-link-namespace} {
-    // background-color: $seed-dot-nav-link-color;
     box-sizing: border-box;
     cursor: pointer;
     display: block;
+    height: $seed-dot-nav-dot-size;
     overflow: hidden;
     position: relative;
     text-indent: 100%;
     text-decoration: none;
-    // transition: $seed-dot-nav-link-transition;
     white-space: nowrap;
 
     // Dot
@@ -28,6 +27,7 @@
       position: absolute;
       top: 50%;
       transform: $seed-dot-nav-dot-transform;
+      transition: $seed-dot-nav-dot-transition;
       width: $seed-dot-nav-dot-size;
     }
 

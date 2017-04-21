@@ -20,6 +20,13 @@ describe('seed-dot-nav: component: dot-nav-link', function() {
     expect($o.getProp('position')).to.equal('relative');
   });
 
+  it('should have a height defined', function() {
+    var height = $o.getProp('height');
+
+    expect(height).to.exist;
+    expect(parseInt(height, 10)).to.be.above(0);
+  });
+
   it('should not have text underline', function() {
     var $h = output.$('.c-dot-nav__link:hover');
 

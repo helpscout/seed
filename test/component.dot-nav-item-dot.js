@@ -24,6 +24,13 @@ describe('seed-dot-nav: component: dot-nav-link-dot', function() {
     expect($o.getProp('content')).to.equal('""');
   });
 
+  it('should have transition defined by default', function() {
+    var t = $o.getProp('transition');
+
+    expect(t).to.exist;
+    expect(t).to.contain('background');
+  });
+
   it('should use fluid positioning', function() {
     expect($o.getProp('position')).to.equal('absolute');
     expect($o.getProp('top')).to.equal('50%');
