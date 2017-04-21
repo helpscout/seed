@@ -1,5 +1,5 @@
 /**
- * seed-dot-nav v0.0.2 (https://github.com/helpscout/seed-dot-nav)
+ * seed-dot-nav v0.0.3 (https://github.com/helpscout/seed-dot-nav)
  * Dot navigation component pack for Seed
  * Licensed under MIT
  */
@@ -39,21 +39,27 @@
   .c-dot-nav--dot-lg .c-dot-nav__item,
   .c-dot-nav--dot-lg.c-dot-nav > li {
     width: 48px; }
-  .c-dot-nav--dot-lg .c-dot-nav__link:before {
-    height: 16px;
-    width: 16px; }
+  .c-dot-nav--dot-lg .c-dot-nav__link {
+    height: 16px; }
+    .c-dot-nav--dot-lg .c-dot-nav__link:before {
+      height: 16px;
+      width: 16px; }
   .c-dot-nav--dot-md .c-dot-nav__item,
   .c-dot-nav--dot-md.c-dot-nav > li {
     width: 30px; }
-  .c-dot-nav--dot-md .c-dot-nav__link:before {
-    height: 10px;
-    width: 10px; }
+  .c-dot-nav--dot-md .c-dot-nav__link {
+    height: 10px; }
+    .c-dot-nav--dot-md .c-dot-nav__link:before {
+      height: 10px;
+      width: 10px; }
   .c-dot-nav--dot-sm .c-dot-nav__item,
   .c-dot-nav--dot-sm.c-dot-nav > li {
     width: 24px; }
-  .c-dot-nav--dot-sm .c-dot-nav__link:before {
-    height: 8px;
-    width: 8px; }
+  .c-dot-nav--dot-sm .c-dot-nav__link {
+    height: 8px; }
+    .c-dot-nav--dot-sm .c-dot-nav__link:before {
+      height: 8px;
+      width: 8px; }
 
 .c-dot-nav__item,
 .c-dot-nav > li {
@@ -84,6 +90,7 @@
   box-sizing: border-box;
   cursor: pointer;
   display: block;
+  height: 10px;
   overflow: hidden;
   position: relative;
   text-indent: 100%;
@@ -99,6 +106,7 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: background-color 0.2s ease;
     width: 10px; }
   .c-dot-nav__link:hover, .c-dot-nav__link:focus {
     outline: none;
