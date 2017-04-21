@@ -1,6 +1,6 @@
 # seed-dot-nav [![npm version](https://badge.fury.io/js/seed-dot-nav.svg)](https://badge.fury.io/js/seed-dot-nav)
 
-dot-nav component pack for [Seed](https://github.com/helpscout/seed)!
+Dot navigation component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,31 @@ Once that is setup, simply `@import` *seed-dot-nav* as needed in your `.scss` fi
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-dot-nav config options
+// Namespace
+$seed-dot-nav-namespace: c-dot-nav !default;
+$seed-dot-nav-item-namespace: #{$seed-dot-nav-namespace}__item !default;
+$seed-dot-nav-link-namespace: #{$seed-dot-nav-namespace}__link !default;
+
+// Configs
+$seed-dot-nav-item-spacing-multiplier: 3 !default;
+$seed-dot-nav-link-focus-outline: none !default;
+$seed-dot-nav-dot-transition: background-color 0.2s ease !default;
+$seed-dot-nav-dot-size: 10px !default;
+$seed-dot-nav-dot-color: rgba(black, 0.2) !default;
+$seed-dot-nav-dot-color-hover: rgba(black, 0.4) !default;
+$seed-dot-nav-dot-active-color: #3197D6 !default;
+$seed-dot-nav-dot-active-size-increase: 1px !default;
+$seed-dot-nav-dot-transform: translate(-50%, -50%) !default;
+
+$seed-dot-nav-alignment: (
+  left: flex-start,
+  center: center,
+  right: flex-end,
+) !default;
+
+$seed-dot-nav-dot-sizes: (
+  lg: 16px,
+  md: $seed-dot-nav-dot-size,
+  sm: 8px,
+) !default;
 ```

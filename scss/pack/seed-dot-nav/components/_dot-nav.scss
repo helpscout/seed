@@ -1,0 +1,41 @@
+// Components :: Dot Nav
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-dot-nav) {
+  .#{$seed-dot-nav-namespace} {
+    $mod: "-";
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+
+    // Modifiers
+    &#{$mod} {
+      // Alignment
+      @include breakpoint-prop-map($seed-dot-nav-alignment, (alignment)) {
+        justify-content: prop(alignment);
+      }
+    }
+    // Dot sizes
+    &--dot {
+      @include prop-map($seed-dot-nav-dot-sizes, (size)) {
+        .#{$seed-dot-nav-item-namespace},
+        &.#{$seed-dot-nav-namespace} > li {
+          width: ceil(prop(size) * $seed-dot-nav-item-spacing-multiplier);
+        }
+        .#{$seed-dot-nav-link-namespace} {
+          &:before {
+            height: prop(size);
+            width: prop(size);
+          }
+        }
+      }
+    }
+
+  }
+}
