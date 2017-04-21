@@ -37,6 +37,18 @@
         }
       }
     }
+    // Static
+    &--static {
+      .#{$seed-dot-nav-link-namespace} {
+        cursor: default;
 
+        &:hover,
+        &:focus {
+          &:before {
+            background-color: $seed-dot-nav-dot-color;
+          }
+        }
+      }
+    }
   }
 }
