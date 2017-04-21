@@ -44,4 +44,11 @@ describe('seed-dot-nav: component: dot-nav', function() {
     expect($md.exists()).to.be.true;
     expect($sm.exists()).to.be.true;
   });
+
+  it('should have a static modifier class', function() {
+    var $l = output.$('.c-dot-nav--static .c-dot-nav__link');
+
+    expect($l.exists()).to.be.true;
+    expect($l.getProp('cursor')).to.equal('default');
+  });
 });
