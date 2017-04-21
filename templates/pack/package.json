@@ -37,6 +37,9 @@
   "engines": {
     "node": ">=4"
   },
+  "dependencies": {
+    "sass-pathfinder": "0.0.5"
+  },
   "devDependencies": {
     "mkdirp": "0.5.1",
     "node-sass": "^3.10.0",
