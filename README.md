@@ -1,4 +1,4 @@
-# seed-dot-nav [![Build Status](https://travis-ci.org/helpscout/seed-dot-nav.svg?branch=master)](https://travis-ci.org/helpscout/seed-dot-nav) [![npm version](https://badge.fury.io/js/seed-dot-nav.svg)](https://badge.fury.io/js/seed-dot-nav)
+# seed-dot-nav [![Build Status](https://travis-ci.org/helpscout/seed-dot-nav.svg?branch=master)](https://travis-ci.org/helpscout/seed-dot-nav) [![npm version](https://badge.fury.io/js/seed-dot-nav.svg)](https://badge.fury.io/js/seed-dot-nav) [![dependencies Status](https://david-dm.org/helpscout/seed-dot-nav/status.svg)](https://david-dm.org/helpscout/seed-dot-nav)
 
 Dot navigation component pack for [Seed](https://github.com/helpscout/seed)!
 
