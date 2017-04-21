@@ -1,5 +1,5 @@
 /**
- * seed-dot-nav v0.0.4 (https://github.com/helpscout/seed-dot-nav)
+ * seed-dot-nav v0.0.5 (https://github.com/helpscout/seed-dot-nav)
  * Dot navigation component pack for Seed
  * Licensed under MIT
  */
@@ -60,6 +60,10 @@
     .c-dot-nav--dot-sm .c-dot-nav__link:before {
       height: 8px;
       width: 8px; }
+  .c-dot-nav--static .c-dot-nav__link {
+    cursor: default; }
+    .c-dot-nav--static .c-dot-nav__link:hover:before, .c-dot-nav--static .c-dot-nav__link:focus:before {
+      background-color: rgba(0, 0, 0, 0.2); }
 
 .c-dot-nav__item,
 .c-dot-nav > li {
