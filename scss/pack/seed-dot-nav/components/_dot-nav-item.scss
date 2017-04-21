@@ -9,7 +9,7 @@
   .#{$seed-dot-nav-namespace} > li {
     box-sizing: border-box;
     display: block;
-    margin: 0;
+    margin: $seed-dot-nav-item-margin;
     padding: 0;
     position: relative;
     width: ceil($seed-dot-nav-dot-size * $seed-dot-nav-item-spacing-multiplier);

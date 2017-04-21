@@ -28,17 +28,31 @@ describe('seed-dot-nav: config', function() {
   });
 
   it('should be able to modify the default dot size', function() {
+    var m = 4;
+    var size = '300px';
     var style = `
-      $seed-dot-nav-item-spacing-multiplier: 4;
-      $seed-dot-nav-dot-size: 300px;
+      $seed-dot-nav-item-spacing-multiplier: ${m};
+      $seed-dot-nav-dot-size: ${size};
       @import "./_index";
     `;
     var output = barista({ content: style });
     var $d = output.$('.c-dot-nav__link:before');
     var $i = output.$('.c-dot-nav__item');
 
-    expect($d.getProp('height')).to.equal('300px');
-    expect($d.getProp('width')).to.equal('300px');
-    expect($i.getProp('width')).to.equal(`${4 * 300}px`);
+    expect($d.getProp('height')).to.equal(size);
+    expect($d.getProp('width')).to.equal(size);
+    expect($i.getProp('width')).to.equal(`${parseInt(size, 10) * m}px`);
+  });
+
+  it('should be able to modify the default margin of items', function() {
+    var margin = '10px 50px 60px 1px';
+    var style = `
+      $seed-dot-nav-item-margin: ${margin};
+      @import "./_index";
+    `;
+    var output = barista({ content: style });
+    var $o = output.$('.c-dot-nav__item');
+
+    expect($o.getProp('margin')).to.equal(margin);
   });
 });
