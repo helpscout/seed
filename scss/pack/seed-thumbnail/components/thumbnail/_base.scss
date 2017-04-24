@@ -8,8 +8,8 @@
 
 @include export(seed-thumbnail) {
   & {
-    $w: _get($seed-thumbnail-sizes, wide, width);
-    $h: _get($seed-thumbnail-sizes, wide, height);
+    $w: $seed-thumbnail-ratio-w;
+    $h: $seed-thumbnail-ratio-h;
 
     background-color: $seed-thumbnail-background-color;
     border-radius: $seed-thumbnail-border-radius;
