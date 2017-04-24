@@ -8,6 +8,11 @@ npm install seed-option-card --save
 ```
 
 
+## Documentation
+
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-option-card/)**.
+
+
 ## Basic Usage
 
 ### SCSS
