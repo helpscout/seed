@@ -3,13 +3,21 @@
   "version": "0.0.8",
   "description": "Thumbnail component pack for Seed",
   "main": "index.js",
+  "files": [
+    "dist",
+    "scss",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
-    "copy": "cp ./dist/*.css ./example/dist/",
-    "test": "npm run build",
-    "prepublish": "npm run test"
+    "build": "npm run build:main && npm run banner",
+    "prepublish": "npm run test",
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha",
+    "version": "npm run build && git add dist"
   },
   "repository": {
     "type": "git",
@@ -43,7 +51,8 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.0"
+    "node-sass": "^3.10.0",
+    "seed-bistro": "0.1.1"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",

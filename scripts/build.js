@@ -3,16 +3,10 @@
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
-var pathfinder = require('sass-pathfinder');
 var sass = require('node-sass');
+var includePaths = require('../index');
 
 var file = pkg.name;
-var includePaths = pathfinder(
-  require('seed-breakpoints'),
-  require('seed-dash'),
-  require('seed-props'),
-  require('seed-publish')
-);
 
 // Default .css compile
 sass.render({

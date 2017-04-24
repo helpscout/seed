@@ -1,5 +1,5 @@
 /**
- * seed-thumbnail v0.0.7
+ * seed-thumbnail v0.0.8
  * Thumbnail component pack for Seed
  * Licensed under MIT
  */
@@ -117,6 +117,7 @@
 .c-thumbnail > img {
   bottom: -100%;
   box-sizing: border-box;
+  display: block;
   height: auto;
   left: -100%;
   margin: auto;
