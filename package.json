@@ -3,6 +3,13 @@
   "version": "0.0.8",
   "description": "Thumbnail component pack for Seed",
   "main": "index.js",
+  "files": [
+    "dist",
+    "scss",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build:main": "node ./scripts/build.js",
