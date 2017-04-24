@@ -8,6 +8,11 @@ npm install seed-vertical-align --save
 ```
 
 
+## Documentation
+
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-vertical-align/)**.
+
+
 ## Basic Usage
 
 ### SCSS
