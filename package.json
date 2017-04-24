@@ -49,11 +49,11 @@
     "meow": "3.7.0",
     "mkdirp": "0.5.1",
     "mocha": "3.3.0",
-    "node-uuid": "3.0.1",
     "require-dir": "0.3.1",
     "sass-lint": "1.10.2",
     "sass-true": "2.1.4",
     "seed-harvester": "0.1.5",
-    "shelljs": "0.7.7"
+    "shelljs": "0.7.7",
+    "uuid": "3.0.1"
   }
 }

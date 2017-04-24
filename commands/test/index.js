@@ -12,7 +12,7 @@ var fs = require('fs');
 var glob = require('glob');
 var mkdirp = require('mkdirp');
 var path = require('path');
-var uuid = require('node-uuid');
+var uuid = require('uuid');
 
 var Mocha = require('mocha');
 var mocha = new Mocha();
