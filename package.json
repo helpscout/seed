@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "npm run build",
-    "prepublish": "npm run test"
+    "build": "npm run build:main && npm run banner",
+    "prepublish": "npm run test",
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha",
+    "version": "npm run build && git add dist"
   },
   "repository": {
     "type": "git",

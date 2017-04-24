@@ -117,6 +117,7 @@
 .c-thumbnail > img {
   bottom: -100%;
   box-sizing: border-box;
+  display: block;
   height: auto;
   left: -100%;
   margin: auto;
