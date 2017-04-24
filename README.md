@@ -7,6 +7,10 @@ Bootstrap fade animation pack for [Seed](https://github.com/helpscout/seed)!
 npm install seed-bootstrap-fade --save
 ```
 
+## Documentation
+
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-bootstrap-fade/)**.
+
 
 ## Basic Usage
 
