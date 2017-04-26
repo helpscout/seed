@@ -1,17 +1,16 @@
 // Seed inline :: Config
 
-// Dependencies
-@import "pack/seed-spacing/functions/spacing";
-
 // Namespaces
-$seed-inline-namespace: "o-inline" !default;
-$seed-inline-item-namespace: "item" !default;
+$seed-inline-namespace: o-inline !default;
+$seed-inline-item-namespace: #{$seed-inline-namespace}__item !default;
+
+// Config
+$seed-inline-spacing: 4px !default;
 
 // Sizes
 $seed-inline-sizes: (
-  xs: spacing(1),
-  sm: spacing(2),
-  md: spacing(4),
-  lg: spacing(6),
-  xl: spacing(8)
+  xs: 4px,
+  sm: 8px,
+  md: 16px,
+  lg: 24px,
 ) !default;
