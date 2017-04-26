@@ -1,0 +1,14 @@
+// Object :: Inline
+
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-inline) {
+  .#{$seed-inline-item-namespace} {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 0 $seed-inline-spacing;
+    padding: 0;
+    vertical-align: middle;
+  }
+}

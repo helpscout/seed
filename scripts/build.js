@@ -3,14 +3,10 @@
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
-var pathfinder = require('./pathfinder');
 var sass = require('node-sass');
+var includePaths = require('../index');
 
 var file = pkg.name;
-var includePaths = pathfinder(
-  require('seed-publish'),
-  require('seed-spacing')
-);
 
 // Default .css compile
 sass.render({
