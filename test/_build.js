@@ -14,4 +14,8 @@ describe('seed-color-scheme: build', function() {
   it('should build', function() {
     expect(output).to.exist;
   });
+
+  it('should not export any rules', function() {
+    expect(output.css.length).to.equal(0);
+  });
 });
