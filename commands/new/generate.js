@@ -22,6 +22,18 @@ var copyFile = function(dest, options, file, output) {
   }
   output = output ? output : file;
 
+  options = _.assign(options, {
+    packFiles: `"file": [
+      "scripts",
+      "dist",
+      "scss",
+      "index.js",
+      "README.md",
+      "LICENSE"
+    ],
+    `,
+  });
+
   var template = fs.readFileSync(templateDir + file, 'utf8');
   fs.writeFileSync(dest + '/' + output, _.template(template)(options));
 
