@@ -1,8 +1,9 @@
 var path = require('path');
-var pathfinder = require('./scripts/pathfinder');
+var pathfinder = require('sass-pathfinder');
 
-var files = pathfinder(
-  path.join(__dirname, 'scss')
-);
+var files = pathfinder([
+  require('seed-dash'),
+  path.join(__dirname, 'scss'),
+]);
 
 module.exports = files;

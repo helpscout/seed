@@ -7,7 +7,7 @@
   }
 
   // Default color scheme map
-  $map: $_seed-color-scheme;
+  $map: $SEED_COLOR_SCHEME__GLOBAL;
   @each $key in $keys {
     $map: map-get($map, $key);
   }
