@@ -1,1 +1,10 @@
 // navbar :: Config
+
+// Namespaces
+$seed-navbar-namespace: c-navbar !default;
+$seed-navbar-brand-namespace: #{$seed-navbar-namespace}__brand !default;
+
+// Configs
+$seed-navbar-min-height: 48px! default;
+$seed-navbar-brand-font-size: 1.25rem !default;
+$seed-navbar-brand-margin-right: 1rem !default;

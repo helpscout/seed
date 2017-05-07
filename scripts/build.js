@@ -3,13 +3,10 @@
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
-var pathfinder = require('sass-pathfinder');
 var sass = require('node-sass');
 
 var file = pkg.name;
-var includePaths = pathfinder([
-  // Add files/paths to include
-]);
+var includePaths = require('../index');
 
 // Default .css compile
 sass.render({
