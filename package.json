@@ -4,11 +4,18 @@
   "description": "Color scheme system pack for Seed",
   "main": "index.js",
   "homepage": "",
+  "file": [
+    "scss",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && sh ./scripts/test.sh && npm run build",
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha",
     "prepublish": "npm run test"
   },
   "repository": {
@@ -43,7 +50,10 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0",
-    "sass-true": "^2.1.4",
-    "seed-cli": "^0.2.8"
+    "seed-bistro": "0.1.2"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.5",
+    "seed-dash": "0.0.1"
   }
 }
