@@ -82,6 +82,7 @@ describe('seed-color-scheme: color: scheme', function() {
 
   it('should have state namespaced colors', function() {
     var output = styles(`
+      // https://media.giphy.com/media/S4P8Z5fiLRpOU/giphy.gif
       .yiss {
         color: _color(state, success, color);
       }
