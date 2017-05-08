@@ -22,6 +22,24 @@ describe('seed-color-scheme: color', function() {
     expect($o.prop('color')).to.equal('blue');
   });
 
+  it('should be able to add color scheme inline with mixin', function() {
+    var output = styles(`
+      @include _color((
+        blue: green,
+      ));
+      @include _color((
+        blue: blue,
+      ));
+
+      .simple {
+        color: _color(blue);
+      }
+    `);
+    var $o = output.$('.simple');
+
+    expect($o.prop('color')).to.equal('blue');
+  });
+
   it('should add a deep map to the color scheme', function() {
     var output = styles(`
       $scheme: (
@@ -177,5 +195,28 @@ describe('seed-color-scheme: color', function() {
     expect($o.prop('color')).to.equal('green');
     expect($x.prop('background-color')).to.equal('red');
     expect($x.prop('color')).to.equal('red');
+  });
+
+  it('should be able to namespace color schemes', function() {
+    var output = styles(`
+      $color: (
+        app: (
+          blue: (
+            100: yellow,
+            200: blue,
+          ),
+        ),
+      );
+      @include _color($color);
+
+      .element {
+        color: _color(app, blue, 200);
+      }
+
+      @import "./_index";
+    `);
+    var $o = output.$('.element');
+
+    expect($o.prop('color')).to.equal('blue');
   });
 });
