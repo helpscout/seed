@@ -36,6 +36,10 @@
     .#{$seed-dropdown-namespace} {
       &.open,
       &.show {
+        .#{$seed-dropdown-toggle-namespace} {
+          background-color: transparent;
+        }
+
         .#{$seed-dropdown-menu-namespace} {
           display: block;
           @include breakpoint-max(md) {
