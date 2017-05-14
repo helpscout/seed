@@ -1,5 +1,5 @@
 /**
- * seed-navbar v0.0.2
+ * seed-navbar v0.0.3
  * Navbar component pack for Seed
  * Licensed under MIT
  */
@@ -21,7 +21,7 @@
   .c-navbar .c-nav__link {
     padding-left: 12px;
     padding-right: 12px; }
-  .c-navbar .c-dropdown.open .c-dropdown__toggle, .c-navbar .c-dropdown.show .c-dropdown__toggle {
+  .c-navbar .c-dropdown.open .c-dropdown__toggle::before, .c-navbar .c-dropdown.show .c-dropdown__toggle::before {
     background-color: transparent; }
   .c-navbar .c-dropdown.open .c-dropdown__menu, .c-navbar .c-dropdown.show .c-dropdown__menu {
     display: block; }
