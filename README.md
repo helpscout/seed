@@ -1,4 +1,4 @@
-# seed-navbar [![npm version](https://badge.fury.io/js/seed-navbar.svg)](https://badge.fury.io/js/seed-navbar)
+# seed-navbar [![Build Status](https://travis-ci.org/helpscout/seed-navbar.svg?branch=master)](https://travis-ci.org/helpscout/seed-navbar) [![npm version](https://badge.fury.io/js/seed-navbar.svg)](https://badge.fury.io/js/seed-navbar)
 
 Navbar component pack for [Seed](https://github.com/helpscout/seed)!
 
