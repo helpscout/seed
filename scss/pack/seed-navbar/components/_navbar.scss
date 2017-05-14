@@ -37,7 +37,9 @@
       &.open,
       &.show {
         .#{$seed-dropdown-toggle-namespace} {
-          background-color: transparent;
+          &::before {
+            background-color: transparent;
+          }
         }
 
         .#{$seed-dropdown-menu-namespace} {
