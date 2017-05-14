@@ -1,35 +1,45 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../dist/seed-navbar.css">
   </head>
   <body>
-    <div class="c-navbar">
-      <a href="#" class="c-navbar__brand">Brand</a>
-      <ul class="c-nav collapse">
-        <li>
-          <a class="c-nav__link is-active" href="#">
-            Home
-          </a>
-        </li>
-        <li>
-          <a class="c-nav__link" href="#">
-            Features
-          </a>
-        </li>
-        <li class="c-dropdown dropdown c-nav__item">
-          <a class="c-nav__link c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-            Dropdown button
-          </a>
-          <div class="c-card c-dropdown__menu c-dropdown__menu--truncate dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <div class="c-list">
-              <a class="c-list__item dropdown-item" href="#">Action</a>
-              <a class="c-list__item dropdown-item" href="#">Another action</a>
-              <a class="c-list__item dropdown-item disabled" href="#">Something else here</a>
+    <div class="c-navbar navbar">
+      <div class="c-navbar__header">
+        <a href="#" class="c-navbar__brand">Brand</a>
+        <div class="c-navbar__item c-navbar__item--right">
+          <button class="c-navbar__toggle c-button" data-toggle="collapse" data-target="#navbar">
+            <span class="c-navbar__toggle-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="c-navbar__item collapse navbar-collapse" id="navbar">
+        <ul class="c-nav c-nav--sm c-nav--md@md c-nav--stacked c-nav--list@md">
+          <li>
+            <a class="c-nav__link is-active" href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="c-nav__link" href="#">
+              Features
+            </a>
+          </li>
+          <li class="c-dropdown dropdown c-nav__item">
+            <a class="c-nav__link c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+              Dropdown button
+            </a>
+            <div class="c-card c-dropdown__menu c-dropdown__menu--truncate dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="c-list">
+                <a class="c-list__item dropdown-item" href="#">Action</a>
+                <a class="c-list__item dropdown-item" href="#">Another action</a>
+                <a class="c-list__item dropdown-item disabled" href="#">Something else here</a>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="https://v4-alpha.getbootstrap.com/assets/js/vendor/tether.min.js"></script>
