@@ -43,6 +43,6 @@
     "genki": "0.0.5",
     "jshint": "2.9.4",
     "mocha": "3.3.0",
-    "seed-barista": "0.3.3"
+    "seed-barista": "0.4.0"
   }
 }
