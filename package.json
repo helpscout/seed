@@ -50,7 +50,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0",
-    "seed-barista": "0.4.0"
+    "seed-barista": "0.4.0",
+    "seed-bistro": "0.1.2"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5"
