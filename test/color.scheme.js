@@ -28,12 +28,12 @@ describe('seed-color-scheme: color: scheme', function() {
       }
     `);
 
-    expect(output.$('.blue').prop('color')).to.equal('#3197D6'.toLowerCase());
-    expect(output.$('.charcoal').prop('color')).to.equal('#394956'.toLowerCase());
-    expect(output.$('.grey').prop('color')).to.equal('#D6DDE3'.toLowerCase());
-    expect(output.$('.yellow').prop('color')).to.equal('#FFC646'.toLowerCase());
-    expect(output.$('.red').prop('color')).to.equal('#E52F28'.toLowerCase());
-    expect(output.$('.green').prop('color')).to.equal('#4BC27D'.toLowerCase());
+    expect(output.rule('.blue').prop('color')).to.equal('#3197D6'.toLowerCase());
+    expect(output.rule('.charcoal').prop('color')).to.equal('#394956'.toLowerCase());
+    expect(output.rule('.grey').prop('color')).to.equal('#D6DDE3'.toLowerCase());
+    expect(output.rule('.yellow').prop('color')).to.equal('#FFC646'.toLowerCase());
+    expect(output.rule('.red').prop('color')).to.equal('#E52F28'.toLowerCase());
+    expect(output.rule('.green').prop('color')).to.equal('#4BC27D'.toLowerCase());
   });
 
   it('should have brand namespaced colors', function() {
@@ -43,7 +43,7 @@ describe('seed-color-scheme: color: scheme', function() {
       }
     `);
 
-    expect(output.$('.brand').prop('color')).to.equal('#3197D6'.toLowerCase());
+    expect(output.rule('.brand').prop('color')).to.equal('#3197D6'.toLowerCase());
   });
 
   it('should have background namespaced colors', function() {
@@ -56,8 +56,8 @@ describe('seed-color-scheme: color: scheme', function() {
       }
     `);
 
-    expect(output.$('body').prop('background-color')).to.equal('#fff'.toLowerCase());
-    expect(output.$('.card').prop('color')).to.equal('#F1F3F5'.toLowerCase());
+    expect(output.rule('body').prop('background-color')).to.equal('#fff'.toLowerCase());
+    expect(output.rule('.card').prop('color')).to.equal('#F1F3F5'.toLowerCase());
   });
 
   it('should have border namespaced colors', function() {
@@ -67,7 +67,7 @@ describe('seed-color-scheme: color: scheme', function() {
       }
     `);
 
-    expect(output.$('.card').prop('border-color')).to.equal('#E3E8EB'.toLowerCase());
+    expect(output.rule('.card').prop('border-color')).to.equal('#E3E8EB'.toLowerCase());
   });
 
   it('should have text namespaced colors', function() {
@@ -77,7 +77,7 @@ describe('seed-color-scheme: color: scheme', function() {
       }
     `);
 
-    expect(output.$('.card').prop('color')).to.equal('#2A3B47'.toLowerCase());
+    expect(output.rule('.card').prop('color')).to.equal('#2A3B47'.toLowerCase());
   });
 
   it('should have state namespaced colors', function() {
@@ -88,6 +88,6 @@ describe('seed-color-scheme: color: scheme', function() {
       }
     `);
 
-    expect(output.$('.yiss').prop('color')).to.equal('#228350'.toLowerCase());
+    expect(output.rule('.yiss').prop('color')).to.equal('#228350'.toLowerCase());
   });
 });

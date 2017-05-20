@@ -17,7 +17,7 @@ describe('seed-color-scheme: color', function() {
         color: _color(blue);
       }
     `);
-    var $o = output.$('.simple');
+    var $o = output.rule('.simple');
 
     expect($o.prop('color')).to.equal('blue');
   });
@@ -35,7 +35,7 @@ describe('seed-color-scheme: color', function() {
         color: _color(blue);
       }
     `);
-    var $o = output.$('.simple');
+    var $o = output.rule('.simple');
 
     expect($o.prop('color')).to.equal('blue');
   });
@@ -67,8 +67,8 @@ describe('seed-color-scheme: color', function() {
         color: _color(red, 400);
       }
     `);
-    var $b = output.$('.deep-blue');
-    var $r = output.$('.red');
+    var $b = output.rule('.deep-blue');
+    var $r = output.rule('.red');
 
     expect($b.prop('color')).to.equal('pink');
     expect($r.prop('color')).to.equal('red');
@@ -89,7 +89,7 @@ describe('seed-color-scheme: color', function() {
         color: _color(blue);
       }
     `);
-    var $o = output.$('.simple');
+    var $o = output.rule('.simple');
 
     expect($o.prop('color')).to.equal('pink');
   });
@@ -103,8 +103,8 @@ describe('seed-color-scheme: color', function() {
         color: _color(white);
       }
     `);
-    var $b = output.$('.black');
-    var $w = output.$('.white');
+    var $b = output.rule('.black');
+    var $w = output.rule('.white');
 
     expect($b.prop('color')).to.equal('#000');
     expect($w.prop('color')).to.equal('#fff');
@@ -127,7 +127,7 @@ describe('seed-color-scheme: color', function() {
         black: yellow,
       ));
     `);
-    var $b = output.$('.black');
+    var $b = output.rule('.black');
 
     expect($b.prop('color')).to.equal('blue');
   });
@@ -165,9 +165,9 @@ describe('seed-color-scheme: color', function() {
         color: _color(red);
       }
     `);
-    var $o = output.$('.original');
-    var $x = output.$('.override');
-    var $n = output.$('.new');
+    var $o = output.rule('.original');
+    var $x = output.rule('.override');
+    var $n = output.rule('.new');
 
     expect($o.prop('color')).to.equal('green');
     expect($x.prop('background-color')).to.equal('red');
@@ -211,8 +211,8 @@ describe('seed-color-scheme: color', function() {
 
       @import "./_index";
     `);
-    var $o = output.$('.original');
-    var $x = output.$('.override');
+    var $o = output.rule('.original');
+    var $x = output.rule('.override');
 
     expect($o.prop('color')).to.equal('green');
     expect($x.prop('background-color')).to.equal('red');
@@ -237,7 +237,7 @@ describe('seed-color-scheme: color', function() {
 
       @import "./_index";
     `);
-    var $o = output.$('.element');
+    var $o = output.rule('.element');
 
     expect($o.prop('color')).to.equal('blue');
   });
@@ -260,8 +260,8 @@ describe('seed-color-scheme: color', function() {
 
       @import "./_index";
     `);
-    var $e1 = output.$('.e1');
-    var $e2 = output.$('.e2');
+    var $e1 = output.rule('.e1');
+    var $e2 = output.rule('.e2');
 
     expect($e1.prop('color')).to.equal('yellow');
     expect($e2.prop('color')).to.equal('#daf1ff');
@@ -299,11 +299,11 @@ describe('seed-color-scheme: color', function() {
 
       @import "./_index";
     `);
-    var $e1 = output.$('.e1');
-    var $e2 = output.$('.e2');
-    var $e3 = output.$('.e3');
-    var $e4 = output.$('.e4');
-    var $e5 = output.$('.e5');
+    var $e1 = output.rule('.e1');
+    var $e2 = output.rule('.e2');
+    var $e3 = output.rule('.e3');
+    var $e4 = output.rule('.e4');
+    var $e5 = output.rule('.e5');
 
     expect($e1.prop('color')).to.equal('yellow');
     expect($e2.prop('color')).to.equal('#daf1ff');
