@@ -110,6 +110,28 @@ describe('seed-color-scheme: color', function() {
     expect($w.prop('color')).to.equal('#fff');
   });
 
+  it('should not change color if set after _color() is used', function() {
+    var output = styles(`
+      @include _color((
+        black: red,
+      ));
+      @include _color((
+        black: blue,
+      ));
+
+      .black {
+        color: _color(black);
+      }
+
+      @include _color((
+        black: yellow,
+      ));
+    `);
+    var $b = output.$('.black');
+
+    expect($b.prop('color')).to.equal('blue');
+  });
+
   it('should be able to add multiple schemes', function() {
     var output = styles(`
       $blue: (
@@ -218,5 +240,75 @@ describe('seed-color-scheme: color', function() {
     var $o = output.$('.element');
 
     expect($o.prop('color')).to.equal('blue');
+  });
+
+  it('should be able deep extend existing colors', function() {
+    var output = styles(`
+      $color: (
+        blue: (
+          100: yellow,
+        ),
+      );
+      @include _color($color);
+
+      .e1 {
+        color: _color(blue, 100);
+      }
+      .e2 {
+        color: _color(blue, 200);
+      }
+
+      @import "./_index";
+    `);
+    var $e1 = output.$('.e1');
+    var $e2 = output.$('.e2');
+
+    expect($e1.prop('color')).to.equal('yellow');
+    expect($e2.prop('color')).to.equal('#daf1ff');
+  });
+
+  it('should be able deep extend existing colors and add new colors', function() {
+    var output = styles(`
+      $color: (
+        blue: (
+          100: yellow,
+        ),
+        pink: pink,
+        fushia: (
+          ultimate: purple,
+        ),
+        red: red,
+      );
+      @include _color($color);
+
+      .e1 {
+        color: _color(blue, 100);
+      }
+      .e2 {
+        color: _color(blue, 200);
+      }
+      .e3 {
+        color: _color(pink);
+      }
+      .e4 {
+        color: _color(fushia, ultimate);
+      }
+      .e5 {
+        color: _color(red);
+      }
+
+      @import "./_index";
+    `);
+    var $e1 = output.$('.e1');
+    var $e2 = output.$('.e2');
+    var $e3 = output.$('.e3');
+    var $e4 = output.$('.e4');
+    var $e5 = output.$('.e5');
+
+    expect($e1.prop('color')).to.equal('yellow');
+    expect($e2.prop('color')).to.equal('#daf1ff');
+    expect($e3.prop('color')).to.equal('pink');
+    expect($e4.prop('color')).to.equal('purple');
+    expect($e5.prop('color')).to.equal('red');
   });
 });

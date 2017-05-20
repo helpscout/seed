@@ -1,0 +1,48 @@
+// _deep-extend
+// Source
+// https://www.github.com/helpscout/seed-dash
+// Modified version of _extend
+
+@function _deep-extend($map, $maps...) {
+  $is_map: type-of($map) == "map";
+  $is_list: type-of($map) == "list";
+
+  @if not $is_map and not $is_list {
+    @error "_deep-extend: The argument must be a list or a map.";
+  }
+
+  $max: length($maps);
+
+  // extend lists
+  @if $is_list {
+    @for $i from 1 through $max {
+      $current: nth($maps, $i);
+
+      @if type-of($current) != "list" {
+        @error "_deep-extend: The second argument(s) must be a list.";
+      }
+      $map: join($map, $current);
+    }
+    @return $map;
+  }
+
+  // deep-extend maps
+  // Loop through all maps in $maps...
+  @for $i from 1 through $max {
+    // Store current map
+    $current: nth($maps, $i);
+
+    // If in deep mode, loop through all tuples in current map
+    @each $key, $value in $current {
+      // If value is a nested map and same key from map is a nested map as well
+      @if type-of($value) == "map" and type-of(map-get($map, $key)) == "map" {
+        // Recursive extend
+        $value: _deep-extend(map-get($map, $key), $value, true);
+      }
+      // Merge current tuple with map
+      $map: map-merge($map, ($key: $value));
+    }
+  }
+
+  @return $map;
+}
