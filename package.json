@@ -53,7 +53,6 @@
     "seed-bistro": "0.1.2"
   },
   "dependencies": {
-    "sass-pathfinder": "0.0.5",
-    "seed-dash": "0.0.1"
+    "sass-pathfinder": "0.0.5"
   }
 }
