@@ -3,14 +3,6 @@
   "version": "0.0.3",
   "description": "Navbar component pack for Seed",
   "main": "index.js",
-  "file": [
-    "scripts",
-    "dist",
-    "scss",
-    "index.js",
-    "README.md",
-    "LICENSE"
-  ],
   "watch": {
     "test": {
       "patterns": [
