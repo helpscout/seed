@@ -1,5 +1,5 @@
 /**
- * seed-navbar v0.0.4
+ * seed-navbar v0.0.5
  * Navbar component pack for Seed
  * Licensed under MIT
  */
@@ -833,6 +833,10 @@ button.c-button {
         max-width: none;
         position: static;
         width: auto; } }
+  .c-navbar .c-dropdown__toggle {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
 
 .c-navbar__brand {
   box-sizing: border-box;
