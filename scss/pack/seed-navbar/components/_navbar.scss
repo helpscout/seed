@@ -53,5 +53,10 @@
         }
       }
     }
+    .#{$seed-dropdown-toggle-namespace} {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
   }
 }
