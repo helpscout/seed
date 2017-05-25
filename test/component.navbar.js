@@ -36,8 +36,18 @@ describe('seed-navbar: component: navbar', function() {
   });
 
   describe('integration', function() {
+    describe('seed-dropdown', function() {
+      it('should normalize the dropdown toggle appearance', function() {
+        var $o = output.$('.c-navbar .c-dropdown__toggle');
+
+        expect($o.exists()).to.be.true;
+        expect($o.prop('appearance')).to.exist;
+        expect($o.prop('appearance')).to.equal('none');
+      });
+    });
+
     describe('seed-nav', function() {
-      it('adjust the padding', function() {
+      it('should adjust the padding', function() {
         var $o = output.$('.c-navbar .c-nav__link');
 
         expect($o.exists()).to.be.true;
