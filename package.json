@@ -42,7 +42,7 @@
     "chai": "3.5.0",
     "genki": "0.0.5",
     "jshint": "2.9.4",
-    "mocha": "3.3.0",
-    "seed-barista": "0.4.0"
+    "mocha": "3.4.2",
+    "seed-barista": "0.6.0"
   }
 }
