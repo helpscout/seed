@@ -1,6 +1,8 @@
 // Functions :: Prop
 
-@function prop($key: false, $map: $_seed-props-map) {
+@import "../config";
+
+@function prop($key: false, $map: $SEED_PROPS_MAP__GLOBAL) {
   @if $key {
     @if type-of($map) == "null" {
       @warn "Map is currently empty";

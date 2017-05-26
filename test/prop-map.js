@@ -20,10 +20,10 @@ describe('seed-prop: prop-map', function() {
       }
     `;
     var output = barista({ content: style });
-    var $o = output.$('.simple-hello');
+    var $o = output.rule('.simple-hello');
 
     assert.isOk($o.exists());
-    assert.equal($o.getProp('color'), 'green');
+    assert.equal($o.prop('color'), 'green');
   });
 
   it('should generate classes with map containing multiple items', function() {
@@ -41,10 +41,10 @@ describe('seed-prop: prop-map', function() {
       }
     `;
     var output = barista({ content: style });
-    var $o = output.$('.grid-2');
+    var $o = output.rule('.grid-2');
 
     assert.isOk($o.exists());
-    assert.equal($o.getProp('width'), '20%');
+    assert.equal($o.prop('width'), '20%');
   });
 
   it('should generate classes with nested multi-value maps', function() {
@@ -67,12 +67,12 @@ describe('seed-prop: prop-map', function() {
       }
     `;
     var output = barista({ content: style });
-    var $o = output.$('.button-success');
+    var $o = output.rule('.button-success');
 
     assert.isOk($o.exists());
-    assert.equal($o.getProp('background'), 'green');
-    assert.equal($o.getProp('border-color'), 'green');
-    assert.equal($o.getProp('color'), 'white');
+    assert.equal($o.prop('background'), 'green');
+    assert.equal($o.prop('border-color'), 'green');
+    assert.equal($o.prop('color'), 'white');
   });
 
   it('should generate BEM modifier style classes with map (e.g. .element--modifier)', function() {
@@ -95,9 +95,9 @@ describe('seed-prop: prop-map', function() {
       }
     `;
     var output = barista({ content: style });
-    var $o = output.$('.friendly--vic');
+    var $o = output.rule('.friendly--vic');
 
     assert.isOk($o.exists());
-    assert.equal($o.getProp('color'), 'purple');
+    assert.equal($o.prop('color'), 'purple');
   });
 });

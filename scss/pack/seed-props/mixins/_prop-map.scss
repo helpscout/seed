@@ -1,9 +1,11 @@
 // Mixins :: Prop Map
 
+@import "../config";
+
 @mixin prop-map($map: false, $properties: false, $suffix: false) {
   @if $map {
     // Set global maps
-    $_seed-props-map: () !global;
+    $SEED_PROPS_MAP__GLOBAL: () !global;
     $new_prop: ();
 
     // Loop through the map
@@ -24,7 +26,7 @@
               $new_prop: map-merge($new_prop, $nested_prop);
             }
           }
-          $_seed-props-map: map-merge($_seed-props-map, $new_prop) !global;
+          $SEED_PROPS_MAP__GLOBAL: map-merge($SEED_PROPS_MAP__GLOBAL, $new_prop) !global;
         }
       }
       @else {
@@ -35,7 +37,7 @@
             $nested_prop: ($nested_key: $nested_value);
             $new_prop: map-merge($new_prop, $nested_prop);
           }
-          $_seed-props-map: map-merge($_seed-props-map, $new_prop) !global;
+          $SEED_PROPS_MAP__GLOBAL: map-merge($SEED_PROPS_MAP__GLOBAL, $new_prop) !global;
         }
       }
       // Return @content
@@ -43,7 +45,5 @@
         @content;
       }
     }
-    // Unset global maps
-    // $_seed-props-map: null !global;
   }
 }
