@@ -1,6 +1,6 @@
 {
   "name": "seed-reset",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Reset pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed-reset",
