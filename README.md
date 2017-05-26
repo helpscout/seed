@@ -59,4 +59,13 @@ $seed-flexy-alignment: (
   bottom: flex-end,
   stretch: stretch
 ) !default;
+
+// Gap
+$seed-flexy-gap-sizes: (
+  xs: 4px,
+  sm: 8px,
+  md: 12px,
+  lg: 16px,
+  xl: 20px,
+) !default;
 ```
