@@ -6,16 +6,17 @@
 
 @include export(seed-base) {
   h1, h2, h3, h4, h5, h6 {
-    color: inherit;
-    font-family: inherit;
+    color: $seed-base-heading-color;
+    font-family: $seed-base-heading-font-family;;
     font-weight: $seed-base-heading-font-weight;
     line-height: $seed-base-heading-line-height;
     margin-bottom: $seed-base-heading-margin-bottom;
+    margin-top: $seed-base-heading-margin-top;
   }
 
   small {
-    font-size: 80%;
-    font-weight: normal;
+    font-size: $seed-base-small-font-size;
+    font-weight: $seed-base-small-font-weight;
   }
 
   mark {

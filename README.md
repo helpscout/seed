@@ -44,13 +44,20 @@ Once that is setup, simply `@import` *seed-base* as needed in your `.scss` file:
 The following variables can be found in `_config.scss`
 
 ```scss
-// Config: Typo
+// Config: Type
 $seed-base-margin-bottom: 16px !default;
 
 // Config: Headings
+$seed-base-heading-color: inherit !default;
+$seed-base-heading-font-family: inherit !default;
 $seed-base-heading-font-weight: 500 !default;
 $seed-base-heading-line-height: 1.1 !default;
 $seed-base-heading-margin-bottom: 8px !default;
+$seed-base-heading-margin-top: 0 !default;
+
+// Config: Small
+$seed-base-small-font-size: 80% !default;
+$seed-base-small-font-weight: normal !default;
 
 // Config: Mark
 $seed-base-mark-background-color: #fcf8e3 !default;
