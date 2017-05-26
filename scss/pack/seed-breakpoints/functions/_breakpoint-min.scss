@@ -1,5 +1,7 @@
 // Functions :: Breakpoint Min
 
+@import "../config";
+
 // Minimum breakpoint width. Null for the smallest (first) breakpoint.
 @function breakpoint-min($name, $breakpoints: $seed-breakpoints) {
   $min: map-get($breakpoints, $name);

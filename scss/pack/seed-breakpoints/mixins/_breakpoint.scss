@@ -1,4 +1,6 @@
-// Mixins :: Breakpoint :: Base
+// Mixins :: Breakpoint
+
+@import "../config";
 
 @mixin breakpoint($value, $breakpoints: $seed-breakpoints) {
   @if map-has-key($breakpoints, $value) {

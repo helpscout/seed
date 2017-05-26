@@ -1,5 +1,7 @@
 // Mixins :: Breakpoint-between
 
+@import "../config";
+
 @mixin breakpoint-between($min: false, $max: false, $breakpoints: $seed-breakpoints) {
   @if $min == false or $max == false {
     @error "breakpoint-between: The first argument (min) and second argument (max) must be defined.";

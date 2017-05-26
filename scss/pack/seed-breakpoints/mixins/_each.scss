@@ -1,5 +1,7 @@
 // Mixins :: Breakpoint :: Each
 
+@import "../config";
+
 // Each breakpoint
 // Loops through all the breakpoints and outputs attributes
 @mixin breakpoint-each() {

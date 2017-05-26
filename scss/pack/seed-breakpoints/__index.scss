@@ -5,12 +5,9 @@
 
 // Packs
 @import "pack/seed-props/_index";
-
 // Config
 @import "./config";
-
 // Functions
-@import "./functions/_all";
-
+@import "./functions/_index";
 // Mixins
 @import "./mixins/_index";

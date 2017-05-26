@@ -8,7 +8,8 @@
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "node ./scripts/test.js && npm run build",
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha",
     "prepublish": "npm run test"
   },
   "repository": {
@@ -42,10 +43,11 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.0"
+    "mkdirp": "0.5.1",
+    "node-sass": "4.5.3",
+    "seed-bistro": "0.1.6"
   },
   "dependencies": {
-    "seed-props": "0.3.0"
+    "seed-props": "0.3.1"
   }
 }
