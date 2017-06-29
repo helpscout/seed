@@ -175,6 +175,18 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
   ),
 ));
 
+// Color defaults
+@include _color((
+  blue: (default: _color(blue, 500)),
+  charcoal: (default: _color(charcoal, 500)),
+  grey: (default: _color(grey, 500)),
+  yellow: (default: _color(yellow, 500)),
+  green: (default: _color(green, 500)),
+  red: (default: _color(red, 500)),
+  purple: (default: _color(purple, 500)),
+  orange: (default: _color(orange, 500)),
+));
+
 // Namespace: Brand
 @include _color((
   brand: (
