@@ -13,7 +13,7 @@ describe('seed-flexy: modifier - gap', function() {
       `;
       var output = barista({ content: style });
       var $sm = output.$('.o-flexy--gap-sm > *');
-      var $md = output.$('.o-flexy--gap-sm > *');
+      var $md = output.$('.o-flexy--gap-md > *');
 
       assert.isOk($sm.exists());
       assert.isOk($md.exists());
