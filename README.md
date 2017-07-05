@@ -47,10 +47,12 @@ The following variables can be found in `_config.scss`
 ```scss
 // Namespaces
 $seed-flexy-namespace: "o-flexy" !default;
-$seed-flexy-inline-item-namespace: #{$seed-flexy-namespace}__inline-item !default;
 $seed-flexy-item-namespace: #{$seed-flexy-namespace}__item !default;
+$seed-flexy-inline-item-namespace: #{$seed-flexy-namespace}__inline-item !default;
 $seed-flexy-block-namespace: #{$seed-flexy-namespace}__block !default;
+$seed-flexy-alignment-namespace: #{$seed-flexy-namespace}- !default;
 $seed-flexy-gap-namespace: #{$seed-flexy-namespace}--gap !default;
+$seed-flexy-justify-namespace: #{$seed-flexy-namespace}--just !default;
 
 // Alignment
 $seed-flexy-alignment: (
@@ -58,6 +60,14 @@ $seed-flexy-alignment: (
   middle: center,
   bottom: flex-end,
   stretch: stretch
+) !default;
+
+// Justify alignment
+$seed-flexy-justify-alignment: (
+  default: space-between,
+  left: flex-start,
+  center: center,
+  right: flex-end,
 ) !default;
 
 // Gap
