@@ -1,0 +1,14 @@
+// Modifiers :: Justify
+
+// Dependencies
+@import "../../../config";
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+
+@include export(seed-flexy) {
+  .#{$seed-flexy-justify-namespace} {
+    @include breakpoint-prop-map($seed-flexy-justify-alignment, (alignment)) {
+      justify-content: prop(alignment);
+    }
+  }
+}

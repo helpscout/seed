@@ -6,7 +6,7 @@
 @import "pack/seed-publish/_index";
 
 @include export(seed-flexy) {
-  &- {
+  .#{$seed-flexy-alignment-namespace} {
     @include breakpoint-prop-map($seed-flexy-alignment, (prop)) {
       align-items: prop(prop);
     }
