@@ -1,5 +1,5 @@
 /**
- * seed-flexy v0.3.3 (https://github.com/helpscout/seed-flexy)
+ * seed-flexy v0.3.4 (https://github.com/helpscout/seed-flexy)
  * Flex object pack for Seed
  * Licensed under MIT
  */
@@ -86,6 +86,29 @@
   .o-flexy--gap-lg\@lg > *:first-child { margin-left: 0; }
   .o-flexy--gap-xl\@lg > * { margin-left: 20px; }
   .o-flexy--gap-xl\@lg > *:first-child { margin-left: 0; } }
+
+.o-flexy--just-default { justify-content: space-between; }
+
+.o-flexy--just-left { justify-content: flex-start; }
+
+.o-flexy--just-center { justify-content: center; }
+
+.o-flexy--just-right { justify-content: flex-end; }
+
+@media (min-width: 544px) { .o-flexy--just-default\@sm { justify-content: space-between; }
+  .o-flexy--just-left\@sm { justify-content: flex-start; }
+  .o-flexy--just-center\@sm { justify-content: center; }
+  .o-flexy--just-right\@sm { justify-content: flex-end; } }
+
+@media (min-width: 768px) { .o-flexy--just-default\@md { justify-content: space-between; }
+  .o-flexy--just-left\@md { justify-content: flex-start; }
+  .o-flexy--just-center\@md { justify-content: center; }
+  .o-flexy--just-right\@md { justify-content: flex-end; } }
+
+@media (min-width: 992px) { .o-flexy--just-default\@lg { justify-content: space-between; }
+  .o-flexy--just-left\@lg { justify-content: flex-start; }
+  .o-flexy--just-center\@lg { justify-content: center; }
+  .o-flexy--just-right\@lg { justify-content: flex-end; } }
 
 .o-flexy__block { box-sizing: border-box; max-width: 100%; min-width: 0; flex: 1; }
 
