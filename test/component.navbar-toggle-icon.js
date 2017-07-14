@@ -2,36 +2,36 @@
 /* globals describe: true, it: true */
 'use strict';
 
-var barista = require('seed-barista');
-var expect = require('chai').expect;
+const barista = require('seed-barista');
+const expect = require('chai').expect;
 
 describe('seed-navbar: component: navbar-toggle-icon', function() {
   describe('base', function() {
-    var style = `
+    const style = `
       @import "./_index";
     `;
-    var output = barista({ content: style });
-    var $o = output.$('.c-navbar__toggle-icon');
+    const output = barista({ content: style });
+    const o = output.rule('.c-navbar__toggle-icon');
 
     it('should have box-sizing reset', function() {
-      expect($o.prop('box-sizing')).to.equal('border-box');
+      expect(o.prop('box-sizing')).to.equal('border-box');
     });
 
     it('should have correct display', function() {
-      expect($o.prop('display')).to.equal('block');
+      expect(o.prop('display')).to.equal('block');
     });
 
     it('should have correct position', function() {
-      expect($o.prop('position')).to.equal('relative');
+      expect(o.prop('position')).to.equal('relative');
     });
 
     it('should have sizing defined', function() {
-      expect($o.prop('height')).to.exist;
-      expect($o.prop('width')).to.exist;
+      expect(o.prop('height')).to.exist;
+      expect(o.prop('width')).to.exist;
     });
 
     it('should have a color defined', function() {
-      expect($o.prop('color')).to.exist;
+      expect(o.prop('color')).to.exist;
     });
   });
 });

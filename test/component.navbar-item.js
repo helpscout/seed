@@ -2,35 +2,35 @@
 /* globals describe: true, it: true */
 'use strict';
 
-var barista = require('seed-barista');
-var expect = require('chai').expect;
+const barista = require('seed-barista');
+const expect = require('chai').expect;
 
 describe('seed-navbar: component: navbar-item', function() {
   describe('base', function() {
-    var style = `
+    const style = `
       @import "./_index";
     `;
-    var output = barista({ content: style });
-    var $o = output.$('.c-navbar__item');
+    const output = barista({ content: style });
+    const o = output.rule('.c-navbar__item');
 
     it('should have box-sizing reset', function() {
-      expect($o.prop('box-sizing')).to.equal('border-box');
+      expect(o.prop('box-sizing')).to.equal('border-box');
     });
 
     it('should have correct display property', function() {
-      expect($o.prop('display')).to.equal('block');
+      expect(o.prop('display')).to.equal('block');
     });
   });
 
   describe('modifiers', function() {
-    var style = `
+    const style = `
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const output = barista({ content: style });
 
     it('should have correct left/right align modifiers', function() {
-      var l = output.$('.c-navbar__item--left');
-      var r = output.$('.c-navbar__item--right');
+      const l = output.rule('.c-navbar__item--left');
+      const r = output.rule('.c-navbar__item--right');
 
       expect(l.exists()).to.be.true;
       expect(l.prop('margin-right')).to.equal('auto');

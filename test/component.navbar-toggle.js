@@ -2,24 +2,24 @@
 /* globals describe: true, it: true */
 'use strict';
 
-var barista = require('seed-barista');
-var expect = require('chai').expect;
+const barista = require('seed-barista');
+const expect = require('chai').expect;
 
 describe('seed-navbar: component: navbar-toggle', function() {
   describe('base', function() {
-    var style = `
+    const style = `
       @import "./_index";
     `;
-    var output = barista({ content: style });
-    var $o = output.$('.c-navbar__toggle');
+    const output = barista({ content: style });
+    const o = output.rule('.c-navbar__toggle');
 
     it('should have box-sizing reset', function() {
-      expect($o.prop('box-sizing')).to.equal('border-box');
+      expect(o.prop('box-sizing')).to.equal('border-box');
     });
 
     it('should vertical center align child item(s)', function() {
-      expect($o.prop('align-items')).to.equal('center');
-      expect($o.prop('display')).to.equal('flex');
+      expect(o.prop('align-items')).to.equal('center');
+      expect(o.prop('display')).to.equal('flex');
     });
   });
 });
