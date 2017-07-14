@@ -1,5 +1,5 @@
 /**
- * seed-navbar v0.0.5
+ * seed-navbar v0.0.6
  * Navbar component pack for Seed
  * Licensed under MIT
  */
@@ -272,7 +272,8 @@ button.c-button {
     outline: none; }
 
 .c-nav--hover .c-nav__link:hover {
-  background-color: #e3e8eb; }
+  background-color: #e3e8eb;
+  text-decoration: none; }
 
 .c-nav--tabs {
   border-bottom: 1px solid #eee; }
@@ -286,6 +287,45 @@ button.c-button {
     border-bottom-color: #3197d6;
     color: #2a3b47;
     font-weight: 400; }
+  @media (min-width: 544px) {
+    .c-nav--tabs\@sm {
+      border-bottom: 1px solid #eee; }
+      .c-nav--tabs\@sm .c-nav__link {
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        color: #a5b2bd; }
+      .c-nav--tabs\@sm .c-nav__item.is-active > c-nav__link,
+      .c-nav--tabs\@sm .c-nav__link.is-active {
+        border-bottom-color: #3197d6;
+        color: #2a3b47;
+        font-weight: 400; } }
+  @media (min-width: 768px) {
+    .c-nav--tabs\@md {
+      border-bottom: 1px solid #eee; }
+      .c-nav--tabs\@md .c-nav__link {
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        color: #a5b2bd; }
+      .c-nav--tabs\@md .c-nav__item.is-active > c-nav__link,
+      .c-nav--tabs\@md .c-nav__link.is-active {
+        border-bottom-color: #3197d6;
+        color: #2a3b47;
+        font-weight: 400; } }
+  @media (min-width: 992px) {
+    .c-nav--tabs\@lg {
+      border-bottom: 1px solid #eee; }
+      .c-nav--tabs\@lg .c-nav__link {
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        color: #a5b2bd; }
+      .c-nav--tabs\@lg .c-nav__item.is-active > c-nav__link,
+      .c-nav--tabs\@lg .c-nav__link.is-active {
+        border-bottom-color: #3197d6;
+        color: #2a3b47;
+        font-weight: 400; } }
 
 .c-nav {
   box-sizing: border-box;
@@ -754,32 +794,24 @@ button.c-button {
     margin-top: -2px;
     vertical-align: middle;
     width: 0; }
-    .c-dropdown--up .c-dropdown__toggle > c-caret,
-    .c-dropdown--up .c-dropdown__toggle::after {
+    .c-dropdown--up .c-dropdown__toggle > c-caret, .c-dropdown--up .c-dropdown__toggle::after {
       transform: rotate(180deg); }
-    .c-dropdown--down .c-dropdown__toggle > c-caret,
-    .c-dropdown--down .c-dropdown__toggle::after {
+    .c-dropdown--down .c-dropdown__toggle > c-caret, .c-dropdown--down .c-dropdown__toggle::after {
       transform: rotate(0deg); }
     @media (min-width: 544px) {
-      .c-dropdown--up\@sm .c-dropdown__toggle > c-caret,
-      .c-dropdown--up\@sm .c-dropdown__toggle::after {
+      .c-dropdown--up\@sm .c-dropdown__toggle > c-caret, .c-dropdown--up\@sm .c-dropdown__toggle::after {
         transform: rotate(180deg); }
-      .c-dropdown--down\@sm .c-dropdown__toggle > c-caret,
-      .c-dropdown--down\@sm .c-dropdown__toggle::after {
+      .c-dropdown--down\@sm .c-dropdown__toggle > c-caret, .c-dropdown--down\@sm .c-dropdown__toggle::after {
         transform: rotate(0deg); } }
     @media (min-width: 768px) {
-      .c-dropdown--up\@md .c-dropdown__toggle > c-caret,
-      .c-dropdown--up\@md .c-dropdown__toggle::after {
+      .c-dropdown--up\@md .c-dropdown__toggle > c-caret, .c-dropdown--up\@md .c-dropdown__toggle::after {
         transform: rotate(180deg); }
-      .c-dropdown--down\@md .c-dropdown__toggle > c-caret,
-      .c-dropdown--down\@md .c-dropdown__toggle::after {
+      .c-dropdown--down\@md .c-dropdown__toggle > c-caret, .c-dropdown--down\@md .c-dropdown__toggle::after {
         transform: rotate(0deg); } }
     @media (min-width: 992px) {
-      .c-dropdown--up\@lg .c-dropdown__toggle > c-caret,
-      .c-dropdown--up\@lg .c-dropdown__toggle::after {
+      .c-dropdown--up\@lg .c-dropdown__toggle > c-caret, .c-dropdown--up\@lg .c-dropdown__toggle::after {
         transform: rotate(180deg); }
-      .c-dropdown--down\@lg .c-dropdown__toggle > c-caret,
-      .c-dropdown--down\@lg .c-dropdown__toggle::after {
+      .c-dropdown--down\@lg .c-dropdown__toggle > c-caret, .c-dropdown--down\@lg .c-dropdown__toggle::after {
         transform: rotate(0deg); } }
   .o-control-group > .c-dropdown:first-child .c-dropdown__toggle {
     border-bottom-left-radius: 3px;
@@ -846,20 +878,16 @@ button.c-button {
   margin-right: 1rem;
   white-space: nowrap; }
 
-.collapse,
 .c-navbar__item.collapse {
   box-sizing: border-box;
   display: none; }
   @media (min-width: 768px) {
-    .collapse,
     .c-navbar__item.collapse {
       display: block !important; } }
-  .collapse.in, .collapse.show,
-  .c-navbar__item.collapse.in,
-  .c-navbar__item.collapse.show {
+  .c-navbar__item.collapse.in, .c-navbar__item.collapse.show {
     display: block; }
 
-.collapsing {
+.c-navbar__item.collapsing {
   height: 0;
   overflow: hidden;
   position: relative;
