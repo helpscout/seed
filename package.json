@@ -54,13 +54,13 @@
     "sass-pathfinder": "0.0.5",
     "seed-button": "0.1.16",
     "seed-dropdown": "0.0.8",
-    "seed-nav": "0.0.1",
-    "seed-publish": "0.1.1"
+    "seed-nav": "0.1.0",
+    "seed-publish": "0.2.0"
   },
   "devDependencies": {
     "mkdirp": "0.5.1",
-    "node-sass": "^3.10.0",
-    "seed-barista": "0.3.3",
-    "seed-bistro": "0.1.1"
+    "node-sass": "^4.5.3",
+    "seed-barista": "1.0.3",
+    "seed-bistro": "0.1.9"
   }
 }
