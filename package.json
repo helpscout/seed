@@ -10,8 +10,8 @@
     "test:mocha": "mocha",
     "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
     "test": "npm run test:mocha && npm run test:qunit",
-    "preinstall": "npm test",
-    "version": "npm run build && git add dist && git add example"
+    "prerelease": "npm test",
+    "version": "npm run build && git add dist"
   },
   "repository": {
     "type": "git",
@@ -45,7 +45,6 @@
   "devDependencies": {
     "jquery": "3.2.1",
     "mkdirp": "^0.5.1",
-    "mocha": "3.4.2",
     "node-qunit-phantomjs": "1.5.0",
     "node-sass": "^4.5.3",
     "qunitjs": "2.2.1",
