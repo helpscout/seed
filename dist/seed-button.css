@@ -1,5 +1,5 @@
 /**
- * seed-button v0.2.0
+ * seed-button v0.2.1
  * Button component pack for Seed
  * Licensed under MIT
  */
@@ -175,7 +175,7 @@
     box-shadow: none;
     text-decoration: underline; }
     .c-button--link:focus:active {
-      box-shadow: none, none; }
+      box-shadow: none; }
   .c-button--link:disabled, .c-button--link.is-disabled {
     background-color: transparent;
     border-color: transparent;
