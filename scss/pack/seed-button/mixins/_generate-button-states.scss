@@ -33,8 +33,12 @@
       }
 
       &:focus {
+        $border-color: _get($config, border, default);
+        @if _get($config, border, focus) {
+          $border-color: _get($config, border, focus);
+        }
         background-color: _get($config, background, default);
-        border-color: _get($map, border, default);
+        border-color: $border-color;
         box-shadow: _get($config, box-shadow, focus);
         color: _get($map, border, default);
 
