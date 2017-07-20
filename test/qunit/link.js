@@ -48,7 +48,7 @@ md('modifier: link', {
       },
     },
     function() {
-      t('should change styles when ereor state is applied', function(assert) {
+      t('should change styles when error state is applied', function(assert) {
         assert.ok(this.s.backgroundColor === this.m.backgroundColor,
           'background-color is unmodified');
         assert.ok(this.s.borderColor === this.m.borderColor,

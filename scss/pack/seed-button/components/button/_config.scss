@@ -91,7 +91,7 @@ $seed-button-styles: (
       default: transparent,
       hover: transparent,
       active: transparent,
-      focus: #237AB3
+      focus: transparent,
     ),
     box-shadow: (
       default: none,
@@ -106,6 +106,7 @@ $seed-button-styles: (
     text-decoration: (
       default: none,
       hover: underline,
+      focus: underline,
     ),
   ),
 ) !default;

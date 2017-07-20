@@ -6,12 +6,11 @@
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build:main": "node ./scripts/build.js",
-    "build": "npm run build:main && npm run banner && npm run copy",
-    "copy": "cp ./dist/*.css ./example/dist/",
+    "build": "npm run build:main && npm run banner",
     "test:mocha": "mocha",
     "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
     "test": "npm run test:mocha && npm run test:qunit",
-    "prepublish": "npm run test",
+    "preinstall": "npm test",
     "version": "npm run build && git add dist && git add example"
   },
   "repository": {
@@ -45,15 +44,18 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.0",
-    "seed-bistro": "0.0.2"
+    "jquery": "3.2.1",
+    "node-qunit-phantomjs": "1.5.0",
+    "node-sass": "^4.5.3",
+    "qunitjs": "2.2.1",
+    "seed-bistro": "0.1.9"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
-    "seed-border": "0.0.8",
-    "seed-control": "0.0.4",
-    "seed-dash": "0.0.1",
-    "seed-publish": "0.0.4",
+    "seed-border": "0.0.10",
+    "seed-control": "0.1.0",
+    "seed-dash": "0.0.2",
+    "seed-publish": "0.2.0",
     "seed-states": "0.0.4"
   }
 }
