@@ -61,7 +61,14 @@
 
     &:active {
       @if _get($config, box-shadow, focus) and _get($config, box-shadow, active) {
-        box-shadow: _get($config, box-shadow, focus), _get($config, box-shadow, active);
+        $focus: _get($config, box-shadow, focus);
+        $active: _get($config, box-shadow, active);
+        @if ($focus == "none") or ($active == "none") {
+          box-shadow: none;
+        }
+        @else {
+          box-shadow: $focus, $active;
+        }
       }
       @else {
         @include __set-button-prop(box-shadow, $config, active);
