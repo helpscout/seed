@@ -1,5 +1,5 @@
 /**
- * seed-button v0.1.15
+ * seed-button v0.2.0
  * Button component pack for Seed
  * Licensed under MIT
  */
@@ -171,8 +171,9 @@
     border-color: transparent;
     box-shadow: none; }
   .c-button--link:focus {
-    border-color: #237AB3;
-    box-shadow: none; }
+    border-color: transparent;
+    box-shadow: none;
+    text-decoration: underline; }
     .c-button--link:focus:active {
       box-shadow: none, none; }
   .c-button--link:disabled, .c-button--link.is-disabled {
@@ -196,7 +197,7 @@
       color: #cc1f19; }
     .c-button--link.is-error:focus {
       background-color: transparent;
-      border-color: #cc1f19;
+      border-color: transparent;
       box-shadow: none;
       color: #cc1f19; }
       .c-button--link.is-error:focus:active {
@@ -221,7 +222,7 @@
       color: #3aaa69; }
     .c-button--link.is-success:focus {
       background-color: transparent;
-      border-color: #3aaa69;
+      border-color: transparent;
       box-shadow: none;
       color: #3aaa69; }
       .c-button--link.is-success:focus:active {
@@ -246,7 +247,7 @@
       color: #ffb91d; }
     .c-button--link.is-warning:focus {
       background-color: transparent;
-      border-color: #ffb91d;
+      border-color: transparent;
       box-shadow: none;
       color: #ffb91d; }
       .c-button--link.is-warning:focus:active {
