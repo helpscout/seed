@@ -43,8 +43,9 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "mkdirp": "^0.5.1",
     "jquery": "3.2.1",
+    "mkdirp": "^0.5.1",
+    "mocha": "3.4.2",
     "node-qunit-phantomjs": "1.5.0",
     "node-sass": "^4.5.3",
     "qunitjs": "2.2.1",
