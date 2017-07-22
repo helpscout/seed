@@ -7,9 +7,9 @@
     "banner": "node ./scripts/banner.js",
     "build:main": "node ./scripts/build.js",
     "build": "npm run build:main && npm run banner",
-    "test:mocha": "mocha",
-    "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
-    "test": "npm run test:mocha && npm run test:qunit",
+    "dev": "nodemon -e scss -x 'npm run test -- --watch --reporter=dot'",
+    "start": "npm run dev",
+    "test": "mocha test/setup.mocha.js test --recursive",
     "prerelease": "npm test",
     "version": "npm run build && git add dist"
   },
@@ -47,6 +47,7 @@
     "mkdirp": "^0.5.1",
     "node-qunit-phantomjs": "1.5.0",
     "node-sass": "^4.5.3",
+    "nodemon": "1.11.0",
     "qunitjs": "2.2.1",
     "seed-bistro": "0.1.9"
   },
