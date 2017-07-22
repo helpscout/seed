@@ -1,160 +1,142 @@
-// Test :: Config
-/* globals describe: true, it: true */
-'use strict';
-
-var assert = require('chai').assert;
-var barista = require('seed-barista');
-
-describe('seed-button: config', function() {
-
-  describe('namespace', function() {
-    var style = `
+describe('config', () => {
+  describe('namespace', () => {
+    const content = `
       $seed-button-namespace: "milk-vic-pj-nat-bli-button";
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the className of the all seed-button classes', function() {
-      var $o = output.$('.milk-vic-pj-nat-bli-button');
-
-      assert.isOk($o.selectors.length);
+    it('should update the className of the all seed-button classes', () => {
+      expect(styles.rule('.milk-vic-pj-nat-bli-button').exists()).to.be.true;
     });
 
-    it('should no longer use default seed-button classes', function() {
-      var $o = output.$('.c-button');
-
-      assert.isNotOk($o.selectors.length);
+    it('should no longer use default seed-button classes', () => {
+      expect(styles.rule('.c-button').exists()).to.be.false;
     });
   });
 
-  describe('primary-namespace', function() {
-    var style = `
+  describe('primary-namespace', () => {
+    const content = `
       $seed-button-primary-namespace: "main";
       @import "_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the primary className', function() {
-      var $o = output.$('.c-button--main');
-
-      assert.isOk($o.selectors.length);
+    it('should update the primary className', () => {
+      expect(styles.rule('.c-button--main').exists()).to.be.true;
     });
   });
 
-  describe('link-namespace', function() {
-    var style = `
+  describe('link-namespace', () => {
+    const content = `
       $seed-button-link-namespace: "zelda";
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the link className', function() {
-      var $o = output.$('.c-button--zelda');
-
-      assert.isOk($o.selectors.length);
+    it('should update the link className', () => {
+      expect(styles.rule('.c-button--zelda').exists()).to.be.true;
     });
   });
 
-  describe('selected-namespace', function() {
-    var style = `
+  describe('selected-namespace', () => {
+    const content = `
       $seed-button-selected-namespace: "is-pressed";
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the selected className', function() {
-      var $o = output.$('.c-button.is-pressed');
-
-      assert.isOk($o.selectors.length);
+    it('should update the selected className', () => {
+      expect(styles.rule('.c-button.is-pressed').exists()).to.be.true;
     });
   });
 
-  describe('border-radius', function() {
-    var style = `
+  describe('border-radius', () => {
+    const content = `
       $seed-button-border-radius: 50%;
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the border-radius', function() {
-      var $o = output.$('.c-button');
+    it('should update the border-radius', () => {
+      const o = styles.rule('.c-button');
 
-      assert.equal($o.getProp('border-radius'), '50%');
+      expect(o.prop('border-radius')).to.equal('50%');
     });
   });
 
-  describe('font-size', function() {
-    var style = `
+  describe('font-size', () => {
+    const content = `
       $seed-button-font-size: 92px;
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the font-size', function() {
-      var $o = output.$('.c-button');
+    it('should update the font-size', () => {
+      const o = styles.rule('.c-button');
 
-      assert.equal($o.getProp('font-size'), '92px');
+      expect(o.prop('font-size')).to.equal('92px');
     });
   });
 
-  describe('font-weight', function() {
-    var style = `
+  describe('font-weight', () => {
+    const content = `
       $seed-button-font-weight: bold;
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the font-weight', function() {
-      var $o = output.$('.c-button');
+    it('should update the font-weight', () => {
+      const o = styles.rule('.c-button');
 
-      assert.equal($o.getProp('font-weight'), 'bold');
+      expect(o.prop('font-weight')).to.equal('bold');
     });
   });
 
-  describe('height', function() {
-    var style = `
+  describe('height', () => {
+    const content = `
       $seed-button-height: 100px;
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the height', function() {
-      var $o = output.$('.c-button');
+    it('should update the height', () => {
+      const o = styles.rule('.c-button');
 
-      assert.equal($o.getProp('height'), '100px');
+      expect(o.prop('height')).to.equal('100px');
     });
   });
 
-  describe('line-height', function() {
-    var style = `
+  describe('line-height', () => {
+    const content = `
       $seed-button-line-height: 100px;
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the line-height', function() {
-      var $o = output.$('.c-button');
+    it('should update the line-height', () => {
+      const o = styles.rule('.c-button');
 
-      assert.equal($o.getProp('line-height'), '100px');
+      expect(o.prop('line-height')).to.equal('100px');
     });
   });
 
-  describe('padding', function() {
-    var style = `
+  describe('padding', () => {
+    const content = `
       $seed-button-padding: 0 10em;
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should update the padding', function() {
-      var $o = output.$('.c-button');
+    it('should update the padding', () => {
+      const o = styles.rule('.c-button');
 
-      assert.equal($o.getProp('padding'), '0 10em');
+      expect(o.prop('padding')).to.equal('0 10em');
     });
   });
 
-  describe('button-styles', function() {
-    var style = `
+  describe('button-styles', () => {
+    const content = `
       @import "pack/seed-dash/_index";
       @import "./config";
       $seed-button-styles: _extend($seed-button-styles, (
@@ -189,21 +171,21 @@ describe('seed-button: config', function() {
       ));
       @import "./_index";
     `;
-    var output = barista({ content: style });
+    const styles = barista({ content });
 
-    it('should generate additional custom button style', function() {
-      var $o = output.$('.c-button--potato-hani');
+    it('should generate additional custom button style', () => {
+      const o = styles.rule('.c-button--potato-hani');
 
-      assert.isOk($o.selectors.length);
-      assert.equal($o.getProp('background-color'), 'hotpink');
-      assert.equal($o.getProp('border-color'), 'hotpink');
-      assert.equal($o.getProp('box-shadow'), 'hotpink');
+      expect(o.exists()).to.be.true;
+      expect(o.prop('background-color')).to.equal('hotpink');
+      expect(o.prop('border-color')).to.equal('hotpink');
+      expect(o.prop('box-shadow')).to.equal('hotpink');
     });
 
-    it('should not be affected by state style', function() {
-      var $o = output.$('.c-button--potato-hani.is-error');
+    it('should not be affected by state style', () => {
+      const o = styles.rule('.c-button--potato-hani.is-error');
 
-      assert.isNotOk($o.selectors.length);
+      expect(o.exists()).to.be.false;
     });
   });
 });
