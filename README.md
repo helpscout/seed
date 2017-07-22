@@ -46,6 +46,13 @@ Once that is setup, simply `@import` *seed-button* as needed in your `.scss` fil
 The following variables can be found in `_config.scss`
 
 ```scss
+// Button :: Config
+
+// Dependencies
+@import "pack/seed-border/config";
+@import "pack/seed-control/config";
+@import "pack/seed-states/_index";
+
 // Namespace
 $seed-button-namespace: "c-button" !default;
 $seed-button-primary-namespace: "primary" !default;
@@ -126,7 +133,8 @@ $seed-button-styles: (
     background: (
       default: transparent,
       hover: transparent,
-      active: transparent
+      active: transparent,
+      focus: transparent,
     ),
     border: (
       default: transparent,
@@ -147,6 +155,7 @@ $seed-button-styles: (
     text-decoration: (
       default: none,
       hover: underline,
+      focus: underline,
     ),
   ),
 ) !default;
