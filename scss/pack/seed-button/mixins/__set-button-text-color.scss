@@ -1,5 +1,7 @@
 // Mixin :: __set-button-text-color
 
+@import "pack/seed-dash/_index";
+
 // Private mixin for generate-button-styles
 @mixin __set-button-text-color($config, $state, $override: false) {
   $color: _get($config, text);

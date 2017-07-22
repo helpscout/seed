@@ -3,10 +3,10 @@ var pathfinder = require('sass-pathfinder');
 
 var files = pathfinder(
   require('seed-border'),
+  require('seed-color-scheme'),
   require('seed-control'),
   require('seed-dash'),
   require('seed-publish'),
-  require('seed-states'),
   path.join(__dirname, 'scss')
 );
 

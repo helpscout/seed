@@ -1,5 +1,7 @@
 // Mixin :: __set-button-prop
 
+@import "pack/seed-dash/_index";
+
 // Private mixin for generate-button-styles
 @mixin __set-button-prop($prop: false, $config: false, $state: default, $override: false) {
   @if not $prop {

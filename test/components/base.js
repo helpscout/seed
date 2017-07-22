@@ -43,7 +43,7 @@ describe('base', () => {
     const $o = styles.find('.c-button');
 
     it('should have a background', () => {
-      expect($o.prop('background')).to.equal('rgb(255, 255, 255)');
+      expect($o.prop('background')).to.equal('white');
     });
 
     it('should have border styles', () => {

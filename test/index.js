@@ -1,4 +1,4 @@
-describe('index', function() {
+describe('index', () => {
   const css = `
     @import "./_index";
     @import "./_index";
@@ -8,7 +8,7 @@ describe('index', function() {
   `;
   const styles = barista({ content: css });
 
-  it('should only be compiled once', function() {
+  it('should only be compiled once', () => {
     expect(styles.rule('.c-button').selectors).to.have.lengthOf(1);
     expect(styles.rule('.c-button--primary').selectors).to.have.lengthOf(1);
     expect(styles.rule('.c-button--link').selectors).to.have.lengthOf(1);

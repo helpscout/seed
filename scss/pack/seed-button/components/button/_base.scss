@@ -3,21 +3,23 @@
 // Dependencies
 @import "pack/seed-dash/_index";
 @import "pack/seed-publish/_index";
+@import "../../configs/color";
 @import "../../mixins/disabled-styles";
 @import "./config";
+
 
 @include export(seed-button) {
   & {
     -webkit-appearance: none;
     appearance: none;
-    background-color: _get($seed-button-color, background, default);
-    border-color: _get($seed-button-color, border, default);
+    background-color: _color(button, default, background);
+    border-color: _color(button, default, border);
     border-radius: $seed-button-border-radius;
     border-width: $seed-button-border-size;
     border-style: $seed-button-border-style;
-    box-shadow: _get($seed-button-color, box-shadow, default);
+    box-shadow: _color(button, default, box-shadow);
     box-sizing: border-box;
-    color: _get($seed-button-color, text);
+    color: _color(button, default, text);
     cursor: pointer;
     display: inline-block;
     font-size: $seed-button-font-size;
@@ -34,30 +36,31 @@
     user-select: none;
 
     &:hover {
-      background-color: _get($seed-button-color, background, hover);
-      border-color: _get($seed-button-color, border, hover);
-      color: _get($seed-button-color, text);
+      background-color: _color(button, default, background, hover);
+      border-color: _color(button, default, border, hover);
+      color: _color(button, default, text, hover);
       text-decoration: none;
     }
 
     &:active {
-      background-color: _get($seed-button-color, background, active);
-      border-color: _get($seed-button-color, border, active);
-      box-shadow: _get($seed-button-color, box-shadow, active);
+      background-color: _color(button, default, background, active);
+      border-color: _color(button, default, border, active);
+      color: _color(button, default, text, active);
     }
 
     &:focus {
-      border-color: _get($seed-button-color, border, focus);
-      box-shadow: _get($seed-button-color, box-shadow, focus);
+      border-color: _color(button, default, border, focus);
+      box-shadow: _color(button, default, box-shadow, focus);
+      color: _color(button, default, text, focus);
 
       &:active {
-        box-shadow: _get($seed-button-color, box-shadow, active);
+        box-shadow: _color(button, default, box-shadow, active);
       }
     }
 
     @include disabled-styles {
-      background-color: _get($seed-button-color, background, default);
-      border-color: _get($seed-button-color, border, default);
+      background-color: _color(button, default, background);
+      border-color: _color(button, default, border);
       text-decoration: none;
     }
   }

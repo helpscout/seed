@@ -1,0 +1,94 @@
+// Configs :: Color
+@import "pack/seed-color-scheme/_index";
+
+// Default
+@include _color((
+  button: (
+    default: (
+      background: (
+        default: white,
+        hover: _color(grey, 200),
+        active: _color(grey, 400),
+        selected: _color(grey, 400),
+      ),
+      border: (
+        default: _color(border, ui, dark),
+        hover: _color(border, ui, dark),
+        active: _color(border, ui, dark),
+        focus: _color(brand, primary),
+      ),
+      box-shadow: (
+        default: none,
+        hover: none,
+        active: 0 1px 2px rgba(black, 0.2) inset,
+        focus: none,
+      ),
+      text: (
+        default: _color(text),
+        hover: _color(text),
+        active: _color(text),
+        focus: _color(text),
+      ),
+    ),
+  ),
+), default);
+
+// Primary
+@include _color((
+  button: (
+    primary: (
+      background: (
+        default: _color(brand, primary),
+        hover: darken(_color(brand, primary), 4),
+        active: darken(_color(brand, primary), 8)
+      ),
+      border: (
+        default: darken(_color(brand, primary), 8),
+        hover: darken(_color(brand, primary), 8),
+        active: darken(_color(brand, primary), 8),
+        focus: darken(_color(brand, primary), 8),
+      ),
+      box-shadow: (
+        focus: 0 0 0 1px rgba(white, 0.4) inset,
+      ),
+      text: (
+        default: white,
+        hover: white,
+        active: white,
+        focus: white,
+      ),
+    ),
+  ),
+), default);
+
+// Link
+@include _color((
+  button: (
+    link: (
+      background: (
+        default: transparent,
+        hover: transparent,
+        active: transparent,
+        focus: transparent,
+      ),
+      border: (
+        default: transparent,
+        hover: transparent,
+        active: transparent,
+        focus: transparent,
+      ),
+      box-shadow: (
+        default: none,
+        hover: none,
+        active: none,
+        focus: none,
+      ),
+      text: (
+        default: _color(brand, primary),
+        hover: _color(brand, primary),
+        active: _color(brand, primary),
+        focus: _color(brand, primary),
+      ),
+    ),
+  ),
+), default);

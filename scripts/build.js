@@ -7,13 +7,7 @@ var pathfinder = require('sass-pathfinder');
 var sass = require('node-sass');
 
 var file = pkg.name;
-var includePaths = pathfinder(
-  require('seed-border'),
-  require('seed-control'),
-  require('seed-dash'),
-  require('seed-publish'),
-  require('seed-states')
-);
+var includePaths = require('../index');
 
 // Default .css compile
 sass.render({

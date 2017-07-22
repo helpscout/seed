@@ -8,7 +8,7 @@
 @include export(seed-button) {
   & {
     &.#{$seed-button-selected-namespace} {
-      $color: _get($seed-button-color, background, selected);
+      $color: lighten(_color(button, default, background, active), 2);
       background-color: $color;
       &:hover {
         background-color: darken($color, 2);

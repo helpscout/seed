@@ -43,20 +43,17 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "jquery": "3.2.1",
     "mkdirp": "^0.5.1",
-    "node-qunit-phantomjs": "1.5.0",
     "node-sass": "^4.5.3",
     "nodemon": "1.11.0",
-    "qunitjs": "2.2.1",
     "seed-bistro": "0.1.9"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
     "seed-border": "0.0.10",
+    "seed-color-scheme": "0.3.0",
     "seed-control": "0.1.0",
     "seed-dash": "0.0.2",
-    "seed-publish": "0.2.0",
-    "seed-states": "0.0.4"
+    "seed-publish": "0.2.0"
   }
 }
