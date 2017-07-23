@@ -285,7 +285,7 @@ describe('config: defaults', () => {
       expect(styles.rule('.six').prop('content')).to.equal('Embody the Invisible');
 
       // If you can beat this test (aka. BOSS)…
-      console.log('HEIR OF FIRE DESTROYED. 1,000,000 SOULS ACQUIRED.');
+      console.log('\n      HEIR OF FIRE DESTROYED. 1,000,000 SOULS ACQUIRED.\n');
 
     });
   });
