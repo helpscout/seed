@@ -196,17 +196,27 @@ describe('config: defaults', () => {
       const content = `
         @import "./_index";
 
-        // @include _config((
-        //   "InFlames": (
-        //     2000: (
-        //       Clayman: (
-        //         01: Bullet Ride,
-        //         02: TBD,
-        //         03: Only for the Weak,
-        //       )
-        //     )
-        //   )
-        // ), default);
+        @include _config((
+          "InFlames": (
+            1999: (
+              Colony: (
+                01: Embody the Invisible,
+              )
+            )
+          )
+        ));
+
+        @include _config((
+          "InFlames": (
+            2000: (
+              Clayman: (
+                01: Bullet Ride,
+                02: TBD,
+                03: Only for the Weak,
+              )
+            ),
+          )
+        ), default);
 
         @include _config((
           "InFlames": (
@@ -225,7 +235,12 @@ describe('config: defaults', () => {
                 01: TBD,
                 02: TBD,
                 03: TBD,
-                four: As the Future Repeats Today,
+                04: As the Future Repeats Today,
+              )
+            ),
+            1996: (
+              "The Jester Race": (
+                01: Moonshield,
               )
             )
           )
@@ -235,7 +250,7 @@ describe('config: defaults', () => {
           "InFlames": (
             2000: (
               Clayman: (
-                four: TBD,
+                04: TBD,
               )
             )
           )
@@ -251,16 +266,26 @@ describe('config: defaults', () => {
           content: _config("InFlames", 2000, Clayman, 03);
         }
         .four {
-          content: _config("InFlames", 2000, Clayman, four);
+          content: _config("InFlames", 2000, Clayman, 04);
+        }
+        .five {
+          content: _config("InFlames", 1996, "The Jester Race", 01);
+        }
+        .six {
+          content: _config("InFlames", 1999, "Colony", 01);
         }
       `;
       const styles = barista({ content });
 
-      // expect(styles.rule('.one').prop('content')).to.equal('Bullet Ride');
-      // expect(styles.rule('.two').prop('content')).to.equal('Pinball Map');
-      // expect(styles.rule('.three').prop('content')).to.equal('Only for the Weak');
+      expect(styles.rule('.one').prop('content')).to.equal('Bullet Ride');
+      expect(styles.rule('.two').prop('content')).to.equal('Pinball Map');
+      expect(styles.rule('.three').prop('content')).to.equal('Only for the Weak');
       expect(styles.rule('.four').prop('content')).to.equal('As the Future Repeats Today');
-      console.log('YOU BEAT DA BOSS. 1,000,000 SOULS ACQUIRED.');
+      expect(styles.rule('.five').prop('content')).to.equal('Moonshield');
+      expect(styles.rule('.six').prop('content')).to.equal('Embody the Invisible');
+
+      // If you can beat this test (aka. BOSS)…
+      console.log('HEIR OF FIRE DESTROYED. 1,000,000 SOULS ACQUIRED.');
 
     });
   });

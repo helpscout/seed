@@ -1,12 +1,25 @@
 @function _config($keys...) {
   $first: nth($keys, 1);
   @if not $first {
-    @error "_config: At least 1 argument must be passed.";
+    @error "_config(): At least 1 argument must be passed.";
   }
 
   // Default map
   $map: $SEED_CONFIG__GLOBAL;
   @each $key in $keys {
+    // Invalid/missing key
+    @if type-of($map) != "map" {
+      $previous_index: index($keys, $key) - 1;
+      $previous_key: nth($keys, $previous_index);
+
+      @debug "
+
+        _config(): \"#{$previous_key}\" key doesn't exist under \"#{nth($keys, 1)}\".
+
+        Source: _config(#{$keys});
+      ";
+      @error "";
+    }
     $map: map-get($map, $key);
   }
 

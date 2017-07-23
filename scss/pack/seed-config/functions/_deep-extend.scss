@@ -53,21 +53,22 @@
       @if type-of($value) == "map" and type-of(map-get($map, $key)) == "map" {
         // Recursive extend
         $nested_set_default: if($set_default, default, null);
-        $nested_value: _deep-extend(map-get($map, $key), $value, $nested_set_default);
-        $value: $nested_value;
-      }
-      // Merge current with map
-      @if (not $set_default) or ($set_default and not map-has-key($map, $key)) {
+        $value: _deep-extend(map-get($map, $key), $value, $nested_set_default);
         $map: map-merge($map, ($key: $value));
       }
       @else {
-        @if type-of($value) == "map" and type-of(map-get($value, nth($value, 1))) != "map" {
+        // Merge current with map
+        @if (not $set_default) or ($set_default and not map-has-key($map, $key)) {
+          $map: map-merge($map, ($key: $value));
+        }
+        @else {
+          @if type-of($value) == "map" and type-of(map-get($value, nth($value, 1))) != "map" {
 
-          $original_map: map-get($map, $key);
-          $new_value: $value;
-          @each $k, $v in $value {
-            @if not map-has-key($original_map, $k) {
-              $map: _set($map, $key, $k, $v);
+            $original_map: map-get($map, $key);
+            @each $k, $v in $value {
+              @if not map-has-key($original_map, $k) {
+                $map: _set($map, $key, $k, $v);
+              }
             }
           }
         }
