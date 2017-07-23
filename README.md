@@ -34,3 +34,6 @@ Once that is setup, simply `@import` *seed-config* as needed in your `.scss` fil
 // Packs
 @import "pack/seed-config/_index";
 ```
+
+
+## More docs coming soon!
