@@ -1,9 +1,12 @@
 // _deep-extend
 // Source
 // https://www.github.com/helpscout/seed-dash
-// Modified version of _extend
+// Modified version of _deep-extend
 
-@function _deep-extend($map, $maps...) {
+@function _deep-extend($map, $maps.../*, !default */) {
+  // !default is disabled by default
+  $last: nth($maps, -1);
+  $set_default: $last == "default";
   $is_map: type-of($map) == "map";
   $is_list: type-of($map) == "list";
 
@@ -12,6 +15,12 @@
   }
 
   $max: length($maps);
+  @if $set_default {
+    // Sass ternary operation
+    // if(a, a, b);
+    // a ? a : b;
+    $max: if(length($maps) > 2, length($maps) - 1, 1);
+  }
 
   // extend lists
   @if $is_list {
@@ -21,7 +30,10 @@
       @if type-of($current) != "list" {
         @error "_deep-extend: The second argument(s) must be a list.";
       }
-      $map: join($map, $current);
+
+      @if (not $set_default) or ($set_default and not map-has-key($map, $key)) {
+        $map: join($map, $current);
+      }
     }
     @return $map;
   }
@@ -37,10 +49,12 @@
       // If value is a nested map and same key from map is a nested map as well
       @if type-of($value) == "map" and type-of(map-get($map, $key)) == "map" {
         // Recursive extend
-        $value: _deep-extend(map-get($map, $key), $value, true);
+        $value: _deep-extend(map-get($map, $key), $value);
       }
-      // Merge current tuple with map
-      $map: map-merge($map, ($key: $value));
+      // Merge current with map
+      @if (not $set_default) or ($set_default and not map-has-key($map, $key)) {
+        $map: map-merge($map, ($key: $value));
+      }
     }
   }
 

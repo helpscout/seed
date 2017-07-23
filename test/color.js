@@ -5,7 +5,7 @@
 var expect = require('chai').expect;
 var styles = require('./helper.styles');
 
-describe('seed-color-scheme: color', function() {
+describe('mixin: _color()', function() {
   it('should add a simple map to the color scheme', function() {
     var output = styles(`
       $scheme: (
