@@ -1,6 +1,6 @@
-# seed-config [![npm version](https://badge.fury.io/js/seed-config.svg)](https://badge.fury.io/js/seed-config)
+# seed-config [![npm version](https://badge.fury.io/js/seed-config.svg)](https://badge.fury.io/js/seed-config) [![Build Status](https://travis-ci.org/helpscout/seed-config.svg?branch=master)](https://travis-ci.org/helpscout/seed-config)
 
-config other pack for [Seed](https://github.com/helpscout/seed)!
+Sass Config pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -33,12 +33,4 @@ Once that is setup, simply `@import` *seed-config* as needed in your `.scss` fil
 ```scss
 // Packs
 @import "pack/seed-config/_index";
-```
-
-## Options
-
-The following variables can be found in `_config.scss`
-
-```scss
-seed-config config options
 ```
