@@ -1,0 +1,19 @@
+@import "../functions/deep-extend";
+
+@mixin _config($maps...) {
+  @if not global-variable-exists(SEED_CONFIG__GLOBAL) {
+    $SEED_CONFIG__GLOBAL: (
+      __seed-config: true,
+    ) !global;
+  }
+  // Default map
+  $map: $SEED_CONFIG__GLOBAL;
+
+  // Reset if invalid
+  @if (type-of($map) != "map") {
+    @warn "seed-config: Argument must be a map.";
+  }
+
+  // Quietly set the color-scheme
+  $SEED_CONFIG__GLOBAL: _deep-extend($map, $maps...) !global;
+}
