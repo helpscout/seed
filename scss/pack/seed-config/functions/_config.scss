@@ -1,3 +1,5 @@
+@import "./utils";
+
 @function _config($keys...) {
   $first: nth($keys, 1);
   @if not $first {
@@ -8,7 +10,7 @@
   $map: $SEED_CONFIG__GLOBAL;
   @each $key in $keys {
     // Invalid/missing key
-    @if type-of($map) != "map" {
+    @if not is_map($map) {
       $previous_index: index($keys, $key) - 1;
       $previous_key: nth($keys, $previous_index);
 
@@ -24,7 +26,7 @@
   }
 
   // Fallback to default if defined
-  @if $map and type-of($map) == "map" {
+  @if is_map($map) {
     @if map-has-key($map, default) {
       $map: map-get($map, default);
     }

@@ -1,12 +1,12 @@
 @import "../functions/deep-extend";
 
 @mixin _config($maps...) {
+  // Default map
   @if not global-variable-exists(SEED_CONFIG__GLOBAL) {
     $SEED_CONFIG__GLOBAL: (
       __seed-config: true,
     ) !global;
   }
-  // Default map
   $map: $SEED_CONFIG__GLOBAL;
 
   // Reset if invalid

@@ -43,8 +43,7 @@
     "node": ">=4"
   },
   "dependencies": {
-    "sass-pathfinder": "0.0.5",
-    "seed-dash": "0.0.2"
+    "sass-pathfinder": "0.0.5"
   },
   "devDependencies": {
     "mkdirp": "0.5.1",
