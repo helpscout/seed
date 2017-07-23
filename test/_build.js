@@ -5,7 +5,7 @@
 var barista = require('seed-barista');
 var expect = require('chai').expect;
 
-describe('seed-color-scheme: build', function() {
+describe('pack', function() {
   var style = `
     @import "./_index";
   `;

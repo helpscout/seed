@@ -5,7 +5,7 @@
 var expect = require('chai').expect;
 var styles = require('./helper.styles');
 
-describe('seed-color-scheme: color: scheme', function() {
+describe('function: _color()', function() {
   it('should have a default color palette', function() {
     var output = styles(`
       .blue {

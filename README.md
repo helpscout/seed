@@ -82,6 +82,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
 @include _color((
   // Primary
   blue: (
+    default: #3197d6,
     100: #f7fcfe,
     200: #daf1ff,
     300: #aedfff,
@@ -94,6 +95,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
   ),
 
   charcoal: (
+    default: #394956,
     200: #93a1af,
     300: #72808e,
     400: #4f5d6b,
@@ -104,6 +106,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
   ),
 
   grey: (
+    default: #d6dde3,
     200: #f9fafa,
     300: #f1f3f5,
     400: #e3e8eb,
@@ -115,6 +118,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
 
   // Secondary
   yellow: (
+    default: #ffc646,
     100: #fffdf6,
     200: #fff6e2,
     300: #ffe8b5,
@@ -127,6 +131,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
   ),
 
   green: (
+    default: #4bc27d,
     100: #fafdfb,
     200: #e4fbe6,
     300: #c4f0ce,
@@ -139,6 +144,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
   ),
 
   red: (
+    default: #e52f28,
     100: #fef7f6,
     200: #ffe3e2,
     300: #ffa2a2,
@@ -151,6 +157,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
   ),
 
   purple: (
+    default: #7e80e7,
     100: #fbfbfe,
     200: #eaeafc,
     300: #d1d2f6,
@@ -163,6 +170,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
   ),
 
   orange: (
+    default: #ff9139,
     100: #fff8f2,
     200: #ffead8,
     300: #ffd3ae,
@@ -173,19 +181,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
     800: #a45300,
     900: #813c00
   ),
-));
-
-// Color defaults
-@include _color((
-  blue: (default: _color(blue, 500)),
-  charcoal: (default: _color(charcoal, 500)),
-  grey: (default: _color(grey, 500)),
-  yellow: (default: _color(yellow, 500)),
-  green: (default: _color(green, 500)),
-  red: (default: _color(red, 500)),
-  purple: (default: _color(purple, 500)),
-  orange: (default: _color(orange, 500)),
-));
+), default);
 
 // Namespace: Brand
 @include _color((
@@ -197,7 +193,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
     success: _color(green, 500),
     warning: _color(yellow, 500),
   ),
-));
+), default);
 
 // Namespace: Background
 @include _color((
@@ -209,7 +205,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
       light: _color(grey, 300),
     ),
   ),
-));
+), default);
 
 // Namespace: Border
 @include _color((
@@ -221,7 +217,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
       dark: _color(grey, 600),
     ),
   ),
-));
+), default);
 
 // Namespace: Text
 @include _color((
@@ -230,7 +226,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
     subtle: _color(charcoal, 400),
     muted: _color(charcoal, 200),
   ),
-));
+), default);
 
 // Namespace: Link
 @include _color((
@@ -238,7 +234,7 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
     default: _color(blue, 500),
     hover: _color(blue, 400),
   ),
-));
+), default);
 
 // Namespace: States
 @include _color((
@@ -269,5 +265,5 @@ Since [v0.1.0](https://github.com/helpscout/seed-color-scheme/releases/tag/v0.1.
       color: _color(yellow, 800)
     ),
   ),
-));
+), default);
 ```

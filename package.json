@@ -14,8 +14,9 @@
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test:mocha": "mocha",
-    "test": "npm run test:mocha",
+    "dev": "nodemon -e scss -x 'npm run test -- --watch --reporter=dot'",
+    "start": "npm run dev",
+    "test": "mocha test/setup.mocha.js test --recursive",
     "prepublish": "npm run test"
   },
   "repository": {
@@ -50,6 +51,7 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0",
+    "nodemon": "1.11.0",
     "seed-barista": "0.4.0",
     "seed-bistro": "0.1.2"
   },
