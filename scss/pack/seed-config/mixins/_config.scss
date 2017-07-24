@@ -27,7 +27,7 @@
     }
 
     $named_map: ($namespace: _deep-extend($named_map, $maps...));
-    $global_config: _deep-extend($map, $named_map);
+    $global_config: map-merge($map, $named_map);
   }
   @else {
     $global_config: _deep-extend($map, $maps...);
