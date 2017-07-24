@@ -2,22 +2,22 @@ const packStyles = `
   // Require seed-config
   @import "./_index";
 
-  @function _color($colors...) {
+  @function _simplecolor($colors...) {
     @return _config(SEED_COLOR_PACK__GLOBAL, $colors...);
   }
 
-  @mixin _color($colors...) {
+  @mixin _simplecolor($colors...) {
     @include _config(SEED_COLOR_PACK__GLOBAL, $colors...);
   }
 
   // Base colors
-  @include _color((
+  @include _simplecolor((
     blue: (
       500: purple,
     )
   ));
   
-  @include _color((
+  @include _simplecolor((
     brand: (
       main: red,
       secondary: orangered,
@@ -25,42 +25,42 @@ const packStyles = `
   ));
 
   // Setting defaults
-  @include _color((
+  @include _simplecolor((
     text: black,
     link: blue,
   ), default);
 
   // Adding new keys to existing maps
-  @include _color((
+  @include _simplecolor((
     blue: (
       default: blue,
     )
   ), default);
 
   // Overwriting defaults (shouldn't work)
-  @include _color((
+  @include _simplecolor((
     text: white
   ), default);
 
   // Overwriting defaults (should work)
-  @include _color((
+  @include _simplecolor((
     link: orange,
   ));
 
   .blue {
-    color: _color(blue);
+    color: _simplecolor(blue);
   }
 
   .brand {
-    color: _color(brand, main);
+    color: _simplecolor(brand, main);
   }
 
   .text {
-    color: _color(text);
+    color: _simplecolor(text);
   }
 
   .link {
-    color: _color(link);
+    color: _simplecolor(link);
   }
 `;
 
