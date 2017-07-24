@@ -1,8 +1,5 @@
 // Color function pack for Seed
 
-// Config
+@import "./functions/color";
+@import "./mixins/color";
 @import "./config";
-// Functions
-@import "./functions/_index";
-// Mixins
-@import "./mixins/_index";
