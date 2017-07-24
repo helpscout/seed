@@ -7,7 +7,7 @@
 @import "./utils";
 
 @function _deep-extend($map, $maps.../*, !default */) {
-  $map: map-remove($map, null); // !default is disabled by default
+  $first: nth($maps, 1);
   $last: nth($maps, -1);
   $set_default: $last == "default";
 
@@ -15,11 +15,12 @@
     @error "_config (_deep-extend): The argument must be a list or a map.";
   }
 
+  $min: if(type-of($first) == "string", 2, 1);
   $max: __get-map-length($maps, $set_default);
 
   // Lists
   @if is_list($map) {
-    @for $i from 1 through $max {
+    @for $i from $min through $max {
       $current: nth($maps, $i);
 
       @if not is_list($current) {
@@ -35,7 +36,8 @@
 
   // Maps
   // Loop through all maps in $maps...
-  @for $i from 1 through $max {
+  $map: map-remove($map, null); // !default is disabled by default
+  @for $i from $min through $max {
     // Store current map
     $current: nth($maps, $i);
 

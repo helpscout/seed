@@ -1,6 +1,9 @@
 @import "../functions/deep-extend";
 
 @mixin _config($maps...) {
+  $first: nth($maps, 1);
+  $namespace: if(type-of($first) == "string", $first, false);
+
   // Default map
   @if not global-variable-exists(SEED_CONFIG__GLOBAL) {
     $SEED_CONFIG__GLOBAL: (
@@ -13,7 +16,22 @@
   @if (type-of($map) != "map") {
     @warn "seed-config: Argument must be a map.";
   }
+  $global_config: $map;
+  // Add namespace
+  @if $namespace {
+    $named_map: (
+      __seed-config__init: true,
+    );
+    @if (map-has-key($map, $namespace)) {
+      $named_map: map-get($map, $namespace);
+    }
 
-  // Quietly set the color-scheme
-  $SEED_CONFIG__GLOBAL: _deep-extend($map, $maps...) !global;
+    $named_map: ($namespace: _deep-extend($named_map, $maps...));
+    $global_config: _deep-extend($map, $named_map);
+  }
+  @else {
+    $global_config: _deep-extend($map, $maps...);
+  }
+
+  $SEED_CONFIG__GLOBAL: $global_config !global;
 }

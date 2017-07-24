@@ -193,6 +193,9 @@ describe('config: defaults', () => {
     });
 
     it('should be able to add new default value if key is unique', () => {
+      // Hard test ahead…
+      console.log('\n      Entering fog wall…\n');
+
       const content = `
         @import "./_index";
 
@@ -286,7 +289,6 @@ describe('config: defaults', () => {
 
       // If you can beat this test (aka. BOSS)…
       console.log('\n      HEIR OF FIRE DESTROYED. 1,000,000 SOULS ACQUIRED.\n');
-
     });
   });
 });

@@ -29,6 +29,8 @@ describe('config: extend', () => {
   });
 
   it('should be able to set a deep config', () => {
+    // Hard test ahead…
+    console.log('\n      Entering fog wall…\n');
     const content = `
         @import "./_index";
 
@@ -88,5 +90,8 @@ describe('config: extend', () => {
     expect(styles.rule('.p').prop('content')).to.equal('Ghost River');
     // New map
     expect(styles.rule('.q').prop('content')).to.equal('Taikatalvi');
+
+    // If you can beat this test (aka. BOSS)…
+    console.log('\n      HEIR OF FIRE DESTROYED. 20,000 SOULS ACQUIRED.\n');
   });
 });
