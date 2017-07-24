@@ -1,8 +1,16 @@
 const styles = barista({
-  content: `@import "./_index"`,
+  content: `
+    @import "./_index";
+
+    .text {
+      color: _color(text);
+    }
+  `,
 });
 
 describe('styles: link', () => {
+  const text = styles.rule('.text');
+
   it('should be defined', () => {
     expect(styles.rule('.c-button--link').exists()).to.be.true;
   });
@@ -36,6 +44,7 @@ describe('styles: link', () => {
       expect(s.exists()).to.be.true;
       expect(s.prop('background-color')).to.equal('transparent');
       expect(s.prop('border-color')).to.equal('transparent');
+      expect(s.prop('color')).to.not.equal(text.prop('color'));
     });
 
     it('should have a :active state', () => {
@@ -44,6 +53,7 @@ describe('styles: link', () => {
       expect(s.exists()).to.be.true;
       expect(s.prop('background-color')).to.equal('transparent');
       expect(s.prop('border-color')).to.equal('transparent');
+      expect(s.prop('color')).to.not.equal(text.prop('color'));
     });
 
     it('should have a :focus state', () => {
@@ -52,6 +62,7 @@ describe('styles: link', () => {
       expect(s.exists()).to.be.true;
       expect(s.prop('text-decoration')).to.equal('underline');
       expect(s.prop('border-color')).to.equal('transparent');
+      expect(s.prop('color')).to.not.equal(text.prop('color'));
     });
   });
 });
