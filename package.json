@@ -57,6 +57,6 @@
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
-    "seed-config": "0.1.0"
+    "seed-config": "0.1.1"
   }
 }
