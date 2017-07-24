@@ -1,26 +1,6 @@
-// Functions :: _color
+// Dependencies
+@import "pack/seed-config/_index";
 
-@function _color($keys...) {
-  $first: nth($keys, 1);
-  @if not $first {
-    @error "_color: At least 1 argument must be passed.";
-  }
-
-  // Default color scheme map
-  $map: $SEED_COLOR_SCHEME__GLOBAL;
-  @each $key in $keys {
-    $map: map-get($map, $key);
-  }
-
-  // Fallback to default if defined
-  @if $map and type-of($map) == "map" {
-    @if map-has-key($map, default) {
-      $map: map-get($map, default);
-    }
-    @else {
-      $map_keys: map-keys($map);
-      $map: map-get($map, nth($map_keys, 1));
-    }
-  }
-  @return $map;
-};
+@function _color($colors...) {
+  @return _config(SEED_COLOR_SCHEME__GLOBAL, $colors...);
+}

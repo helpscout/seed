@@ -17,7 +17,7 @@
     "dev": "nodemon -e scss -x 'npm run test -- --watch --reporter=dot'",
     "start": "npm run dev",
     "test": "mocha test/setup.mocha.js test --recursive",
-    "prepublish": "npm run test"
+    "prepare": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -56,6 +56,7 @@
     "seed-bistro": "0.1.2"
   },
   "dependencies": {
-    "sass-pathfinder": "0.0.5"
+    "sass-pathfinder": "0.0.5",
+    "seed-config": "0.1.1"
   }
 }

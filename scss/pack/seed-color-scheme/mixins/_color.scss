@@ -1,17 +1,8 @@
 // Mixins :: _color
 
 // Dependencies
-@import "../functions/deep-extend";
+@import "pack/seed-config/_index";
 
-@mixin _color($maps...) {
-  // Default map
-  $scheme: $SEED_COLOR_SCHEME__GLOBAL;
-
-  // Reset if invalid
-  @if (type-of($scheme) != "map") {
-    @warn "seed-color-scheme: Argument must be a map.";
-  }
-
-  // Quietly set the color-scheme
-  $SEED_COLOR_SCHEME__GLOBAL: _deep-extend($scheme, $maps...) !global;
+@mixin _color($colors...) {
+  @include _config(SEED_COLOR_SCHEME__GLOBAL, $colors...);
 }
