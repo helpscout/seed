@@ -1,6 +1,6 @@
 {
   "name": "seed-bistro",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "CSS testing bundle - Making (S)CSS testing easy!",
   "main": "index.js",
   "scripts": {
