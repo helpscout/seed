@@ -39,10 +39,10 @@
     "node": ">=4"
   },
   "dependencies": {
-    "chai": "4.0.0",
+    "chai": "4.1.0",
     "genki": "0.1.1",
-    "jshint": "2.9.4",
+    "jshint": "2.9.5",
     "mocha": "3.4.2",
-    "seed-barista": "1.0.2"
+    "seed-barista": "1.0.4"
   }
 }
