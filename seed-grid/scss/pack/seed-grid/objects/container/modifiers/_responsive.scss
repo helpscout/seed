@@ -1,0 +1,18 @@
+// Modifiers :: Responsive
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+@import "../../../config";
+
+@include export(seed-grid) {
+  &--responsive {
+    max-width: 100%;
+
+    @each $size, $width in $seed-container-widths {
+      @include breakpoint($size) {
+        max-width: $width;
+      }
+    }
+  }
+}

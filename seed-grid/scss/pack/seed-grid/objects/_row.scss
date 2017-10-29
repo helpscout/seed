@@ -1,0 +1,35 @@
+// Objects :: Row
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-grid) {
+  .#{$seed-grid-namespace-row} {
+    box-sizing: border-box;
+    margin-left: -($seed-grid-gutter-offset);
+    margin-right: -($seed-grid-gutter-offset);
+
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    > [class*="#{$seed-grid-namespace-col}"] {
+      float: left;
+    }
+
+    // Modifiers: Sizes
+    @each $offset, $size in $seed-grid-gutter-offset-sizes {
+      &--#{$offset} {
+        margin-left: -($size);
+        margin-right: -($size);
+        > [class*="#{$seed-grid-namespace-col}"] {
+          padding-left: $size;
+          padding-right: $size;
+        }
+      }
+    }
+  }
+}

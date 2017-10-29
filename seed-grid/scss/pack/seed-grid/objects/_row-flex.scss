@@ -1,0 +1,26 @@
+// Objects :: Row Flex
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-grid) {
+  .#{$seed-grid-namespace-row-flex} {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($seed-grid-gutter-offset);
+    margin-right: -($seed-grid-gutter-offset);
+
+    // Modifiers: Sizes
+    @each $offset, $size in $seed-grid-gutter-offset-sizes {
+      &--#{$offset} {
+        margin-left: -($size);
+        margin-right: -($size);
+        > [class*="#{$seed-grid-namespace-col}"] {
+          padding-left: $size;
+          padding-right: $size;
+        }
+      }
+    }
+  }
+}

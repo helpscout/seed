@@ -1,0 +1,9 @@
+// Generators :: Container
+
+@mixin generate-container-max() {
+  @each $breakpoint, $width in $seed-container-widths {
+    @include breakpoint-up($breakpoint, $seed-breakpoints) {
+      max-width: $width;
+    }
+  }
+}

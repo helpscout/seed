@@ -1,0 +1,9 @@
+// Objects :: Container :: Index
+
+.#{$seed-grid-namespace-container} {
+  // Base
+  @import "base";
+  // Modifiers
+  @import "modifiers/fluid";
+  @import "modifiers/responsive";
+}

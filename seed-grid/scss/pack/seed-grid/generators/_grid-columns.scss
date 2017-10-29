@@ -1,0 +1,64 @@
+// Generators :: Grid
+
+// Dependencies
+@import "../mixins/col";
+
+@mixin generate-grid-columns($columns: $seed-grid-columns, $gutter: $seed-grid-gutter, $breakpoints: $seed-breakpoints) {
+  $breakpoint-counter: 0;
+  @each $breakpoint in map-keys($breakpoints) {
+    $breakpoint-counter: ($breakpoint-counter + 1);
+    $_class: $seed-grid-namespace-col;
+    $_col-class: $_class;
+    $_col-offset-class: $_class;
+    $_col-pull-class: $_class;
+    $_col-push-class: $_class;
+
+    @include breakpoint-up($breakpoint, $breakpoints) {
+      @for $column from 1 through length($columns) {
+        $item: nth($columns, $column);
+        $i: nth($item, 1);
+        $width: nth($item, 2);
+
+        @if $breakpoint == xs {
+          $_col-class: #{$_class}-#{$i};
+        }
+        @else {
+          $_col-class: #{$_class}-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
+        }
+
+        .#{$_col-class} {
+          width: #{$width};
+        }
+      }
+      // `$columns - 1` because offsetting by the width of an entire row isn't possible
+      @for $column from 1 through (length($columns)) {
+        $item: nth($columns, $column);
+        $i: nth($item, 1);
+        $width: nth($item, 2);
+
+        @if $breakpoint == xs {
+          $_col-offset-class: #{$_class}-offset-#{$i};
+          $_col-pull-class: #{$_class}-pull-#{$i};
+          $_col-push-class: #{$_class}-push-#{$i};
+        }
+        @else {
+          $_col-offset-class: #{$_class}-offset-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
+          $_col-pull-class: #{$_class}-pull-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
+          $_col-push-class: #{$_class}-push-#{$i}#{$seed-breakpoints-at-namespace}#{$breakpoint};
+        }
+
+        @if $breakpoint-counter != 1 or $i != 0 {
+          .#{$_col-offset-class} {
+            @include col-calculate-offset(offset, $i, $width)
+          }
+          .#{$_col-pull-class} {
+            @include col-calculate-offset(pull, $i, $width)
+          }
+          .#{$_col-push-class} {
+            @include col-calculate-offset(push, $i, $width)
+          }
+        }
+      }
+    }
+  }
+}

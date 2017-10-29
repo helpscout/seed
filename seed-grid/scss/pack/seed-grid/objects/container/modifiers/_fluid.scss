@@ -1,0 +1,10 @@
+// Objects :: Container :: Modifiers :: Fluid
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-grid) {
+  &--fluid {
+    max-width: 100%;
+  }
+}
