@@ -1,0 +1,17 @@
+// Mixins :: Smooth
+
+@mixin text-smooth($smooth: antialiased) {
+  $_important: "";
+  @if $seed-typography-use-important {
+    $_important: "!important";
+  }
+
+  @if $smooth == "antialised" {
+    -moz-osx-font-smoothing: grayscale #{$_important};
+    -webkit-font-smoothing: antialiased #{$_important};
+  }
+  @else {
+    -moz-osx-font-smoothing: $smooth #{$_important};
+    -webkit-font-smoothing: $smooth #{$_important};
+  }
+}

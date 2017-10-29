@@ -1,0 +1,17 @@
+// Type :: White Space
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-typography) {
+  .#{$seed-typography-white-space-namespace} {
+    @include prop-map($seed-typography-white-space, (prop)) {
+      @if $seed-typography-use-important {
+        white-space: prop(prop) !important;
+      }
+      @else {
+        white-space: prop(prop);
+      }
+    }
+  }
+}

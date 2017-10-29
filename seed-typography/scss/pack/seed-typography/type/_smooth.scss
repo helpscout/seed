@@ -1,0 +1,23 @@
+// Text :: Smooth
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../mixins/smooth";
+
+@include export(seed-typography) {
+  .#{$seed-typography-namespace}-smooth {
+    @include text-smooth(antialiased);
+  }
+
+  .#{$seed-typography-namespace}-smooth-auto {
+    @include text-smooth(auto);
+  }
+
+  .#{$seed-typography-namespace}-smooth-none {
+    @include text-smooth(none);
+  }
+
+  .#{$seed-typography-namespace}-initial {
+    @include text-smooth(initial);
+  }
+}

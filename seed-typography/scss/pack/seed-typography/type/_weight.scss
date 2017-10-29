@@ -1,0 +1,21 @@
+// Type :: Weight
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../generators/weight-num";
+
+@include export(seed-typography) {
+  // Generates weights 100 -> 900
+  @include generate-typography-weight-num;
+
+  .#{$seed-typography-weight-namespace} {
+    @include prop-map($seed-typography-weight, (weight)) {
+      @if $seed-typography-use-important {
+        font-weight: prop(weight) !important;
+      }
+      @else {
+        font-weight: prop(weight);
+      }
+    }
+  }
+}
