@@ -24,11 +24,6 @@ And having to do a single git clone is way _way_ nicer than having to do 60+ git
 No worries! All of the Seed Packs can still be individually installed via `npm install`. That's not goin' away. The Packs are just moving to a new home on Github is all.
 
 
-## WIP
-
-Some house cleanin' needs to be done to get this monorepo all setup! Stay tuned.
-
-
 ## Made with ❤️
 
 By your friends at [Help Scout](https://www.helpscout.net)
