@@ -1,0 +1,13 @@
+// Shadow theme pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+// Config
+@import "./config";
+// Functions
+@import "./functions/_index";
+// Themes
+@import "./themes/_index";
+
+// Publish
+@include publish(seed-shadow);

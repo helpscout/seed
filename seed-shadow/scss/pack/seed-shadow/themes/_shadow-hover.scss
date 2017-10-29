@@ -1,0 +1,19 @@
+// Themes :: Shadow Hover
+
+// Dependencies
+@import "pack/seed-props/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-shadow) {
+  .#{$seed-shadow-hover-namespace} {
+    @include prop-map($seed-shadow-sizes, (prop)) {
+      -webkit-transition: $seed-shadow-hover-transition;
+      transition: $seed-shadow-hover-transition;
+
+      &:hover {
+        box-shadow: prop(prop) !important;
+      }
+    }
+  }
+}

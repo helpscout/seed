@@ -1,0 +1,53 @@
+{
+  "name": "seed-shadow",
+  "version": "0.0.6",
+  "description": "shadow theme pack for Seed",
+  "main": "index.js",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner && npm run copy",
+    "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
+    "test:mocha": "mocha",
+    "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
+    "test": "npm run test:mocha && npm run test:qunit",
+    "prepublish": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-shadow.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-shadow/issues"
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.10.0",
+    "seed-bistro": "0.0.3"
+  },
+  "dependencies": {
+    "seed-dash": "0.0.1",
+    "seed-props": "0.3.0",
+    "seed-publish": "0.0.4"
+  }
+}

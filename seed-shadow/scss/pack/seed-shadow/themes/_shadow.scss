@@ -1,0 +1,14 @@
+// Themes :: Shadow
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "pack/seed-props/_index";
+@import "../config";
+
+@include export(seed-shadow) {
+  .#{$seed-shadow-namespace} {
+    @include prop-map($seed-shadow-sizes, (prop)) {
+      box-shadow: prop(prop) !important;
+    }
+  }
+}
