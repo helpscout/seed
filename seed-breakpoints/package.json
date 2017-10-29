@@ -1,0 +1,53 @@
+{
+  "name": "seed-breakpoints",
+  "version": "0.4.1",
+  "description": "Breakpoints mixin pack for Seed",
+  "main": "index.js",
+  "homepage": "https://github.com/helpscout/seed-breakpoints",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner",
+    "build:main": "node ./scripts/build.js",
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha",
+    "prepublish": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-breakpoints.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-breakpoints/issues"
+  },
+  "keywords": [
+    "bem",
+    "breakpoints",
+    "css",
+    "dash",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "responsive",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "0.5.1",
+    "node-sass": "4.5.3",
+    "seed-bistro": "0.1.6"
+  },
+  "dependencies": {
+    "seed-props": "0.3.1"
+  }
+}
