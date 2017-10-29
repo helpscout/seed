@@ -1,0 +1,12 @@
+// Objects :: Responsive Wrapper
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-responsive-wrapper) {
+  .#{$seed-responsive-wrapper-namespace} {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
