@@ -1,0 +1,11 @@
+// Component :: Alert
+
+// Scope
+.#{$seed-alert-namespace} {
+  // Base
+  @import "./base";
+  // States
+  @import "./states/states";
+  // Components
+  @import "./badge";
+}

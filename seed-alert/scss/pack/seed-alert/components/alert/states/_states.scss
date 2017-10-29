@@ -1,0 +1,29 @@
+// States :: States
+
+// Dependencies
+@import "../../../config";
+@import "pack/seed-badge/config";
+@import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
+@import "pack/seed-states/config";
+
+@include export(seed-alert) {
+  @each $key, $values in $seed-states-colors {
+    $__alert-state-class: ".#{$key}";
+
+    @if $seed-alert-enable-state-prefix == true {
+      $__alert-state-class: ".#{$seed-alert-state-prefix}-#{$key}";
+    }
+
+    &#{$__alert-state-class} {
+      background-color: _get($values, background-color);
+      box-shadow: inset $seed-alert-accent-width 0 0 0 _get($values, border-color);
+      color: _get($values, color);
+
+      // Modify badge styles based on alert state
+      .#{$seed-badge-namespace} {
+        background-color: _get($values, border-color);
+      }
+    }
+  }
+}

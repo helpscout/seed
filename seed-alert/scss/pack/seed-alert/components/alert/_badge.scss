@@ -1,0 +1,16 @@
+// Components :: Badge
+// Modifys the styles of badges within alerts
+
+// Dependencies
+@import "pack/seed-badge/config";
+@import "pack/seed-publish/_index";
+@import "pack/seed-states/config";
+
+@include export(seed-alert) {
+  .#{$seed-badge-namespace} {
+    // Get the default color scheme
+    $__default-scheme: _get($seed-states-colors, warning);
+
+    background-color: _get($__default-scheme, border-color);
+  }
+}
