@@ -1,0 +1,21 @@
+// Components :: Option Card Label
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-option-card) {
+  .#{$seed-option-card-label-namespace} {
+    box-sizing: border-box;
+    color: inherit;
+    cursor: pointer;
+    display: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin-bottom: inherit;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

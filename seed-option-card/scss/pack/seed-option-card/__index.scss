@@ -1,0 +1,13 @@
+// option-card pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "pack/seed-card/_index";
+
+// Config
+@import "./config";
+// Components
+@import "./components/_index";
+
+// Publish
+@include publish(seed-option-card);

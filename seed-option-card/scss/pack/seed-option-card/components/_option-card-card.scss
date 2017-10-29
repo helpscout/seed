@@ -1,0 +1,62 @@
+// Components :: Option Card Block
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "pack/seed-card/config";
+@import "pack/seed-control-group/config";
+@import "pack/seed-this/_index";
+@import "../config";
+
+@include export(seed-option-card) {
+  .#{$seed-option-card-namespace} {
+    .#{$seed-card-namespace} {
+      $this: this();
+      border-color: $seed-option-card-border-color;
+      position: relative;
+
+      &:hover {
+        border-color: $seed-option-card-border-hover-color;
+      }
+
+      &:active {
+        background-color: $seed-option-card-background-color-active;
+      }
+
+      // States
+      @at-root .#{$seed-option-card-selector-namespace} {
+        &:active + #{$this} {
+          z-index: 1;
+        }
+
+        &:checked + #{$this} {
+          border-color: $seed-option-card-border-focus-color;
+          z-index: 1;
+        }
+
+        &:focus + #{$this} {
+          box-shadow: $seed-option-card-box-shadow-focus;
+          z-index: 2;
+        }
+
+        &:focus:checked + #{$this} {
+          z-index: 3;
+        }
+      }
+
+      // Control group
+      @at-root .#{$seed-control-group-namespace} > .#{$seed-option-card-namespace} {
+        &:first-child #{$this} {
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+        }
+        &:not(:first-child):not(:last-child) #{$this} {
+          border-radius: 0;
+        }
+        &:last-child #{$this} {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0;
+        }
+      }
+    }
+  }
+}

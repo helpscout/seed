@@ -1,0 +1,77 @@
+/**
+ * seed-option-card v0.0.3 (https://github.com/helpscout/seed-option-card/)
+ * Option card component pack for Seed
+ * Licensed under MIT
+ */
+.c-card {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px; }
+  .c-card > *:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  .c-card > *:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+
+.c-card--square {
+  border-radius: 0; }
+  .c-card--square > *:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .c-card--square > *:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+
+.c-option-card {
+  cursor: pointer;
+  position: relative; }
+  .o-control-group--block .c-option-card {
+    flex: 1; }
+
+.c-option-card .c-card {
+  border-color: #ddd;
+  position: relative; }
+  .c-option-card .c-card:hover {
+    border-color: #ccc; }
+  .c-option-card .c-card:active {
+    background-color: rgba(0, 0, 0, 0.025); }
+  .c-option-card__selector:active + .c-card {
+    z-index: 1; }
+  .c-option-card__selector:checked + .c-card {
+    border-color: #3197D6;
+    z-index: 1; }
+  .c-option-card__selector:focus + .c-card {
+    box-shadow: 0 0 0 2px rgba(49, 151, 214, 0.2);
+    z-index: 2; }
+  .c-option-card__selector:focus:checked + .c-card {
+    z-index: 3; }
+  .o-control-group > .c-option-card:first-child .c-card {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+  .o-control-group > .c-option-card:not(:first-child):not(:last-child) .c-card {
+    border-radius: 0; }
+  .o-control-group > .c-option-card:last-child .c-card {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+
+.c-option-card__label {
+  box-sizing: border-box;
+  color: inherit;
+  cursor: pointer;
+  display: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin-bottom: inherit; }
+  .c-option-card__label:last-child {
+    margin-bottom: 0; }
+
+.c-option-card__selector {
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }

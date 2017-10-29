@@ -1,0 +1,21 @@
+// Components :: Option Card
+
+// Dependencies
+@import "pack/seed-control-group/config";
+@import "pack/seed-publish/_index";
+@import "pack/seed-this/_index";
+@import "pack/seed-card/config";
+@import "../config";
+
+@include export(seed-option-card) {
+  .#{$seed-option-card-namespace} {
+    $this: this();
+
+    cursor: pointer;
+    position: relative;
+
+    @at-root .#{$seed-control-group-namespace}--block #{$this} {
+      flex: 1;
+    }
+  }
+}
