@@ -28,17 +28,6 @@
   vertical-align: middle;
   -webkit-user-select: none;
   user-select: none; }
-  button.c-button {
-    font-family: inherit;
-    overflow: visible;
-    outline: none; }
-    button.c-button::-moz-focus-inner {
-      border-style: none;
-      padding: 0; }
-    button.c-button:-moz-focus-ring {
-      outline: 1px dotted Buttontext; }
-    button.c-button:focus {
-      outline: none; }
   .c-button:hover {
     background-color: #f9f9f9;
     border-color: #ddd;
@@ -269,6 +258,18 @@
 .c-button--block {
   display: block;
   width: 100%; }
+
+button.c-button {
+  font-family: inherit;
+  overflow: visible;
+  outline: none; }
+  button.c-button::-moz-focus-inner {
+    border-style: none;
+    padding: 0; }
+  button.c-button:-moz-focus-ring {
+    outline: 1px dotted Buttontext; }
+  button.c-button:focus {
+    outline: none; }
 
 .c-card {
   box-sizing: border-box;
