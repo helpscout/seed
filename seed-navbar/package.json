@@ -1,0 +1,66 @@
+{
+  "name": "seed-navbar",
+  "version": "0.0.6",
+  "description": "Navbar component pack for Seed",
+  "main": "index.js",
+  "watch": {
+    "test": {
+      "patterns": [
+        "scss",
+        "test"
+      ],
+      "extensions": "scss, js",
+      "quiet": true
+    }
+  },
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build:main": "node ./scripts/build.js",
+    "build": "npm run build:main && npm run banner",
+    "prepublish": "npm run test",
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha",
+    "version": "npm run build && git add dist",
+    "watch": "npm-watch"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "navbar",
+    "nav",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.5",
+    "seed-button": "0.1.16",
+    "seed-dropdown": "0.0.8",
+    "seed-nav": "0.1.0",
+    "seed-publish": "0.2.0"
+  },
+  "devDependencies": {
+    "mkdirp": "0.5.1",
+    "node-sass": "^4.5.3",
+    "seed-barista": "1.0.3",
+    "seed-bistro": "0.1.9"
+  }
+}
