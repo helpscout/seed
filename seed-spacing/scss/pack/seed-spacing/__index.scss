@@ -1,0 +1,20 @@
+// Spacing pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "pack/seed-breakpoints/_index";
+
+// Config
+@import "./config";
+
+// Generators
+@import "./generators/_index";
+
+// Functions
+@import "./functions/_index";
+
+// Utilities
+@import "./utilities/_index";
+
+// Publish
+@include publish(seed-spacing);

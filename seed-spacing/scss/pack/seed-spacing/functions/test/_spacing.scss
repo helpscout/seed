@@ -1,0 +1,47 @@
+// Spacing :: Test
+
+@import "true";
+@import "../spacing";
+
+@include test-module("functions/spacing") {
+
+  @include test("Should return 8px when argument of 2 is passed") {
+
+    $test: spacing(2);
+    $expect: 8px;
+
+    @include assert-equal($test, $expect, "8px");
+  }
+
+  @include test("Should return default of 0 when no argument") {
+
+    $test: spacing();
+    $expect: 0;
+
+    @include assert-equal($test, $expect, "0");
+  }
+
+  @include test("Should return fallback with an invalid argument") {
+
+    $err: true;
+    $test: spacing(200, $err);
+    $expect: true;
+
+    @include assert-equal($test, $expect, "0");
+  }
+
+  @include test("Correctly handles customized $seed-spacing-sizes") {
+    // Reimporting to behave like beforeEach
+    @import "../spacing";
+    $seed-spacing-sizes: (
+      sm: 10px,
+      md: 15px,
+      lg: 20px
+    );
+
+    $test: spacing(sm);
+    $expect: 10px;
+
+    @include assert-equal($test, $expect, "10px");
+  }
+}

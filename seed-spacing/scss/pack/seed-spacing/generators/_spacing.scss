@@ -1,0 +1,50 @@
+// Generators :: Spacing :: Spacing
+
+// Generates the spacing utility classes
+// Example:
+// .u-mrg-b-lg
+@mixin generate-spacing($property: margin, $auto: false) {
+  $class: $seed-spacing-margin-namespace;
+
+  @if ($property == margin) {
+    $class: $seed-spacing-margin-namespace;
+  }
+  @if ($property == padding) {
+    $class: $seed-spacing-padding-namespace;
+  }
+
+  @each $dir-prop, $dir-class in $seed-spacing-directions {
+    $_util-classname: #{$class}-#{$dir-class};
+    $_property: #{$property}-#{$dir-prop};
+
+    $all: $dir-prop == "all";
+    $none: $dir-prop == "none";
+
+    @if (not $none) {
+      @if ($all) {
+        $_util-classname: $class;
+        $_property: $property;
+      }
+
+      .#{$_util-classname} {
+        @include breakpoint-prop-map($seed-spacing-sizes, (size)) {
+          @if (prop(size) == "auto" and $property == "padding") {
+          }
+          @else {
+            @if ($dir-class == "h" and not $all) {
+              #{$property}-left: prop(size) !important;
+              #{$property}-right: prop(size) !important;
+            }
+            @elseif ($dir-class == "v" and not $all) {
+              #{$property}-bottom: prop(size) !important;
+              #{$property}-top: prop(size) !important;
+            }
+            @else {
+              #{$_property}: prop(size) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

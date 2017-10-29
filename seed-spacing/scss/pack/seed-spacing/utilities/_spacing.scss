@@ -1,0 +1,9 @@
+// Utility :: Spacing
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-spacing) {
+  @include generate-spacing(margin);
+  @include generate-spacing(padding);
+}
