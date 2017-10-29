@@ -1,0 +1,8 @@
+// width-max :: Config
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-width/config";
+
+// Namespace
+$seed-width-max-namespace: #{$seed-width-namespace}-max !default;
