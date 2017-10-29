@@ -1,0 +1,46 @@
+/**
+ * seed-zi v0.0.2 (https://github.com/helpscout/seed-zi/)
+ * Z-index utility pack for Seed
+ * Licensed under MIT
+ */
+.u-zi-inherit {
+  z-index: inherit !important; }
+
+.u-zi-initial {
+  z-index: initial !important; }
+
+.u-zi-unset {
+  z-index: unset !important; }
+
+.u-zi-hidden {
+  z-index: -1 !important; }
+
+.u-zi-0 {
+  z-index: 0 !important; }
+
+.u-zi-1 {
+  z-index: 1 !important; }
+
+.u-zi-2 {
+  z-index: 2 !important; }
+
+.u-zi-3 {
+  z-index: 3 !important; }
+
+.u-zi-5 {
+  z-index: 5 !important; }
+
+.u-zi-10 {
+  z-index: 10 !important; }
+
+.u-zi-100 {
+  z-index: 100 !important; }
+
+.u-zi-200 {
+  z-index: 200 !important; }
+
+.u-zi-1000 {
+  z-index: 1000 !important; }
+
+.u-zi-max {
+  z-index: 9999999 !important; }

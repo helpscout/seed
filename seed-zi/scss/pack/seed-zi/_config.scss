@@ -1,0 +1,21 @@
+// ZI :: Config
+
+$seed-zi-namespace: "u-zi" !default;
+
+// Default zi z-index
+$seed-zi-index: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  hidden: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  5: 5,
+  10: 10,
+  100: 100,
+  200: 200,
+  1000: 1000,
+  max: 9999999
+) !default;
