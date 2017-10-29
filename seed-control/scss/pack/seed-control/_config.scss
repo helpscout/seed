@@ -1,0 +1,21 @@
+// Control :: Config
+
+$seed-control-size-default: 36px !default;
+
+$seed-control-sizes: (
+  sm: (
+    font-size: 0.875rem,
+    height: 28px,
+    padding: 0 0.5em,
+  ),
+  md: (
+    font-size: 1rem,
+    height: $seed-control-size-default,
+    padding: 0 1em,
+  ),
+  lg: (
+    font-size: 1.25rem,
+    height: 52px,
+    padding: 0 1.5em,
+  ),
+) !default;
