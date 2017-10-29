@@ -1,0 +1,52 @@
+// Themes :: Border
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-border) {
+  .#{$seed-border-namespace} {
+    @each $key, $value in $seed-border-directions {
+      // Defaults
+      $modifier: -#{$key};
+      $style-prop: border-style;
+      $width-value: $seed-border-size;
+
+      // Customize values
+      @if $value {
+        $style-prop: border-#{$key}-style;
+      }
+      @if $key == "all" {
+        // Remove the modifier for "all"
+        $modifier: "";
+      }
+      @if $key == "none" {
+        $width-value: 0;
+      }
+
+      // Creating the modifier
+      &#{$modifier} {
+        @include breakpoint-all {
+          @if $seed-border-use-important {
+            #{$style-prop}: $seed-border-style !important;
+            border-width: $width-value !important;
+          }
+          @else {
+            #{$style-prop}: $seed-border-style;
+            border-width: $width-value;
+          }
+
+          @if ($key != "none") and (type-of($seed-border-color) == "color") {
+            @if $seed-border-use-important {
+              border-color: $seed-border-color !important;
+            }
+            @else {
+              border-color: $seed-border-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

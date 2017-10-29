@@ -1,0 +1,37 @@
+// Border :: Config
+
+// Namespaces
+$seed-border-namespace: "t-bdr" !default;
+$seed-border-radius-namespace: "#{$seed-border-namespace}-r" !default;
+
+// Defaults
+$seed-border-color: #eee !default;
+$seed-border-radius: 3px !default;
+$seed-border-size: 1px !default;
+$seed-border-style: solid !default;
+
+// Important (Typical convention for utility purposes)
+$seed-border-use-important: true !default;
+
+// Directions
+$seed-border-directions: (
+  all: false,
+  top: "t",
+  right: "r",
+  bottom: "b",
+  left: "l",
+  none: false,
+) !default;
+
+$seed-border-radius-sizes: (
+  0: 0px,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  circle: 50%,
+  pill: 9999px,
+) !default;
+
+// Base variable
+$seed-border: $seed-border-size $seed-border-style $seed-border-color !default;

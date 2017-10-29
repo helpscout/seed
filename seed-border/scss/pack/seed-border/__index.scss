@@ -1,0 +1,12 @@
+// Border pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+// Config
+@import "./config";
+// Theme
+@import "./themes/__index";
+
+// Publish
+@include publish(seed-border);

@@ -1,0 +1,141 @@
+/**
+ * seed-border v0.0.10 (https://github.com/helpscout/seed-border)
+ * Border theme pack for Seed
+ * Licensed under MIT
+ */
+.t-bdr {
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: #eee !important; }
+  @media (min-width: 544px) {
+    .t-bdr\@sm {
+      border-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 768px) {
+    .t-bdr\@md {
+      border-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 992px) {
+    .t-bdr\@lg {
+      border-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+
+.t-bdr-top {
+  border-top-style: solid !important;
+  border-width: 1px !important;
+  border-color: #eee !important; }
+  @media (min-width: 544px) {
+    .t-bdr-top\@sm {
+      border-top-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 768px) {
+    .t-bdr-top\@md {
+      border-top-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 992px) {
+    .t-bdr-top\@lg {
+      border-top-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+
+.t-bdr-right {
+  border-right-style: solid !important;
+  border-width: 1px !important;
+  border-color: #eee !important; }
+  @media (min-width: 544px) {
+    .t-bdr-right\@sm {
+      border-right-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 768px) {
+    .t-bdr-right\@md {
+      border-right-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 992px) {
+    .t-bdr-right\@lg {
+      border-right-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+
+.t-bdr-bottom {
+  border-bottom-style: solid !important;
+  border-width: 1px !important;
+  border-color: #eee !important; }
+  @media (min-width: 544px) {
+    .t-bdr-bottom\@sm {
+      border-bottom-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 768px) {
+    .t-bdr-bottom\@md {
+      border-bottom-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 992px) {
+    .t-bdr-bottom\@lg {
+      border-bottom-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+
+.t-bdr-left {
+  border-left-style: solid !important;
+  border-width: 1px !important;
+  border-color: #eee !important; }
+  @media (min-width: 544px) {
+    .t-bdr-left\@sm {
+      border-left-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 768px) {
+    .t-bdr-left\@md {
+      border-left-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+  @media (min-width: 992px) {
+    .t-bdr-left\@lg {
+      border-left-style: solid !important;
+      border-width: 1px !important;
+      border-color: #eee !important; } }
+
+.t-bdr-none {
+  border-style: solid !important;
+  border-width: 0 !important; }
+  @media (min-width: 544px) {
+    .t-bdr-none\@sm {
+      border-style: solid !important;
+      border-width: 0 !important; } }
+  @media (min-width: 768px) {
+    .t-bdr-none\@md {
+      border-style: solid !important;
+      border-width: 0 !important; } }
+  @media (min-width: 992px) {
+    .t-bdr-none\@lg {
+      border-style: solid !important;
+      border-width: 0 !important; } }
+
+.t-bdr-r-0 {
+  border-radius: 0px; }
+
+.t-bdr-r-1 {
+  border-radius: 1px; }
+
+.t-bdr-r-2 {
+  border-radius: 2px; }
+
+.t-bdr-r-3 {
+  border-radius: 3px; }
+
+.t-bdr-r-4 {
+  border-radius: 4px; }
+
+.t-bdr-r-circle {
+  border-radius: 50%; }
+
+.t-bdr-r-pill {
+  border-radius: 9999px; }

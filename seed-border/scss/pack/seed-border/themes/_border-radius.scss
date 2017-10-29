@@ -1,0 +1,15 @@
+// Themes :: Border Radius
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-border) {
+  .#{$seed-border-radius-namespace} {
+    // prop-map mixing from seed-breakpoints pack
+    @include prop-map($seed-border-radius-sizes, (size)) {
+      border-radius: prop(size);
+    }
+  }
+}
