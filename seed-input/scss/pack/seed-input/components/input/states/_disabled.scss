@@ -1,0 +1,16 @@
+// States :: Disabled
+
+// Dependencies
+@import "pack/seed-control/mixins/control-disabled-styles";
+@import "pack/seed-publish/_index";
+@import "../../../config";
+
+@include export(seed-input) {
+  & {
+    @include control-disabled-styles {
+      background-color: $seed-input-background-color-disabled;
+      border-color: $seed-input-border-color;
+      cursor: not-allowed;
+    }
+  }
+}

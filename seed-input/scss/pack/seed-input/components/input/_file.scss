@@ -1,0 +1,31 @@
+// Inputs :: File
+
+// Dependencies
+@import "pack/seed-control/config";
+@import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
+@import "../../config";
+
+@include export(seed-input) {
+  input[type="file"].#{$seed-input-namespace} {
+    $offset: ceil(($seed-control-size-default - $seed-input-type-file-height) / 2);
+    border-color: transparent;
+    cursor: pointer;
+    line-height: 0;
+    padding-bottom: $offset;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: $offset;
+    width: auto;
+
+    // Modifiers: Sizes
+    @each $key, $values in $seed-control-sizes {
+      &--#{$key} {
+        $offset: ceil((_get($values, height) - $seed-input-type-file-height) / 2);
+        line-height: 0;
+        padding-bottom: $offset;
+        padding-top: $offset;
+      }
+    }
+  }
+}

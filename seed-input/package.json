@@ -1,0 +1,60 @@
+{
+  "name": "seed-input",
+  "version": "0.0.7",
+  "description": "Input component pack for Seed",
+  "main": "index.js",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner && npm run copy",
+    "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
+    "test:mocha": "mocha",
+    "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
+    "test": "npm run test:mocha",
+    "prepublish": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-input.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-input/issues"
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "form",
+    "form control",
+    "functional",
+    "input",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.10.0",
+    "sass-pathfinder": "0.0.5",
+    "seed-bistro": "0.0.3"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.5",
+    "seed-border": "0.0.10",
+    "seed-control": "0.0.4",
+    "seed-dash": "0.0.1",
+    "seed-publish": "0.1.1",
+    "seed-states": "0.0.4"
+  }
+}

@@ -1,0 +1,13 @@
+// Inputs :: Select
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../../config";
+
+@include export(seed-input) {
+  select.#{$seed-input-namespace} {
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance: menu;
+  }
+}
