@@ -1,0 +1,10 @@
+// Utilities :: Position
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+
+.#{$seed-position-namespace} {
+  @include breakpoint-prop-map($seed-positions, (position)) {
+    position: prop(position) !important;
+  }
+}

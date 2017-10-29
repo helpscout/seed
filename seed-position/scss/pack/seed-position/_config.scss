@@ -1,0 +1,14 @@
+// Position :: Config
+
+// Namespace
+$seed-position-namespace: u-pos !default;
+
+// Positions
+$seed-positions: (
+  absolute: absolute,
+  fixed: fixed,
+  inherit: inherit,
+  initial: initial,
+  relative: relative,
+  static: static
+) !default
