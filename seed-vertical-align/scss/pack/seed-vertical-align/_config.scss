@@ -1,0 +1,15 @@
+// vertical-align :: Config
+
+// Namespace
+$seed-vertical-align-namespace: u-va !default;
+
+// Alignment
+$seed-vertical-align-alignments: (
+  bottom: bottom,
+  inherit: inherit,
+  initial: initial,
+  middle: middle,
+  text-bottom: text-bottom,
+  text-top: text-top,
+  top: top,
+) !default;
