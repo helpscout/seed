@@ -1,0 +1,15 @@
+// Utilities :: Centralize
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+
+@include export(seed-centralize) {
+  .#{$seed-centralize-namespace} {
+    @include breakpoint-all {
+      align-items: center !important;
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+}
