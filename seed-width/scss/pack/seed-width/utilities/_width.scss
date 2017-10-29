@@ -1,0 +1,17 @@
+// Utility :: Width
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+
+@include export(seed-width) {
+  [class*="#{$seed-width-namespace}-"] {
+    max-width: 100%;
+  }
+
+  .#{$seed-width-namespace} {
+    @include breakpoint-prop-map($seed-widths, (prop)) {
+      width: prop(prop) !important;
+    }
+  }
+}
