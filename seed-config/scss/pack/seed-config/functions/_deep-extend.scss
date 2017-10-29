@@ -1,0 +1,63 @@
+// _deep-extend
+// Source
+// https://www.github.com/helpscout/seed-dash
+// Modified version of _deep-extend
+
+// Utils contains the functions prefixed with __
+@import "./utils";
+
+@function _deep-extend($map, $maps.../*, !default */) {
+  $first: nth($maps, 1);
+  $last: nth($maps, -1);
+  $set_default: $last == "default";
+
+  @if not is_map($map) and not is_list($map) {
+    @error "_config (_deep-extend): The argument must be a list or a map.";
+  }
+
+  $min: if(type-of($first) == "string", 2, 1);
+  $max: __get-map-length($maps, $set_default);
+
+  // Lists
+  @if is_list($map) {
+    @for $i from $min through $max {
+      $current: nth($maps, $i);
+
+      @if not is_list($current) {
+        @error "_config (_deep-extend): The second argument(s) must be a list.";
+      }
+
+      @if __can-set-map($map, $key, $set_default) {
+        $map: join($map, $current);
+      }
+    }
+    @return $map;
+  }
+
+  // Maps
+  // Loop through all maps in $maps...
+  $map: map-remove($map, null); // !default is disabled by default
+  @for $i from $min through $max {
+    // Store current map
+    $current: nth($maps, $i);
+
+    // If in deep mode, loop through all tuples in current map
+    @each $key, $value in $current {
+      // If value is a nested map and same key from map is a nested map as well
+      @if is-map($value) and is-map(map-get($map, $key)) {
+        $nested_set_default: if($set_default, default, null);
+        // Recursive extend
+        $value: _deep-extend(map-get($map, $key), $value, $nested_set_default);
+        $map: map-merge($map, ($key: $value));
+      }
+      @else {
+        // Merge current with map
+        @if __can-set-map($map, $key, $set_default) {
+          $map: map-merge($map, ($key: $value));
+        }
+      }
+    }
+  }
+
+  @return $map;
+}

@@ -1,0 +1,26 @@
+// General utils
+@function is_map($o) {
+  @return ($o and (type-of($o) == "map"));
+}
+
+@function is_list($o) {
+  @return ($o and (type-of($o) == "list"));
+}
+
+
+// "Private" helper methods for this Pack
+@function __can-set-map($map, $key, $default) {
+  @return ((not $default) or ($default and not map-has-key($map, $key)));
+}
+
+@function __is-shallow-map($o) {
+  @return (is-map($o) and not is-map(map-get($o, nth($o, 1))));
+}
+
+@function __get-map-length($maps, $default) {
+  $max: length($maps);
+  @if $default {
+    $max: if(length($maps) > 2, length($maps) - 1, 1);
+  }
+  @return $max;
+}

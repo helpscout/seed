@@ -1,0 +1,39 @@
+@import "./utils";
+
+@function _config($keys...) {
+  $first: nth($keys, 1);
+  @if not $first {
+    @error "_config(): At least 1 argument must be passed.";
+  }
+
+  // Default map
+  $map: $SEED_CONFIG__GLOBAL;
+  @each $key in $keys {
+    // Invalid/missing key
+    @if not is_map($map) {
+      $previous_index: index($keys, $key) - 1;
+      $previous_key: nth($keys, $previous_index);
+
+      @debug "
+
+        _config(): \"#{$previous_key}\" key doesn't exist under \"#{nth($keys, 1)}\".
+
+        Source: _config(#{$keys});
+      ";
+      @error "";
+    }
+    $map: map-get($map, $key);
+  }
+
+  // Fallback to default if defined
+  @if is_map($map) {
+    @if map-has-key($map, default) {
+      $map: map-get($map, default);
+    }
+    @else {
+      $map_keys: map-keys($map);
+      $map: map-get($map, nth($map_keys, 1));
+    }
+  }
+  @return $map;
+};

@@ -1,0 +1,57 @@
+{
+  "name": "seed-config",
+  "version": "0.1.1",
+  "description": "Sass config pack",
+  "main": "index.js",
+  "file": [
+    "scripts",
+    "dist",
+    "scss",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "nodemon -e scss -x 'npm run test -- --watch --reporter=dot'",
+    "prepublish": "npm run test",
+    "start": "npm run dev",
+    "test": "mocha test/setup.mocha.js test --recursive"
+  },
+  "homepage": "https://github.com/helpscout/seed-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helpscout/seed-config.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bem",
+    "config",
+    "configuration",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "scss",
+    "seed",
+    "seed-pack",
+    "variables"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.5"
+  },
+  "devDependencies": {
+    "mkdirp": "0.5.1",
+    "node-sass": "^4.5.3",
+    "nodemon": "1.11.0",
+    "seed-bistro": "0.1.9"
+  }
+}

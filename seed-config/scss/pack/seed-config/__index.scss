@@ -1,0 +1,11 @@
+// Config Pack
+
+// Default map
+@if not global-variable-exists(SEED_CONFIG__GLOBAL) {
+  $SEED_CONFIG__GLOBAL: (
+    __seed-config: true,
+  ) !global;
+}
+
+@import "./functions/config";
+@import "./mixins/config";
