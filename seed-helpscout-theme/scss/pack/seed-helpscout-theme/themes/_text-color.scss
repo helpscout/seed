@@ -1,0 +1,34 @@
+// Themes :: Text Color
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-helpscout-theme) {
+  .#{$seed-helpscout-theme-text-color-namespace} {
+    @each $color, $map in $seed-helpscout-theme-colors {
+      &-#{$color} {
+        @if type-of($map) == "map" {
+          @each $shade, $value in $map {
+            &-#{$shade} {
+              @if $seed-helpscout-theme-enable-important == true {
+                color: $value !important;
+              }
+              @else {
+                color: $value;
+              }
+            }
+          }
+        }
+        @else {
+          @if $seed-helpscout-theme-enable-important == true {
+            color: $map !important;
+          }
+          @else {
+            color: $map;
+          }
+        }
+      }
+    }
+  }
+}

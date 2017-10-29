@@ -1,0 +1,11 @@
+// Help Scout theme pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+// Config
+@import "./config";
+// Themes
+@import "./themes/_index";
+
+// Publish
+@include publish(seed-helpscout-theme);
