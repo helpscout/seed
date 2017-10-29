@@ -1,0 +1,37 @@
+// Test :: Color Scheme
+
+@import "true";
+
+@import "./node_modules/seed-color-scheme/scss/pack/seed-color-scheme/_index";
+@import "./scss/pack/seed-color-scheme-helpscout/config";
+
+// Set the color scheme
+@include _color($seed-color-scheme-helpscout);
+
+@include test-module("Color scheme") {
+
+  @include test("should automatically set color scheme") {
+    $color: _color(blue, 500);
+
+    $test: $color;
+    $expect: #3197d6;
+
+    @include assert-equal($test, $expect, "blue, 100");
+  }
+
+  @include test("should correctly extend the color scheme") {
+    $new-colors: (
+      blue: (
+        super: awesome
+      )
+    );
+    @include _color($new-colors);
+
+    $color: _color(blue, super);
+
+    $test: $color;
+    $expect: awesome;
+
+    @include assert-equal($test, $expect, "awesome");
+  }
+}
