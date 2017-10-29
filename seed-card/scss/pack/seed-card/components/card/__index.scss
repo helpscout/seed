@@ -1,0 +1,8 @@
+// Component :: Card
+
+// Scope
+.#{$seed-card-namespace} {
+  @import "./base";
+  // Modifiers
+  @import "./modifiers/square";
+}

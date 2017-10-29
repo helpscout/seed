@@ -1,0 +1,25 @@
+// Components :: Card Block
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-card) {
+  .#{$seed-card-block-namespace} {
+    box-sizing: border-box;
+    padding: _get($seed-card-block-sizes, md);
+
+    & + & {
+      border-top: $seed-card-border;
+    }
+
+    // Modifiers: Sizes
+    &- {
+      @include breakpoint-prop-map($seed-card-block-sizes, (size)) {
+        padding: prop(size);
+      }
+    }
+  }
+}

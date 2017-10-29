@@ -1,0 +1,12 @@
+// Card pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+// Config
+@import "./config";
+// Components
+@import "./components/_index";
+
+// Publishes
+@include publish(seed-card);
