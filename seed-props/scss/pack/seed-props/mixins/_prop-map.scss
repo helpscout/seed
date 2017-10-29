@@ -1,0 +1,49 @@
+// Mixins :: Prop Map
+
+@import "../config";
+
+@mixin prop-map($map: false, $properties: false, $suffix: false) {
+  @if $map {
+    // Set global maps
+    $SEED_PROPS_MAP__GLOBAL: () !global;
+    $new_prop: ();
+
+    // Loop through the map
+    @each $key, $value in $map {
+      // Set the class name
+      $class: $key;
+      @if $suffix {
+        $class: $class + $suffix;
+      }
+      // Add the properties
+      @if $properties {
+        @each $prop in $properties {
+          $new_prop: ($prop: $value);
+          // Check if $value is a map
+          @if (type-of($value) == "map") {
+            @each $nested_key, $nested_value in $value {
+              $nested_prop: ($nested_key: $nested_value);
+              $new_prop: map-merge($new_prop, $nested_prop);
+            }
+          }
+          $SEED_PROPS_MAP__GLOBAL: map-merge($SEED_PROPS_MAP__GLOBAL, $new_prop) !global;
+        }
+      }
+      @else {
+        @if (type-of($value) == "map") {
+          $new_prop: ();
+          // Check if $value is a map
+          @each $nested_key, $nested_value in $value {
+            $nested_prop: ($nested_key: $nested_value);
+            $new_prop: map-merge($new_prop, $nested_prop);
+          }
+          $SEED_PROPS_MAP__GLOBAL: map-merge($SEED_PROPS_MAP__GLOBAL, $new_prop) !global;
+        }
+      }
+      // Return @content
+      &-#{$class} {
+        @content;
+      }
+    }
+  }
+}

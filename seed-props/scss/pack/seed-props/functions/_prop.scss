@@ -1,0 +1,15 @@
+// Functions :: Prop
+
+@import "../config";
+
+@function prop($key: false, $map: $SEED_PROPS_MAP__GLOBAL) {
+  @if $key {
+    @if type-of($map) == "null" {
+      @warn "Map is currently empty";
+    }
+    @return map-get($map, $key);
+  }
+  @else {
+    @error "A key argument is required for @include prop($key)";
+  }
+}
