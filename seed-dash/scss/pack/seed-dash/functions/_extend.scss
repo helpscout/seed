@@ -1,0 +1,60 @@
+// _extend
+// Source
+// https://www.sitepoint.com/extra-map-functions-sass/
+
+@function _extend($map, $maps.../*, $deep */) {
+  $is_map: type-of($map) == "map";
+  $is_list: type-of($map) == "list";
+
+  @if not $is_map and not $is_list {
+    @error "_extend: The argument must be a list or a map.";
+  }
+
+  $first: nth($maps, 1);
+  $last: nth($maps, -1);
+  // Deep is disabled by default
+  $deep: $last == true;
+  $max: if($deep, length($maps) - 1, length($maps));
+
+  // _extend lists
+  @if $is_list {
+    @for $i from 1 through $max {
+      $current: nth($maps, $i);
+
+      @if type-of($current) != "list" {
+        @error "_extend: The second argument(s) must be a list.";
+      }
+      $map: join($map, $current);
+    }
+    @return $map;
+  }
+
+  // _extend maps
+  // Loop through all maps in $maps...
+  @for $i from 1 through $max {
+    // Store current map
+    $current: nth($maps, $i);
+
+    @if type-of($current) != "map" {
+      @error "_extend: The second argument(s) must be a map.";
+    }
+
+    // If not in deep mode, simply merge current map with map
+    @if not $deep {
+      $map: map-merge($map, $current);
+    } @else {
+      // If in deep mode, loop through all tuples in current map
+      @each $key, $value in $current {
+        // If value is a nested map and same key from map is a nested map as well
+        @if type-of($value) == "map" and type-of(map-get($map, $key)) == "map" {
+          // Recursive extend
+          $value: _extend(map-get($map, $key), $value, true);
+        }
+        // Merge current tuple with map
+        $map: map-merge($map, ($key: $value));
+      }
+    }
+  }
+
+  @return $map;
+}

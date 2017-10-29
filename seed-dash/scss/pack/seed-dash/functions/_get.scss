@@ -1,0 +1,35 @@
+// _get
+// Source:
+// https://www.sitepoint.com/extra-map-functions-sass/
+@function _get($map, $keys...) {
+  $is_map: type-of($map) == "map";
+  $is_list: type-of($map) == "list";
+
+  @if not $is_map and not $is_list {
+    @error "_get: The argument must be a list or a map.";
+  }
+
+  @if $is_map {
+    @each $key in $keys {
+      $map: map-get($map, $key);
+    }
+    @return $map;
+  }
+
+  @if $is_list {
+    $key: nth($keys, 1);
+    $len: length($map);
+
+    @for $i from 1 through $len {
+      $item: nth($map, $i);
+
+      @if $item == $key {
+        @return $item;
+      }
+
+      @if $i == $len {
+        @return false;
+      }
+    }
+  }
+}
