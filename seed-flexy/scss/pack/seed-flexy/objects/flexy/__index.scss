@@ -1,0 +1,20 @@
+// Object :: Flexy
+
+@import "./pack/seed-breakpoints/_index";
+@import "./pack/seed-publish/_index";
+
+@include export(seed-flexy) {
+  .#{$seed-flexy-namespace} {
+    box-sizing: border-box;
+    @include breakpoint-all {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+// Modifiers
+@import "./modifiers/alignment";
+@import "./modifiers/gap";
+@import "./modifiers/justify";

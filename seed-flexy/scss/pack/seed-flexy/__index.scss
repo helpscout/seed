@@ -1,0 +1,12 @@
+// Flexy pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+// Config
+@import "./config";
+// Object
+@import "./objects/_index";
+
+// Publish
+@include publish(seed-flexy);
