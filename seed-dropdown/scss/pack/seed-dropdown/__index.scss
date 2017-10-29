@@ -1,0 +1,20 @@
+// Dropdown pack for Seed
+
+// Dependencies
+@import "pack/seed-button/_index";
+@import "pack/seed-card/_index";
+@import "pack/seed-control-group/_index";
+@import "pack/seed-list/_index";
+@import "pack/seed-publish/_index";
+
+// Config
+@import "./config";
+
+// Components
+@import "./components/dropdown";
+@import "./components/dropdown-header";
+@import "./components/dropdown-menu";
+@import "./components/dropdown-toggle";
+
+// Publish
+@include publish(seed-dropdown);

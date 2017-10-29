@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="dist/seed-dropdown.css">
+  </head>
+  <body>
+    <div class="c-dropdown dropdown">
+      <button class="c-button c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="c-card c-dropdown__menu c-dropdown__menu--truncate dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="c-list">
+          <a class="c-list__item dropdown-item" href="#">Action</a>
+          <a class="c-list__item dropdown-item" href="#">Another action</a>
+          <a class="c-list__item dropdown-item disabled" href="#">Something else here</a>
+        </div>
+        <div class="c-list">
+          <a class="c-list__item dropdown-item" href="#">Action</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="c-dropdown c-dropdown--up c-dropdown--right dropdown">
+      <button class="c-button c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="c-card c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <h3 class="c-dropdown__header">
+          Dropdown header
+        </h3>
+        <div class="c-list">
+          <a class="c-list__item dropdown-item" href="#">Action</a>
+          <a class="c-list__item dropdown-item" href="#">Another action</a>
+          <a class="c-list__item dropdown-item disabled" href="#">Something else here</a>
+        </div>
+        <div class="c-list">
+          <a class="c-list__item dropdown-item" href="#">Action</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    
+    <h2>Control group</h2>
+    <div class="o-control-group">
+      <div class="c-dropdown dropdown">
+        <button class="c-button c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+      </div>
+      <div class="c-dropdown dropdown">
+        <button class="c-button c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+      </div>
+      <div class="c-dropdown dropdown">
+        <button class="c-button c-dropdown__toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+      </div>
+    </div>
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="">
+      (function($) {
+        $('.dropdown-toggle').dropdown();
+      })(jQuery);
+    </script>
+  </body>
+</html>
