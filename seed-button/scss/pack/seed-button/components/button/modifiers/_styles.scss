@@ -1,0 +1,19 @@
+// Modifiers :: Styles
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../../../mixins/generate-button-styles";
+@import "../config";
+
+@include export(seed-button) {
+  @each $key, $config in $seed-button-styles {
+    &--#{$key} {
+      @include generate-button-styles($config);
+    }
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+}

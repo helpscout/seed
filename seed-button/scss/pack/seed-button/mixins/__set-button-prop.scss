@@ -1,0 +1,23 @@
+// Mixin :: __set-button-prop
+
+@import "pack/seed-dash/_index";
+
+// Private mixin for generate-button-styles
+@mixin __set-button-prop($prop: false, $config: false, $state: default, $override: false) {
+  @if not $prop {
+    @warn "__set-button-prop: The first argument must be defined";
+  }
+  $prop-config: _get($config, $prop);
+  // Config (map)
+  @if type-of($prop-config) == "map" {
+    @if $state and _get($prop-config, $state) {
+      #{$prop}: _get($prop-config, $state);
+    }
+  }
+  // Text (key: value)
+  @else {
+    @if $override {
+      #{$prop}: $prop-config;
+    }
+  }
+}

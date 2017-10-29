@@ -1,0 +1,21 @@
+// States :: Selected
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-button) {
+  & {
+    &.#{$seed-button-selected-namespace} {
+      $color: lighten(_color(button, default, background, active), 2);
+      background-color: $color;
+      &:hover {
+        background-color: darken($color, 2);
+      }
+      &:active {
+        background-color: darken($color, 4);
+      }
+    }
+  }
+}
