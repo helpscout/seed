@@ -1,0 +1,73 @@
+// Objects :: Control Group
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-border/config";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-control-group) {
+  .#{$seed-control-group-namespace} {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    vertical-align: middle;
+
+    // Item
+    > * {
+      box-sizing: border-box;
+      margin-top: 0;
+      position: relative;
+      width: auto;
+
+      &:hover {
+        z-index: 1;
+      }
+
+      + *:not(:first-child) {
+        margin-left: -($seed-border-size);
+      }
+
+      // Automagical stuff happens below!
+      &:first-child {
+        border-bottom-left-radius: $seed-border-radius;
+        border-top-left-radius: $seed-border-radius;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: $seed-border-radius;
+        border-top-right-radius: $seed-border-radius;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        border-radius: 0;
+      }
+
+      &:only-child {
+        border-radius: $seed-border-radius;
+      }
+
+      &:focus {
+        z-index: 2;
+      }
+    }
+    // Modifiers
+    &--block {
+      > * {
+        flex: 1;
+      }
+    }
+
+    // Modifiers: Alignment
+    $mod: "-";
+    &#{$mod} {
+      @include breakpoint-prop-map($seed-control-group-alignment, (prop)) {
+        justify-content: prop(prop);
+      }
+    }
+  }
+}
