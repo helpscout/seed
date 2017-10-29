@@ -1,0 +1,16 @@
+// Seed inline :: Config
+
+// Namespaces
+$seed-inline-namespace: o-inline !default;
+$seed-inline-item-namespace: #{$seed-inline-namespace}__item !default;
+
+// Config
+$seed-inline-spacing: 4px !default;
+
+// Sizes
+$seed-inline-sizes: (
+  xs: 4px,
+  sm: 8px,
+  md: 16px,
+  lg: 24px,
+) !default;

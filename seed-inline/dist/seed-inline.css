@@ -1,0 +1,58 @@
+/**
+ * seed-inline v0.1.0 (https://github.com/helpscout/seed-inline)
+ * Inline object pack for Seed
+ * Licensed under MIT
+ */
+.o-inline {
+  box-sizing: border-box;
+  display: block;
+  list-style: none;
+  margin-bottom: -4px;
+  margin-left: 0;
+  padding-left: 0; }
+  .o-inline::after {
+    box-sizing: border-box;
+    content: " ";
+    clear: both;
+    display: table; }
+  .o-inline:last-child {
+    margin-bottom: -4px; }
+  .o-inline--xs {
+    margin-bottom: -4px;
+    margin-right: -4px; }
+    .o-inline--xs:last-child {
+      margin-bottom: -4px; }
+    .o-inline--xs .o-inline__item {
+      margin-bottom: 4px;
+      margin-right: 4px; }
+  .o-inline--sm {
+    margin-bottom: -8px;
+    margin-right: -8px; }
+    .o-inline--sm:last-child {
+      margin-bottom: -8px; }
+    .o-inline--sm .o-inline__item {
+      margin-bottom: 8px;
+      margin-right: 8px; }
+  .o-inline--md {
+    margin-bottom: -16px;
+    margin-right: -16px; }
+    .o-inline--md:last-child {
+      margin-bottom: -16px; }
+    .o-inline--md .o-inline__item {
+      margin-bottom: 16px;
+      margin-right: 16px; }
+  .o-inline--lg {
+    margin-bottom: -24px;
+    margin-right: -24px; }
+    .o-inline--lg:last-child {
+      margin-bottom: -24px; }
+    .o-inline--lg .o-inline__item {
+      margin-bottom: 24px;
+      margin-right: 24px; }
+
+.o-inline__item {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 0 4px;
+  padding: 0;
+  vertical-align: middle; }

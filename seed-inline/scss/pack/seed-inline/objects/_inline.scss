@@ -1,0 +1,46 @@
+// Object :: Inline
+
+@import "pack/seed-props/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-inline) {
+  .#{$seed-inline-namespace} {
+    box-sizing: border-box;
+    display: block;
+    list-style: none;
+    margin-bottom: -($seed-inline-spacing);
+    margin-left: 0;
+    padding-left: 0;
+
+    &::after {
+      box-sizing: border-box;
+      content: " ";
+      clear: both;
+      display: table;
+    }
+
+    &:last-child {
+      margin-bottom: -($seed-inline-spacing);
+    }
+
+    // Modifiers
+    $mod: "-";
+    // Sizes
+    &#{$mod} {
+      @include prop-map($seed-inline-sizes, (size)) {
+        margin-bottom: -(prop(size));
+        margin-right: -(prop(size));
+
+        &:last-child {
+          margin-bottom: -(prop(size));
+        }
+
+        .#{$seed-inline-item-namespace} {
+          margin-bottom: prop(size);
+          margin-right: prop(size);
+        }
+      }
+    }
+  }
+}
