@@ -1,0 +1,18 @@
+// Modifiers :: Alignment
+
+// Dependencies
+@import "pack/seed-props/_index";
+@import "pack/seed-publish/_index";
+@import "../../../config";
+
+@include export(seed-thumbnail) {
+  &- {
+    @include prop-map($seed-thumbnail-alignments, (top, bottom)) {
+      .#{$seed-thumbnail-image-namespace},
+      > img {
+        bottom: prop(bottom);
+        top: prop(top);
+      }
+    }
+  }
+}

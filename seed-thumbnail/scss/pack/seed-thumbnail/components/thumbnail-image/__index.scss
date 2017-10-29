@@ -1,0 +1,10 @@
+// Thumbnail Image :: Index
+
+// Dependencies
+@import "../../config";
+
+.#{$seed-thumbnail-image-namespace},
+.#{$seed-thumbnail-namespace} > img {
+  // Base
+  @import "./base";
+}
