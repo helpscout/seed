@@ -1,0 +1,59 @@
+{
+  "name": "seed-cli",
+  "version": "0.3.2",
+  "description": "Create awesome packs for Seed CSS!",
+  "main": "./index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "bin": {
+    "seed": "./index.js"
+  },
+  "scripts": {
+    "test": "exit 0"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-cli.git"
+  },
+  "keywords": [
+    "bem",
+    "cli",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "scss"
+  ],
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-cli/issues"
+  },
+  "homepage": "https://github.com/helpscout/seed-cli",
+  "dependencies": {
+    "chalk": "1.1.3",
+    "del": "2.2.2",
+    "find-root": "1.0.0",
+    "glob": "7.1.1",
+    "inquirer": "3.0.6",
+    "is-blank": "2.1.0",
+    "is-empty": "1.2.0",
+    "lodash": "4.17.1",
+    "meow": "3.7.0",
+    "mkdirp": "0.5.1",
+    "mocha": "3.3.0",
+    "require-dir": "0.3.1",
+    "sass-lint": "1.10.2",
+    "sass-true": "2.1.4",
+    "seed-harvester": "0.1.5",
+    "shelljs": "0.7.7",
+    "uuid": "3.0.1"
+  }
+}

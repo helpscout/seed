@@ -1,0 +1,7 @@
+// <%= docType %> :: <%= docName %>
+
+// Scope
+.<%= prefix %>-<%= name %> {
+  @import "./variables";
+  @import "./base";
+}
