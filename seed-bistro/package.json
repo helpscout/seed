@@ -1,0 +1,48 @@
+{
+  "name": "seed-bistro",
+  "version": "0.1.10",
+  "description": "CSS testing bundle - Making (S)CSS testing easy!",
+  "main": "index.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-bistro.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-bistro/issues"
+  },
+  "keywords": [
+    "barista",
+    "bistro",
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "helper",
+    "itcss",
+    "modular",
+    "mocha",
+    "oocss",
+    "performance",
+    "seed",
+    "scss",
+    "test",
+    "testing"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "dependencies": {
+    "chai": "4.1.0",
+    "genki": "0.1.1",
+    "jshint": "2.9.5",
+    "mocha": "3.4.2",
+    "seed-barista": "1.0.4"
+  }
+}
