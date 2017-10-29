@@ -1,0 +1,14 @@
+/**
+ * seed-hr v0.0.3 (https://github.com/helpscout/seed-hr)
+ * HR component pack for Seed
+ * Licensed under MIT
+ */
+.c-hr, hr {
+  border: 0;
+  border-top-color: #eee;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: content-box;
+  display: block;
+  height: 0;
+  margin: 20px 0; }
