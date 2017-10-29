@@ -1,0 +1,26 @@
+// Base :: Headings
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-base) {
+  h1, h2, h3, h4, h5, h6 {
+    color: $seed-base-heading-color;
+    font-family: $seed-base-heading-font-family;;
+    font-weight: $seed-base-heading-font-weight;
+    line-height: $seed-base-heading-line-height;
+    margin-bottom: $seed-base-heading-margin-bottom;
+    margin-top: $seed-base-heading-margin-top;
+  }
+
+  small {
+    font-size: $seed-base-small-font-size;
+    font-weight: $seed-base-small-font-weight;
+  }
+
+  mark {
+    background-color: $seed-base-mark-background-color;
+    padding: $seed-base-mark-padding;
+  }
+}
