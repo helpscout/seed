@@ -1,0 +1,47 @@
+{
+  "name": "seed-width-fx",
+  "version": "0.1.2",
+  "description": "Width fixed utility pack for Seed",
+  "main": "index.js",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner",
+    "build:main": "node ./scripts/build.js",
+    "test": "npm run build",
+    "prepublish": "npm run test"
+  },
+  "homepage": "https://github.com/helpscout/seed-width-fx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-width-fx.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss",
+    "width"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-breakpoints": "^0.4.0",
+    "seed-publish": "0.0.4"
+  }
+}

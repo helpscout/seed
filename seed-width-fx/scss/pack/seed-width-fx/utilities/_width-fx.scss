@@ -1,0 +1,12 @@
+// Utilities :: Width fx
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-width-fx) {
+  .#{$seed-width-fx-namespace} {
+    @include breakpoint-prop-map($seed-width-fx-sizes, (prop)) {
+      width: prop(prop) !important;
+    }
+  }
+}
