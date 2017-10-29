@@ -1,8 +1,0 @@
-logs
-*.log
-
-test/
-
-node_modules
-coverage
-.nyc_output
