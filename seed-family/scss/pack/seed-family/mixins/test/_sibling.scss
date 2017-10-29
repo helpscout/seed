@@ -1,0 +1,93 @@
+// Test :: sibling
+
+@import "true";
+@import "../sibling";
+
+
+@include test-module("sibling") {
+
+  @include test("should add the sibling selector when flat") {
+    @include assert("") {
+      @include output {
+        @at-root .class {
+          @include sibling {
+            background: blue;
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .class + .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  @include test("should add the sibling selector when selector is nested") {
+    @include assert("") {
+      @include output {
+        @at-root .dinosaur {
+          .super {
+            .class {
+              @include sibling {
+                background: blue;
+              }
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .dinosaur .super .class + .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+
+  @include test("should add a custom sibling when passed as argument") {
+    @include assert("") {
+      @include output {
+        @at-root .dinosaur {
+          .super {
+            .class {
+              @include sibling(".mr") {
+                background: blue;
+              }
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .dinosaur .super .mr + .class {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  @include test("should accept non-class custom siblings when passed as argument") {
+    @include assert("") {
+      @include output {
+        @at-root .dinosaur {
+          .super {
+            .class {
+              @include sibling("ul > li") {
+                background: blue;
+              }
+            }
+          }
+        }
+      }
+
+      @include expect {
+        @at-root .dinosaur .super ul > li + .class {
+          background: blue;
+        }
+      }
+    }
+  }
+}

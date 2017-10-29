@@ -1,0 +1,45 @@
+// Mixin :: __tree
+// type: private
+// description: Used to create the selector structure for family mixins
+
+@mixin __tree($class: false, $offset: 0) {
+  // Parent requires class to be passed in.
+  // Use default Sass & if $class is not defined
+  @if not $class or type-of($class) != "string" {
+    & {
+      @content;
+    }
+  }
+
+  // Looping through all the selectors in the & list
+  @each $selector in & {
+    $len: length($selector);
+    // Start the tree with 1st level selector
+    $tree: nth($selector, 1);
+    // Current selector
+    $current: nth($selector, $len);
+    // Adjust the offset
+    $offset: $len - $offset;
+
+    // Top level selector
+    @if ($offset <= 1) {
+      // Rebuild tree, starting with the custom class
+      $tree: append((), $class);
+      $tree: append($tree, $current);
+    }
+    @else {
+      // Iterate through selectors until the parent
+      @for $i from 2 to $offset {
+        $tree: append($tree, nth($selector, $i));
+      }
+      // Add the new parent class
+      $tree: append($tree, unquote($class));
+      // Add the current class
+      $tree: append($tree, nth($selector, $len));
+    }
+
+    @at-root #{$tree} {
+      @content;
+    }
+  }
+}
