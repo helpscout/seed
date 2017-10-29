@@ -1,0 +1,8 @@
+// Mixins :: _color
+
+// Dependencies
+@import "pack/seed-config/_index";
+
+@mixin _color($colors...) {
+  @include _config(SEED_COLOR_SCHEME__GLOBAL, $colors...);
+}

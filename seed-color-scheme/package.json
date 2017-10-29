@@ -1,0 +1,62 @@
+{
+  "name": "seed-color-scheme",
+  "version": "0.3.0",
+  "description": "Color scheme system pack for Seed",
+  "main": "index.js",
+  "homepage": "",
+  "file": [
+    "scss",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner",
+    "build:main": "node ./scripts/build.js",
+    "dev": "nodemon -e scss -x 'npm run test -- --watch --reporter=dot'",
+    "start": "npm run dev",
+    "test": "mocha test/setup.mocha.js test --recursive",
+    "prepare": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-color-scheme.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-color-scheme/issues"
+  },
+  "keywords": [
+    "bem",
+    "color",
+    "css",
+    "design",
+    "function",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.10.0",
+    "nodemon": "1.11.0",
+    "seed-barista": "0.4.0",
+    "seed-bistro": "0.1.2"
+  },
+  "dependencies": {
+    "sass-pathfinder": "0.0.5",
+    "seed-config": "0.1.1"
+  }
+}

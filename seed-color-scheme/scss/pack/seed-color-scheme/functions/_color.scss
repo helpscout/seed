@@ -1,0 +1,6 @@
+// Dependencies
+@import "pack/seed-config/_index";
+
+@function _color($colors...) {
+  @return _config(SEED_COLOR_SCHEME__GLOBAL, $colors...);
+}
