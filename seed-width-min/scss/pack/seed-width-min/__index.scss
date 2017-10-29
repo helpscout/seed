@@ -1,0 +1,11 @@
+// width-min pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+// Config
+@import "./config";
+// Utilities
+@import "./utilities/_index";
+
+// Publish
+@include publish(seed-width-min);

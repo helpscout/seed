@@ -1,0 +1,12 @@
+// Utilities :: Width min
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-width-min) {
+  .#{$seed-width-min-namespace} {
+    @include breakpoint-prop-map($seed-widths, (prop)) {
+      min-width: prop(prop) !important;
+    }
+  }
+}
