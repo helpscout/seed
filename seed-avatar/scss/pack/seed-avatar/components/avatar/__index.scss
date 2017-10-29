@@ -1,0 +1,12 @@
+// Component :: Avatar
+
+// Scope
+.#{$seed-avatar-namespace} {
+  // Config
+  @import "./config";
+  // Base
+  @import "./base";
+  // Modifiers
+  @import "./modifiers/rounded";
+  @import "./modifiers/sizes";
+}

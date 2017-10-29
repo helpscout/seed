@@ -1,0 +1,23 @@
+// Component :: Avatar :: Config
+
+// Namespaces
+$seed-avatar-namespace: "c-avatar" !default;
+$seed-avatar-image-namespace: #{$seed-avatar-namespace}__image !default;
+
+// Borders
+$seed-avatar-border-radius: 4px !default;
+
+// Colors
+$seed-avatar-background: #f1f3f5 !default;
+$seed-avatar-shadow: 0 1px 0 0 #e3e8eb !default;
+
+// Sizes
+// Default size
+$seed-avatar-size: 50px !default;
+// Modifier sizes
+$seed-avatar-modifier-sizes: (
+  lg: $seed-avatar-size,
+  md: 40px,
+  sm: 32px,
+  xs: 28px
+) !default;

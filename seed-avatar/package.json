@@ -1,0 +1,50 @@
+{
+  "name": "seed-avatar",
+  "version": "0.1.2",
+  "description": "Avatar component pack for Seed",
+  "main": "index.js",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner && npm run copy",
+    "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
+    "test": "npm run build",
+    "prepublish": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-avatar.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-avatar/issues"
+  },
+  "keywords": [
+    "avatar",
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-breakpoints": "^0.4.0",
+    "seed-publish": "0.0.4"
+  }
+}

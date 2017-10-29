@@ -1,0 +1,39 @@
+// Component :: Avatar :: Base
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-avatar) {
+  & {
+    background-color: $seed-avatar-background;
+    border-radius: $seed-avatar-border-radius;
+    box-sizing: border-box;
+    box-shadow: $seed-avatar-shadow;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: $seed-avatar-size;
+    width: $seed-avatar-size;
+
+    @at-root {
+      .#{$seed-avatar-image-namespace} {
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: 0;
+        box-sizing: border-box;
+        display: block;
+        height: auto;
+        left: 50%;
+        margin: auto;
+        max-width: 200%;
+        max-height: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        top: 0;
+        width: auto;
+      }
+    }
+  }
+}

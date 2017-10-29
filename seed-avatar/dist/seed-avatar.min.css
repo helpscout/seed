@@ -1,0 +1,6 @@
+/**
+ * seed-avatar v0.1.2
+ * Avatar component pack for Seed
+ * Licensed under MIT
+ */
+.c-avatar{background-color:#f1f3f5;border-radius:4px;box-sizing:border-box;box-shadow:0 1px 0 0 #e3e8eb;display:block;overflow:hidden;position:relative;height:50px;width:50px}.c-avatar__image{-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);bottom:0;box-sizing:border-box;display:block;height:auto;left:50%;margin:auto;max-width:200%;max-height:100%;min-height:100%;min-width:100%;position:absolute;top:0;width:auto}.c-avatar--rounded{border-radius:50%}.c-avatar--lg{height:50px;width:50px}.c-avatar--md{height:40px;width:40px}.c-avatar--sm{height:32px;width:32px}.c-avatar--xs{height:28px;width:28px}@media (min-width: 544px){.c-avatar--lg\@sm{height:50px;width:50px}.c-avatar--md\@sm{height:40px;width:40px}.c-avatar--sm\@sm{height:32px;width:32px}.c-avatar--xs\@sm{height:28px;width:28px}}@media (min-width: 768px){.c-avatar--lg\@md{height:50px;width:50px}.c-avatar--md\@md{height:40px;width:40px}.c-avatar--sm\@md{height:32px;width:32px}.c-avatar--xs\@md{height:28px;width:28px}}@media (min-width: 992px){.c-avatar--lg\@lg{height:50px;width:50px}.c-avatar--md\@lg{height:40px;width:40px}.c-avatar--sm\@lg{height:32px;width:32px}.c-avatar--xs\@lg{height:28px;width:28px}}
