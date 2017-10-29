@@ -1,0 +1,12 @@
+// Bootstrap fade pack for Seed
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+// Config
+@import "./config";
+// Animations
+@import "./animations/_index";
+
+// Publish pack
+@include publish(seed-bootstrap-fade);

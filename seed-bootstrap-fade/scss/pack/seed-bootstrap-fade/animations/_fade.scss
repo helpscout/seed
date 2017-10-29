@@ -1,0 +1,17 @@
+// Animations :: Fade
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-bootstrap-fade) {
+  .#{$seed-bootstrap-fade-namespace} {
+    opacity: 0;
+    transition: $seed-bootstrap-fade-transition;
+  }
+
+  // State: In
+  .#{$seed-bootstrap-fade-in-namespace} {
+    opacity: 1;
+  }
+}

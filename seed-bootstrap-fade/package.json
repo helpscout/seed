@@ -1,0 +1,51 @@
+{
+  "name": "seed-bootstrap-fade",
+  "version": "0.0.4",
+  "description": "Bootstrap fade animation pack for Seed",
+  "main": "index.js",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner",
+    "build:main": "node ./scripts/build.js",
+    "test": "npm run build",
+    "prepublish": "npm run test"
+  },
+  "homepage": "https://github.com/helpscout/seed-bootstrap-fade/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-bootstrap-fade.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-bootstrap-fade/issues"
+  },
+  "keywords": [
+    "animation",
+    "bem",
+    "bootstrap",
+    "css",
+    "design",
+    "fade",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-publish": "0.0.4"
+  }
+}
