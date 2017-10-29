@@ -1,0 +1,25 @@
+// Components :: Progress Bar
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-progress-bar) {
+  .#{$seed-progress-bar-namespace} {
+    background-color: $seed-progress-bar-background-color;
+    border-radius: $seed-progress-bar-border-radius;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: $seed-progress-bar-height;
+
+    // Modifiers
+    &- {
+      @include breakpoint-prop-map($seed-progress-bar-sizes, (height)) {
+        height: prop(height);
+      }
+    }
+  }
+}
