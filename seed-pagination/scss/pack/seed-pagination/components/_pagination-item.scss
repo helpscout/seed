@@ -1,0 +1,26 @@
+// Components :: Pagination
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export("seed-pagination") {
+  .#{$seed-pagination-item-namespace} {
+    box-sizing: border-box;
+
+    &:first-child {
+      .#{$seed-pagination-link-namespace} {
+        border-bottom-left-radius: $seed-pagination-border-radius;
+        border-top-left-radius: $seed-pagination-border-radius;
+        margin-left: 0;
+      }
+    }
+
+    &:last-child {
+      .#{$seed-pagination-link-namespace} {
+        border-bottom-right-radius: $seed-pagination-border-radius;
+        border-top-right-radius: $seed-pagination-border-radius;
+      }
+    }
+  }
+}

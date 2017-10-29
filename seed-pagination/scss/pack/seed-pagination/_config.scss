@@ -1,0 +1,47 @@
+// Pagination :: Config
+
+// Dependencies
+@import "pack/seed-button/config";
+@import "pack/seed-dash/_index";
+
+// Namespaces
+$seed-pagination-namespace: c-pagination !default;
+$seed-pagination-item-namespace: #{$seed-pagination-namespace}__item !default;
+$seed-pagination-link-namespace: #{$seed-pagination-namespace}__link !default;
+
+// Configs
+$seed-pagination-border-radius: $seed-button-border-radius !default;
+$seed-pagination-padding: 0 0.75em !default;
+// $seed-button-color config:
+// https://github.com/helpscout/seed-button#options
+$seed-pagination-link-color: _extend($seed-button-color, (
+  background: (
+    default: #fff,
+    hover: #f9f9f9,
+    active: #3197D6,
+    active-hover: #237AB3,
+  ),
+  border: (
+    default: #ddd,
+    hover: #ddd,
+    active: #3197D6,
+    focus: #3197D6,
+    active-hover: #237AB3,
+  ),
+  box-shadow: (
+    focus: 0 0 0 1px rgba(white, 0.4) inset,
+  ),
+  text: (
+    default: #3197D6,
+    hover: #1F5E89,
+    active: #fff,
+    disabled: #72808E,
+  ),
+)) !default;
+
+// Alignment
+$seed-pagination-alignment: (
+  left: flex-start,
+  center: center,
+  right: flex-end,
+) !default;
