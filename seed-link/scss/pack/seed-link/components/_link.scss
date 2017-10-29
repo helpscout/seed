@@ -1,0 +1,58 @@
+// Components :: Link
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-link) {
+  $__seed-link-classname: ".#{$seed-link-namespace}";
+  // Apply styles to the "a" selector, by default
+  @if $seed-link-include-a-selector == true {
+    $__seed-link-classname: "#{$__seed-link-classname}, a";
+  }
+
+  #{$__seed-link-classname} {
+    background-color: transparent;
+    box-sizing: border-box;
+    color: $seed-link-color;
+    cursor: pointer;
+    text-decoration: none;
+    transition: $seed-link-transition;
+
+    &:hover {
+      color: $seed-link-color-hover;
+      outline-width: 0;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $seed-link-color-active;
+      outline-width: 0;
+    }
+
+    &:focus {
+      outline: $seed-link-focus-outline;
+      outline-offset: $seed-link-focus-outline-offset;
+    }
+
+    // Button reset
+    @at-root button.#{$seed-link-namespace} {
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 0;
+      text-transform: none;
+
+      &::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      &:-moz-focusring {
+        outline: 1px dotted ButtonText;
+      }
+    }
+  }
+}

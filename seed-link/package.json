@@ -1,0 +1,48 @@
+{
+  "name": "seed-link",
+  "version": "0.0.3",
+  "description": "Link component pack for Seed",
+  "main": "index.js",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner && npm run copy",
+    "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
+    "test": "npm run build",
+    "prepublish": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-link.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-link/issues"
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.8.0"
+  },
+  "dependencies": {
+    "seed-publish": "0.0.4"
+  }
+}
