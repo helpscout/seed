@@ -1,0 +1,8 @@
+// exclude :: Config
+
+// Global namespace
+@if not variable-exists(__seed-publish-list) {
+  $__seed-publish-list: (
+    seed-publish: true
+  ) !global;
+}
