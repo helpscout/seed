@@ -1,0 +1,11 @@
+// Components :: Badge :: Index
+
+// Dependencies
+@import "../../config";
+
+.#{$seed-badge-namespace} {
+  // Base
+  @import "./base";
+  // States
+  @import "./states/states";
+}
