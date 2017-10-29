@@ -1,0 +1,48 @@
+// Components :: Dot Nav Item
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-dot-nav) {
+  .#{$seed-dot-nav-item-namespace},
+  .#{$seed-dot-nav-namespace} > li {
+    box-sizing: border-box;
+    display: block;
+    margin: $seed-dot-nav-item-margin;
+    padding: 0;
+    position: relative;
+    width: ceil($seed-dot-nav-dot-size * $seed-dot-nav-item-spacing-multiplier);
+
+    // States
+    &.is-active {
+      .#{$seed-dot-nav-link-namespace} {
+        &:before {
+          background-color: $seed-dot-nav-dot-active-color;
+          box-shadow: 0 0 0 $seed-dot-nav-dot-active-size-increase $seed-dot-nav-dot-active-color;
+        }
+
+        &:hover,
+        &:focus {
+          &:before {
+            background-color: $seed-dot-nav-dot-active-color;
+          }
+        }
+      }
+    }
+
+    &.is-disabled {
+      .#{$seed-dot-nav-link-namespace} {
+        cursor: not-allowed;
+        opacity: 0.4;
+
+        &:hover,
+        &:focus {
+          &:before {
+            background-color: $seed-dot-nav-dot-color;
+          }
+        }
+      }
+    }
+  }
+}
