@@ -1,0 +1,19 @@
+// Floats :: Config
+
+// Namespaces
+$seed-floats-clear-namespace: "u-clear" !default;
+$seed-floats-clearfix-namespace: "u-clearfix" !default;
+$seed-floats-pull-namespace: "u-pull" !default;
+
+$seed-floats-pull: (
+  left: left,
+  right: right,
+  none: none
+) !default;
+
+$seed-floats-clear: (
+  none: none,
+  left: left,
+  right: right,
+  both: both
+) !default;

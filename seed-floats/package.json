@@ -1,0 +1,51 @@
+{
+  "name": "seed-floats",
+  "version": "0.2.5",
+  "description": "Floats utility pack for Seed",
+  "main": "index.js",
+  "homepage": "https://github.com/helpscout/seed-floats",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner && npm run copy",
+    "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
+    "test": "npm run build",
+    "prepublish": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-floats.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-floats/issues"
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "float",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-breakpoints": "0.4.0",
+    "seed-publish": "0.0.4"
+  }
+}

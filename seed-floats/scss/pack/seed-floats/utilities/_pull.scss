@@ -1,0 +1,13 @@
+// Utilities :: Pull
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+
+@include export(seed-floats) {
+  .#{$seed-floats-pull-namespace} {
+    @include breakpoint-prop-map($seed-floats-pull, (prop)) {
+      float: prop(prop) !important;
+    }
+  }
+}
