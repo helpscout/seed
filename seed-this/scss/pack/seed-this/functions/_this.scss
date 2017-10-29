@@ -1,0 +1,9 @@
+// Function :: this
+
+@function this() {
+  // Get all the selectors
+  $selectors: nth(&, 1);
+  // Get the last selector in the selector list
+  $this: nth($selectors, length($selectors));
+  @return $this;
+}
