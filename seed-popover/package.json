@@ -1,0 +1,53 @@
+{
+  "name": "seed-popover",
+  "version": "0.0.3",
+  "description": "Popover component pack for Seed",
+  "main": "index.js",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner && npm run copy",
+    "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
+    "test": "npm run build",
+    "prepublish": "npm run test"
+  },
+  "homepage": "https://github.com/helpscout/seed-popover/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-popover.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-popover/issues"
+  },
+  "keywords": [
+    "bem",
+    "component",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "popover",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.10.1"
+  },
+  "dependencies": {
+    "seed-bootstrap-fade": "0.0.4",
+    "seed-publish": "0.0.4",
+    "seed-this": "0.0.4"
+  }
+}

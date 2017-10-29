@@ -1,0 +1,47 @@
+// Components :: Popover
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-popover) {
+  .#{$seed-popover-namespace} {
+    background-color: $seed-popover-background-color;
+    border: 1px solid $seed-popover-border-color;
+    border-radius: $seed-popover-border-radius;
+    box-shadow: $seed-popover-box-shadow;
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    max-width: $seed-popover-max-width;
+    position: absolute;
+    top: 0;
+    z-index: $seed-popover-z-index;
+
+    > * {
+      &:first-child {
+        border-top-left-radius: $seed-popover-border-radius;
+        border-top-right-radius: $seed-popover-border-radius;
+      }
+
+      &:last-child {
+        border-bottom-left-radius: $seed-popover-border-radius;
+        border-bottom-right-radius: $seed-popover-border-radius;
+      }
+    }
+
+    // Modifiers
+    &.top {
+      margin-top: -($seed-popover-arrow-size);
+    }
+    &.right {
+      margin-left: ($seed-popover-arrow-size);
+    }
+    &.bottom {
+      margin-top: ($seed-popover-arrow-size);
+    }
+    &.left {
+      margin-left: -($seed-popover-arrow-size);
+    }
+  }
+}

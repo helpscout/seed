@@ -1,0 +1,14 @@
+// Components :: Popover Title
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-popover) {
+  .#{$seed-popover-title-namespace} {
+    border-bottom: 1px solid $seed-popover-border-color;
+    box-sizing: border-box;
+    margin: 0;
+    padding: $seed-popover-content-padding;
+  }
+}
