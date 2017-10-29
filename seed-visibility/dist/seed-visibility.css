@@ -1,0 +1,40 @@
+/**
+ * seed-visibility v0.2.4 (https://github.com/helpscout/seed-visibility)
+ * Visibility utility pack for Seed
+ * Licensed under MIT
+ */
+.u-invisible {
+  visibility: hidden !important; }
+  @media (min-width: 544px) {
+    .u-invisible\@sm {
+      visibility: hidden !important; } }
+  @media (min-width: 768px) {
+    .u-invisible\@md {
+      visibility: hidden !important; } }
+  @media (min-width: 992px) {
+    .u-invisible\@lg {
+      visibility: hidden !important; } }
+
+.u-visible {
+  visibility: visible !important; }
+  @media (min-width: 544px) {
+    .u-visible\@sm {
+      visibility: visible !important; } }
+  @media (min-width: 768px) {
+    .u-visible\@md {
+      visibility: visible !important; } }
+  @media (min-width: 992px) {
+    .u-visible\@lg {
+      visibility: visible !important; } }
+
+.u-sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .u-sr-only + * {
+    margin-top: 0; }
