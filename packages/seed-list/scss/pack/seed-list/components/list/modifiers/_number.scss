@@ -1,0 +1,17 @@
+// Modifiers :: Number
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../../../config";
+
+@include export(seed-list) {
+  &--#{$seed-list-number-namespace} {
+    list-style-type: decimal;
+    padding-left: $seed-list-offset-left;
+
+    & > .#{$seed-list-item-namespace},
+    & > li {
+      display: list-item;
+    }
+  }
+}

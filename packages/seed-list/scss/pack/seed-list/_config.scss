@@ -1,0 +1,23 @@
+// List :: Config
+
+// Namespaces
+$seed-list-namespace: "c-list" !default;
+$seed-list-item-namespace: #{$seed-list-namespace}__item !default;
+$seed-list-bordered-namespace: bordered !default;
+$seed-list-block-namespace: block !default;
+$seed-list-bullet-namespace: bullet !default;
+$seed-list-dotted-namespace: dotted !default;
+$seed-list-inline-namespace: inline !default;
+$seed-list-number-namespace: number !default;
+
+// Sizes
+$seed-list-size-default: 4px !default;
+$seed-list-offset-left: 16px !default;
+
+$seed-list-sizes: (
+  xs: 0,
+  sm: 2px,
+  md: $seed-list-size-default,
+  lg: 8px,
+  xl: 16px,
+) !default;

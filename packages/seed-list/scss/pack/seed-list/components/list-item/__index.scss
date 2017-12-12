@@ -1,0 +1,15 @@
+// List item :: Index
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../../config";
+
+@include export(seed-list) {
+  .#{$seed-list-item-namespace},
+  .#{$seed-list-namespace} > li {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: $seed-list-size-default 0;
+  }
+}

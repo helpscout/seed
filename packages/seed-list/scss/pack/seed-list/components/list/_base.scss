@@ -1,0 +1,12 @@
+// Component :: List :: Base
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../../mixins/list-unstyled";
+
+@include export(seed-list) {
+  & {
+    @include list-unstyled;
+    box-sizing: border-box;
+  }
+}

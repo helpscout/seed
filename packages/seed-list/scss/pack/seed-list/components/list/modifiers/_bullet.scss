@@ -1,0 +1,17 @@
+// Modifiers :: Bullet
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../../../config";
+
+@include export(seed-list) {
+  &--#{$seed-list-bullet-namespace} {
+    list-style-type: disc;
+    padding-left: $seed-list-offset-left;
+
+    & > .#{$seed-list-item-namespace},
+    & > li {
+      display: list-item;
+    }
+  }
+}

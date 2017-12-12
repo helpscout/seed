@@ -1,0 +1,15 @@
+// Modifiers :: Sizes
+
+@import "pack/seed-publish/_index";
+
+@include export(seed-list) {
+  @each $class, $size in $seed-list-sizes {
+    &--#{$class} {
+      > .#{$seed-list-item-namespace},
+      > li {
+        padding-bottom: $size;
+        padding-top: $size;
+      }
+    }
+  }
+}
