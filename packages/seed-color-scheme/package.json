@@ -16,8 +16,7 @@
     "build:main": "node ./scripts/build.js",
     "dev": "nodemon -e scss -x 'npm run test -- --watch --reporter=dot'",
     "start": "npm run dev",
-    "test": "mocha test/setup.mocha.js test --recursive",
-    "prepare": "npm run test"
+    "test": "mocha test/setup.mocha.js test --recursive"
   },
   "repository": {
     "type": "git",
