@@ -47,6 +47,7 @@
     "seed-cli": "^0.2.8"
   },
   "dependencies": {
+    "node-sass": "4.5.3",
     "seed-color-scheme": "0.0.2"
   }
 }

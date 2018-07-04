@@ -38,6 +38,7 @@
     "system"
   ],
   "devDependencies": {
+    "node-sass": "4.5.3",
     "lerna": "^2.4.0"
   }
 }

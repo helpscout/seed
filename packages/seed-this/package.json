@@ -46,5 +46,8 @@
     "node-sass": "^3.10.0",
     "sass-true": "^2.1.4",
     "seed-cli": "^0.2.8"
+  },
+  "dependencies": {
+    "node-sass": "4.5.3"
   }
 }

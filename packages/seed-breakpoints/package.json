@@ -48,6 +48,7 @@
     "seed-bistro": "0.1.6"
   },
   "dependencies": {
+    "node-sass": "4.5.3",
     "seed-props": "0.3.1"
   }
 }

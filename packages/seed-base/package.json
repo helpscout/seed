@@ -46,6 +46,7 @@
     "seed-bistro": "0.1.5"
   },
   "dependencies": {
+    "node-sass": "4.5.3",
     "seed-publish": "0.2.0"
   }
 }

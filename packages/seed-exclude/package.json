@@ -48,6 +48,7 @@
     "seed-cli": "^0.2.8"
   },
   "dependencies": {
+    "node-sass": "4.5.3",
     "seed-publish": "0.0.4"
   }
 }

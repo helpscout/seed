@@ -49,6 +49,7 @@
     "seed-bistro": "0.1.1"
   },
   "dependencies": {
+    "node-sass": "4.5.3",
     "sass-pathfinder": "0.0.5",
     "seed-breakpoints": "0.4.0",
     "seed-props": "0.3.0",

@@ -44,6 +44,7 @@
     "node-sass": "^3.10.0"
   },
   "dependencies": {
+    "node-sass": "4.5.3",
     "sass-pathfinder": "0.0.5",
     "seed-color-scheme": "0.0.2",
     "seed-color-scheme-helpscout": "0.0.3",
