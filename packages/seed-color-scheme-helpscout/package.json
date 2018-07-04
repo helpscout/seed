@@ -45,7 +45,7 @@
     "mkdirp": "^0.5.1",
     "node-sass": "4.9.0",
     "sass-true": "^2.1.4",
-    "seed-cli": "^0.2.8"
+    "seed-cli": "0.3.2"
   },
   "dependencies": {
     "seed-color-scheme": "0.0.2"
