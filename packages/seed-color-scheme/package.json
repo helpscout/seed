@@ -50,13 +50,12 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.0",
+    "node-sass": "4.9.0",
     "nodemon": "1.11.0",
     "seed-barista": "0.4.0",
     "seed-bistro": "0.1.2"
   },
   "dependencies": {
-    "node-sass": "4.5.3",
     "sass-pathfinder": "0.0.5",
     "seed-config": "0.1.1"
   }

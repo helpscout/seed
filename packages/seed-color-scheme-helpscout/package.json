@@ -42,12 +42,11 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.8.0",
+    "node-sass": "4.9.0",
     "sass-true": "^2.1.4",
     "seed-cli": "^0.2.8"
   },
   "dependencies": {
-    "node-sass": "4.5.3",
     "seed-color-scheme": "0.0.2"
   }
 }

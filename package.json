@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run bootstrap",
+    "stubpostinstall": "npm run bootstrap",
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "diff": "lerna diff",
@@ -38,7 +38,7 @@
     "system"
   ],
   "devDependencies": {
-    "node-sass": "4.5.3",
+    "node-sass": "4.9.0",
     "lerna": "^2.4.0"
   }
 }

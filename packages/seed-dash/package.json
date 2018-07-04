@@ -41,10 +41,8 @@
   },
   "devDependencies": {
     "mkdirp": "0.5.1",
-    "node-sass": "4.5.3",
+    "node-sass": "4.9.0",
     "seed-bistro": "0.1.5"
   },
-  "dependencies": {
-    "node-sass": "4.5.3"
-  }
+  "dependencies": {}
 }

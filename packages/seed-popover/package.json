@@ -43,10 +43,9 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.1"
+    "node-sass": "4.9.0"
   },
   "dependencies": {
-    "node-sass": "4.5.3",
     "seed-bootstrap-fade": "0.0.4",
     "seed-publish": "0.0.4",
     "seed-this": "0.0.4"

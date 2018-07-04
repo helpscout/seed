@@ -45,12 +45,11 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.0",
+    "node-sass": "4.9.0",
     "sass-pathfinder": "0.0.5",
     "seed-bistro": "0.0.3"
   },
   "dependencies": {
-    "node-sass": "4.5.3",
     "sass-pathfinder": "0.0.5",
     "seed-border": "0.0.10",
     "seed-control": "0.0.4",

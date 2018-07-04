@@ -51,7 +51,6 @@
     "node": ">=4"
   },
   "dependencies": {
-    "node-sass": "4.5.3",
     "sass-pathfinder": "0.0.5",
     "seed-button": "0.1.16",
     "seed-dropdown": "0.0.8",
@@ -60,7 +59,7 @@
   },
   "devDependencies": {
     "mkdirp": "0.5.1",
-    "node-sass": "^4.5.3",
+    "node-sass": "4.9.0",
     "seed-barista": "1.0.3",
     "seed-bistro": "0.1.9"
   }
