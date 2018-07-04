@@ -51,9 +51,9 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "4.9.0",
-    "nodemon": "1.11.0",
+    "nodemon": "1.17.5",
     "seed-barista": "0.4.0",
-    "seed-bistro": "0.1.2"
+    "seed-bistro": "0.2.0"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
