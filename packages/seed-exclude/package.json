@@ -7,8 +7,7 @@
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "sh ./scripts/test.sh && npm run build",
-    "prepublish": "npm run test"
+    "test": "sh ./scripts/test.sh && npm run build"
   },
   "homepage": "https://github.com/helpscout/seed-exclude/",
   "repository": {

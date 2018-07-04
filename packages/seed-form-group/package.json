@@ -8,7 +8,7 @@
     "build:main": "node ./scripts/build.js",
     "build": "npm run build:main && npm run banner && npm run copy",
     "copy": "cp ./dist/*.css ./example/dist/",
-    "prepublish": "npm run test",
+
     "test:mocha": "mocha",
     "test": "npm run test:mocha",
     "version": "npm run build && git add dist && git add example"

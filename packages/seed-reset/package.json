@@ -10,7 +10,7 @@
     "build:main": "node ./scripts/build.js",
     "test:mocha": "mocha",
     "test": "npm run test:mocha",
-    "prepublish": "npm run test",
+
     "version": "npm run build && git add dist"
   },
   "repository": {

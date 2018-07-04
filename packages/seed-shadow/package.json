@@ -10,8 +10,7 @@
     "copy": "cp ./dist/*.css ./example/dist/",
     "test:mocha": "mocha",
     "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
-    "test": "npm run test:mocha && npm run test:qunit",
-    "prepublish": "npm run test"
+    "test": "npm run test:mocha && npm run test:qunit"
   },
   "repository": {
     "type": "git",

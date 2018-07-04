@@ -9,8 +9,7 @@
     "build:main": "node ./scripts/build.js",
     "copy": "cp ./dist/*.css ./example/dist/",
     "test:mocha": "mocha",
-    "test": "npm run test:mocha",
-    "prepublish": "npm run test"
+    "test": "npm run test:mocha"
   },
   "homepage": "https://github.com/helpscout/seed-list",
   "repository": {

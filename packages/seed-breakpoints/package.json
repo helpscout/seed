@@ -9,8 +9,7 @@
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
     "test:mocha": "mocha",
-    "test": "npm run test:mocha",
-    "prepublish": "npm run test"
+    "test": "npm run test:mocha"
   },
   "repository": {
     "type": "git",
