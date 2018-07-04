@@ -19,7 +19,7 @@
   },
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
-  ], 
+  ],
   "license": "MIT",
   "keywords": [
     "bem",
@@ -38,7 +38,8 @@
     "system"
   ],
   "devDependencies": {
-    "node-sass": "4.9.0",
-    "lerna": "^2.4.0"
+    "hoek": "5.0.3",
+    "lerna": "2.11.0",
+    "node-sass": "4.9.0"
   }
 }
