@@ -10,7 +10,8 @@ glob("packages/*/package.json", (err, files) => {
     const nextPkg = Object.assign({}, pkg, {
       publishConfig: {
         access: "public"
-      }
+      },
+      prepublish: "npm run build"
     })
 
     // (Re)write it
