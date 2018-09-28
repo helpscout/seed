@@ -20,7 +20,7 @@ describe('seed-publish: export', function() {
     var output = barista({ content: style });
     var $o = output.rule('.pinkhot');
 
-    expect($o.exists()).to.equal.true;
+    expect($o.exists()).to.equal(true);
     expect($o.prop('color')).to.equal('pink');
   });
 
@@ -38,7 +38,7 @@ describe('seed-publish: export', function() {
     var output = barista({ content: style });
     var $o = output.rule('.pinkhot');
 
-    expect($o.exists()).to.equal.true;
+    expect($o.exists()).to.equal(true);
     expect($o.prop('color')).to.equal('pink');
   });
 
@@ -82,9 +82,9 @@ describe('seed-publish: export', function() {
     var $o = output.rule('.pinkhot');
     var $hp = output.rule('.hothothothotpink');
 
-    expect($o.exists()).to.equal.true;
+    expect($o.exists()).to.equal(true);
     expect($o.prop('color')).to.equal('pink');
-    expect($hp.exists()).to.equal.true;
+    expect($hp.exists()).to.equal(true);
     expect($hp.prop('background')).to.equal('pink');
   });
 
@@ -108,9 +108,9 @@ describe('seed-publish: export', function() {
     var $o = output.rule('.pinkhot');
     var $hp = output.rule('.hothothothotpink');
 
-    expect($o.exists()).to.equal.true;
+    expect($o.exists()).to.equal(true);
     expect($o.prop('color')).to.equal('pink');
-    expect($hp.exists()).to.equal.true;
+    expect($hp.exists()).to.equal(true);
     expect($hp.prop('background')).to.equal('pink');
   });
 
@@ -134,9 +134,9 @@ describe('seed-publish: export', function() {
     var $o = output.rule('.pinkhot');
     var $hp = output.rule('.hothothothotpink');
 
-    expect($o.exists()).to.equal.true;
+    expect($o.exists()).to.equal(true);
     expect($o.prop('color')).to.equal('pink');
-    expect($hp.exists()).to.equal.true;
+    expect($hp.exists()).to.equal(true);
     expect($hp.prop('background')).to.equal('pink');
   });
 });

@@ -20,7 +20,8 @@ describe('seed-breakpoints: mixin: max', function() {
     var mq = rule.mq();
 
     expect(rule.exists()).to.be.true;
-    expect(mq.rule).to.include('max-width: 991');
+    expect(mq.rule).to.include('max-width: 992px');
+    expect(mq.rule).to.include('- 1px');
     expect(mq.rule).to.not.include('min');
     expect(mq.props.length).to.equal(1);
   });

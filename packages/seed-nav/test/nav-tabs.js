@@ -24,16 +24,6 @@ describe('seed-nav: nav-tabs modifier', function() {
     assert.isOk($o.getProp('border-bottom'));
   });
 
-  it('should have responsive modifiers', () => {
-    expect(output.rule('.c-nav--tabs@sm').at(['min']).exists()).to.be.true;
-    expect(output.rule('.c-nav--tabs@md').at(['min']).exists()).to.be.true;
-    expect(output.rule('.c-nav--tabs@lg').at(['min']).exists()).to.be.true;
-
-    expect(output.rule('.c-nav--tabs@sm').at(['max'])).to.be.false;
-    expect(output.rule('.c-nav--tabs@md').at(['max'])).to.be.false;
-    expect(output.rule('.c-nav--tabs@lg').at(['max'])).to.be.false;
-  });
-
   describe('link', () => {
     it('should have correct inactive styles', () => {
       const el = output.find('.c-nav--tabs .c-nav__link');

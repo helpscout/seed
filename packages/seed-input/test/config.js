@@ -3,7 +3,6 @@
 'use strict';
 var assert = require('chai').assert;
 var barista = require('seed-barista');
-var find = require('lodash.find');
 
 describe('seed-input: config', function() {
 

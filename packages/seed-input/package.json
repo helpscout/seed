@@ -9,7 +9,6 @@
     "build:main": "node ./scripts/build.js",
     "copy": "cp ./dist/*.css ./example/dist/",
     "test:mocha": "mocha",
-    "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
     "test": "npm run test:mocha"
   },
   "repository": {
