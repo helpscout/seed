@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-helpscout-theme",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Help Scout theme pack for Seed",
   "main": "index.js",
   "scripts": {

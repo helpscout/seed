@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-bootstrap-fade",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Bootstrap fade animation pack for Seed",
   "main": "index.js",
   "scripts": {

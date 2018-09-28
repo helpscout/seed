@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-flexy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Flex object pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed/",

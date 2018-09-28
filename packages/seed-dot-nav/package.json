@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-dot-nav",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Dot navigation component pack for Seed",
   "main": "index.js",
   "scripts": {
