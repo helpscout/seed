@@ -1,4 +1,4 @@
-# seed-overflow [![Build Status](https://travis-ci.org/helpscout/seed-overflow.svg?branch=master)](https://travis-ci.org/helpscout/seed-overflow) [![npm version](https://badge.fury.io/js/seed-overflow.svg)](https://badge.fury.io/js/seed-overflow) [![dependencies Status](https://david-dm.org/helpscout/seed-overflow/status.svg)](https://david-dm.org/helpscout/seed-overflow)
+# seed-overflow [![Build Status](https://travis-ci.org/helpscout/seed-overflow.svg?branch=master)](https://travis-ci.org/helpscout/seed-overflow) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-overflow.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-overflow) [![dependencies Status](https://david-dm.org/helpscout/seed-overflow/status.svg)](https://david-dm.org/helpscout/seed-overflow)
 
 Overflow utility pack for [Seed](https://github.com/helpscout/seed)!
 
@@ -10,7 +10,7 @@ Minified | Gzipped
 
 ## Install
 ```
-npm install seed-overflow --save
+npm install @seedcss/seed-overflow --save
 ```
 
 

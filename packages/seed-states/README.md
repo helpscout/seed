@@ -1,10 +1,10 @@
-# seed-states [![Build Status](https://travis-ci.org/helpscout/seed-states.svg?branch=master)](https://travis-ci.org/helpscout/seed-states) [![npm version](https://badge.fury.io/js/seed-states.svg)](https://badge.fury.io/js/seed-states)
+# seed-states [![Build Status](https://travis-ci.org/helpscout/seed-states.svg?branch=master)](https://travis-ci.org/helpscout/seed-states) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-states.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-states)
 
 States config pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-states --save
+npm install @seedcss/seed-states --save
 ```
 
 ## Documentation

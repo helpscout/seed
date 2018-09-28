@@ -11,7 +11,15 @@ glob("packages/*/package.json", (err, files) => {
       publishConfig: {
         access: "public"
       },
-      prepublish: "npm run build"
+      prepublish: "npm run build",
+      homepage: "https://github.com/helpscout/seed/",
+      repository: {
+        type: "git",
+        url: "git+https://github.com/helpscout/seed.git"
+      },
+      bugs: {
+        url: "https://github.com/helpscout/seed/issues"
+      },
     })
 
     // (Re)write it

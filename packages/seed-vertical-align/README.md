@@ -1,10 +1,10 @@
-# seed-vertical-align [![Build Status](https://travis-ci.org/helpscout/seed-vertical-align.svg?branch=master)](https://travis-ci.org/helpscout/seed-vertical-align) [![npm version](https://badge.fury.io/js/seed-vertical-align.svg)](https://badge.fury.io/js/seed-vertical-align)
+# seed-vertical-align [![Build Status](https://travis-ci.org/helpscout/seed-vertical-align.svg?branch=master)](https://travis-ci.org/helpscout/seed-vertical-align) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-vertical-align.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-vertical-align)
 
 Vertical-align utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-vertical-align --save
+npm install @seedcss/seed-vertical-align --save
 ```
 
 

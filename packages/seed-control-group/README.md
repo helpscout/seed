@@ -1,11 +1,11 @@
-# seed-control-group [![Build Status](https://travis-ci.org/helpscout/seed-control-group.svg?branch=master)](https://travis-ci.org/helpscout/seed-control-group) [![npm version](https://badge.fury.io/js/seed-control-group.svg)](https://badge.fury.io/js/seed-control-group) [![Dependency Status](https://david-dm.org/helpscout/seed-control-group.svg)](https://david-dm.org/helpscout/seed-control-group)
+# seed-control-group [![Build Status](https://travis-ci.org/helpscout/seed-control-group.svg?branch=master)](https://travis-ci.org/helpscout/seed-control-group) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-control-group.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-control-group) [![Dependency Status](https://david-dm.org/helpscout/seed-control-group.svg)](https://david-dm.org/helpscout/seed-control-group)
 
 Control group object pack for [Seed](https://github.com/helpscout/seed)!
 
 
 ## Install
 ```
-npm install seed-control-group --save
+npm install @seedcss/seed-control-group --save
 ```
 
 

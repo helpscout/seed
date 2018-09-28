@@ -1,10 +1,10 @@
-# seed-color-scheme [![Build Status](https://travis-ci.org/helpscout/seed-color-scheme.svg?branch=master)](https://travis-ci.org/helpscout/seed-color-scheme) [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme) [![Dependencies](https://david-dm.org/helpscout/seed-color-scheme.svg)](https://david-dm.org/helpscout/seed-color-scheme)
+# seed-color-scheme [![Build Status](https://travis-ci.org/helpscout/seed-color-scheme.svg?branch=master)](https://travis-ci.org/helpscout/seed-color-scheme) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme) [![Dependencies](https://david-dm.org/helpscout/seed-color-scheme.svg)](https://david-dm.org/helpscout/seed-color-scheme)
 
 Color scheme system pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-color-scheme --save
+npm install @seedcss/seed-color-scheme --save
 ```
 
 ## Documentation

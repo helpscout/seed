@@ -1,10 +1,10 @@
-# seed-exclude [![Build Status](https://travis-ci.org/helpscout/seed-exclude.svg?branch=master)](https://travis-ci.org/helpscout/seed-exclude) [![npm version](https://badge.fury.io/js/seed-exclude.svg)](https://badge.fury.io/js/seed-exclude)
+# seed-exclude [![Build Status](https://travis-ci.org/helpscout/seed-exclude.svg?branch=master)](https://travis-ci.org/helpscout/seed-exclude) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-exclude.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-exclude)
 
 Mixin that excludes modules published with seed-publish
 
 ## Install
 ```
-npm install seed-exclude --save
+npm install @seedcss/seed-exclude --save
 ```
 
 ## Documentation

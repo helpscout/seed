@@ -1,10 +1,10 @@
-# seed-floats [![Build Status](https://travis-ci.org/helpscout/seed-floats.svg?branch=master)](https://travis-ci.org/helpscout/seed-floats) [![npm version](https://badge.fury.io/js/seed-floats.svg)](https://badge.fury.io/js/seed-floats) [![Dependency Status](https://david-dm.org/helpscout/seed-floats.svg)](https://david-dm.org/helpscout/seed-floats)
+# seed-floats [![Build Status](https://travis-ci.org/helpscout/seed-floats.svg?branch=master)](https://travis-ci.org/helpscout/seed-floats) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-floats.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-floats) [![Dependency Status](https://david-dm.org/helpscout/seed-floats.svg)](https://david-dm.org/helpscout/seed-floats)
 Floats utility pack for [Seed](https://github.com/helpscout/seed)!
 
 
 ## Install
 ```
-npm install seed-floats --save
+npm install @seedcss/seed-floats --save
 ```
 
 

@@ -1,4 +1,4 @@
-# seed-modal [![Build Status](https://travis-ci.org/helpscout/seed-modal.svg?branch=master)](https://travis-ci.org/helpscout/seed-modal) [![npm version](https://badge.fury.io/js/seed-modal.svg)](https://badge.fury.io/js/seed-modal) [![dependencies Status](https://david-dm.org/helpscout/seed-modal/status.svg)](https://david-dm.org/helpscout/seed-modal)
+# seed-modal [![Build Status](https://travis-ci.org/helpscout/seed-modal.svg?branch=master)](https://travis-ci.org/helpscout/seed-modal) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-modal.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-modal) [![dependencies Status](https://david-dm.org/helpscout/seed-modal/status.svg)](https://david-dm.org/helpscout/seed-modal)
 
 Modal component pack for [Seed](https://github.com/helpscout/seed)!
 
@@ -6,7 +6,7 @@ JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
 
 ## Install
 ```
-npm install seed-modal --save
+npm install @seedcss/seed-modal --save
 ```
 
 ## Documentation

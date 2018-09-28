@@ -1,10 +1,10 @@
-# seed-video [![Build Status](https://travis-ci.org/helpscout/seed-video.svg?branch=master)](https://travis-ci.org/helpscout/seed-video) [![npm version](https://badge.fury.io/js/seed-video.svg)](https://badge.fury.io/js/seed-video)
+# seed-video [![Build Status](https://travis-ci.org/helpscout/seed-video.svg?branch=master)](https://travis-ci.org/helpscout/seed-video) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-video.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-video)
 
 Responsive video component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-video --save
+npm install @seedcss/seed-video --save
 ```
 
 ## Documentation

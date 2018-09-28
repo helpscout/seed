@@ -1,11 +1,11 @@
-# seed-list [![Build Status](https://travis-ci.org/helpscout/seed-list.svg?branch=master)](https://travis-ci.org/helpscout/seed-list) [![npm version](https://badge.fury.io/js/seed-list.svg)](https://badge.fury.io/js/seed-list) [![Dependency Status](https://david-dm.org/helpscout/seed-list.svg)](https://david-dm.org/helpscout/seed-list)
+# seed-list [![Build Status](https://travis-ci.org/helpscout/seed-list.svg?branch=master)](https://travis-ci.org/helpscout/seed-list) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-list.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-list) [![Dependency Status](https://david-dm.org/helpscout/seed-list.svg)](https://david-dm.org/helpscout/seed-list)
 
 List component pack for [Seed](https://github.com/helpscout/seed)!
 
 
 ## Install
 ```
-npm install seed-list --save
+npm install @seedcss/seed-list --save
 ```
 
 

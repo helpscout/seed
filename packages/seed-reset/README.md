@@ -3,7 +3,7 @@ Reset pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-reset --save-dev
+npm install @seedcss/seed-reset --save-dev
 ```
 
 ## Documentation

@@ -1,10 +1,10 @@
-# seed-option-card [![Build Status](https://travis-ci.org/helpscout/seed-option-card.svg?branch=master)](https://travis-ci.org/helpscout/seed-option-card) [![npm version](https://badge.fury.io/js/seed-option-card.svg)](https://badge.fury.io/js/seed-option-card)
+# seed-option-card [![Build Status](https://travis-ci.org/helpscout/seed-option-card.svg?branch=master)](https://travis-ci.org/helpscout/seed-option-card) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-option-card.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-option-card)
 
 Option card component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-option-card --save
+npm install @seedcss/seed-option-card --save
 ```
 
 

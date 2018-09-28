@@ -1,10 +1,10 @@
-# seed-progress-bar [![Build Status](https://travis-ci.org/helpscout/seed-progress-bar.svg?branch=master)](https://travis-ci.org/helpscout/seed-progress-bar) [![npm version](https://badge.fury.io/js/seed-progress-bar.svg)](https://badge.fury.io/js/seed-progress-bar)
+# seed-progress-bar [![Build Status](https://travis-ci.org/helpscout/seed-progress-bar.svg?branch=master)](https://travis-ci.org/helpscout/seed-progress-bar) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-progress-bar.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-progress-bar)
 
 Progress bar component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-progress-bar --save
+npm install @seedcss/seed-progress-bar --save
 ```
 
 

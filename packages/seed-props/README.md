@@ -1,9 +1,9 @@
-# seed-props [![npm version](https://badge.fury.io/js/seed-props.svg)](https://badge.fury.io/js/seed-props)
+# seed-props [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-props.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-props)
 Props mixin pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-props --save
+npm install @seedcss/seed-props --save
 ```
 
 

@@ -1,10 +1,10 @@
-# seed-spacing [![Build Status](https://travis-ci.org/helpscout/seed-spacing.svg?branch=master)](https://travis-ci.org/helpscout/seed-spacing) [![npm version](https://badge.fury.io/js/seed-spacing.svg)](https://badge.fury.io/js/seed-spacing) [![Dependency Status](https://david-dm.org/helpscout/seed-spacing.svg)](https://david-dm.org/helpscout/seed-spacing)
+# seed-spacing [![Build Status](https://travis-ci.org/helpscout/seed-spacing.svg?branch=master)](https://travis-ci.org/helpscout/seed-spacing) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-spacing.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-spacing) [![Dependency Status](https://david-dm.org/helpscout/seed-spacing.svg)](https://david-dm.org/helpscout/seed-spacing)
 
 Spacing utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-spacing --save
+npm install @seedcss/seed-spacing --save
 ```
 
 

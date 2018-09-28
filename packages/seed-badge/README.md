@@ -1,10 +1,10 @@
-# seed-badge [![Build Status](https://travis-ci.org/helpscout/seed-badge.svg?branch=master)](https://travis-ci.org/helpscout/seed-badge) [![npm version](https://badge.fury.io/js/seed-badge.svg)](https://badge.fury.io/js/seed-badge) [![dependencies Status](https://david-dm.org/helpscout/seed-badge/status.svg)](https://david-dm.org/helpscout/seed-badge)
+# seed-badge [![Build Status](https://travis-ci.org/helpscout/seed-badge.svg?branch=master)](https://travis-ci.org/helpscout/seed-badge) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-badge.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-badge) [![dependencies Status](https://david-dm.org/helpscout/seed-badge/status.svg)](https://david-dm.org/helpscout/seed-badge)
 
 Badge component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-badge --save
+npm install @seedcss/seed-badge --save
 ```
 
 

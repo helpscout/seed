@@ -1,10 +1,10 @@
-# seed-thumbnail [![Build Status](https://travis-ci.org/helpscout/seed-thumbnail.svg?branch=master)](https://travis-ci.org/helpscout/seed-thumbnail) [![npm version](https://badge.fury.io/js/seed-thumbnail.svg)](https://badge.fury.io/js/seed-thumbnail)
+# seed-thumbnail [![Build Status](https://travis-ci.org/helpscout/seed-thumbnail.svg?branch=master)](https://travis-ci.org/helpscout/seed-thumbnail) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-thumbnail.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-thumbnail)
 
 Thumbnail component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-thumbnail --save
+npm install @seedcss/seed-thumbnail --save
 ```
 
 

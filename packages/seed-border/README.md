@@ -1,11 +1,11 @@
-# seed-border [![Build Status](https://travis-ci.org/helpscout/seed-border.svg?branch=master)](https://travis-ci.org/helpscout/seed-border) [![npm version](https://badge.fury.io/js/seed-border.svg)](https://badge.fury.io/js/seed-border)
+# seed-border [![Build Status](https://travis-ci.org/helpscout/seed-border.svg?branch=master)](https://travis-ci.org/helpscout/seed-border) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-border.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-border)
 
 Border theme pack for [Seed](https://github.com/helpscout/seed)!
 
 
 ## Install
 ```
-npm install seed-border --save
+npm install @seedcss/seed-border --save
 ```
 
 

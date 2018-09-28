@@ -1,10 +1,10 @@
-# seed-pagination [![Build Status](https://travis-ci.org/helpscout/seed-pagination.svg?branch=master)](https://travis-ci.org/helpscout/seed-pagination) [![npm version](https://badge.fury.io/js/seed-pagination.svg)](https://badge.fury.io/js/seed-pagination) [![dependencies Status](https://david-dm.org/helpscout/seed-pagination/status.svg)](https://david-dm.org/helpscout/seed-pagination)
+# seed-pagination [![Build Status](https://travis-ci.org/helpscout/seed-pagination.svg?branch=master)](https://travis-ci.org/helpscout/seed-pagination) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-pagination.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-pagination) [![dependencies Status](https://david-dm.org/helpscout/seed-pagination/status.svg)](https://david-dm.org/helpscout/seed-pagination)
 
 Pagination component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-pagination --save
+npm install @seedcss/seed-pagination --save
 ```
 
 

@@ -1,10 +1,10 @@
-# seed-config [![Build Status](https://travis-ci.org/helpscout/seed-config.svg?branch=master)](https://travis-ci.org/helpscout/seed-config) [![npm version](https://badge.fury.io/js/seed-config.svg)](https://badge.fury.io/js/seed-config) [![dependencies Status](https://david-dm.org/helpscout/seed-config/status.svg)](https://david-dm.org/helpscout/seed-config)
+# seed-config [![Build Status](https://travis-ci.org/helpscout/seed-config.svg?branch=master)](https://travis-ci.org/helpscout/seed-config) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-config.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-config) [![dependencies Status](https://david-dm.org/helpscout/seed-config/status.svg)](https://david-dm.org/helpscout/seed-config)
 
 Sass Config pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-config --save
+npm install @seedcss/seed-config --save
 ```
 
 

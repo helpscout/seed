@@ -1,4 +1,4 @@
-# seed-helpscout-theme [![Build Status](https://travis-ci.org/helpscout/seed-helpscout-theme.svg?branch=master)](https://travis-ci.org/helpscout/seed-helpscout-theme) [![npm version](https://badge.fury.io/js/seed-helpscout-theme.svg)](https://badge.fury.io/js/seed-helpscout-theme) [![dependencies Status](https://david-dm.org/helpscout/seed-helpscout-theme/status.svg)](https://david-dm.org/helpscout/seed-helpscout-theme)
+# seed-helpscout-theme [![Build Status](https://travis-ci.org/helpscout/seed-helpscout-theme.svg?branch=master)](https://travis-ci.org/helpscout/seed-helpscout-theme) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-helpscout-theme.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-helpscout-theme) [![dependencies Status](https://david-dm.org/helpscout/seed-helpscout-theme/status.svg)](https://david-dm.org/helpscout/seed-helpscout-theme)
 
 Help Scout theme pack for [Seed](https://github.com/helpscout/seed)!
 
@@ -7,7 +7,7 @@ This theme pack is based off the [Help Scout color scheme](https://github.com/he
 
 ## Install
 ```
-npm install seed-helpscout-theme --save
+npm install @seedcss/seed-helpscout-theme --save
 ```
 
 

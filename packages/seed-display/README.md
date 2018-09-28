@@ -1,10 +1,10 @@
-# seed-display [![Build Status](https://travis-ci.org/helpscout/seed-display.svg?branch=master)](https://travis-ci.org/helpscout/seed-display) [![npm version](https://badge.fury.io/js/seed-display.svg)](https://badge.fury.io/js/seed-display) [![Dependencies](https://david-dm.org/helpscout/seed-display.svg)](https://david-dm.org/helpscout/seed-display)
+# seed-display [![Build Status](https://travis-ci.org/helpscout/seed-display.svg?branch=master)](https://travis-ci.org/helpscout/seed-display) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-display.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-display) [![Dependencies](https://david-dm.org/helpscout/seed-display.svg)](https://david-dm.org/helpscout/seed-display)
 
 Display utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-display --save
+npm install @seedcss/seed-display --save
 ```
 
 

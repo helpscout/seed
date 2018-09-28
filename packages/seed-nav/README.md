@@ -1,10 +1,10 @@
-# seed-nav [![Build Status](https://travis-ci.org/helpscout/seed-nav.svg?branch=master)](https://travis-ci.org/helpscout/seed-nav) [![npm version](https://badge.fury.io/js/seed-nav.svg)](https://badge.fury.io/js/seed-nav)
+# seed-nav [![Build Status](https://travis-ci.org/helpscout/seed-nav.svg?branch=master)](https://travis-ci.org/helpscout/seed-nav) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-nav.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-nav)
 
 Nav component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-nav --save
+npm install @seedcss/seed-nav --save
 ```
 
 

@@ -1,4 +1,4 @@
-# seed-family [![Build Status](https://travis-ci.org/helpscout/seed-family.svg?branch=master)](https://travis-ci.org/helpscout/seed-family) [![npm version](https://badge.fury.io/js/seed-family.svg)](https://badge.fury.io/js/seed-family)
+# seed-family [![Build Status](https://travis-ci.org/helpscout/seed-family.svg?branch=master)](https://travis-ci.org/helpscout/seed-family) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-family.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-family)
 
 Family mixin pack for Seed
 
@@ -6,7 +6,7 @@ This mixin allows you to target/modify the **direct** parent of the current sele
 
 ## Install
 ```
-npm install seed-family --save
+npm install @seedcss/seed-family --save
 ```
 
 ## Documentation

@@ -1,11 +1,11 @@
-# seed-this [![Build Status](https://travis-ci.org/helpscout/seed-this.svg?branch=master)](https://travis-ci.org/helpscout/seed-this) [![npm version](https://badge.fury.io/js/seed-this.svg)](https://badge.fury.io/js/seed-this)
+# seed-this [![Build Status](https://travis-ci.org/helpscout/seed-this.svg?branch=master)](https://travis-ci.org/helpscout/seed-this) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-this.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-this)
 
 Selector-based function pack for Seed
 
 
 ## Install
 ```
-npm install seed-this --save-dev
+npm install @seedcss/seed-this --save-dev
 ```
 
 ## Documentation

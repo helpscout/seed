@@ -1,10 +1,10 @@
-# seed-responsive-wrapper [![Build Status](https://travis-ci.org/helpscout/seed-responsive-wrapper.svg?branch=master)](https://travis-ci.org/helpscout/seed-responsive-wrapper) [![npm version](https://badge.fury.io/js/seed-responsive-wrapper.svg)](https://badge.fury.io/js/seed-responsive-wrapper)
+# seed-responsive-wrapper [![Build Status](https://travis-ci.org/helpscout/seed-responsive-wrapper.svg?branch=master)](https://travis-ci.org/helpscout/seed-responsive-wrapper) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-responsive-wrapper.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-responsive-wrapper)
 
 Responsive wrapper object pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-responsive-wrapper --save
+npm install @seedcss/seed-responsive-wrapper --save
 ```
 
 ## Documentation

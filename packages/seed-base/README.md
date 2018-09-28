@@ -1,10 +1,10 @@
-# seed-base [![npm version](https://badge.fury.io/js/seed-base.svg)](https://badge.fury.io/js/seed-base)
+# seed-base [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-base.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-base)
 
 Base styles pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-base --save
+npm install @seedcss/seed-base --save
 ```
 
 ## Documentation

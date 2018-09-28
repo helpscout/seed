@@ -1,10 +1,10 @@
-# seed-shadow [![Build Status](https://travis-ci.org/helpscout/seed-shadow.svg?branch=master)](https://travis-ci.org/helpscout/seed-shadow) [![npm version](https://badge.fury.io/js/seed-shadow.svg)](https://badge.fury.io/js/seed-shadow) [![Dependency Status](https://david-dm.org/helpscout/seed-shadow.svg)](https://david-dm.org/helpscout/seed-shadow)
+# seed-shadow [![Build Status](https://travis-ci.org/helpscout/seed-shadow.svg?branch=master)](https://travis-ci.org/helpscout/seed-shadow) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-shadow.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-shadow) [![Dependency Status](https://david-dm.org/helpscout/seed-shadow.svg)](https://david-dm.org/helpscout/seed-shadow)
 
 Shadow theme pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-shadow --save
+npm install @seedcss/seed-shadow --save
 ```
 
 

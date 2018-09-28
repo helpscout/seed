@@ -1,11 +1,11 @@
-# seed-grid [![Build Status](https://travis-ci.org/helpscout/seed-grid.svg?branch=master)](https://travis-ci.org/helpscout/seed-grid) [![npm version](https://badge.fury.io/js/seed-grid.svg)](https://badge.fury.io/js/seed-grid) [![Dependencies](https://david-dm.org/helpscout/seed-grid.svg)](https://david-dm.org/helpscout/seed-grid)
+# seed-grid [![Build Status](https://travis-ci.org/helpscout/seed-grid.svg?branch=master)](https://travis-ci.org/helpscout/seed-grid) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-grid.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-grid) [![Dependencies](https://david-dm.org/helpscout/seed-grid.svg)](https://david-dm.org/helpscout/seed-grid)
 Grid system pack for [Seed](https://github.com/helpscout/seed)!
 
 You can use this with *any* project you'd like! (Seed not required).
 
 ## Install
 ```
-npm install seed-grid --save
+npm install @seedcss/seed-grid --save
 ```
 
 

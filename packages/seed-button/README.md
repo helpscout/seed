@@ -1,11 +1,11 @@
-# seed-button [![Build Status](https://travis-ci.org/helpscout/seed-button.svg?branch=master)](https://travis-ci.org/helpscout/seed-button) [![npm version](https://badge.fury.io/js/seed-button.svg)](https://badge.fury.io/js/seed-button) [![dependencies Status](https://david-dm.org/helpscout/seed-button/status.svg)](https://david-dm.org/helpscout/seed-button)
+# seed-button [![Build Status](https://travis-ci.org/helpscout/seed-button.svg?branch=master)](https://travis-ci.org/helpscout/seed-button) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-button.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-button) [![dependencies Status](https://david-dm.org/helpscout/seed-button/status.svg)](https://david-dm.org/helpscout/seed-button)
 
 Button component pack for [Seed](https://github.com/helpscout/seed)!
 
 
 ## Install
 ```
-npm install seed-button --save
+npm install @seedcss/seed-button --save
 ```
 
 

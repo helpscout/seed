@@ -1,10 +1,10 @@
-# seed-control [![Build Status](https://travis-ci.org/helpscout/seed-control.svg?branch=master)](https://travis-ci.org/helpscout/seed-control) [![npm version](https://badge.fury.io/js/seed-control.svg)](https://badge.fury.io/js/seed-control)
+# seed-control [![Build Status](https://travis-ci.org/helpscout/seed-control.svg?branch=master)](https://travis-ci.org/helpscout/seed-control) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-control.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-control)
 
 Control config pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-control --save
+npm install @seedcss/seed-control --save
 ```
 
 ## Documentation

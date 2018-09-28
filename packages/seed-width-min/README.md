@@ -1,10 +1,10 @@
-#seed-width-min [![Build Status](https://travis-ci.org/helpscout/seed-width-min.svg?branch=master)](https://travis-ci.org/helpscout/seed-width-min) [![npm version](https://badge.fury.io/js/seed-width-min.svg)](https://badge.fury.io/js/seed-width-min) [![Dependencies](https://david-dm.org/helpscout/seed-width-min.svg)](https://david-dm.org/helpscout/seed-width-min)
+#seed-width-min [![Build Status](https://travis-ci.org/helpscout/seed-width-min.svg?branch=master)](https://travis-ci.org/helpscout/seed-width-min) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-width-min.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-width-min) [![Dependencies](https://david-dm.org/helpscout/seed-width-min.svg)](https://david-dm.org/helpscout/seed-width-min)
 
 Min width extension pack for [seed-width](https://github.com/helpscout/seed-width)!
 
 ## Install
 ```
-npm install seed-width-min --save
+npm install @seedcss/seed-width-min --save
 ```
 
 ## Documentation

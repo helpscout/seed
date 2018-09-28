@@ -1,10 +1,10 @@
-# seed-width [![Build Status](https://travis-ci.org/helpscout/seed-width.svg?branch=master)](https://travis-ci.org/helpscout/seed-width) [![npm version](https://badge.fury.io/js/seed-width.svg)](https://badge.fury.io/js/seed-width) [![Dependency Status](https://david-dm.org/helpscout/seed-width.svg)](https://david-dm.org/helpscout/seed-width)
+# seed-width [![Build Status](https://travis-ci.org/helpscout/seed-width.svg?branch=master)](https://travis-ci.org/helpscout/seed-width) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-width.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-width) [![Dependency Status](https://david-dm.org/helpscout/seed-width.svg)](https://david-dm.org/helpscout/seed-width)
 Width utility pack for [Seed](https://github.com/helpscout/seed)!
 
 
 ## Install
 ```
-npm install seed-width --save
+npm install @seedcss/seed-width --save
 ```
 
 

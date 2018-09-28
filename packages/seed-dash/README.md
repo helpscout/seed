@@ -1,4 +1,4 @@
-# seed-dash [![Build Status](https://travis-ci.org/helpscout/seed-dash.svg?branch=master)](https://travis-ci.org/helpscout/seed-dash) [![npm version](https://badge.fury.io/js/seed-dash.svg)](https://badge.fury.io/js/seed-dash) [![Dependency Status](https://david-dm.org/helpscout/seed-dash.svg)](https://david-dm.org/helpscout/seed-dash)
+# seed-dash [![Build Status](https://travis-ci.org/helpscout/seed-dash.svg?branch=master)](https://travis-ci.org/helpscout/seed-dash) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-dash.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-dash) [![Dependency Status](https://david-dm.org/helpscout/seed-dash.svg)](https://david-dm.org/helpscout/seed-dash)
 
 Config utility pack for [Seed](https://github.com/helpscout/seed)!
 
@@ -9,7 +9,7 @@ If you're looking for a much more complete Underscore/lodash-like experience for
 
 ## Install
 ```
-npm install seed-dash --save
+npm install @seedcss/seed-dash --save
 ```
 
 ## Documentation

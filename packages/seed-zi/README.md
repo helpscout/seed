@@ -1,10 +1,10 @@
-# seed-zi [![Build Status](https://travis-ci.org/helpscout/seed-zi.svg?branch=master)](https://travis-ci.org/helpscout/seed-zi) [![npm version](https://badge.fury.io/js/seed-zi.svg)](https://badge.fury.io/js/seed-zi) [![dependencies Status](https://david-dm.org/helpscout/seed-zi/status.svg)](https://david-dm.org/helpscout/seed-zi)
+# seed-zi [![Build Status](https://travis-ci.org/helpscout/seed-zi.svg?branch=master)](https://travis-ci.org/helpscout/seed-zi) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-zi.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-zi) [![dependencies Status](https://david-dm.org/helpscout/seed-zi/status.svg)](https://david-dm.org/helpscout/seed-zi)
 
 Z-index utility pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-zi --save
+npm install @seedcss/seed-zi --save
 ```
 
 

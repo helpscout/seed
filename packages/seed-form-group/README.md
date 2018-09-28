@@ -1,10 +1,10 @@
-# seed-form-group [![Build Status](https://travis-ci.org/helpscout/seed-form-group.svg?branch=master)](https://travis-ci.org/helpscout/seed-form-group) [![npm version](https://badge.fury.io/js/seed-form-group.svg)](https://badge.fury.io/js/seed-form-group)
+# seed-form-group [![Build Status](https://travis-ci.org/helpscout/seed-form-group.svg?branch=master)](https://travis-ci.org/helpscout/seed-form-group) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-form-group.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-form-group)
 
 Form group component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-form-group --save
+npm install @seedcss/seed-form-group --save
 ```
 
 

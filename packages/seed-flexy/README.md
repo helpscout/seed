@@ -1,10 +1,10 @@
-# seed-flexy [![Build Status](https://travis-ci.org/helpscout/seed-flexy.svg?branch=master)](https://travis-ci.org/helpscout/seed-flexy) [![npm version](https://badge.fury.io/js/seed-flexy.svg)](https://badge.fury.io/js/seed-flexy) [![Dependencies](https://david-dm.org/helpscout/seed-flexy.svg)](https://david-dm.org/helpscout/seed-flexy)
+# seed-flexy [![Build Status](https://travis-ci.org/helpscout/seed-flexy.svg?branch=master)](https://travis-ci.org/helpscout/seed-flexy) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-flexy.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-flexy) [![Dependencies](https://david-dm.org/helpscout/seed-flexy.svg)](https://david-dm.org/helpscout/seed-flexy)
 
 Flex object pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-flexy --save
+npm install @seedcss/seed-flexy --save
 ```
 
 

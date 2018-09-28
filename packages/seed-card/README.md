@@ -1,11 +1,11 @@
-# seed-card [![Build Status](https://travis-ci.org/helpscout/seed-card.svg?branch=master)](https://travis-ci.org/helpscout/seed-card) [![npm version](https://badge.fury.io/js/seed-card.svg)](https://badge.fury.io/js/seed-card) [![Dependency Status](https://david-dm.org/helpscout/seed-card.svg)](https://david-dm.org/helpscout/seed-card)
+# seed-card [![Build Status](https://travis-ci.org/helpscout/seed-card.svg?branch=master)](https://travis-ci.org/helpscout/seed-card) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-card.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-card) [![Dependency Status](https://david-dm.org/helpscout/seed-card.svg)](https://david-dm.org/helpscout/seed-card)
 
 Card component pack for [Seed](https://github.com/helpscout/seed)!
 
 
 ## Install
 ```
-npm install seed-card --save
+npm install @seedcss/seed-card --save
 ```
 
 

@@ -1,10 +1,10 @@
-# seed-inline [![Build Status](https://travis-ci.org/helpscout/seed-inline.svg?branch=master)](https://travis-ci.org/helpscout/seed-inline) [![npm version](https://badge.fury.io/js/seed-color-scheme.svg)](https://badge.fury.io/js/seed-color-scheme) [![Dependency Status](https://david-dm.org/helpscout/seed-inline.svg)](https://david-dm.org/helpscout/seed-inline)
+# seed-inline [![Build Status](https://travis-ci.org/helpscout/seed-inline.svg?branch=master)](https://travis-ci.org/helpscout/seed-inline) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme) [![Dependency Status](https://david-dm.org/helpscout/seed-inline.svg)](https://david-dm.org/helpscout/seed-inline)
 
 Inline object pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-inline --save
+npm install @seedcss/seed-inline --save
 ```
 
 

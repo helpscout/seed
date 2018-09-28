@@ -1,10 +1,10 @@
-# seed-table [![Build Status](https://travis-ci.org/helpscout/seed-table.svg?branch=master)](https://travis-ci.org/helpscout/seed-table) [![npm version](https://badge.fury.io/js/seed-table.svg)](https://badge.fury.io/js/seed-table) [![dependencies Status](https://david-dm.org/helpscout/seed-table/status.svg)](https://david-dm.org/helpscout/seed-table)
+# seed-table [![Build Status](https://travis-ci.org/helpscout/seed-table.svg?branch=master)](https://travis-ci.org/helpscout/seed-table) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-table.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-table) [![dependencies Status](https://david-dm.org/helpscout/seed-table/status.svg)](https://david-dm.org/helpscout/seed-table)
 
 Table component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-table --save
+npm install @seedcss/seed-table --save
 ```
 
 

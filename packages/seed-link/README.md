@@ -1,10 +1,10 @@
-# seed-link [![Build Status](https://travis-ci.org/helpscout/seed-link.svg?branch=master)](https://travis-ci.org/helpscout/seed-link) [![npm version](https://badge.fury.io/js/seed-link.svg)](https://badge.fury.io/js/seed-link)
+# seed-link [![Build Status](https://travis-ci.org/helpscout/seed-link.svg?branch=master)](https://travis-ci.org/helpscout/seed-link) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-link.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-link)
 
 Link component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
-npm install seed-link --save
+npm install @seedcss/seed-link --save
 ```
 
 

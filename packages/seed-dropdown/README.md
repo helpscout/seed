@@ -1,4 +1,4 @@
-# seed-dropdown [![Build Status](https://travis-ci.org/helpscout/seed-dropdown.svg?branch=master)](https://travis-ci.org/helpscout/seed-dropdown) [![npm version](https://badge.fury.io/js/seed-dropdown.svg)](https://badge.fury.io/js/seed-dropdown) [![dependencies Status](https://david-dm.org/helpscout/seed-dropdown/status.svg)](https://david-dm.org/helpscout/seed-dropdown)
+# seed-dropdown [![Build Status](https://travis-ci.org/helpscout/seed-dropdown.svg?branch=master)](https://travis-ci.org/helpscout/seed-dropdown) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-dropdown.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-dropdown) [![dependencies Status](https://david-dm.org/helpscout/seed-dropdown/status.svg)](https://david-dm.org/helpscout/seed-dropdown)
 
 Dropdown component pack for [Seed](https://github.com/helpscout/seed)!
 
@@ -6,7 +6,7 @@ JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
 
 ## Install
 ```
-npm install seed-dropdown --save
+npm install @seedcss/seed-dropdown --save
 ```
 
 

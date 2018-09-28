@@ -1,4 +1,4 @@
-# seed-breakpoints [![Build Status](https://travis-ci.org/helpscout/seed-breakpoints.svg?branch=master)](https://travis-ci.org/helpscout/seed-breakpoints) [![npm version](https://badge.fury.io/js/seed-breakpoints.svg)](https://badge.fury.io/js/seed-breakpoints) [![Dependencies](https://david-dm.org/helpscout/seed-breakpoints.svg)](https://david-dm.org/helpscout/seed-breakpoints)
+# seed-breakpoints [![Build Status](https://travis-ci.org/helpscout/seed-breakpoints.svg?branch=master)](https://travis-ci.org/helpscout/seed-breakpoints) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-breakpoints.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-breakpoints) [![Dependencies](https://david-dm.org/helpscout/seed-breakpoints.svg)](https://david-dm.org/helpscout/seed-breakpoints)
 
 Breakpoints (media query) mixin pack for [Seed](https://github.com/helpscout/seed)!
 
@@ -7,7 +7,7 @@ Breakpoints was inspired by the mixins in [Bootstrap V4](https://github.com/twbs
 
 ## Install
 ```
-npm install seed-breakpoints --save
+npm install @seedcss/seed-breakpoints --save
 ```
 
 

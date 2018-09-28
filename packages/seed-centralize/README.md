@@ -1,4 +1,4 @@
-# seed-centralize [![Build Status](https://travis-ci.org/helpscout/seed-centralize.svg?branch=master)](https://travis-ci.org/helpscout/seed-centralize) [![npm version](https://badge.fury.io/js/seed-centralize.svg)](https://badge.fury.io/js/seed-centralize) [![dependencies Status](https://david-dm.org/helpscout/seed-centralize/status.svg)](https://david-dm.org/helpscout/seed-centralize)
+# seed-centralize [![Build Status](https://travis-ci.org/helpscout/seed-centralize.svg?branch=master)](https://travis-ci.org/helpscout/seed-centralize) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-centralize.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-centralize) [![dependencies Status](https://david-dm.org/helpscout/seed-centralize/status.svg)](https://david-dm.org/helpscout/seed-centralize)
 
 Centralize utility pack for [Seed](https://github.com/helpscout/seed)!
 
@@ -6,7 +6,7 @@ This pack utilizes [flexbox](https://philipwalton.github.io/solved-by-flexbox/de
 
 ## Install
 ```
-npm install seed-centralize --save
+npm install @seedcss/seed-centralize --save
 ```
 
 

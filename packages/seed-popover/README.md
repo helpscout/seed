@@ -1,4 +1,4 @@
-# seed-popover [![Build Status](https://travis-ci.org/helpscout/seed-popover.svg?branch=master)](https://travis-ci.org/helpscout/seed-popover) [![npm version](https://badge.fury.io/js/seed-popover.svg)](https://badge.fury.io/js/seed-popover)
+# seed-popover [![Build Status](https://travis-ci.org/helpscout/seed-popover.svg?branch=master)](https://travis-ci.org/helpscout/seed-popover) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-popover.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-popover)
 
 Popover component pack for [Seed](https://github.com/helpscout/seed)!
 
@@ -6,7 +6,7 @@ JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
 
 ## Install
 ```
-npm install seed-popover --save
+npm install @seedcss/seed-popover --save
 ```
 
 
