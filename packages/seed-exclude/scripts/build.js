@@ -6,14 +6,14 @@ var mkdirp = require('mkdirp');
 var pathfinder = require('./pathfinder');
 var sass = require('node-sass');
 
-var file = pkg.name;
+const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
   require('seed-publish')
 );
 
 // Default .css compile
 sass.render({
-  file: './scss/pack/'+file+'/__index.scss',
+  file: `./scss/pack/${file}/__index.scss`,
   includePaths: includePaths
 }, function(error, result) {
   if (error) {

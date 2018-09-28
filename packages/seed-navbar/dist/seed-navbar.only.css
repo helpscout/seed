@@ -1,5 +1,5 @@
 /**
- * seed-navbar v0.0.6
+ * @seedcss/seed-navbar v0.0.1
  * Navbar component pack for Seed
  * Licensed under MIT
  */
@@ -25,7 +25,7 @@
     background-color: transparent; }
   .c-navbar .c-dropdown.open .c-dropdown__menu, .c-navbar .c-dropdown.show .c-dropdown__menu {
     display: block; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px - 1px) {
       .c-navbar .c-dropdown.open .c-dropdown__menu, .c-navbar .c-dropdown.show .c-dropdown__menu {
         border: none;
         max-width: none;

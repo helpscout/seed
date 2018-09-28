@@ -6,11 +6,11 @@ var mkdirp = require('mkdirp');
 var sass = require('node-sass');
 var includePaths = require('../index');
 
-var file = pkg.name;
+const file = pkg.name.replace('@seedcss/', '')
 
 // Default .css compile
 sass.render({
-  file: './scss/pack/'+file+'/__index.scss',
+  file: `./scss/pack/${file}/__index.scss`,
   includePaths: includePaths
 }, function(error, result) {
   if (error) {
@@ -29,7 +29,7 @@ sass.render({
 
 // Minified .css compile
 sass.render({
-  file: './scss/pack/'+file+'/__index.scss',
+  file: `./scss/pack/${file}/__index.scss`,
   includePaths: includePaths,
   outputStyle: 'compressed'
 }, function(error, result) {

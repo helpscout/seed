@@ -1,5 +1,5 @@
 /**
- * seed-reset v0.1.4 (https://github.com/helpscout/seed-reset)
+ * @seedcss/seed-reset v0.0.1 (https://github.com/helpscout/seed-reset)
  * Reset pack for Seed
  * Licensed under MIT
  */
@@ -250,7 +250,7 @@ html {
 
 html {
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 [tabindex="-1"]:focus {
   outline: none !important; }

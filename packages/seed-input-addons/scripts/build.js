@@ -6,7 +6,7 @@ var mkdirp = require('mkdirp');
 var pathfinder = require('sass-pathfinder');
 var sass = require('node-sass');
 
-var file = pkg.name;
+const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
   require('seed-control'),
   require('seed-input'),
@@ -15,7 +15,7 @@ var includePaths = pathfinder(
 
 // Default .css compile
 sass.render({
-  file: './scss/pack/'+file+'/__index.scss',
+  file: `./scss/pack/${file}/__index.scss`,
   includePaths: includePaths
 }, function(error, result) {
   if (error) {
@@ -34,7 +34,7 @@ sass.render({
 
 // Minified .css compile
 sass.render({
-  file: './scss/pack/'+file+'/__index.scss',
+  file: `./scss/pack/${file}/__index.scss`,
   includePaths: includePaths,
   outputStyle: 'compressed'
 }, function(error, result) {

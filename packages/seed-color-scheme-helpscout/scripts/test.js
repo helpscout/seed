@@ -4,13 +4,13 @@ var pkg = require('../package.json');
 var sass = require('node-sass');
 var pathfinder = require('./pathfinder');
 
-var file = pkg.name;
+const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
   require('seed-color-scheme')
 );
 
 sass.render({
-  file: './scss/pack/'+file+'/__index.scss',
+  file: `./scss/pack/${file}/__index.scss`,
   includePaths: includePaths
 }, function(error, result) {
   if (error) {
