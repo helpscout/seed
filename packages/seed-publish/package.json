@@ -4,7 +4,6 @@
   "description": "Mixins that manage rendered CSS from modular importing",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm run test",
     "test:mocha": "mocha",
     "test": "npm run test:mocha"
   },
