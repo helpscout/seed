@@ -57,5 +57,6 @@
     "access": "public"
   },
   "prepublish": "npm run build",
-  "postversion": "npm run build"
+  "postversion": "npm run build",
+  "prepack": "npm run build"
 }

@@ -51,5 +51,6 @@
   "bugs": {
     "url": "https://github.com/helpscout/seed/issues"
   },
-  "postversion": "npm run build"
+  "postversion": "npm run build",
+  "prepack": "npm run build"
 }

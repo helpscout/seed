@@ -11,7 +11,7 @@ glob("packages/*/package.json", (err, files) => {
       publishConfig: {
         access: "public"
       },
-      postversion: "npm run build",
+      prepack: "npm run build",
       homepage: "https://github.com/helpscout/seed/",
       repository: {
         type: "git",

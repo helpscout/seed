@@ -50,5 +50,6 @@
   },
   "prepublish": "npm run build",
   "homepage": "https://github.com/helpscout/seed/",
-  "postversion": "npm run build"
+  "postversion": "npm run build",
+  "prepack": "npm run build"
 }
