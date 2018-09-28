@@ -1,0 +1,38 @@
+// Components :: Nav Link
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-nav) {
+  .#{$seed-nav-link-namespace} {
+    box-sizing: border-box;
+    color: $seed-nav-link-color;
+    display: block;
+    font-weight: $seed-nav-link-font-weight;
+    padding: $seed-nav-link-padding;
+    text-decoration: none;
+
+    // Modifiers: Alignment
+    $mod: "-"; // Modifier prefix
+    &#{$mod} {
+      @include breakpoint-prop-map($seed-nav-item-alignment, (m)) {
+        $margin: prop(m);
+        #{$margin}: auto;
+      }
+    }
+  }
+
+  // States: Active
+  .#{$seed-nav-item-namespace}.#{$seed-nav-link-active-namespace} > .#{$seed-nav-link-namespace},
+  .#{$seed-nav-link-namespace}.#{$seed-nav-link-active-namespace} {
+    color: $seed-nav-link-active-color;
+    font-weight: $seed-nav-link-active-font-weight;
+  }
+  // States: Disabled
+  .#{$seed-nav-item-namespace}.#{$seed-nav-link-disabled-namespace} > .#{$seed-nav-link-namespace},
+  .#{$seed-nav-link-namespace}.#{$seed-nav-link-disabled-namespace} {
+    color: $seed-nav-link-disabled-color;
+    cursor: not-allowed;
+  }
+}

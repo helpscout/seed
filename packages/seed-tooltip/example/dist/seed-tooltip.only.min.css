@@ -1,0 +1,6 @@
+/**
+ * seed-tooltip v0.0.2 (https://github.com/helpscout/seed-tooltip/)
+ * Tooltip component pack for Seed
+ * Licensed under MIT
+ */
+.tooltip{box-sizing:border-box;font-size:12px;font-style:normal;display:block;letter-spacing:normal;line-height:1.5;opacity:0;position:absolute;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;white-space:normal;word-break:normal;word-spacing:normal;word-wrap:normal;z-index:1070}.tooltip.in{opacity:1}.tooltip.top{margin-top:-3px;padding:5px 0}.tooltip.right{margin-right:-3px;padding:0 5px}.tooltip.bottom{margin-bottom:-3px;padding:5px 0}.tooltip.left{margin-left:-3px;padding:0 5px}.tooltip-arrow{border-color:transparent;border-style:solid;box-sizing:border-box;height:0;position:absolute;width:0}.tooltip.top .tooltip-arrow{border-top-color:#000;border-width:5px 5px 0;bottom:0;left:50%;margin-left:-5px}.tooltip.right .tooltip-arrow{border-right-color:#000;border-width:5px 5px 5px 0;left:0;margin-top:-5px;top:50%}.tooltip.bottom .tooltip-arrow{border-bottom-color:#000;border-width:0 5px 5px;left:50%;margin-left:-5px;top:0}.tooltip.left .tooltip-arrow{border-left-color:#000;border-width:5px 0 5px 5px;right:0;margin-top:-5px;top:50%}.tooltip-inner{background-color:#000;border-radius:4px;box-sizing:border-box;color:#fff;max-width:200px;padding:3px 8px;text-align:center}

@@ -1,0 +1,22 @@
+// Modifiers :: Sizes
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
+@import "../../../config";
+
+@include export(seed-table) {
+  &--sm {
+    th,
+    td {
+      padding: _get($seed-table-padding-sizes, sm);
+    }
+  }
+
+  &--xs {
+    th,
+    td {
+      padding: _get($seed-table-padding-sizes, xs);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "seed-table",
+  "version": "0.0.4",
+  "description": "Table component pack for Seed",
+  "main": "index.js",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner && npm run copy",
+    "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
+    "test": "npm run build",
+    "prepublish": "npm run test"
+  },
+  "homepage": "https://github.com/helpscout/seed-table/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-table.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-table/issues"
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss",
+    "table"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "4.9.0"
+  },
+  "dependencies": {
+    "seed-dash": "0.0.1",
+    "seed-publish": "0.0.4",
+    "seed-states": "0.0.4",
+    "seed-this": "0.0.4"
+  }
+}

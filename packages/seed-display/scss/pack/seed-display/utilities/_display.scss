@@ -1,0 +1,13 @@
+// Utilities :: Display
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-publish/_index";
+
+@include export(seed-display) {
+  .#{$seed-display-namespace} {
+    @include breakpoint-prop-map($seed-display, (prop)) {
+      display: prop(prop) !important;
+    }
+  }
+}

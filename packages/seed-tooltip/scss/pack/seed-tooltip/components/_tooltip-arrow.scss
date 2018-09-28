@@ -1,0 +1,50 @@
+// Components :: Tooltip Arrow
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "pack/seed-this/_index";
+@import "../config";
+
+@include export(seed-tooltip) {
+  .#{$seed-tooltip-arrow-namespace} {
+    $this: this();
+    border-color: transparent;
+    border-style: solid;
+    box-sizing: border-box;
+    height: 0;
+    position: absolute;
+    width: 0;
+
+    // Modifiers: Directions
+    @at-root .#{$seed-tooltip-namespace} {
+      &.top #{$this} {
+        border-top-color: $seed-tooltip-background-color;
+        border-width: $seed-tooltip-arrow-size $seed-tooltip-arrow-size 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -$seed-tooltip-arrow-size;
+      }
+      &.right #{$this} {
+        border-right-color: $seed-tooltip-background-color;
+        border-width: $seed-tooltip-arrow-size $seed-tooltip-arrow-size $seed-tooltip-arrow-size 0;
+        left: 0;
+        margin-top: -$seed-tooltip-arrow-size;
+        top: 50%;
+      }
+      &.bottom #{$this} {
+        border-bottom-color: $seed-tooltip-background-color;
+        border-width: 0 $seed-tooltip-arrow-size $seed-tooltip-arrow-size;
+        left: 50%;
+        margin-left: -$seed-tooltip-arrow-size;
+        top: 0;
+      }
+      &.left #{$this} {
+        border-left-color: $seed-tooltip-background-color;
+        border-width: $seed-tooltip-arrow-size 0 $seed-tooltip-arrow-size $seed-tooltip-arrow-size;
+        right: 0;
+        margin-top: -$seed-tooltip-arrow-size;
+        top: 50%;
+      }
+    }
+  }
+}

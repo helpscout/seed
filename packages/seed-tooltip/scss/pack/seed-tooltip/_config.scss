@@ -1,0 +1,20 @@
+// Tooltip :: Config
+
+// Namespaces
+$seed-tooltip-namespace: "tooltip" !default;
+$seed-tooltip-arrow-namespace: "tooltip-arrow" !default;
+$seed-tooltip-inner-namespace: "tooltip-inner" !default;
+
+// Configs
+$seed-tooltip-font-size: 12px !default;
+$seed-tooltip-margin-offset: -3px !default;
+$seed-tooltip-line-height: 1.5 !default;
+$seed-tooltip-z-index: 1070 !default;
+// Config: Inner
+$seed-tooltip-background-color: #000 !default;
+$seed-tooltip-border-radius: 4px !default;
+$seed-tooltip-padding: 3px 8px !default;
+$seed-tooltip-max-width: 200px !default;
+$seed-tooltip-text-color: #fff !default;
+// Config: Arrow
+$seed-tooltip-arrow-size: 5px !default;

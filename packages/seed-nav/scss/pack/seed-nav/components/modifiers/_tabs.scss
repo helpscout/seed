@@ -1,0 +1,30 @@
+// Modifiers :: Tabs
+
+// Dependencies
+@import "pack/seed-breakpoints/config";
+@import "pack/seed-border/config";
+@import "pack/seed-publish/_index";
+@import "../../config";
+
+@include export(seed-nav) {
+  .#{$seed-nav-tabs-namespace} {
+    @include breakpoint-all() {
+      border-bottom: $seed-border;
+
+      .#{$seed-nav-link-namespace} {
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: $seed-nav-tabs-link-border-width;
+        color: $seed-nav-tabs-link-color;
+      }
+
+      // States: Active
+      .#{$seed-nav-item-namespace}.#{$seed-nav-link-active-namespace} > #{$seed-nav-link-namespace},
+      .#{$seed-nav-link-namespace}.#{$seed-nav-link-active-namespace} {
+        border-bottom-color: $seed-nav-tabs-link-active-border-color;
+        color: $seed-nav-tabs-link-active-color;
+        font-weight: $seed-nav-tabs-link-active-font-weight;
+      }
+    }
+  }
+}

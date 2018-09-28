@@ -1,0 +1,49 @@
+{
+  "name": "seed-publish",
+  "version": "0.2.0",
+  "description": "Mixins that manage rendered CSS from modular importing",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run test",
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha"
+  },
+  "homepage": "https://github.com/helpscout/seed-publish/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed-publish.git"
+  },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-publish/issues"
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "guard",
+    "header",
+    "import",
+    "itcss",
+    "mixin",
+    "modular",
+    "oocss",
+    "publish",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "mkdirp": "0.5.1",
+    "node-sass": "4.9.0",
+    "seed-bistro": "0.2.0"
+  }
+}

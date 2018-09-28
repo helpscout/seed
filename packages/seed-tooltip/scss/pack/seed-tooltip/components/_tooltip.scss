@@ -1,0 +1,50 @@
+// Components :: Tooltip
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-tooltip) {
+  .#{$seed-tooltip-namespace} {
+    box-sizing: border-box;
+    font-size: #{$seed-tooltip-font-size};
+    font-style: normal;
+    display: block;
+    letter-spacing: normal;
+    line-height: #{$seed-tooltip-line-height};
+    opacity: 0;
+    position: absolute;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    white-space: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    z-index: $seed-tooltip-z-index;
+
+    // States
+    &.in {
+      opacity: 1;
+    }
+
+    // Modifiers: Directions
+    &.top {
+      margin-top: $seed-tooltip-margin-offset;
+      padding: $seed-tooltip-arrow-size 0;
+    }
+    &.right {
+      margin-right: $seed-tooltip-margin-offset;
+      padding: 0 $seed-tooltip-arrow-size;
+    }
+    &.bottom {
+      margin-bottom: $seed-tooltip-margin-offset;
+      padding: $seed-tooltip-arrow-size 0;
+    }
+    &.left {
+      margin-left: $seed-tooltip-margin-offset;
+      padding: 0 $seed-tooltip-arrow-size;
+    }
+  }
+}

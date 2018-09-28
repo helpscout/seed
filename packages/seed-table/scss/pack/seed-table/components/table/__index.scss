@@ -1,0 +1,12 @@
+// Components :: Table
+
+.#{$seed-table-namespace} {
+  // Base
+  @import "./base";
+  // Modifiers
+  @import "./modifiers/alignment";
+  @import "./modifiers/sizes";
+  @import "./modifiers/styles";
+  // States
+  @import "./states/states";
+}

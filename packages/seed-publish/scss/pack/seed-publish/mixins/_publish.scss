@@ -1,0 +1,18 @@
+// Mixins :: publish
+
+// Dependencies
+@import "../config";
+
+@mixin publish($key: false) {
+  @if (type-of($key) == "string") and $key {
+    @if map-get($__seed-publish-list, $key) == null {
+      @error "publish: The $key of " + $key + " was never defined in export().";
+    }
+    @else {
+      $__seed-publish-list: map-merge($__seed-publish-list, ($key: true)) !global;
+    }
+  }
+  @else {
+    @error "publish: The argument must be a string.";
+  }
+}

@@ -1,50 +1,56 @@
 {
-  "name": "seed-overflow",
-  "version": "0.0.3",
-  "description": "Overflow utility pack for Seed",
+  "name": "seed-nav",
+  "version": "0.1.0",
+  "description": "Nav component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
-    "test": "npm run build"
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha",
+    "prepublish": "npm run test",
+    "version": "npm run build && git add dist"
   },
-  "homepage": "https://github.com/helpscout/seed-overflow/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-overflow.git"
+    "url": "git+https://github.com/helpscout/seed-nav.git"
   },
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-overflow/issues"
+    "url": "https://github.com/helpscout/seed-nav/issues"
   },
   "keywords": [
     "bem",
+    "component",
     "css",
     "design",
     "functional",
     "itcss",
     "modular",
+    "nav",
     "oocss",
-    "overflow",
     "performance",
     "seed",
     "seed-pack",
-    "scss"
+    "scss",
+    "tabs"
   ],
   "engines": {
     "node": ">=4"
   },
   "devDependencies": {
-    "hoek": "5.0.3",
-    "mkdirp": "^0.5.1",
-    "node-sass": "4.9.0"
+    "mkdirp": "0.5.1",
+    "node-sass": "4.9.0",
+    "seed-bistro": "0.2.0"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
-    "seed-breakpoints": "^0.4.0"
+    "seed-border": "0.0.10",
+    "seed-breakpoints": "0.4.1",
+    "seed-publish": "0.2.0"
   }
 }

@@ -1,0 +1,42 @@
+// Modifiers :: Styles
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
+@import "../../../config";
+
+@include export(seed-table) {
+  &--bordered {
+    border-top: $seed-table-border-width solid $seed-table-border-color;
+
+    th,
+    td {
+      border: $seed-table-border-width solid $seed-table-border-color;
+    }
+
+    thead {
+      th,
+      td {
+        border-bottom-width: $seed-table-th-border-width;
+      }
+    }
+  }
+
+  &--fixed {
+    table-layout: fixed;
+  }
+
+  &--striped {
+    tbody tr:nth-of-type(odd) {
+      background-color: $seed-table-background-color-striped;
+    }
+  }
+
+  &--hover {
+    tbody tr {
+      &:hover {
+        background-color: $seed-table-background-color-hover;
+      }
+    }
+  }
+}

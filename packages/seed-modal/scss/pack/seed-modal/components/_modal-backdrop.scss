@@ -1,0 +1,28 @@
+// Components :: Modal Backdrop
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-modal) {
+  .#{$seed-modal-backdrop-namespace} {
+    background-color: $seed-modal-backdrop-background-color;
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: $seed-modal-backdrop-z-index;
+
+    // States
+    &.fade { 
+      opacity: 0;
+    }
+
+    &.in,
+    &.fade.in { 
+      opacity: $seed-modal-backdrop-opacity-in;
+    }
+  }
+}

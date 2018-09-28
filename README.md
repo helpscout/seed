@@ -1,8 +1,8 @@
-# seed.css
+# Seed
 
 > A component-first CSS design system.
 
-<img src="http://developer.helpscout.net/seed/images/seed.png" width="100">
+<img src="https://developer.helpscout.com/images/seed.png" width="100">
 
 
 ## Documentation

@@ -1,0 +1,13 @@
+// Modal pack for Seed
+
+// Dependencies
+@import "pack/seed-bootstrap-fade/_index";
+@import "pack/seed-card/_index";
+@import "pack/seed-publish/_index";
+
+// Config
+@import "./config";
+// Components
+@import "./components/_index";
+
+@include publish(seed-modal);

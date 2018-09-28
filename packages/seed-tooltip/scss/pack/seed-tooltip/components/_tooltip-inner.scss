@@ -1,0 +1,17 @@
+// Components :: Tooltip Inner
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-tooltip) {
+  .#{$seed-tooltip-inner-namespace} {
+    background-color: $seed-tooltip-background-color;
+    border-radius: $seed-tooltip-border-radius;
+    box-sizing: border-box;
+    color: $seed-tooltip-text-color;
+    max-width: $seed-tooltip-max-width;
+    padding: $seed-tooltip-padding;
+    text-align: center;
+  }
+}

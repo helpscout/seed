@@ -1,0 +1,27 @@
+// Modifiers :: Alignment
+
+// Dependencies
+@import "pack/seed-publish/_index";
+
+@include export(seed-table) {
+  &--top {
+    th,
+    td {
+      vertical-align: top;
+    }
+  }
+
+  &--middle {
+    th,
+    td {
+      vertical-align: middle;
+    }
+  }
+
+  &--bottom {
+    th,
+    td {
+      vertical-align: bottom;
+    }
+  }
+}

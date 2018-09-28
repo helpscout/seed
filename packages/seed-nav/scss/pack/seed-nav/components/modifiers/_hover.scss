@@ -1,0 +1,17 @@
+// Modifiers :: Hover
+
+// Dependencies
+@import "pack/seed-border/config";
+@import "pack/seed-publish/_index";
+@import "../../config";
+
+@include export(seed-nav) {
+  .#{$seed-nav-hover-namespace} {
+    .#{$seed-nav-link-namespace} {
+      &:hover {
+        background-color: $seed-nav-link-hover-background-color;
+        text-decoration: none;
+      }
+    }
+  }
+}

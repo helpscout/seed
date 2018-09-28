@@ -1,0 +1,18 @@
+// Mixins :: export
+
+// Dependencies
+@import "../config";
+
+@mixin export($key: false) {
+  @if (type-of($key) == "string") and $key {
+    @if not map-get($__seed-publish-list, $key) {
+      $__seed-publish-list: map-merge($__seed-publish-list, ($key: false)) !global;
+    }
+    @if map-get($__seed-publish-list, $key) == false {
+      @content;
+    }
+  }
+  @else {
+    @error "export: The argument must be a string.";
+  }
+}

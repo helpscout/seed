@@ -1,0 +1,40 @@
+// Components :: Modal Dialog
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
+@import "pack/seed-this/_index";
+@import "../config";
+
+@include export(seed-modal) {
+  .#{$seed-modal-dialog-namespace} {
+    $this: this();
+    box-sizing: border-box;
+    margin: $seed-modal-dialog-margin;
+    position: relative;
+    width: auto;
+    @include breakpoint(md) {
+      margin: $seed-modal-dialog-margin-md;
+      max-width: _get($seed-modal-dialog-sizes, md);
+    }
+
+    // Modifiers
+    &- {
+      @include breakpoint-prop-map($seed-modal-dialog-sizes, (width)) {
+        max-width: prop(width);
+      }
+    }
+
+    // States
+    @at-root .#{$seed-modal-namespace} {
+      &.fade #{$this} {
+        transform: translate(0, -25%);
+        transition: transform 0.3s ease-out;
+      }
+      &.in #{$this} {
+        transform: translate(0, 0);
+      }
+    }
+  }
+}

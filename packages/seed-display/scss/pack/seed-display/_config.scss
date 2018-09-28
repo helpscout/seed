@@ -1,0 +1,14 @@
+// Display :: Config
+
+// Namespaces
+$seed-display-namespace: "u-d" !default;
+
+// Displays
+$seed-display: (
+  initial: initial,
+  none: none,
+  block: block,
+  inline: inline,
+  inline-block: inline-block,
+  flex: flex,
+) !default;

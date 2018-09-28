@@ -1,0 +1,15 @@
+// Components :: Modal Scrollbar Measure
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-modal) {
+  .#{$seed-modal-scrollbar-measure-namespace} {
+    height: 50px;
+    overflow: scroll;
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+  }
+}

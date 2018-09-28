@@ -1,0 +1,22 @@
+// Mixins :: Unload
+
+// Dependencies
+@import "../config";
+
+@mixin unload($keys...) {
+  @if $keys == false {
+    @error "unload: An argument must be defined.";
+  }
+  @each $key in $keys {
+    @if (type-of($key) == "string") {
+      $__seed-publish-list: map-merge($__seed-publish-list, ($key: true)) !global;
+    }
+    @else if (type-of($key) == "list") {
+      @each $k in $key {
+        // Recursively exclude
+        @include unload($k);
+      }
+    }
+  }
+}
+

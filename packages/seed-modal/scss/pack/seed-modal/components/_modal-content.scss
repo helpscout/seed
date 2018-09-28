@@ -1,0 +1,21 @@
+// Components :: Modal Content
+
+// Dependencies
+@import "pack/seed-card/config";
+@import "pack/seed-publish/_index";
+@import "../config";
+
+@include export(seed-modal) {
+  .#{$seed-modal-content-namespace} {
+    border: none;
+    box-shadow: $seed-modal-content-box-shadow;
+    box-sizing: border-box;
+    outline: 0;
+    position: relative;
+
+    &.#{$seed-card-namespace} {
+      border: none;
+      box-shadow: $seed-modal-content-box-shadow;
+    }
+  }
+}

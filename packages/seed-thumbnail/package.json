@@ -53,7 +53,7 @@
     "hoek": "5.0.3",
     "mkdirp": "^0.5.1",
     "node-sass": "4.9.0",
-    "seed-bistro": "0.1.1"
+    "seed-bistro": "0.2.0"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
