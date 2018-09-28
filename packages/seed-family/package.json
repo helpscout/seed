@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-family",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Family related mixin pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -44,7 +44,6 @@
     "mkdirp": "^0.5.1",
     "node-sass": "4.9.0"
   },
-  "dependencies": {},
   "publishConfig": {
     "access": "public"
   }

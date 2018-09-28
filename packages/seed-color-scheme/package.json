@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-color-scheme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Color scheme system pack for Seed",
   "main": "index.js",
   "homepage": "",
