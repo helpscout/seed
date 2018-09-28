@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-base",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Base styles pack for Seed",
   "main": "index.js",
   "scripts": {

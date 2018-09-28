@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-navbar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Navbar component pack for Seed",
   "main": "index.js",
   "watch": {

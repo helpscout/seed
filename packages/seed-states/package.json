@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-states",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "States config pack for Seed",
   "main": "index.js",
   "scripts": {

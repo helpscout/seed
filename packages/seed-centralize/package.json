@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-centralize",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Centralize utility pack for Seed",
   "main": "index.js",
   "scripts": {

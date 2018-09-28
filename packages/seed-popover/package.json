@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-popover",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Popover component pack for Seed",
   "main": "index.js",
   "scripts": {
