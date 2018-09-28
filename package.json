@@ -10,7 +10,8 @@
     "diff": "lerna diff",
     "distclean": "lerna clean --yes && rm -rf node_modules",
     "test": "lerna run test",
-    "updated": "lerna updated || exit 0"
+    "updated": "lerna updated || exit 0",
+    "update:pkg": "node ./scripts/update-pkg.js"
   },
   "homepage": "https://github.com/helpscout/seed",
   "repository": {

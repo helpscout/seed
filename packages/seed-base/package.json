@@ -51,5 +51,6 @@
     "access": "public"
   },
   "prepublish": "npm run build",
-  "homepage": "https://github.com/helpscout/seed/"
+  "homepage": "https://github.com/helpscout/seed/",
+  "postversion": "npm run build"
 }

@@ -54,5 +54,6 @@
   "prepublish": "npm run build",
   "bugs": {
     "url": "https://github.com/helpscout/seed/issues"
-  }
+  },
+  "postversion": "npm run build"
 }

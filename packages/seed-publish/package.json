@@ -48,5 +48,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "prepublish": "npm run build"
+  "prepublish": "npm run build",
+  "postversion": "npm run build"
 }
