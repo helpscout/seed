@@ -3,7 +3,18 @@ const glob = require("glob")
 
 glob("packages/*/package.json", (err, files) => {
   files.forEach(file => {
+    // Get the package.json
     const pkg = JSON.parse(fs.readFileSync(file))
-    console.log(pkg)
+
+    // Update it
+    const nextPkg = Object({}, pkg, {
+      publishConfig: {
+        access: "public"
+      }
+    })
+
+    // (Re)write it
+
+    fs.writeFileSync(file, JSON.stringify(nextPkg));
   })
 })
