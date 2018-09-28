@@ -10,6 +10,50 @@
 You can find all of our documentation at **[https://seedcss.com](http://developer.helpscout.net/seed/)**.
 
 
+## Getting started
+
+To get started with this project, run the following command:
+
+```
+npm install
+```
+
+This installs [Lerna](https://lernajs.io/), as well as other development dependencies.
+
+Once it's done, run this command:
+
+```
+npm run bootstrap
+```
+
+This tells Lerna to magically setup all the seed packages!
+
+
+### Testing
+
+To run tests on all the seed packs, run this command:
+
+```
+npm run test
+```
+
+### Building
+
+To build all the seed packs (for publishing), run this command:
+
+```
+npm run build
+```
+
+### Publish
+
+To publish to npm, run the following command and walk through the CLI steps:
+
+```
+npm run publish
+```
+
+
 ## About this repo
 
 This [monorepo](https://github.com/babel/babel/blob/master/doc/design/monorepo.md) contains all the official Seed Packs that make up the foundations of Seed CSS. The idea for the monorepo was inspired by [IstanbulJS](https://github.com/istanbuljs/istanbuljs).
