@@ -1,16 +1,14 @@
 {
   "name": "@seedcss/seed-dot-nav",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "description": "Dot navigation component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build:main": "node ./scripts/build.js",
     "build": "npm run build:main && npm run banner",
-
     "test:mocha": "mocha",
-    "test": "npm run test:mocha",
-    "version": "npm run build && git add dist"
+    "test": "npm run test:mocha"
   },
   "homepage": "https://github.com/helpscout/seed-dot-nav",
   "repository": {

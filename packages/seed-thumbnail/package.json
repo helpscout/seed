@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-thumbnail",
-  "version": "0.0.9",
+  "version": "0.0.1",
   "description": "Thumbnail component pack for Seed",
   "main": "index.js",
   "files": [
@@ -14,10 +14,8 @@
     "banner": "node ./scripts/banner.js",
     "build:main": "node ./scripts/build.js",
     "build": "npm run build:main && npm run banner",
-
     "test:mocha": "mocha",
-    "test": "npm run test:mocha",
-    "version": "npm run build && git add dist"
+    "test": "npm run test:mocha"
   },
   "repository": {
     "type": "git",

@@ -8,8 +8,7 @@
     "build:main": "node ./scripts/build.js",
     "build": "npm run build:main && npm run banner",
     "test:mocha": "mocha",
-    "test": "npm run test:mocha",
-    "version": "npm run build && git add dist"
+    "test": "npm run test:mocha"
   },
   "homepage": "https://github.com/helpscout/seed-vertical-align/issues",
   "repository": {

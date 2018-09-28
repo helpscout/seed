@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-responsive-wrapper",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Responsive wrapper object pack for Seed",
   "main": "index.js",
   "scripts": {

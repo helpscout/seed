@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-form-group",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Form group component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,8 @@
     "build:main": "node ./scripts/build.js",
     "build": "npm run build:main && npm run banner && npm run copy",
     "copy": "cp ./dist/*.css ./example/dist/",
-
     "test:mocha": "mocha",
-    "test": "npm run test:mocha",
-    "version": "npm run build && git add dist && git add example"
+    "test": "npm run test:mocha"
   },
   "homepage": "https://github.com/helpscout/seed-form-group/",
   "repository": {

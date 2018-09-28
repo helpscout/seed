@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-reset",
-  "version": "0.1.4",
+  "version": "0.0.1",
   "description": "Reset pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed-reset",
@@ -9,9 +9,7 @@
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
     "test:mocha": "mocha",
-    "test": "npm run test:mocha",
-
-    "version": "npm run build && git add dist"
+    "test": "npm run test:mocha"
   },
   "repository": {
     "type": "git",

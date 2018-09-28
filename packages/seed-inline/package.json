@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-inline",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Inline object pack for Seed",
   "main": "index.js",
   "files": [
@@ -15,8 +15,7 @@
     "build:main": "node ./scripts/build.js",
     "build": "npm run build:main && npm run banner",
     "test:mocha": "mocha",
-    "test": "npm run test:mocha",
-    "version": "npm run build && git add dist"
+    "test": "npm run test:mocha"
   },
   "homepage": "https://github.com/helpscout/seed-inline",
   "repository": {

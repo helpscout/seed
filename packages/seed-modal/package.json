@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-modal",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Modal component pack for Seed",
   "main": "index.js",
   "scripts": {

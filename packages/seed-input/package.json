@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-input",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "description": "Input component pack for Seed",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-navbar",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "description": "Navbar component pack for Seed",
   "main": "index.js",
   "watch": {
@@ -17,10 +17,8 @@
     "banner": "node ./scripts/banner.js",
     "build:main": "node ./scripts/build.js",
     "build": "npm run build:main && npm run banner",
-
     "test:mocha": "mocha",
     "test": "npm run test:mocha",
-    "version": "npm run build && git add dist",
     "watch": "npm-watch"
   },
   "homepage": "",

@@ -7,5 +7,5 @@
     "ignore": "component-*",
     "npmClientArgs": ["--no-package-lock"]
   },
-  "version": "independent"
+  "version": "0.0.1"
 }

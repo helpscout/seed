@@ -1,8 +1,7 @@
 {
   "name": "@seedcss/seed",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "A component-first CSS design system.",
   "scripts": {
     "stubpostinstall": "npm run bootstrap",
     "bootstrap": "lerna bootstrap",

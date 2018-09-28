@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-hr",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "HR component pack for Seed",
   "main": "index.js",
   "scripts": {
