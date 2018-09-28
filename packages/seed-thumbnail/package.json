@@ -59,5 +59,8 @@
     "seed-dash": "0.0.1",
     "seed-props": "^0.3.0",
     "seed-publish": "0.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

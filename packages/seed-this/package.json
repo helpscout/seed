@@ -45,5 +45,8 @@
     "mkdirp": "^0.5.1",
     "node-sass": "4.9.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
 }

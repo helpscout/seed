@@ -47,5 +47,8 @@
     "seed-dash": "0.0.1",
     "seed-publish": "0.0.4",
     "seed-thumbnail": "0.0.6"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

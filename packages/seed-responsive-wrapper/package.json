@@ -46,5 +46,8 @@
   },
   "dependencies": {
     "seed-publish": "0.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

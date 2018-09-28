@@ -57,5 +57,8 @@
     "seed-list": "0.0.15",
     "seed-publish": "0.1.1",
     "seed-this": "0.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -52,5 +52,8 @@
     "seed-input": "0.0.7",
     "seed-publish": "0.1.1",
     "seed-states": "0.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

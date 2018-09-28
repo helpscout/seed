@@ -56,5 +56,8 @@
     "sass-pathfinder": "0.0.5",
     "seed-props": "0.3.0",
     "seed-publish": "0.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -7,14 +7,13 @@ glob("packages/*/package.json", (err, files) => {
     const pkg = JSON.parse(fs.readFileSync(file))
 
     // Update it
-    const nextPkg = Object({}, pkg, {
+    const nextPkg = Object.assign({}, pkg, {
       publishConfig: {
         access: "public"
       }
     })
 
     // (Re)write it
-
-    fs.writeFileSync(file, JSON.stringify(nextPkg));
+    fs.writeFileSync(file, JSON.stringify(nextPkg, null, 2));
   })
 })

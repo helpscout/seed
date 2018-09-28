@@ -49,5 +49,8 @@
   },
   "dependencies": {
     "seed-props": "0.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

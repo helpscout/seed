@@ -47,5 +47,8 @@
     "seed-bootstrap-fade": "0.0.4",
     "seed-publish": "0.0.4",
     "seed-this": "0.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

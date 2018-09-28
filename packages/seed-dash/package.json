@@ -45,5 +45,8 @@
     "node-sass": "4.9.0",
     "seed-bistro": "0.2.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -48,5 +48,8 @@
     "seed-color-scheme": "0.0.2",
     "seed-color-scheme-helpscout": "0.0.3",
     "seed-dash": "0.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

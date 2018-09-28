@@ -61,5 +61,8 @@
     "node-sass": "4.9.0",
     "seed-barista": "1.0.3",
     "seed-bistro": "0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

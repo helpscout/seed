@@ -53,5 +53,8 @@
     "node-sass": "4.9.0",
     "nodemon": "1.17.5",
     "seed-bistro": "0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
