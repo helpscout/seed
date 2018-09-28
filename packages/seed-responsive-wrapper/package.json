@@ -1,5 +1,5 @@
 {
-  "name": "seed-responsive-wrapper",
+  "name": "@seedcss/seed-responsive-wrapper",
   "version": "0.0.2",
   "description": "Responsive wrapper object pack for Seed",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/helpscout/seed-responsive-wrapper.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

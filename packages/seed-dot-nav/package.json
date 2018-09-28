@@ -1,5 +1,5 @@
 {
-  "name": "seed-dot-nav",
+  "name": "@seedcss/seed-dot-nav",
   "version": "0.0.5",
   "description": "Dot navigation component pack for Seed",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "url": "git+https://github.com/helpscout/seed-dot-nav.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

@@ -1,5 +1,5 @@
 {
-  "name": "seed-flexy",
+  "name": "@seedcss/seed-flexy",
   "version": "0.3.4",
   "description": "Flex object pack for Seed",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "url": "git+https://github.com/helpscout/seed-flexy.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

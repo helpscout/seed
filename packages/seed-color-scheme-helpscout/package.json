@@ -1,5 +1,5 @@
 {
-  "name": "seed-color-scheme-helpscout",
+  "name": "@seedcss/seed-color-scheme-helpscout",
   "version": "0.0.3",
   "description": "Help Scout color scheme for Seed",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/helpscout/seed-color-scheme-helpscout.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

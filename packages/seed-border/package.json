@@ -1,5 +1,5 @@
 {
-  "name": "seed-border",
+  "name": "@seedcss/seed-border",
   "version": "0.0.10",
   "description": "Border theme pack for Seed",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/helpscout/seed-border.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "keywords": [

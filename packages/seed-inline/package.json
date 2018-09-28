@@ -1,5 +1,5 @@
 {
-  "name": "seed-inline",
+  "name": "@seedcss/seed-inline",
   "version": "0.1.0",
   "description": "Inline object pack for Seed",
   "main": "index.js",
@@ -24,7 +24,7 @@
     "url": "git+https://github.com/helpscout/seed-inline.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

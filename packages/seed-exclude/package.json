@@ -1,5 +1,5 @@
 {
-  "name": "seed-exclude",
+  "name": "@seedcss/seed-exclude",
   "version": "0.0.1",
   "description": "Mixin that excludes modules published with seed-publish",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/helpscout/seed-exclude.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

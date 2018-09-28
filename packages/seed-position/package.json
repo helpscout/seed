@@ -1,5 +1,5 @@
 {
-  "name": "seed-position",
+  "name": "@seedcss/seed-position",
   "version": "0.0.3",
   "description": "position utility pack for Seed",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/helpscout/seed-position.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

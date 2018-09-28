@@ -1,5 +1,5 @@
 {
-  "name": "seed-spacing",
+  "name": "@seedcss/seed-spacing",
   "version": "0.4.4",
   "description": "Spacing utility pack for Seed",
   "main": "index.js",
@@ -29,7 +29,7 @@
     "utility"
   ],
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

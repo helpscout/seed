@@ -1,5 +1,5 @@
 {
-  "name": "seed-card",
+  "name": "@seedcss/seed-card",
   "version": "0.1.0",
   "description": "Card component pack for Seed",
   "main": "index.js",
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/helpscout/seed-card.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "keywords": [

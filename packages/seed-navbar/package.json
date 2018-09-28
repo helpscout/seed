@@ -1,5 +1,5 @@
 {
-  "name": "seed-navbar",
+  "name": "@seedcss/seed-navbar",
   "version": "0.0.6",
   "description": "Navbar component pack for Seed",
   "main": "index.js",
@@ -29,7 +29,7 @@
     "url": ""
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "keywords": [

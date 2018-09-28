@@ -1,5 +1,5 @@
 {
-  "name": "seed-zi",
+  "name": "@seedcss/seed-zi",
   "version": "0.0.2",
   "description": "Z-index utility pack for Seed",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/helpscout/seed-zi.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

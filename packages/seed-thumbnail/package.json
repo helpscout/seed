@@ -1,5 +1,5 @@
 {
-  "name": "seed-thumbnail",
+  "name": "@seedcss/seed-thumbnail",
   "version": "0.0.9",
   "description": "Thumbnail component pack for Seed",
   "main": "index.js",
@@ -24,7 +24,7 @@
     "url": "git+https://github.com/helpscout/seed-thumbnail.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

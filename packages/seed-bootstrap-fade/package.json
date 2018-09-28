@@ -1,5 +1,5 @@
 {
-  "name": "seed-bootstrap-fade",
+  "name": "@seedcss/seed-bootstrap-fade",
   "version": "0.0.4",
   "description": "Bootstrap fade animation pack for Seed",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/helpscout/seed-bootstrap-fade.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

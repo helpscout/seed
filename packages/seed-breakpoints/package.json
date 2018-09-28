@@ -1,5 +1,5 @@
 {
-  "name": "seed-breakpoints",
+  "name": "@seedcss/seed-breakpoints",
   "version": "0.4.1",
   "description": "Breakpoints mixin pack for Seed",
   "main": "index.js",
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/helpscout/seed-breakpoints.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

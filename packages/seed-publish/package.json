@@ -1,5 +1,5 @@
 {
-  "name": "seed-publish",
+  "name": "@seedcss/seed-publish",
   "version": "0.2.0",
   "description": "Mixins that manage rendered CSS from modular importing",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/helpscout/seed-publish.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {

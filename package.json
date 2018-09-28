@@ -1,5 +1,5 @@
 {
-  "name": "seed.css",
+  "name": "@seedcss/seed",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,13 +12,13 @@
     "test": "lerna run test",
     "updated": "lerna updated || exit 0"
   },
-  "homepage": "https://github.com/helpscout/seed.css",
+  "homepage": "https://github.com/helpscout/seed",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed.css.git"
+    "url": "git+https://github.com/helpscout/seed.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "keywords": [

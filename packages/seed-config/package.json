@@ -1,5 +1,5 @@
 {
-  "name": "seed-config",
+  "name": "@seedcss/seed-config",
   "version": "0.1.1",
   "description": "Sass config pack",
   "main": "index.js",
@@ -22,7 +22,7 @@
     "url": "https://github.com/helpscout/seed-config.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "keywords": [

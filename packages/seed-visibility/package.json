@@ -1,5 +1,5 @@
 {
-  "name": "seed-visibility",
+  "name": "@seedcss/seed-visibility",
   "version": "0.2.4",
   "description": "Visibility utility pack for Seed",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/helpscout/seed-visibility.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "keywords": [
     "bem",

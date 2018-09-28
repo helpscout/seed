@@ -1,5 +1,5 @@
 {
-  "name": "seed-form-group",
+  "name": "@seedcss/seed-form-group",
   "version": "0.0.3",
   "description": "Form group component pack for Seed",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "url": "git+https://github.com/helpscout/seed-form-group.git"
   },
   "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
+    "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {
