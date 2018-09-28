@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-option-card",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Option card component pack for Seed",
   "main": "index.js",
   "scripts": {

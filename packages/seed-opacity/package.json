@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-opacity",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Opacity utility pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed-opacity",

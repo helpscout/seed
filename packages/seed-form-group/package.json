@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-form-group",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Form group component pack for Seed",
   "main": "index.js",
   "scripts": {

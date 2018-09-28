@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-tooltip",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Tooltip component pack for Seed",
   "main": "index.js",
   "scripts": {
