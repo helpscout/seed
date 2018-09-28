@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "description": "Color scheme system pack for Seed",
   "main": "index.js",
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed/",
   "file": [
     "scss",
     "index.js",
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-color-scheme.git"
+    "url": "git+https://github.com/helpscout/seed.git"
   },
   "authors": [
     "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-color-scheme/issues"
+    "url": "https://github.com/helpscout/seed/issues"
   },
   "keywords": [
     "bem",

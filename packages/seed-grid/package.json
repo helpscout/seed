@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "description": "Grid system pack for Seed",
   "main": "index.js",
-  "homepage": "https://github.com/helpscout/seed-grid",
+  "homepage": "https://github.com/helpscout/seed/",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner && npm run copy",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-grid.git"
+    "url": "git+https://github.com/helpscout/seed.git"
   },
   "authors": [
     "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-grid/issues"
+    "url": "https://github.com/helpscout/seed/issues"
   },
   "keywords": [
     "avatar",

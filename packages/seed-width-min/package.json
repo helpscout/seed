@@ -9,10 +9,10 @@
     "build:main": "node ./scripts/build.js",
     "test": "npm run build"
   },
-  "homepage": "https://github.com/helpscout/seed-width-min",
+  "homepage": "https://github.com/helpscout/seed/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-width-min.git"
+    "url": "git+https://github.com/helpscout/seed.git"
   },
   "authors": [
     "ItsJonQ <hello@jonquach.com>"
@@ -48,5 +48,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "prepublish": "npm run build"
+  "prepublish": "npm run build",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed/issues"
+  }
 }

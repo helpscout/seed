@@ -7,17 +7,17 @@
     "test:mocha": "mocha",
     "test": "npm run test:mocha"
   },
-  "homepage": "https://github.com/helpscout/seed-publish/",
+  "homepage": "https://github.com/helpscout/seed/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-publish.git"
+    "url": "git+https://github.com/helpscout/seed.git"
   },
   "authors": [
     "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-publish/issues"
+    "url": "https://github.com/helpscout/seed/issues"
   },
   "keywords": [
     "bem",

@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "description": "Visibility utility pack for Seed",
   "main": "index.js",
-  "homepage": "https://github.com/helpscout/seed-visibility",
+  "homepage": "https://github.com/helpscout/seed/",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-visibility.git"
+    "url": "git+https://github.com/helpscout/seed.git"
   },
   "authors": [
     "ItsJonQ <hello@jonquach.com>"
@@ -47,5 +47,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "prepublish": "npm run build"
+  "prepublish": "npm run build",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed/issues"
+  }
 }

@@ -10,17 +10,17 @@
     "copy": "cp ./dist/*.css ./example/dist/",
     "test": "npm run build"
   },
-  "homepage": "https://github.com/helpscout/seed-tooltip/",
+  "homepage": "https://github.com/helpscout/seed/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-tooltip.git"
+    "url": "git+https://github.com/helpscout/seed.git"
   },
   "authors": [
     "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-tooltip/issues"
+    "url": "https://github.com/helpscout/seed/issues"
   },
   "keywords": [
     "bem",

@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-badge.git"
+    "url": "git+https://github.com/helpscout/seed.git"
   },
   "authors": [
     "ItsJonQ <hello@jonquach.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-badge/issues"
+    "url": "https://github.com/helpscout/seed/issues"
   },
   "keywords": [
     "badge",
@@ -52,5 +52,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "prepublish": "npm run build"
+  "prepublish": "npm run build",
+  "homepage": "https://github.com/helpscout/seed/"
 }
