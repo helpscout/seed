@@ -1,18 +1,15 @@
 {
   "name": "@seedcss/seed",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "A component-first CSS design system.",
   "scripts": {
-    "stubpostinstall": "npm run bootstrap",
     "bootstrap": "lerna bootstrap --hoist",
     "build": "lerna run build",
     "clean": "lerna clean",
     "clean:lock": "find ./packages -type f -name \"package-lock.json\" -delete",
     "diff": "lerna diff",
-    "distclean": "lerna clean --yes && rm -rf node_modules",
     "release": "lerna publish",
     "test": "lerna run test",
-    "updated": "lerna updated || exit 0",
     "update:pkg": "node ./scripts/update-pkg.js"
   },
   "homepage": "https://github.com/helpscout/seed",

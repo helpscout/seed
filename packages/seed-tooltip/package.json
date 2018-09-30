@@ -36,9 +36,6 @@
     "scss",
     "tooltip"
   ],
-  "engines": {
-    "node": ">=4"
-  },
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
@@ -52,7 +49,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "prepublish": "npm run build",
-  "postversion": "npm run build",
-  "prepack": "npm run build"
+  "prepublish": "npm run build"
 }

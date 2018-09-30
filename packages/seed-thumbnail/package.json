@@ -44,9 +44,6 @@
     "scss",
     "thumbnail"
   ],
-  "engines": {
-    "node": ">=4"
-  },
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
@@ -63,7 +60,5 @@
     "access": "public"
   },
   "prepublish": "npm run build",
-  "homepage": "https://github.com/helpscout/seed/",
-  "postversion": "npm run build",
-  "prepack": "npm run build"
+  "homepage": "https://github.com/helpscout/seed/"
 }

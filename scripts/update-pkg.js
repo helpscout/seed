@@ -35,7 +35,7 @@ const updatePackage = file => {
   const nextPkg = compose(
     updatePackageDetails,
     updateSeedPackageDependencies,
-    updateSeedToolDependencies
+    updateSeedToolDependencies,
   )(pkg);
 
   updateReadme(file);
@@ -60,8 +60,16 @@ const updatePackageDetails = pkg => {
     }
   });
 
-  if (nextPkg.engine) {
-    delete nextPkg.engine;
+  // Clean
+
+  if (nextPkg.engines) {
+    delete nextPkg.engines;
+  }
+  if (nextPkg.prepack) {
+    delete nextPkg.prepack;
+  }
+  if (nextPkg.postversion) {
+    delete nextPkg.postversion;
   }
 
   return nextPkg;

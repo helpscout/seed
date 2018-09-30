@@ -45,9 +45,6 @@
     "seed-pack",
     "scss"
   ],
-  "engines": {
-    "node": ">=4"
-  },
   "dependencies": {
     "@seedcss/seed-button": "^0.0.6",
     "@seedcss/seed-dropdown": "^0.0.6",
@@ -67,7 +64,5 @@
   "prepublish": "npm run build",
   "bugs": {
     "url": "https://github.com/helpscout/seed/issues"
-  },
-  "postversion": "npm run build",
-  "prepack": "npm run build"
+  }
 }

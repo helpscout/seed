@@ -41,9 +41,6 @@
     "seed-pack",
     "variables"
   ],
-  "engines": {
-    "node": ">=4"
-  },
   "dependencies": {},
   "devDependencies": {
     "mkdirp": "^0.5.1",
@@ -58,7 +55,5 @@
   "prepublish": "npm run build",
   "bugs": {
     "url": "https://github.com/helpscout/seed/issues"
-  },
-  "postversion": "npm run build",
-  "prepack": "npm run build"
+  }
 }

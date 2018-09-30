@@ -32,9 +32,6 @@
     "scss",
     "width"
   ],
-  "engines": {
-    "node": ">=4"
-  },
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
@@ -50,7 +47,5 @@
   "prepublish": "npm run build",
   "bugs": {
     "url": "https://github.com/helpscout/seed/issues"
-  },
-  "postversion": "npm run build",
-  "prepack": "npm run build"
+  }
 }
