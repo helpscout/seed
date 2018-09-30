@@ -1,67 +1,60 @@
-# seed-dropdown [![Build Status](https://travis-ci.org/helpscout/seed-dropdown.svg?branch=master)](https://travis-ci.org/helpscout/seed-dropdown) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-dropdown.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-dropdown) [![dependencies Status](https://david-dm.org/helpscout/seed-dropdown/status.svg)](https://david-dm.org/helpscout/seed-dropdown)
+# seed-dropdown
 
-Dropdown component pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-dropdown.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-dropdown)
 
-JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
+> Dropdown component pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-dropdown --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-dropdown/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-dropdown');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-dropdown");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-dropdown* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-dropdown** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-dropdown/_index";
 ```
 
-### CSS
 
-The fully compiled CSS files can be found in the [dist](https://github.com/helpscout/seed-dropdown/tree/master/dist) directory of this repo.
-
-There are 2 different types of compiled `.css` files:
-
-**seed-dropdown.css**
-
-This includes **all** the CSS required to get the dropdown and all of it's parts working, which includes styles for other components (such as buttons).
-
-**seed-dropdown.only.css**
-
-This includes **only** the CSS required to style the dropdown.
 
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
-
 // Dropdown :: Config
 
 // Namespaces
@@ -138,4 +131,5 @@ $seed-dropdown-drop-directions: (
     right: 0
   ),
 ) !default;
+
 ```

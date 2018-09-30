@@ -1,8 +1,11 @@
-# seed-control [![Build Status](https://travis-ci.org/helpscout/seed-control.svg?branch=master)](https://travis-ci.org/helpscout/seed-control) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-control.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-control)
+# seed-control
 
-Control config pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-control.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-control)
+
+> Control config pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-control --save
 ```
@@ -11,41 +14,49 @@ npm install @seedcss/seed-control --save
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-control/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-control');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-control");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-control* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-control** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-control/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
-
 // Control :: Config
+
 $seed-control-size-default: 36px !default;
 
 $seed-control-sizes: (
@@ -65,4 +76,5 @@ $seed-control-sizes: (
     padding: 0 1.5em,
   ),
 ) !default;
+
 ```

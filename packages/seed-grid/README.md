@@ -1,81 +1,62 @@
-# seed-grid [![Build Status](https://travis-ci.org/helpscout/seed-grid.svg?branch=master)](https://travis-ci.org/helpscout/seed-grid) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-grid.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-grid) [![Dependencies](https://david-dm.org/helpscout/seed-grid.svg)](https://david-dm.org/helpscout/seed-grid)
-Grid system pack for [Seed](https://github.com/helpscout/seed)!
+# seed-grid
 
-You can use this with *any* project you'd like! (Seed not required).
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-grid.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-grid)
+
+> Grid system pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-grid --save
 ```
 
-
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-grid/)**.
-
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-grid/)**.
 
 ## Basic Usage
 
-### CSS
-Add the [seed-grid.css](https://github.com/helpscout/seed-grid/blob/master/dist/seed-grid.css) or [seed-grid.min.css](https://github.com/helpscout/seed-grid/blob/master/dist/seed-grid.min.css) to your project, and import it like so:
-
-```html
-<link rel="stylesheet" href="/css/seed-grid.css">
-```
-
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var seedGrid = require('seed-grid');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-grid");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: seedGrid
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-grid* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-grid** as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-grid/_index";
 ```
 
-**Note:** Because seed-grid has dependencies, its includePaths output will be an `array`. If you're including other paths in addition to seed-grid, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
 
-Example with *sass-pathfinder*:
-
-```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var seedGrid = require('seed-grid');
-var pathfinder = require('sass-pathfinder');
-
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pathfinder(
-        './scss/vendor/example',
-        './scss/plugins/super-awesome-plugin',
-        seedGrid
-      )
-    }))
-    .pipe(gulp.dest('./css'));
-});
-```
 
 ## Options
 
-The following variables can be found in [`_config.scss`](https://github.com/helpscout/seed-grid/blob/master/scss/pack/_config.scss)
+The following variables can be found in `_config.scss`
 
-```sass
+```scss
+// Seed Grid :: Config
+
 // Namespace
 $seed-grid-namespace-col: "o-col" !default;
 $seed-grid-namespace-container: "o-container" !default;
@@ -117,18 +98,6 @@ $seed-grid-gutter-offset-sizes: (
   sm: 4px,
   xs: 2px
 ) !default;
-```
 
-### Breakpoint options
-Grid pack uses the [Breakpoints mixin pack](https://github.com/helpscout/seed-breakpoints). You can modify your grid breakpoints by adjusting the `$seed-breakpoints` variable:
 
-```sass
-// Breakpoints
-$seed-breakpoints: (
-  xs: 0,
-  sm: 544px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
 ```

@@ -1,18 +1,18 @@
-# seed-centralize
+# <%= name %>
 
-[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-centralize.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-centralize)
+[![npm version](https://badge.fury.io/js/%40seedcss%2F<%= name %>.svg)](https://badge.fury.io/js/%40seedcss%2F<%= name %>)
 
-> Centralize utility pack for Seed
+> <%= description %>
 
 ## Install
 
 ```
-npm install @seedcss/seed-centralize --save
+npm install @seedcss/<%= name %> --save
 ```
 
 ## Documentation
 
-Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-centralize/)**.
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/<%= name %>/)**.
 
 ## Basic Usage
 
@@ -24,7 +24,7 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const pathfinder = require("sass-pathfinder");
-const pack = require("@seedcss/seed-centralize");
+const pack = require("<%= package %>");
 
 gulp.task("sass", function() {
   return gulp
@@ -41,22 +41,21 @@ gulp.task("sass", function() {
 });
 ```
 
-Once that is setup, simply `@import` **seed-centralize** as needed in your `.scss` file:
+Once that is setup, simply `@import` **<%= name %>** as needed in your `.scss` file:
 
 ```scss
 // Packs
-@import "pack/seed-centralize/_index";
+@import "pack/<%= name %>/_index";
 ```
 
-
+<% if (config) { %>
 
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
-// Centralize :: Config
-
-$seed-centralize-namespace: "u-centralize" !default;
-
+<%= config %>
 ```
+
+<% } %>

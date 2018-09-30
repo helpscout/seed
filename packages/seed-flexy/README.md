@@ -1,50 +1,62 @@
-# seed-flexy [![Build Status](https://travis-ci.org/helpscout/seed-flexy.svg?branch=master)](https://travis-ci.org/helpscout/seed-flexy) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-flexy.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-flexy) [![Dependencies](https://david-dm.org/helpscout/seed-flexy.svg)](https://david-dm.org/helpscout/seed-flexy)
+# seed-flexy
 
-Flex object pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-flexy.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-flexy)
+
+> Flex object pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-flexy --save
 ```
 
-
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-flexy/)**.
-
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-flexy/)**.
 
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-flexy');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-flexy");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-flexy* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-flexy** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-flexy/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
+// Flexy :: Config
+
 // Namespaces
 $seed-flexy-namespace: "o-flexy" !default;
 $seed-flexy-item-namespace: #{$seed-flexy-namespace}__item !default;
@@ -78,4 +90,5 @@ $seed-flexy-gap-sizes: (
   lg: 16px,
   xl: 20px,
 ) !default;
+
 ```

@@ -1,53 +1,53 @@
-# seed-card [![Build Status](https://travis-ci.org/helpscout/seed-card.svg?branch=master)](https://travis-ci.org/helpscout/seed-card) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-card.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-card) [![Dependency Status](https://david-dm.org/helpscout/seed-card.svg)](https://david-dm.org/helpscout/seed-card)
+# seed-card
 
-Card component pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-card.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-card)
 
+> Card component pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-card --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-card/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-card');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-card");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-card* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-card** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-card/_index";
 ```
 
-## Usage
-
-```html
-<div class="c-card">
-  ...
-</div>
-```
 
 
 ## Options
@@ -55,6 +55,8 @@ Once that is setup, simply `@import` *seed-card* as needed in your `.scss` file:
 The following variables can be found in `_config.scss`
 
 ```scss
+// Card :: Config
+
 // Dependencies
 @import "pack/seed-border/config";
 
@@ -72,4 +74,5 @@ $seed-card-block-sizes: (
   sm: 12px 20px,
   xs: 8px 20px,
 ) !default;
+
 ```

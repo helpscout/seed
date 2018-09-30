@@ -1,50 +1,62 @@
-# seed-spacing [![Build Status](https://travis-ci.org/helpscout/seed-spacing.svg?branch=master)](https://travis-ci.org/helpscout/seed-spacing) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-spacing.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-spacing) [![Dependency Status](https://david-dm.org/helpscout/seed-spacing.svg)](https://david-dm.org/helpscout/seed-spacing)
+# seed-spacing
 
-Spacing utility pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-spacing.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-spacing)
+
+> Spacing utility pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-spacing --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-spacing/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-spacing');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-spacing");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-spacing* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-spacing** as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-spacing/_index";
 ```
+
+
 
 ## Options
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
+// Spacing :: Config
+
 // Namespace
 $seed-spacing-margin-namespace: "u-mrg" !default;
 $seed-spacing-padding-namespace: "u-pad" !default;
@@ -74,6 +86,7 @@ $seed-spacing-directions: (
   bottom: "b",
   left:   "l",
   hor:    "h",
-  vert:   "v"
+  vert:   "v",
 ) !default;
+
 ```

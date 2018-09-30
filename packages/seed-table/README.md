@@ -1,50 +1,62 @@
-# seed-table [![Build Status](https://travis-ci.org/helpscout/seed-table.svg?branch=master)](https://travis-ci.org/helpscout/seed-table) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-table.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-table) [![dependencies Status](https://david-dm.org/helpscout/seed-table/status.svg)](https://david-dm.org/helpscout/seed-table)
+# seed-table
 
-Table component pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-table.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-table)
+
+> Table component pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-table --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-table/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-table');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-table");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-table* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-table** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-table/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
+// Table :: Config
+
 // Namespaces
 $seed-table-namespace: c-table !default;
 
@@ -60,4 +72,5 @@ $seed-table-padding-sizes: (
   sm: 8px,
   xs: 4px
 ) !default;
+
 ```

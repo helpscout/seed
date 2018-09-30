@@ -1,96 +1,62 @@
-# seed-color-scheme-helpscout [![Build Status](https://travis-ci.org/helpscout/seed-color-scheme-helpscout.svg?branch=master)](https://travis-ci.org/helpscout/seed-color-scheme-helpscout) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme-helpscout.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme-helpscout) [![Dependencies](https://david-dm.org/helpscout/seed-color-scheme-helpscout.svg)](https://david-dm.org/helpscout/seed-color-scheme-helpscout)
+# seed-color-scheme-helpscout
 
-Help Scout color scheme for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme-helpscout.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme-helpscout)
+
+> Help Scout color scheme for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-color-scheme-helpscout --save
 ```
 
 ## Documentation
-Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-color-scheme-helpscout/)**.
 
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-color-scheme-helpscout/)**.
 
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-color-scheme-helpscout');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-color-scheme-helpscout");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-**Note:** Because seed-color-scheme-helpscout has dependencies, its includePaths output will be an `array`. If you're including other paths in addition to seed-color-scheme-helpscout, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
+Once that is setup, simply `@import` **seed-color-scheme-helpscout** as needed in your `.scss` file:
 
-Example with *sass-pathfinder*:
-
-```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pathfinder(
-        './scss/vendor/example',
-        './scss/plugins/super-awesome-plugin',
-        require('@seedcss/seed-color-scheme'),
-        require('@seedcss/seed-color-scheme-helpscout')
-      )
-    }))
-    .pipe(gulp.dest('./css'));
-});
-```
-
-
-Once that is setup, simply `@import` *seed-color-scheme-helpscout* as needed in your `.scss` file:
-
-```sass
+```scss
 // Packs
 @import "pack/seed-color-scheme-helpscout/_index";
 ```
 
-
-## Usage
-
-After doing an `@import` of the Help Scout color scheme, use the `_color()` function (part of the [Seed Color function pack](https://github.com/helpscout/seed-color-fn/)) to reference a color:
-
-```scss
-// Input (main.scss)
-
-// Import the color scheme
-@import "pack/seed-color-scheme-helpscout/_index";
-// Use the color scheme
-.my-class {
-  color: _color(blue, 500);
-}
-```
-
-```scss
-// Output (main.css)
-
-.my-class {
-  color: #3197d6;
-}
-```
 
 
 ## Options
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
+// Help Scout color scheme config
+
 $seed-color-scheme-helpscout: (
   // Base
   white: #fff,
@@ -200,4 +166,5 @@ $seed-color-scheme-helpscout: (
     active: #b6b6b6
   )
 ) !default;
+
 ```

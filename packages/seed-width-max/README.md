@@ -1,49 +1,67 @@
-#seed-width-max [![Build Status](https://travis-ci.org/helpscout/seed-width-max.svg?branch=master)](https://travis-ci.org/helpscout/seed-width-max) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-width-max.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-width-max) [![Dependencies](https://david-dm.org/helpscout/seed-width-max.svg)](https://david-dm.org/helpscout/seed-width-max)
+# seed-width-max
 
-Max width extension pack for [seed-width](https://github.com/helpscout/seed-width)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-width-max.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-width-max)
+
+> width-max utility pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-width-max --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-width-max/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-width-max');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-width-max");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-width-max* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-width-max** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-width-max/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
+// width-max :: Config
+
+// Dependencies
+@import "pack/seed-breakpoints/_index";
+@import "pack/seed-width/config";
+
+// Namespace
 $seed-width-max-namespace: #{$seed-width-namespace}-max !default;
+
 ```

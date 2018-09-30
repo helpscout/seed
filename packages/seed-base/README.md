@@ -1,8 +1,11 @@
-# seed-base [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-base.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-base)
+# seed-base
 
-Base styles pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-base.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-base)
+
+> Base styles pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-base --save
 ```
@@ -11,39 +14,49 @@ npm install @seedcss/seed-base --save
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-base/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-base');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-base");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-base* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-base** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-base/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
+// Base :: Config
+
 // Config: Type
 $seed-base-margin-bottom: 16px !default;
 
@@ -73,4 +86,5 @@ $seed-base-code-padding: 0.16em 0.4em !default;
 
 // Config: Pre
 $seed-base-pre-color: #373a3c !default;
+
 ```

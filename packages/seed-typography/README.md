@@ -1,82 +1,62 @@
-# seed-typography [![Build Status](https://travis-ci.org/helpscout/seed-typography.svg?branch=master)](https://travis-ci.org/helpscout/seed-typography) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-typography.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-typography) [![Dependencies](https://david-dm.org/helpscout/seed-typography.svg)](https://david-dm.org/helpscout/seed-typography)
+# seed-typography
 
-Main typography pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-typography.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-typography)
 
+> Main typography pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-typography --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-typography/)**.
 
-
 ## Basic Usage
 
-### CSS
-Add the [seed-typography.css](https://github.com/helpscout/seed-typography/blob/master/dist/seed-typography.css) or [seed-typography.min.css](https://github.com/helpscout/seed-typography/blob/master/dist/seed-typography.min.css) to your project, and import it like so:
-
-```html
-<link rel="stylesheet" href="/css/seed-typography.css">
-```
-
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var seedTypography = require('seed-typography');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-typography");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: seedTypography
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-typography* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-typography** as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-typography/_index";
 ```
 
-**Note:** Because seed-typography has dependencies, its includePaths output will be an `array`. If you're including other paths in addition to seed-typography, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
-
-Example with *sass-pathfinder*:
-
-```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var seedTypography = require('seed-typography');
-var pathfinder = require('sass-pathfinder');
-
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pathfinder(
-        './scss/vendor/example',
-        './scss/plugins/super-awesome-plugin',
-        seedTypography
-      )
-    }))
-    .pipe(gulp.dest('./css'));
-});
-```
 
 
 ## Options
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
+// Typography :: Config
+
 // Namespaces
 $seed-typography-namespace: "tx" !default;
 $seed-typography-alignment-namespace: $seed-typography-namespace !default;
@@ -185,11 +165,5 @@ $seed-typography-wrap: (
   break: break-word,
   normal: normal
 ) !default;
+
 ```
-
-## Thanks
-
-##### July 17, 2016
-We've updated the default namespace of text classes from `t-` to `tx-`. Following the ITCSS convention, `t-` is [reserved for "theme" classes](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/).
-
-A *huge* thanks to [Alisdair](https://github.com/alisdair) for his collaboration in defining the `tx` prefix for text classes!

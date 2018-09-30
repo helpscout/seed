@@ -1,44 +1,54 @@
-# seed-pagination [![Build Status](https://travis-ci.org/helpscout/seed-pagination.svg?branch=master)](https://travis-ci.org/helpscout/seed-pagination) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-pagination.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-pagination) [![dependencies Status](https://david-dm.org/helpscout/seed-pagination/status.svg)](https://david-dm.org/helpscout/seed-pagination)
+# seed-pagination
 
-Pagination component pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-pagination.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-pagination)
+
+> Pagination component pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-pagination --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-pagination/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-pagination');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-pagination");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-pagination* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-pagination** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-pagination/_index";
 ```
+
+
 
 ## Options
 

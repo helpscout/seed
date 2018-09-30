@@ -1,10 +1,11 @@
-# seed-modal [![Build Status](https://travis-ci.org/helpscout/seed-modal.svg?branch=master)](https://travis-ci.org/helpscout/seed-modal) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-modal.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-modal) [![dependencies Status](https://david-dm.org/helpscout/seed-modal/status.svg)](https://david-dm.org/helpscout/seed-modal)
+# seed-modal
 
-Modal component pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-modal.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-modal)
 
-JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
+> Modal component pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-modal --save
 ```
@@ -13,39 +14,49 @@ npm install @seedcss/seed-modal --save
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-modal/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-modal');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-modal");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-modal* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-modal** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-modal/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
+// Modal :: Config
+
 // Namespaces
 $seed-modal-namespace: modal !default;
 $seed-modal-backdrop-namespace: modal-backdrop !default;
@@ -68,4 +79,5 @@ $seed-modal-dialog-sizes: (
   md: 600px,
   lg: 900px,
 ) !default;
+
 ```

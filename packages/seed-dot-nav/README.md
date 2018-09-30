@@ -1,50 +1,62 @@
-# seed-dot-nav [![Build Status](https://travis-ci.org/helpscout/seed-dot-nav.svg?branch=master)](https://travis-ci.org/helpscout/seed-dot-nav) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-dot-nav.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-dot-nav) [![dependencies Status](https://david-dm.org/helpscout/seed-dot-nav/status.svg)](https://david-dm.org/helpscout/seed-dot-nav)
+# seed-dot-nav
 
-Dot navigation component pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-dot-nav.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-dot-nav)
+
+> Dot navigation component pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-dot-nav --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-dot-nav/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-dot-nav');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-dot-nav");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-dot-nav* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-dot-nav** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-dot-nav/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
+// dot-nav :: Config
+
 // Namespace
 $seed-dot-nav-namespace: c-dot-nav !default;
 $seed-dot-nav-item-namespace: #{$seed-dot-nav-namespace}__item !default;
@@ -52,6 +64,7 @@ $seed-dot-nav-link-namespace: #{$seed-dot-nav-namespace}__link !default;
 
 // Configs
 $seed-dot-nav-item-spacing-multiplier: 3 !default;
+$seed-dot-nav-item-margin: 0 !default;
 $seed-dot-nav-link-focus-outline: none !default;
 $seed-dot-nav-dot-transition: background-color 0.2s ease !default;
 $seed-dot-nav-dot-size: 10px !default;
@@ -72,4 +85,5 @@ $seed-dot-nav-dot-sizes: (
   md: $seed-dot-nav-dot-size,
   sm: 8px,
 ) !default;
+
 ```

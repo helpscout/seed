@@ -1,50 +1,62 @@
-# seed-display [![Build Status](https://travis-ci.org/helpscout/seed-display.svg?branch=master)](https://travis-ci.org/helpscout/seed-display) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-display.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-display) [![Dependencies](https://david-dm.org/helpscout/seed-display.svg)](https://david-dm.org/helpscout/seed-display)
+# seed-display
 
-Display utility pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-display.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-display)
+
+> Display utility pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-display --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-display/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-display');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-display");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-display* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-display** as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-display/_index";
 ```
+
+
 
 ## Options
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
+// Display :: Config
+
 // Namespaces
 $seed-display-namespace: "u-d" !default;
 
@@ -57,4 +69,5 @@ $seed-display: (
   inline-block: inline-block,
   flex: flex,
 ) !default;
+
 ```

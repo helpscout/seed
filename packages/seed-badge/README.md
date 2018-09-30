@@ -1,50 +1,62 @@
-# seed-badge [![Build Status](https://travis-ci.org/helpscout/seed-badge.svg?branch=master)](https://travis-ci.org/helpscout/seed-badge) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-badge.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-badge) [![dependencies Status](https://david-dm.org/helpscout/seed-badge/status.svg)](https://david-dm.org/helpscout/seed-badge)
+# seed-badge
 
-Badge component pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-badge.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-badge)
+
+> Badge component pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-badge --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-badge/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-badge');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-badge");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-badge* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-badge** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-badge/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
+// Badge :: Config
+
 // Namespace
 $seed-badge-namespace: "c-badge" !default;
 
@@ -73,4 +85,5 @@ $seed-badge-padding: 4px 5px !default;
 // }
 $seed-badge-enable-state-prefix: true !default;
 $seed-badge-state-prefix: "is" !default;
+
 ```

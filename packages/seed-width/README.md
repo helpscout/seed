@@ -1,73 +1,62 @@
-# seed-width [![Build Status](https://travis-ci.org/helpscout/seed-width.svg?branch=master)](https://travis-ci.org/helpscout/seed-width) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-width.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-width) [![Dependency Status](https://david-dm.org/helpscout/seed-width.svg)](https://david-dm.org/helpscout/seed-width)
-Width utility pack for [Seed](https://github.com/helpscout/seed)!
+# seed-width
 
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-width.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-width)
+
+> Width utility pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-width --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-width/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var seedWidth = require('seed-width');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-width");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: seedWidth
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-width* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-width** as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-width/_index";
 ```
 
-**Note:** Because seed-width has dependencies, it's includePaths output will be an `array`. If you're including other paths in addition to seed-width, you will need to flatten the array. An easy way to do this is to use [sass-pathfinder](https://github.com/itsjonq/sass-pathfinder).
-
-Example with *sass-pathfinder*:
-
-```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var seedWidth = require('seed-width');
-var pathfinder = require('sass-pathfinder');
-
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pathfinder(
-        './scss/vendor/example',
-        './scss/plugins/super-awesome-plugin',
-        seedWidth
-      )
-    }))
-    .pipe(gulp.dest('./css'));
-});
-```
 
 
 ## Options
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
+// Width :: Config
+
 // Namespace
 $seed-width-namespace: "u-width" !default;
 
@@ -87,4 +76,5 @@ $seed-widths: (
   11: 91.66667%,
   12: 100%,
 ) !default;
+
 ```

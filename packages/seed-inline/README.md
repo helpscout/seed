@@ -1,50 +1,62 @@
-# seed-inline [![Build Status](https://travis-ci.org/helpscout/seed-inline.svg?branch=master)](https://travis-ci.org/helpscout/seed-inline) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-color-scheme) [![Dependency Status](https://david-dm.org/helpscout/seed-inline.svg)](https://david-dm.org/helpscout/seed-inline)
+# seed-inline
 
-Inline object pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-inline.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-inline)
+
+> Inline object pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-inline --save
 ```
 
-
 ## Documentation
 
-Check out our styleguide for **[documentation of this pack](http://style.helpscout.com/seed/packs/seed-inline/)**.
-
+Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-inline/)**.
 
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-inline');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-inline");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-inline* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-inline** as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-inline/_index";
 ```
+
+
 
 ## Options
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
+// Seed inline :: Config
+
 // Namespaces
 $seed-inline-namespace: o-inline !default;
 $seed-inline-item-namespace: #{$seed-inline-namespace}__item !default;
@@ -59,4 +71,5 @@ $seed-inline-sizes: (
   md: 16px,
   lg: 24px,
 ) !default;
+
 ```

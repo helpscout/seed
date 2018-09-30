@@ -1,8 +1,11 @@
-# seed-video [![Build Status](https://travis-ci.org/helpscout/seed-video.svg?branch=master)](https://travis-ci.org/helpscout/seed-video) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-video.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-video)
+# seed-video
 
-Responsive video component pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-video.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-video)
+
+> Reponsive video component pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-video --save
 ```
@@ -11,39 +14,49 @@ npm install @seedcss/seed-video --save
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-video/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-video');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-video");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-video* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-video** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-video/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
+// Video :: Config
+
 // Namespaces
 $seed-video-namespace: "c-video" !default;
 $seed-video-embed-namespace: "#{$seed-video-namespace}__embed" !default;
@@ -70,4 +83,5 @@ $seed-video-sizes: (
     height: 3
   )
 ) !default;
+
 ```

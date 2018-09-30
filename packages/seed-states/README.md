@@ -1,8 +1,11 @@
-# seed-states [![Build Status](https://travis-ci.org/helpscout/seed-states.svg?branch=master)](https://travis-ci.org/helpscout/seed-states) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-states.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-states)
+# seed-states
 
-States config pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-states.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-states)
+
+> States config pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-states --save
 ```
@@ -11,39 +14,49 @@ npm install @seedcss/seed-states --save
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-states/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-states');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-states");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-states* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-states** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-states/_index";
 ```
 
+
+
 ## Options
 
 The following variables can be found in `_config.scss`
 
 ```scss
+// States :: Config
+
 // Dependencies
 @import "pack/seed-color-scheme/_index";
 @import "pack/seed-color-scheme-helpscout/_index";
@@ -77,4 +90,5 @@ $seed-states-colors: (
     color: _color(yellow, 800)
   ),
 ) !default;
+
 ```

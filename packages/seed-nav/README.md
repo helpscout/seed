@@ -1,44 +1,54 @@
-# seed-nav [![Build Status](https://travis-ci.org/helpscout/seed-nav.svg?branch=master)](https://travis-ci.org/helpscout/seed-nav) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-nav.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-nav)
+# seed-nav
 
-Nav component pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-nav.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-nav)
+
+> Nav component pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-nav --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-nav/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-nav');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-nav");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-nav* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-nav** as needed in your `.scss` file:
 
 ```scss
 // Packs
 @import "pack/seed-nav/_index";
 ```
+
+
 
 ## Options
 
@@ -96,4 +106,5 @@ $seed-nav-item-alignment: (
   left: margin-right,
   right: margin-left,
 ) !default;
+
 ```

@@ -1,51 +1,62 @@
-# seed-border [![Build Status](https://travis-ci.org/helpscout/seed-border.svg?branch=master)](https://travis-ci.org/helpscout/seed-border) [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-border.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-border)
+# seed-border
 
-Border theme pack for [Seed](https://github.com/helpscout/seed)!
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-border.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-border)
 
+> Border theme pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-border --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-border/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-border');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-border");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-border* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-border** as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-border/_index";
 ```
+
+
 
 ## Options
 
 The following variables can be found in `_config.scss`
 
-```sass
+```scss
+// Border :: Config
+
 // Namespaces
 $seed-border-namespace: "t-bdr" !default;
 $seed-border-radius-namespace: "#{$seed-border-namespace}-r" !default;
@@ -81,4 +92,5 @@ $seed-border-radius-sizes: (
 
 // Base variable
 $seed-border: $seed-border-size $seed-border-style $seed-border-color !default;
+
 ```

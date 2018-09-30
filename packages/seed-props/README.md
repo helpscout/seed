@@ -1,101 +1,62 @@
-# seed-props [![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-props.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-props)
-Props mixin pack for [Seed](https://github.com/helpscout/seed)!
+# seed-props
+
+[![npm version](https://badge.fury.io/js/%40seedcss%2Fseed-props.svg)](https://badge.fury.io/js/%40seedcss%2Fseed-props)
+
+> Props mixin pack for Seed
 
 ## Install
+
 ```
 npm install @seedcss/seed-props --save
 ```
-
 
 ## Documentation
 
 Check out our **[documentation of this pack](http://developer.helpscout.net/seed/packs/seed-props/)**.
 
-
 ## Basic Usage
 
 ### SCSS
+
 This seed pack needs to be imported into your sass pipeline. Below is an example using Gulp:
 
-
 ```javascript
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pack = require('seed-props');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const pathfinder = require("sass-pathfinder");
+const pack = require("@seedcss/seed-props");
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: pack
-    }))
-    .pipe(gulp.dest('./css'));
+gulp.task("sass", function() {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: pathfinder(
+          // Other includePaths...
+          pack
+        )
+      })
+    )
+    .pipe(gulp.dest("./css"));
 });
 ```
 
-Once that is setup, simply `@import` *seed-props* as needed in your `.scss` file:
+Once that is setup, simply `@import` **seed-props** as needed in your `.scss` file:
 
-```sass
+```scss
 // Packs
 @import "pack/seed-props/_index";
 ```
 
-## Usage
 
-### prop-map
-The `prop-map` mixin allows you to loop through a map and use arguments as variables in your styles (`@content`).
-You have to use the `prop` function for your `@content` to utilize the argument defined in your `prop-map`.
 
-#### Simple
-```sass
-// Input (scss)
-$grid-columns: (
-  1: 10%,
-  2: 20%
-);
+## Options
 
-.col- {
-  @include prop-map($grid-columns, (width)) {
-    width: prop(width);
-  }
-}
+The following variables can be found in `_config.scss`
 
-// Output (css)
-.col-1 {
-  width: 10%; }
+```scss
+// Props :: Config
 
-.col-2 {
-  width: 20%; }
+$SEED_PROPS_MAP__GLOBAL: null !global;
+
 ```
-
-#### Slightly trickier (aka. Awesome)
-Yo dawg. I heard you like using maps within maps. `prop-map` will be able to handle that!
-
-```sass
-// Input (scss)
-$btn-states: (
-  success: (
-    background: green,
-    border-color: green),
-  danger: (
-    background: red,
-    border-color: red)
-);
-
-.btn {
-  @include prop-map($btn-states, (background, border-color)) {
-    background: prop(background);
-    border-color: prop(border-color);
-  }
-}
-
-// Output (css)
-.btn-success {
-  background: green;
-  border-color: green; }
-
-.btn-danger {
-  background: red;
-  border-color: red; }
-```
-
-P.S. For maps within maps, the arguments are based on *name* (not the argument order).
