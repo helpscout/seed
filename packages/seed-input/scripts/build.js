@@ -8,10 +8,10 @@ var sass = require('node-sass');
 
 const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
-  require('seed-border'),
-  require('seed-control'),
-  require('seed-publish'),
-  require('seed-states')
+  require('@seedcss/seed-border'),
+  require('@seedcss/seed-control'),
+  require('@seedcss/seed-publish'),
+  require('@seedcss/seed-states')
 );
 
 // Default .css compile

@@ -2,8 +2,8 @@ var path = require('path');
 var pathfinder = require('sass-pathfinder');
 
 var files = pathfinder([
-  require('seed-breakpoints'),
-  require('seed-publish'),
+  require('@seedcss/seed-breakpoints'),
+  require('@seedcss/seed-publish'),
   path.join(__dirname, 'scss'),
 ]);
 

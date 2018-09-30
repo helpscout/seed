@@ -48,11 +48,10 @@
     "sass-pathfinder": "0.0.5"
   },
   "devDependencies": {
-    "hoek": "5.0.3",
-    "mkdirp": "0.5.1",
-    "node-sass": "4.9.0",
-    "nodemon": "1.17.5",
-    "seed-bistro": "0.2.0"
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "seed-bistro": "^0.2.0"
   },
   "publishConfig": {
     "access": "public"

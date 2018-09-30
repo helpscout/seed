@@ -6,7 +6,7 @@ var pathfinder = require('./pathfinder');
 
 const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
-  require('seed-props')
+  require('@seedcss/seed-props')
 );
 
 sass.render({

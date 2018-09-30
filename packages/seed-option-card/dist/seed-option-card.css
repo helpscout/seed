@@ -24,6 +24,39 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
 
+.c-card__block {
+  box-sizing: border-box;
+  padding: 20px 20px; }
+  .c-card__block + .c-card__block {
+    border-top: 1px solid #eee; }
+  .c-card__block--md {
+    padding: 20px 20px; }
+  .c-card__block--sm {
+    padding: 12px 20px; }
+  .c-card__block--xs {
+    padding: 8px 20px; }
+  @media (min-width: 544px) {
+    .c-card__block--md\@sm {
+      padding: 20px 20px; }
+    .c-card__block--sm\@sm {
+      padding: 12px 20px; }
+    .c-card__block--xs\@sm {
+      padding: 8px 20px; } }
+  @media (min-width: 768px) {
+    .c-card__block--md\@md {
+      padding: 20px 20px; }
+    .c-card__block--sm\@md {
+      padding: 12px 20px; }
+    .c-card__block--xs\@md {
+      padding: 8px 20px; } }
+  @media (min-width: 992px) {
+    .c-card__block--md\@lg {
+      padding: 20px 20px; }
+    .c-card__block--sm\@lg {
+      padding: 12px 20px; }
+    .c-card__block--xs\@lg {
+      padding: 8px 20px; } }
+
 .c-option-card {
   cursor: pointer;
   position: relative; }

@@ -45,8 +45,8 @@ gulp.task('sass', function () {
       includePaths: pathfinder(
         './scss/vendor/example',
         './scss/plugins/super-awesome-plugin',
-        require('seed-color-scheme'),
-        require('seed-color-scheme-helpscout')
+        require('@seedcss/seed-color-scheme'),
+        require('@seedcss/seed-color-scheme-helpscout')
       )
     }))
     .pipe(gulp.dest('./css'));

@@ -8,9 +8,9 @@ var sass = require('node-sass');
 
 const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
-  require('seed-bootstrap-fade'),
-  require('seed-publish'),
-  require('seed-this')
+  require('@seedcss/seed-bootstrap-fade'),
+  require('@seedcss/seed-publish'),
+  require('@seedcss/seed-this')
 );
 
 

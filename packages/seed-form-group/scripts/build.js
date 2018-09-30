@@ -8,9 +8,9 @@ var sass = require('node-sass');
 
 const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
-  require('seed-input'),
-  require('seed-states'),
-  require('seed-publish')
+  require('@seedcss/seed-input'),
+  require('@seedcss/seed-states'),
+  require('@seedcss/seed-publish')
 );
 
 sass.render({

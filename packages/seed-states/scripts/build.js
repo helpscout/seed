@@ -8,9 +8,9 @@ var sass = require('node-sass');
 
 const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
-  require('seed-color-scheme'),
-  require('seed-color-scheme-helpscout'),
-  require('seed-dash')
+  require('@seedcss/seed-color-scheme'),
+  require('@seedcss/seed-color-scheme-helpscout'),
+  require('@seedcss/seed-dash')
 );
 
 // Default .css compile

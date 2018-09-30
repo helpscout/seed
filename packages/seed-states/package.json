@@ -39,15 +39,14 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "hoek": "5.0.3",
     "mkdirp": "^0.5.1",
-    "node-sass": "4.9.0"
+    "node-sass": "^4.9.3"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
-    "seed-color-scheme": "0.0.2",
-    "seed-color-scheme-helpscout": "0.0.3",
-    "seed-dash": "0.0.1"
+    "@seedcss/seed-color-scheme": "^0.0.5",
+    "@seedcss/seed-color-scheme-helpscout": "^0.0.5",
+    "@seedcss/seed-dash": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

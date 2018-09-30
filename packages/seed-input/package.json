@@ -42,19 +42,18 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "hoek": "5.0.3",
     "mkdirp": "^0.5.1",
-    "node-sass": "4.9.0",
+    "node-sass": "^4.9.3",
     "sass-pathfinder": "0.0.5",
-    "seed-bistro": "0.2.0"
+    "seed-bistro": "^0.2.0"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
-    "seed-border": "0.0.10",
-    "seed-control": "0.0.4",
-    "seed-dash": "0.0.1",
-    "seed-publish": "0.1.1",
-    "seed-states": "0.0.4"
+    "@seedcss/seed-border": "^0.0.5",
+    "@seedcss/seed-control": "^0.0.5",
+    "@seedcss/seed-dash": "^0.0.5",
+    "@seedcss/seed-publish": "^0.0.5",
+    "@seedcss/seed-states": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

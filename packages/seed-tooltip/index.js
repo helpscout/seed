@@ -2,9 +2,9 @@ var path = require('path');
 var pathfinder = require('./scripts/pathfinder');
 
 var files = pathfinder(
-  require('seed-bootstrap-fade'),
-  require('seed-publish'),
-  require('seed-this'),
+  require('@seedcss/seed-bootstrap-fade'),
+  require('@seedcss/seed-publish'),
+  require('@seedcss/seed-this'),
   path.join(__dirname, 'scss')
 );
 

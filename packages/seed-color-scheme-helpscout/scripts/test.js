@@ -6,7 +6,7 @@ var pathfinder = require('./pathfinder');
 
 const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
-  require('seed-color-scheme')
+  require('@seedcss/seed-color-scheme')
 );
 
 sass.render({

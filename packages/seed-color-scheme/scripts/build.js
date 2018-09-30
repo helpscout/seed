@@ -8,7 +8,7 @@ var sass = require('node-sass');
 
 const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
-  require('seed-config')
+  require('@seedcss/seed-config')
 );
 
 // Default .css compile

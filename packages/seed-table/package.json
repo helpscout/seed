@@ -41,13 +41,13 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "4.9.0"
+    "node-sass": "^4.9.3"
   },
   "dependencies": {
-    "seed-dash": "0.0.1",
-    "seed-publish": "0.0.4",
-    "seed-states": "0.0.4",
-    "seed-this": "0.0.4"
+    "@seedcss/seed-dash": "^0.0.5",
+    "@seedcss/seed-publish": "^0.0.5",
+    "@seedcss/seed-states": "^0.0.5",
+    "@seedcss/seed-this": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

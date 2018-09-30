@@ -60,15 +60,18 @@ const updatePackageDetails = (pkg) => {
 const updateSeedPackageDependencies = (pkg) => {
   const nextPkg = Object.assign({}, pkg)
   const deps = nextPkg.dependencies
-  const devDeps = nextPkg.devDependencies
 
   if (deps) {
     Object.keys(deps).forEach((key) => {
       if (key.indexOf('seed-') === 0) {
         // Rename the dependency
-        key[`@seedcss/${key}`] = pkg.version
+        deps[`@seedcss/${key}`] = `^${pkg.version}`
         // Remove the old one
         delete deps[key]
+      }
+      if (key.indexOf('@seedcss/seed-') === 0) {
+        // Update the dependency version
+        deps[key] = `^${pkg.version}`
       }
     })
   }
@@ -78,19 +81,27 @@ const updateSeedPackageDependencies = (pkg) => {
 
 const updateSeedToolDependencies = (pkg) => {
   const nextPkg = Object.assign({}, pkg)
-  const deps = nextPkg.dependencies
-  const devDeps = nextPkg.devDependencies
+  const deps = nextPkg.devDependencies
 
-  if (devDeps) {
-    Object.keys(devDeps).forEach(key => {
+  if (deps) {
+    Object.keys(deps).forEach(key => {
       if (key === 'seed-barista') {
-        devDeps[key] = '^1.1.0'
+        deps[key] = '^1.1.0'
       }
       if (key === 'seed-bistro') {
-        devDeps[key] = '^0.2.0'
+        deps[key] = '^0.2.0'
+      }
+      if (key === 'mkdirp') {
+        deps[key] = '^0.5.1'
+      }
+      if (key === 'nodemon') {
+        deps[key] = '^1.18.4'
+      }
+      if (key === 'node-sass') {
+        deps[key] = '^4.9.3'
       }
       if (key === 'hoek') {
-        delete devDeps[key]
+        delete deps[key]
       }
     })
   }

@@ -2,16 +2,16 @@ var path = require('path');
 var pathfinder = require('sass-pathfinder');
 
 var files = pathfinder(
-  require('seed-breakpoints'),
-  require('seed-border'),
-  require('seed-button'),
-  require('seed-card'),
-  require('seed-control-group'),
-  require('seed-dash'),
-  require('seed-family'),
-  require('seed-list'),
-  require('seed-publish'),
-  require('seed-this'),
+  require('@seedcss/seed-breakpoints'),
+  require('@seedcss/seed-border'),
+  require('@seedcss/seed-button'),
+  require('@seedcss/seed-card'),
+  require('@seedcss/seed-control-group'),
+  require('@seedcss/seed-dash'),
+  require('@seedcss/seed-family'),
+  require('@seedcss/seed-list'),
+  require('@seedcss/seed-publish'),
+  require('@seedcss/seed-this'),
   path.join(__dirname, 'scss')
 );
 

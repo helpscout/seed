@@ -2,11 +2,11 @@ var path = require('path');
 var pathfinder = require('sass-pathfinder');
 
 var files = pathfinder(
-  require('seed-badge'),
-  require('seed-button'),
-  require('seed-dash'),
-  require('seed-publish'),
-  require('seed-states'),
+  require('@seedcss/seed-badge'),
+  require('@seedcss/seed-button'),
+  require('@seedcss/seed-dash'),
+  require('@seedcss/seed-publish'),
+  require('@seedcss/seed-states'),
   path.join(__dirname, 'scss')
 );
 
