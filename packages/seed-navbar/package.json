@@ -52,14 +52,14 @@
     "@seedcss/seed-button": "^0.0.6",
     "@seedcss/seed-dropdown": "^0.0.6",
     "@seedcss/seed-nav": "^0.0.6",
-    "@seedcss/seed-publish": "^0.0.6",
-    "sass-pathfinder": "0.0.5"
+    "@seedcss/seed-publish": "^0.0.6"
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
     "seed-barista": "^1.1.0",
-    "seed-bistro": "^0.2.0"
+    "seed-bistro": "^0.2.0",
+    "sass-pathfinder": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

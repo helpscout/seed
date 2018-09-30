@@ -83,6 +83,10 @@ const updateSeedPackageDependencies = pkg => {
         // Update the dependency version
         deps[key] = `^${pkg.version}`;
       }
+
+      if (key === "sass-pathfinder") {
+        delete deps[key];
+      }
     });
   }
 
@@ -113,6 +117,7 @@ const updateSeedToolDependencies = pkg => {
       if (key === "hoek") {
         delete deps[key];
       }
+      deps["sass-pathfinder"] = "^0.0.5"
     });
   }
 

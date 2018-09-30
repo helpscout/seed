@@ -43,7 +43,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
-    "seed-bistro": "^0.2.0"
+    "seed-bistro": "^0.2.0",
+    "sass-pathfinder": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

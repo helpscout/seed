@@ -38,14 +38,14 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "sass-pathfinder": "^0.0.5"
   },
   "dependencies": {
     "@seedcss/seed-breakpoints": "^0.0.6",
     "@seedcss/seed-dash": "^0.0.6",
     "@seedcss/seed-publish": "^0.0.6",
-    "@seedcss/seed-thumbnail": "^0.0.6",
-    "sass-pathfinder": "0.0.5"
+    "@seedcss/seed-thumbnail": "^0.0.6"
   },
   "publishConfig": {
     "access": "public"

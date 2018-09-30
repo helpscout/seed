@@ -41,7 +41,8 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "sass-pathfinder": "^0.0.5"
   },
   "dependencies": {
     "@seedcss/seed-color-scheme": "^0.0.6"
