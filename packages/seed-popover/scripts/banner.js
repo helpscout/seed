@@ -11,7 +11,7 @@ var homepage = function() {
 };
 
 var banner = ['/**',
-  ' * '+ pkg.name +' v'+ pkg.version + homepage(),
+  ' * '+ pkg.name + homepage(),
   ' * '+ pkg.description,
   ' * Licensed under '+ pkg.license,
   ' */',
