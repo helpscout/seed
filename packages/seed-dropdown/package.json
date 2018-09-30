@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-dropdown",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Dropdown component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -45,17 +45,17 @@
     "node-sass": "^4.9.3"
   },
   "dependencies": {
-    "sass-pathfinder": "0.0.5",
-    "@seedcss/seed-border": "^0.0.5",
-    "@seedcss/seed-breakpoints": "^0.0.5",
-    "@seedcss/seed-button": "^0.0.5",
-    "@seedcss/seed-card": "^0.0.5",
-    "@seedcss/seed-control-group": "^0.0.5",
-    "@seedcss/seed-dash": "^0.0.5",
-    "@seedcss/seed-family": "^0.0.5",
-    "@seedcss/seed-list": "^0.0.5",
-    "@seedcss/seed-publish": "^0.0.5",
-    "@seedcss/seed-this": "^0.0.5"
+    "@seedcss/seed-border": "^0.0.6",
+    "@seedcss/seed-breakpoints": "^0.0.6",
+    "@seedcss/seed-button": "^0.0.6",
+    "@seedcss/seed-card": "^0.0.6",
+    "@seedcss/seed-control-group": "^0.0.6",
+    "@seedcss/seed-dash": "^0.0.6",
+    "@seedcss/seed-family": "^0.0.6",
+    "@seedcss/seed-list": "^0.0.6",
+    "@seedcss/seed-publish": "^0.0.6",
+    "@seedcss/seed-this": "^0.0.6",
+    "sass-pathfinder": "0.0.5"
   },
   "publishConfig": {
     "access": "public"

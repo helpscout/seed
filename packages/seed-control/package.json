@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-control",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Control config pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -43,8 +43,8 @@
     "node-sass": "^4.9.3"
   },
   "dependencies": {
-    "sass-pathfinder": "0.0.5",
-    "@seedcss/seed-dash": "^0.0.5"
+    "@seedcss/seed-dash": "^0.0.6",
+    "sass-pathfinder": "0.0.5"
   },
   "publishConfig": {
     "access": "public"

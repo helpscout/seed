@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-nav",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Nav component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -46,10 +46,10 @@
     "seed-bistro": "^0.2.0"
   },
   "dependencies": {
-    "sass-pathfinder": "0.0.5",
-    "@seedcss/seed-border": "^0.0.5",
-    "@seedcss/seed-breakpoints": "^0.0.5",
-    "@seedcss/seed-publish": "^0.0.5"
+    "@seedcss/seed-border": "^0.0.6",
+    "@seedcss/seed-breakpoints": "^0.0.6",
+    "@seedcss/seed-publish": "^0.0.6",
+    "sass-pathfinder": "0.0.5"
   },
   "publishConfig": {
     "access": "public"

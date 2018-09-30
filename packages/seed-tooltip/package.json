@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-tooltip",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Tooltip component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -44,9 +44,9 @@
     "node-sass": "^4.9.3"
   },
   "dependencies": {
-    "@seedcss/seed-bootstrap-fade": "^0.0.5",
-    "@seedcss/seed-publish": "^0.0.5",
-    "@seedcss/seed-this": "^0.0.5"
+    "@seedcss/seed-bootstrap-fade": "^0.0.6",
+    "@seedcss/seed-publish": "^0.0.6",
+    "@seedcss/seed-this": "^0.0.6"
   },
   "publishConfig": {
     "access": "public"

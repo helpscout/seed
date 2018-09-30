@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-hr",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "HR component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -42,7 +42,7 @@
     "node-sass": "^4.9.3"
   },
   "dependencies": {
-    "@seedcss/seed-publish": "^0.0.5"
+    "@seedcss/seed-publish": "^0.0.6"
   },
   "publishConfig": {
     "access": "public"
