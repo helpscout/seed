@@ -10,6 +10,7 @@ const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
   require('@seedcss/seed-breakpoints'),
   require('@seedcss/seed-button'),
+  require('@seedcss/seed-color-scheme'),
   require('@seedcss/seed-dash'),
   require('@seedcss/seed-publish')
 );

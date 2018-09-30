@@ -45,6 +45,8 @@ Once that is setup, simply `@import` *seed-pagination* as needed in your `.scss`
 The following variables can be found in `_config.scss`
 
 ```scss
+// Pagination :: Config
+
 // Dependencies
 @import "pack/seed-button/config";
 @import "pack/seed-dash/_index";
@@ -59,7 +61,7 @@ $seed-pagination-border-radius: $seed-button-border-radius !default;
 $seed-pagination-padding: 0 0.75em !default;
 // $seed-button-color config:
 // https://github.com/helpscout/seed-button#options
-$seed-pagination-link-color: _extend($seed-button-color, (
+$seed-pagination-link-color: _extend(_color(button, default), (
   background: (
     default: #fff,
     hover: #f9f9f9,
@@ -90,4 +92,5 @@ $seed-pagination-alignment: (
   center: center,
   right: flex-end,
 ) !default;
+
 ```
