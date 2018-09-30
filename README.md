@@ -50,7 +50,7 @@ npm run build
 To publish to npm, run the following command and walk through the CLI steps:
 
 ```
-npm run publish
+npm run release
 ```
 
 
