@@ -2,7 +2,7 @@ var fs = require('fs');
 var pkg = require('../package.json');
 
 var banner = ['/**',
-  ' * '+ pkg.name +' v'+ pkg.version +' ('+ pkg.homepage +')',
+  ' * '+ pkg.name +' ('+ pkg.homepage +')',
   ' * '+ pkg.description,
   ' * Licensed under '+ pkg.license,
   ' */',
