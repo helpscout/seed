@@ -76,7 +76,7 @@ The following variables can be found in `_config.scss`
     // Primary
     blue: (
       default: #22A1F0,
-      50: #D3ECFC;
+      50: #D3ECFC,
       100: #A7D9F9,
       200: #7AC7F6,
       300: #4EB4F3,

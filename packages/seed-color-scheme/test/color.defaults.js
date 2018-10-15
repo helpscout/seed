@@ -1,12 +1,12 @@
 // Test :: Mixin/Function :: Color
 /* globals describe: true, it: true */
-'use strict';
+"use strict";
 
-var expect = require('chai').expect;
-var styles = require('./helper.styles');
+var expect = require("chai").expect;
+var styles = require("./helper.styles");
 
-describe('mixin: default values', function() {
-  it('should have default colors for all the main colors', function() {
+describe("mixin: default values", function() {
+  it("should have default colors for all the main colors", function() {
     var output = styles(`
       .blue {
         color: _color(blue);
@@ -14,44 +14,85 @@ describe('mixin: default values', function() {
       .charcoal {
         color: _color(charcoal);
       }
-      .grey {
-        color: _color(grey);
+      .ash {
+        color: _color(ash);
       }
-      .yellow {
-        color: _color(yellow);
+      .gold {
+        color: _color(gold);
       }
       .green {
         color: _color(green);
       }
-      .red {
-        color: _color(red);
+      .pink {
+        color: _color(pink);
       }
-      .purple {
-        color: _color(purple);
+      .lavender {
+        color: _color(lavender);
       }
-      .orange {
-        color: _color(orange);
+      .indigo {
+        color: _color(indigo);
       }
     `);
 
     const colors = {
-      blue: '#3197D6',
-      charcoal: '#394956',
-      grey: '#D6DDE3',
-      yellow: '#FFC646',
-      green: '#4BC27D',
-      red: '#E52F28',
-      purple: '#7E80E7',
-      orange: '#FF9139',
+      blue: "#22A1F0",
+      charcoal: "#313F4A",
+      ash: "#B3BEC7",
+      gold: "#FFC555",
+      green: "#56C288",
+      pink: "#FFB3C3",
+      lavender: "#9FA6FF",
+      indigo: "#527CEB",
+      whaletail: "#8AABF1"
     };
 
-    expect(output.rule('.blue').prop('color')).to.equal(colors.blue.toLowerCase());
-    expect(output.rule('.charcoal').prop('color')).to.equal(colors.charcoal.toLowerCase());
-    expect(output.rule('.grey').prop('color')).to.equal(colors.grey.toLowerCase());
-    expect(output.rule('.yellow').prop('color')).to.equal(colors.yellow.toLowerCase());
-    expect(output.rule('.green').prop('color')).to.equal(colors.green.toLowerCase());
-    expect(output.rule('.red').prop('color')).to.equal(colors.red.toLowerCase());
-    expect(output.rule('.purple').prop('color')).to.equal(colors.purple.toLowerCase());
-    expect(output.rule('.orange').prop('color')).to.equal(colors.orange.toLowerCase());
+    expect(
+      output
+        .rule(".blue")
+        .prop("color")
+        .toLowerCase()
+    ).to.equal(colors.blue.toLowerCase());
+    expect(
+      output
+        .rule(".charcoal")
+        .prop("color")
+        .toLowerCase()
+    ).to.equal(colors.charcoal.toLowerCase());
+    expect(
+      output
+        .rule(".ash")
+        .prop("color")
+        .toLowerCase()
+    ).to.equal(colors.ash.toLowerCase());
+    expect(
+      output
+        .rule(".gold")
+        .prop("color")
+        .toLowerCase()
+    ).to.equal(colors.gold.toLowerCase());
+    expect(
+      output
+        .rule(".green")
+        .prop("color")
+        .toLowerCase()
+    ).to.equal(colors.green.toLowerCase());
+    expect(
+      output
+        .rule(".pink")
+        .prop("color")
+        .toLowerCase()
+    ).to.equal(colors.pink.toLowerCase());
+    expect(
+      output
+        .rule(".lavender")
+        .prop("color")
+        .toLowerCase()
+    ).to.equal(colors.lavender.toLowerCase());
+    expect(
+      output
+        .rule(".indigo")
+        .prop("color")
+        .toLowerCase()
+    ).to.equal(colors.indigo.toLowerCase());
   });
 });

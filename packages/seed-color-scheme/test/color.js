@@ -264,7 +264,7 @@ describe('mixin: _color()', function() {
     var $e2 = output.rule('.e2');
 
     expect($e1.prop('color')).to.equal('yellow');
-    expect($e2.prop('color')).to.equal('#daf1ff');
+    expect($e2.prop('color')).to.equal('#7AC7F6');
   });
 
   it('should be able deep extend existing colors and add new colors', function() {
@@ -306,7 +306,7 @@ describe('mixin: _color()', function() {
     var $e5 = output.rule('.e5');
 
     expect($e1.prop('color')).to.equal('yellow');
-    expect($e2.prop('color')).to.equal('#daf1ff');
+    expect($e2.prop('color')).to.equal('#7AC7F6');
     expect($e3.prop('color')).to.equal('pink');
     expect($e4.prop('color')).to.equal('purple');
     expect($e5.prop('color')).to.equal('red');

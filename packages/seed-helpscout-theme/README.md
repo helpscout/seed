@@ -87,5 +87,4 @@ $seed-helpscout-theme-colors: (
   whaletail: _get($seed-color-scheme-helpscout, whaletail),
 ) !default;
 
-
 ```
