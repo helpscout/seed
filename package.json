@@ -4,6 +4,7 @@
   "description": "A component-first CSS design system.",
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap:ci": "lerna bootstrap",
     "build": "lerna run build",
     "clean": "lerna clean",
     "clean:lock": "find ./packages -type f -name \"package-lock.json\" -delete",
