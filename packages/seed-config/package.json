@@ -46,7 +46,7 @@
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.4",
-    "seed-bistro": "^0.2.0",
+    "seed-bistro": "^0.2.1",
     "sass-pathfinder": "^0.0.5"
   },
   "publishConfig": {
