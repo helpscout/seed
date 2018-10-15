@@ -14,6 +14,7 @@ install:
 
 script:
   - npm run bootstrap
+  - npm run test
 
 branches:
   only:
