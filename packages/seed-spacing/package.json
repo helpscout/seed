@@ -28,9 +28,6 @@
     "scss",
     "utility"
   ],
-  "authors": [
-    "ItsJonQ <hello@jonquach.com>"
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/helpscout/seed/issues"

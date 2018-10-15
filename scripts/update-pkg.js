@@ -72,6 +72,12 @@ const updatePackageDetails = pkg => {
   if (nextPkg.postversion) {
     delete nextPkg.postversion;
   }
+  if (nextPkg.authors) {
+    delete nextPkg.authors;
+  }
+  if (nextPkg.author) {
+    delete nextPkg.author;
+  }
 
   return nextPkg;
 };
