@@ -66,17 +66,6 @@ describe('base', () => {
       expect($o.prop('margin')).to.be.empty;
     });
 
-    it('should have correct padding', () => {
-      const paddingTop = $o.prop('padding-top');
-      const paddingRight = $o.prop('padding-right');
-      const paddingBottom = $o.prop('padding-bottom');
-      const paddingLeft = $o.prop('padding-left');
-
-      expect(toNumber(paddingTop)).to.equal(0);
-      expect(toNumber(paddingBottom)).to.equal(0);
-      expect(toNumber(paddingLeft)).to.equal(toNumber(paddingRight));
-    });
-
     it('should have vertical-align defined', () => {
       expect($o.prop('vertical-align')).to.equal('middle');
     });
