@@ -3,8 +3,7 @@
   "version": "0.0.6",
   "description": "A component-first CSS design system.",
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
-    "bootstrap:ci": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --hoist --no-ci",
     "build": "lerna run build",
     "clean": "lerna clean",
     "clean:lock": "find ./packages -type f -name \"package-lock.json\" -delete",
