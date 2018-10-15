@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-navbar",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Navbar component pack for Seed",
   "main": "index.js",
   "watch": {
@@ -26,9 +26,6 @@
     "type": "git",
     "url": "git+https://github.com/helpscout/seed.git"
   },
-  "authors": [
-    "ItsJonQ <hello@jonquach.com>"
-  ],
   "license": "MIT",
   "keywords": [
     "bem",
@@ -46,17 +43,17 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-button": "^0.0.6",
-    "@seedcss/seed-dropdown": "^0.0.6",
-    "@seedcss/seed-nav": "^0.0.6",
-    "@seedcss/seed-publish": "^0.0.6"
+    "@seedcss/seed-button": "^0.0.7",
+    "@seedcss/seed-dropdown": "^0.0.7",
+    "@seedcss/seed-nav": "^0.0.7",
+    "@seedcss/seed-publish": "^0.0.7"
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
-    "seed-barista": "^1.1.0",
-    "seed-bistro": "^0.2.0",
-    "sass-pathfinder": "^0.0.5"
+    "sass-pathfinder": "^0.0.5",
+    "seed-barista": "^1.1.1",
+    "seed-bistro": "^0.2.1"
   },
   "publishConfig": {
     "access": "public"

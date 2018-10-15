@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-config",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Sass config pack",
   "main": "index.js",
   "file": [
@@ -21,9 +21,6 @@
     "type": "git",
     "url": "git+https://github.com/helpscout/seed.git"
   },
-  "authors": [
-    "ItsJonQ <hello@jonquach.com>"
-  ],
   "license": "MIT",
   "keywords": [
     "bem",
@@ -41,13 +38,12 @@
     "seed-pack",
     "variables"
   ],
-  "dependencies": {},
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.4",
-    "seed-bistro": "^0.2.0",
-    "sass-pathfinder": "^0.0.5"
+    "sass-pathfinder": "^0.0.5",
+    "seed-bistro": "^0.2.1"
   },
   "publishConfig": {
     "access": "public"

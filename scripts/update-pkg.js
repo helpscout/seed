@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
 const _ = require("lodash");
+const projectPkg = require("../package.json");
 
 const PKG_PATH = "packages/*/package.json";
 const README_TEMPLATE = fs.readFileSync(
@@ -71,6 +72,12 @@ const updatePackageDetails = pkg => {
   if (nextPkg.postversion) {
     delete nextPkg.postversion;
   }
+  if (nextPkg.authors) {
+    delete nextPkg.authors;
+  }
+  if (nextPkg.author) {
+    delete nextPkg.author;
+  }
 
   return nextPkg;
 };
@@ -107,25 +114,12 @@ const updateSeedToolDependencies = pkg => {
 
   if (deps) {
     Object.keys(deps).forEach(key => {
-      if (key === "seed-barista") {
-        deps[key] = "^1.1.0";
-      }
-      if (key === "seed-bistro") {
-        deps[key] = "^0.2.0";
-      }
-      if (key === "mkdirp") {
-        deps[key] = "^0.5.1";
-      }
-      if (key === "nodemon") {
-        deps[key] = "^1.18.4";
-      }
-      if (key === "node-sass") {
-        deps[key] = "^4.9.3";
+      if (projectPkg.devDependencies[key]) {
+        deps[key] = projectPkg.devDependencies[key];
       }
       if (key === "hoek") {
         delete deps[key];
       }
-      deps["sass-pathfinder"] = "^0.0.5"
     });
   }
 

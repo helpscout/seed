@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-pagination",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Pagination component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -14,9 +14,6 @@
     "type": "git",
     "url": "git+https://github.com/helpscout/seed.git"
   },
-  "authors": [
-    "ItsJonQ <hello@jonquach.com>"
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/helpscout/seed/issues"
@@ -41,12 +38,12 @@
     "sass-pathfinder": "^0.0.5"
   },
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^0.0.6",
-    "@seedcss/seed-button": "^0.0.6",
-    "@seedcss/seed-color-scheme": "^0.0.6",
-    "@seedcss/seed-control": "^0.0.6",
-    "@seedcss/seed-dash": "^0.0.6",
-    "@seedcss/seed-publish": "^0.0.6"
+    "@seedcss/seed-breakpoints": "^0.0.7",
+    "@seedcss/seed-button": "^0.0.7",
+    "@seedcss/seed-color-scheme": "^0.0.7",
+    "@seedcss/seed-control": "^0.0.7",
+    "@seedcss/seed-dash": "^0.0.7",
+    "@seedcss/seed-publish": "^0.0.7"
   },
   "publishConfig": {
     "access": "public"

@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-form-group",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Form group component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -16,9 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/helpscout/seed.git"
   },
-  "authors": [
-    "ItsJonQ <hello@jonquach.com>"
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/helpscout/seed/issues"
@@ -42,13 +39,13 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
-    "seed-bistro": "^0.2.0",
-    "sass-pathfinder": "^0.0.5"
+    "sass-pathfinder": "^0.0.5",
+    "seed-bistro": "^0.2.1"
   },
   "dependencies": {
-    "@seedcss/seed-input": "^0.0.6",
-    "@seedcss/seed-publish": "^0.0.6",
-    "@seedcss/seed-states": "^0.0.6"
+    "@seedcss/seed-input": "^0.0.7",
+    "@seedcss/seed-publish": "^0.0.7",
+    "@seedcss/seed-states": "^0.0.7"
   },
   "publishConfig": {
     "access": "public"
