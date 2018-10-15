@@ -8,16 +8,12 @@ cache:
 
 before_install:
   - npm set progress=false
-  - export CHROME_BIN=/usr/bin/google-chrome
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
 
 install:
   - npm install
 
 script:
   - npm run bootstrap
-  - npm run test
 
 branches:
   only:
