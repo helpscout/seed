@@ -9,7 +9,7 @@
     "clean": "lerna clean",
     "clean:lock": "find ./packages -type f -name \"package-lock.json\" -delete",
     "diff": "lerna diff",
-    "preinstall": "npm run update:pkg",
+    "postinstall": "npm run update:pkg",
     "release": "lerna publish",
     "test": "lerna run test",
     "update:pkg": "node ./scripts/update-pkg.js"
