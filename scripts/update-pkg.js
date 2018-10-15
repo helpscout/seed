@@ -46,10 +46,16 @@ const updatePackage = file => {
 };
 
 const updatePackageDetails = pkg => {
+  let buildScript = "npm run build:main && npm run banner"
+
+  if (pkg.scripts.copy) {
+    buildScript = "npm run build:main && npm run banner && npm run copy"
+  }
+
   const nextPkg = Object.assign({}, pkg, {
     scripts: Object.assign({}, pkg.scripts, {
       banner: "node ./scripts/banner.js",
-      build: "npm run build:main && npm run banner",
+      build: buildScript,
       ["build:main"]: "node ./scripts/build.js",
       test: "npm run build"
     }),
