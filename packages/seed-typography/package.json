@@ -10,7 +10,7 @@
     "build:main": "node ./scripts/build.js",
     "test:mocha": "mocha",
     "test:qunit": "node-qunit-phantomjs ./test/qunit/index.html --verbose",
-    "test": "npm run test:mocha"
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -37,8 +37,7 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5",
-    "seed-bistro": "^0.2.1"
+    "sass-pathfinder": "^0.0.5"
   },
   "dependencies": {
     "@seedcss/seed-breakpoints": "^0.0.7",

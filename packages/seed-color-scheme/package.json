@@ -16,7 +16,7 @@
     "build:main": "node ./scripts/build.js",
     "dev": "nodemon -e scss -x 'npm run test -- --watch --reporter=dot'",
     "start": "npm run dev",
-    "test": "mocha test/setup.mocha.js test --recursive"
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -45,9 +45,7 @@
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.4",
-    "sass-pathfinder": "^0.0.5",
-    "seed-barista": "^1.1.1",
-    "seed-bistro": "^0.2.1"
+    "sass-pathfinder": "^0.0.5"
   },
   "dependencies": {
     "@seedcss/seed-config": "^0.0.7"

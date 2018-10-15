@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner && npm run copy",
+    "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
     "copy": "cp ./dist/*.css ./example/dist/",
     "test": "npm run build"
