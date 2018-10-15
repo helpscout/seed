@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-props",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Props mixin pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed/",
@@ -41,8 +41,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
-    "seed-bistro": "^0.2.1",
-    "sass-pathfinder": "^0.0.5"
+    "sass-pathfinder": "^0.0.5",
+    "seed-bistro": "^0.2.1"
   },
   "publishConfig": {
     "access": "public"

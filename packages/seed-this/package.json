@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-this",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Selector-based function pack for Seed",
   "main": "index.js",
   "scripts": {

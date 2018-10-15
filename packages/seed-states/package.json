@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-states",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "States config pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -41,9 +41,9 @@
     "sass-pathfinder": "^0.0.5"
   },
   "dependencies": {
-    "@seedcss/seed-color-scheme": "^0.0.6",
-    "@seedcss/seed-color-scheme-helpscout": "^0.0.6",
-    "@seedcss/seed-dash": "^0.0.6"
+    "@seedcss/seed-color-scheme": "^0.0.7",
+    "@seedcss/seed-color-scheme-helpscout": "^0.0.7",
+    "@seedcss/seed-dash": "^0.0.7"
   },
   "publishConfig": {
     "access": "public"

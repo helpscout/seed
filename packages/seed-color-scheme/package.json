@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-color-scheme",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Color scheme system pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed/",
@@ -48,12 +48,12 @@
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.4",
+    "sass-pathfinder": "^0.0.5",
     "seed-barista": "^1.1.1",
-    "seed-bistro": "^0.2.1",
-    "sass-pathfinder": "^0.0.5"
+    "seed-bistro": "^0.2.1"
   },
   "dependencies": {
-    "@seedcss/seed-config": "^0.0.6"
+    "@seedcss/seed-config": "^0.0.7"
   },
   "publishConfig": {
     "access": "public"
