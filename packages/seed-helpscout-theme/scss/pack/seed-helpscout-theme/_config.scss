@@ -20,11 +20,12 @@ $seed-helpscout-theme-colors: (
   // Primary colors
   blue: _get($seed-color-scheme-helpscout, blue),
   charcoal: _get($seed-color-scheme-helpscout, charcoal),
-  grey: _get($seed-color-scheme-helpscout, grey),
+  ash: _get($seed-color-scheme-helpscout, ash),
   // Secondary colors
-  yellow: _get($seed-color-scheme-helpscout, yellow),
+  gold: _get($seed-color-scheme-helpscout, gold),
   green: _get($seed-color-scheme-helpscout, green),
-  red: _get($seed-color-scheme-helpscout, red),
-  purple: _get($seed-color-scheme-helpscout, purple),
-  orange: _get($seed-color-scheme-helpscout, orange),
+  pink: _get($seed-color-scheme-helpscout, pink),
+  lavender: _get($seed-color-scheme-helpscout, lavender),
+  indigo: _get($seed-color-scheme-helpscout, indigo),
+  whaletail: _get($seed-color-scheme-helpscout, whaletail),
 ) !default;
