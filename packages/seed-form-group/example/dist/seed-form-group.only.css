@@ -14,14 +14,14 @@
   .c-form-group:last-child {
     margin-bottom: 0; }
   .c-form-group.is-error label {
-    color: #9d1f1a; }
+    color: #F64E6F; }
   .c-form-group.is-error .c-input {
-    border-color: #e52f28; }
+    border-color: #FD9AAE; }
   .c-form-group.is-success label {
-    color: #228350; }
+    color: #11492B; }
   .c-form-group.is-success .c-input {
-    border-color: #4bc27d; }
+    border-color: #45A471; }
   .c-form-group.is-warning label {
-    color: #b37100; }
+    color: #C15D25; }
   .c-form-group.is-warning .c-input {
-    border-color: #ffc646; }
+    border-color: #F0AB49; }

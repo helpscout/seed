@@ -56,25 +56,25 @@
     border-color: #3197D6; }
 
 .c-input.is-error {
-  border-color: #e52f28; }
+  border-color: #FD9AAE; }
   .c-input.is-error.is-disabled, .c-input.is-error[disabled] {
-    border-color: #e52f28; }
+    border-color: #FD9AAE; }
     .c-input.is-error.is-disabled:hover, .c-input.is-error.is-disabled:active, .c-input.is-error.is-disabled:focus, .c-input.is-error[disabled]:hover, .c-input.is-error[disabled]:active, .c-input.is-error[disabled]:focus {
-      border-color: #e52f28; }
+      border-color: #FD9AAE; }
 
 .c-input.is-success {
-  border-color: #4bc27d; }
+  border-color: #45A471; }
   .c-input.is-success.is-disabled, .c-input.is-success[disabled] {
-    border-color: #4bc27d; }
+    border-color: #45A471; }
     .c-input.is-success.is-disabled:hover, .c-input.is-success.is-disabled:active, .c-input.is-success.is-disabled:focus, .c-input.is-success[disabled]:hover, .c-input.is-success[disabled]:active, .c-input.is-success[disabled]:focus {
-      border-color: #4bc27d; }
+      border-color: #45A471; }
 
 .c-input.is-warning {
-  border-color: #ffc646; }
+  border-color: #F0AB49; }
   .c-input.is-warning.is-disabled, .c-input.is-warning[disabled] {
-    border-color: #ffc646; }
+    border-color: #F0AB49; }
     .c-input.is-warning.is-disabled:hover, .c-input.is-warning.is-disabled:active, .c-input.is-warning.is-disabled:focus, .c-input.is-warning[disabled]:hover, .c-input.is-warning[disabled]:active, .c-input.is-warning[disabled]:focus {
-      border-color: #ffc646; }
+      border-color: #F0AB49; }
 
 input[type="file"].c-input {
   border-color: transparent;
@@ -121,14 +121,14 @@ textarea.c-input {
   .c-form-group:last-child {
     margin-bottom: 0; }
   .c-form-group.is-error label {
-    color: #9d1f1a; }
+    color: #F64E6F; }
   .c-form-group.is-error .c-input {
-    border-color: #e52f28; }
+    border-color: #FD9AAE; }
   .c-form-group.is-success label {
-    color: #228350; }
+    color: #11492B; }
   .c-form-group.is-success .c-input {
-    border-color: #4bc27d; }
+    border-color: #45A471; }
   .c-form-group.is-warning label {
-    color: #b37100; }
+    color: #C15D25; }
   .c-form-group.is-warning .c-input {
-    border-color: #ffc646; }
+    border-color: #F0AB49; }
