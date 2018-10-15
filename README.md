@@ -1,5 +1,7 @@
 # Seed
 
+[![Build Status](https://travis-ci.org/helpscout/seed.svg?branch=master)](https://travis-ci.org/helpscout/seed)
+
 > A component-first CSS design system.
 
 <img src="https://developer.helpscout.com/images/seed.png" width="100">
