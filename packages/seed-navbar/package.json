@@ -18,7 +18,7 @@
     "build:main": "node ./scripts/build.js",
     "build": "npm run build:main && npm run banner",
     "test:mocha": "mocha",
-    "test": "npm run test:mocha",
+    "test": "npm run build",
     "watch": "npm-watch"
   },
   "homepage": "https://github.com/helpscout/seed/",
@@ -51,9 +51,7 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5",
-    "seed-barista": "^1.1.1",
-    "seed-bistro": "^0.2.1"
+    "sass-pathfinder": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

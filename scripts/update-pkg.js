@@ -46,7 +46,19 @@ const updatePackage = file => {
 };
 
 const updatePackageDetails = pkg => {
+  let buildScript = "npm run build:main && npm run banner"
+
+  if (pkg.scripts.copy) {
+    buildScript = "npm run build:main && npm run banner && npm run copy"
+  }
+
   const nextPkg = Object.assign({}, pkg, {
+    scripts: Object.assign({}, pkg.scripts, {
+      banner: "node ./scripts/banner.js",
+      build: buildScript,
+      ["build:main"]: "node ./scripts/build.js",
+      test: "npm run build"
+    }),
     publishConfig: {
       access: "public"
     },
@@ -118,6 +130,12 @@ const updateSeedToolDependencies = pkg => {
         deps[key] = projectPkg.devDependencies[key];
       }
       if (key === "hoek") {
+        delete deps[key];
+      }
+      if (key === "seed-barista") {
+        delete deps[key];
+      }
+      if (key === "seed-bistro") {
         delete deps[key];
       }
     });
