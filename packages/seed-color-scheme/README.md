@@ -179,7 +179,7 @@ The following variables can be found in `_config.scss`
       700: #24408A,
       800: #142C69,
       900: #051849
-    )
+    ),
 
     whaletail: (
       default: #8AABF1,
