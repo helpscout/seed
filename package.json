@@ -45,6 +45,9 @@
     "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
+    "nodemon": "^1.18.4",
+    "sass-pathfinder": "^0.0.5",
+    "seed-barista": "^1.1.0",
+    "seed-bistro": "^0.2.0"
   }
 }

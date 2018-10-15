@@ -13,7 +13,7 @@ install:
   - npm install
 
 script:
-  - npm run bootstrap:ci
+  - npm run bootstrap
 
 branches:
   only:
