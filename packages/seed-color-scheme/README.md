@@ -132,8 +132,8 @@ The following variables can be found in `_config.scss`
       200: #9ADAB8,
       300: #78CEA0,
       400: #56C288,
-      500: #35A471,
-      600: #3cb170,
+      500: #45A471,
+      600: #34865A,
       700: #226742,
       800: #11492B,
       900: #002B14
