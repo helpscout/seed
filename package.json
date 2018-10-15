@@ -42,6 +42,7 @@
     "hoek": "^5.0.3",
     "lerna": "^3.4.0",
     "lodash": "^4.17.11",
+    "mkdirp": "^0.5.1",
     "node-sass": "^4.9.3",
     "sass-pathfinder": "^0.0.5"
   }
