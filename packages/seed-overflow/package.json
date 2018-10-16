@@ -1,0 +1,45 @@
+{
+  "name": "@seedcss/seed-overflow",
+  "version": "0.0.7",
+  "description": "Overflow utility pack for Seed",
+  "main": "index.js",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner",
+    "build:main": "node ./scripts/build.js",
+    "test": "npm run build"
+  },
+  "homepage": "https://github.com/helpscout/seed/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helpscout/seed.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed/issues"
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "overflow",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "@seedcss/seed-breakpoints": "^0.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
