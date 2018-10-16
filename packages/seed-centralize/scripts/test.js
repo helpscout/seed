@@ -2,7 +2,7 @@
 
 var pkg = require('../package.json');
 var sass = require('node-sass');
-var pathfinder = require('sass-pathfinder');
+var pathfinder = require('./scripts/pathfinder');
 
 const file = pkg.name.replace('@seedcss/', '')
 var includePaths = pathfinder(
