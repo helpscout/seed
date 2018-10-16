@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A component-first CSS design system.",
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist --no-ci",
