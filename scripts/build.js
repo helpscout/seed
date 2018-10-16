@@ -7,6 +7,7 @@ const sass = require("node-sass");
 const projectPkg = require("../package.json");
 
 const PKG_PATH = "packages/*/package.json";
+const shouldWrite = process.argv.includes("--write");
 
 const compose = (...fns) => x => fns.reduceRight((y, f) => f(y), x);
 
@@ -82,6 +83,7 @@ const composeWithBanner = file => {
 
 const compileSass = file => {
   const pkg = getPkgFromFile(file);
+  const pkgName = pkg.name;
   const deps = getSassDependenciesFromPkg(pkg);
   const includePaths = pathfinder(deps);
   const entryFile = getSassIndexPathFromFile(file);
@@ -104,28 +106,34 @@ const compileSass = file => {
     } else {
       const fileContent = withBanner(result.css);
 
-      fs.writeFile(outputFile, fileContent, function(err) {
-        if (!err) {
-          return console.log(outputFile + ".css created.");
-        }
-      });
+      if (shouldWrite) {
+        fs.writeFile(outputFile, fileContent, function(err) {
+          if (!err) {
+            return console.log(outputFile + ".css created.");
+          }
+        });
+      } else {
+        console.log(pkgName + " compiled.");
+      }
     }
   });
 
-  sass.render(minSassOptions, (error, result) => {
-    if (error) {
-      console.error(error);
-      return process.exit(1);
-    } else {
-      const fileContent = withBanner(result.css);
+  if (shouldWrite) {
+    sass.render(minSassOptions, (error, result) => {
+      if (error) {
+        console.error(error);
+        return process.exit(1);
+      } else {
+        const fileContent = withBanner(result.css);
 
-      fs.writeFile(outputFileMin, fileContent, function(err) {
-        if (!err) {
-          return console.log(outputFileMin + ".css created.");
-        }
-      });
-    }
-  });
+        fs.writeFile(outputFileMin, fileContent, function(err) {
+          if (!err) {
+            return console.log(outputFileMin + ".css created.");
+          }
+        });
+      }
+    });
+  }
 };
 
 // Build all the packages!
