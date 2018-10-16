@@ -70,9 +70,9 @@ $seed-states-warning-namespace: "warning" !default;
 // Configs
 $seed-states-colors: (
   #{$seed-states-error-namespace}: (
-    background-color: _color(red, 200),
-    border-color: _color(red, 500),
-    color: _color(red, 800)
+    background-color: _color(pink, 200),
+    border-color: _color(pink, 500),
+    color: _color(pink, 800)
   ),
   #{$seed-states-info-namespace}: (
     background-color: _color(blue, 200),
@@ -85,9 +85,9 @@ $seed-states-colors: (
     color: _color(green, 800)
   ),
   #{$seed-states-warning-namespace}: (
-    background-color: _color(yellow, 200),
-    border-color: _color(yellow, 500),
-    color: _color(yellow, 800)
+    background-color: _color(gold, 200),
+    border-color: _color(gold, 500),
+    color: _color(gold, 800)
   ),
 ) !default;
 

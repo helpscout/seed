@@ -14,9 +14,12 @@
     "postinstall": "npm run update",
     "release:before": "npm run setup && npm run update && npm run build",
     "release": "npm run release:before && lerna publish",
+    "start": "npm run bootstrap && npm run storybook",
     "setup": "node ./scripts/setup.js",
     "test": "npm run build:test",
-    "update": "node ./scripts/update.js"
+    "update": "node ./scripts/update.js",
+    "storybook": "start-storybook -p 7200",
+    "build-storybook": "build-storybook"
   },
   "homepage": "https://github.com/helpscout/seed",
   "repository": {
@@ -44,6 +47,13 @@
     "system"
   ],
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addon-options": "^3.4.11",
+    "@storybook/addons": "^3.4.11",
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
     "chai": "^4.2.0",
     "fs-extra": "^7.0.0",
     "glob": "^7.1.3",
@@ -54,8 +64,12 @@
     "mocha": "^5.2.0",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "sass-loader": "^7.1.0",
     "sass-pathfinder": "^0.0.5",
     "seed-barista": "^1.1.1",
     "seed-bistro": "^0.2.1"
-  }
+  },
+  "dependencies": {}
 }
