@@ -3,4 +3,4 @@
  * Badge component pack for Seed
  * Licensed under MIT
  */
-.c-badge{box-sizing:border-box;background-color:#A5B2BD;border-radius:2px;color:#fff;display:inline-block;font-size:11px;font-style:normal;font-weight:600;line-height:1;padding:4px 5px;text-transform:uppercase;vertical-align:middle}.c-badge.is-error{background-color:#FD9AAE}.c-badge.is-info{background-color:#1E88D1}.c-badge.is-success{background-color:#45A471}.c-badge.is-warning{background-color:#F0AB49}
+.c-badge{box-sizing:border-box;background-color:#A5B2BD;border-radius:2px;color:#fff;display:inline-block;font-size:11px;font-style:normal;font-weight:600;line-height:1;padding:4px 5px;text-transform:uppercase;vertical-align:middle}.c-badge.is-error{background-color:#FD9AAE}.c-badge.is-info{background-color:#4EB4F3}.c-badge.is-success{background-color:#78CEA0}.c-badge.is-warning{background-color:#FFD177}

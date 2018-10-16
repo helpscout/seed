@@ -77,39 +77,39 @@
 .c-table th.is-error,
 .c-table tr.is-error,
 .c-table td.is-error {
-  background-color: #FFD1DB; }
+  background-color: #FFE1E7; }
 
 .c-table--hover th.is-error:hover,
 .c-table--hover tr.is-error:hover,
 .c-table--hover td.is-error:hover {
-  background-color: #ffc7d3; }
+  background-color: #ffd7df; }
 
 .c-table th.is-info,
 .c-table tr.is-info,
 .c-table td.is-info {
-  background-color: #7AC7F6; }
+  background-color: #D3ECFC; }
 
 .c-table--hover th.is-info:hover,
 .c-table--hover tr.is-info:hover,
 .c-table--hover td.is-info:hover {
-  background-color: #70c3f5; }
+  background-color: #c9e8fb; }
 
 .c-table th.is-success,
 .c-table tr.is-success,
 .c-table td.is-success {
-  background-color: #9ADAB8; }
+  background-color: #DDF3E7; }
 
 .c-table--hover th.is-success:hover,
 .c-table--hover tr.is-success:hover,
 .c-table--hover td.is-success:hover {
-  background-color: #93d7b3; }
+  background-color: #d5f0e2; }
 
 .c-table th.is-warning,
 .c-table tr.is-warning,
 .c-table td.is-warning {
-  background-color: #FFDC99; }
+  background-color: #FFF3DD; }
 
 .c-table--hover th.is-warning:hover,
 .c-table--hover tr.is-warning:hover,
 .c-table--hover td.is-warning:hover {
-  background-color: #ffd98f; }
+  background-color: #ffefd3; }

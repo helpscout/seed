@@ -4,8 +4,8 @@
  * Licensed under MIT
  */
 .c-alert {
-  background-color: #FFDC99;
-  box-shadow: inset 4px 0 0 0 #F0AB49;
+  background-color: #FFF3DD;
+  box-shadow: inset 4px 0 0 0 #FFD177;
   box-sizing: border-box;
   color: #C15D25;
   margin-bottom: 16px;
@@ -23,32 +23,32 @@
     color: inherit; }
 
 .c-alert.is-error {
-  background-color: #FFD1DB;
+  background-color: #FFE1E7;
   box-shadow: inset 4px 0 0 0 #FD9AAE;
-  color: #F64E6F; }
+  color: #F4355A; }
   .c-alert.is-error .c-badge {
     background-color: #FD9AAE; }
 
 .c-alert.is-info {
-  background-color: #7AC7F6;
-  box-shadow: inset 4px 0 0 0 #1E88D1;
+  background-color: #D3ECFC;
+  box-shadow: inset 4px 0 0 0 #4EB4F3;
   color: #0D3E74; }
   .c-alert.is-info .c-badge {
-    background-color: #1E88D1; }
+    background-color: #4EB4F3; }
 
 .c-alert.is-success {
-  background-color: #9ADAB8;
-  box-shadow: inset 4px 0 0 0 #45A471;
+  background-color: #DDF3E7;
+  box-shadow: inset 4px 0 0 0 #78CEA0;
   color: #11492B; }
   .c-alert.is-success .c-badge {
-    background-color: #45A471; }
+    background-color: #78CEA0; }
 
 .c-alert.is-warning {
-  background-color: #FFDC99;
-  box-shadow: inset 4px 0 0 0 #F0AB49;
+  background-color: #FFF3DD;
+  box-shadow: inset 4px 0 0 0 #FFD177;
   color: #C15D25; }
   .c-alert.is-warning .c-badge {
-    background-color: #F0AB49; }
+    background-color: #FFD177; }
 
 .c-alert .c-badge {
-  background-color: #F0AB49; }
+  background-color: #FFD177; }
