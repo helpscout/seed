@@ -3,7 +3,7 @@
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
-var pathfinder = require('sass-pathfinder');
+var pathfinder = require('./scripts/pathfinder');
 var sass = require('node-sass');
 
 const file = pkg.name.replace('@seedcss/', '')
@@ -14,6 +14,8 @@ var includePaths = pathfinder(
   require('@seedcss/seed-publish'),
   require('@seedcss/seed-states')
 );
+
+console.log(includePaths)
 
 // Default .css compile
 sass.render({
