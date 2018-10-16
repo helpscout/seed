@@ -1,5 +1,5 @@
 var path = require('path');
-var pathfinder = require('sass-pathfinder');
+var pathfinder = require('./scripts/pathfinder');
 
 var files = pathfinder([
   require('@seedcss/seed-config'),

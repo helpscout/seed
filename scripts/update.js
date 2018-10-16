@@ -36,7 +36,7 @@ const updatePackage = file => {
   const nextPkg = compose(
     updatePackageDetails,
     updateSeedPackageDependencies,
-    updateSeedToolDependencies,
+    updateSeedToolDependencies
   )(pkg);
 
   updateReadme(file);
@@ -46,10 +46,10 @@ const updatePackage = file => {
 };
 
 const updatePackageDetails = pkg => {
-  let buildScript = "npm run build:main && npm run banner"
+  let buildScript = "npm run build:main && npm run banner";
 
   if (pkg.scripts.copy) {
-    buildScript = "npm run build:main && npm run banner && npm run copy"
+    buildScript = "npm run build:main && npm run banner && npm run copy";
   }
 
   const nextPkg = Object.assign({}, pkg, {

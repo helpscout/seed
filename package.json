@@ -5,14 +5,18 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist --no-ci",
     "bootstrap:ci": "lerna bootstrap --no-ci",
-    "build": "lerna run build",
+    "build:all": "lerna run build",
+    "build": "node ./scripts/build.js --write",
+    "build:test": "node ./scripts/build.js",
     "clean": "lerna clean",
     "clean:lock": "find ./packages -type f -name \"package-lock.json\" -delete",
     "diff": "lerna diff",
-    "postinstall": "npm run update:pkg",
-    "release": "lerna publish",
-    "test": "lerna run test",
-    "update:pkg": "node ./scripts/update-pkg.js"
+    "postinstall": "npm run update",
+    "release:before": "npm run setup && npm run update && npm run build",
+    "release": "npm run release:before && lerna publish",
+    "setup": "node ./scripts/setup.js",
+    "test": "npm run build:test",
+    "update": "node ./scripts/update.js"
   },
   "homepage": "https://github.com/helpscout/seed",
   "repository": {
@@ -40,6 +44,7 @@
     "system"
   ],
   "devDependencies": {
+    "fs-extra": "^7.0.0",
     "glob": "^7.1.3",
     "hoek": "^5.0.3",
     "lerna": "^3.4.0",
