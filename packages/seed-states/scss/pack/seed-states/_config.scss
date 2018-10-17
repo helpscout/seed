@@ -13,8 +13,8 @@ $seed-states-warning-namespace: "warning" !default;
 // Configs
 $seed-states-colors: (
   #{$seed-states-error-namespace}: (
-    background-color: _color(pink, 100),
-    border-color: _color(pink, 500),
+    background-color: _color(pink, 50),
+    border-color: _color(pink, 600),
     color: _color(pink, 900)
   ),
   #{$seed-states-info-namespace}: (
