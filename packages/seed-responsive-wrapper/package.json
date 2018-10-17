@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-responsive-wrapper",
-  "version": "0.0.7",
+  "version": "1.0.0-alpha.0",
   "description": "Responsive wrapper object pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -39,7 +39,7 @@
     "sass-pathfinder": "^0.0.5"
   },
   "dependencies": {
-    "@seedcss/seed-publish": "^0.0.7"
+    "@seedcss/seed-publish": "^1.0.0-alpha.0"
   },
   "publishConfig": {
     "access": "public"

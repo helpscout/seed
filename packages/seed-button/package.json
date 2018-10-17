@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-button",
-  "version": "0.0.7",
+  "version": "1.0.0-alpha.0",
   "description": "Button component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -42,11 +42,11 @@
     "sass-pathfinder": "^0.0.5"
   },
   "dependencies": {
-    "@seedcss/seed-border": "^0.0.7",
-    "@seedcss/seed-color-scheme": "^0.0.7",
-    "@seedcss/seed-control": "^0.0.7",
-    "@seedcss/seed-dash": "^0.0.7",
-    "@seedcss/seed-publish": "^0.0.7"
+    "@seedcss/seed-border": "^1.0.0-alpha.0",
+    "@seedcss/seed-color-scheme": "^1.0.0-alpha.0",
+    "@seedcss/seed-control": "^1.0.0-alpha.0",
+    "@seedcss/seed-dash": "^1.0.0-alpha.0",
+    "@seedcss/seed-publish": "^1.0.0-alpha.0"
   },
   "publishConfig": {
     "access": "public"

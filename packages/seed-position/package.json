@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-position",
-  "version": "0.0.7",
+  "version": "1.0.0-alpha.0",
   "description": "position utility pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
     "sass-pathfinder": "^0.0.5"
   },
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^0.0.7"
+    "@seedcss/seed-breakpoints": "^1.0.0-alpha.0"
   },
   "publishConfig": {
     "access": "public"

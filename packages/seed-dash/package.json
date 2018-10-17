@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-dash",
-  "version": "0.0.7",
+  "version": "1.0.0-alpha.0",
   "description": "Config utility pack for Seed",
   "main": "index.js",
   "scripts": {
