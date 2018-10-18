@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-popover",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Popover component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -35,9 +35,9 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-bootstrap-fade": "^0.0.7",
-    "@seedcss/seed-publish": "^0.0.7",
-    "@seedcss/seed-this": "^0.0.7"
+    "@seedcss/seed-bootstrap-fade": "^0.0.8",
+    "@seedcss/seed-publish": "^0.0.8",
+    "@seedcss/seed-this": "^0.0.8"
   },
   "publishConfig": {
     "access": "public"

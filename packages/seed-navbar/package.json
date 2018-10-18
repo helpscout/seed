@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-navbar",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Navbar component pack for Seed",
   "main": "index.js",
   "watch": {
@@ -43,10 +43,10 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-button": "^0.0.7",
-    "@seedcss/seed-dropdown": "^0.0.7",
-    "@seedcss/seed-nav": "^0.0.7",
-    "@seedcss/seed-publish": "^0.0.7"
+    "@seedcss/seed-button": "^0.0.8",
+    "@seedcss/seed-dropdown": "^0.0.8",
+    "@seedcss/seed-nav": "^0.0.8",
+    "@seedcss/seed-publish": "^0.0.8"
   },
   "publishConfig": {
     "access": "public"

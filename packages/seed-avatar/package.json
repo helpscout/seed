@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-avatar",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Avatar component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,8 +33,8 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^0.0.7",
-    "@seedcss/seed-publish": "^0.0.7"
+    "@seedcss/seed-breakpoints": "^0.0.8",
+    "@seedcss/seed-publish": "^0.0.8"
   },
   "publishConfig": {
     "access": "public"
