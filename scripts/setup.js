@@ -9,12 +9,16 @@ const PATHFINDER_FILE = fs.readFileSync(
   path.resolve(__dirname, "../templates/scripts/pathfinder.js"),
   "utf8"
 );
+const GITIGNORE_FILE = fs.readFileSync(
+  path.resolve(__dirname, "../templates/.gitignore"),
+  "utf8"
+);
 const NPM_RC_FILE = fs.readFileSync(
   path.resolve(__dirname, "../templates/.npmrc"),
   "utf8"
 );
-const LICENCE_FILE = fs.readFileSync(
-  path.resolve(__dirname, "../templates/LICENCE.md"),
+const LICENSE_FILE = fs.readFileSync(
+  path.resolve(__dirname, "../templates/LICENSE"),
   "utf8"
 );
 
@@ -65,7 +69,11 @@ const addNpmFilesToPkg = file => {
   const pkgDirPath = getPathFromFile(file);
 
   fs.writeFile(path.resolve(pkgDirPath, ".npmrc"), NPM_RC_FILE);
-  fs.writeFile(path.resolve(pkgDirPath, "LICENCE.md"), LICENCE_FILE);
+  fs.writeFile(path.resolve(pkgDirPath, ".gitignore"), GITIGNORE_FILE);
+  fs.writeFile(path.resolve(pkgDirPath, "LICENSE"), LICENSE_FILE);
+  fs.remove(path.resolve(pkgDirPath, ".travis.yml"));
+  fs.remove(path.resolve(pkgDirPath, "LICENCE"));
+  fs.remove(path.resolve(pkgDirPath, "LICENCE"));
 };
 
 setupPackages();
