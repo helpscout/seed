@@ -1,6 +1,6 @@
 {
-  "name": "seed-switch",
-  "version": "0.0.4",
+  "name": "@seedcss/seed-switch",
+  "version": "0.0.7",
   "description": "switch component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -8,19 +8,15 @@
     "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
     "copy": "cp ./dist/*.css ./example/dist/",
-    "test": "npm run build",
-    "prepublish": "npm run test"
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed-switch.git"
+    "url": "git+https://github.com/helpscout/seed.git"
   },
-  "authors": [
-    "ItsJonQ <itsjonq@gmail.com>"
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed-switch/issues"
+    "url": "https://github.com/helpscout/seed/issues"
   },
   "keywords": [
     "bem",
@@ -35,15 +31,12 @@
     "seed-pack",
     "scss"
   ],
-  "engines": {
-    "node": ">=4"
-  },
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^3.10.0"
-  },
   "dependencies": {
-    "seed-publish": "0.0.4",
-    "seed-shadow": "0.0.5"
-  }
+    "@seedcss/seed-publish": "^0.0.7",
+    "@seedcss/seed-shadow": "^0.0.7"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/helpscout/seed/"
 }
