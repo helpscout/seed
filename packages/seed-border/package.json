@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-border",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Border theme pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -30,8 +30,8 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^1.0.0-alpha.0",
-    "@seedcss/seed-publish": "^1.0.0-alpha.0"
+    "@seedcss/seed-breakpoints": "^1.0.0-alpha.1",
+    "@seedcss/seed-publish": "^1.0.0-alpha.1"
   },
   "publishConfig": {
     "access": "public"

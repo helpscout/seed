@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-exclude",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Mixin that excludes modules published with seed-publish",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-publish": "^1.0.0-alpha.0"
+    "@seedcss/seed-publish": "^1.0.0-alpha.1"
   },
   "publishConfig": {
     "access": "public"

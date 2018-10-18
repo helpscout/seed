@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-modal",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Modal component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -35,12 +35,12 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-bootstrap-fade": "^1.0.0-alpha.0",
-    "@seedcss/seed-breakpoints": "^1.0.0-alpha.0",
-    "@seedcss/seed-card": "^1.0.0-alpha.0",
-    "@seedcss/seed-dash": "^1.0.0-alpha.0",
-    "@seedcss/seed-publish": "^1.0.0-alpha.0",
-    "@seedcss/seed-this": "^1.0.0-alpha.0"
+    "@seedcss/seed-bootstrap-fade": "^1.0.0-alpha.1",
+    "@seedcss/seed-breakpoints": "^1.0.0-alpha.1",
+    "@seedcss/seed-card": "^1.0.0-alpha.1",
+    "@seedcss/seed-dash": "^1.0.0-alpha.1",
+    "@seedcss/seed-publish": "^1.0.0-alpha.1",
+    "@seedcss/seed-this": "^1.0.0-alpha.1"
   },
   "publishConfig": {
     "access": "public"
