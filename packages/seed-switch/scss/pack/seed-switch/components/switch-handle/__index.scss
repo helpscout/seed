@@ -1,0 +1,9 @@
+// Component :: Switch-handle
+
+// Scope
+.#{$seed-switch-handle-namespace} {
+  // Config
+  @import "./config";
+  // Base
+  @import "./base";
+}

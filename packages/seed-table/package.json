@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-table",
-  "version": "1.0.0-alpha.0",
+  "version": "0.0.9",
   "description": "Table component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,16 +33,11 @@
     "scss",
     "table"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "dependencies": {
-    "@seedcss/seed-dash": "^1.0.0-alpha.0",
-    "@seedcss/seed-publish": "^1.0.0-alpha.0",
-    "@seedcss/seed-states": "^1.0.0-alpha.0",
-    "@seedcss/seed-this": "^1.0.0-alpha.0"
+    "@seedcss/seed-dash": "^0.0.9",
+    "@seedcss/seed-publish": "^0.0.9",
+    "@seedcss/seed-states": "^0.0.9",
+    "@seedcss/seed-this": "^0.0.9"
   },
   "publishConfig": {
     "access": "public"

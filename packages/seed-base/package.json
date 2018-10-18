@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-base",
-  "version": "1.0.0-alpha.0",
+  "version": "0.0.9",
   "description": "Base styles pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -32,13 +32,8 @@
     "seed-pack",
     "scss"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "dependencies": {
-    "@seedcss/seed-publish": "^1.0.0-alpha.0"
+    "@seedcss/seed-publish": "^0.0.9"
   },
   "publishConfig": {
     "access": "public"

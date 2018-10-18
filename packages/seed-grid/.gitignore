@@ -1,9 +1,2 @@
 .DS_Store
-*.orig
-
-.publish
-
-node_modules/
-bower_components/
-
-npm-debug.log
+node_modules

@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-color-scheme-helpscout",
-  "version": "1.0.0-alpha.0",
+  "version": "0.0.9",
   "description": "Help Scout color scheme for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed/",
@@ -33,13 +33,8 @@
     "scheme",
     "scss"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "dependencies": {
-    "@seedcss/seed-color-scheme": "^1.0.0-alpha.0"
+    "@seedcss/seed-color-scheme": "^0.0.9"
   },
   "publishConfig": {
     "access": "public"

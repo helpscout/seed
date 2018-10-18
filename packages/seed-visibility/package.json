@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-visibility",
-  "version": "1.0.0-alpha.0",
+  "version": "0.0.9",
   "description": "Visibility utility pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed/",
@@ -29,14 +29,9 @@
     "visibility"
   ],
   "license": "MIT",
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^1.0.0-alpha.0",
-    "@seedcss/seed-publish": "^1.0.0-alpha.0"
+    "@seedcss/seed-breakpoints": "^0.0.9",
+    "@seedcss/seed-publish": "^0.0.9"
   },
   "publishConfig": {
     "access": "public"

@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-dash",
-  "version": "1.0.0-alpha.0",
+  "version": "0.0.9",
   "description": "Config utility pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,11 +33,6 @@
     "seed-pack",
     "scss"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "publishConfig": {
     "access": "public"
   },
