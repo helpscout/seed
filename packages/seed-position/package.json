@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-position",
-  "version": "0.0.9",
+  "version": "1.0.0-alpha.0",
   "description": "position utility pack for Seed",
   "main": "index.js",
   "scripts": {

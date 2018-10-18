@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-config",
-  "version": "0.0.9",
+  "version": "1.0.0-alpha.0",
   "description": "Sass config pack",
   "main": "index.js",
   "file": [
