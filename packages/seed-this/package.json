@@ -34,11 +34,6 @@
     "scss",
     "this"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "publishConfig": {
     "access": "public"
   },

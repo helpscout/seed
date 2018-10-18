@@ -32,11 +32,6 @@
     "seed-pack",
     "scss"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "dependencies": {
     "@seedcss/seed-breakpoints": "^0.0.7",
     "@seedcss/seed-button": "^0.0.7",

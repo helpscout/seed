@@ -34,11 +34,6 @@
     "scss",
     "tabs"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "dependencies": {
     "@seedcss/seed-border": "^0.0.7",
     "@seedcss/seed-breakpoints": "^0.0.7",

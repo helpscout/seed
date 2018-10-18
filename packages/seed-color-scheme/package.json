@@ -41,12 +41,6 @@
     "seed-pack",
     "scss"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "nodemon": "^1.18.4",
-    "sass-pathfinder": "^0.0.5"
-  },
   "dependencies": {
     "@seedcss/seed-config": "^0.0.7"
   },
