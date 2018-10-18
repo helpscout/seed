@@ -34,11 +34,6 @@
     "seed-pack",
     "scss"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "dependencies": {
     "@seedcss/seed-bootstrap-fade": "^0.0.7",
     "@seedcss/seed-publish": "^0.0.7",

@@ -32,12 +32,8 @@
     "seed-pack",
     "scss"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3"
-  },
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^0.0.3"
+    "@seedcss/seed-breakpoints": "^0.0.7"
   },
   "publishConfig": {
     "access": "public"

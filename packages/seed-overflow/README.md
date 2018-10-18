@@ -24,7 +24,7 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const pathfinder = require("sass-pathfinder");
-const pack = require("seed-overflow");
+const pack = require("@seedcss/seed-overflow");
 
 gulp.task("sass", function() {
   return gulp
