@@ -2,8 +2,8 @@ var path = require('path');
 var pathfinder = require('./scripts/pathfinder');
 
 var files = pathfinder(
-  require('seed-publish'),
-  require('seed-shadow'),
+  require('@seedcss/seed-publish'),
+  require('@seedcss/seed-shadow'),
   path.join(__dirname, 'scss')
 );
 
