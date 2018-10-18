@@ -1,1 +1,5 @@
-test
+example/
+node_modules/
+test/
+
+*.log

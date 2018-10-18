@@ -13,8 +13,8 @@ const GITIGNORE_FILE = fs.readFileSync(
   path.resolve(__dirname, "../templates/.gitignore"),
   "utf8"
 );
-const NPM_RC_FILE = fs.readFileSync(
-  path.resolve(__dirname, "../templates/.npmrc"),
+const NPMIGNORE_FILE = fs.readFileSync(
+  path.resolve(__dirname, "../templates/.npmignore"),
   "utf8"
 );
 const LICENSE_FILE = fs.readFileSync(
@@ -68,12 +68,15 @@ const addPathFinderToPkg = file => {
 const addNpmFilesToPkg = file => {
   const pkgDirPath = getPathFromFile(file);
 
-  fs.writeFile(path.resolve(pkgDirPath, ".npmrc"), NPM_RC_FILE);
+  fs.writeFile(path.resolve(pkgDirPath, ".npmignore"), NPMIGNORE_FILE);
   fs.writeFile(path.resolve(pkgDirPath, ".gitignore"), GITIGNORE_FILE);
   fs.writeFile(path.resolve(pkgDirPath, "LICENSE"), LICENSE_FILE);
+
+  // Clean
   fs.remove(path.resolve(pkgDirPath, ".travis.yml"));
   fs.remove(path.resolve(pkgDirPath, "LICENCE"));
   fs.remove(path.resolve(pkgDirPath, "LICENCE"));
+  fs.remove(path.resolve(pkgDirPath, ".npmrc"));
 };
 
 setupPackages();
