@@ -83,7 +83,9 @@ const updatePackageDetails = pkg => {
   });
 
   // Clean
-
+  if (nextPkg.files) {
+    delete nextPkg.files;
+  }
   if (nextPkg.engines) {
     delete nextPkg.engines;
   }

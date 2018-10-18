@@ -9,6 +9,14 @@ const PATHFINDER_FILE = fs.readFileSync(
   path.resolve(__dirname, "../templates/scripts/pathfinder.js"),
   "utf8"
 );
+const NPM_RC_FILE = fs.readFileSync(
+  path.resolve(__dirname, "../templates/.npmrc"),
+  "utf8"
+);
+const LICENCE_FILE = fs.readFileSync(
+  path.resolve(__dirname, "../templates/LICENCE.md"),
+  "utf8"
+);
 
 const compose = (...fns) => x => fns.reduceRight((y, f) => f(y), x);
 
@@ -38,14 +46,26 @@ const setupPackage = file => {
   // Let em know!
   console.log(`Setting up ${pkgName}...`);
 
-  addPathFinderToPkg(file)
+  addPathFinderToPkg(file);
+  addNpmFilesToPkg(file);
 };
 
 const addPathFinderToPkg = file => {
-  const pkgDirPath = getPathFromFile(file)
-  const pathFinderFilePath = path.resolve(pkgDirPath, 'scripts', 'pathfinder.js')
+  const pkgDirPath = getPathFromFile(file);
+  const pathFinderFilePath = path.resolve(
+    pkgDirPath,
+    "scripts",
+    "pathfinder.js"
+  );
 
-  fs.writeFile(pathFinderFilePath, PATHFINDER_FILE)
-}
+  fs.writeFile(pathFinderFilePath, PATHFINDER_FILE);
+};
+
+const addNpmFilesToPkg = file => {
+  const pkgDirPath = getPathFromFile(file);
+
+  fs.writeFile(path.resolve(pkgDirPath, ".npmrc"), NPM_RC_FILE);
+  fs.writeFile(path.resolve(pkgDirPath, "LICENCE.md"), LICENCE_FILE);
+};
 
 setupPackages();
