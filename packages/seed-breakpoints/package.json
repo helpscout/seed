@@ -36,7 +36,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-props": "^0.0.9"
+    "@seedcss/seed-props": "^1.0.0-alpha.0"
   },
   "publishConfig": {
     "access": "public"
