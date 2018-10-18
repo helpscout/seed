@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-width-min",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "width-min utility pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -30,9 +30,9 @@
     "width"
   ],
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^0.0.8",
-    "@seedcss/seed-publish": "^0.0.8",
-    "@seedcss/seed-width": "^0.0.8"
+    "@seedcss/seed-breakpoints": "^0.0.9",
+    "@seedcss/seed-publish": "^0.0.9",
+    "@seedcss/seed-width": "^0.0.9"
   },
   "publishConfig": {
     "access": "public"

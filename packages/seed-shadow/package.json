@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-shadow",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "shadow theme pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,9 +33,9 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-dash": "^0.0.8",
-    "@seedcss/seed-props": "^0.0.8",
-    "@seedcss/seed-publish": "^0.0.8"
+    "@seedcss/seed-dash": "^0.0.9",
+    "@seedcss/seed-props": "^0.0.9",
+    "@seedcss/seed-publish": "^0.0.9"
   },
   "publishConfig": {
     "access": "public"

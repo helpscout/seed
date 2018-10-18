@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-color-scheme",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Color scheme system pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed/",
@@ -42,7 +42,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-config": "^0.0.8"
+    "@seedcss/seed-config": "^0.0.9"
   },
   "publishConfig": {
     "access": "public"
