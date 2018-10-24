@@ -18,17 +18,17 @@ $seed-states-colors: (
     color: _color(pink, 900)
   ),
   #{$seed-states-info-namespace}: (
-    background-color: _color(blue, 50),
+    background-color: _color(blue, 100),
     border-color: _color(blue, 300),
     color: _color(blue, 800)
   ),
   #{$seed-states-success-namespace}: (
-    background-color: _color(green, 50),
+    background-color: _color(green, 100),
     border-color: _color(green, 300),
     color: _color(green, 800)
   ),
   #{$seed-states-warning-namespace}: (
-    background-color: _color(gold, 50),
+    background-color: _color(gold, 100),
     border-color: _color(gold, 300),
     color: _color(gold, 800)
   ),
