@@ -254,28 +254,28 @@ The following variables can be found in `_config.scss`
   @include _color((
     state: (
       danger: (
-        background-color: _color(pink, 200),
+        background-color: _color(pink, 100),
         border-color: _color(pink, 500),
         color: _color(pink, 800)
       ),
       error: (
-        background-color: _color(pink, 200),
+        background-color: _color(pink, 100),
         border-color: _color(pink, 500),
         color: _color(pink, 800)
       ),
       info: (
-        background-color: _color(blue, 200),
-        border-color: _color(blue, 500),
+        background-color: _color(blue, 50),
+        border-color: _color(blue, 300),
         color: _color(blue, 800)
       ),
       success: (
-        background-color: _color(green, 200),
-        border-color: _color(green, 500),
+        background-color: _color(green, 50),
+        border-color: _color(green, 300),
         color: _color(green, 800)
       ),
       warning: (
-        background-color: _color(gold, 200),
-        border-color: _color(gold, 500),
+        background-color: _color(gold, 50),
+        border-color: _color(gold, 300),
         color: _color(gold, 800)
       ),
     ),

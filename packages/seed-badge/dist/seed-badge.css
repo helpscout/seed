@@ -18,13 +18,13 @@
   vertical-align: middle; }
 
 .c-badge.is-error {
-  background-color: #FD9AAE; }
+  background-color: #F86784; }
 
 .c-badge.is-info {
-  background-color: #4EB4F3; }
+  background-color: #22A1F0; }
 
 .c-badge.is-success {
-  background-color: #78CEA0; }
+  background-color: #56C288; }
 
 .c-badge.is-warning {
-  background-color: #FFD177; }
+  background-color: #FFC555; }

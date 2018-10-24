@@ -1,0 +1,29 @@
+// Component :: Switch Handle :: Variables
+
+// Dependencies
+@import "pack/seed-shadow/functions/shadow";
+// Configs
+@import "../switch/config";
+@import "../switch-toggle/config";
+
+// Namespaces
+$seed-switch-handle-namespace: "#{$seed-switch-toggle-namespace}::before" !default;
+$seed-switch-toggle-active-handle-namespace: "#{$seed-switch-toggle-namespace}.#{$seed-switch-active-namespace}::before" !default;
+$seed-switch-toggle-focused-handle-namespace: "#{$seed-switch-toggle-namespace}.#{$seed-switch-focused-namespace}::before" !default;
+
+// Transitions
+$seed-switch-handle-transition: all 0.1s ease !default;
+
+// Background and shadow
+$seed-switch-handle-background-color: #fff !default;
+$seed-switch-handle-shadow: shadow(2) !default;
+$seed-switch-handle-shadow-active: shadow(3) !default;
+
+// Offsets and sizing
+$seed-switch-handle-offset: ceil($seed-switch-toggle-offset * 2) !default;
+$seed-switch-handle-size: ($seed-switch-toggle-height - $seed-switch-handle-offset) !default;
+$seed-switch-handle-width-active: 60% !default;
+
+// Modifier sizes
+$seed-switch-handle-size-sm: ($seed-switch-toggle-height-sm - $seed-switch-handle-offset) !default;
+$seed-switch-handle-size-xs: ($seed-switch-toggle-height-xs - $seed-switch-handle-offset) !default;

@@ -3,6 +3,7 @@ const path = require("path");
 const glob = require("glob");
 const _ = require("lodash");
 const projectPkg = require("../package.json");
+const lernaPkg = require("../lerna.json");
 
 const PKG_PATH = "packages/*/package.json";
 const README_TEMPLATE = fs.readFileSync(
@@ -52,7 +53,15 @@ const updatePackageDetails = pkg => {
     buildScript = "npm run build:main && npm run banner && npm run copy";
   }
 
+  let pkgName = pkg.name;
+
+  if (pkgName.indexOf("@seedcss") < 0) {
+    pkgName = `@seedcss/${pkgName}`;
+  }
+
   const nextPkg = Object.assign({}, pkg, {
+    name: pkgName,
+    version: lernaPkg.version,
     scripts: Object.assign({}, pkg.scripts, {
       banner: "node ./scripts/banner.js",
       build: buildScript,
@@ -74,7 +83,9 @@ const updatePackageDetails = pkg => {
   });
 
   // Clean
-
+  if (nextPkg.files) {
+    delete nextPkg.files;
+  }
   if (nextPkg.engines) {
     delete nextPkg.engines;
   }
@@ -89,6 +100,11 @@ const updatePackageDetails = pkg => {
   }
   if (nextPkg.author) {
     delete nextPkg.author;
+  }
+
+  // Remove devDependencies. This is now handled by the monorepo root.
+  if (nextPkg.devDependencies) {
+    delete nextPkg.devDependencies;
   }
 
   return nextPkg;

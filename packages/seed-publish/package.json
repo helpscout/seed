@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-publish",
-  "version": "0.0.7",
+  "version": "1.0.0-alpha.1",
   "description": "Mixins that manage rendered CSS from modular importing",
   "main": "index.js",
   "scripts": {
@@ -37,11 +37,6 @@
     "seed-pack",
     "scss"
   ],
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.3",
-    "sass-pathfinder": "^0.0.5"
-  },
   "publishConfig": {
     "access": "public"
   },

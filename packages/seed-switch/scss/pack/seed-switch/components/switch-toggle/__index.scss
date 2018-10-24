@@ -1,0 +1,12 @@
+// Component :: Switch Toggle
+
+// Scope
+.#{$seed-switch-toggle-namespace} {
+  // Config
+  @import "./config";
+  // Base
+  @import "./base";
+  // States
+  @import "./states/active";
+  @import "./states/focused";
+}
