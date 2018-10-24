@@ -70,9 +70,9 @@ The following variables can be found in `_config.scss`
     default: (
       background: (
         default: white,
-        hover: _color(ash, 50),
-        active: _color(ash, 100),
-        selected: _color(ash, 100),
+        hover: _color(ash, 100),
+        active: _color(ash, 200),
+        selected: _color(ash, 200),
       ),
       border: (
         default: _color(border, ui, dark),
