@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-switch",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "switch component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -32,8 +32,8 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-publish": "^1.0.0-alpha.1",
-    "@seedcss/seed-shadow": "^1.0.0-alpha.1"
+    "@seedcss/seed-publish": "^1.0.0-alpha.2",
+    "@seedcss/seed-shadow": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

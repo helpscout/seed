@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-display",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Display utility pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed/",
@@ -33,8 +33,8 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^1.0.0-alpha.1",
-    "@seedcss/seed-publish": "^1.0.0-alpha.1"
+    "@seedcss/seed-breakpoints": "^1.0.0-alpha.2",
+    "@seedcss/seed-publish": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-breakpoints",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Breakpoints mixin pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed/",
@@ -36,7 +36,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-props": "^1.0.0-alpha.1"
+    "@seedcss/seed-props": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"
