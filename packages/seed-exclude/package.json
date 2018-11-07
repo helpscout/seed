@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-exclude",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.2",
   "description": "Mixin that excludes modules published with seed-publish",
   "main": "index.js",
   "scripts": {
