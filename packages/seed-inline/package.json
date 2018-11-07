@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-inline",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0",
   "description": "Inline object pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -34,8 +34,8 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-props": "^1.0.0-alpha.2",
-    "@seedcss/seed-publish": "^1.0.0-alpha.2"
+    "@seedcss/seed-props": "^1.0.0",
+    "@seedcss/seed-publish": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"

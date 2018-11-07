@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-option-card",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0",
   "description": "Option card component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -37,10 +37,10 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-card": "^1.0.0-alpha.2",
-    "@seedcss/seed-control-group": "^1.0.0-alpha.2",
-    "@seedcss/seed-publish": "^1.0.0-alpha.2",
-    "@seedcss/seed-this": "^1.0.0-alpha.2"
+    "@seedcss/seed-card": "^1.0.0",
+    "@seedcss/seed-control-group": "^1.0.0",
+    "@seedcss/seed-publish": "^1.0.0",
+    "@seedcss/seed-this": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"
