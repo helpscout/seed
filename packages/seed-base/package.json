@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-base",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0",
   "description": "Base styles pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-publish": "^1.0.0-alpha.2"
+    "@seedcss/seed-publish": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"

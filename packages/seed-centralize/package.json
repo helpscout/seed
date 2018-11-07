@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-centralize",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0",
   "description": "Centralize utility pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -34,8 +34,8 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^1.0.0-alpha.2",
-    "@seedcss/seed-publish": "^1.0.0-alpha.2"
+    "@seedcss/seed-breakpoints": "^1.0.0",
+    "@seedcss/seed-publish": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"

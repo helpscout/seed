@@ -1,9 +1,13 @@
 {
   "lerna": "2.4.0",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "bootstrap": {
     "ignore": "component-*",
-    "npmClientArgs": ["--no-package-lock"]
+    "npmClientArgs": [
+      "--no-package-lock"
+    ]
   },
-  "version": "1.0.0-alpha.2"
+  "version": "1.0.0"
 }
