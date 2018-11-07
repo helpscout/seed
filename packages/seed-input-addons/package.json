@@ -34,10 +34,10 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-control": "^1.0.0",
-    "@seedcss/seed-dash": "^1.0.0",
-    "@seedcss/seed-input": "^1.0.0",
-    "@seedcss/seed-publish": "^1.0.0"
+    "@seedcss/seed-control": "^1.0.0-alpha.2",
+    "@seedcss/seed-dash": "^1.0.0-alpha.2",
+    "@seedcss/seed-input": "^1.0.0-alpha.2",
+    "@seedcss/seed-publish": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

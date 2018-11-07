@@ -42,7 +42,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-config": "^1.0.0"
+    "@seedcss/seed-config": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

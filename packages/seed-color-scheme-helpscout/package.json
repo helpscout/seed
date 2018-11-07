@@ -34,7 +34,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-color-scheme": "^1.0.0"
+    "@seedcss/seed-color-scheme": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

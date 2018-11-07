@@ -33,7 +33,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-dash": "^1.0.0"
+    "@seedcss/seed-dash": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

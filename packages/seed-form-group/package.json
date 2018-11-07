@@ -37,9 +37,9 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-input": "^1.0.0",
-    "@seedcss/seed-publish": "^1.0.0",
-    "@seedcss/seed-states": "^1.0.0"
+    "@seedcss/seed-input": "^1.0.0-alpha.2",
+    "@seedcss/seed-publish": "^1.0.0-alpha.2",
+    "@seedcss/seed-states": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

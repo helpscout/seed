@@ -33,7 +33,7 @@
     "z-index"
   ],
   "dependencies": {
-    "@seedcss/seed-publish": "^1.0.0"
+    "@seedcss/seed-publish": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

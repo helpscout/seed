@@ -36,9 +36,9 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^1.0.0",
-    "@seedcss/seed-props": "^1.0.0",
-    "@seedcss/seed-publish": "^1.0.0"
+    "@seedcss/seed-breakpoints": "^1.0.0-alpha.2",
+    "@seedcss/seed-props": "^1.0.0-alpha.2",
+    "@seedcss/seed-publish": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

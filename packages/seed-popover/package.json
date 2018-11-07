@@ -35,9 +35,9 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-bootstrap-fade": "^1.0.0",
-    "@seedcss/seed-publish": "^1.0.0",
-    "@seedcss/seed-this": "^1.0.0"
+    "@seedcss/seed-bootstrap-fade": "^1.0.0-alpha.2",
+    "@seedcss/seed-publish": "^1.0.0-alpha.2",
+    "@seedcss/seed-this": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"
