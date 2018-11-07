@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-overflow",
-  "version": "0.0.9",
+  "version": "1.0.0-alpha.2",
   "description": "Overflow utility pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^0.0.9"
+    "@seedcss/seed-breakpoints": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

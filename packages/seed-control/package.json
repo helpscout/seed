@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-control",
-  "version": "0.0.9",
+  "version": "1.0.0-alpha.2",
   "description": "Control config pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-dash": "^0.0.9"
+    "@seedcss/seed-dash": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

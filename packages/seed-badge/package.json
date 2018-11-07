@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-badge",
-  "version": "0.0.9",
+  "version": "1.0.0-alpha.2",
   "description": "Badge component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,9 +33,9 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-dash": "^0.0.9",
-    "@seedcss/seed-publish": "^0.0.9",
-    "@seedcss/seed-states": "^0.0.9"
+    "@seedcss/seed-dash": "^1.0.0-alpha.2",
+    "@seedcss/seed-publish": "^1.0.0-alpha.2",
+    "@seedcss/seed-states": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

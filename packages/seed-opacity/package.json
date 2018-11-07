@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-opacity",
-  "version": "0.0.9",
+  "version": "1.0.0-alpha.2",
   "description": "Opacity utility pack for Seed",
   "main": "index.js",
   "homepage": "https://github.com/helpscout/seed/",
@@ -34,8 +34,8 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-props": "^0.0.9",
-    "@seedcss/seed-publish": "^0.0.9"
+    "@seedcss/seed-props": "^1.0.0-alpha.2",
+    "@seedcss/seed-publish": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"

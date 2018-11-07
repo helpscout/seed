@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-thumbnail",
-  "version": "0.0.9",
+  "version": "1.0.0-alpha.2",
   "description": "Thumbnail component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -35,10 +35,10 @@
     "thumbnail"
   ],
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^0.0.9",
-    "@seedcss/seed-dash": "^0.0.9",
-    "@seedcss/seed-props": "^0.0.9",
-    "@seedcss/seed-publish": "^0.0.9"
+    "@seedcss/seed-breakpoints": "^1.0.0-alpha.2",
+    "@seedcss/seed-dash": "^1.0.0-alpha.2",
+    "@seedcss/seed-props": "^1.0.0-alpha.2",
+    "@seedcss/seed-publish": "^1.0.0-alpha.2"
   },
   "publishConfig": {
     "access": "public"
