@@ -59,6 +59,7 @@ The following variables can be found in `_config.scss`
 
 // Dependencies
 @import "pack/seed-border/config";
+@import "pack/seed-color-scheme/config";
 
 // Namespaces
 $seed-input-namespace: "c-input" !default;
@@ -69,7 +70,7 @@ $seed-input-border-color: #d5d5d5 !default;
 $seed-input-border-radius: $seed-border-radius !default;
 $seed-input-border-size: $seed-border-size !default;
 $seed-input-border-style: solid !default;
-$seed-input-border-color-focus: #3197D6 !default;
+$seed-input-border-color-focus: _color(blue, 500) !default;
 
 $seed-input-background-color-disabled: #e6e6e6;
 

@@ -32,6 +32,7 @@
     "scss"
   ],
   "dependencies": {
+    "@seedcss/seed-color-scheme": "^1.0.0",
     "@seedcss/seed-publish": "^1.0.0",
     "@seedcss/seed-shadow": "^1.0.0"
   },

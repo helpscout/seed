@@ -38,6 +38,7 @@
   "dependencies": {
     "@seedcss/seed-border": "^1.0.0",
     "@seedcss/seed-control": "^1.0.0",
+    "@seedcss/seed-color-scheme": "^1.0.0",
     "@seedcss/seed-dash": "^1.0.0",
     "@seedcss/seed-publish": "^1.0.0",
     "@seedcss/seed-states": "^1.0.0"

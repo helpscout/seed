@@ -30,11 +30,11 @@
     background-color: #FD9AAE; }
 
 .c-alert.is-info {
-  background-color: #F4FBFF;
-  box-shadow: inset 4px 0 0 0 #A6DDFF;
-  color: #004380; }
+  background-color: #F3FBFF;
+  box-shadow: inset 4px 0 0 0 #A0D4FF;
+  color: #034077; }
   .c-alert.is-info .c-badge {
-    background-color: #A6DDFF; }
+    background-color: #A0D4FF; }
 
 .c-alert.is-success {
   background-color: #F5FFF9;

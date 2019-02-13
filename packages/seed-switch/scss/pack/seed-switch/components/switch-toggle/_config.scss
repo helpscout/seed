@@ -1,4 +1,5 @@
 // Switch Toggle :: Config
+@import "pack/seed-color-scheme/__index";
 
 // Namespaces
 $seed-switch-toggle-namespace: "#{$seed-switch-namespace}-toggle" !default;
@@ -8,7 +9,7 @@ $seed-switch-toggle-transition: all 0.3s ease !default;
 
 // Colors and typography
 $seed-switch-toggle-background: #d7d7d7 !default
-$seed-switch-toggle-background-active: #3197d6 !default;
+$seed-switch-toggle-background-active: _color(blue, 500) !default;
 $seed-switch-toggle-border-radius: 100px !default;
 $seed-switch-toggle-shadow: 0 0 0 0 rgba(black, 0.1) inset !default;
 $seed-switch-toggle-shadow-focus: 0 0 0 1px rgba(white, 0.5) inset !default;

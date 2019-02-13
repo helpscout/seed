@@ -6,16 +6,16 @@
 .c-link, a {
   background-color: transparent;
   box-sizing: border-box;
-  color: #3197d6;
+  color: #0077CC;
   cursor: pointer;
   text-decoration: none;
   transition: none; }
   .c-link:hover, a:hover {
-    color: #71BFF1;
+    color: #57B0FB;
     outline-width: 0;
     text-decoration: underline; }
   .c-link:active, a:active {
-    color: #71BFF1;
+    color: #1292EE;
     outline-width: 0; }
   .c-link:focus, a:focus {
     outline: 5px auto -webkit-focus-ring-color;

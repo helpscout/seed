@@ -57,6 +57,8 @@ The following variables can be found in `_config.scss`
 ```scss
 // Link :: Config
 
+@import "pack/seed-color-scheme/__index";
+
 // Namespaces
 $seed-link-namespace: "c-link" !default;
 
@@ -64,9 +66,9 @@ $seed-link-namespace: "c-link" !default;
 $seed-link-include-a-selector: true !default;
 
 // Colors
-$seed-link-color: #3197d6 !default;
-$seed-link-color-hover: #71BFF1 !default;
-$seed-link-color-active: #71BFF1 !default;
+$seed-link-color: _color(link, base) !default;
+$seed-link-color-hover: _color(link, hover) !default;
+$seed-link-color-active: _color(link, active) !default;
 
 // Outline
 $seed-link-focus-outline: 5px auto -webkit-focus-ring-color !default;

@@ -73,10 +73,10 @@
   .c-option-card__selector:active + .c-card {
     z-index: 1; }
   .c-option-card__selector:checked + .c-card {
-    border-color: #3197D6;
+    border-color: #1292EE;
     z-index: 1; }
   .c-option-card__selector:focus + .c-card {
-    box-shadow: 0 0 0 2px rgba(49, 151, 214, 0.2);
+    box-shadow: 0 0 0 2px rgba(18, 146, 238, 0.2);
     z-index: 2; }
   .c-option-card__selector:focus:checked + .c-card {
     z-index: 3; }

@@ -56,6 +56,7 @@ The following variables can be found in `_config.scss`
 
 ```scss
 // dot-nav :: Config
+@import "pack/seed-color-scheme/__index";
 
 // Namespace
 $seed-dot-nav-namespace: c-dot-nav !default;
@@ -70,7 +71,7 @@ $seed-dot-nav-dot-transition: background-color 0.2s ease !default;
 $seed-dot-nav-dot-size: 10px !default;
 $seed-dot-nav-dot-color: rgba(black, 0.2) !default;
 $seed-dot-nav-dot-color-hover: rgba(black, 0.4) !default;
-$seed-dot-nav-dot-active-color: #3197D6 !default;
+$seed-dot-nav-dot-active-color: _color(blue, 500) !default;
 $seed-dot-nav-dot-active-size-increase: 1px !default;
 $seed-dot-nav-dot-transform: translate(-50%, -50%) !default;
 

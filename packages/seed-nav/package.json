@@ -37,6 +37,7 @@
   "dependencies": {
     "@seedcss/seed-border": "^1.0.0",
     "@seedcss/seed-breakpoints": "^1.0.0",
+    "@seedcss/seed-color-scheme": "^1.0.0",
     "@seedcss/seed-publish": "^1.0.0"
   },
   "publishConfig": {
