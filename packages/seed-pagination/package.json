@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-pagination",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pagination component pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,12 +33,12 @@
     "scss"
   ],
   "dependencies": {
-    "@seedcss/seed-breakpoints": "^1.0.0",
-    "@seedcss/seed-button": "^1.0.0",
-    "@seedcss/seed-color-scheme": "^1.0.0",
-    "@seedcss/seed-control": "^1.0.0",
-    "@seedcss/seed-dash": "^1.0.0",
-    "@seedcss/seed-publish": "^1.0.0"
+    "@seedcss/seed-breakpoints": "^1.0.1",
+    "@seedcss/seed-button": "^1.0.1",
+    "@seedcss/seed-color-scheme": "^1.0.1",
+    "@seedcss/seed-control": "^1.0.1",
+    "@seedcss/seed-dash": "^1.0.1",
+    "@seedcss/seed-publish": "^1.0.1"
   },
   "publishConfig": {
     "access": "public"

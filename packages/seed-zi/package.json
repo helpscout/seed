@@ -1,6 +1,6 @@
 {
   "name": "@seedcss/seed-zi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Z-index utility pack for Seed",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "z-index"
   ],
   "dependencies": {
-    "@seedcss/seed-publish": "^1.0.0"
+    "@seedcss/seed-publish": "^1.0.1"
   },
   "publishConfig": {
     "access": "public"
