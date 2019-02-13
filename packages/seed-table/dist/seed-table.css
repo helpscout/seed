@@ -87,12 +87,12 @@
 .c-table th.is-info,
 .c-table tr.is-info,
 .c-table td.is-info {
-  background-color: #F4FBFF; }
+  background-color: #F3FBFF; }
 
 .c-table--hover th.is-info:hover,
 .c-table--hover tr.is-info:hover,
 .c-table--hover td.is-info:hover {
-  background-color: #eaf7ff; }
+  background-color: #e9f8ff; }
 
 .c-table th.is-success,
 .c-table tr.is-success,

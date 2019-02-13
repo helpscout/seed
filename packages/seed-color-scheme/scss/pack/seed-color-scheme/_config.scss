@@ -216,4 +216,15 @@
       ),
     ),
   ), default);
+
+  @include _color((
+    // Primary
+    link: (
+      default: _color(blue, 600),
+      base: _color(blue, 600),
+      hover: _color(blue, 500),
+      active: _color(blue, 500),
+      focus: _color(blue, 500),
+    ),
+  ), default);
 }

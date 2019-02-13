@@ -39,6 +39,7 @@
   "dependencies": {
     "@seedcss/seed-card": "^1.0.0",
     "@seedcss/seed-control-group": "^1.0.0",
+    "@seedcss/seed-color-scheme": "^1.0.0",
     "@seedcss/seed-publish": "^1.0.0",
     "@seedcss/seed-this": "^1.0.0"
   },
