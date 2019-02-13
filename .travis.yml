@@ -8,8 +8,8 @@ install:
   - npm install
 
 script:
-  - npm run bootstrap
-  - npm run test
+  # - npm run bootstrap
+  # - npm run test
 
 branches:
   only:
