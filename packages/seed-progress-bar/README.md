@@ -56,6 +56,7 @@ The following variables can be found in `_config.scss`
 
 ```scss
 // progress-bar :: Config
+@import "pack/seed-color-scheme/__index";
 
 // Namespaces
 $seed-progress-bar-namespace: c-progress-bar !default;
@@ -65,7 +66,7 @@ $seed-progress-bar-bar-namespace: #{$seed-progress-bar-namespace}__bar !default;
 // Configs
 $seed-progress-bar-background-color: #E3E8EB !default;
 $seed-progress-bar-border-radius: 3px !default;
-$seed-progress-bar-color: #3197D6 !default;
+$seed-progress-bar-color: _color(blue, 500) !default;
 $seed-progress-bar-height: 16px !default;
 $seed-progress-bar-transition: width 0.5s ease;
 

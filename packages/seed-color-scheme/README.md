@@ -75,16 +75,16 @@ The following variables can be found in `_config.scss`
   @include _color((
     // Primary
     blue: (
-      default: #22A1F0,
-      100: #F4FBFF,
-      200: #D5EFFF,
-      300: #A6DDFF,
-      400: #5ABFFD,
-      500: #22A1F0,
-      600: #1087D8,
-      700: #0866B1,
-      800: #004380,
-      900: #082555
+      default: #1292EE,
+      100: #F3FBFF,
+      200: #D6EDFF,
+      300: #A0D4FF,
+      400: #57B0FB,
+      500: #1292EE,
+      600: #0077CC,
+      700: #005CA4,
+      800: #034077,
+      900: #002651
     ),
 
     charcoal: (
@@ -273,6 +273,16 @@ The following variables can be found in `_config.scss`
       ),
     ),
   ), default);
-}
 
+  @include _color((
+    // Primary
+    link: (
+      default: _color(blue, 600),
+      base: _color(blue, 600),
+      hover: _color(blue, 500),
+      active: _color(blue, 500),
+      focus: _color(blue, 500),
+    ),
+  ), default);
+}
 ```

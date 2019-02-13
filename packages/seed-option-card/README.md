@@ -56,6 +56,7 @@ The following variables can be found in `_config.scss`
 
 ```scss
 // option-card :: Config
+@import "pack/seed-color-scheme/__index";
 
 // Namespaces
 $seed-option-card-namespace: c-option-card !default;
@@ -66,7 +67,7 @@ $seed-option-card-selector-namespace: #{$seed-option-card-namespace}__selector !
 $seed-option-card-background-color-active: rgba(black, 0.025) !default;
 $seed-option-card-border-color: #ddd !default;
 $seed-option-card-border-hover-color: #ccc !default;
-$seed-option-card-border-focus-color: #3197D6 !default;
+$seed-option-card-border-focus-color: _color(blue, 500) !default;
 $seed-option-card-box-shadow-focus: 0 0 0 2px rgba($seed-option-card-border-focus-color, 0.2) !default;
 $seed-option-card-border-size-focus: 2px !default;
 

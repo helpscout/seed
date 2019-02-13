@@ -59,6 +59,7 @@ The following variables can be found in `_config.scss`
 
 // Dependencies
 @import "pack/seed-button/config";
+@import "pack/seed-color-scheme/config";
 @import "pack/seed-dash/_index";
 
 // Namespaces
@@ -75,21 +76,21 @@ $seed-pagination-link-color: _extend(_color(button, default), (
   background: (
     default: #fff,
     hover: #f9f9f9,
-    active: #3197D6,
-    active-hover: #237AB3,
+    active: _color(link, base),
+    active-hover: _color(link, hover),
   ),
   border: (
     default: #ddd,
     hover: #ddd,
-    active: #3197D6,
-    focus: #3197D6,
-    active-hover: #237AB3,
+    active: _color(link, base),
+    focus: _color(link, base),
+    active-hover: _color(link, hover),
   ),
   box-shadow: (
     focus: 0 0 0 1px rgba(white, 0.4) inset,
   ),
   text: (
-    default: #3197D6,
+    default: _color(link, base),
     hover: #1F5E89,
     active: #fff,
     disabled: #72808E,
