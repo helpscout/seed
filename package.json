@@ -5,8 +5,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist --no-ci",
     "bootstrap:ci": "lerna bootstrap --no-ci",
+    "prebuild": "npm run colorway",
     "build:all": "lerna run build",
-    "build": "npm run colorway && node ./scripts/build.js --write",
+    "build": "node ./scripts/build.js --write",
     "build:release": "npm run update && npm run setup && npm run build",
     "build:test": "node ./scripts/build.js",
     "colorway": "colorway --manifest=seed-color-scheme && colorway --manifest=seed-color-scheme-helpscout",
