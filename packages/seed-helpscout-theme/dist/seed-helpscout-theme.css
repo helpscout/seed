@@ -36,6 +36,9 @@
 .t-bg-blue-900 {
   background-color: #002651 !important; }
 
+.t-bg-blue-default {
+  background-color: #1292EE !important; }
+
 .t-bg-charcoal-200 {
   background-color: #93A1B0 !important; }
 
@@ -57,6 +60,9 @@
 .t-bg-charcoal-800 {
   background-color: #1d2b36 !important; }
 
+.t-bg-charcoal-default {
+  background-color: #405261 !important; }
+
 .t-bg-ash-200 {
   background-color: #F9FAFA !important; }
 
@@ -77,6 +83,9 @@
 
 .t-bg-ash-800 {
   background-color: #A5B2BD !important; }
+
+.t-bg-ash-default {
+  background-color: #D5DCE1 !important; }
 
 .t-bg-gold-100 {
   background-color: #FFF9EF !important; }
@@ -105,6 +114,9 @@
 .t-bg-gold-900 {
   background-color: #B24319 !important; }
 
+.t-bg-gold-default {
+  background-color: #FFC555 !important; }
+
 .t-bg-green-100 {
   background-color: #F5FFF9 !important; }
 
@@ -131,6 +143,9 @@
 
 .t-bg-green-900 {
   background-color: #003C1C !important; }
+
+.t-bg-green-default {
+  background-color: #56C288 !important; }
 
 .t-bg-pink-100 {
   background-color: #FFF9FB !important; }
@@ -159,6 +174,9 @@
 .t-bg-pink-900 {
   background-color: #F23459 !important; }
 
+.t-bg-pink-default {
+  background-color: #FFB3C3 !important; }
+
 .t-bg-lavender-100 {
   background-color: #F9F9FF !important; }
 
@@ -185,6 +203,9 @@
 
 .t-bg-lavender-900 {
   background-color: #232A5C !important; }
+
+.t-bg-lavender-default {
+  background-color: #9FA6FF !important; }
 
 .t-bg-indigo-100 {
   background-color: #F2F6FF !important; }
@@ -213,6 +234,9 @@
 .t-bg-indigo-900 {
   background-color: #071E57 !important; }
 
+.t-bg-indigo-default {
+  background-color: #527CEB !important; }
+
 .t-bg-whaletail-100 {
   background-color: #F3F7FF !important; }
 
@@ -239,6 +263,9 @@
 
 .t-bg-whaletail-900 {
   background-color: #142F5E !important; }
+
+.t-bg-whaletail-default {
+  background-color: #8AABF1 !important; }
 
 .t-tx-black {
   color: #000 !important; }
@@ -273,6 +300,9 @@
 .t-tx-blue-900 {
   color: #002651 !important; }
 
+.t-tx-blue-default {
+  color: #1292EE !important; }
+
 .t-tx-charcoal-200 {
   color: #93A1B0 !important; }
 
@@ -294,6 +324,9 @@
 .t-tx-charcoal-800 {
   color: #1d2b36 !important; }
 
+.t-tx-charcoal-default {
+  color: #405261 !important; }
+
 .t-tx-ash-200 {
   color: #F9FAFA !important; }
 
@@ -314,6 +347,9 @@
 
 .t-tx-ash-800 {
   color: #A5B2BD !important; }
+
+.t-tx-ash-default {
+  color: #D5DCE1 !important; }
 
 .t-tx-gold-100 {
   color: #FFF9EF !important; }
@@ -342,6 +378,9 @@
 .t-tx-gold-900 {
   color: #B24319 !important; }
 
+.t-tx-gold-default {
+  color: #FFC555 !important; }
+
 .t-tx-green-100 {
   color: #F5FFF9 !important; }
 
@@ -368,6 +407,9 @@
 
 .t-tx-green-900 {
   color: #003C1C !important; }
+
+.t-tx-green-default {
+  color: #56C288 !important; }
 
 .t-tx-pink-100 {
   color: #FFF9FB !important; }
@@ -396,6 +438,9 @@
 .t-tx-pink-900 {
   color: #F23459 !important; }
 
+.t-tx-pink-default {
+  color: #FFB3C3 !important; }
+
 .t-tx-lavender-100 {
   color: #F9F9FF !important; }
 
@@ -422,6 +467,9 @@
 
 .t-tx-lavender-900 {
   color: #232A5C !important; }
+
+.t-tx-lavender-default {
+  color: #9FA6FF !important; }
 
 .t-tx-indigo-100 {
   color: #F2F6FF !important; }
@@ -450,6 +498,9 @@
 .t-tx-indigo-900 {
   color: #071E57 !important; }
 
+.t-tx-indigo-default {
+  color: #527CEB !important; }
+
 .t-tx-whaletail-100 {
   color: #F3F7FF !important; }
 
@@ -476,3 +527,6 @@
 
 .t-tx-whaletail-900 {
   color: #142F5E !important; }
+
+.t-tx-whaletail-default {
+  color: #8AABF1 !important; }

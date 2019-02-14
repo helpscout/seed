@@ -5,17 +5,19 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist --no-ci",
     "bootstrap:ci": "lerna bootstrap --no-ci",
+    "prebuild": "npm run colorway",
     "build:all": "lerna run build",
     "build": "node ./scripts/build.js --write",
     "build:release": "npm run update && npm run setup && npm run build",
     "build:test": "node ./scripts/build.js",
+    "colorway": "colorway --manifest=seed-color-scheme && colorway --manifest=seed-color-scheme-helpscout",
     "clean": "lerna clean",
     "clean:lock": "find ./packages -type f -name \"package-lock.json\" -delete",
     "diff": "lerna diff",
     "postinstall": "npm run update",
     "release:before": "npm run setup && npm run update && npm run build",
     "release": "npm run release:before && lerna publish",
-    "start": "npm run bootstrap && npm run storybook",
+    "start": "npm run bootstrap && npm run colorway && npm run storybook",
     "setup": "node ./scripts/setup.js",
     "test": "npm run build:test",
     "update": "node ./scripts/update.js",
@@ -50,6 +52,7 @@
     "system"
   ],
   "devDependencies": {
+    "@helpscout/colorway": "0.0.5",
     "@storybook/addon-actions": "^3.4.11",
     "@storybook/addon-links": "^3.4.11",
     "@storybook/addon-options": "^3.4.11",
