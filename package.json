@@ -9,6 +9,7 @@
     "build": "node ./scripts/build.js --write",
     "build:release": "npm run update && npm run setup && npm run build",
     "build:test": "node ./scripts/build.js",
+    "colorway": "colorway --manifest=seed-color-scheme && colorway --manifest=seed-color-scheme-helpscout",
     "clean": "lerna clean",
     "clean:lock": "find ./packages -type f -name \"package-lock.json\" -delete",
     "diff": "lerna diff",
@@ -50,6 +51,7 @@
     "system"
   ],
   "devDependencies": {
+    "@helpscout/colorway": "0.0.5",
     "@storybook/addon-actions": "^3.4.11",
     "@storybook/addon-links": "^3.4.11",
     "@storybook/addon-options": "^3.4.11",
