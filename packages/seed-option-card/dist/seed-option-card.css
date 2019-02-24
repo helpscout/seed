@@ -73,7 +73,7 @@
   .c-option-card__selector:active + .c-card {
     z-index: 1; }
   .c-option-card__selector:checked + .c-card {
-    border-color: #1292EE;
+    border-color: #1292ee;
     z-index: 1; }
   .c-option-card__selector:focus + .c-card {
     box-shadow: 0 0 0 2px rgba(18, 146, 238, 0.2);

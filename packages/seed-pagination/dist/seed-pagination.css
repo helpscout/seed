@@ -66,7 +66,7 @@
   border: 1px solid;
   border-color: #ddd;
   box-sizing: border-box;
-  color: #0077CC;
+  color: #0077cc;
   cursor: pointer;
   display: block;
   line-height: 34px;
@@ -81,17 +81,17 @@
     color: #1F5E89;
     text-decoration: none; }
   .c-pagination__link:focus {
-    border-color: #0077CC;
+    border-color: #0077cc;
     outline: none;
     z-index: 1; }
   .c-pagination__item.is-active .c-pagination__link {
-    background-color: #0077CC;
-    border-color: #0077CC;
+    background-color: #0077cc;
+    border-color: #0077cc;
     color: #fff;
     z-index: 2; }
     .c-pagination__item.is-active .c-pagination__link:hover, .c-pagination__item.is-active .c-pagination__link:focus {
-      background-color: #57B0FB;
-      border-color: #57B0FB; }
+      background-color: #57b0fb;
+      border-color: #57b0fb; }
     .c-pagination__item.is-active .c-pagination__link:focus {
       box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset; }
   .c-pagination__item.is-disabled .c-pagination__link {

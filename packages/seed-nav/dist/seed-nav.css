@@ -16,7 +16,7 @@
     color: #a5b2bd; }
   .c-nav--tabs .c-nav__item.is-active > c-nav__link,
   .c-nav--tabs .c-nav__link.is-active {
-    border-bottom-color: #1292EE;
+    border-bottom-color: #1292ee;
     color: #2a3b47;
     font-weight: 400; }
   @media (min-width: 544px) {
@@ -29,7 +29,7 @@
         color: #a5b2bd; }
       .c-nav--tabs\@sm .c-nav__item.is-active > c-nav__link,
       .c-nav--tabs\@sm .c-nav__link.is-active {
-        border-bottom-color: #1292EE;
+        border-bottom-color: #1292ee;
         color: #2a3b47;
         font-weight: 400; } }
   @media (min-width: 768px) {
@@ -42,7 +42,7 @@
         color: #a5b2bd; }
       .c-nav--tabs\@md .c-nav__item.is-active > c-nav__link,
       .c-nav--tabs\@md .c-nav__link.is-active {
-        border-bottom-color: #1292EE;
+        border-bottom-color: #1292ee;
         color: #2a3b47;
         font-weight: 400; } }
   @media (min-width: 992px) {
@@ -55,7 +55,7 @@
         color: #a5b2bd; }
       .c-nav--tabs\@lg .c-nav__item.is-active > c-nav__link,
       .c-nav--tabs\@lg .c-nav__link.is-active {
-        border-bottom-color: #1292EE;
+        border-bottom-color: #1292ee;
         color: #2a3b47;
         font-weight: 400; } }
 
@@ -198,7 +198,7 @@
 
 .c-nav__item.is-active > .c-nav__link,
 .c-nav__link.is-active {
-  color: #1292EE;
+  color: #1292ee;
   font-weight: 700; }
 
 .c-nav__item.is-disabled > .c-nav__link,

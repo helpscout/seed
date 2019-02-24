@@ -77,7 +77,7 @@
 .c-table th.is-error,
 .c-table tr.is-error,
 .c-table td.is-error {
-  background-color: #FFF9FB; }
+  background-color: #fff9fb; }
 
 .c-table--hover th.is-error:hover,
 .c-table--hover tr.is-error:hover,
@@ -87,7 +87,7 @@
 .c-table th.is-info,
 .c-table tr.is-info,
 .c-table td.is-info {
-  background-color: #F3FBFF; }
+  background-color: #f3fbff; }
 
 .c-table--hover th.is-info:hover,
 .c-table--hover tr.is-info:hover,
@@ -97,7 +97,7 @@
 .c-table th.is-success,
 .c-table tr.is-success,
 .c-table td.is-success {
-  background-color: #F5FFF9; }
+  background-color: #f5fff9; }
 
 .c-table--hover th.is-success:hover,
 .c-table--hover tr.is-success:hover,
@@ -107,7 +107,7 @@
 .c-table th.is-warning,
 .c-table tr.is-warning,
 .c-table td.is-warning {
-  background-color: #FFF9EF; }
+  background-color: #fff9ef; }
 
 .c-table--hover th.is-warning:hover,
 .c-table--hover tr.is-warning:hover,

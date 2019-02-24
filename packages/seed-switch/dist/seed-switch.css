@@ -36,8 +36,8 @@
   width: 12px; }
 
 .c-switch input:checked + .c-switch-toggle, .c-switch.is-active .c-switch-toggle {
-  background-color: #1292EE;
-  border-color: #1292EE;
+  background-color: #1292ee;
+  border-color: #1292ee;
   color: #fff;
   text-align: left; }
 
