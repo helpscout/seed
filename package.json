@@ -79,7 +79,7 @@
     "seed-bistro": "^0.2.1",
     "shelljs": "0.8.3",
     "stringstream": "1.0.0",
-    "tar": "4.4.8"
+    "tar": "4.4.15"
   },
   "dependencies": {}
 }
